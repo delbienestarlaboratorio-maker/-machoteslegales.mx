@@ -1,45 +1,70 @@
 import { NextResponse } from 'next/server';
-import { MercadoPagoConfig, Preference } from 'mercadopago';
 
-// Asegúrate de agregar MERCADOPAGO_ACCESS_TOKEN a tu archivo .env.local
-const client = new MercadoPagoConfig({
-    accessToken: process.env.MERCADOPAGO_ACCESS_TOKEN || 'TEST-1234567890123456-012345-00000000000000000000000000000000-000000000'
-});
+// Clip API V2 — Checkout Redireccionado
+// Docs: https://developer.clip.mx/reference/createnewpaymentlink
+const CLIP_API_KEY = process.env.CLIP_API_KEY || '';
+const CLIP_SECRET_KEY = process.env.CLIP_SECRET_KEY || '';
+
+function getClipAuthToken(): string {
+    const credentials = `${CLIP_API_KEY}:${CLIP_SECRET_KEY}`;
+    return Buffer.from(credentials).toString('base64');
+}
 
 export async function POST(request: Request) {
     try {
         const body = await request.json();
         const { itemId, title, price } = body;
 
-        const preference = new Preference(client);
+        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://machoteslegales.mx';
 
-        // Usamos una URL base que funcione tanto en local como en producción
-        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:4002';
-
-        const response = await preference.create({
-            body: {
-                items: [
-                    {
-                        id: itemId,
-                        title: title,
-                        quantity: 1,
-                        unit_price: Number(price),
-                        currency_id: 'MXN',
-                    },
-                ],
-                back_urls: {
-                    success: `${baseUrl}/pago/exito`,
-                    failure: `${baseUrl}/pago/fallo`,
-                    pending: `${baseUrl}/pago/pendiente`,
+        const clipResponse = await fetch('https://api.payclip.com/v2/checkout', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Basic ${getClipAuthToken()}`,
+            },
+            body: JSON.stringify({
+                amount: Number(price),
+                currency: 'MXN',
+                purchase_description: title,
+                redirection_url: {
+                    success: `${baseUrl}/pago/exito?item=${itemId}`,
+                    error: `${baseUrl}/pago/fallo`,
+                    default: `${baseUrl}/pago/pendiente`,
                 },
-                auto_return: 'approved',
-                statement_descriptor: 'MACHOTES LEGALES',
-            }
+                metadata: {
+                    me_reference_id: itemId,
+                    customer_info: {
+                        name: 'Cliente',
+                        email: '',
+                    },
+                },
+                override_settings: {
+                    payment_method: ['CARD'],
+                },
+            }),
         });
 
-        return NextResponse.json({ id: response.id, init_point: response.init_point });
+        const data = await clipResponse.json();
+
+        if (!clipResponse.ok) {
+            console.error('Error Clip API:', data);
+            return NextResponse.json(
+                { error: 'Error generando link de pago', details: data },
+                { status: clipResponse.status }
+            );
+        }
+
+        // Clip devuelve payment_request_url para redirigir al usuario
+        return NextResponse.json({
+            id: data.id || data.payment_request_id,
+            init_point: data.payment_request_url,
+        });
     } catch (error) {
-        console.error(error);
-        return NextResponse.json({ error: 'Error generando preferencia de pago' }, { status: 500 });
+        console.error('Error en checkout Clip:', error);
+        return NextResponse.json(
+            { error: 'Error generando link de pago' },
+            { status: 500 }
+        );
     }
 }

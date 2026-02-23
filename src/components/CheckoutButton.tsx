@@ -1,12 +1,8 @@
 "use client";
 
 import { useState } from 'react';
-import { initMercadoPago } from '@mercadopago/sdk-react';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
-
-// Asegúrate de agregar NEXT_PUBLIC_MERCADOPAGO_PUBLIC_KEY a tu .env.local
-initMercadoPago(process.env.NEXT_PUBLIC_MERCADOPAGO_PUBLIC_KEY || 'TEST-00000000-0000-0000-0000-000000000000');
 
 interface CheckoutButtonProps {
     templateId: string;
@@ -44,10 +40,10 @@ export default function CheckoutButton({ templateId, title, price, className, ch
             const data = await res.json();
 
             if (data.init_point) {
-                // Redirigir al usuario al flujo de pago de MercadoPago
+                // Redirigir al usuario al Checkout de Clip
                 window.location.href = data.init_point;
             } else {
-                console.error("Error al generar URL de pago:", data);
+                console.error("Error al generar link de pago Clip:", data);
                 alert("Hubo un error al iniciar el pago. Intenta de nuevo.");
             }
         } catch (error) {
@@ -64,7 +60,15 @@ export default function CheckoutButton({ templateId, title, price, className, ch
             className={className}
             disabled={loading}
         >
-            {loading ? "Generando pago..." : children}
+            {loading ? (
+                <span className="flex items-center gap-2">
+                    <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                    </svg>
+                    Procesando...
+                </span>
+            ) : children}
         </button>
     );
 }
