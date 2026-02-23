@@ -1,3 +1,5 @@
+'use client';
+
 export default function PagoFalloPage() {
     return (
         <main className="min-h-screen gradient-bg flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">

@@ -96,7 +96,7 @@ export default function PreciosPage() {
                     </div>
                     <div className="glass-card p-6 rounded-2xl">
                         <h4 className="text-lg font-bold text-white">¿Es seguro pagar con mi tarjeta?</h4>
-                        <p className="mt-2 text-sm text-[var(--color-text-muted)]">Totalmente. No guardamos información financiera. Toda transacción (Débito, Crédito, Meses sin Intereses) se procesa bajo el blindaje y la seguridad total de la pasarela oficial de <b>Mercado Pago México</b> y cuenta con protocolo SSL/HTTPS cifrado de grado bancario.</p>
+                        <p className="mt-2 text-sm text-[var(--color-text-muted)]">Totalmente. No guardamos información financiera. Toda transacción (Débito, Crédito, Meses sin Intereses) se procesa bajo el blindaje y la seguridad total de la pasarela oficial de <b>Clip</b> y cuenta con protocolo SSL/HTTPS cifrado de grado bancario.</p>
                     </div>
                     <div className="glass-card p-6 rounded-2xl">
                         <h4 className="text-lg font-bold text-white">¿Dan Factura (CFDI 4.0)?</h4>

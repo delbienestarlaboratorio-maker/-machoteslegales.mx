@@ -21,34 +21,96 @@ const fuse = new Fuse(allTemplates, {
 const TYPO_MAP: Record<string, string> = {
     'divorsio': 'divorcio',
     'divorsio incausado': 'divorcio incausado',
+    'diborcion': 'divorcio',
     'ampparo': 'amparo',
     'amprao': 'amparo',
+    'anparo': 'amparo',
     'kerella': 'querella',
     'querela': 'querella',
     'aroendamiento': 'arrendamiento',
     'arendamiento': 'arrendamiento',
+    'arrendamieto': 'arrendamiento',
     'despidio': 'despido',
     'laboral despidio': 'laboral despido',
+    'despido inustificado': 'despido injustificado',
     'indemisacion': 'indemnización',
     'indemnisacion': 'indemnización',
+    'indemnizacion': 'indemnización',
     'demada': 'demanda',
+    'demana': 'demanda',
     'finiqito': 'finiquito',
+    'finiquitto': 'finiquito',
     'penal robo': 'denuncia robo',
     'fraue': 'fraude',
+    'fraudee': 'fraude',
     'mercantil pagre': 'mercantil pagaré',
     'pagre': 'pagaré',
+    'pagare': 'pagaré',
     'constitucion': 'constitución',
     'pencion': 'pensión',
     'pencion alimenticia': 'pensión alimenticia',
+    'pension': 'pensión',
+    'guardia custodia': 'guarda custodia',
+    'guardia y custodia': 'guarda y custodia',
+    'testameto': 'testamento',
+    'testemento': 'testamento',
+    'comprabenta': 'compraventa',
+    'compra venta': 'compraventa',
+    'poder notarial': 'poder notarial',
+    'contratoarrendamiento': 'contrato arrendamiento',
+    'usucapion': 'usucapión',
+    'prescripcion': 'prescripción',
+    'reklamacion': 'reclamación',
+    'recurso revision': 'recurso revisión',
+    'abreviado': 'procedimiento abreviado',
+    'liquidacion': 'liquidación',
+    'liquidasion': 'liquidación',
+    'suspencion': 'suspensión',
+}
+
+// Sinónimos para búsquedas en lenguaje natural
+const SYNONYM_MAP: Record<string, string> = {
+    'me robaron': 'denuncia robo',
+    'me despidieron': 'despido injustificado',
+    'no me pagan': 'demanda laboral salario',
+    'me deben dinero': 'demanda mercantil pagaré',
+    'quiero divorciarme': 'divorcio incausado',
+    'crear empresa': 'acta constitutiva',
+    'abrir empresa': 'acta constitutiva',
+    'rentar casa': 'contrato arrendamiento',
+    'renta departamento': 'contrato arrendamiento',
+    'separacion': 'divorcio',
+    'me estafaron': 'querella fraude',
+    'me demandaron': 'contestación demanda',
+    'deuda': 'demanda mercantil',
+    'herencia': 'testamento sucesión',
+    'custodia hijos': 'guarda custodia',
+    'vender casa': 'compraventa inmueble',
+    'comprar casa': 'compraventa inmueble',
+    'accidente': 'denuncia lesiones',
+    'amenazas': 'querella amenazas',
+    'pension hijos': 'pensión alimenticia',
+    'manutencion': 'pensión alimenticia',
+    'carta poder': 'poder notarial',
+    'impuestos sat': 'amparo fiscal',
+    'multa sat': 'recurso revocación fiscal',
 }
 
 function correctTypos(query: string): string {
     const lower = query.toLowerCase().trim()
+    // Check exact typo match
     if (TYPO_MAP[lower]) return TYPO_MAP[lower]
-    // Check partial matches
+    // Check synonym match (natural language)
+    if (SYNONYM_MAP[lower]) return SYNONYM_MAP[lower]
+    // Check partial matches in both maps
     for (const [typo, fix] of Object.entries(TYPO_MAP)) {
         if (lower.includes(typo)) {
             return lower.replace(typo, fix)
+        }
+    }
+    for (const [phrase, fix] of Object.entries(SYNONYM_MAP)) {
+        if (lower.includes(phrase)) {
+            return fix
         }
     }
     return query

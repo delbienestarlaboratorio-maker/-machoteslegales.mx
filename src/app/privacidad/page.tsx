@@ -18,7 +18,7 @@ export default function PrivacidadPage() {
                             <li>Datos de identificación (Nombre, correo a través de Google OAuth).</li>
                             <li>Datos de contacto y facturación (C.P., RFC y Régimen en caso de solicitar CFDI).</li>
                         </ul>
-                        <p className="mt-2 text-[var(--color-accent)]">Importante: Nosotros NO recabamos datos financieros ni números de tarjeta de crédito. Los pagos se procesan exclusivamente en los servidores cifrados de Mercado Libre de México, S. de R.L. de C.V. (MercadoPago).</p>
+                        <p className="mt-2 text-[var(--color-accent)]">Importante: Nosotros NO recabamos datos financieros ni números de tarjeta de crédito. Los pagos se procesan exclusivamente en los servidores cifrados de Clip (Payclip, S. de R.L. de C.V.).</p>
                     </section>
 
                     <section>

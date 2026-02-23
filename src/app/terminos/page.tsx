@@ -20,7 +20,7 @@ export default function TerminosPage() {
 
                     <section>
                         <h2 className="text-xl font-bold text-white mb-3">3. Políticas de Devolución y Pagos</h2>
-                        <p>Debido a la naturaleza asimétrica y la descarga inmediata de productos digitales de propiedad intelectual (un PDF / DOCX libre de marca de agua); <b>Una vez que el sistema ha entregado correctamente su plantilla al panel de usuario o por correo y ésta haya sido descargada, NO SE ACEPTARÁN REEMBOLSOS NI CANCELACIONES del dinero procesado vía MercadoPago.</b></p>
+                        <p>Debido a la naturaleza asimétrica y la descarga inmediata de productos digitales de propiedad intelectual (un PDF / DOCX libre de marca de agua); <b>Una vez que el sistema ha entregado correctamente su plantilla al panel de usuario o por correo y ésta haya sido descargada, NO SE ACEPTARÁN REEMBOLSOS NI CANCELACIONES del dinero procesado vía Clip.</b></p>
                         <p className="mt-2">Si por motivos técnicos, servidores caídos u omisión, usted efectuó el pago pero la descarga del documento no funcionara en lo absoluto, posee 48 horas a partir del cargo en su tarjeta para notificar soporte técnico.</p>
                     </section>
 
