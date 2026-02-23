@@ -1,0 +1,78 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Convenio de Terminación de Relación Laboral</h1>
+    <p class="subtitle">Artículos 33, 53 fracción I y 987 de la Ley Federal del Trabajo</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+
+<p class="indent text-justify">
+    <strong>CONVENIO</strong> que celebran por una parte <strong>{{ patron | default("NOMBRE DE LA EMPRESA")
+        }}</strong>,
+    representada por {{ representante | default("_______________") }}, en su carácter de {{ cargo |
+    default("Representante Legal") }},
+    a quien en lo sucesivo se le denominará <strong>"EL PATRÓN"</strong>; y por la otra,
+    <strong>{{ trabajador | default("NOMBRE DEL TRABAJADOR") }}</strong>,
+    a quien se le denominará <strong>"EL TRABAJADOR"</strong>, al tenor de las siguientes:
+</p>
+
+<div class="section-title">DECLARACIONES</div>
+<p class="indent text-justify">
+    <strong>I.</strong> Declara EL PATRÓN tener su domicilio en {{ domicilio_empresa |
+    default("_________________________________") }}
+    y contar con RFC {{ rfc_empresa | default("_______________") }}.<br>
+    <strong>II.</strong> Declara EL TRABAJADOR que ingresó a laborar el {{ fecha_ingreso | default("_______________")
+    }},
+    desempeñando el puesto de {{ puesto | default("_______________") }}, con un salario diario de ${{ salario |
+    default("___") }}.<br>
+    <strong>III.</strong> Ambas partes manifiestan su voluntad de dar por terminada la relación de trabajo
+    de conformidad con el artículo 53 fracción I de la LFT.
+</p>
+
+<div class="section-title">CLÁUSULAS</div>
+<p class="indent text-justify">
+    <strong>PRIMERA.-</strong> Ambas partes convienen en dar por terminada la relación laboral a partir del {{
+    fecha_termino | default("_______________") }}.
+</p>
+<p class="indent text-justify">
+    <strong>SEGUNDA.-</strong> EL PATRÓN se obliga a pagar a EL TRABAJADOR las siguientes cantidades:
+    <br>a) Salarios devengados: ${{ salarios | default("___") }}
+    <br>b) Aguinaldo proporcional: ${{ aguinaldo | default("___") }}
+    <br>c) Vacaciones: ${{ vacaciones | default("___") }}
+    <br>d) Prima vacacional: ${{ prima_vac | default("___") }}
+    <br>e) Prima de antigüedad: ${{ prima_ant | default("___") }}
+    <br>f) Gratificación adicional: ${{ gratificacion | default("___") }}
+    <br><strong>TOTAL: ${{ total | default("___") }}</strong>
+</p>
+<p class="indent text-justify">
+    <strong>TERCERA.-</strong> EL TRABAJADOR declara recibir a su entera satisfacción las cantidades señaladas,
+    no teniendo reclamación alguna pendiente.
+</p>
+<p class="indent text-justify">
+    <strong>CUARTA.-</strong> EL PATRÓN entregará al trabajador su constancia laboral y documentos personales.
+</p>
+<p class="indent text-justify">
+    <strong>QUINTA.-</strong> Este convenio podrá ser ratificado ante el Centro de Conciliación Laboral
+    conforme al artículo 33 de la LFT.
+</p>
+
+<div style="display:flex; gap:40px; margin-top:40px;">
+    <div class="signature-block" style="flex:1;">
+        <div class="signature-line">{{ patron | default("EL PATRÓN") }}</div>
+    </div>
+    <div class="signature-block" style="flex:1;">
+        <div class="signature-line">{{ trabajador | default("EL TRABAJADOR") }}</div>
+    </div>
+</div>
+
+<div style="display:flex; gap:40px; margin-top:30px;">
+    <div class="signature-block" style="flex:1;">
+        <div class="signature-line">TESTIGO 1</div>
+    </div>
+    <div class="signature-block" style="flex:1;">
+        <div class="signature-line">TESTIGO 2</div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Machotes Legales — Documento V3 Profesional{% endblock %}</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: letter;
+            margin: 2.5cm 2.5cm 2cm 3cm;
+
+            @bottom-right {
+                content: "Machotes Legales V3 · Uso exclusivo del adquirente · " counter(page);
+                font-size: 8pt;
+                color: #999;
+            }
+        }
+
+        body {
+            font-family: 'Crimson Text', 'Times New Roman', serif;
+            font-size: 13pt;
+            line-height: 1.9;
+            color: #111;
+            background: #fff;
+            max-width: 21.6cm;
+            margin: 0 auto;
+            padding: 2.5cm 2.5cm 2cm 3cm;
+        }
+
+        /* ══════ MARCA DE AGUA V3 ══════ */
+        body::before {
+            content: "CONFIDENCIAL";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-family: 'Inter', sans-serif;
+            font-size: 80pt;
+            font-weight: 700;
+            color: rgba(0, 0, 0, 0.03);
+            white-space: nowrap;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* ══════ HEADER V3 ══════ */
+        .header-v3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #111;
+        }
+
+        .header-v3-left h1 {
+            font-size: 16pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .header-v3-left .subtitle-v3 {
+            font-size: 9pt;
+            color: #555;
+            line-height: 1.4;
+            max-width: 500px;
+        }
+
+        .header-v3-right {
+            text-align: right;
+            flex-shrink: 0;
+            margin-left: 20px;
+        }
+
+        .tier-badge-v3 {
+            display: inline-block;
+            font-family: 'Inter', sans-serif;
+            font-size: 7.5pt;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+            color: #fff;
+            background: linear-gradient(135deg, #1e3a5f, #2d5a8e);
+            padding: 4px 12px;
+            border-radius: 3px;
+            margin-bottom: 5px;
+        }
+
+        .doc-id {
+            font-family: 'Inter', sans-serif;
+            font-size: 8pt;
+            color: #888;
+            display: block;
+        }
+
+        /* ══════ ESTRATEGIA LEGAL (exclusivo V3) ══════ */
+        .estrategia-box {
+            background: linear-gradient(135deg, #1e3a5f08, #1e3a5f03);
+            border: 1px solid #1e3a5f30;
+            border-left: 4px solid #1e3a5f;
+            padding: 14px 18px;
+            margin: 20px 0;
+            font-size: 11pt;
+        }
+
+        .estrategia-titulo {
+            font-family: 'Inter', sans-serif;
+            font-size: 7.5pt;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #1e3a5f;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .estrategia-item {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 6px;
+            align-items: flex-start;
+        }
+
+        .estrategia-badge {
+            font-family: 'Inter', sans-serif;
+            font-size: 7.5pt;
+            font-weight: 600;
+            padding: 2px 7px;
+            border-radius: 2px;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        .badge-riesgo-alto {
+            background: #fee2e2;
+            color: #b91c1c;
+        }
+
+        .badge-riesgo-medio {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .badge-probabilidad {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .badge-plazo {
+            background: #e0e7ff;
+            color: #3730a3;
+        }
+
+        /* ══════ SECCIONES ══════ */
+        .section-title {
+            font-size: 12.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .section-title.numbered {
+            color: #1e3a5f;
+        }
+
+        /* ══════ JURISPRUDENCIA ══════ */
+        .jurisprudencia-box {
+            background: #f7f5f0;
+            border-left: 4px solid #c9a84c;
+            padding: 12px 16px;
+            margin: 15px 0 20px 1.5cm;
+            font-size: 10.5pt;
+            line-height: 1.5;
+        }
+
+        .jurisprudencia-titulo {
+            font-family: 'Inter', sans-serif;
+            font-size: 8pt;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            color: #8b7432;
+            margin-bottom: 8px;
+        }
+
+        .jurisprudencia-texto {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .jurisprudencia-texto em {
+            font-style: italic;
+            color: #1a365d;
+        }
+
+        /* ══════ TEXTO ══════ */
+        .indent {
+            text-indent: 1.5cm;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .text-bold {
+            font-weight: 700;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .double-space {
+            line-height: 2.0;
+        }
+
+        .meta-line {
+            text-align: right;
+            font-size: 12pt;
+            margin-bottom: 20px;
+        }
+
+        .destinatario {
+            font-size: 12pt;
+            margin-bottom: 3px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .concepto-violacion {
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .concepto-violacion h3 {
+            font-size: 12pt;
+            font-weight: 700;
+            color: #1e3a5f;
+            margin-bottom: 3px;
+        }
+
+        .concepto-violacion h4 {
+            font-size: 11pt;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        /* ══════ FIRMAS ══════ */
+        .signature-block {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .signature-line {
+            display: inline-block;
+            min-width: 280px;
+            border-top: 1px solid #000;
+            padding-top: 8px;
+            font-size: 11pt;
+            font-weight: 600;
+        }
+
+        /* ══════ CONFIDENCIALIDAD V3 ══════ */
+        .confidencialidad-v3 {
+            margin-top: 50px;
+            padding: 14px 18px;
+            border: 1px solid #1e3a5f30;
+            background: linear-gradient(135deg, #1e3a5f08, transparent);
+            font-family: 'Inter', sans-serif;
+            font-size: 7.5pt;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        .confidencialidad-v3 strong {
+            color: #1e3a5f;
+        }
+
+        /* ══════ TABLAS ══════ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        td,
+        th {
+            padding: 6px 8px;
+            font-size: 12pt;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            .tier-badge-v3,
+            .jurisprudencia-box,
+            .estrategia-box,
+            .confidencialidad-v3 {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    {% block content %}{% endblock %}
+</body>
+
+</html>

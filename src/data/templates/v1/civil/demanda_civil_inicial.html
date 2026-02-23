@@ -1,0 +1,94 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Demanda Civil Inicial</h1>
+    <p class="subtitle">Artículos 255-258 del Código Federal de Procedimientos Civiles</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto |
+    default("__ de ________ de 20__") }}</p>
+
+<p class="text-bold">C. JUEZ DE LO CIVIL</p>
+<p class="text-bold">{{ juzgado | default("JUZGADO DE PRIMERA INSTANCIA EN MATERIA CIVIL") }}</p>
+<p>PRESENTE.</p>
+
+<p class="indent text-justify">
+    <strong>{{ actor | default("NOMBRE DEL ACTOR") }}</strong>,
+    por mi propio derecho, señalando como domicilio para oír y recibir notificaciones
+    el ubicado en {{ domicilio_actor | default("_________________________________") }},
+    autorizando para tales efectos a {{ abogado | default("LIC. _________________________________") }},
+    ante usted respetuosamente comparezco para promover:
+</p>
+
+<div class="section-title">JUICIO ORDINARIO CIVIL</div>
+
+<p class="indent text-justify">
+    En contra de <strong>{{ demandado | default("NOMBRE DEL DEMANDADO") }}</strong>,
+    con domicilio en {{ domicilio_demandado | default("_________________________________") }},
+    reclamando las siguientes:
+</p>
+
+<div class="section-title">PRESTACIONES</div>
+
+<p class="indent text-justify">
+    <strong>a)</strong> {{ prestacion_1 | default("El cumplimiento forzoso del contrato celebrado entre las partes con
+    fecha ___ de _______ de 20__.") }}<br>
+    <strong>b)</strong> {{ prestacion_2 | default("El pago de daños y perjuicios causados.") }}<br>
+    <strong>c)</strong> {{ prestacion_3 | default("El pago de gastos y costas que origine el presente juicio.") }}
+</p>
+
+<div class="section-title">HECHOS</div>
+
+<p class="indent text-justify">
+    <strong>1.</strong> — {{ hecho_1 | default("Que el suscrito y el demandado celebraron un contrato de
+    _________________ con fecha ___ de _______ de 20__, mediante el cual se pactaron las siguientes obligaciones:
+    _________________________________.") }}
+</p>
+
+<p class="indent text-justify">
+    <strong>2.</strong> — {{ hecho_2 | default("Que el demandado incumplió con su obligación consistente en
+    _________________________________, a pesar de haber sido requerido en múltiples ocasiones.") }}
+</p>
+
+<p class="indent text-justify">
+    <strong>3.</strong> — {{ hecho_3 | default("Que derivado del incumplimiento del demandado, el suscrito ha resentido
+    los siguientes daños y perjuicios: _________________________________.") }}
+</p>
+
+<div class="section-title">DERECHO</div>
+
+<p class="indent text-justify">
+    Son aplicables al presente caso los artículos {{ fundamentos | default("1793, 1794, 1796, 1824, 1840, 1910, 2104 y
+    2107 del Código Civil Federal") }},
+    así como los artículos 255, 256, 257 y 258 del Código Federal de Procedimientos Civiles.
+</p>
+
+<div class="section-title">PRUEBAS</div>
+
+<p class="indent text-justify">
+    <strong>1. DOCUMENTAL PRIVADA.</strong> — Consistente en {{ prueba_documental | default("el contrato base de la
+    acción.") }}<br>
+    <strong>2. CONFESIONAL.</strong> — A cargo del demandado, quien deberá absolver posiciones.<br>
+    <strong>3. TESTIMONIAL.</strong> — A cargo de los testigos que se ofrecerán oportunamente.<br>
+    <strong>4. PRESUNCIONAL.</strong> — Legal y humana, en todo lo que favorezca a mi representación.
+</p>
+
+<div class="section-title">PUNTOS PETITORIOS</div>
+
+<p class="indent text-justify">
+    <strong>PRIMERO.</strong> — Tenerme por presentado con este escrito, demandando en la vía ordinaria civil.<br>
+    <strong>SEGUNDO.</strong> — Admitir a trámite la presente demanda.<br>
+    <strong>TERCERO.</strong> — Emplazar al demandado en el domicilio señalado.<br>
+    <strong>CUARTO.</strong> — En su oportunidad, dictar sentencia condenando al demandado al pago de las prestaciones
+    reclamadas.
+</p>
+
+<p class="indent text-justify">PROTESTO LO NECESARIO.</p>
+
+<div style="margin-top:50px;">
+    <div class="signature-block">
+        <div class="signature-line">{{ actor | default("EL ACTOR") }}</div>
+    </div>
+</div>
+{% endblock %}

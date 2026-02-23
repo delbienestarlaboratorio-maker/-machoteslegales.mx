@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Machotes Legales — Plantilla Básica{% endblock %}</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 2.5cm 2cm 2cm 3cm;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 12pt;
+            line-height: 1.8;
+            color: #000;
+            max-width: 21.6cm;
+            margin: 0 auto;
+            padding: 2.5cm 2cm 2cm 3cm;
+        }
+
+        h1 {
+            font-size: 14pt;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 10pt;
+            text-align: center;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .meta-line {
+            text-align: right;
+            font-size: 11pt;
+            margin-bottom: 20px;
+        }
+
+        .text-bold {
+            font-weight: bold;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .indent {
+            text-indent: 1.5cm;
+        }
+
+        .double-space {
+            line-height: 2.0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #000;
+        }
+
+        .section-title {
+            font-weight: bold;
+            font-size: 12pt;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .signature-block {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .signature-line {
+            display: inline-block;
+            min-width: 250px;
+            border-top: 1px solid #000;
+            padding-top: 8px;
+            font-size: 11pt;
+        }
+
+        p {
+            margin-bottom: 8px;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    {% block content %}{% endblock %}
+</body>
+
+</html>

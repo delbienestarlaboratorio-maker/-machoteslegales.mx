@@ -1,0 +1,91 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Demanda Ejecutiva Mercantil</h1>
+    <p class="subtitle">Artículos 1391-1414 del Código de Comercio · Ley General de Títulos y Operaciones de Crédito</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+
+<p class="text-bold">C. JUEZ DE LO MERCANTIL EN TURNO EN {{ ciudad | default("_______________") }}</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<p class="indent text-justify">
+    <strong>{{ cliente.nombre | default("NOMBRE DEL ACTOR") }}</strong>, por mi propio derecho,
+    señalando como domicilio para oír y recibir notificaciones <strong>{{ cliente.domicilio |
+        default("_________________________________") }}</strong>,
+    autorizando en términos del artículo 1069 del Código de Comercio a
+    <strong>{{ abogado.nombre | default("_________________________________") }}</strong>,
+    ante Usted respetuosamente comparezco para exponer:
+</p>
+
+<p class="indent text-justify">
+    Por medio del presente, con fundamento en los artículos 1391, 1392 y demás aplicables del Código de Comercio,
+    vengo a demandar en la <strong>VÍA EJECUTIVA MERCANTIL</strong> a
+    <strong>{{ contraparte.nombre | default("NOMBRE DEL DEMANDADO") }}</strong>,
+    con domicilio en {{ contraparte.domicilio | default("_________________________________") }},
+    el pago de las siguientes:
+</p>
+
+<div class="section-title">PRESTACIONES</div>
+<p class="indent text-justify">
+    <strong>a)</strong> El pago de la cantidad de <strong>${{ monto | default("_______________") }} ({{ monto_letra |
+        default("_______________") }} pesos 00/100 M.N.)</strong>,
+    como suerte principal consignada en el título de crédito base de la acción.<br>
+    <strong>b)</strong> El pago de intereses moratorios a razón del {{ tasa_interes | default("___") }}% mensual
+    desde la fecha de vencimiento hasta la total liquidación.<br>
+    <strong>c)</strong> El pago de gastos y costas que origine el presente juicio.
+</p>
+
+<div class="section-title">TÍTULO EJECUTIVO</div>
+<p class="indent text-justify">
+    Sirve de base a la presente acción el <strong>{{ tipo_titulo | default("PAGARÉ") }}</strong> suscrito
+    por el demandado con fecha {{ fecha_titulo | default("_______________") }},
+    con vencimiento al {{ fecha_vencimiento | default("_______________") }},
+    por la cantidad de ${{ monto | default("_______________") }} M.N., el cual se exhibe en original.
+</p>
+
+<div class="section-title">HECHOS</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> {{ hecho_1 | default("Con fecha [fecha], el hoy demandado suscribió a mi favor un pagaré
+    por la cantidad referida, obligándose a pagar en la fecha de vencimiento señalada.") }}
+</p>
+<p class="indent text-justify">
+    <strong>SEGUNDO.-</strong> {{ hecho_2 | default("Llegada la fecha de vencimiento del título de crédito, el demandado
+    no realizó el pago, a pesar de los requerimientos extrajudiciales.") }}
+</p>
+<p class="indent text-justify">
+    <strong>TERCERO.-</strong> {{ hecho_3 | default("El título base de la acción reúne los requisitos del artículo 170
+    de la LGTOC y trae aparejada ejecución conforme al artículo 1391 fracción IV del Código de Comercio.") }}
+</p>
+
+<div class="section-title">DERECHO</div>
+<p class="indent text-justify">
+    Son aplicables los artículos 1391 fracción IV, 1392, 1393, 1394, 1396 y demás relativos del Código de Comercio;
+    170, 171, 174 de la Ley General de Títulos y Operaciones de Crédito.
+</p>
+
+<div class="section-title">PRUEBAS</div>
+<p class="indent text-justify">
+    1. <strong>Documental privada:</strong> Pagaré original que se exhibe.<br>
+    2. <strong>Presuncional legal y humana:</strong> En todo lo que favorezca a mis intereses.<br>
+    3. <strong>Instrumental de actuaciones:</strong> Todo lo que obre en autos.
+</p>
+
+<div class="section-title">PUNTOS PETITORIOS</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Tenerme por presentado con la demanda ejecutiva mercantil.<br>
+    <strong>SEGUNDO.-</strong> Admitir la demanda en la vía y forma propuestas.<br>
+    <strong>TERCERO.-</strong> Ordenar requerimiento de pago al demandado y, en caso de no pagar, embargar bienes
+    suficientes.<br>
+    <strong>CUARTO.-</strong> En su oportunidad, dictar sentencia de remate condenando al pago de las prestaciones
+    reclamadas.
+</p>
+
+<p class="text-center text-bold" style="margin-top:30px;">PROTESTO LO NECESARIO</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA DEL ACTOR") }}</div>
+</div>
+{% endblock %}

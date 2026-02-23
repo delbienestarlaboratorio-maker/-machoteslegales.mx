@@ -1,0 +1,226 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Demanda de Divorcio Incausado</h1>
+    <p class="subtitle-v2">Artículos 266 a 291 del Código Civil Federal · Tesis SCJN sobre libre desarrollo de la
+        personalidad · Jurisprudencia sobre disolución del vínculo matrimonial</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, {{ estado | default("Ciudad de México") }}, a {{
+    fecha_actual_texto }}</p>
+
+<p class="text-bold destinatario">C. JUEZ DE LO FAMILIAR EN TURNO EN {{ ciudad | default("_______________") }}</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                     PROEMIO                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<p class="indent text-justify">
+    <strong>{{ cliente.nombre | default("NOMBRE COMPLETO DEL PROMOVENTE") }}</strong>, mexicano(a), mayor de edad,
+    por mi propio derecho, señalando como domicilio para oír y recibir todo tipo de notificaciones el ubicado en
+    <strong>{{ cliente.domicilio | default("Calle, Número, Colonia, Alcaldía/Municipio, C.P., Estado") }}</strong>,
+    autorizando en los términos del artículo 1069 del Código de Procedimientos Civiles al licenciado(a)
+    <strong>{{ abogado.nombre | default("NOMBRE DEL ABOGADO") }}</strong>, con cédula profesional
+    <strong>{{ abogado.cedula | default("_______________") }}</strong>;
+    ante Usted, con el debido respeto, comparezco para exponer:
+</p>
+
+<p class="indent text-justify">
+    Que por medio del presente escrito, con fundamento en lo dispuesto por los artículos
+    <strong>266, 267 y demás aplicables del Código Civil para el Distrito Federal</strong> (o el Código Civil
+    del Estado de {{ estado | default("___") }}), así como el artículo <strong>1° Constitucional</strong>
+    y la jurisprudencia de la Suprema Corte de Justicia de la Nación respecto al
+    <strong>derecho al libre desarrollo de la personalidad</strong>, vengo a solicitar la
+    <strong>DISOLUCIÓN DEL VÍNCULO MATRIMONIAL (DIVORCIO INCAUSADO)</strong> que me une con
+    <strong>{{ conyuge.nombre | default("NOMBRE COMPLETO DEL CÓNYUGE") }}</strong>.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--              I. DATOS DEL MATRIMONIO                -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">I. DATOS DEL MATRIMONIO</div>
+<table class="tabla-calculos">
+    <tbody>
+        <tr>
+            <td><strong>Fecha de matrimonio:</strong></td>
+            <td>{{ fecha_matrimonio | default("_______________") }}</td>
+        </tr>
+        <tr>
+            <td><strong>Lugar de celebración:</strong></td>
+            <td>{{ lugar_matrimonio | default("_______________") }}</td>
+        </tr>
+        <tr>
+            <td><strong>Acta de matrimonio:</strong></td>
+            <td>Acta número {{ num_acta | default("___") }}, Libro {{ libro | default("___") }}, Registro Civil de {{
+                municipio_registro | default("___") }}</td>
+        </tr>
+        <tr>
+            <td><strong>Régimen patrimonial:</strong></td>
+            <td>{{ regimen | default("Sociedad conyugal / Separación de bienes") }}</td>
+        </tr>
+        <tr>
+            <td><strong>Hijos menores:</strong></td>
+            <td>{{ hijos_menores | default("Sí / No — Señalar nombre y edad de cada uno") }}</td>
+        </tr>
+        <tr>
+            <td><strong>Domicilio conyugal:</strong></td>
+            <td>{{ domicilio_conyugal | default("_______________") }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                  II. HECHOS                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">II. MANIFESTACIÓN DE LA VOLUNTAD</div>
+<p class="indent text-justify double-space">
+    <strong>PRIMERO.-</strong> {{ hecho_1 | default("Con fecha [fecha de matrimonio], contraje matrimonio civil con
+    [nombre del cónyuge] ante el Oficial del Registro Civil de [municipio], quedando registrado bajo el acta
+    número [número].") }}
+</p>
+<p class="indent text-justify double-space">
+    <strong>SEGUNDO.-</strong> {{ hecho_2 | default("Es mi voluntad libre, personal y unilateral disolver el vínculo
+    matrimonial que me une con mi cónyuge, sin necesidad de expresar causa alguna, en ejercicio de mi derecho
+    fundamental al libre desarrollo de la personalidad, reconocido por la Suprema Corte de Justicia de la Nación.") }}
+</p>
+<p class="indent text-justify double-space">
+    <strong>TERCERO.-</strong> {{ hecho_3 | default("Del matrimonio [se procrearon / no se procrearon] hijos menores
+    de edad. [En caso afirmativo: Los menores [nombres] de [edades] años de edad, respecto de quienes se propone
+    un régimen de guarda, custodia y convivencia en la propuesta de convenio adjunta.]") }}
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--    III. FUNDAMENTO CONSTITUCIONAL Y CONVENCIONAL   -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">III. DERECHO AL LIBRE DESARROLLO DE LA PERSONALIDAD</div>
+<p class="indent text-justify double-space">
+    La Suprema Corte de Justicia de la Nación, al resolver la <strong>Contradicción de Tesis 73/2014</strong>,
+    reconoció que el derecho al libre desarrollo de la personalidad comprende la libertad de cada individuo de
+    elegir su estado civil, de tal manera que <strong>exigir la acreditación de causales de divorcio</strong>
+    constituye una <strong>restricción inconstitucional</strong> a este derecho fundamental.
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">JURISPRUDENCIA FUNDAMENTAL:</p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: P./J. 28/2015 (10a.)</strong> — Pleno — SCJN<br>
+        Rubro: <em>"DIVORCIO NECESARIO. EL RÉGIMEN DE DISOLUCIÓN DEL MATRIMONIO QUE EXIGE LA ACREDITACIÓN DE CAUSALES,
+            VULNERA EL DERECHO AL LIBRE DESARROLLO DE LA PERSONALIDAD (CÓDIGOS DE MORELOS, VERACRUZ Y LEGISLACIONES
+            ANÁLOGAS)."</em><br>
+        Gaceta del Semanario Judicial de la Federación, Décima Época, Libro 20, julio de 2015, Tomo I, p. 54.
+    </p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: 1a./J. 28/2015 (10a.)</strong> — Primera Sala — SCJN<br>
+        Rubro: <em>"DIVORCIO SIN EXPRESIÓN DE CAUSA. NO SE REQUIERE QUE EL CÓNYUGE SOLICITANTE DEMUESTRE QUE EXISTE
+            UNA CAUSA PARA DISOLVER EL VÍNCULO MATRIMONIAL, BASTA SU VOLUNTAD DE NO SEGUIR CASADO."</em>
+    </p>
+</div>
+
+<p class="indent text-justify">
+    Adicionalmente, este derecho encuentra sustento en los artículos <strong>1° y 4° de la CPEUM</strong>,
+    <strong>11.2 de la Convención Americana sobre Derechos Humanos</strong> y <strong>17 del Pacto Internacional
+        de Derechos Civiles y Políticos</strong>, que protegen la vida privada y el derecho a la familia.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--           IV. PROPUESTA DE CONVENIO                 -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">IV. PROPUESTA DE CONVENIO (ART. 267 CC)</div>
+<p class="indent text-justify">
+    En cumplimiento al artículo 267 del Código Civil, presento la siguiente <strong>propuesta de convenio</strong>
+    que regule las consecuencias de la disolución del matrimonio:
+</p>
+
+<p class="indent text-justify">
+    <strong>A) GUARDA Y CUSTODIA:</strong> {{ convenio_custodia | default("Se propone que la guarda y custodia de
+    los menores [nombres] quede a cargo de [madre/padre], garantizando el interés superior del menor conforme al
+    artículo 4° constitucional y la Convención sobre los Derechos del Niño.") }}
+</p>
+<p class="indent text-justify">
+    <strong>B) RÉGIMEN DE CONVIVENCIA:</strong> {{ convenio_convivencia | default("Se propone un régimen de convivencia
+    que permita al progenitor no custodio convivir con los menores los fines de semana alternados [viernes a domingo]
+    y periodos vacacionales compartidos equitativamente.") }}
+</p>
+<p class="indent text-justify">
+    <strong>C) PENSIÓN ALIMENTICIA:</strong> {{ convenio_pension | default("Se propone una pensión alimenticia del
+    [30-40]% de los ingresos del deudor alimentario, conforme a los artículos 311, 311 Bis y 314 del Código Civil,
+    que comprenda alimentos, vestido, habitación, asistencia médica y educación.") }}
+</p>
+<p class="indent text-justify">
+    <strong>D) LIQUIDACIÓN DE BIENES:</strong> {{ convenio_bienes | default("Se propone la liquidación de la sociedad
+    conyugal conforme a las capitulaciones matrimoniales, distribuyendo en partes iguales los bienes adquiridos
+    durante el matrimonio. [O bien: Al haberse casado bajo separación de bienes, cada parte conserva los bienes
+    de su propiedad.]") }}
+</p>
+<p class="indent text-justify">
+    <strong>E) COMPENSACIÓN:</strong> {{ convenio_compensacion | default("Se solicita la compensación prevista en el
+    artículo 267 fracción VI del Código Civil, a favor del cónyuge que se dedicó preponderantemente al hogar y
+    al cuidado de los hijos, conforme a los años de matrimonio.") }}
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                  V. PRUEBAS                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">V. PRUEBAS</div>
+<p class="indent text-justify">
+    <strong>1. DOCUMENTAL PÚBLICA.-</strong> Copia certificada del acta de matrimonio (ANEXO 1).
+</p>
+<p class="indent text-justify">
+    <strong>2. DOCUMENTAL PÚBLICA.-</strong> {{ prueba_actas_nacimiento | default("Copia certificada de las actas de
+    nacimiento de los hijos menores (ANEXO 2).") }}
+</p>
+<p class="indent text-justify">
+    <strong>3. PRESUNCIONAL LEGAL Y HUMANA.-</strong> En todo cuanto favorezca a mis intereses.
+</p>
+<p class="indent text-justify">
+    <strong>4. INSTRUMENTAL DE ACTUACIONES.-</strong> Todo lo que obre en autos.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--            VI. PUNTOS PETITORIOS                    -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">VI. PUNTOS PETITORIOS</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Tenerme por presentado en los términos del presente escrito.
+</p>
+<p class="indent text-justify">
+    <strong>SEGUNDO.-</strong> Admitir la solicitud de divorcio incausado.
+</p>
+<p class="indent text-justify">
+    <strong>TERCERO.-</strong> Emplazar al cónyuge demandado para que manifieste lo que a su derecho convenga
+    respecto de la propuesta de convenio.
+</p>
+<p class="indent text-justify">
+    <strong>CUARTO.-</strong> En su oportunidad, <strong>DECRETAR LA DISOLUCIÓN DEL VÍNCULO MATRIMONIAL</strong>
+    y ordenar la anotación correspondiente ante el Registro Civil.
+</p>
+<p class="indent text-justify">
+    <strong>QUINTO.-</strong> Aprobar el convenio en los términos propuestos, o en su defecto, resolver las
+    consecuencias inherentes al divorcio conforme a derecho.
+</p>
+
+<p class="text-center text-bold" style="margin-top:40px;">
+    PROTESTO LO NECESARIO
+</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ cliente.nombre | default("NOMBRE COMPLETO Y FIRMA DEL PROMOVENTE") }}</div>
+</div>
+
+<div class="confidencialidad-v2">
+    <p><strong>AVISO DE CONFIDENCIALIDAD — DOCUMENTO V2 NEGOCIOS</strong></p>
+    <p>Este documento fue generado por Machotes Legales® y contiene fundamentación legal profesional,
+        jurisprudencia vigente sobre libre desarrollo de la personalidad y argumentación especializada.
+        Prohibida su reproducción, distribución o venta sin autorización.</p>
+    <p>Licencia: {{ license_id | default("TLEX-V2-XXXXXX") }} · Usuario: {{ license_user | default("___") }}</p>
+</div>
+{% endblock %}

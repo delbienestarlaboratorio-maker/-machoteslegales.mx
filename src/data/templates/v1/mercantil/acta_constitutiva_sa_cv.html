@@ -1,0 +1,89 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Acta Constitutiva de Sociedad Anónima de Capital Variable</h1>
+    <p class="subtitle">Ley General de Sociedades Mercantiles · Arts. 6, 87-206</p>
+</div>
+
+<p class="indent text-justify">
+    En {{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, siendo las {{ hora | default("___") }} horas
+    del día {{ fecha_actual_texto }}, ante la fe del Notario Público número {{ num_notario | default("___") }},
+    {{ nombre_notario | default("_______________") }}, comparecen los señores:
+</p>
+
+<div class="section-title">SOCIOS FUNDADORES</div>
+<p class="indent text-justify">
+    1. <strong>{{ socio_1 | default("NOMBRE COMPLETO") }}</strong>, {{ nacionalidad_1 | default("mexicano(a)") }},
+    RFC: {{ rfc_1 | default("___") }}, aportación: ${{ aporte_1 | default("___") }}<br>
+    2. <strong>{{ socio_2 | default("NOMBRE COMPLETO") }}</strong>, {{ nacionalidad_2 | default("mexicano(a)") }},
+    RFC: {{ rfc_2 | default("___") }}, aportación: ${{ aporte_2 | default("___") }}<br>
+    {{ socios_adicionales | default("") }}
+</p>
+
+<p class="indent text-justify">
+    Quienes manifiestan su voluntad de constituir una <strong>Sociedad Anónima de Capital Variable</strong>
+    conforme a la LGSM, bajo las siguientes:
+</p>
+
+<div class="section-title">CLÁUSULAS</div>
+<p class="indent text-justify"><strong>PRIMERA. DENOMINACIÓN.</strong> La sociedad se denominará
+    <strong>"{{ nombre_sociedad | default("_______________") }}, S.A. de C.V."</strong>
+</p>
+
+<p class="indent text-justify"><strong>SEGUNDA. DOMICILIO.</strong> {{ domicilio_social |
+    default("_________________________________") }}</p>
+
+<p class="indent text-justify"><strong>TERCERA. OBJETO SOCIAL.</strong> {{ objeto_social | default("a) La compraventa,
+    distribución, importación y exportación de [productos/servicios]; b) La prestación de servicios de [tipo]; c) Y en
+    general, la realización de todos los actos lícitos de comercio.") }}</p>
+
+<p class="indent text-justify"><strong>CUARTA. DURACIÓN.</strong> {{ duracion | default("99 (noventa y nueve) años") }}
+    a partir de la inscripción en el Registro Público de Comercio.</p>
+
+<p class="indent text-justify"><strong>QUINTA. CAPITAL SOCIAL.</strong> Capital mínimo fijo: ${{ capital_fijo |
+    default("50,000.00") }} M.N.
+    Capital variable: ilimitado. Representado por {{ num_acciones | default("___") }} acciones ordinarias, nominativas,
+    con valor nominal de ${{ valor_accion | default("___") }} cada una.</p>
+
+<p class="indent text-justify"><strong>SEXTA. ADMINISTRACIÓN.</strong> La sociedad será administrada por {{ tipo_admin |
+    default("un Administrador Único / un Consejo de Administración") }}.
+    Se designa como {{ cargo_admin | default("Administrador Único") }} a <strong>{{ administrador |
+        default("_______________") }}</strong>.</p>
+
+<p class="indent text-justify"><strong>SÉPTIMA. VIGILANCIA.</strong> Se designa como Comisario a <strong>{{ comisario |
+        default("_______________") }}</strong>.</p>
+
+<p class="indent text-justify"><strong>OCTAVA. EJERCICIO SOCIAL.</strong> Del 1° de enero al 31 de diciembre de cada
+    año.</p>
+
+<p class="indent text-justify"><strong>NOVENA. ASAMBLEAS.</strong> Las asambleas generales de accionistas serán
+    ordinarias y extraordinarias, conforme a los artículos 179 a 206 de la LGSM.</p>
+
+<p class="indent text-justify"><strong>DÉCIMA. DISOLUCIÓN Y LIQUIDACIÓN.</strong> Conforme a los artículos 229 y 234 de
+    la LGSM.</p>
+
+<div class="section-title">CLÁUSULAS TRANSITORIAS</div>
+<p class="indent text-justify">
+    <strong>PRIMERA.-</strong> Se faculta al Administrador para gestionar la inscripción ante el Registro Público de
+    Comercio, SAT, IMSS e INFONAVIT.<br>
+    <strong>SEGUNDA.-</strong> Los socios otorgan poder general amplio al Administrador para actos de dominio,
+    administración y para pleitos y cobranzas.
+</p>
+
+<p class="indent text-justify" style="margin-top:20px;">
+    Leída la presente acta, los comparecientes la ratifican y firman.
+</p>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:30px;">
+    <div class="signature-block">
+        <div class="signature-line">{{ socio_1 | default("SOCIO 1") }}</div>
+    </div>
+    <div class="signature-block">
+        <div class="signature-line">{{ socio_2 | default("SOCIO 2") }}</div>
+    </div>
+    <div class="signature-block">
+        <div class="signature-line">{{ nombre_notario | default("NOTARIO PÚBLICO") }}</div>
+    </div>
+</div>
+{% endblock %}

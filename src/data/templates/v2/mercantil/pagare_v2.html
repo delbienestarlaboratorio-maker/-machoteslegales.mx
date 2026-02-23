@@ -1,0 +1,113 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Pagaré Mercantil Blindado</h1>
+    <p class="subtitle-v2">Arts. 170 al 174 LGTOC · Interés Moratorio Regulado · Cláusula de Renuncia de Fuero</p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                     PAGARÉ                          -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div
+    style="border: 4px double #1f2937; padding: 40px; border-radius: 8px; margin-top: 30px; background-color: #fafafa; color: #111;">
+
+    <div
+        style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #111; padding-bottom: 10px; margin-bottom: 20px;">
+        <div>
+            <span style="font-weight: bold; font-size: 1.2rem;">P A G A R É</span><br>
+            <span style="font-size: 0.8rem;">No. {{ numero_pagare | default("1/1") }}</span>
+        </div>
+        <div style="text-align: right;">
+            <span style="font-weight: bold; font-size: 1.2rem;">BUENO POR: ${{ monto | default("_______________")
+                }}</span><br>
+            <span style="font-size: 0.8rem;">Moneda Nacional</span>
+        </div>
+    </div>
+
+    <p style="text-align: right; margin-bottom: 30px;">
+        En {{ lugar_suscripcion | default("______________") }}, a {{ fecha_suscripcion | default("______________") }}.
+    </p>
+
+    <p style="line-height: 1.8; text-align: justify;">
+        Por este <strong>PAGARÉ</strong> me (nos) obligo(amos) y prometo(emos) pagar incondicionalmente a la orden de
+        <strong>{{ beneficiario.nombre | default("______________________________") }}</strong>, o de quien sus derechos
+        represente, en el domicilio ubicado en {{ lugar_pago | default("______________________________") }}, o en
+        cualquier otro lugar en que se me requiera el pago, la cantidad cierta y líquida de:
+    </p>
+
+    <p
+        style="text-align: center; font-weight: bold; font-size: 1.1rem; background-color: #e5e7eb; padding: 10px; margin: 20px 0;">
+        ${{ monto | default("_______________") }} ({{ monto_letra | default("______________________________") }} PESOS
+        00/100 M.N.)
+    </p>
+
+    <p style="line-height: 1.8; text-align: justify;">
+        El pago de la presente suma de dinero deberá realizarse, a más tardar, el día <strong>{{ fecha_vencimiento |
+            default("______________") }}</strong>.
+    </p>
+
+    <p style="line-height: 1.8; text-align: justify;">
+        De no efectuarse el pago puntual a su vencimiento, el presente documento generará un <strong>interés
+            moratorio</strong> a razón del <strong>{{ tasa_interes | default("____") }}% mensual</strong> sobre saldos
+        insolutos, pagadero conjuntamente con el capital principal, desde la fecha de constitución en mora y hasta la
+        total liquidación del adeudo, en los términos previstos por el artículo 174, segundo párrafo, de la Ley General
+        de Títulos y Operaciones de Crédito (LGTOC). Dicha tasa se ha pactado de manera libre y voluntaria.
+    </p>
+
+    <p
+        style="line-height: 1.8; text-align: justify; font-size: 0.85rem; border-left: 3px solid #111; padding-left: 15px; margin-top: 20px;">
+        Para todos los efectos legales a que haya lugar en lo relativo a la interpretación, cumplimiento y ejecución del
+        presente pagaré, el suscriptor renuncia expresamente al fuero que pudiera corresponderle por razón de su
+        domicilio presente o futuro, sometiéndose incondicionalmente a la jurisdicción y competencia de los Tribunales
+        correspondientes a la jurisdicción mercantil de <strong>{{ jurisdiccion | default("_______________")
+            }}</strong>.
+    </p>
+
+    <div style="margin-top: 50px; display: flex; justify-content: space-between;">
+        <div style="width: 45%;">
+            <p style="font-weight: bold; border-bottom: 1px solid #111; margin-bottom: 5px;">DATOS DEL SUSCRIPTOR:</p>
+            <p style="font-size: 0.9rem;">
+                <strong>Nombre:</strong> {{ suscriptor.nombre | default("_______________") }}<br>
+                <strong>Domicilio:</strong> {{ suscriptor.domicilio | default("_______________") }}<br>
+                <strong>Teléfono:</strong> {{ suscriptor.telefono | default("_______________") }}
+            </p>
+            <div style="text-align: center; margin-top: 50px;">
+                <p style="border-top: 1px solid #111; padding-top: 5px; font-weight: bold; font-size: 0.9rem;">FIRMA DEL
+                    SUSCRIPTOR</p>
+            </div>
+        </div>
+
+        <div style="width: 45%;">
+            <p style="font-weight: bold; border-bottom: 1px solid #111; margin-bottom: 5px;">DATOS DEL AVAL (OPCIONAL):
+            </p>
+            <p style="font-size: 0.9rem;"><strong>Al dar mi firma como aval, me constituyo en deudor solidario de la
+                    obligación contenida en este documento.</strong></p>
+            <p style="font-size: 0.9rem;">
+                <strong>Nombre:</strong> {{ aval.nombre | default("_______________") }}<br>
+                <strong>Domicilio:</strong> {{ aval.domicilio | default("_______________") }}
+            </p>
+            <div style="text-align: center; margin-top: 27px;">
+                <p style="border-top: 1px solid #111; padding-top: 5px; font-weight: bold; font-size: 0.9rem;">FIRMA DEL
+                    AVAL</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--        FUNDAMENTO LEGAL (PARA LA VERSIÓN WEB)       -->
+<!-- ═══════════════════════════════════════════════════ -->
+<br><br>
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">JURISPRUDENCIA SOBRE INTERÉS MORATORIO (CONTROL DE USURA):</p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: 1a./J. 46/2014 (10a.)</strong> — SCJN. Al establecerse expresamente que el interés pactado no
+        resulta abusivo dadas las condiciones actuales del mercado al momento de suscripción, el presente documento
+        cumple con el control de usura estipulado en la Constitución (Art. 21 de la Convención Americana sobre Derechos
+        Humanos).
+    </p>
+</div>
+
+{% endblock %}

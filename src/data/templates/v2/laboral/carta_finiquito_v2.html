@@ -1,0 +1,158 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Convenio de Terminación de Relación Laboral y Finiquito</h1>
+    <p class="subtitle-v2">Arts. 33, 53 fracc. I, y 987 de la Ley Federal del Trabajo · Cláusula de no adeudo mutuo</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, a {{ fecha_actual_texto }}</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                     PROEMIO                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<p class="indent text-justify">
+    CONVENIO DE TERMINACIÓN VOLUNTARIA DE LA RELACIÓN DE TRABAJO Y FINIQUITO, QUE CELEBRAN POR UNA PARTE LA EMPRESA
+    <strong>{{ empresa.nombre | default("NOMBRE COMPLETO / RAZÓN SOCIAL") }}</strong> A LA QUE EN LO SUCESIVO SE
+    DENOMINARÁ "EL PATRÓN", REPRESENTADA POR EL C. <strong>{{ empresa.representante | default("NOMBRE DEL REPRESENTANTE
+        LEGAL") }}</strong>; Y POR LA OTRA PARTE EL C. <strong>{{ trabajador.nombre | default("NOMBRE COMPLETO DEL
+        TRABAJADOR") }}</strong>, A QUIEN EN LO SUCESIVO SE DENOMINARÁ "EL TRABAJADOR", AL TENOR DE LOS SIGUIENTES
+    ANTECEDENTES Y CLÁUSULAS:
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                I. ANTECEDENTES                      -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">I. DECLARACIONES Y ANTECEDENTES</div>
+<p class="indent text-justify double-space">
+    <strong>PRIMERO.-</strong> Declara "EL TRABAJADOR" haber ingresado a prestar sus servicios personales y subordinados
+    para "EL PATRÓN" con fecha <strong>{{ fecha_ingreso | default("_______________") }}</strong>.
+</p>
+<p class="indent text-justify double-space">
+    <strong>SEGUNDO.-</strong> Que la última categoría desempeñada por "EL TRABAJADOR" fue la de <strong>{{ puesto |
+        default("_______________") }}</strong>, percibiendo un último salario diario integrado de <strong>${{
+        salario_diario | default("___") }} M.N.</strong>
+</p>
+<p class="indent text-justify double-space">
+    <strong>TERCERO.-</strong> Que es voluntad libre y espontánea de "EL TRABAJADOR" dar por <strong>terminada
+        voluntariamente</strong> su relación laboral que le unía con "EL PATRÓN", renunciando irrevocablemente a su
+    empleo con base en la fracción I del artículo 53 de la Ley Federal del Trabajo, con fecha de efectividad al
+    <strong>{{ fecha_terminacion | default("_______________") }}</strong>.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                   II. CLÁUSULAS                     -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">II. CLÁUSULAS Y PAGO DE FINIQUITO</div>
+
+<p class="indent text-justify double-space">
+    <strong>PRIMERA.-</strong> Ambas partes acuerdan dar por terminada la relación laboral desde el día {{
+    fecha_terminacion | default("___") }}, reconociendo que no existió riesgo de trabajo ni enfermedad profesional
+    alguna.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>SEGUNDA.-</strong> En este acto "EL PATRÓN" entrega a "EL TRABAJADOR" y éste recibe a su entera conformidad,
+    el pago por la cantidad total líquida de <strong>${{ total_finiquito | default("___") }} M.N. ({{
+        total_finiquito_letra | default("___ PESOS M.N.") }})</strong>, que cubre en forma proporcional y total todos
+    los conceptos legales devengados:
+</p>
+
+<table class="tabla-calculos">
+    <thead>
+        <tr>
+            <th>Concepto de Finiquito</th>
+            <th>Días / Proporcionalidad</th>
+            <th>Monto Pagado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Salarios devengados no pagados</td>
+            <td>{{ dias_salario | default("___") }} días</td>
+            <td>${{ monto_salarios | default("___") }}</td>
+        </tr>
+        <tr>
+            <td>Aguinaldo proporcional</td>
+            <td>{{ proporcion_aguinaldo | default("___") }} días</td>
+            <td>${{ monto_aguinaldo | default("___") }}</td>
+        </tr>
+        <tr>
+            <td>Vacaciones proporcionales</td>
+            <td>{{ proporcion_vacaciones | default("___") }} días</td>
+            <td>${{ monto_vacaciones | default("___") }}</td>
+        </tr>
+        <tr>
+            <td>Prima vacacional (25%)</td>
+            <td>Sobre vacaciones pagadas</td>
+            <td>${{ monto_prima_v | default("___") }}</td>
+        </tr>
+        {{ fila_prima_antiguedad | default("
+        <tr>
+            <td>Prima de Antigüedad (Art. 162 LFT)</td>
+            <td>Aplicable por convenio voluntario / 15+ años</td>
+            <td>$[MONTO_PRIMA]</td>
+        </tr>
+        ") }}
+        {{ fila_gratificacion | default("
+        <tr>
+            <td>Gratificación extraordinaria de término</td>
+            <td>Indemnización convenida voluntaria</td>
+            <td>$[MONTO_GRATIFICACION]</td>
+        </tr>
+        ") }}
+    </tbody>
+</table>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">CUMPLIMIENTO DE PROTECCIÓN AL TRABAJADOR:</p>
+    <p class="jurisprudencia-texto">
+        En estricto apego al artículo 33 de la Ley Federal del Trabajo, el presente convenio contiene una relación
+        circunstanciada de los hechos que lo motiven y de los derechos que contiene. No implica renuncia de derechos
+        (pues incluye gratificación o pago total proporcional), haciéndose nula únicamente cualquier cláusula o
+        prestación que menoscabe las prerrogativas legales inderogables del trabajador.
+    </p>
+</div>
+
+<p class="indent text-justify double-space">
+    <strong>TERCERA.- (AMPLIO FINIQUITO):</strong> "EL TRABAJADOR" reconoce expresa y pormenorizadamente que durante el
+    tiempo que prestó sus servicios profesionales no sufrió riesgo laboral alguno. Manifiesta que siempre le fueron
+    liquidados sus salarios ordinarios, extraordinarios, descansos y vacaciones oportunamente, por lo que otorga en
+    favor de "EL PATRÓN", al momento de firmar, <strong>EL FINIQUITO MÁS AMPLIO QUE EN DERECHO PROCEDA</strong>,
+    reservándose el patrón el mismo derecho respecto al empleado de no adeudo mutuo alguno ni material ni financiero.
+</p>
+
+
+<p class="indent text-justify double-space">
+    <strong>CUARTA.-</strong> Las partes convienen en acudir, previa cita y en cualquier momento, ante la presidencia
+    del <strong>Tribunal Laboral competente o el Centro Federal / Local de Conciliación y Registro Laboral</strong> para
+    la formal ratificación y sanción del presente convenio a efecto de elevarlo a categoría de laudo ejecutoriado (Art.
+    987 LFT).
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                    CIERRE                           -->
+<!-- ═══════════════════════════════════════════════════ -->
+<p class="indent text-justify" style="margin-top: 30px;">
+    Leído lo anterior, se firma al calce por triplicado en {{ ciudad | default("______________") }}, quedando una copia
+    original en poder de "EL TRABAJADOR".
+</p>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:40px;">
+    <div class="signature-block">
+        <div class="signature-line">{{ empresa.representante | default("REPRESENTANTE LEGAL") }}<br>EL PATRÓN</div>
+    </div>
+    <div class="signature-block">
+        <div class="signature-line">{{ trabajador.nombre | default("NOMBRE TRABAJADOR") }}<br>EL TRABAJADOR</div>
+    </div>
+</div>
+
+<div class="confidencialidad-v2">
+    <p><strong>AVISO V2 NEGOCIOS — CONVENIO LABORAL BLINDADO</strong></p>
+    <p>Redacción profesional estructurada para ratificarse en Centros de Conciliación y Registro Laboral. Incluye
+        desglose pormenorizado (Art. 33 LFT) previniendo demandas por nulidad de finiquito. Protege legalmente contra
+        futuras acciones sobre vacaciones y aguinaldo.</p>
+</div>
+{% endblock %}

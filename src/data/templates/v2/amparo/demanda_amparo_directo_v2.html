@@ -1,0 +1,170 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Demanda de Amparo Directo</h1>
+    <p class="subtitle-v2">Arts. 170-191 Ley de Amparo · Jurisprudencia sobre suplencia de la queja y violaciones
+        procesales</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, {{ estado | default("Ciudad de México") }}, a {{
+    fecha_actual_texto }}</p>
+
+<p class="text-bold destinatario">H. TRIBUNAL COLEGIADO EN MATERIA {{ materia | default("CIVIL/LABORAL/ADMINISTRATIVA")
+    }} DEL {{ circuito | default("___") }} CIRCUITO EN TURNO</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                     PROEMIO                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<p class="indent text-justify">
+    <strong>{{ quejoso.nombre | default("NOMBRE COMPLETO DEL QUEJOSO") }}</strong>, mexicano(a), mayor de edad,
+    promoviendo por mi propio derecho (o en mi carácter de representante legal de ___), con el carácter de parte {{
+    calidad_parte | default("actora/demandada") }} en el juicio de origen, señalando como domicilio para oír y recibir
+    notificaciones el ubicado en <strong>{{ quejoso.domicilio | default("Calle, Número, Colonia, C.P., Estado")
+        }}</strong>, autorizando en los amplios términos del artículo 12 de la Ley de Amparo a los Licenciados en
+    Derecho <strong>{{ abogado.nombre | default("NOMBRE DEL ABOGADO") }}</strong> con cédula profesional <strong>{{
+        abogado.cedula | default("___") }}</strong>; ante este H. Tribunal Colegiado, comparezco a exponer:
+</p>
+
+<p class="indent text-justify">
+    Que por medio del presente escrito y estando en tiempo y forma, con fundamento en lo dispuesto por los artículos
+    <strong>103, fracción I, y 107, fracciones III, inciso a), y V de la Constitución Política de los Estados Unidos
+        Mexicanos; y 170, 171, 172, 175 y demás relativos de la Ley de Amparo</strong>, vengo a solicitar el
+    <strong>AMPARO Y PROTECCIÓN DE LA JUSTICIA FEDERAL</strong> en contra de los actos y autoridades que a continuación
+    señalo.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--             I. REQUISITOS DEL ART. 175              -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">I. DATOS DEL QUEJOSO Y TERCERO INTERESADO</div>
+<p class="indent text-justify">
+    <strong>1. NOMBRE Y DOMICILIO DEL QUEJOSO:</strong> Han quedado debidamente señalados en el proemio de la presente
+    demanda.
+</p>
+<p class="indent text-justify">
+    <strong>2. NOMBRE Y DOMICILIO DEL TERCERO INTERESADO:</strong> Le reviste tal carácter a <strong>{{ tercero.nombre |
+        default("NOMBRE DEL TERCERO") }}</strong>, quien puede ser emplazado en <strong>{{ tercero.domicilio |
+        default("_______________") }}</strong>.
+</p>
+
+<div class="section-title numbered">II. AUTORIDADES RESPONSABLES</div>
+<p class="indent text-justify">
+    <strong>A. AUTORIDAD ORDENADORA:</strong> Los Magistrados integrantes de la {{ sala_responsable | default("SALA ___
+    DEL TRIBUNAL SUPERIOR DE JUSTICIA") }} del Estado de {{ estado | default("___") }}.<br>
+    <strong>B. AUTORIDAD EJECUTORA:</strong> El C. Juez {{ juzgado_origen | default("___ DE LO CIVIL") }} del Tribunal
+    Superior de Justicia de {{ estado | default("___") }}.
+</p>
+
+<div class="section-title numbered">III. ACTO RECLAMADO</div>
+<p class="indent text-justify double-space">
+    <strong>A. DE LA AUTORIDAD ORDENADORA:</strong> Reclamo la <strong>sentencia definitiva de fecha {{ fecha_sentencia
+        | default("___") }}</strong>, dictada en el Toca de Apelación número <strong>{{ toca | default("___")
+        }}</strong>, mediante la cual se confirma/modifica/revoca la sentencia de primera instancia en el juicio {{
+    tipo_juicio | default("___") }} con número de expediente <strong>{{ expediente_origen | default("___") }}</strong>.
+</p>
+<p class="indent text-justify double-space">
+    <strong>B. DE LA AUTORIDAD EJECUTORA:</strong> Reclamo el cumplimiento y ejecución material de la resolución antes
+    señalada.
+</p>
+
+<div class="section-title numbered">IV. PRECEPTOS CONSTITUCIONALES VIOLADOS</div>
+<p class="indent text-justify">
+    Se violan en perjuicio del suscrito los artículos <strong>14, 16 y 17 de la Constitución Política de los Estados
+        Unidos Mexicanos</strong>, así como el artículo 8 y 25 de la Convención Americana sobre Derechos Humanos
+    (Garantía de Legalidad, Seguridad Jurídica y Tutela Judicial Efectiva).
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--             V. ANTECEDENTES Y CONCEPTOS DE VIOLACIÓN-->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">V. CONCEPTOS DE VIOLACIÓN</div>
+
+<p class="indent text-justify double-space">
+    <strong>PRIMER CONCEPTO DE VIOLACIÓN (Fondo):</strong> La resolución reclamada carece de la debida fundamentación y
+    motivación exigida por el artículo 16 constitucional. La autoridad responsable realiza una inexacta aplicación e
+    interpretación de la ley, al resolver que {{ concepto_violacion_1 | default("[Explicar cómo la sentencia valora mal
+    las pruebas o aplica mal una ley, perjudicando los derechos del quejoso].") }}.
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">JURISPRUDENCIA APLICABLE (FUNDAMENTACIÓN):</p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: I.4o.A. J/43</strong> — Tribunales Colegiados de Circuito — Novena Época<br>
+        Rubro: <em>"FUNDAMENTACIÓN Y MOTIVACIÓN. EL CUMPLIMIENTO A DICHA GARANTÍA TRATÁNDOSE DE RESOLUCIONES
+            JURISDICCIONALES SE VERIFICA SIN QUE SE INVOQUEN DE MANERA EXPRESA SUS PRECEPTOS, CUANDO LOS RAZONAMIENTOS
+            DE ÉSTAS ESTABLEZCAN QUE LOS ASUNTOS SE FALLARON CON APEGO A DERECHO."</em>
+    </p>
+</div>
+
+<p class="indent text-justify double-space">
+    <strong>SEGUNDO CONCEPTO DE VIOLACIÓN (Violación Procesal):</strong> Durante el procedimiento de origen se violaron
+    las leyes del procedimiento afectando mis defensas y trascendiendo al resultado del fallo, en términos del artículo
+    172 de la Ley de Amparo, específicamente porque {{ violacion_procesal | default("[Señalar, por ejemplo, el
+    desechamiento indebido de una prueba confesional/testimonial ofrecida en tiempo y forma].") }}. Dicha violación fue
+    debidamente preparada mediante el recurso de revocación/apelación correspondiente.
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">JURISPRUDENCIA SOBRE VIOLACIONES PROCESALES:</p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: 1a./J. 75/2013 (10a.)</strong> — Primera Sala — Décima Época<br>
+        Rubro: <em>"VIOLACIONES PROCESALES EN AMPARO DIRECTO. LA EXIGENCIA DE PREPARARLAS MEDIANTE EL RECURSO ORDINARIO
+            CORRESPONDIENTE DEBE ENTENDERSE RACIONALMENTE."</em>
+    </p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                  VI. SUSPENSIÓN                     -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">VI. SOLICITUD DE SUSPENSIÓN DEL ACTO RECLAMADO</div>
+<p class="indent text-justify">
+    Con fundamento en el artículo 190 de la Ley de Amparo, solicito a la autoridad responsable ordenador que decrete de
+    plano la <strong>suspensión de la ejecución de la sentencia reclamada</strong>, en virtud de que de ejecutarse se me
+    causarían daños y perjuicios de difícil o imposible reparación, para lo cual solicito se fije la garantía de ley
+    correspondiente.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--            VII. PUNTOS PETITORIOS                   -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">VII. PUNTOS PETITORIOS</div>
+<p class="indent text-justify">
+    Por lo anteriormente expuesto, a este H. Tribunal Colegiado de Circuito, atentamente pido:
+</p>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Tenerme por presentado en tiempo y forma con esta demanda, solicitando el amparo y
+    protección de la Justicia Federal.
+</p>
+<p class="indent text-justify">
+    <strong>SEGUNDO.-</strong> Requerir a las autoridades responsables por sus informes justificados, y en su
+    oportunidad, admitir la demanda.
+</p>
+<p class="indent text-justify">
+    <strong>TERCERO.-</strong> Suplir la deficiencia de la queja en caso de ser necesario, conforme al artículo 79 de la
+    Ley de Amparo.
+</p>
+<p class="indent text-justify">
+    <strong>CUARTO.-</strong> Previos los trámites de ley, dictar ejecutoria <strong>CONCEDIENDO EL AMPARO Y
+        PROTECCIÓN</strong> de la Justicia de la Unión a mi favor.
+</p>
+
+<p class="text-center text-bold" style="margin-top:40px;">PROTESTO LO NECESARIO</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ quejoso.nombre | default("NOMBRE COMPLETO Y FIRMA DEL QUEJOSO") }}</div>
+</div>
+
+<div class="confidencialidad-v2">
+    <p><strong>AVISO DE PRIVACIDAD — DOCUMENTO V2 NEGOCIOS</strong></p>
+    <p>Plantilla profesional generada por Machotes Legales®. Incluye control de convencionalidad, estructuración de agravios
+        bajo precedentes SCJN. Prohibida su copia sin licencia vigente.</p>
+</div>
+{% endblock %}

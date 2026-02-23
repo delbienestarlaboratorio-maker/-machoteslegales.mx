@@ -1,0 +1,73 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Poder General para Pleitos y Cobranzas</h1>
+    <p class="subtitle">Artículos 2554-2560 del Código Civil Federal</p>
+</div>
+
+<p class="indent text-justify">
+    En {{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }},
+    ante {{ notario | default("el Notario Público número ___ de esta ciudad") }},
+    compareció:
+</p>
+
+<p class="indent text-justify">
+    <strong>{{ poderdante | default("NOMBRE DEL PODERDANTE") }}</strong>,
+    {{ nacionalidad | default("mexicano(a)") }}, mayor de edad, con domicilio en
+    {{ domicilio_poderdante | default("_________________________________") }},
+    identificándose con {{ identificacion | default("credencial para votar (INE)") }}
+    número {{ numero_id | default("_______________") }},
+    CURP: {{ curp | default("_______________") }}, RFC: {{ rfc | default("_______________") }},
+    estado civil: {{ estado_civil | default("_______________") }},
+    a quien en lo sucesivo se le denominará <strong>"EL PODERDANTE"</strong>.
+</p>
+
+<p class="indent text-justify">
+    Y manifestó otorgar <strong>PODER GENERAL PARA PLEITOS Y COBRANZAS</strong> a favor de:
+</p>
+
+<p class="indent text-justify">
+    <strong>{{ apoderado | default("NOMBRE DEL APODERADO") }}</strong>,
+    con domicilio en {{ domicilio_apoderado | default("_________________________________") }},
+    CURP: {{ curp_apoderado | default("_______________") }},
+    cédula profesional: {{ cedula | default("_______________") }}.
+</p>
+
+<div class="section-title">FACULTADES</div>
+<p class="indent text-justify">
+    Se confieren las siguientes facultades conforme al artículo 2554 primer párrafo del Código Civil Federal:
+</p>
+<p class="indent text-justify">
+    <strong>a)</strong> Intentar y desistirse de toda clase de acciones y procedimientos, incluyendo amparo.<br>
+    <strong>b)</strong> Convenir, transigir, comprometer en árbitros, absolver y articular posiciones.<br>
+    <strong>c)</strong> Recusar, recibir pagos, presentar denuncias y querellas penales, desistirse de ellas,
+    otorgar perdón y constituirse en parte coadyuvante del Ministerio Público.<br>
+    <strong>d)</strong> Suscribir títulos de crédito, realizar actos de cobro judicial y extrajudicial.<br>
+    <strong>e)</strong> {{ facultades_adicionales | default("Las demás facultades generales y especiales que requieran
+    cláusula especial conforme a la ley.") }}
+</p>
+
+<div class="section-title">LIMITACIONES</div>
+<p class="indent text-justify">
+    {{ limitaciones | default("Este poder no incluye facultades para actos de dominio. / Sin limitación alguna.") }}
+</p>
+
+<div class="section-title">VIGENCIA</div>
+<p class="indent text-justify">
+    El presente poder tendrá vigencia {{ vigencia | default("indefinida hasta su revocación expresa") }}.
+</p>
+
+<div style="display:flex; gap:40px; margin-top:40px;">
+    <div class="signature-block" style="flex:1;">
+        <div class="signature-line">{{ poderdante | default("EL PODERDANTE") }}</div>
+    </div>
+    <div class="signature-block" style="flex:1;">
+        <div class="signature-line">{{ apoderado | default("EL APODERADO") }}</div>
+    </div>
+</div>
+
+<div class="signature-block" style="margin-top:30px;">
+    <div class="signature-line">{{ notario | default("NOTARIO PÚBLICO") }}</div>
+</div>
+{% endblock %}

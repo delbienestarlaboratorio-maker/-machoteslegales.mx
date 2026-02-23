@@ -1,0 +1,57 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Solicitud de Conciliación Prejudicial</h1>
+    <p class="subtitle">Artículos 684-A a 684-E de la Ley Federal del Trabajo</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+
+<p class="text-bold">CENTRO FEDERAL DE CONCILIACIÓN Y REGISTRO LABORAL</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<p class="indent text-justify">
+    <strong>{{ cliente.nombre | default("NOMBRE DEL TRABAJADOR") }}</strong>,
+    con domicilio en {{ cliente.domicilio | default("_________________________________") }},
+    teléfono {{ telefono | default("_______________") }}, correo {{ correo | default("_______________") }},
+    solicito se inicie el <strong>PROCEDIMIENTO DE CONCILIACIÓN PREJUDICIAL</strong> conforme al
+    Título Trece Bis, Capítulo I de la LFT, respecto de mi conflicto laboral con:
+</p>
+
+<p class="indent text-justify">
+    <strong>{{ patron | default("NOMBRE DE LA EMPRESA") }}</strong>,
+    con domicilio en {{ domicilio_patron | default("_________________________________") }},
+    RFC {{ rfc_patron | default("_______________") }}.
+</p>
+
+<div class="section-title">DATOS DE LA RELACIÓN LABORAL</div>
+<p class="indent text-justify">
+    Fecha de ingreso: {{ fecha_ingreso | default("___") }}<br>
+    Fecha de separación: {{ fecha_separacion | default("___") }}<br>
+    Puesto: {{ puesto | default("___") }}<br>
+    Salario diario: ${{ salario | default("___") }}<br>
+    Motivo de separación: {{ motivo | default("Despido injustificado / Renuncia / Rescisión") }}
+</p>
+
+<div class="section-title">PRETENSIONES</div>
+<p class="indent text-justify">
+    {{ pretensiones | default("Solicito la conciliación respecto de: a) Indemnización constitucional; b) Salarios
+    caídos; c) Aguinaldo proporcional; d) Vacaciones y prima vacacional; e) Prima de antigüedad; f) Reparto de
+    utilidades; g) Demás prestaciones de ley.") }}
+</p>
+
+<div class="section-title">PETICIONES</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Tenerme por presentado con esta solicitud.<br>
+    <strong>SEGUNDO.-</strong> Citar al patrón a la audiencia de conciliación.<br>
+    <strong>TERCERO.-</strong> En caso de no lograr conciliación, expedir la constancia de no conciliación
+    para acudir ante el Tribunal Laboral.
+</p>
+
+<p class="text-center text-bold" style="margin-top:30px;">ATENTAMENTE</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA") }}</div>
+</div>
+{% endblock %}

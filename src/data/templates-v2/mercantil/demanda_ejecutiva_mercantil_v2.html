@@ -1,0 +1,267 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Demanda Ejecutiva Mercantil</h1>
+    <p class="subtitle-v2">Artículos 1391-1414 del Código de Comercio · Ley General de Títulos y Operaciones de Crédito
+        · Tesis SCJN aplicables sobre intereses usureros</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, {{ estado | default("Ciudad de México") }}, a {{
+    fecha_actual_texto }}</p>
+
+<p class="text-bold destinatario">C. JUEZ DE LO MERCANTIL EN TURNO EN {{ ciudad | default("_______________") }}</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                     PROEMIO                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<p class="indent text-justify">
+    <strong>{{ cliente.nombre | default("NOMBRE COMPLETO DEL ACTOR") }}</strong>, mexicano(a), mayor de edad,
+    por mi propio derecho, señalando como domicilio para oír y recibir todo tipo de notificaciones el ubicado en
+    <strong>{{ cliente.domicilio | default("Calle, Número, Colonia, Alcaldía/Municipio, C.P., Estado") }}</strong>,
+    autorizando en los amplios términos del artículo 1069 del Código de Comercio al(a)(los) licenciado(a)(s) en Derecho
+    <strong>{{ abogado.nombre | default("NOMBRE DEL ABOGADO") }}</strong>, con cédula profesional número
+    <strong>{{ abogado.cedula | default("_______________") }}</strong>;
+    ante Usted, con el debido respeto, comparezco para exponer:
+</p>
+
+<p class="indent text-justify">
+    Que por medio del presente escrito, con fundamento en los artículos <strong>1049, 1050, 1055, 1391, 1392, 1393,
+        1394,
+        1396 y demás relativos y aplicables del Código de Comercio</strong>, así como los artículos <strong>150, 152,
+        170,
+        171, 174 de la Ley General de Títulos y Operaciones de Crédito</strong>, vengo a promover
+    <strong>DEMANDA EJECUTIVA MERCANTIL</strong> en contra de
+    <strong>{{ contraparte.nombre | default("NOMBRE COMPLETO DEL DEMANDADO") }}</strong>, con domicilio en
+    {{ contraparte.domicilio | default("_________________________________") }},
+    el pago de las siguientes:
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                I. PRESTACIONES                      -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">I. PRESTACIONES RECLAMADAS</div>
+
+<table class="tabla-calculos">
+    <thead>
+        <tr>
+            <th>Concepto</th>
+            <th>Fundamento</th>
+            <th>Monto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Suerte principal</td>
+            <td>Art. 1391 fr. IV C. Com. / Art. 170 LGTOC</td>
+            <td>${{ monto | default("_______________") }} M.N.</td>
+        </tr>
+        <tr>
+            <td>Intereses moratorios</td>
+            <td>Art. 174 LGTOC / Art. 362 C. Com.</td>
+            <td>{{ tasa_interes | default("___") }}% mensual desde {{ fecha_vencimiento | default("___") }}</td>
+        </tr>
+        <tr>
+            <td>Gastos y costas</td>
+            <td>Arts. 1081-1084 C. Com.</td>
+            <td>Los que se generen en el juicio</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--              II. TÍTULO EJECUTIVO                   -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">II. TÍTULO EJECUTIVO BASE DE LA ACCIÓN</div>
+<p class="indent text-justify">
+    Sirve de base a la presente acción el <strong>{{ tipo_titulo | default("PAGARÉ") }}</strong> suscrito por el
+    demandado con fecha {{ fecha_titulo | default("_______________") }}, con vencimiento al
+    {{ fecha_vencimiento | default("_______________") }}, por la cantidad de
+    ${{ monto | default("_______________") }} M.N. ({{ monto_letra | default("_______________") }} PESOS 00/100 M.N.),
+    el cual se exhibe en <strong>original</strong>.
+</p>
+<p class="indent text-justify">
+    Dicho título cumple con la totalidad de los requisitos previstos en el artículo <strong>170 de la LGTOC</strong>:
+    mención de ser pagaré, promesa incondicional de pago, nombre del beneficiario, época y lugar de pago,
+    fecha y lugar de suscripción, y firma del suscriptor. Al tratarse de un título de crédito que trae aparejada
+    ejecución conforme a la <strong>fracción IV del artículo 1391 del Código de Comercio</strong>, la vía ejecutiva
+    mercantil es procedente.
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">JURISPRUDENCIA APLICABLE:</p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: 1a./J. 132/2012 (10a.)</strong> — Primera Sala — SCJN<br>
+        Rubro: <em>"PAGARÉ. EL ARTÍCULO 174, PÁRRAFO SEGUNDO, DE LA LEY GENERAL DE TÍTULOS Y OPERACIONES DE CRÉDITO,
+            PERMITE A LAS PARTES LA LIBRE CONVENCIÓN DE INTERESES CON LA LIMITANTE DE QUE LOS MISMOS NO SEAN
+            USURARIOS."</em><br>
+        Décima Época, Libro XIII, octubre de 2012, Tomo 2, p. 1174.
+    </p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                 III. HECHOS                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">III. HECHOS Y ANTECEDENTES</div>
+<p class="indent text-justify double-space">
+    <strong>PRIMERO.-</strong> {{ hecho_1 | default("Con fecha [fecha], el hoy demandado suscribió a mi favor un pagaré
+    por la cantidad antes señalada, obligándose al pago en la fecha de vencimiento determinada en el propio título.
+    Dicha suscripción se realizó de manera libre, voluntaria e incondicional, reconociendo expresamente la obligación
+    de pago derivada de [señalar la causa o relación comercial subyacente].") }}
+</p>
+<p class="indent text-justify double-space">
+    <strong>SEGUNDO.-</strong> {{ hecho_2 | default("Llegada la fecha de vencimiento del título de crédito base de la
+    acción, el demandado no cubrió el monto total adeudado, incumpliendo así la obligación contenida en el documento,
+    a pesar de los múltiples requerimientos extrajudiciales realizados de buena fe por el suscrito.") }}
+</p>
+<p class="indent text-justify double-space">
+    <strong>TERCERO.-</strong> {{ hecho_3 | default("El título base de la acción reúne todos y cada uno de los
+    requisitos formales exigidos por el artículo 170 de la LGTOC, constituye un título ejecutivo y trae aparejada
+    ejecución conforme al artículo 1391, fracción IV del Código de Comercio. Es de señalarse que el demandado no
+    realizó pago parcial alguno que conste en el reverso del documento.") }}
+</p>
+<p class="indent text-justify double-space">
+    <strong>CUARTO.-</strong> {{ hecho_4 | default("No se ha celebrado convenio, transacción, novación ni cualquier
+    otra forma de extinción de la obligación contenida en el título ejecutivo. La deuda permanece líquida, cierta,
+    exigible y de plazo cumplido.") }}
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--     IV. ANÁLISIS DE INTERESES / NO USURA           -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">IV. ANÁLISIS SOBRE INTERESES — CONTROL DE USURA</div>
+<p class="indent text-justify double-space">
+    Los intereses moratorios pactados en el título base a razón de <strong>{{ tasa_interes | default("___") }}%
+        mensual</strong> no resultan usurarios conforme a los criterios establecidos por la Primera Sala de la SCJN,
+    en atención a los siguientes factores:
+</p>
+<p class="indent text-justify">
+    <strong>1. Tasa de referencia:</strong> La tasa pactada se encuentra {{ relacion_tasa | default("dentro de los
+    parámetros razonables comparados con el Costo Anual Total (CAT) promedio publicado por el Banco de México para
+    créditos similares al momento de la suscripción del título") }}.<br>
+    <strong>2. Tipo de relación:</strong> La operación corresponde a {{ tipo_operacion | default("un crédito entre
+    particulares derivado de una relación comercial previa") }}.<br>
+    <strong>3. Vulnerabilidad del deudor:</strong> {{ vulnerabilidad | default("No se advierte situación de
+    vulnerabilidad, necesidad o inexperiencia del deudor que sugiera aprovechamiento indebido por parte del acreedor")
+    }}.
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">JURISPRUDENCIAS APLICABLES AL CONTROL DE USURA:</p>
+    <p class="jurisprudencia-texto">
+        <strong>Contradicción de Tesis 350/2013</strong> — Primera Sala — SCJN<br>
+        Rubro: <em>"USURA. SU PROHIBICIÓN APLICA TANTO PARA LOS INTERESES ORDINARIOS COMO PARA LOS MORATORIOS PACTADOS
+            EN UN PAGARÉ."</em>
+    </p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: 1a. CCLXIV/2014 (10a.)</strong> — Primera Sala — SCJN<br>
+        Rubro: <em>"PAGARÉ. SI EL JUZGADOR ADVIERTE QUE LA TASA DE INTERESES PACTADA CON BASE EN EL ARTÍCULO 174,
+            PÁRRAFO SEGUNDO, DE LA LEY GENERAL DE TÍTULOS Y OPERACIONES DE CRÉDITO ES NOTORIAMENTE USURARIA PUEDE,
+            DE OFICIO, REDUCIRLA PRUDENCIALMENTE."</em>
+    </p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                  V. DERECHO                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">V. FUNDAMENTOS DE DERECHO</div>
+<p class="indent text-justify">
+    Son aplicables al presente caso los siguientes preceptos legales:
+</p>
+<p class="indent text-justify">
+    <strong>Código de Comercio:</strong> Artículos 1049, 1050, 1055, 1391 fracción IV, 1392, 1393, 1394, 1396,
+    1401, 1405, 1407, 1410, 1414 y demás relativos.<br>
+    <strong>LGTOC:</strong> Artículos 150, 152, 170, 171, 174, 175 y demás aplicables.<br>
+    <strong>Constitución:</strong> Artículos 1°, 14, 16 y 17 CPEUM (tutela judicial efectiva).<br>
+    <strong>Código Federal de Procedimientos Civiles:</strong> De aplicación supletoria conforme al artículo 1054
+    del Código de Comercio.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                  VI. PRUEBAS                        -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">VI. PRUEBAS</div>
+<p class="indent text-justify">
+    <strong>1. DOCUMENTAL PRIVADA.-</strong> Consistente en el <strong>{{ tipo_titulo | default("PAGARÉ") }}
+        original</strong> que se exhibe como ANEXO 1, y cuyo valor probatorio pleno e indivisible se solicita conforme
+    a los artículos 1296, 1298 y 1301 del Código de Comercio.
+</p>
+<p class="indent text-justify">
+    <strong>2. DOCUMENTAL PRIVADA.-</strong> {{ prueba_documental_2 | default("Requerimientos extrajudiciales de pago
+    dirigidos al demandado, que obran como ANEXO 2.") }}
+</p>
+<p class="indent text-justify">
+    <strong>3. PRESUNCIONAL LEGAL Y HUMANA.-</strong> En todo cuanto favorezca a los intereses del suscrito.
+</p>
+<p class="indent text-justify">
+    <strong>4. INSTRUMENTAL DE ACTUACIONES.-</strong> Consistente en todo lo que obre en el expediente judicial
+    y que beneficie los intereses del actor.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--            VII. PUNTOS PETITORIOS                   -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">VII. PUNTOS PETITORIOS</div>
+<p class="indent text-justify">
+    Por lo anteriormente expuesto y fundado, a Usted C. Juez de lo Mercantil, respetuosamente pido se sirva:
+</p>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Tener por presentada la demanda ejecutiva mercantil en contra de
+    {{ contraparte.nombre | default("NOMBRE DEL DEMANDADO") }}, con las copias y anexos que se acompañan.
+</p>
+<p class="indent text-justify">
+    <strong>SEGUNDO.-</strong> Admitir la demanda en la vía y forma propuestas.
+</p>
+<p class="indent text-justify">
+    <strong>TERCERO.-</strong> Ordenar se requiera de pago al demandado, y en caso de no verificar el pago en el
+    acto del requerimiento, se proceda al <strong>embargo de bienes suficientes</strong> de su propiedad para
+    garantizar las prestaciones reclamadas, designando depositario en su caso.
+</p>
+<p class="indent text-justify">
+    <strong>CUARTO.-</strong> Correr traslado al demandado con la demanda y sus anexos, emplazándolo para que dentro
+    del término de <strong>cinco días</strong> haga pago u oponga las excepciones que estime pertinentes.
+</p>
+<p class="indent text-justify">
+    <strong>QUINTO.-</strong> En su oportunidad, previo los trámites de ley, dictar <strong>SENTENCIA DE REMATE</strong>
+    condenando al demandado al pago de la totalidad de las prestaciones reclamadas.
+</p>
+
+<p class="text-center text-bold" style="margin-top:40px;">
+    PROTESTO LO NECESARIO
+</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ cliente.nombre | default("NOMBRE COMPLETO Y FIRMA DEL ACTOR") }}</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--              DOCUMENTOS ADJUNTOS                    -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title" style="margin-top:40px;">DOCUMENTOS QUE SE ACOMPAÑAN</div>
+<p class="indent text-justify" style="font-size:11px;">
+    1. Título de crédito original ({{ tipo_titulo | default("Pagaré") }}).<br>
+    2. Copias de traslado de la demanda y anexos.<br>
+    3. Copia de identificación oficial del actor.<br>
+    4. Copia de la cédula profesional del abogado autorizado.<br>
+    5. {{ documentos_adicionales | default("Demás documentales ofrecidas como prueba.") }}
+</p>
+
+<div class="confidencialidad-v2">
+    <p><strong>AVISO DE CONFIDENCIALIDAD — DOCUMENTO V2 NEGOCIOS</strong></p>
+    <p>Este documento fue generado por Machotes Legales® y contiene fundamentación legal profesional,
+        jurisprudencia vigente sobre control de usura y argumentación especializada.
+        Prohibida su reproducción, distribución o venta sin autorización.</p>
+    <p>Licencia: {{ license_id | default("TLEX-V2-XXXXXX") }} · Usuario: {{ license_user | default("___") }}</p>
+</div>
+{% endblock %}

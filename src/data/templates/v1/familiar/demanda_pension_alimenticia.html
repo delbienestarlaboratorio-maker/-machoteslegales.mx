@@ -1,0 +1,88 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Demanda de Pensión Alimenticia</h1>
+    <p class="subtitle">Artículos 301-323 del Código Civil Federal</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto |
+    default("__ de ________ de 20__") }}</p>
+
+<p class="text-bold">C. JUEZ DE LO FAMILIAR</p>
+<p class="text-bold">{{ juzgado | default("JUZGADO DE LO FAMILIAR EN TURNO") }}</p>
+<p>PRESENTE.</p>
+
+<p class="indent text-justify">
+    <strong>{{ actor | default("NOMBRE DE LA ACTORA") }}</strong>,
+    por mi propio derecho y en representación de {{ menores | default("mi(s) menor(es) hijo(s)
+    ________________________________") }},
+    señalando domicilio en {{ domicilio | default("_________________________________") }},
+    ante usted comparezco para demandar:
+</p>
+
+<div class="section-title">JUICIO DE ALIMENTOS</div>
+
+<p class="indent text-justify">
+    En contra de <strong>{{ demandado | default("NOMBRE DEL DEMANDADO") }}</strong>,
+    con domicilio en {{ domicilio_demandado | default("_________________________________") }},
+    reclamando las siguientes:
+</p>
+
+<div class="section-title">PRESTACIONES</div>
+
+<p class="indent text-justify">
+    <strong>a)</strong> La pensión alimenticia provisional y definitiva a favor de {{ beneficiarios | default("los
+    menores hijos") }} habidos del matrimonio/relación con el demandado.<br>
+    <strong>b)</strong> La inscripción de la pensión en nómina del demandado.<br>
+    <strong>c)</strong> El pago de gastos y costas del juicio.
+</p>
+
+<div class="section-title">HECHOS</div>
+
+<p class="indent text-justify">
+    <strong>1.</strong> — {{ hecho_1 | default("Que el suscrito(a) y el demandado procrearon a los menores de nombres
+    _________________________________, de ______ años y ______ años de edad respectivamente.") }}
+</p>
+
+<p class="indent text-justify">
+    <strong>2.</strong> — {{ hecho_2 | default("Que desde el mes de _______ de 20__, el demandado dejó de proporcionar
+    alimentos a sus menores hijos, incumpliendo con su obligación constitucional y civil.") }}
+</p>
+
+<p class="indent text-justify">
+    <strong>3.</strong> — {{ hecho_3 | default("Que los menores requieren para su subsistencia: alimentación, vestido,
+    habitación, educación, atención médica y demás necesidades propias de su edad.") }}
+</p>
+
+<p class="indent text-justify">
+    <strong>4.</strong> — {{ hecho_4 | default("Que el demandado labora en _________________________________ percibiendo
+    un salario aproximado de $_______ mensuales, por lo que tiene capacidad económica para cumplir con su obligación
+    alimentaria.") }}
+</p>
+
+<div class="section-title">DERECHO</div>
+
+<p class="indent text-justify">
+    Son aplicables los artículos 4° de la Constitución Política de los Estados Unidos Mexicanos,
+    301, 303, 308, 309, 311, 314, 315 y 317 del Código Civil Federal,
+    en concordancia con la Convención sobre los Derechos del Niño (artículo 27).
+</p>
+
+<div class="section-title">PUNTOS PETITORIOS</div>
+
+<p class="indent text-justify">
+    <strong>PRIMERO.</strong> — Tenerme por presentada demandando alimentos.<br>
+    <strong>SEGUNDO.</strong> — Decretar pensión alimenticia provisional desde el auto admisorio.<br>
+    <strong>TERCERO.</strong> — Oficiar al patrón del demandado para la retención del porcentaje correspondiente.<br>
+    <strong>CUARTO.</strong> — Dictar sentencia condenando al demandado al pago de pensión definitiva.
+</p>
+
+<p class="indent text-justify">PROTESTO LO NECESARIO.</p>
+
+<div style="margin-top:50px;">
+    <div class="signature-block">
+        <div class="signature-line">{{ actor | default("LA ACTORA") }}</div>
+    </div>
+</div>
+{% endblock %}

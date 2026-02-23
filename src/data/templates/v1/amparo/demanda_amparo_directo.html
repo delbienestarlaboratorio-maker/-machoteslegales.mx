@@ -1,0 +1,77 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Demanda de Amparo Directo</h1>
+    <p class="subtitle">Artículos 170-182 de la Ley de Amparo · Arts. 103, 107 CPEUM</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+
+<p class="text-bold">H. TRIBUNAL COLEGIADO DE CIRCUITO EN TURNO EN {{ estado | default("_______________") }}</p>
+<p class="text-bold">POR CONDUCTO DE LA AUTORIDAD RESPONSABLE</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<p class="indent text-justify">
+    <strong>{{ cliente.nombre | default("NOMBRE DEL QUEJOSO") }}</strong>, por mi propio derecho,
+    señalando domicilio en <strong>{{ cliente.domicilio | default("_________________________________") }}</strong>,
+    autorizando en términos del artículo 12 de la Ley de Amparo a
+    <strong>{{ abogado.nombre | default("_________________________________") }}</strong>,
+    promuevo <strong>DEMANDA DE AMPARO DIRECTO</strong> contra la sentencia definitiva / laudo / resolución
+    dictada en el expediente {{ expediente | default("_______________") }}.
+</p>
+
+<div class="section-title">I. NOMBRE DEL QUEJOSO</div>
+<p class="indent text-justify">{{ cliente.nombre | default("_______________") }}, con domicilio señalado.</p>
+
+<div class="section-title">II. TERCERO INTERESADO</div>
+<p class="indent text-justify">{{ tercero_interesado | default("_______________") }}, con domicilio en {{
+    domicilio_tercero | default("_______________") }}.</p>
+
+<div class="section-title">III. AUTORIDAD RESPONSABLE</div>
+<p class="indent text-justify">
+    {{ autoridad_responsable | default("Juez / Tribunal / Junta de Conciliación que dictó la sentencia") }},
+    con sede en {{ sede_autoridad | default("_______________") }}.
+</p>
+
+<div class="section-title">IV. ACTO RECLAMADO</div>
+<p class="indent text-justify">
+    La <strong>sentencia definitiva / laudo</strong> dictada el {{ fecha_sentencia | default("_______________") }}
+    en el expediente {{ expediente | default("_______________") }}, mediante la cual
+    {{ descripcion_acto | default("se resolvió [describir el sentido de la resolución que se impugna].") }}
+</p>
+
+<div class="section-title">V. FECHA DE NOTIFICACIÓN</div>
+<p class="indent text-justify">
+    La sentencia fue notificada al quejoso el {{ fecha_notificacion | default("_______________") }},
+    por lo que la demanda se presenta dentro del plazo de 15 días hábiles (Art. 17 Ley de Amparo).
+</p>
+
+<div class="section-title">VI. DERECHOS VIOLADOS</div>
+<p class="indent text-justify">
+    Artículos {{ articulos_violados | default("14, 16 y 17") }} de la CPEUM.
+</p>
+
+<div class="section-title">VII. CONCEPTOS DE VIOLACIÓN</div>
+<p class="indent text-justify double-space">
+    <strong>PRIMERO.-</strong> {{ concepto_1 | default("La sentencia reclamada viola el artículo 14 constitucional
+    porque [desarrollar argumento: indebida valoración de pruebas, falta de fundamentación, incongruencia, etc.].") }}
+</p>
+<p class="indent text-justify double-space">
+    <strong>SEGUNDO.-</strong> {{ concepto_2 | default("Asimismo, transgrede el artículo 16 constitucional en virtud de
+    que [desarrollar segundo concepto de violación].") }}
+</p>
+
+<div class="section-title">PUNTOS PETITORIOS</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Tenerme por presentado con la demanda de amparo directo.<br>
+    <strong>SEGUNDO.-</strong> Admitir la demanda y dar trámite de ley.<br>
+    <strong>TERCERO.-</strong> Conceder el amparo y protección de la Justicia Federal.
+</p>
+
+<p class="text-center text-bold" style="margin-top:30px;">PROTESTO LO NECESARIO</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA DEL QUEJOSO") }}</div>
+</div>
+{% endblock %}

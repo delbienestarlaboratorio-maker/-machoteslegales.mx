@@ -1,0 +1,77 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Solicitud de Compensación de Impuestos</h1>
+    <p class="subtitle">Artículos 23 y 23-A del Código Fiscal de la Federación</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+
+<p class="text-bold">SERVICIO DE ADMINISTRACIÓN TRIBUTARIA</p>
+<p class="text-bold">ADMINISTRACIÓN DESCONCENTRADA DE RECAUDACIÓN DE {{ estado | default("_______________") }}</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<p class="indent text-justify">
+    <strong>{{ cliente.nombre | default("NOMBRE DEL CONTRIBUYENTE") }}</strong>,
+    con RFC <strong>{{ rfc | default("_______________") }}</strong>,
+    con domicilio fiscal en {{ cliente.domicilio | default("_________________________________") }},
+    por medio del presente solicito la <strong>COMPENSACIÓN</strong> del saldo a favor que tengo
+    en el impuesto {{ impuesto_favor | default("ISR / IVA") }} correspondiente al periodo {{ periodo_favor |
+    default("_______________") }},
+    contra el impuesto {{ impuesto_cargo | default("ISR / IVA") }} a cargo del periodo {{ periodo_cargo |
+    default("_______________") }}.
+</p>
+
+<div class="section-title">DATOS DE LA COMPENSACIÓN</div>
+<table style="width:100%; border:1px solid #000; border-collapse:collapse;">
+    <tr>
+        <td style="border:1px solid #000; padding:8px; width:50%;">Impuesto con saldo a favor:</td>
+        <td style="border:1px solid #000; padding:8px;">{{ impuesto_favor | default("___") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:8px;">Periodo del saldo a favor:</td>
+        <td style="border:1px solid #000; padding:8px;">{{ periodo_favor | default("___") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:8px;">Monto del saldo a favor:</td>
+        <td style="border:1px solid #000; padding:8px;">${{ monto_favor | default("___") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:8px;">Impuesto a compensar:</td>
+        <td style="border:1px solid #000; padding:8px;">{{ impuesto_cargo | default("___") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:8px;">Periodo a compensar:</td>
+        <td style="border:1px solid #000; padding:8px;">{{ periodo_cargo | default("___") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:8px;">Monto a compensar:</td>
+        <td style="border:1px solid #000; padding:8px;">${{ monto_compensar | default("___") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:8px;">Remanente del saldo a favor:</td>
+        <td style="border:1px solid #000; padding:8px;">${{ remanente | default("___") }}</td>
+    </tr>
+</table>
+
+<div class="section-title">FUNDAMENTO LEGAL</div>
+<p class="indent text-justify">
+    Artículo 23 del CFF y reglas 2.3.10 y 2.3.11 de la Resolución Miscelánea Fiscal vigente.
+</p>
+
+<div class="section-title">DOCUMENTACIÓN ADJUNTA</div>
+<p class="indent text-justify">
+    1. Declaración donde se determinó el saldo a favor.<br>
+    2. Declaración donde se aplica la compensación.<br>
+    3. Aviso de compensación (formato 41).<br>
+    4. {{ documento_extra | default("Documentación soporte adicional.") }}
+</p>
+
+<p class="text-center text-bold" style="margin-top:30px;">ATENTAMENTE</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA DEL CONTRIBUYENTE") }}</div>
+    <p style="text-align:center; font-size:11px;">RFC: {{ rfc | default("_______________") }}</p>
+</div>
+{% endblock %}

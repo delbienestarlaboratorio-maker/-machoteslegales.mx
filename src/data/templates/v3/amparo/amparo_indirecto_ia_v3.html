@@ -1,0 +1,123 @@
+{% extends "base_v3.html" %}
+
+{% block content %}
+<div class="header-v3">
+    <div class="header-v3-left">
+        <span class="tier-badge-v3">TILDE IA PRO · V3</span>
+        <h1>Demanda de Amparo Indirecto IA (Estratégico)</h1>
+        <p class="subtitle-v3">Modelado Predictivo de Violaciones Constitucionales · Art. 107 y 114 de la Ley de Amparo
+        </p>
+    </div>
+    <div class="header-v3-right">
+        <span class="doc-id">Caso UUID: {{ id_caso | default("___") }}</span>
+        <span class="doc-id">Emisión: {{ fecha_actual_texto }}</span>
+    </div>
+</div>
+
+<!-- ════════ INTELIGENCIA DEL CASO ════════ -->
+<div class="estrategia-box">
+    <div class="estrategia-titulo">Vectorización de Agravios (Tilde IA)</div>
+    <div class="estrategia-item">
+        <span class="estrategia-badge badge-probabilidad">MEDIDA CAUTELAR VIABLE</span>
+        <span>El análisis del Acto Reclamado sugiere procedencia de la <strong>Suspensión Provisional (Art.
+                128)</strong> sin requerir caución, afectando actos de tracto sucesivo.</span>
+    </div>
+    <div class="estrategia-item">
+        <span class="estrategia-badge badge-riesgo-medio">FALTA DE FUNDAMENTACIÓN</span>
+        <span>El Acto de Autoridad omitió cita expresa de dispositivos legales (Art. 16 CPEUM). Motivo suficiente para
+            el Otorgamiento del Amparo al configurarse el agravio principal.</span>
+    </div>
+</div>
+
+<p class="text-bold destinatario">C. JUEZ DE DISTRITO EN MATERIA {{ materia_amparo | default("[MATERIA]") }}</p>
+<p class="text-bold destinatario">EN TURNO, CON RESIDENCIA EN {{ estado_circuito | default("[CIUDAD DEL CIRCUITO]") }}
+</p>
+
+<!-- ════════ PROEMIO (AUTO COMPLETADO) ════════ -->
+<p class="indent text-justify double-space" style="margin-top:20px;">
+    <strong>{{ nombre_quejoso | default("[NOMBRE DEL QUEJOSO GENERADO]") }}</strong>, de nacionalidad y demás generales
+    expuestas en el portal digital, señalando domicilio seguro para notificaciones y designando bajo el Art. 12 L.A. a
+    los asesores forenses autorizados <strong>{{ abogados_ia | default("[BUFETE O ABOGADOS]") }}</strong>;
+    respetuosamente comparezco pidiendo:
+</p>
+
+<!-- ════════ CAPÍTULO 1 ════════ -->
+<div class="section-title numbered">I. REQUISITOS DEL ARTÍCULO 108 DE LA LEY DE AMPARO</div>
+
+<p class="indent text-justify double-space">
+    <strong>1. Quejoso:</strong> Suscrito en el proemio.<br>
+    <strong>2. Tercero Interesado:</strong> {{ tercero_interesado | default("[Toma de contexto IA: NO EXISTE / NOMBRE
+    TERCERO]") }}.<br>
+    <strong>3. Autoridad(es) Responsable(s):</strong><br>
+<div style="margin-left:2cm; border-left:2px solid #ccc; padding-left:15px; margin-bottom:10px;">
+    {{ autoridades_responsables | default("<strong>Autoridad Ordenadora:</strong> [A extraer de documentos con OCR]
+    <br><strong>Autoridades Ejecutoras:</strong> [C. Secretario/Actuario/Policía]") }}
+</div>
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>4. Acto Reclamado:</strong> {{ acto_reclamado | default("[SÍNTESIS GENERADA POR IA SOBRE EL ACTO EN CONCRETO
+    QUE CAUSA MOLESTIA AL QUEJOSO]") }}.
+</p>
+<p class="indent text-justify double-space">
+    <strong>5. Protesta y Antecedentes:</strong> Bajo protesta de decir verdad señalo como Hechos que originaron los
+    actos reclamados:
+    {{ hechos_ia | default("<br>- [Hecho 1 extraído de relato]<br>- [Hecho 2 detectado temporalmente]") }}
+</p>
+
+<!-- ════════ CAPÍTULO 2 - AGRAVIOS ════════ -->
+<div class="section-title numbered">II. CONCEPTOS DE VIOLACIÓN GENERADOS (NEURAL NET)</div>
+
+<div class="concepto-violacion">
+    <h3>PRIMER CONCEPTO DE VIOLACIÓN — VIOLACIÓN DIRECTA AL ART. 16</h3>
+    <h4>Fuente del agravio: Orden restrictiva carente de fundamentación y debida defensa</h4>
+    <p class="text-justify double-space">
+        {{ concepto_1_ia | default("La autoridad responsable irrumpe mi esfera jurídica emitiendo una resolución o
+        mandamiento que soslaya la garantía de Seguridad Jurídica contenida en el primer párrafo del artículo 16
+        constitucional. Todo acto de molestia debe constar por escrito emitido por autoridad competente que funde y
+        motive la causa legal del procedimiento; circunstancia que en la especie NO acontece, toda vez que...
+        [Argumentación generada sobre análisis de la imagen o texto enviado]") }}.
+    </p>
+
+    <div class="jurisprudencia-box">
+        <p class="jurisprudencia-titulo">PRECEDENTE JUDICIAL VINCULATORIO:</p>
+        <p class="jurisprudencia-texto">
+            {{ tesis_ia_1 | default('Tesis de la SCJN [AUTOSELECCIONADA]: "FUNDAMENTACIÓN Y MOTIVACIÓN, GARANTÍA DE." Es
+            nulo todo acto carente de adecuación entre los motivos fundantes y la normativa expresa.') }}
+        </p>
+    </div>
+</div>
+
+<div class="concepto-violacion">
+    <h3>SEGUNDO CONCEPTO DE VIOLACIÓN — PRINCIPIO PRO PERSONA</h3>
+    <h4>Tratados Internacionales omitidos e Inconvencionalidad</h4>
+    <p class="text-justify double-space">
+        {{ concepto_2_ia | default("Se violenta a su vez el artículo 1o Constitucional, ya que las responsables
+        omitieron llevar a cabo el control difuso de constitucionalidad para inaplicar la norma que lesiona mis
+        prerrogativas, decantando por la interpretación más restrictiva en franca oposición a la Convención Americana
+        sobre Derechos Humanos...") }}
+    </p>
+</div>
+
+
+<!-- ════════ CAPÍTULO 3 - SUSPENSIÓN ════════ -->
+<div class="section-title numbered">III. SOLICITUD DE SUSPENSIÓN PROVISIONAL</div>
+<p class="indent text-justify double-space">
+    Por reunir los requisitos del artículo 128 L.A., al no contravenir normas de orden público ni afectar el interés
+    social y debido al peligro en la demora ("periculum in mora"), SOLICITO LA SUSPENSIÓN DE PLANO del acto reclamado a
+    fin de que se ordene a las ejecutoras abstenerse de materializarlo hasta resuelto el tema de fondo.
+</p>
+
+<!-- ════════ FIRMA ════════ -->
+<p class="text-center text-bold" style="margin-top:40px;">PROTESTO LO NECESARIO CONFORME A DERECHO</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ nombre_quejoso | default("[QUEJOSO]") }}</div>
+</div>
+
+<div class="confidencialidad-v3">
+    <strong>SÍNTESIS V3 (DEEP LEARNING):</strong> Los conceptos de violación del presente han sido forjados por motores
+    NLU relacionando la subsunción lógica entre Acto, Leyes Regulatorias y las garantías Constitucionales vigentes.
+    <code>Hash: {{ hash_documento | default("AMP-3091-V3X") }}</code>.
+</div>
+{% endblock %}

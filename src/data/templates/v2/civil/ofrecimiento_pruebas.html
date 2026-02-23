@@ -1,0 +1,31 @@
+<div class="header-v2">
+<span class="tier-badge">PROFESIONAL</span>
+<h1>Ofrecimiento de Pruebas</h1>
+<p class="subtitle-v2">Arts. 281-326 CFPC</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto | default("__ de ________ de 20__") }}</p>
+
+<p class="indent text-justify">Escrito de ofrecimiento de pruebas en juicio civil ordinario.</p>
+
+<div class="section-title">FUNDAMENTO LEGAL</div>
+<p class="indent text-justify">El presente documento se fundamenta en Arts. 281-326 CFPC y demás disposiciones aplicables del marco jurídico mexicano vigente.</p>
+
+<div class="section-title">DATOS DEL PROMOVENTE</div>
+<p class="indent text-justify"><strong>{{ nombre_promovente | default("NOMBRE COMPLETO") }}</strong>, {{ nacionalidad | default("mexicano(a)") }}, mayor de edad, con domicilio en {{ domicilio | default("_________________________________") }}, identificándose con {{ identificacion | default("credencial para votar (INE)") }} número {{ numero_id | default("_______________") }}.</p>
+
+<div class="section-title">HECHOS</div>
+<p class="indent text-justify"><strong>PRIMERO.</strong> — {{ hecho_1 | default("Relacionar los hechos que motivan la presentación de este documento, indicando fechas, lugares y circunstancias relevantes.") }}</p>
+<p class="indent text-justify"><strong>SEGUNDO.</strong> — {{ hecho_2 | default("Describir las consecuencias jurídicas y fácticas de los hechos narrados.") }}</p>
+<p class="indent text-justify"><strong>TERCERO.</strong> — {{ hecho_3 | default("Señalar los elementos de prueba o indicios que soportan la pretensión.") }}</p>
+
+<div class="section-title">PETICIONES</div>
+<p class="indent text-justify"><strong>PRIMERA.</strong> — Tener por presentado el presente escrito en los términos solicitados.<br>
+<strong>SEGUNDA.</strong> — Dar trámite conforme a derecho corresponda.<br>
+<strong>TERCERA.</strong> — {{ peticion_especifica | default("Resolver favorablemente la pretensión del promovente.") }}</p>
+
+<p class="indent text-justify">PROTESTO LO NECESARIO.</p>
+
+<div class="signature-block" style="margin-top:50px;"><div class="signature-line">{{ nombre_promovente | default("EL PROMOVENTE") }}</div></div>
+
+<div class="confidencialidad-v2"><strong>AVISO:</strong> Este documento es una plantilla profesional de Machotes Legales. Su uso no sustituye la asesoría de un abogado titulado.</div>

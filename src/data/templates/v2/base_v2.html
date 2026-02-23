@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Machotes Legales — Documento V2 Negocios{% endblock %}</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: letter;
+            margin: 2.5cm 2.5cm 2cm 3cm;
+        }
+
+        body {
+            font-family: 'Crimson Text', 'Times New Roman', serif;
+            font-size: 13pt;
+            line-height: 1.8;
+            color: #1a1a1a;
+            background: #fff;
+            max-width: 21.6cm;
+            margin: 0 auto;
+            padding: 2.5cm 2.5cm 2cm 3cm;
+        }
+
+        /* ══════ HEADER V2 ══════ */
+        .header-v2 {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px double #1a1a1a;
+        }
+
+        .header-v2 h1 {
+            font-size: 16pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle-v2 {
+            font-size: 10pt;
+            color: #444;
+            line-height: 1.4;
+        }
+
+        .tier-badge {
+            display: inline-block;
+            font-family: 'Inter', sans-serif;
+            font-size: 8pt;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: #fff;
+            background: linear-gradient(135deg, #c9a84c, #dbb85a);
+            padding: 3px 12px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+
+        /* ══════ SECCIONES ══════ */
+        .section-title {
+            font-size: 13pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .section-title.numbered {
+            color: #1a365d;
+        }
+
+        /* ══════ TEXTO ══════ */
+        .indent {
+            text-indent: 1.5cm;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .text-bold {
+            font-weight: 700;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .double-space {
+            line-height: 2.0;
+        }
+
+        .meta-line {
+            text-align: right;
+            font-size: 12pt;
+            margin-bottom: 20px;
+        }
+
+        .destinatario {
+            font-size: 12pt;
+            margin-bottom: 3px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        /* ══════ JURISPRUDENCIA BOX ══════ */
+        .jurisprudencia-box {
+            background: #f7f5f0;
+            border-left: 4px solid #c9a84c;
+            padding: 12px 16px;
+            margin: 15px 0 20px 1.5cm;
+            font-size: 10.5pt;
+            line-height: 1.5;
+        }
+
+        .jurisprudencia-titulo {
+            font-family: 'Inter', sans-serif;
+            font-size: 8pt;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            color: #8b7432;
+            margin-bottom: 8px;
+        }
+
+        .jurisprudencia-texto {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .jurisprudencia-texto:last-child {
+            margin-bottom: 0;
+        }
+
+        .jurisprudencia-texto em {
+            font-style: italic;
+            color: #1a365d;
+        }
+
+        /* ══════ CONCEPTOS DE VIOLACIÓN ══════ */
+        .concepto-violacion {
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .concepto-violacion h3 {
+            font-size: 12pt;
+            font-weight: 700;
+            color: #1a365d;
+            margin-bottom: 3px;
+        }
+
+        .concepto-violacion h4 {
+            font-size: 11pt;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        /* ══════ FIRMAS ══════ */
+        .signature-block {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .signature-line {
+            display: inline-block;
+            min-width: 280px;
+            border-top: 1px solid #000;
+            padding-top: 8px;
+            font-size: 11pt;
+            font-weight: 600;
+        }
+
+        /* ══════ CONFIDENCIALIDAD V2 ══════ */
+        .confidencialidad-v2 {
+            margin-top: 50px;
+            padding: 12px 16px;
+            border: 1px solid #ddd;
+            background: #fafafa;
+            font-family: 'Inter', sans-serif;
+            font-size: 8pt;
+            line-height: 1.4;
+            color: #777;
+        }
+
+        .confidencialidad-v2 p {
+            margin-bottom: 4px;
+        }
+
+        /* ══════ TABLAS ══════ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        td,
+        th {
+            padding: 6px 8px;
+            font-size: 12pt;
+        }
+
+        /* ══════ PRINT ══════ */
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            .tier-badge {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .jurisprudencia-box {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .confidencialidad-v2 {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    {% block content %}{% endblock %}
+</body>
+
+</html>

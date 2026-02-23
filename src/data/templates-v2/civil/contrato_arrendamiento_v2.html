@@ -1,0 +1,217 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Contrato de Arrendamiento</h1>
+    <p class="subtitle-v2">Artículos 2398-2496 del Código Civil Federal · Ley de Extinción de Dominio ·
+        Jurisprudencia SCJN sobre desocupación y cláusulas penales</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, {{ estado | default("Ciudad de México") }}, a {{
+    fecha_actual_texto }}</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--               ENCABEZADO DEL CONTRATO               -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title">CONTRATO DE ARRENDAMIENTO DE INMUEBLE</div>
+
+<p class="indent text-justify">
+    Contrato de arrendamiento que celebran, por una parte, <strong>{{ arrendador.nombre | default("NOMBRE COMPLETO DEL
+        ARRENDADOR") }}</strong>, en lo sucesivo <strong>"EL ARRENDADOR"</strong>, con domicilio en
+    {{ arrendador.domicilio | default("_______________") }}, y por la otra,
+    <strong>{{ arrendatario.nombre | default("NOMBRE COMPLETO DEL ARRENDATARIO") }}</strong>, en lo sucesivo
+    <strong>"EL ARRENDATARIO"</strong>, con domicilio actual en {{ arrendatario.domicilio | default("_______________")
+    }},
+    {{ fiador_intro | default("con la intervención de <strong>" + (fiador.nombre | default("NOMBRE DEL FIADOR")) +
+        "</strong> como <strong>FIADOR Y OBLIGADO SOLIDARIO</strong>") }},
+    al tenor de las siguientes:
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--              DECLARACIONES                          -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">I. DECLARACIONES</div>
+<p class="indent text-justify">
+    <strong>DEL ARRENDADOR:</strong><br>
+    a) Que es legítimo propietario del inmueble ubicado en <strong>{{ inmueble.direccion | default("Calle, Número,
+        Colonia, Alcaldía/Municipio, C.P., Estado") }}</strong>, según consta en la escritura
+    {{ inmueble.escritura | default("número ___ de fecha ___") }}, inscrita en el Registro Público de la Propiedad
+    bajo el folio {{ inmueble.folio | default("___") }}.<br>
+    b) Que dicho inmueble se encuentra libre de gravámenes, hipotecas y limitaciones de dominio.<br>
+    c) Que tiene plena capacidad jurídica para celebrar el presente contrato.
+</p>
+<p class="indent text-justify">
+    <strong>DEL ARRENDATARIO:</strong><br>
+    a) Que es mexicano(a), mayor de edad, con capacidad legal para obligarse.<br>
+    b) Que conoce el estado físico del inmueble y lo acepta en las condiciones en que se encuentra.<br>
+    c) Que se compromete a destinar el inmueble exclusivamente para uso
+    {{ uso_inmueble | default("HABITACIONAL") }}.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                   CLÁUSULAS                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">II. CLÁUSULAS</div>
+
+<p class="indent text-justify double-space">
+    <strong>PRIMERA. — OBJETO:</strong> EL ARRENDADOR concede en arrendamiento a EL ARRENDATARIO el uso y goce
+    temporal del inmueble descrito en las declaraciones, con una superficie aproximada de
+    {{ inmueble.superficie | default("___") }} m², que consta de {{ inmueble.descripcion | default("___
+    recámaras, ___ baños, sala, comedor, cocina, estacionamiento") }}.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>SEGUNDA. — VIGENCIA:</strong> El presente contrato tendrá una vigencia de
+    <strong>{{ plazo | default("12 (DOCE)") }} meses</strong>, iniciando el
+    {{ fecha_inicio | default("_______________") }} y concluyendo el {{ fecha_fin | default("_______________") }},
+    pudiendo ser prorrogado por acuerdo escrito de ambas partes con un mínimo de
+    {{ aviso_prorroga | default("30") }} días naturales de anticipación.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>TERCERA. — RENTA:</strong> EL ARRENDATARIO se obliga a pagar como renta mensual la cantidad de
+    <strong>${{ renta_mensual | default("_______________") }} ({{ renta_letra | default("_______________") }}
+        PESOS 00/100 M.N.)</strong>, pagaderos por adelantado dentro de los primeros
+    {{ dia_pago | default("5") }} días de cada mes, mediante
+    {{ forma_pago | default("transferencia electrónica a la cuenta bancaria que designe EL ARRENDADOR") }}.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>CUARTA. — DEPÓSITO EN GARANTÍA:</strong> EL ARRENDATARIO entrega en este acto la cantidad de
+    ${{ deposito | default("_______________") }} M.N. equivalente a {{ meses_deposito | default("2") }}
+    meses de renta, como depósito en garantía. Dicha cantidad será devuelta al término del contrato, previa
+    verificación del estado del inmueble, descontando las reparaciones necesarias por daños imputables al
+    arrendatario. El depósito <strong>no podrá ser aplicado como pago de rentas</strong>.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>QUINTA. — ADJUSTO ANUAL DE RENTA:</strong> La renta se incrementará anualmente conforme al
+    {{ ajuste | default("Índice Nacional de Precios al Consumidor (INPC) publicado por el INEGI, más un diferencial
+    de hasta 2 puntos porcentuales, con un tope máximo del 10% anual") }}.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>SEXTA. — OBLIGACIONES DEL ARRENDATARIO:</strong><br>
+    a) Destinar el inmueble exclusivamente al uso pactado.<br>
+    b) Conservar el inmueble en buen estado, realizando las reparaciones menores a su cargo (Art. 2444 CC).<br>
+    c) No realizar modificaciones estructurales sin autorización escrita del arrendador.<br>
+    d) No subarrendar ni ceder los derechos del presente contrato sin autorización expresa.<br>
+    e) Permitir las visitas de inspección del arrendador, previo aviso de 48 horas.<br>
+    f) Respetar el reglamento interno del edificio o fraccionamiento, en su caso.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>SÉPTIMA. — CLÁUSULA PENAL POR RETRASO EN PAGO:</strong> En caso de mora en el pago de la renta,
+    EL ARRENDATARIO se obliga a pagar una pena convencional de
+    {{ penalidad | default("5%") }} mensual sobre la renta adeudada por cada mes o fracción de retraso.
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">JURISPRUDENCIA SOBRE CLÁUSULA PENAL:</p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: 1a./J. 46/2014 (10a.)</strong> — Primera Sala — SCJN<br>
+        Rubro: <em>"CLÁUSULA PENAL EN EL CONTRATO DE ARRENDAMIENTO. SU VALIDEZ Y ALCANCE."</em><br>
+        La cláusula penal es válida siempre que no resulte desproporcionada respecto del daño previsible al momento de
+        la
+        celebración del contrato.
+    </p>
+</div>
+
+<p class="indent text-justify double-space">
+    <strong>OCTAVA. — TERMINACIÓN ANTICIPADA:</strong> Cualquiera de las partes podrá dar por terminado el contrato
+    de manera anticipada, dando aviso por escrito con un mínimo de {{ aviso_terminacion | default("60") }} días
+    naturales de anticipación. {{ penalidad_anticipada | default("En caso de terminación anticipada por parte del
+    ARRENDATARIO, perderá el depósito en garantía como pena convencional. En caso de terminación anticipada por el
+    ARRENDADOR, deberá devolver el depósito y pagar una indemnización equivalente a 2 meses de renta.") }}
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>NOVENA. — DESOCUPACIÓN Y ENTREGA:</strong> Al término del contrato, EL ARRENDATARIO se obliga a
+    entregar el inmueble en las mismas condiciones en que lo recibió, salvo el deterioro por uso normal, dentro
+    de los <strong>{{ dias_entrega | default("5") }} días hábiles</strong> siguientes al vencimiento.
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">JURISPRUDENCIA SOBRE DESOCUPACIÓN:</p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: 3a./J. 15/91</strong> — Tercera Sala — SCJN<br>
+        Rubro: <em>"ARRENDAMIENTO. RESCISIÓN DEL CONTRATO POR FALTA DE PAGO DE RENTAS. LA ACCIÓN PROCEDE AUN CUANDO
+            NO SE HAYA REQUERIDO EL PAGO PREVIAMENTE AL ARRENDATARIO."</em>
+    </p>
+</div>
+
+<p class="indent text-justify double-space">
+    <strong>DÉCIMA. — PROHIBICIÓN DE ACTIVIDADES ILÍCITAS (EXTINCIÓN DE DOMINIO):</strong>
+    EL ARRENDATARIO se obliga a no utilizar el inmueble para la <strong>realización, almacenamiento o encubrimiento
+        de actividades ilícitas</strong> de ninguna naturaleza. En caso de que se determine el uso del inmueble para
+    actividades delictivas, EL ARRENDATARIO será el único responsable ante las autoridades, y EL ARRENDADOR podrá
+    rescindir el contrato de forma inmediata. Esta cláusula protege al ARRENDADOR contra los efectos de la
+    <strong>Ley Nacional de Extinción de Dominio</strong> (DOF 09/08/2019).
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>DÉCIMA PRIMERA. — FIADOR Y OBLIGADO SOLIDARIO:</strong>
+    {{ fiador.nombre | default("NOMBRE DEL FIADOR") }}, con domicilio en {{ fiador.domicilio | default("___") }},
+    propietario(a) del inmueble ubicado en {{ fiador.inmueble | default("___") }}, según escritura
+    {{ fiador.escritura | default("número ___ de fecha ___") }}, se constituye como fiador y obligado solidario
+    del ARRENDATARIO, renunciando expresamente a los beneficios de orden y excusión (Arts. 2814 y 2823 CC),
+    respondiendo por las obligaciones de pago, reparaciones y daños derivados del presente contrato.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>DÉCIMA SEGUNDA. — MEDIACIÓN:</strong> Las partes acuerdan que cualquier controversia derivada del
+    presente contrato será resuelta preferentemente mediante <strong>mediación</strong> ante el Centro de Justicia
+    Alternativa del {{ tribunal_mediacion | default("Tribunal Superior de Justicia de la Ciudad de México") }}.
+    En caso de no llegar a un acuerdo, se someten a la jurisdicción de los tribunales competentes de
+    {{ jurisdiccion | default("la Ciudad de México") }}.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>DÉCIMA TERCERA. — LEGISLACIÓN APLICABLE:</strong> Para todo lo no previsto en el presente contrato,
+    las partes se sujetan a lo dispuesto en los artículos <strong>2398 al 2496 del Código Civil</strong>,
+    y supletoriamente en el <strong>Código de Procedimientos Civiles</strong> de la entidad federativa aplicable.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                   FIRMAS                            -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<p class="indent text-justify" style="margin-top:30px;">
+    Leído que fue el presente contrato por las partes y estando conformes con su contenido, lo firman por
+    duplicado en {{ ciudad | default("la Ciudad de México") }}, a {{ fecha_actual_texto }}.
+</p>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:40px;">
+    <div class="signature-block">
+        <div class="signature-line">EL ARRENDADOR<br>{{ arrendador.nombre | default("NOMBRE Y FIRMA") }}</div>
+    </div>
+    <div class="signature-block">
+        <div class="signature-line">EL ARRENDATARIO<br>{{ arrendatario.nombre | default("NOMBRE Y FIRMA") }}</div>
+    </div>
+</div>
+<div style="max-width:300px; margin:30px auto 0;">
+    <div class="signature-block">
+        <div class="signature-line">FIADOR Y OBLIGADO SOLIDARIO<br>{{ fiador.nombre | default("NOMBRE Y FIRMA") }}</div>
+    </div>
+</div>
+
+<div style="margin-top:20px; display:grid; grid-template-columns:1fr 1fr; gap:40px;">
+    <div class="signature-block">
+        <div class="signature-line">TESTIGO 1<br>{{ testigo_1 | default("NOMBRE Y FIRMA") }}</div>
+    </div>
+    <div class="signature-block">
+        <div class="signature-line">TESTIGO 2<br>{{ testigo_2 | default("NOMBRE Y FIRMA") }}</div>
+    </div>
+</div>
+
+<div class="confidencialidad-v2">
+    <p><strong>AVISO DE CONFIDENCIALIDAD — DOCUMENTO V2 NEGOCIOS</strong></p>
+    <p>Este documento fue generado por Machotes Legales® y contiene cláusulas profesionales de protección patrimonial,
+        extinción de dominio y mediación. Prohibida su reproducción sin autorización.</p>
+    <p>Licencia: {{ license_id | default("TLEX-V2-XXXXXX") }} · Usuario: {{ license_user | default("___") }}</p>
+</div>
+{% endblock %}

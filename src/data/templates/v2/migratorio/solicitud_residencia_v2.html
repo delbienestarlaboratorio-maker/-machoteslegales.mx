@@ -1,0 +1,114 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Solicitud de Trámite de Residencia Permanente y Trascendencia Migratoria</h1>
+    <p class="subtitle-v2">Arts. 52, 54 y 133 de la Ley de Migración y Reglamento del INM · Vinculo Familiar /
+        Jubilación / Sistema de Puntos</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, a {{ fecha_actual_texto }}</p>
+
+<p class="text-bold destinatario">INSTITUTO NACIONAL DE MIGRACIÓN (INM)</p>
+<p class="text-bold">OFICINA DE REPRESENTACIÓN EN {{ estado | default("___") }}</p>
+<p class="text-bold">H. COMISIONADO DE REGULACIÓN MIGRATORIA EN TURNO</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                     PROEMIO                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<p class="indent text-justify">
+    <strong>{{ solicitante.nombre | default("NOMBRE COMPLETO DEL EXTRANJERO PROMOVENTE") }}</strong>, de nacionalidad {{
+    solicitante.nacionalidad | default("_______________") }}, contando con pasaporte oficial ordinario número <strong>{{
+        solicitante.pasaporte | default("___") }}</strong> emitido por las autoridades de mi país de origen y con número
+    único de extranjería de internamiento (si fuere temporal previo): <strong>{{ solicitante.num_extranjero |
+        default("___") }}</strong>; señalando como domicilio físico para oír y recibir documentos en territorio nacional
+    el ubicado en {{ solicitante.domicilio | default("_______________") }} y correo electrónico: <strong>{{
+        solicitante.email | default("___") }}</strong>; ante la superioridad de esta H. Delegación Migratoria con pleno
+    respeto, ruego que se me atienda:
+</p>
+
+<p class="indent text-justify">
+    Que por medio de la promoción del presente escrito oficial (el cual complemento material y electrónicamente con el
+    Formato Básico y FIE del Trámite Digital INM), en mijecución de mis derechos sustantivos derivados de la Ley de
+    Migración reformada de los Estados Unidos Mexicanos y su reglamento consuetudinario, de manera respetuosa
+    <strong>SOLICITO EL CAMBIO DE CONDICIÓN MIGRATORIA PARA LA OBTENCIÓN DE LA RESIDENCIA PERMANENTE</strong>:
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                 I. MOTIVOS   DE LA SOLICITUD        -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">I. CAUSAL PRINCIPAL DEL CAMBIO DE SITUACIÓN MIGRATORIA (ART. 54 INM)</div>
+
+<p class="indent text-justify double-space">
+    Esta solicitud se fundamenta y motiva irrefutablemente en el supuesto administrativo de: <strong>{{
+        causal_residencia | default("[Elija: VÍNCULO FAMILIAR / JUBILADO PENSIONISTA / 4 AÑOS COMO RESIDENTE TEMPORAL /
+        ASILO POLÍTICO]") }}</strong>, bajo las siguientes circunstancias de hecho:
+</p>
+<p class="indent text-justify double-space">
+    <strong>ÚNICO.-</strong> {{_hechos_causal | default("(Ej. Vínculo: Que contraje nupcias de buena fe y mantengo
+    matrimonio verificado por más de 2 años con cónyuge de nacionalidad mexicana... / Ej. Jubilación: Que he migrado al
+    territorio para jubilación demostrando ingresos o activos de inversión mayores a los UMAS exigibles por la
+    Miscelánea Migratoria vigente.)") }}
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">PRINCIPIO DE UNIDAD FAMILIAR Y NO DISCRIMINACIÓN:</p>
+    <p class="jurisprudencia-texto">
+        La Constitución Mexicana y los Tratados Internacionales (Convenio sobre Trabajadores Migrantes, Convención
+        CADH), respaldados por la LGdP/SE, obligan al Estado Mexicano a aplicar el Principio Pro Persona para la
+        expedita autorización de resoluciones permanentes que fortalezcan la Unidad Familiar, evitando rechazos
+        discrecionales injustificados si existe el vínculo biológico o civil primario debidamente apostillado acreditado
+        en los anexos.
+    </p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--               II. DOCUMENTALES PÚBLICAS             -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">II. DOCUMENTOS ANEXOS (BAJO PROTESTA DE DECIR VERDAD)</div>
+<p class="indent text-justify double-space">
+    En estricto cumplimiento y apegado a la lista de requisitos del portal de Trámites de Autorización, exhibo en
+    original y copias simples legibles los siguientes instrumentos apostillados/traducidos según se amerite:
+</p>
+<ul class="ml-8 list-none space-y-2 mt-4 text-justify">
+    <li><strong>1.</strong> Recibo de pago original de aprovechamientos de comprobación de pago (DPA).</li>
+    <li><strong>2.</strong> Impresión del trámite con NUT.</li>
+    <li><strong>3.</strong> Pasaporte extranjero original y hojas legibles con sellos de entradas al país.</li>
+    <li><strong>4.</strong> Forma Migratoria Múltiple (FMM) o mi anterior Trjeta de Residencia Temporal.</li>
+    <li><strong>5.</strong> {{ causal_documento_fuerte | default("Acta de matrimonio certificada de mi cónyuge nacional
+        / Acta de nacimiento hija(o) / Estado de cuenta internacional validado notarialmente indicando ahorros para
+        modelo pensionista.") }}</li>
+</ul>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                 III. PETITORIOS FINALES             -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">III. SOLICITUD A LA AUTORIDAD RESOLUTORA</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Radicar, sellar y tener debidamente presentados mis anexos y documentos base de esta
+    acción migratoria al instituto.<br>
+    <strong>SEGUNDO.-</strong> Evaluar conforme a Derecho mi status de arraigo, y de calificar solvente y legal,
+    <strong>EMITIR OFICIO DE REGULARIZACIÓN AUTORIZANDO LA CONDICIÓN DE ESTANCIA DE RESIDENTE PERMANENTE
+        DEFINITIVO</strong> en el territorio de los Estados Unidos Mexicanos con la respectiva asignación de la tarjeta
+    plástica vigente por la temporalidad de ley.<br>
+    <strong>TERCERO.-</strong> Autorizarme consecuentemente a realizar actividades remuneradas (Permiso de trabajo libre
+    implícito).
+</p>
+
+<p class="text-center text-bold" style="margin-top:40px;">FIRMA DEL EXTRANJERO Y DECLARACIÓN DE VERACIDAD DE DATOS</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ solicitante.nombre | default("NOMBRE COMPLETO Y FIRMA COMO APARECE EN PASAPORTE") }}
+    </div>
+</div>
+
+<div class="confidencialidad-v2">
+    <p><strong>AVISO V2 NEGOCIOS — PROMOCIÓN INM TIPO LEGAL</strong></p>
+    <p>Estructurado con argumentos Pro Persona de Derechos Humanos para trámites migratorios complejos. La exhibición
+        con este cuerpo legal disminuye resoluciones negativas (prevenciones) por parte de áreas sustantivas del
+        Instituto Nacional de Migración.</p>
+</div>
+{% endblock %}

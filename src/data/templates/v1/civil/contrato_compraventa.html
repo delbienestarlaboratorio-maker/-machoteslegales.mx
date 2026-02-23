@@ -1,0 +1,100 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Contrato de Compraventa</h1>
+    <p class="subtitle">Artículos 2248-2323 del Código Civil Federal</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto |
+    default("__ de ________ de 20__") }}</p>
+
+<p class="indent text-justify">
+    <strong>CONTRATO DE COMPRAVENTA</strong> que celebran por una parte
+    <strong>{{ vendedor | default("NOMBRE DEL VENDEDOR") }}</strong>,
+    a quien en lo sucesivo se le denominará <strong>"EL VENDEDOR"</strong>,
+    y por la otra <strong>{{ comprador | default("NOMBRE DEL COMPRADOR") }}</strong>,
+    a quien se le denominará <strong>"EL COMPRADOR"</strong>,
+    al tenor de las siguientes:
+</p>
+
+<div class="section-title">DECLARACIONES</div>
+
+<p class="indent text-justify">
+    <strong>I.</strong> Declara <strong>EL VENDEDOR</strong> ser legítimo propietario del bien objeto
+    de este contrato, consistente en {{ descripcion_bien | default("_________________________________") }},
+    ubicado en {{ ubicacion_bien | default("_________________________________") }},
+    el cual adquirió mediante {{ titulo_propiedad | default("escritura pública / factura / contrato de compraventa") }}.
+</p>
+
+<p class="indent text-justify">
+    <strong>II.</strong> Declara <strong>EL COMPRADOR</strong> su interés en adquirir el bien
+    descrito en la declaración anterior, y que cuenta con los recursos económicos
+    para cubrir el precio pactado.
+</p>
+
+<p class="indent text-justify">
+    <strong>III.</strong> Ambas partes se reconocen capacidad legal para obligarse
+    en los términos del presente contrato.
+</p>
+
+<div class="section-title">CLÁUSULAS</div>
+
+<p class="indent text-justify">
+    <strong>PRIMERA. — OBJETO.</strong> EL VENDEDOR transmite la propiedad del bien descrito
+    en la Declaración I a favor de EL COMPRADOR, quien lo acepta.
+</p>
+
+<p class="indent text-justify">
+    <strong>SEGUNDA. — PRECIO.</strong> El precio total de la compraventa es de
+    <strong>${{ precio | default("___________") }} M.N.</strong>
+    ({{ precio_letra | default("_________________________________") }} PESOS 00/100 MONEDA NACIONAL),
+    que EL COMPRADOR se obliga a pagar de la siguiente forma:
+    {{ forma_pago | default("en una sola exhibición al momento de la firma del presente contrato.") }}
+</p>
+
+<p class="indent text-justify">
+    <strong>TERCERA. — ENTREGA.</strong> EL VENDEDOR se obliga a entregar el bien objeto
+    de este contrato en {{ plazo_entrega | default("el acto de la firma del presente instrumento") }},
+    en las condiciones en que se encuentra.
+</p>
+
+<p class="indent text-justify">
+    <strong>CUARTA. — VICIOS OCULTOS.</strong> EL VENDEDOR responde por los vicios ocultos
+    del bien vendido, en términos de los artículos 2142 y 2143 del Código Civil Federal.
+</p>
+
+<p class="indent text-justify">
+    <strong>QUINTA. — GASTOS.</strong> Los gastos de escrituración, traslado de dominio
+    e impuestos serán cubiertos por {{ gastos_cargo | default("EL COMPRADOR") }}.
+</p>
+
+<p class="indent text-justify">
+    <strong>SEXTA. — JURISDICCIÓN.</strong> Para todo lo relacionado con la interpretación
+    y cumplimiento del presente contrato, las partes se someten a la jurisdicción
+    de los tribunales de {{ jurisdiccion | default("_________________________________") }}.
+</p>
+
+<p class="indent text-justify">
+    Leído que fue el presente contrato y enteradas las partes de su contenido y alcance
+    legal, lo firman por duplicado en la fecha señalada al inicio.
+</p>
+
+<div style="display:flex; gap:40px; margin-top:50px;">
+    <div class="signature-block" style="flex:1;">
+        <div class="signature-line">{{ vendedor | default("EL VENDEDOR") }}</div>
+    </div>
+    <div class="signature-block" style="flex:1;">
+        <div class="signature-line">{{ comprador | default("EL COMPRADOR") }}</div>
+    </div>
+</div>
+
+<div style="display:flex; gap:40px; margin-top:30px;">
+    <div class="signature-block" style="flex:1;">
+        <div class="signature-line">{{ testigo_1 | default("TESTIGO 1") }}</div>
+    </div>
+    <div class="signature-block" style="flex:1;">
+        <div class="signature-line">{{ testigo_2 | default("TESTIGO 2") }}</div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,126 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Poder General para Pleitos y Cobranzas, Actos de Administración y de Dominio</h1>
+    <p class="subtitle-v2">Arts. 2554 y 2558 del Código Civil Federal · Cláusulas de Revocación y Facultades Especiales
+    </p>
+</div>
+
+<p class="meta-line">Escritura Pública No. {{ num_escritura | default("_______________") }} | Notaría No. {{ num_notaria
+    | default("___") }}, a {{ fecha_actual_texto }}</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                     PROEMIO                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<p class="indent text-justify">
+    En la ciudad de {{ ciudad | default("______________") }}, yo, el Licenciado <strong>{{ nombre_notario |
+        default("NOMBRE DEL NOTARIO") }}</strong>, Notario Público número {{ num_notaria | default("___") }}, hago
+    constar el otorgamiento del <strong>PODER GENERAL PARA PLEITOS Y COBRANZAS, ACTOS DE ADMINISTRACIÓN Y ACTOS DE
+        RIGUROSO DOMINIO</strong> que otorga:
+</p>
+
+<p class="indent text-justify double-space" style="margin-left: 40px; border-left: 3px solid #111; padding-left: 15px;">
+    <strong>EL PODERDANTE:</strong> {{ poderdante.nombre | default("NOMBRE DEL OTORGANTE") }}, de nacionalidad {{
+    poderdante.nacionalidad | default("Mexicana") }}, estado civil {{ poderdante.estado_civil |
+    default("_______________") }}, ocupación {{ poderdante.ocupacion | default("_______________") }}, nacido el {{
+    poderdante.fecha_nacimiento | default("___") }}, con RFC {{ poderdante.rfc | default("___") }} y domicilio en {{
+    poderdante.domicilio | default("_______________") }}.
+</p>
+
+<p class="indent text-justify" style="margin-top: 20px;">
+    Para que sea ejercido a favor de:
+</p>
+
+<p class="indent text-justify double-space" style="margin-left: 40px; border-left: 3px solid #111; padding-left: 15px;">
+    <strong>EL APODERADO:</strong> {{ apoderado.nombre | default("NOMBRE DEL APODERADO") }}, con domicilio en {{
+    apoderado.domicilio | default("_______________") }}.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                  CLÁUSULAS                          -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">CLÁUSULAS DEL MANDATO</div>
+
+<p class="indent text-justify double-space">
+    <strong>PRIMERA. PLEITOS Y COBRANZAS:</strong> Se otorga PODER GENERAL PARA PLEITOS Y COBRANZAS, con todas las
+    facultades generales y las especiales que requieran cláusula especial conforme a la ley, en los términos del primer
+    párrafo del artículo 2554 del Código Civil Federal. El apoderado podrá representar al poderdante ante particulares y
+    toda clase de autoridades administrativas y jurisdiccionales (Federales, Estatales o Municipales), Ministerios
+    Públicos, Juntas de Conciliación, Tribunales Laborales y ante la Procuraduría Federal del Consumidor (PROFECO). <br>
+    De manera enunciativa y no limitativa, podrá contestar demandas, oponer excepciones, reconvenir, someterse a
+    arbitraje, articular y absolver posiciones, recusar magistrados, promover amparos y desistirse de ellos, así como
+    formular querellas y otorgar perdones penales.
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">FACULTADES EN MATERIA LABORAL:</p>
+    <p class="jurisprudencia-texto">
+        En términos de los artículos 11, 46, 47, 692, 786, 876 de la Ley Federal del Trabajo, el apoderado cuenta con
+        representación patronal plena para acudir a audiencias de conciliación, demanda y excepciones, pudiendo celebrar
+        convenios laborales y rescindir contratos de trabajo válidamente.
+    </p>
+</div>
+
+<p class="indent text-justify double-space">
+    <strong>SEGUNDA. ACTOS DE ADMINISTRACIÓN:</strong> Se otorga PODER GENERAL PARA ACTOS DE ADMINISTRACIÓN, en los
+    términos del segundo párrafo del artículo 2554 del Código Civil Federal, para que administre los bienes y negocios
+    del poderdante, defienda sus intereses, celebre contratos de arrendamiento, prestación de servicios, apertura de
+    cuentas bancarias y gestione toda clase de trámites fiscales ante el Servicio de Administración Tributaria (SAT).
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>TERCERA. ACTOS DE DOMINIO:</strong> Se otorga PODER GENERAL PARA ACTOS DE DOMINIO, en los términos del
+    tercer párrafo del artículo 2554 del Código Civil Federal, facultando al apoderado para que actue con todas las
+    facultades de dueño, tanto en lo relativo a los bienes del poderdante, como para hacer toda clase de gestiones para
+    adquirir bienes por cualquier título legítimo. Podrá comprar, vender, donar, permutar, hipotecar y pignorar.
+</p>
+
+{{ clausula_limitacion | default("
+<p class='indent text-justify double-space'>
+    <strong>CUARTA. LIMITACIONES DEL PODER (OPCIONAL):</strong> El presente poder general de dominio queda expresamente
+    limitado en cuanto a su objeto, de manera que el apoderado única y exclusivamente podrá ejercer los actos de dominio
+    respecto del bien inmueble ubicado en [DIRECCIÓN DEL INMUEBLE EXCLUSIVO]. Para cualquier otro bien, el apoderado no
+    tendrá facultades de riguroso dominio.
+</p>
+") }}
+
+<p class="indent text-justify double-space">
+    <strong>QUINTA. SUSCRIPCIÓN DE TÍTULOS DE CRÉDITO:</strong> Se otorgan facultades plenas en los términos del
+    artículo 9 de la Ley General de Títulos y Operaciones de Crédito, para emitir, suscribir, endosar y avalar toda
+    clase de pagarés, cheques y letras de cambio a nombre del mandante.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>SEXTA. DELEGACIÓN O SUSTITUCIÓN:</strong> El apoderado <strong>{{ facultad_sustitucion | default("SÍ")
+        }}</strong> queda expresamente facultado para sustituir o delegar, total o parcialmente, el presente poder en
+    favor de terceros, reservándose o no su ejercicio concurrente.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>SÉPTIMA. REVOCABILIDAD Y VIGENCIA:</strong> Este mandato es de carácter REVOCABLE. Tendrá una vigencia de
+    <strong>{{ vigencia_poder | default("3 (TRES) AÑOS") }}</strong> contados a partir de la firma del presente
+    instrumento, extinguiéndose automáticamente a su término si no fuere revocado previamente por el mandante.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                    CIERRE                           -->
+<!-- ═══════════════════════════════════════════════════ -->
+<p class="indent text-justify" style="margin-top: 30px;">
+    Yo, el Notario, certifico que me aseguré de la identidad del otorgante y de que tiene capacidad legal requerida,
+    habiéndole leído el presente poder y manifestando su plena conformidad.
+</p>
+
+<div class="signature-block" style="margin-top:40px; margin-left: auto; margin-right: auto;">
+    <div class="signature-line">{{ poderdante.nombre | default("NOMBRE Y FIRMA DEL PODERDANTE") }}</div>
+</div>
+
+<div class="confidencialidad-v2">
+    <p><strong>AVISO V2 NEGOCIOS — PODER NOTARIAL BLINDADO</strong></p>
+    <p>Esta es una redacción notarial depurada de Machotes Legales®. Incluye cláusulas explícitas sobre materia laboral (LFT) y
+        títulos de crédito (LGTOC), además de opciones de protección limitativa de dominio para evitar fraudes
+        patrimoniales.</p>
+</div>
+{% endblock %}

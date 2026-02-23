@@ -1,0 +1,113 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Solicitud de Conciliación Prejudicial Laboral</h1>
+    <p class="subtitle-v2">Arts. 684-A al 684-E de la Ley Federal del Trabajo · Agotamiento OBLIGATORIO de la Instancia
+        para Despido o Rescisión</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, a {{ fecha_actual_texto }}</p>
+
+<p class="text-bold destinatario">C. DIRECTOR(A) DEL CENTRO FEDERAL (O LOCAL) DE CONCILIACIÓN Y REGISTRO LABORAL</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                     PROEMIO                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<p class="indent text-justify">
+    <strong>{{ solicitante.nombre | default("NOMBRE COMPLETO DEL TRABAJADOR O PATRÓN SOLICITANTE") }}</strong>,
+    mexicano(a), actuando por mi propio derecho, con CURP {{ solicitante.curp | default("___") }} y Registro Federal de
+    Contribuyentes {{ solicitante.rfc | default("___") }}, señalando como domicilio físico para oír y recibir todo tipo
+    de notificaciones el ubicado en {{ solicitante.domicilio | default("_______________") }}; señalando además el
+    <strong>Correo Electrónico (Medio Digital de Notificación Oficial):</strong> <u>{{ solicitante.email |
+        default("___") }}</u> y Teléfono Móvil/WhatsApp: <u>{{ solicitante.telefono | default("___") }}</u>; ante este
+    Centro de Conciliación comparezco a exponer:
+</p>
+
+<p class="indent text-justify">
+    Que conforme al artículo <strong>123, Aparatado A, fracción XX, segundo párrafo de la Constitución Política de los
+        Estados Unidos Mexicanos</strong> y los numerales <strong>684-A, 684-B, 684-C, 684-D, y 684-E de la Ley Federal
+        del Trabajo</strong>, por medio del presente escrito formalmente Vengo a <strong>SOLICITAR EL INICIO DE LA
+        INSTANCIA CONCILIATORIA PREJUDICIAL OBLIGATORIA</strong> en contra de la siguiente persona física/moral o fuente
+    de trabajo:
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--               I. DATOS DEL CITADO                   -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">I. DATOS DE LA PERSONA A CITAR (EL EMPLEADOR / PATRÓN)</div>
+
+<p class="indent text-justify double-space">
+    <strong>1. Nombre, Denominación o Razón Social:</strong> <strong>{{ citado.nombre | default("NOMBRE DE LA EMPRESA O
+        PERSONA A CITAR") }}</strong>.<br>
+    <strong>2. Domicilio Comercial o Fiscal exacto para ser citado:</strong> {{ citado.domicilio |
+    default("_______________") }}.<br>
+    <strong>3. Actividad o Giro Económico (Opcional pero recomendado):</strong> {{ citado.giro |
+    default("_______________") }}.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                 II. OBJETO DE LA CITA               -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">II. OBJETO DE LA PRESENTE SOLICITUD DE CONCILIACIÓN</div>
+
+<p class="indent text-justify double-space">
+    El motivo de la presente conciliación se origina bajo el supuesto jurídico primario de un conflicto de trabajo
+    consistente en: <strong>{{ motivo_conciliacion | default("DESPIDO INJUSTIFICADO / FALTA DE PAGO DE PRESTACIONES /
+        LIQUIDACIÓN / RESCISIÓN DE CONTRATO") }}</strong>, mismo presunto acto ocurrido el día {{ fecha_conflicto |
+    default("_______________") }}.
+</p>
+<p class="indent text-justify double-space">
+    En atención a un sano principio de equidad y como medio alternativo de solución de controversias privilegiado por la
+    Reforma Laboral de 2019, mi pretensión económica u objetivo conciliatorio aproximado versa objetivamente sobre:<br>
+    <strong>PRETENSIÓN GLOBAL (Sujeta a negociación):</strong> El pago íntegro de las indemnizaciones constitucionales y
+    partes proporcionales de aguinaldo, vacaciones y prima vacacional por un monto estimado de <strong>${{
+        prestension_economica | default("___") }}</strong>, estando el suscrito plenamente <strong>DISPUESTO A ENTABLAR
+        DIÁLOGO CONCILIATORIO FLEXIBLE Y DE BUENA FE.</strong>
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">SUSPENSIÓN DE LA PRESCRIPCIÓN Y OBLIGATORIEDAD PREVIA (LFT):</p>
+    <p class="jurisprudencia-texto">
+        En términos del Artículo 521, Fracción III de la Ley Federal del Trabajo: <em>"La presentación de la solicitud
+            de conciliación producirá el efecto de <strong>suspender los plazos de prescripción</strong>, en un período
+            de un mes o dos meses máximos, para cualquier derecho legal."</em>
+        Por ello, este procedimiento es requisito ineludible "sine qua non" previo a un Juicio ante el Tribunal Laboral
+        Adscrito al Poder Judicial.
+    </p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                 III. PÚNTOS PETITORIOS              -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">III. PETICIONES A LA DIRECCIÓN DEL CENTRO</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Tenerme por presentado y legitimo formulando la presente SOLICITUD DE CONCILIACIÓN
+    PREJUDICIAL en los términos de la normativa aplicable y asignarme número de expediente administrativo.<br>
+    <strong>SEGUNDO.-</strong> Señalar de inmediato <strong>día y hora para que tenga verificativo la Audiencia de
+        Conciliación</strong> entre los involucrados en las instalaciones de este centro.<br>
+    <strong>TERCERO.-</strong> Si dicho Centro lo determina, <strong>comisionar a un Funcionario Notificador o a través
+        de Buzón Electrónico Institucional</strong>, para efecto de notificar y entregar personalmente el citatorio
+    formal de la audiencia a mi contraparte en el domicilio señalado.<br>
+    <strong>CUARTO.-</strong> En caso de que se logre avenencia mutua, celebrar en ese mismo acto el convenio
+    debidamente sancionado; caso contrario, <strong>expedirme mi CONSTANCIA DE NO CONCILIACIÓN</strong> para acudir vía
+    de derecho ante los Juzgados Laborales.
+</p>
+
+<p class="text-center text-bold" style="margin-top:40px;">RÚBRICA DE CONVENIENCIA MUTUA Y BUENA FE</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ solicitante.nombre | default("NOMBRE Y FIRMA DE QUIEN SOLICITA LA CONCILIACIÓN") }}
+    </div>
+</div>
+
+<div class="confidencialidad-v2">
+    <p><strong>AVISO V2 NEGOCIOS — CONCILIACIÓN LABORAL 2026</strong></p>
+    <p>Plantilla redactada en total observancia a la nueva Reforma en Materia de Justicia Laboral. Cumple con la
+        activación del candado de "suspensión de prescripción de la acción" (Art 521) de indemnización dentro de los 60
+        días improrrogables.</p>
+</div>
+{% endblock %}

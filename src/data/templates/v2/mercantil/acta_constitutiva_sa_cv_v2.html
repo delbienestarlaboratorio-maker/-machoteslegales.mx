@@ -1,0 +1,173 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Acta Constitutiva — Sociedad Anónima de Capital Variable</h1>
+    <p class="subtitle-v2">Arts. 6, 8, 87 y 89 de la Ley General de Sociedades Mercantiles · Incluye Órganos de
+        Vigilancia y Tipos de Asambleas</p>
+</div>
+
+<p class="meta-line">Escritura Pública: {{ num_escritura | default("_______________") }} | Notaría No. {{ num_notaria |
+    default("___") }}, de {{ ciudad | default("Ciudad de México") }} a {{ fecha_actual_texto }}</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                     PROEMIO                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<p class="indent text-justify">
+    En la ciudad de {{ ciudad | default("______________") }}, yo, el licenciado <strong>{{ nombre_notario |
+        default("NOMBRE DEL NOTARIO") }}</strong>, Titular de la Notaría Pública número {{ num_notaria | default("___")
+    }}, hago constar la constitución de una <strong>SOCIEDAD ANÓNIMA DE CAPITAL VARIABLE</strong>, que formalizan los
+    señores accionistas fundadores:
+</p>
+<ul style="margin-left: 40px; margin-bottom: 20px;">
+    <li><strong>{{ socio1.nombre | default("Socio Fundador 1") }}</strong>, mexicano(a), RFC: {{ socio1.rfc |
+        default("___") }}.</li>
+    <li><strong>{{ socio2.nombre | default("Socio Fundador 2") }}</strong>, mexicano(a), RFC: {{ socio2.rfc |
+        default("___") }}.</li>
+    {{ socios_extra | default("") }}
+</ul>
+<p class="indent text-justify">
+    Se obtiene el permiso de la Secretaría de Economía para uso de denominación, y los comparecientes otorgan los
+    siguientes:
+</p>
+
+<div style="text-align: center; font-size: 1.3em; font-weight: bold; margin: 30px 0;">ESTATUTOS SOCIALES</div>
+
+<div class="section-title numbered">I. DENOMINACIÓN, DOMICILIO, DURACIÓN Y OBJETO</div>
+
+<p class="indent text-justify double-space">
+    <strong>ARTÍCULO 1. DENOMINACIÓN:</strong> La denominación de la sociedad es <strong>{{ denominacion |
+        default("NOMBRE COMERCIAL, S.A. DE C.V.") }}</strong>, denominación que irá siempre seguida de las palabras
+    "Sociedad Anónima de Capital Variable" o de sus siglas "S.A. de C.V.".
+</p>
+<p class="indent text-justify double-space">
+    <strong>ARTÍCULO 2. DOMICILIO:</strong> El domicilio social se establece en la {{ domicilio_social | default("Ciudad
+    de México") }}, sin perjuicio de establecer agencias, sucursales u oficinas en cualquier parte de la República
+    Mexicana o del extranjero.
+</p>
+<p class="indent text-justify double-space">
+    <strong>ARTÍCULO 3. DURACIÓN:</strong> La duración de la sociedad será {{ duracion | default("INDEFINIDA") }}.
+</p>
+<p class="indent text-justify double-space">
+    <strong>ARTÍCULO 4. OBJETO SOCIAL:</strong> La sociedad tiene por objeto principal: <br>
+    a) {{ objeto_1 | default("Comprar, vender, fabricar, distribuir e importar bienes y servicios...") }}. <br>
+    b) Obtener bienes muebles e inmuebles...<br>
+    c) Contratar personal y celebrar toda clase de actos civiles y mercantiles conexos y necesarios para la realización
+    del objeto social principal. (Con apego a las reformas de subcontratación de la LFT).
+</p>
+
+<div class="section-title numbered">II. CAPITAL SOCIAL Y ACCIONES</div>
+
+<p class="indent text-justify double-space">
+    <strong>ARTÍCULO 5. CAPITAL SOCIAL:</strong> El capital social es variable. La porción fija, sin derecho a retiro,
+    asciende a la cantidad de <strong>${{ capital_fijo | default("50,000.00") }} M.N.</strong> ({{ capital_letra |
+    default("Cincuenta mil pesos") }}). El capital variable es ilimitado.
+</p>
+<p class="indent text-justify double-space">
+    <strong>ARTÍCULO 6. ACCIONES:</strong> El capital social mínimo fijo está representado por <strong>{{ total_acciones
+        | default("50") }} acciones</strong> nominativas ordinarias, con valor nominal de ${{ valor_accion |
+    default("1,000.00") }} M.N. cada una.
+</p>
+<p class="indent text-justify double-space">
+    Las acciones confieren a sus poseedores iguales derechos (Art. 112 LGSM). Han quedado suscritas y pagadas en
+    efectivo por los otorgantes en la siguiente proporción:
+</p>
+<table class="tabla-calculos">
+    <thead>
+        <tr>
+            <th>Accionista</th>
+            <th>Acciones Suscritas</th>
+            <th>Capital Aportado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ socio1.nombre | default("Socio Uno") }}</td>
+            <td>{{ socio1.acciones | default("25") }}</td>
+            <td>${{ socio1.capital | default("25,000.00") }}</td>
+        </tr>
+        <tr>
+            <td>{{ socio2.nombre | default("Socio Dos") }}</td>
+            <td>{{ socio2.acciones | default("25") }}</td>
+            <td>${{ socio2.capital | default("25,000.00") }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">BLINDAJE DE CAPITAL Y ACCIONES (LGSM):</p>
+    <p class="jurisprudencia-texto">
+        Todas las acciones estarán amparadas por títulos impresos o digitalizados bajo las disposiciones legales. La
+        representación de la participación extranjera (si la hubiere) se estipula bajo la Cláusula de Admisión o
+        Exclusión de Extranjeros en estricto apego con el artículo 14 de la Ley de Inversión Extranjera.
+    </p>
+</div>
+
+<div class="section-title numbered">III. ASAMBLEAS DE ACCIONISTAS</div>
+<p class="indent text-justify double-space">
+    <strong>ARTÍCULO 7. ÓRGANO SUPREMO:</strong> La Asamblea General de Accionistas es el órgano supremo de la sociedad;
+    podrá acordar y ratificar todos los actos y sus resoluciones obligarán a la totalidad de los accionistas, presentes
+    o ausentes.
+</p>
+<p class="indent text-justify double-space">
+    <strong>ARTÍCULO 8. TIPOS DE ASAMBLEAS:</strong> Las Asambleas serán <strong>Ordinarias y Extraordinarias</strong>.
+    La Extraordinaria se reunirá para tratar modificaciones al contrato social, fusión, escisión o disolución (Art. 182
+    LGSM). La Ordinaria se reunirá al menos una vez al año para aprobar estados financieros y estados de resultados
+    (Art. 181 LGSM).
+</p>
+
+<div class="section-title numbered">IV. ADMINISTRACIÓN Y VIGILANCIA</div>
+<p class="indent text-justify double-space">
+    <strong>ARTÍCULO 9. ADMINISTRADOR ÚNICO / CONSEJO:</strong> La dirección de la sociedad estará a cargo de un
+    <strong>{{ cargo_administrador | default("Administrador Único") }}</strong>, o bien, de un Consejo de
+    Administración, designado por la Asamblea General de Accionistas. A quienes ostenten el cargo se les confieren los
+    poderes generales para pleitos y cobranzas, actos de administración y actos de riguroso dominio.
+</p>
+<p class="indent text-justify double-space">
+    <strong>ARTÍCULO 10. COMISARIO (ÓRGANO DE VIGILANCIA):</strong> El cargo de comisario es temporal y revocable.
+    Exigirá a los administradores la información financiera. En este acto, se designa como Comisario de la Sociedad a
+    <strong>{{ nombre_comisario | default("__________________") }}</strong>.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--           CLÁUSULAS TRANSITORIAS Y DE CIERRE        -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">V. DISOLUCIÓN Y LIQUIDACIÓN</div>
+<p class="indent text-justify">
+    <strong>ARTÍCULO 11:</strong> La sociedad se disolverá por las causas establecidas en el artículo 229 de la Ley
+    General de Sociedades Mercantiles. Una vez decretada la disolución, la asamblea designará de inmediato a uno o
+    varios liquidadores.
+</p>
+
+<div class="section-title numbered">TRANSITORIOS</div>
+<p class="indent text-justify">
+    <strong>PRIMERO:</strong> En este acto se elige como <strong>{{ cargo_administrador | default("Administrador Único")
+        }}</strong> al C. <strong>{{ nombre_admin_designado | default("__________________") }}</strong>. <br>
+    <strong>SEGUNDO:</strong> Se otorga Poder General para Pleitos y Cobranzas, y Actos de Administración a los
+    representantes legales.
+</p>
+
+<p class="indent text-justify" style="margin-top: 30px;">
+    Yo, el Notario Público, certifico haber leído en su integridad este instrumento a todos los comparecientes, quienes
+    firmaron de entera conformidad de ser su libre voluntad societaria.
+</p>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:40px;">
+    <div class="signature-block">
+        <div class="signature-line">{{ socio1.nombre | default("Socio Uno") }}<br>Accionista Fundador</div>
+    </div>
+    <div class="signature-block">
+        <div class="signature-line">{{ socio2.nombre | default("Socio Dos") }}<br>Accionista Fundador</div>
+    </div>
+</div>
+
+<div class="confidencialidad-v2">
+    <p><strong>AVISO V2 NEGOCIOS — ESTATUTOS BLINDADOS</strong></p>
+    <p>Formato de Machotes Legales®. Las cláusulas estatutarias han sido redactadas contemplando la Ley General de Sociedades
+        Mercantiles y las reformas laborales recientes en México sobre objeto social y especialización. Prohibida su
+        copia no autorizada.</p>
+</div>
+{% endblock %}

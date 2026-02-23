@@ -1,0 +1,84 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Denuncia por Daño en Propiedad Ajena</h1>
+    <p class="subtitle">Artículo 399 del Código Penal Federal &bull; Art. 222 CNPP</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto |
+    default("__ de ________ de 20__") }}</p>
+
+<p class="text-bold">C. AGENTE DEL MINISTERIO PÚBLICO</p>
+<p class="text-bold">{{ fiscalia | default("FISCALÍA GENERAL DE LA REPÚBLICA") }}</p>
+<p>PRESENTE.</p>
+
+<p class="indent text-justify">
+    <strong>{{ denunciante | default("NOMBRE DEL DENUNCIANTE") }}</strong>,
+    {{ nacionalidad | default("mexicano(a)") }}, mayor de edad, con domicilio en
+    {{ domicilio_denunciante | default("_________________________________") }},
+    identificándose con {{ identificacion | default("INE") }}
+    número {{ numero_id | default("_______________") }},
+    ante usted respetuosamente comparezco para formular:
+</p>
+
+<div class="section-title">DENUNCIA POR EL DELITO DE DAÑO EN PROPIEDAD AJENA</div>
+
+<p class="indent text-justify">
+    Que vengo a denunciar y/o querellarme en contra de quien resulte responsable
+    (o en contra de <strong>{{ imputado | default("NOMBRE DEL IMPUTADO") }}</strong>),
+    por la comisión del delito de <strong>DAÑO EN PROPIEDAD AJENA</strong>,
+    previsto y sancionado por el artículo 399 del Código Penal Federal,
+    con base en los siguientes:
+</p>
+
+<div class="section-title">HECHOS</div>
+
+<p class="indent text-justify">
+    <strong>PRIMERO.</strong> — {{ hechos_primero | default("Con fecha ___ de _______ de 20__, siendo aproximadamente
+    las ___:___ horas, en el domicilio ubicado en _________________________________, el(los) hoy denunciado(s)
+    procedió(eron) a causar daño a mi propiedad consistente en _________________________________.") }}
+</p>
+
+<p class="indent text-justify">
+    <strong>SEGUNDO.</strong> — {{ hechos_segundo | default("El daño causado consistió específicamente en
+    _________________________________, lo cual tiene un valor estimado de $________ M.N.
+    (_________________________________ PESOS 00/100 MONEDA NACIONAL).") }}
+</p>
+
+<p class="indent text-justify">
+    <strong>TERCERO.</strong> — {{ hechos_tercero | default("Los hechos descritos me causan un perjuicio patrimonial
+    directo, toda vez que soy legítimo propietario del bien dañado, lo cual acredito con
+    _________________________________.") }}
+</p>
+
+<div class="section-title">PRUEBAS</div>
+
+<p class="indent text-justify">
+    <strong>a)</strong> Fotografías del bien dañado.<br>
+    <strong>b)</strong> {{ pruebas_adicionales | default("Factura, escritura o documento que acredite la propiedad del
+    bien.") }}<br>
+    <strong>c)</strong> Testimonio de los testigos de los hechos.<br>
+    <strong>d)</strong> Avalúo o presupuesto de reparación del daño.<br>
+    <strong>e)</strong> Las demás que resulten del curso de la investigación.
+</p>
+
+<div class="section-title">PETICIONES</div>
+
+<p class="indent text-justify">
+    <strong>PRIMERA.</strong> — Se reciba la presente denuncia y se inicie carpeta de investigación.<br>
+    <strong>SEGUNDA.</strong> — Se practiquen las diligencias necesarias para la investigación de los hechos.<br>
+    <strong>TERCERA.</strong> — Se cite a declarar al probable responsable.<br>
+    <strong>CUARTA.</strong> — Se garantice la reparación del daño.
+</p>
+
+<p class="indent text-justify">
+    PROTESTO LO NECESARIO.
+</p>
+
+<div style="margin-top:50px;">
+    <div class="signature-block">
+        <div class="signature-line">{{ denunciante | default("EL DENUNCIANTE") }}</div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Incidente de Pensión Alimenticia — Aumento</h1>
+    <p class="subtitle">Artículos 301-323 del Código Civil Federal · Art. 94 CFPC</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+
+<p class="text-bold">C. JUEZ DE LO FAMILIAR EN TURNO</p>
+<p class="text-bold">EXPEDIENTE: {{ expediente | default("_______________") }}</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<p class="indent text-justify">
+    <strong>{{ cliente.nombre | default("NOMBRE DEL PROMOVENTE") }}</strong>, en el juicio de
+    {{ tipo_juicio | default("alimentos / divorcio / guarda y custodia") }} tramitado bajo el expediente referido,
+    señalando domicilio en {{ cliente.domicilio | default("_________________________________") }},
+    autorizando a {{ abogado.nombre | default("_________________________________") }},
+    promuevo <strong>INCIDENTE DE AUMENTO DE PENSIÓN ALIMENTICIA</strong>.
+</p>
+
+<div class="section-title">HECHOS</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> {{ hecho_1 | default("Mediante sentencia de fecha [fecha], se fijó una pensión
+    alimenticia a favor de [nombre del acreedor alimentario] por la cantidad de $[monto] / [porcentaje]% de los ingresos
+    del deudor alimentario.") }}
+</p>
+<p class="indent text-justify">
+    <strong>SEGUNDO.-</strong> {{ hecho_2 | default("Desde que se fijó dicha pensión, han cambiado las circunstancias
+    que la determinaron, en virtud de que: [aumento de necesidades del acreedor: educación, salud, vivienda / aumento de
+    ingresos del deudor / inflación].") }}
+</p>
+<p class="indent text-justify">
+    <strong>TERCERO.-</strong> {{ hecho_3 | default("Las necesidades actuales del acreedor alimentario ascienden a
+    $[monto mensual], siendo insuficiente la pensión vigente.") }}
+</p>
+
+<div class="section-title">DERECHO</div>
+<p class="indent text-justify">
+    Artículos 94 del CFPC, 311 y 311 Bis del Código Civil, Tesis: ALIMENTOS. SON PROPORCIONALES Y PUEDEN MODIFICARSE.
+</p>
+
+<div class="section-title">PRUEBAS</div>
+<p class="indent text-justify">
+    1. {{ prueba_1 | default("Recibos de gastos de educación, salud, alimentación del acreedor.") }}<br>
+    2. {{ prueba_2 | default("Recibos de nómina o constancia de ingresos del deudor alimentario.") }}<br>
+    3. {{ prueba_3 | default("Constancias médicas o escolares que acrediten nuevas necesidades.") }}
+</p>
+
+<div class="section-title">PETICIONES</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Admitir el presente incidente.<br>
+    <strong>SEGUNDO.-</strong> Aumentar la pensión alimenticia a ${{ nuevo_monto | default("___") }} / {{
+    nuevo_porcentaje | default("___") }}%.<br>
+    <strong>TERCERO.-</strong> Condenar al deudor alimentario al pago de la pensión incrementada.
+</p>
+
+<p class="text-center text-bold" style="margin-top:30px;">PROTESTO LO NECESARIO</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA") }}</div>
+</div>
+{% endblock %}

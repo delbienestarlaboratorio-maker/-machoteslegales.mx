@@ -1,0 +1,114 @@
+{% extends "base_v3.html" %}
+
+{% block content %}
+<div class="header-v3">
+    <div class="header-v3-left">
+        <span class="tier-badge-v3">TILDE IA PRO · V3</span>
+        <h1>Querella Penal Corporativa Empresarial (Fraude/Abuso)</h1>
+        <p class="subtitle-v3">Sistematización de Datos de Prueba (CNPP) e Instrumentos Mercantiles vinculantes</p>
+    </div>
+    <div class="header-v3-right">
+        <span class="doc-id">Fiscalía / CDI: {{ numero_carpeta | default("POR ASIGNAR") }}</span>
+        <span class="doc-id">Fecha: {{ fecha_actual_texto }}</span>
+    </div>
+</div>
+
+<!-- ════════ ESTRATEGIA PENAL IA ════════ -->
+<div class="estrategia-box">
+    <div class="estrategia-titulo">Auditoría Criminológica Documental</div>
+    <div class="estrategia-item">
+        <span class="estrategia-badge badge-riesgo-alto">DELITO PATRIMONIAL</span>
+        <span>El modus operandi extraído (engaño pasivo y dolo) encuadra plenamente en el delito de <strong>FRAUDE
+                GENÉRICO (Art. 386 CPF)</strong> y concurso con ABUSO DE CONFIANZA.</span>
+    </div>
+    <div class="estrategia-item">
+        <span class="estrategia-badge badge-plazo">PLAN DE INVESTIGACIÓN (IA)</span>
+        <span>Recomendación procesal inmediata: Exigir oficios a la <strong>Comisión Nacional Bancaria (CNBV)</strong>
+            dado que la consumación del delito se documenta vía SPEI/Transferencias.</span>
+    </div>
+</div>
+
+<p class="text-bold destinatario">C. AGENTE DEL MINISTERIO PÚBLICO (FISCALÍA PATRIMONIOS CORPORATIVOS)</p>
+<p class="text-bold destinatario">FISCALÍA GENERAL DE JUSTICIA DE {{ estado | default("___") }}</p>
+
+<!-- ════════ PROEMIO (AUTO LECTURA DE SOCIEDAD) ════════ -->
+<p class="indent text-justify double-space" style="margin-top:20px;">
+    <strong>{{ representante_legal | default("[NOMBRE DEL APODERADO LEGAL]") }}</strong>, representante legal y
+    Administrador Único de la quejosa moral <strong>"{{ empresa_victima | default("[NOMBRE SOCIEDAD S.A. DE C.V.]")
+        }}"</strong>, carácter que demuestro con el Instrumento Notarial {{ numero_escritura | default("___") }},
+    señalando domicilio judicial en {{ domicilio_empresa | default("___") }} y autorizando formalmente ante este Órgano
+    Ministerial a mi bufete defensor <strong>{{ abogados | default("[ABOGADOS TILDEM]") }}</strong>; explayando motivos
+    acudo y solicito:
+</p>
+
+<!-- ════════ NARRATIVA GENERADA ════════ -->
+<div class="section-title numbered">I. QUERELLA Y NARRATIVA DE HECHOS CRONOLÓGICOS</div>
+
+<p class="indent text-justify double-space">
+    Con las facultades descritas vengo a presentar de manera contundente y con todos los alcances fácticos,
+    <strong>FORMAL QUERELLA POR HECHOS CON APARIENCIA DE LOS DELITOS DE FRAUDE y ABUSO DE CONFIANZA</strong>,
+    materializado en contra del patrimonio societario por obra del denunciado C. <strong>{{ nombre_denunciado |
+        default("[SUJETO EXTRAÍDO MEDIANTE IA]") }}</strong>.
+</p>
+
+<!-- Narrativa Autogenerada -->
+<div style="border-left: 3px double #1e3a5f; margin-left: 1.5cm; padding-left: 15px; margin-top:20px;">
+    {{ hechos_fraude_ia | default("
+    <p class='text-justify double-space'><strong>I. ANTECEDENTE COMERCIAL:</strong> El modelo de negocio consistía en
+        provisionar recursos a la persona del demandado por concepto de fondos para adquisiciones. <br><strong>II. LA
+            MECÁNICA ENGAÑOSA (NÚCLEO DEL DOLO):</strong> El imputado mediante maquinaciones, uso de documentos
+        apócrifos informáticos y falseando la premisa del negocio, retuvo indebidamente el capital sin cumplir la
+        proveeduría (afectando la confianza delegada). <br><strong>III. EL DISPENDIO Y CONSUMACIÓN:</strong> Con plena
+        ventaja sustrajo fondos que suman la cuantía total reclamada.</p>
+    ") }}
+</div>
+
+<table style="width: 100%; border-collapse: collapse; margin-top:30px; margin-bottom: 20px;">
+    <tr style="background-color: #f7f5f0; border: 1px solid #ddd;">
+        <th style="padding: 10px;text-align: left;">Inventario del Daño Patrimonial (Determinación IA)</th>
+        <th style="padding: 10px;text-align: center;">Monto Detectado O Sustraído</th>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 10px;">{{ descripcion_perjuicio | default("[Factura Folio XXXX impaga, por concepto de
+            Bienes / Transferencia irregular de capital de nómina]") }}</td>
+        <td style="text-align: center; padding: 10px; font-weight: 700;">${{ monto_quebranto | default("[MONTO TOTAL
+            ESTABLECIDO EN MXN]") }}</td>
+    </tr>
+</table>
+
+<!-- ════════ DATOS DE PRUEBA Y PERICIALES ════════ -->
+<div class="section-title numbered">II. DATOS DE PRUEBA OFRECIDOS Y REQUERIDOS AL C. FISCAL</div>
+
+<p class="indent text-justify double-space">
+    Solicito gire en los términos y garantías de los Artículos 212 y 216 del Sistema Nacional, las siguientes
+    instrucciones de investigación técnico-pericial:
+</p>
+<ul class="ml-8 list-none space-y-2 mt-4 text-justify" style="margin-left:2cm; line-height:1.7;">
+    <li><strong>A. PERICIAL CONTABLE FINANCIERA:</strong> A fin de trazar y confirmar el déficit en los estados de caja
+        de la corporación querellante en relación con las cuentas del acusado bancarias.</li>
+    <li><strong>B. SE GIRE ATENTO OFICIO A LA CNBV Y BANXICO:</strong> Expidiéndose alerta para transparentar y trazar
+        hacia qué nodos CEP se destinaron nuestras extracciones fraudulentas.</li>
+    <li><strong>C. DOCUMENTAL PRIVADA COMPUESTA:</strong> Mismas que adjunto a esta carpeta inicial, con las
+        conversaciones y correos corporativos que cristalizan los engaños consumados.</li>
+</ul>
+
+<!-- ════════ PETICIONES FINALES Y FIRMA ════════ -->
+<div class="section-title numbered">III. ESQUEMA DE PETICIONES (REPARACIÓN DEL DAÑO)</div>
+<p class="indent text-justify">
+    Garantizar para esta víctima (persona moral) la salvaguarda de sus bienes a través del embargo precautorio
+    dictaminado una vez formulada la imputación del querellado.
+</p>
+
+<p class="text-center text-bold" style="margin-top:40px;">PROTESTAMOS EL ESPÍRITU DE LA JUSTICIA (ART. 20 CONST.)</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ representante_legal | default("[FIRMA CORPORATIVA (REPRESENTANTE JURÍDICO)]") }}
+    </div>
+</div>
+
+<div class="confidencialidad-v3">
+    <strong>ALGORITMO CLASIFICADOR PENAL:</strong> Datos de prueba filtrados probabilísticamente para alcanzar nivel de
+    "Apariencia de Buen Derecho" en Control de Detención e Imputación Oral en Juzgados de Control por Tilde IA.
+    <code>Validation Token: {{ hash_documento | default("PEN-CORP-9Z1") }}</code>
+</div>
+{% endblock %}

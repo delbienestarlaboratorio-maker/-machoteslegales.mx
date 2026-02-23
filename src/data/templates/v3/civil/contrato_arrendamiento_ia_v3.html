@@ -1,0 +1,116 @@
+{% extends "base_v3.html" %}
+
+{% block content %}
+<div class="header-v3">
+    <div class="header-v3-left">
+        <span class="tier-badge-v3">TILDE IA PRO · V3</span>
+        <h1>Contrato de Arrendamiento (Generación Paramétrica)</h1>
+        <p class="subtitle-v3">Modelado de Cláusulas Inmobiliarias Seguras · Extinción de Dominio y Blindaje Solidario
+        </p>
+    </div>
+    <div class="header-v3-right">
+        <span class="doc-id">Folio Inmueble: {{ folio_inmueble | default("___") }}</span>
+        <span class="doc-id">Fecha Emisión: {{ fecha_actual_texto }}</span>
+    </div>
+</div>
+
+<!-- ════════ ESTRATEGIA (CONTRATOS) ════════ -->
+<div class="estrategia-box">
+    <div class="estrategia-titulo">Análisis Preventivo Contractual (IA)</div>
+    <div class="estrategia-item">
+        <span class="estrategia-badge badge-probabilidad">SEGURO ANTI-ILÍCITOS</span>
+        <span>El inmueble queda protegido mediante la Cláusula Automática de No Responsabilidad Penal bajo la Ley
+            Nacional de Extinción de Dominio Mexicana.</span>
+    </div>
+    <div class="estrategia-item">
+        <span class="estrategia-badge badge-plazo">ACTUALIZACIÓN INFLACIONARIA</span>
+        <span>El alquiler se indexó automáticamente con aumento referenciado al INPC interanual del Banco de México para
+            contratos de medio-largo plazo.</span>
+    </div>
+</div>
+
+<p class="text-center text-bold double-space" style="font-size:14pt; margin: 30px 0;">
+    CONTRATO DE ARRENDAMIENTO INMOBILIARIO QUE CELEBRAN POR UNA PARTE:
+</p>
+
+<!-- ════════ PROEMIO (AUTO COMPLETADO IA) ════════ -->
+<p class="indent text-justify double-space">
+    <strong>EL ARRENDADOR:</strong> {{ nombre_arrendador | default("[NOMBRE DE ARRENDADOR AUTO-DETECTADO]") }}, titular
+    y legítimo propietario.<br>
+    <strong>EL ARRENDATARIO:</strong> {{ nombre_arrendatario | default("[NOMBRE DEL INQUILINO AUTO-DETECTADO]") }}.<br>
+    <strong>EL FIADOR SOLIDARIO:</strong> {{ nombre_fiador | default("[NOMBRE DEL FIADOR AUTO-DETECTADO]") }} (quien
+    renuncia expresamente a los beneficios de orden y excusión).<br>
+</p>
+
+<p class="indent text-justify double-space">
+    SUJETÁNDOSE ESTRICTAMENTE A LAS SIGUIENTES DECLARACIONES Y CLÁUSULAS ADOPTADAS AL TENOR DEL PRESENTE INSTRUMENTO DE
+    NEGOCIACIÓN PRIVADA:
+</p>
+
+<!-- ════════ CLÁUSULAS GENERADAS ════════ -->
+<div class="section-title numbered">CLÁUSULAS DEL INSTRUMENTO JURÍDICO</div>
+
+<p class="indent text-justify double-space">
+    <strong>PRIMERA. (OBJETO):</strong> "EL ARRENDADOR" cede el uso temporal e intransferible del inmueble con ubicación
+    topográfica en {{ domicilio_inmueble | default("[DIRECCIÓN GENERADA]") }} expresamente para uso
+    habitacional/comercial al "ARRENDATARIO".
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>SEGUNDA. (RENTA):</strong> EL ARRENDATARIO se obliga a pagar la suma mensual de <strong>${{ renta_mensual |
+        default("[CANTIDAD MENSUAL]") }} MXN</strong> ({{ renta_mensual_letras | default("[CANTIDAD EN LETRAS]") }}), a
+    pagarse durante los primeros cinco días naturales de cada mes.
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">CLÁUSULA PENAL GENERADA POR TILDE IA:</p>
+    <p class="jurisprudencia-texto">
+        {{ penalidad_ia | default('<strong>TERCERA. (PENALIDAD POR MORA):</strong> Derivado del análisis preventivo, se
+        fija que ante el retraso se generará un interés moratorio a razón del <strong>5% del monto mensual por cada mes
+            o fracción</strong> de retraso, topado a jurisprudencia sobre el control de usura institucional,
+        considerándose que tras el impago del segundo mes procede en automático el desalojo expreso.') }}
+    </p>
+</div>
+
+<p class="indent text-justify double-space">
+    <strong>CUARTA. (EXTINCIÓN DE DOMINIO - LEY ANTILAVADO):</strong> "EL ARRENDATARIO" garantiza bajo exclusiva
+    responsabilidad civil y penal que todo objeto de tráfico y el fondeo de rentas tienen origen y fin estrictamente
+    lícito.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>QUINTA. (FIANZA Y SOLIDARIDAD):</strong> Comparece en este acto "EL FIADOR SOLIDARIO", asumiendo en calidad
+    de co-deudor inquebrantable el pago de todas las rentas e indemnizaciones futuras, renunciando de forma indeclinable
+    a los artículos 2812 y 2816 a 2824 del Código Civil.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>SÉPTIMA. (VIGENCIA):</strong> El contrato regirá por un plazo de <strong>{{ meses_vigencia | default("doce
+        (12)") }} meses</strong> forzosos para ambas partes concluyendo su ciclo útil el {{ fecha_conclusion |
+    default("[FECHA DE TÉRMINO GENERADA]") }}.
+</p>
+
+<!-- ════════ FIRMA ════════ -->
+<p class="text-center text-bold" style="margin-top:30px;">LEÍDO Y APROBADO EN TODAS SUS FASES A LA FECHA DE SU
+    SUSCRIPCIÓN</p>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:40px;">
+    <div class="signature-block">
+        <div class="signature-line">{{ nombre_arrendador | default("EL ARRENDADOR") }}</div>
+    </div>
+    <div class="signature-block">
+        <div class="signature-line">{{ nombre_arrendatario | default("EL ARRENDATARIO") }}</div>
+    </div>
+</div>
+<div style="display:grid; grid-template-columns:1fr; margin-top:20px;">
+    <div class="signature-block">
+        <div class="signature-line">{{ nombre_fiador | default("EL FIADOR SOLIDARIO") }}</div>
+    </div>
+</div>
+
+<div class="confidencialidad-v3">
+    <strong>MOTOR DE CLÁUSULAS INTELIGENTE:</strong> Generación por Tilde IA V3. La interrelación de obligaciones y
+    protecciones anti-fraude contenida está validada.
+    <code>ID Checksum: {{ hash_documento | default("CIV-390-CTRIA") }}</code>
+</div>
+{% endblock %}

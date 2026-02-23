@@ -1,0 +1,132 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Querella por Amenazas y Extorsión</h1>
+    <p class="subtitle-v2">Arts. 282 y 390 del Código Penal Federal y 211, 221 CNPP · Protocolo de Protección a Víctimas
+        y Medidas de Restricción</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, a {{ fecha_actual_texto }}</p>
+
+<p class="text-bold destinatario">C. AGENTE DEL MINISTERIO PÚBLICO EN TURNO</p>
+<p class="text-bold">FISCALÍA GENERAL DE JUSTICIA DE {{ estado | default("___") }}</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                     PROEMIO                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<p class="indent text-justify">
+    <strong>{{ victima.nombre | default("NOMBRE DE LA VÍCTIMA") }}</strong>, de nacionalidad {{ victima.nacionalidad |
+    default("Mexicana") }}, por mi propio derecho, señalando domicilio en {{ victima.domicilio |
+    default("_______________") }} y como medio de notificación seguro (para preservar mi integridad) el correo {{
+    victima.email | default("___") }}, y autorizando como Asesor Jurídico al Abogado <strong>{{ abogado.nombre |
+        default("NOMBRE DEL ASESOR JURÍDICO") }}</strong>; ante usted con el principal fin de salvaguardar mi vida,
+    concurro y expongo:
+</p>
+
+<p class="indent text-justify">
+    Acudo a interponer formal y legal <strong>QUERELLA</strong> en contra de <strong>{{ acusado.nombre | default("NOMBRE
+        DEL DENUNCIADO O QUIENES RESULTEN RESPONSABLES") }}</strong>, por la comisión de hechos que la ley señala como
+    delito de <strong>AMENAZAS Y PROBABLE EXTORSIÓN</strong>, previstos y sancionados en los artículos 282 y 390 del
+    Código Penal, basando esta solicitud en los siguientes hechos y motivos de derecho:
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                 I. HECHOS CIRCUNSTANCIADOS          -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">I. DESCRIPCIÓN DE HECHOS</div>
+
+<p class="indent text-justify double-space">
+    <strong>PRIMERO.- ANTECEDENTE RELEVANTE:</strong> Que yo, el querellante, desde fecha {{ fecha_antecedente |
+    default("___") }} sostengo/tuve una relación de tipo {{ tipo_relacion |
+    default("laboral/comercial/vecinal/sentimental") }} con el ahora denunciado, la cual consistía en {{
+    detalle_relacion | default("_______________") }}.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>SEGUNDO.- DEL HECHO DELICTIVO (DOLO):</strong> Resulta que el día {{ fecha_amenaza |
+    default("_______________") }}, a las {{ hora_amenaza | default("___:___ horas") }}, el querellado procedió a cometer
+    actos de intimidación a través del siguiente medio: <strong>{{ medio_amenaza | default("Mensajes de WhatsApp / Vía
+        Telefónica / Abordaje físico en persona") }}</strong>. <br><br>
+    Las expresiones explícitas, en sus propias palabras, fueron las siguientes: <em>"{{ textual_amenazas |
+        default("Citar exactamente: Te voy a matar si no pagas / Sé dónde estudian tus hijos y los voy a
+        desaparecer...") }}"</em>.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>TERCERO.- DEL PERJUICIO EN EL BIEN JURÍDICO EXIGIDO POR LA LEY:</strong> Dichas manifestaciones han
+    provocado de manera directa e indubitable un fundado temor y estado de intranquilidad grave en la persona del
+    suscrito (y en su caso, de mi familia), impidiéndome realizar actos lícitos de libre desarrollo, teniendo que
+    alterar mi rutina de vida y solicitando protección institucional urgente.
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">JURISPRUDENCIA SOBRE AMENAZAS (INTIMIDACIÓN CAUSAL):</p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: 1a./J. 129/2005</strong> — Primera Sala — Novena Época.<br>
+        Rubro: <em>"AMENAZAS, DELITO DE. EL ANUNCIO DEL MAL CONSTITUTIVO DE ÉSTE DEBE SER INMINENTE, SERIO Y GRAVE PARA
+            EL PASIVO."</em> <br>
+        La valoración de este amago, para el control de detención y vinculación a proceso, basta con la existencia de la
+        comunicación de un mal futuro, demostrada por las plataformas de mensajería (metadatos) que obran en esta
+        carpeta.
+    </p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                  II. MEDIDAS DE PROTECCIÓN          -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">II. SOLICITUD URGENTE DE MEDIDAS DE PROTECCIÓN (ART. 137 CNPP)</div>
+
+<p class="indent text-justify double-space">
+    Toda vez que existe un riesgo inminente de violencia en mi contra, invoco el artículo 137 del Código Nacional de
+    Procedimientos Penales y <strong>SOLICITO COMO PROVIDENCIA PRECAUTORIA URGENTE</strong>:
+</p>
+<ul style="margin-left:40px;">
+    <li><strong style="color:maroon">1. Prohibición de Acercamiento o Comunicación:</strong> Se ordene al denunciado la
+        abstención de comunicarse directa o indirectamente (llamadas, redes sociales) conmigo.</li>
+    <li><strong style="color:maroon">2. Limitación territorial:</strong> La prohibición de acercarse a una distancia
+        menor a 500 metros de mi domicilio o lugar de trabajo.</li>
+    <li><strong style="color:maroon">3. Vigilancia Policial (Código Águila):</strong> Se implemente resguardo preventivo
+        en perímetro de mi domicilio.</li>
+</ul>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                  III. PRUEBAS                       -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">III. DATOS DE PRUEBA OFRECIDOS</div>
+<p class="indent text-justify">
+    <strong>A) Documental Electrónica Privada:</strong> {{ documentacion | default("X capturas de pantalla debidamente
+    certificadas de los mensajes de la red social o aplicación de mensajería.") }}<br>
+    <strong>B) Pericial en Psicología:</strong> Solicito se me canalice al Centro de Atención a Víctimas para ser
+    evaluado psicológicamente y acreditar el daño moral y trauma provocado por el hecho con apariencia de delito.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                 IV. PUNTOS PETITORIOS               -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">IV. PUNTOS PETITORIOS</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Radicar carpeta de investigación en contra de la persona señalada e iniciar los actos de
+    investigación correspondientes.<br>
+    <strong>SEGUNDO.-</strong> Acordar de conformidad e inmediata aplicación <strong>el dictado de medidas de protección
+        a víctima</strong> por el riesgo documentado.<br>
+    <strong>TERCERO.-</strong> Canalizar para entrevista con peritos en psicología forense. <br>
+    <strong>CUARTO.-</strong> Consignar la Carpeta al Juez de Control del Sistema Penal Acusatorio en tiempo y forma.
+</p>
+
+<p class="text-center text-bold" style="margin-top:40px;">PROTESTO MIS RESPETOS</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ victima.nombre | default("NOMBRE Y FIRMA DE LA VÍCTIMA (QUERELLANTE)") }}</div>
+</div>
+
+<div class="confidencialidad-v2">
+    <p><strong>AVISO V2 NEGOCIOS — QUERELLA PENAL BLINDADA (AMENAZAS)</strong></p>
+    <p>Desarrollada bajo estándares del Sistema Procesal Penal Acusatorio, garantizando el Artículo 137 CNPP (Medidas de
+        Protección) de manera obligatoria para el MP, adjunto a la jurisprudencia de validación de elementos probatorios
+        lógicos sobre mensajes electrónicos.</p>
+</div>
+{% endblock %}

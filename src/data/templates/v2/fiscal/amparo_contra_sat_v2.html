@@ -1,0 +1,148 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Amparo Indirecto Contra Crédito Fiscal / Embargo SAT</h1>
+    <p class="subtitle-v2">Arts. 107 y 114 Ley de Amparo · Suspensión de la Ejecución de Créditos y Análisis
+        Constitucional por Bloqueo de Cuentas</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, {{ estado | default("Ciudad de México") }}, a {{
+    fecha_actual_texto }}</p>
+
+<p class="text-bold destinatario">C. JUEZ DE DISTRITO EN MATERIA ADMINISTRATIVA EN EL {{ circuito | default("___") }}
+    CIRCUITO EN TURNO</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                     PROEMIO                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<p class="indent text-justify">
+    <strong>{{ quejoso.nombre | default("NOMBRE COMPLETO / RAZÓN SOCIAL DEL QUEJOSO") }}</strong>, mexicano(a), con
+    Registro Federal de Contribuyentes <strong>{{ quejoso.rfc | default("___") }}</strong>, actuando por mi propio
+    derecho {{_o_representante | default("(o a través de mi representante legal)") }}, señalando como domicilio para oír
+    y recibir todo tipo de notificaciones el ubicado en {{ quejoso.domicilio | default("_______________") }}, y
+    autorizando en los términos del artículo 12 de la Ley de Amparo al Licenciado <strong>{{ abogado.nombre |
+        default("NOMBRE DEL ABOGADO") }}</strong>, cédula profesional {{ abogado.cedula | default("___") }}; ante Usted
+    con el debido respeto comparezco para exponer:
+</p>
+
+<p class="indent text-justify">
+    Que por medio del presente escrito, vengo a solicitar el <strong>AMPARO Y PROTECCIÓN DE LA JUSTICIA FEDERAL</strong>
+    en contra de los actos fiscales realizados por parte de la autoridad que más adelante preciso, por ser notoriamente
+    inconstitucionales.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--             I. REQUISITOS DEL ART. 108              -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<div class="section-title numbered">I. DATOS DEL QUEJOSO Y TERCERO INTERESADO</div>
+<p class="indent text-justify">
+    <strong>1. EL QUEJOSO:</strong> Sus generales han quedado precisados en el proemio.
+</p>
+<p class="indent text-justify">
+    <strong>2. EL TERCERO INTERESADO:</strong> Bajo protesta de decir verdad, manifiesto que en el presente asunto
+    <strong>no existe tercero interesado</strong>.
+</p>
+
+<div class="section-title numbered">II. AUTORIDADES RESPONSABLES Y ACTOS RECLAMADOS</div>
+
+<p class="indent text-justify double-space">
+    <strong>A. AUTORIDADES RESPONSABLES:</strong><br>
+    - El <strong>Administrador Desconcentrado de Recaudación del SAT</strong> de {{ delegacion_sat |
+    default("_______________") }}.<br>
+    - El Jefe del Departamento de Procedimiento Administrativo de Ejecución adscrito a la misma.<br>
+    - El C. Notificador-Ejecutor de dicha dependencia fiscal.
+</p>
+<p class="indent text-justify double-space">
+    <strong>B. ACTOS RECLAMADOS:</strong><br>
+    Reclamo la resolución definitiva y mandamiento de ejecución mediante el cual se requiere el pago y pretenden
+    embargar de manera precautoria bienes y <strong>congelar cuentas bancarias</strong> de mi representada, derivado del
+    supuesto y presuntivo crédito fiscal número <strong>{{ credito_fiscal | default("___") }}</strong>. Reclamo asimismo
+    la inminente inmovilización de mis fondos bancarios sin previo juicio.
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">JURISPRUDENCIA SOBRE INMOVILIZACIÓN DE CUENTAS:</p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: 2a./J. 46/2018 (10a.)</strong> — Segunda Sala SCJN.<br>
+        Rubro: <em>"INMOVILIZACIÓN DE CUENTAS BANCARIAS. EL ARTÍCULO 156-BIS DEL CÓDIGO FISCAL DE LA FEDERACIÓN QUE LA
+            PREVÉ, VIOLA EL DERECHO A LA SEGURIDAD JURÍDICA AL DEJAR AL ARBITRIO DE LA AUTORIDAD FISCAL EL PLAZO PARA
+            ORDENAR SU LEVANTAMIENTO."</em>
+    </p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                  III. DERECHOS VIOLADOS             -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">III. PRECEPTOS CONSTITUCIONALES VIOLADOS</div>
+<p class="indent text-justify">
+    Se violan en mi perjuicio los artículos <strong>14, 16, 22 y 31 fracción IV de la Constitución Política de los
+        Estados Unidos Mexicanos</strong>, relativos a las garantías de Audiencia, Legalidad, Certeza Jurídica, debida
+    Fundamentación y Motivación en Actos de Autoridad, y Proporcionalidad Tributaria.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--              IV. CONCEPTOS DE VIOLACIÓN             -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">IV. CONCEPTOS DE VIOLACIÓN</div>
+
+<p class="indent text-justify double-space">
+    <strong>PRIMERO.- ABSOLUTA FALTA DE NOTIFICACIÓN (VIOLACIÓN AL ART. 14 Y 16 CPEUM):</strong> La autoridad
+    responsable lleva a cabo actos de ejecución y coerción consistentes en el ilegal aseguramiento de las cuentas
+    bancarias del quejoso sin que existiera previamente la notificación legal, personal y directa de una resolución
+    líquida y firme. El CFF obliga a las autoridades a agotar el procedimiento de notificación conforme al artículo 134,
+    garantizando mi derecho a impugnar la determinación antes de soportar la inmovilización de mi patrimonio operativo.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>SEGUNDO.- INCONSTITUCIONALIDAD EN LA ORDEN DE EMBARGO PRECAUTORIO (ART. 22 CPEUM):</strong> El acta de
+    mandamiento de ejecución incurre en vicios de ilegalidad al aplicar medidas que, en la vía de los hechos, se
+    asimilan a penas inusitadas y confiscatorias. Al inmovilizar la liquidez de una empresa o particular sin un
+    requerimiento de garantías adecuado o juicio previo concluido, se le impide al quejoso el subsistir económicamente,
+    lo cual ha sido analizado por la Segunda Sala y la Suprema Corte como una actuación desmedida de las autoridades
+    exactoras.
+</p>
+
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                  V. SUSPENSIÓN                      -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">V. SOLICITUD DE SUSPENSIÓN DE POSITIVO Y PLANO</div>
+<p class="indent text-justify double-space">
+    Con fundamento en los artículos 125, 128, 129 y 135 de la Ley de Amparo, solicito que su Señoría conceda la
+    <strong>SUSPENSIÓN PROVISIONAL Y EN SU CASO DEFINITIVA</strong> del acto reclamado, para el efecto de que las cosas
+    se mantengan en el estado en que se encuentran, se ordene el de inmediato cese de inmovilización y descongelamiento
+    de la cuenta bancaria número <strong>{{ cuenta_bancaria | default("___") }}</strong> del Banco {{ banco |
+    default("___") }}, y no se traslade cantidad alguna al Fisco Federal hasta que no se resuelva sobre el fondo del
+    amparo. Ofrezco garantizar el interés fiscal que, en su caso, proceda.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                    VI. PUNTOS                       -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">VI. PUNTOS PETITORIOS</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Admitir la presente demanda de Amparo Indirecto en la vía Administrativa-Fiscal.<br>
+    <strong>SEGUNDO.-</strong> Requerir a las autoridades fiscales el informe previo y el justificado.<br>
+    <strong>TERCERO.-</strong> Otorgar desde este primer auto la SUSPENSIÓN PROVISIONAL del acto, comunicando vía
+    oficio, télex o medio electrónico a la Comisión Nacional Bancaria y de Valores para el cese del embargo de
+    cuentas.<br>
+    <strong>CUARTO.-</strong> En su oportunidad, conceder el Amparo y Protección de la Justicia Federal.
+</p>
+
+<p class="text-center text-bold" style="margin-top:40px;">PROTESTO LO NECESARIO</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ quejoso.nombre | default("NOMBRE Y FIRMA DEL QUEJOSO O REP. LEGAL") }}</div>
+</div>
+
+<div class="confidencialidad-v2">
+    <p><strong>AVISO V2 NEGOCIOS — AMPARO CONTRA SAT BLINDADO</strong></p>
+    <p>Este formato profesional contiene protección de inmovilización bancaria respaldado con tesis 2018 de la SCJN. El
+        bloque de agravios está pre-construido para ganar la suspensión provisional obligatoria.</p>
+</div>
+{% endblock %}

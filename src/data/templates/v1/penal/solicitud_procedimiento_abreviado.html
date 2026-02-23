@@ -1,0 +1,59 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Solicitud de Procedimiento Abreviado</h1>
+    <p class="subtitle">Artículos 201-207 del Código Nacional de Procedimientos Penales</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+
+<p class="text-bold">C. JUEZ DE CONTROL DEL DISTRITO JUDICIAL DE {{ distrito | default("_______________") }}</p>
+<p class="text-bold">CAUSA PENAL: {{ causa_penal | default("_______________") }}</p>
+
+<p class="indent text-justify">
+    <strong>{{ ministerio_publico | default("MINISTERIO PÚBLICO FEDERAL / LOCAL") }}</strong>,
+    adscrito a {{ adscripcion | default("_______________") }},
+    en la causa penal de referencia seguida en contra de
+    <strong>{{ imputado | default("NOMBRE DEL IMPUTADO") }}</strong>,
+    por el delito de <strong>{{ delito | default("_______________") }}</strong>,
+    con fundamento en los artículos 201 a 207 del CNPP, solicito la apertura del
+    <strong>PROCEDIMIENTO ABREVIADO</strong>.
+</p>
+
+<div class="section-title">REQUISITOS DE PROCEDENCIA (Art. 201 CNPP)</div>
+<p class="indent text-justify">
+    Se acreditan los siguientes requisitos:<br>
+    <strong>a)</strong> El Ministerio Público solicita la apertura del procedimiento (Art. 201 fr. I).<br>
+    <strong>b)</strong> La víctima {{ victima | default("_______________") }} no se opone / {{ posicion_victima |
+    default("ha manifestado su conformidad") }} (Art. 201 fr. II).<br>
+    <strong>c)</strong> El imputado acepta su responsabilidad (Art. 201 fr. III).<br>
+    <strong>d)</strong> El imputado acepta ser sentenciado con los datos de prueba recabados.
+</p>
+
+<div class="section-title">PENA SOLICITADA</div>
+<p class="indent text-justify">
+    Conforme al artículo 202 del CNPP, solicito se imponga la pena de
+    <strong>{{ pena_solicitada | default("[X] años [X] meses de prisión y multa de [X] UMAS") }}</strong>,
+    la cual no podrá ser mayor a la señalada ni inferior al mínimo reducido.
+</p>
+
+<div class="section-title">REPARACIÓN DEL DAÑO</div>
+<p class="indent text-justify">
+    Se garantiza la reparación del daño por ${{ reparacion | default("_______________") }}.
+</p>
+
+<div class="section-title">PETICIONES</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Abrir el procedimiento abreviado.<br>
+    <strong>SEGUNDO.-</strong> Verificar que el imputado comprende sus derechos y renuncia voluntariamente al juicio
+    oral.<br>
+    <strong>TERCERO.-</strong> Dictar sentencia conforme a la pena solicitada.
+</p>
+
+<p class="text-center text-bold" style="margin-top:30px;">PROTESTO LO NECESARIO</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ ministerio_publico | default("MINISTERIO PÚBLICO") }}</div>
+</div>
+{% endblock %}

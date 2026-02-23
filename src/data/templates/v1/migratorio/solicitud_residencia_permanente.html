@@ -1,0 +1,44 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Solicitud de Residencia Permanente</h1>
+    <p class="subtitle">Artículos 52 fr. V y 54 de la Ley de Migración · Arts. 137-139 RLMY</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+
+<p class="text-bold">INSTITUTO NACIONAL DE MIGRACIÓN</p>
+<p class="text-bold">DELEGACIÓN FEDERAL EN {{ estado | default("_______________") }}</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<p class="indent text-justify">
+    <strong>{{ cliente.nombre | default("NOMBRE DEL SOLICITANTE") }}</strong>,
+    de nacionalidad {{ nacionalidad | default("_______________") }},
+    con número de pasaporte {{ pasaporte | default("_______________") }},
+    actualmente con tarjeta de residente temporal No. {{ num_residencia | default("_______________") }},
+    con domicilio en {{ cliente.domicilio | default("_________________________________") }},
+    solicito el cambio de condición de estancia a <strong>RESIDENTE PERMANENTE</strong>.
+</p>
+
+<div class="section-title">FUNDAMENTO</div>
+<p class="indent text-justify">
+    {{ fundamento | default("Artículo 54 de la Ley de Migración: por tener 4 años consecutivos como residente temporal /
+    por tener vínculo familiar con ciudadano mexicano / por razones humanitarias.") }}
+</p>
+
+<div class="section-title">DOCUMENTACIÓN</div>
+<p class="indent text-justify">
+    1. Pasaporte vigente (original y copia).<br>
+    2. Tarjeta de residente temporal vigente.<br>
+    3. Comprobante de domicilio reciente.<br>
+    4. {{ doc_extra | default("Acta de matrimonio / nacimiento que acredite vínculo familiar.") }}<br>
+    5. Formato migratorio y comprobante de pago de derechos.
+</p>
+
+<p class="text-center text-bold" style="margin-top:30px;">ATENTAMENTE</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA") }}</div>
+</div>
+{% endblock %}

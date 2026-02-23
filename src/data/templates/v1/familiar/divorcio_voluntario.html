@@ -1,0 +1,72 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Divorcio Voluntario Judicial</h1>
+    <p class="subtitle">Artículos 272-A y 273 del Código Civil Federal</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto |
+    default("__ de ________ de 20__") }}</p>
+
+<p class="text-bold">C. JUEZ DE LO FAMILIAR</p>
+<p class="text-bold">{{ juzgado | default("JUZGADO DE LO FAMILIAR") }}</p>
+<p>PRESENTE.</p>
+
+<p class="indent text-justify">
+    <strong>{{ conyuge_1 | default("NOMBRE DEL CÓNYUGE 1") }}</strong>
+    y <strong>{{ conyuge_2 | default("NOMBRE DEL CÓNYUGE 2") }}</strong>,
+    por nuestro propio derecho, señalando como domicilio para oír y recibir
+    notificaciones el ubicado en {{ domicilio | default("_________________________________") }},
+    ante usted respetuosamente comparecemos para promover:
+</p>
+
+<div class="section-title">JUICIO DE DIVORCIO VOLUNTARIO</div>
+
+<p class="indent text-justify">
+    Solicitamos la disolución del vínculo matrimonial celebrado el día
+    {{ fecha_matrimonio | default("___ de _______ de ____") }},
+    ante {{ lugar_matrimonio | default("el Oficial del Registro Civil") }},
+    Acta número {{ numero_acta | default("___________") }}.
+</p>
+
+<div class="section-title">CONVENIO</div>
+
+<p class="indent text-justify">
+    En términos del artículo 273 del Código Civil Federal, acompañamos el convenio
+    que contiene los siguientes puntos:
+</p>
+
+<p class="indent text-justify">
+    <strong>I. DOMICILIO.</strong> — {{ convenio_domicilio | default("Cada cónyuge habitará en domicilio separado a
+    partir de la fecha de la sentencia.") }}<br><br>
+    <strong>II. ALIMENTOS.</strong> — {{ convenio_alimentos | default("Los cónyuges renuncian a reclamar alimentos entre
+    sí, al contar cada uno con ingresos propios suficientes.") }}<br><br>
+    <strong>III. HIJOS MENORES.</strong> — {{ convenio_hijos | default("La guarda y custodia de los hijos menores
+    quedará a cargo de _________, con régimen de convivencia a favor de _________ los fines de semana.") }}<br><br>
+    <strong>IV. PENSIÓN ALIMENTICIA.</strong> — {{ convenio_pension | default("El cónyuge _________ se obliga a
+    proporcionar pensión alimenticia por la cantidad de $_______ mensuales para los hijos menores.") }}<br><br>
+    <strong>V. BIENES.</strong> — {{ convenio_bienes | default("Los bienes adquiridos durante el matrimonio se
+    liquidarán conforme al inventario adjunto.") }}
+</p>
+
+<div class="section-title">PUNTOS PETITORIOS</div>
+
+<p class="indent text-justify">
+    <strong>PRIMERO.</strong> — Tener por presentada esta solicitud de divorcio voluntario.<br>
+    <strong>SEGUNDO.</strong> — Aprobar el convenio de divorcio presentado.<br>
+    <strong>TERCERO.</strong> — Citar a las partes a la junta de avenencia correspondiente.<br>
+    <strong>CUARTO.</strong> — En su oportunidad, decretar la disolución del vínculo matrimonial.
+</p>
+
+<p class="indent text-justify">PROTESTO LO NECESARIO.</p>
+
+<div style="display:flex; gap:40px; margin-top:50px;">
+    <div class="signature-block" style="flex:1;">
+        <div class="signature-line">{{ conyuge_1 | default("CÓNYUGE 1") }}</div>
+    </div>
+    <div class="signature-block" style="flex:1;">
+        <div class="signature-line">{{ conyuge_2 | default("CÓNYUGE 2") }}</div>
+    </div>
+</div>
+{% endblock %}

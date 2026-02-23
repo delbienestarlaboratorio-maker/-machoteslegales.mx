@@ -1,0 +1,72 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Divorcio Administrativo</h1>
+    <p class="subtitle">Artículo 272-A del Código Civil Federal</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto |
+    default("__ de ________ de 20__") }}</p>
+
+<p class="text-bold">C. OFICIAL DEL REGISTRO CIVIL</p>
+<p class="text-bold">{{ registro_civil | default("OFICIALÍA DEL REGISTRO CIVIL") }}</p>
+<p>PRESENTE.</p>
+
+<p class="indent text-justify">
+    Los suscritos, <strong>{{ conyuge_1 | default("NOMBRE DEL CÓNYUGE 1") }}</strong>
+    y <strong>{{ conyuge_2 | default("NOMBRE DEL CÓNYUGE 2") }}</strong>,
+    ambos mayores de edad, con domicilio conyugal en
+    {{ domicilio_conyugal | default("_________________________________") }},
+    ante usted comparecemos para solicitar:
+</p>
+
+<div class="section-title">DIVORCIO ADMINISTRATIVO POR MUTUO CONSENTIMIENTO</div>
+
+<p class="indent text-justify">
+    De conformidad con el artículo 272-A del Código Civil Federal, manifestamos
+    nuestra voluntad libre e inequívoca de disolver el vínculo matrimonial
+    que nos une, celebrado el día {{ fecha_matrimonio | default("___ de _______ de ____") }}
+    ante {{ lugar_matrimonio | default("la Oficialía del Registro Civil de _____________") }},
+    según consta en el Acta de Matrimonio número {{ numero_acta | default("___________") }}.
+</p>
+
+<div class="section-title">REQUISITOS LEGALES</div>
+
+<p class="indent text-justify">
+    Manifestamos bajo protesta de decir verdad que cumplimos con los requisitos
+    establecidos por la ley:<br><br>
+    <strong>a)</strong> Que ha transcurrido más de un año desde la celebración del matrimonio.<br>
+    <strong>b)</strong> Que <strong>no tenemos hijos menores de edad</strong> ni hijos mayores sujetos a tutela.<br>
+    <strong>c)</strong> Que la cónyuge <strong>no se encuentra en estado de gravidez</strong>.<br>
+    <strong>d)</strong> Que hemos liquidado la sociedad conyugal, si bajo ese régimen nos casamos.<br>
+    <strong>e)</strong> Que ambos somos mayores de edad.
+</p>
+
+<div class="section-title">RÉGIMEN PATRIMONIAL</div>
+
+<p class="indent text-justify">
+    Declaramos que nuestro matrimonio fue celebrado bajo el régimen de
+    {{ regimen | default("separación de bienes / sociedad conyugal") }},
+    y que {{ situacion_bienes | default("no existen bienes que repartir / los bienes han sido liquidados de común
+    acuerdo según convenio adjunto") }}.
+</p>
+
+<div class="section-title">PETICIÓN</div>
+
+<p class="indent text-justify">
+    Por lo anteriormente expuesto, solicitamos se sirva:<br><br>
+    <strong>PRIMERO.</strong> — Levantar el acta de divorcio correspondiente.<br>
+    <strong>SEGUNDO.</strong> — Realizar las anotaciones marginales al acta de matrimonio.<br>
+    <strong>TERCERO.</strong> — Expedir las constancias de soltería a que tengamos derecho.
+</p>
+
+<div style="display:flex; gap:40px; margin-top:50px;">
+    <div class="signature-block" style="flex:1;">
+        <div class="signature-line">{{ conyuge_1 | default("CÓNYUGE 1") }}</div>
+    </div>
+    <div class="signature-block" style="flex:1;">
+        <div class="signature-line">{{ conyuge_2 | default("CÓNYUGE 2") }}</div>
+    </div>
+</div>
+{% endblock %}

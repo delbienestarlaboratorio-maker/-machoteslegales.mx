@@ -1,0 +1,71 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Querella por Fraude</h1>
+    <p class="subtitle">Artículos 386-389 del Código Penal Federal · Arts. 221-225 CNPP</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+
+<p class="text-bold">C. AGENTE DEL MINISTERIO PÚBLICO EN TURNO</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<p class="indent text-justify">
+    <strong>{{ cliente.nombre | default("NOMBRE DEL QUERELLANTE") }}</strong>, mayor de edad,
+    con domicilio en <strong>{{ cliente.domicilio | default("_________________________________") }}</strong>,
+    autorizando a {{ abogado.nombre | default("_________________________________") }},
+    ante Usted formulo <strong>QUERELLA</strong> en contra de
+    <strong>{{ imputado | default("NOMBRE DEL IMPUTADO") }}</strong>,
+    por el delito de <strong>FRAUDE</strong>, previsto y sancionado por el artículo 386 del CPF.
+</p>
+
+<p class="indent text-justify">
+    Manifiesto expresamente mi voluntad de que se proceda penalmente.
+</p>
+
+<div class="section-title">I. HECHOS</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> {{ hecho_1 | default("Con fecha [fecha], el querellado, aprovechándose de [error/engaño],
+    me hizo creer que [describir el engaño], por lo cual le entregué la cantidad de $[monto] pesos / [bienes
+    entregados].") }}
+</p>
+<p class="indent text-justify">
+    <strong>SEGUNDO.-</strong> {{ hecho_2 | default("El engaño consistió en [describir maquinación fraudulenta:
+    documentos falsos, identidad falsa, promesas incumplidas, etc.], obteniendo un lucro indebido a costa de mi
+    patrimonio.") }}
+</p>
+<p class="indent text-justify">
+    <strong>TERCERO.-</strong> {{ hecho_3 | default("El monto del perjuicio patrimonial asciende a $[monto] pesos M.N.,
+    acreditándose los elementos del tipo penal: engaño, error, disposición patrimonial y perjuicio.") }}
+</p>
+
+<div class="section-title">II. FUNDAMENTO LEGAL</div>
+<p class="indent text-justify">
+    Artículo 386 CPF: <em>"Comete el delito de fraude el que engañando a uno o aprovechándose del error
+        en que éste se halla se hace ilícitamente de alguna cosa o alcanza un lucro indebido."</em>
+</p>
+
+<div class="section-title">III. DATOS DE PRUEBA</div>
+<p class="indent text-justify">
+    1. {{ prueba_1 | default("Contratos, recibos o comprobantes de la transacción fraudulenta.") }}<br>
+    2. {{ prueba_2 | default("Estados de cuenta que acrediten las transferencias realizadas.") }}<br>
+    3. {{ prueba_3 | default("Comunicaciones con el querellado (correos, mensajes, WhatsApp).") }}<br>
+    4. {{ prueba_4 | default("Documentación que acredite el engaño (publicidad falsa, documentos apócrifos).") }}<br>
+    5. Las demás que resulten de la investigación.
+</p>
+
+<div class="section-title">IV. PETICIONES</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Tenerme por presentado formulando querella.<br>
+    <strong>SEGUNDO.-</strong> Iniciar carpeta de investigación.<br>
+    <strong>TERCERO.-</strong> Ejercitar acción penal y solicitar la reparación del daño.<br>
+    <strong>CUARTO.-</strong> Solicitar el aseguramiento de bienes del imputado.
+</p>
+
+<p class="text-center text-bold" style="margin-top:30px;">PROTESTO LO NECESARIO</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA DEL QUERELLANTE") }}</div>
+</div>
+{% endblock %}

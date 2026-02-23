@@ -1,0 +1,69 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Querella por Amenazas</h1>
+    <p class="subtitle">Artículo 282 del Código Penal Federal · Arts. 221-225 CNPP</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+
+<p class="text-bold">C. AGENTE DEL MINISTERIO PÚBLICO EN TURNO</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<p class="indent text-justify">
+    <strong>{{ cliente.nombre | default("NOMBRE DEL QUERELLANTE") }}</strong>, mayor de edad,
+    con domicilio en <strong>{{ cliente.domicilio | default("_________________________________") }}</strong>,
+    autorizando a {{ abogado.nombre | default("_________________________________") }},
+    ante Usted comparezco para formular <strong>QUERELLA</strong> en contra de
+    <strong>{{ imputado | default("NOMBRE DEL IMPUTADO") }}</strong>,
+    por el delito de <strong>AMENAZAS</strong>, previsto en el artículo 282 del Código Penal Federal.
+</p>
+
+<p class="indent text-justify">
+    Manifiesto expresamente mi voluntad de que se proceda penalmente en contra del querellado.
+</p>
+
+<div class="section-title">I. HECHOS</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> {{ hecho_1 | default("Con fecha [fecha], siendo las [hora] horas, el querellado me
+    amenazó de la siguiente manera: [describir textualmente las amenazas recibidas], lo cual me causó fundado temor de
+    que se cumplieran dichas amenazas.") }}
+</p>
+<p class="indent text-justify">
+    <strong>SEGUNDO.-</strong> {{ hecho_2 | default("Las amenazas fueron realizadas [de manera verbal/por escrito/por
+    medios electrónicos/por teléfono], en presencia de [testigos, si los hay].") }}
+</p>
+<p class="indent text-justify">
+    <strong>TERCERO.-</strong> {{ hecho_3 | default("Como consecuencia de dichas amenazas, mi integridad física y
+    emocional se ha visto seriamente afectada, viviendo en constante temor.") }}
+</p>
+
+<div class="section-title">II. DATOS DE PRUEBA</div>
+<p class="indent text-justify">
+    1. {{ prueba_1 | default("Capturas de pantalla de mensajes amenazantes.") }}<br>
+    2. {{ prueba_2 | default("Grabaciones de audio o video, en su caso.") }}<br>
+    3. {{ prueba_3 | default("Testimonial de [nombre del testigo].") }}<br>
+    4. Declaración del suscrito querellante.
+</p>
+
+<div class="section-title">III. MEDIDAS DE PROTECCIÓN</div>
+<p class="indent text-justify">
+    Solicito se dicten las medidas de protección necesarias a mi favor, conforme a los artículos
+    137 y 139 del CNPP, en virtud del riesgo existente para mi integridad.
+</p>
+
+<div class="section-title">IV. PETICIONES</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Tenerme por presentado formulando querella.<br>
+    <strong>SEGUNDO.-</strong> Iniciar carpeta de investigación.<br>
+    <strong>TERCERO.-</strong> Dictar medidas de protección a mi favor.<br>
+    <strong>CUARTO.-</strong> Ejercitar acción penal.
+</p>
+
+<p class="text-center text-bold" style="margin-top:30px;">PROTESTO LO NECESARIO</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA DEL QUERELLANTE") }}</div>
+</div>
+{% endblock %}

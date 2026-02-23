@@ -1,0 +1,323 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Querella por Fraude</h1>
+    <p class="subtitle-v2">Artículos 386, 387 y 389 del Código Penal Federal · Artículos 221, 222, 223 y 225 del CNPP ·
+        Arts. 16, 20 y 21 CPEUM</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, {{ estado | default("Ciudad de México") }}, a {{
+    fecha_actual_texto }}</p>
+
+<p class="text-bold destinatario">C. AGENTE DEL MINISTERIO PÚBLICO DE LA FEDERACIÓN / DEL FUERO COMÚN, EN TURNO</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<!-- ═══════════════════════════ PROEMIO ═══════════════════════════ -->
+
+<p class="indent text-justify">
+    <strong>{{ cliente.nombre | default("NOMBRE COMPLETO DEL QUERELLANTE") }}</strong>, mexicano(a),
+    mayor de edad, con domicilio en <strong>{{ cliente.domicilio | default("_________________________________")
+        }}</strong>,
+    identificándome con {{ identificacion | default("credencial para votar expedida por el Instituto Nacional
+    Electoral") }}
+    con clave de elector {{ clave_elector | default("_______________") }},
+    CURP: <strong>{{ curp | default("_______________") }}</strong>,
+    señalando como domicilio para oír y recibir todo tipo de notificaciones el ubicado en
+    {{ domicilio_notificaciones | default("_________________________________") }},
+    autorizando en los más amplios términos de ley al licenciado(a) en Derecho
+    <strong>{{ abogado.nombre | default("_______________") }}</strong>,
+    cédula profesional {{ abogado.cedula | default("_______________") }};
+    ante Usted, con el debido respeto, comparezco y expongo:
+</p>
+
+<p class="indent text-justify">
+    Que por medio del presente escrito, con fundamento en lo dispuesto por los artículos
+    <strong>16 y 21</strong> de la Constitución Política de los Estados Unidos Mexicanos;
+    <strong>221, 222, 223 y 225</strong> del Código Nacional de Procedimientos Penales;
+    <strong>386, 387 y 389</strong> del Código Penal Federal,
+    vengo a formular formal <strong>QUERELLA</strong> en contra de:
+</p>
+<p class="indent text-justify">
+    <strong>{{ imputado | default("NOMBRE COMPLETO DEL QUERELLADO") }}</strong>,
+    con domicilio conocido en {{ domicilio_imputado | default("_________________________________") }},
+    quien puede ser localizado en {{ lugar_localizacion | default("_________________________________") }},
+    por la probable comisión del delito de <strong>FRAUDE</strong> y los que resulten.
+</p>
+<p class="indent text-justify text-bold">
+    Desde este momento, manifiesto de manera <u>EXPRESA E INEQUÍVOCA</u> mi voluntad
+    de que se proceda penalmente en contra del querellado, conforme al artículo 225 del CNPP.
+</p>
+
+<!-- ═══════════════════════════ I. HECHOS ═══════════════════════════ -->
+
+<div class="section-title numbered">I. NARRACIÓN DE HECHOS</div>
+<p class="indent text-justify">
+    Bajo protesta de decir verdad, de conformidad con lo dispuesto por el artículo 222 del CNPP,
+    manifiesto que los hechos que motivan la presente querella son los siguientes:
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>PRIMERO.- Relación previa y contexto del engaño.</strong>
+    {{ hecho_1 | default("Con fecha [fecha exacta], establecí contacto con el hoy querellado [nombre], quien se ostentó
+    como [calidad: representante de empresa / vendedor / prestador de servicios / profesionista], presentándome
+    [documentación falsa / información engañosa / oferta irresistible]. Describir cómo se generó la relación de
+    confianza que el querellado aprovechó para defraudar.") }}
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>SEGUNDO.- Maquinación fraudulenta y engaño.</strong>
+    {{ hecho_2 | default("El querellado, valiéndose de [engaño activo / aprovechamiento del error], me hizo creer que
+    [describir la representación falsa con detalle: existencia de bienes inexistentes, capacidad de cumplimiento,
+    promesas falsas, identidad falsa, etc.], lo cual era completamente falso, ya que [describir la realidad]. Esta
+    maquinación se materializó mediante [contratos falsos / documentos apócrifos / promesas verbales engañosas /
+    publicidad falsa].") }}
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>TERCERO.- Disposición patrimonial perjudicial.</strong>
+    {{ hecho_3 | default("Como resultado directo del engaño descrito, el suscrito realizó la disposición patrimonial
+    consistente en [entrega de dinero / transferencia bancaria / entrega de bienes / firma de documentos], por la
+    cantidad total de $[MONTO] ([monto en letra] pesos 00/100 M.N.), desglosada de la siguiente manera:\n\na) $[monto]
+    transferidos el [fecha] a la cuenta [banco/número];\nb) $[monto] entregados en efectivo el [fecha];\nc) [Otros
+    conceptos].") }}
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>CUARTO.- Descubrimiento del fraude y lucro indebido.</strong>
+    {{ hecho_4 | default("Fue hasta el día [fecha] cuando descubrí que había sido víctima de fraude, al constatar que
+    [el servicio nunca se prestó / el bien no existía / la empresa era ficticia / los documentos eran falsos]. El
+    querellado obtuvo un lucro indebido a costa de mi patrimonio, y a pesar de los múltiples requerimientos de
+    devolución, se ha negado a restituir cantidad alguna.") }}
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>QUINTO.- Requerimientos previos infructuosos.</strong>
+    {{ hecho_5 | default("Con fechas [fechas], el suscrito realizó requerimientos [escritos / verbales / electrónicos]
+    al querellado para la devolución del dinero, sin obtener respuesta satisfactoria. Se adjuntan como medios de prueba
+    las comunicaciones sostenidas.") }}
+</p>
+
+<!-- ═══════════════════════════ II. TIPO PENAL ═══════════════════════════ -->
+
+<div class="section-title numbered">II. ENCUADRAMIENTO DEL TIPO PENAL</div>
+
+<p class="indent text-justify double-space">
+    Los hechos narrados configuran plenamente el delito de <strong>FRAUDE GENÉRICO</strong> previsto
+    en el artículo 386 del Código Penal Federal, cuyo tipo penal exige la acreditación de los
+    siguientes elementos:
+</p>
+
+<table style="border:1px solid #000; margin:15px 0;">
+    <tr style="background:#f0f0f0; font-weight:bold;">
+        <td style="border:1px solid #000; padding:8px; width:35%;">Elemento del tipo</td>
+        <td style="border:1px solid #000; padding:8px;">Acreditación en el caso concreto</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:8px;">1. <strong>Engaño</strong> o aprovechamiento del error</td>
+        <td style="border:1px solid #000; padding:8px;">{{ elemento_engano | default("El querellado fabricó [describir
+            la falsedad concreta] que indujo al suscrito a error.") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:8px;">2. <strong>Error</strong> en la víctima</td>
+        <td style="border:1px solid #000; padding:8px;">{{ elemento_error | default("El suscrito creyó veraz la
+            representación falsa del querellado, lo que determinó su voluntad.") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:8px;">3. <strong>Disposición patrimonial</strong></td>
+        <td style="border:1px solid #000; padding:8px;">{{ elemento_disposicion | default("Entrega de $[monto] mediante
+            [forma de entrega].") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:8px;">4. <strong>Lucro indebido</strong> del activo</td>
+        <td style="border:1px solid #000; padding:8px;">{{ elemento_lucro | default("El querellado se apropió del dinero
+            sin contraprestación alguna.") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:8px;">5. <strong>Nexo causal</strong> (engaño → disposición)</td>
+        <td style="border:1px solid #000; padding:8px;">{{ elemento_nexo | default("Sin el engaño, el suscrito jamás
+            habría entregado su dinero.") }}</td>
+    </tr>
+</table>
+
+<p class="indent text-justify">
+    <strong>Penalidad aplicable:</strong> Conforme al artículo 386 fracción {{ fraccion_art386 | default("III") }} del
+    CPF,
+    cuando el valor de lo defraudado excede de {{ limite | default("500") }} veces el valor diario de la UMA,
+    la pena es de {{ pena | default("3 a 12 años de prisión y multa de 120 a 500 UMAS") }}.
+</p>
+
+<p class="indent text-justify">
+    <strong>Calificativas aplicables:</strong> {{ calificativas | default("En su caso, señalar si aplica alguna de las
+    hipótesis del artículo 387 del CPF (venta de cosa ajena, fraude procesal, doble venta, etc.) o el fraude equiparado
+    del artículo 389.") }}
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">JURISPRUDENCIA APLICABLE AL TIPO PENAL:</p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: 1a./J. 42/2010</strong> — Primera Sala — SCJN<br>
+        Rubro: <em>"FRAUDE. PARA QUE SE ACREDITE EL ENGAÑO COMO ELEMENTO DEL TIPO PENAL, ES NECESARIO QUE SEA IDÓNEO,
+            BASTANTE Y EFICAZ PARA INDUCIR A ERROR."</em><br>
+        Semanario Judicial de la Federación y su Gaceta, Novena Época.
+    </p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: I.9o.P.69 P</strong> — Noveno Tribunal Colegiado en Materia Penal del Primer Circuito<br>
+        Rubro: <em>"FRAUDE. ELEMENTOS DEL TIPO PENAL. EL ENGAÑO DEBE SER LA CAUSA DETERMINANTE DE LA DISPOSICIÓN
+            PATRIMONIAL."</em>
+    </p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: VI.2o.P.27 P</strong> — Segundo Tribunal Colegiado en Materia Penal del Sexto Circuito<br>
+        Rubro: <em>"FRAUDE. LA MERA FALTA DE PAGO O INCUMPLIMIENTO CONTRACTUAL NO LO CONFIGURA, SI NO SE ACREDITA QUE
+            DESDE EL INICIO EXISTIÓ LA INTENCIÓN DE NO CUMPLIR."</em>
+    </p>
+</div>
+
+<!-- ═══════════════════════════ III. DATOS DE PRUEBA ═══════════════════════════ -->
+
+<div class="section-title numbered">III. DATOS DE PRUEBA (Art. 261 CNPP)</div>
+<p class="indent text-justify">
+    Para el esclarecimiento de los hechos y acreditación del delito, ofrezco los siguientes datos de prueba:
+</p>
+
+<p class="indent text-justify">
+    <strong>1. DECLARACIÓN DEL QUERELLANTE.-</strong> Mi propia declaración bajo protesta de decir verdad,
+    con la que se acredita la mecánica comisiva del delito, las circunstancias del engaño y los efectos patrimoniales.
+</p>
+<p class="indent text-justify">
+    <strong>2. DOCUMENTAL PRIVADA.-</strong> {{ prueba_documental | default("Contrato, recibo, comprobante de
+    transferencia bancaria, factura u otro documento que acredite la operación mediante la cual se entregó el patrimonio
+    al querellado. Su valor probatorio radica en demostrar la disposición patrimonial.") }}
+</p>
+<p class="indent text-justify">
+    <strong>3. ESTADOS DE CUENTA BANCARIOS.-</strong> {{ prueba_bancaria | default("Estados de cuenta de la institución
+    bancaria [nombre], correspondientes al periodo [mes/año], donde se observan las transferencias realizadas al
+    querellado por $[monto], acreditando la disposición patrimonial del querellante.") }}
+</p>
+<p class="indent text-justify">
+    <strong>4. COMUNICACIONES ELECTRÓNICAS.-</strong> {{ prueba_electronica | default("Impresión de conversaciones de
+    WhatsApp / correos electrónicos / mensajes de texto sostenidas entre el querellante y el querellado, donde se
+    evidencia: a) las promesas engañosas del querellado, b) los requerimientos de cumplimiento, c) las excusas evasivas
+    del querellado.") }}
+</p>
+<p class="indent text-justify">
+    <strong>5. TESTIMONIAL.-</strong> {{ prueba_testimonial | default("De [nombre completo del testigo], con domicilio
+    en [domicilio], quien tiene conocimiento directo de los hechos y puede declarar sobre [las circunstancias del engaño
+    / la entrega del dinero / el incumplimiento del querellado].") }}
+</p>
+<p class="indent text-justify">
+    <strong>6. DOCUMENTAL PÚBLICA.-</strong> {{ prueba_publica | default("En su caso, escrituras, actas notariales,
+    registros públicos que acrediten la falsedad de las representaciones del querellado.") }}
+</p>
+<p class="indent text-justify">
+    <strong>7. PERICIAL CONTABLE.-</strong> Solicito que dentro de la investigación se ordene la práctica de
+    peritaje contable que determine el monto exacto del perjuicio patrimonial causado al querellante.
+</p>
+
+<!-- ═══════════════════════════ IV. REPARACIÓN DEL DAÑO ═══════════════════════════ -->
+
+<div class="section-title numbered">IV. REPARACIÓN INTEGRAL DEL DAÑO</div>
+<p class="indent text-justify">
+    Conforme a los artículos 109 fracción XXV y 110 del CNPP, así como el artículo 20 apartado C
+    de la Constitución, solicito desde este momento la <strong>reparación integral del daño</strong>,
+    que comprende:
+</p>
+
+<table style="border:1px solid #000; margin:15px 0;">
+    <tr style="background:#f0f0f0; font-weight:bold;">
+        <td style="border:1px solid #000; padding:8px; text-align:left;">Concepto</td>
+        <td style="border:1px solid #000; padding:8px; text-align:right;">Monto</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px;">Daño patrimonial directo (cantidad defraudada)</td>
+        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ dano_patrimonial |
+            default("_______________") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px;">Perjuicios (lucro cesante, gastos erogados)</td>
+        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ perjuicios | default("_______________") }}
+        </td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px;">Daño moral (Art. 1916 CCF)</td>
+        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ dano_moral | default("_______________") }}
+        </td>
+    </tr>
+    <tr style="font-weight:bold; background:#f0f0f0;">
+        <td style="border:1px solid #000; padding:8px;">TOTAL REPARACIÓN</td>
+        <td style="border:1px solid #000; padding:8px; text-align:right;">${{ total_reparacion |
+            default("_______________") }}</td>
+    </tr>
+</table>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">JURISPRUDENCIA SOBRE REPARACIÓN DEL DAÑO:</p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: 1a./J. 31/2017 (10a.)</strong> — Primera Sala — SCJN<br>
+        Rubro: <em>"REPARACIÓN INTEGRAL DEL DAÑO. SU CONCEPTO Y ALCANCE EN EL SISTEMA PENAL ACUSATORIO."</em>
+    </p>
+</div>
+
+<!-- ═══════════════════════════ V. MEDIDAS CAUTELARES ═══════════════════════════ -->
+
+<div class="section-title numbered">V. MEDIDAS CAUTELARES Y DE PROVIDENCIA PRECAUTORIA</div>
+<p class="indent text-justify">
+    Con fundamento en los artículos 138, 153 y 155 del CNPP, solicito a la Representación Social
+    que gestione ante el Juez de Control las siguientes medidas:
+</p>
+<p class="indent text-justify">
+    <strong>a)</strong> {{ medida_1 | default("Embargo precautorio sobre bienes del querellado, particularmente cuentas
+    bancarias, para garantizar la reparación del daño.") }}<br>
+    <strong>b)</strong> {{ medida_2 | default("Arraigo domiciliario o prohibición de salir del país, ante el riesgo de
+    sustracción de la acción de la justicia.") }}<br>
+    <strong>c)</strong> {{ medida_3 | default("Inmovilización de cuentas bancarias del querellado (Art. 249 CNPP).") }}
+</p>
+
+<!-- ═══════════════════════════ VI. PETICIONES ═══════════════════════════ -->
+
+<div class="section-title numbered">VI. PETICIONES</div>
+<p class="indent text-justify">
+    Por todo lo anteriormente expuesto y fundado, a Usted C. Agente del Ministerio Público,
+    respetuosamente solicito:
+</p>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Tenerme por presentado formulando querella en los términos expresados,
+    haciendo constar mi voluntad de que se proceda penalmente.
+</p>
+<p class="indent text-justify">
+    <strong>SEGUNDO.-</strong> Iniciar la carpeta de investigación correspondiente y registrarla en el
+    sistema de gestión de casos.
+</p>
+<p class="indent text-justify">
+    <strong>TERCERO.-</strong> Practicar todas las diligencias de investigación conducentes al
+    esclarecimiento de los hechos, incluyendo citación del imputado, peritajes y desahogo de pruebas.
+</p>
+<p class="indent text-justify">
+    <strong>CUARTO.-</strong> Solicitar al Juez de Control las medidas cautelares y providencias
+    precautorias señaladas en esta querella.
+</p>
+<p class="indent text-justify">
+    <strong>QUINTO.-</strong> En su oportunidad, ejercitar acción penal y formular la imputación correspondiente,
+    solicitando la vinculación a proceso del querellado.
+</p>
+<p class="indent text-justify">
+    <strong>SEXTO.-</strong> Solicitar en sentencia la reparación integral del daño en los términos cuantificados.
+</p>
+
+<p class="text-center text-bold" style="margin-top:40px;">
+    PROTESTO LO NECESARIO
+</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ cliente.nombre | default("NOMBRE COMPLETO Y FIRMA DEL QUERELLANTE") }}</div>
+</div>
+
+<div class="confidencialidad-v2">
+    <p><strong>AVISO DE CONFIDENCIALIDAD — DOCUMENTO V2 NEGOCIOS</strong></p>
+    <p>Documento generado por Machotes Legales®. Contiene fundamentación legal profesional,
+        jurisprudencia vigente, análisis de tipo penal y argumentación especializada.
+        Prohibida su reproducción sin autorización.</p>
+    <p>Licencia: {{ license_id | default("TLEX-V2-XXXXXX") }} · Usuario: {{ license_user | default("___") }}</p>
+</div>
+{% endblock %}

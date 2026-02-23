@@ -1,0 +1,155 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Querella o Denuncia por Robo</h1>
+    <p class="subtitle-v2">Arts. 367 al 381 del Código Penal Federal y 211 al 225 CNPP · Ofrecimiento Técnico de Datos
+        de Prueba Iniciales</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, a {{ fecha_actual_texto }}</p>
+
+<p class="text-bold destinatario">C. AGENTE DEL MINISTERIO PÚBLICO EN TURNO</p>
+<p class="text-bold">FISCALÍA GENERAL DE JUSTICIA DE {{ estado | default("___") }}</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                     PROEMIO                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<p class="indent text-justify">
+    <strong>{{ denunciante.nombre | default("NOMBRE COMPLETO DE LA VÍCTIMA U OFENDIDO") }}</strong>, mexicano(a), por mi
+    propio derecho, con Identificación Oficial INE número {{ denunciante.ine | default("___") }}, señalando como
+    domicilio y medios de contacto para recibir notificaciones físicas y electrónicas en {{ denunciante.domicilio |
+    default("_______________") }}, correo {{ denunciante.email | default("___") }}, y autorizando al Asesor Jurídico
+    Licenciado en Derecho <strong>{{ abogado.nombre | default("NOMBRE DEL ABOGADO") }}</strong> con cédula profesional
+    federal número {{ abogado.cedula | default("___") }}; ante esta representación social, con debida cortesía
+    comparezco:
+</p>
+
+<p class="indent text-justify">
+    Que con fundamento en los artículos <strong>21 y 20 apartado C de la Constitución Política de los Estados Unidos
+        Mexicanos, y los artículos 211, 221, 222 y 223 del Código Nacional de Procedimientos Penales (CNPP)</strong>,
+    comparezco formalmente a formular y presentar formal <strong>DENUNCIA Y/O QUERELLA</strong> por hechos constitutivos
+    del delito de <strong>ROBO</strong> (con o sin agravantes aplicables), ilícito previsto y sancionado por los
+    numerales 367 y siguientes del Código Penal aplicable en agravio del suscrito, y en contra de <strong>{{
+        acusado.nombre | default("QUIEN(ES) RESULTE(N) RESPONSABLE(S)") }}</strong>, a quienes acuso por la substracción
+    de pertenencias de mi legal propiedad.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                 I. HECHOS CIRCUNSTANCIADOS          -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">I. RELACIÓN DE HECHOS</div>
+
+<p class="indent text-justify double-space">
+    <strong>UNO.- CIRCUNSTANCIAS DE TIEMPO, LUGAR Y MODO CAUSAL:</strong> El día {{ fecha_hechos |
+    default("_______________") }}, siendo aproximadamente las {{ hora_hechos | default("___:___ horas") }}, me
+    encontraba ubicado en {{ lugar_hechos | default("[especifique dirección o cruce de calles exacto]") }}.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>DOS.- DESARROLLO DEL ILÍCITO:</strong> Que en ese momento, {{ narrativa_robo | default("fui abordado por
+    sujetos desconocidos/una persona que... [describa si hubo violencias morales, amagos, forzamiento de cerradura o
+    toma furtiva]") }}. En cuestión de segundos, la persona apoderó de mi esfera de dominio, sin mi consentimiento y de
+    apoderamiento, los siguientes objetos muebles:
+</p>
+
+<table class="tabla-calculos mx-auto" style="width: 90%;">
+    <thead>
+        <tr>
+            <th>Objeto Robado</th>
+            <th>Características y Serie (si aplica)</th>
+            <th>Valor Económico Estimado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ objeto1.nombre | default("Teléfono celular") }}</td>
+            <td>{{ objeto1.caracteristicas | default("Modelo X, color negro") }}</td>
+            <td>${{ objeto1.valor | default("15,000.00") }}</td>
+        </tr>
+        {{ fila_objeto_extra | default("
+        <tr>
+            <td>Billetera / Bolso</td>
+            <td>Contenía identificaciones y tarjetas bancarias</td>
+            <td>$3,000.00</td>
+        </tr>
+        ") }}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2" style="text-align: right; font-weight: bold;">AFECTACIÓN TOTAL:</td>
+            <td style="font-weight: bold;">${{ total_valor | default("18,000.00") }} MXN</td>
+        </tr>
+    </tfoot>
+</table>
+
+<p class="indent text-justify double-space mt-4">
+    <strong>TRES.- DE LA AGRAVANTE (SI APLICA):</strong> Hago notar a esta Fiscalía que los elementos sujetos a la
+    investigación causaron detrimento patrimonial mediando violencia moral/física {{ detalle_violencia | default("(o que
+    el robo sucedió aprovechando la oscuridad / en un vehículo / casa habitación)") }}, lo que actualiza, si la
+    superioridad legal así lo considera, las calificativas de agravantes del robo.
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">PRINCIPIO CONSTITUCIONAL DE DEBIDA DILIGENCIA (CNPP):</p>
+    <p class="jurisprudencia-texto">
+        En atención al artículo 131 Fracción II y X del Código Nacional de Procedimientos Penales, es obligación
+        irrenunciable de esta Fiscalía ordenar la recolección de indicios biológicos, lofoscópicos y videos de la red
+        gubernamental tipo "C4/C5", garantizando la reparación integral del daño a la víctima (Art. 20 Apt. C, IV
+        CPEUM).
+    </p>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                  II. ACTOS DE INVESTIGACIÓN         -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">II. SOLICITUD DE ACTOS DE INVESTIGACIÓN Y DATOS DE PRUEBA</div>
+
+<p class="indent text-justify double-space">
+    Solicito a esta Representación Social dictar, en cumplimiento de los Arts. 212, 214 y 216 CNPP, las siguientes
+    órdenes de investigación iniciales tendientes a acreditar el cuerpo del delito y probable responsabilidad:
+</p>
+
+<ul class="ml-8 list-none space-y-2 mt-4 text-justify">
+    <li><strong>A) GIRE OFICIO</strong> a la Policía de Investigación cibernética / perimetral para localizar las
+        cámaras de circuito cerrado (C4, C5 o privadas) a fin de extraer los fotogramas del instante exacto de la huida
+        o sustracción de los perpetradores de la cosa mueble en {{ lugar_hechos | default("_______________") }}.</li>
+    <li><strong>B) PRUEBA DOCUMENTAL:</strong> Se anexa como Dato de Prueba la Factura/Nota de compra/Contrato o
+        Fotografías que acreditan de mi parte la preexistencia y legítima propiedad del bien inmueble extraído.</li>
+    <li><strong>C) PRUEBA TESTIMONIAL:</strong> Se recale entrevista ministerial al/a los C. <strong>{{ testigo.nombre |
+            default("_______________") }}</strong> (en caso de que aluda la existencia de un testigo directo), quien
+        presenció cómo ocurrieron los hechos.</li>
+</ul>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                 III. PUNTOS PETITORIOS              -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">III. PUNTOS PETITORIOS</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Radíquese e inicie de inmediato la correspondiente Carpeta de Investigación por los
+    hechos puestos a su conocimiento.<br>
+    <strong>SEGUNDO.-</strong> Se decreten, por su conducto y mando, las medidas de urgente protección que mi seguridad
+    exija como víctima del delito de acuerdo a la ley general de víctimas.<br>
+    <strong>TERCERO.-</strong> Ordenar todos y cada uno de los dictámenes periciales como criminalística de campo o
+    valuación que coadyuven con la comprobación del daño patrimonial estimado.<br>
+    <strong>CUARTO.-</strong> En su oportunidad judicializar la presente la carpeta para formular imputación ante el
+    Juez de Control competente por la sustracción antijurídica descrita.
+</p>
+
+<p class="text-center text-bold" style="margin-top:40px;">PROTESTO LO NECESARIO EN BÚSQUEDA DE JUSTICIA</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ denunciante.nombre | default("NOMBRE Y FIRMA DE LA VÍCTIMA U OFENDIDO") }}</div>
+</div>
+
+<div class="confidencialidad-v2">
+    <p><strong>AVISO V2 NEGOCIOS — DENUNCIA ESTRATÉGICA PENAL</strong></p>
+    <p>Plantilla profesional estructurada para el Sistema Penal Acusatorio (CNPP). Integración previa de actos de
+        investigación pericial (C4/C5) y cuantificación económica del dolo para fijar parámetros robustos de legal
+        responsabilidad.</p>
+</div>
+{% endblock %}

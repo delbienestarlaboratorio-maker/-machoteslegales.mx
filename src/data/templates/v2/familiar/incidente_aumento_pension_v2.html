@@ -1,0 +1,143 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Incidente de Aumento de Pensión Alimenticia</h1>
+    <p class="subtitle-v2">Arts. 94 CFPC, 311 y 314 CCF · Principio de Proporcionalidad y Principio de Interés Superior
+        del Menor</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, {{ estado | default("Ciudad de México") }}, a {{
+    fecha_actual_texto }}</p>
+
+<p class="text-bold destinatario">C. JUEZ {{ juzgado_origen | default("___ DE LO FAMILIAR") }} DEL TRIBUNAL DE JUSTICIA
+    DE {{ estado | default("___") }}</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                     PROEMIO                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<p class="indent text-justify">
+    <strong>{{ actor.nombre | default("NOMBRE COMPLETO DEL PROMOVENTE") }}</strong>, mexicano(a), mayor de edad,
+    promoviendo por mi propio derecho y en representación de mi(s) menor(es) hijo(s) de iniciales <strong>{{
+        iniciales_menores | default("A.B.C.") }}</strong>, señalando domicilio legal el ubicado en {{ actor.domicilio |
+    default("_______________") }}, y autorizando como mi abogado(a) patrono(a) al Lic. <strong>{{ abogado.nombre |
+        default("_______________") }}</strong> (Cédula {{ abogado.cedula | default("___") }}); con el debido respeto
+    comparezco para exponer:
+</p>
+
+<p class="indent text-justify">
+    Que por medio del presente escrito, en la vía incidental y con fundamento en los artículos <strong>94 del Código de
+        Procedimientos Civiles y 311, 311 Bis, 314 y demás conducentes del Código Civil</strong>, vengo a promover
+    <strong>INCIDENTE DE AUMENTO DE PENSIÓN ALIMENTICIA</strong> en contra del señor(a) <strong>{{ demandado.nombre |
+        default("NOMBRE DEL DEUDOR ALIMENTARIO") }}</strong>, quien tiene su domicilio para ser emplazado en {{
+    demandado.domicilio | default("_______________") }}, reclamando las siguientes prestaciones:
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                I. PRESTACIONES                      -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">I. PRESTACIONES QUE SE RECLAMAN</div>
+<p class="indent text-justify double-space">
+    <strong>a)</strong> El <strong>AUMENTO DE LA PENSIÓN ALIMENTICIA</strong> decretada en sentencia definitiva del
+    juicio principal, pasando del actual {{ porcentaje_actual | default("20%") }} al porcentaje del <strong>{{
+        nuevo_porcentaje | default("40%") }}</strong>, o cantidad equivalente a las verdaderas necesidades actuales de
+    mis menores hijos y a la capacidad económica real del deudor.
+</p>
+<p class="indent text-justify double-space">
+    <strong>b)</strong> El aseguramiento precautorio sobre los ingresos del demandado en sus fuentes de empleo.
+</p>
+<p class="indent text-justify double-space">
+    <strong>c)</strong> El pago de gastos y costas procesales que se generen del presente incidente, conforme a la
+    temeridad procesal en caso de oposición.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                 II. HECHOS                          -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">II. HECHOS</div>
+
+<p class="indent text-justify double-space">
+    <strong>PRIMERO.-</strong> En el juicio principal del cual deriva el presente incidente, mediante sentencia de fecha
+    {{ fecha_sentencia | default("___") }}, se condenó al hoy demandado incidental al pago de una pensión alimenticia
+    calculada sobre un {{ porcentaje_actual | default("___%") }} de sus ingresos ordinarios.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>SEGUNDO.- AUMENTO DE LAS NECESIDADES DE LOS ACREEDORES:</strong> Es el caso que desde la fecha en que se
+    decretó dicha pensión a la actualidad, las necesidades alimentarias de mis menores hijos han incrementado
+    sustancialmente debido a su avance escolar, requiriendo ahora mayores gastos por concepto de: {{
+    justificacion_necesidades | default("colegiaturas, médicos especialistas, vestimenta propia de su edad adolescente,
+    actividades extracurriculares.") }}.
+</p>
+
+<p class="indent text-justify double-space">
+    <strong>TERCERO.- INCREMENTO DE LA CAPACIDAD ECONÓMICA DEL DEUDOR:</strong> A la par del cambio en las necesidades
+    reales, tengo conocimiento que la capacidad pecuniaria del demandado ha incrementado sensiblemente, obteniendo en la
+    actualidad ingresos superiores correspondientes a {{ justificacion_ingresos | default("ascenso laboral, nuevos
+    empleos o actividades comerciales adicionales") }}.
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">JURISPRUDENCIA - PRINCIPIO DE PROPORCIONALIDAD:</p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: 1a./J. 44/2001</strong> — Primera Sala — SCJN<br>
+        Rubro: <em>"ALIMENTOS. REQUISITOS QUE DEBEN OBSERVARSE PARA FIJAR EL MONTO DE LA PENSIÓN POR ESE CONCEPTO
+            (LEGISLACIONES DEL DISTRITO FEDERAL Y DEL ESTADO DE CHIAPAS)."</em><br>
+        La pensión alimenticia no es inmutable, sino provisionalísima; su incremento obedece al cambio en las
+        posibilidades del que deba darlos o las necesidades del que deba recibirlos.
+    </p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                   III. DERECHO                      -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">III. FUNDAMENTOS DE DERECHO</div>
+<p class="indent text-justify">
+    <strong>A. FONDO:</strong> Arts. 301, 303, 308, 311, 311 Bis, 314 y demás relativos del Código Civil. El artículo
+    311 es claro en señalar que los alimentos han de ser proporcionados a la posibilidad del que debe darlos y a la
+    necesidad del que debe recibirlos. <br>
+    <strong>B. FORMA:</strong> Rige este cuerpo normativo incidental lo establecido en los artículos 88, 89, 90, 940,
+    941 y conexos del Código de Procedimientos Civiles. <br>
+    <strong>C. CONVENCIONAL:</strong> Artículo 3 y 27 de la Convención sobre los Derechos del Niño, respecto al Interés
+    Superior de la Infancia y al nivel de vida adecuado.
+</p>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!--                  IV. PRUEBAS                        -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title numbered">IV. CAPÍTULO DE PRUEBAS</div>
+<p class="indent text-justify">
+    <strong>1. DOCUMENTAL PÚBLICA:</strong> Todo lo actuado en el expediente principal. <br>
+    <strong>2. DOCUMENTAL PRIVADA:</strong> Facturas y recibos que en número de {{ num_recibos | default("___") }}
+    exhibo, consistentes en pagos de colegiatura, calzado, médicos, relativos a mis menores hijos. <br>
+    <strong>3. INFORME DE AUTORIDAD Y/O EMPRESA:</strong> Se gire atento oficio a la fuente de ingresos del deudor,
+    ubicada en {{ empresa_deudor | default("___") }}, a fin de que informen sus ingresos ordinarios y extraordinarios
+    reales. <br>
+    <strong>4. PRESUNCIONAL LEGAL Y HUMANA.</strong>
+</p>
+
+<div class="section-title numbered">V. PETICIONES</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Tenerme por presentado con este escrito, documentos que acompaño, promoviendo el
+    Incidente de Aumento de Pensión Alimenticia.<br>
+    <strong>SEGUNDO.-</strong> Ordenar el emplazamiento al demandado incidental y la vista al Agente del Ministerio
+    Público adscrito para la salvaguarda de los menores.<br>
+    <strong>TERCERO.-</strong> Agotados los trámites, dictar Sentencia Interlocutoria aprobando el incremento solicitado
+    de forma retroactiva y permanente.
+</p>
+
+<p class="text-center text-bold" style="margin-top:40px;">PROTESTO LO NECESARIO</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ actor.nombre | default("NOMBRE Y FIRMA DE LA PARTE ACTORA") }}</div>
+</div>
+
+<div class="confidencialidad-v2">
+    <p><strong>AVISO — DOCUMENTO V2 NEGOCIOS</strong></p>
+    <p>Protección patrimonial de menores, argumentación de mutabilidad alimentaria sustentada legalmente bajo la
+        Convención de los Derechos del Niño.</p>
+</div>
+{% endblock %}

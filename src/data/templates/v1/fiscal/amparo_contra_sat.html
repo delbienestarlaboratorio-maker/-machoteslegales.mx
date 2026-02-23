@@ -1,0 +1,81 @@
+{% extends "base_v1.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Amparo contra Actos del SAT</h1>
+    <p class="subtitle">Arts. 103, 107 CPEUM · Ley de Amparo · CFF</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+
+<p class="text-bold">C. JUEZ DE DISTRITO EN MATERIA ADMINISTRATIVA EN TURNO</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<p class="indent text-justify">
+    <strong>{{ cliente.nombre | default("NOMBRE DEL QUEJOSO") }}</strong>,
+    con RFC {{ rfc | default("_______________") }},
+    señalando domicilio en {{ cliente.domicilio | default("_________________________________") }},
+    autorizando a {{ abogado.nombre | default("_________________________________") }},
+    promuevo <strong>AMPARO INDIRECTO</strong> contra actos del Servicio de Administración Tributaria.
+</p>
+
+<div class="section-title">AUTORIDADES RESPONSABLES</div>
+<p class="indent text-justify">
+    <strong>Ordenadora:</strong> {{ autoridad_ordenadora | default("Administrador General de Recaudación del SAT")
+    }}<br>
+    <strong>Ejecutora:</strong> {{ autoridad_ejecutora | default("Administrador Desconcentrado de Recaudación en
+    [estado]") }}
+</p>
+
+<div class="section-title">ACTO RECLAMADO</div>
+<p class="indent text-justify">
+    {{ acto_reclamado | default("El crédito fiscal número [número], notificado el [fecha], por concepto de
+    [ISR/IVA/multa], por la cantidad de $[monto], así como el procedimiento administrativo de ejecución iniciado en su
+    contra, incluyendo el embargo de [bienes/cuentas bancarias].") }}
+</p>
+
+<div class="section-title">DERECHOS VIOLADOS</div>
+<p class="indent text-justify">
+    Artículos 1°, 14, 16, 22 y 31 fracción IV de la CPEUM (legalidad, audiencia, seguridad jurídica, proporcionalidad y
+    equidad tributaria).
+</p>
+
+<div class="section-title">CONCEPTOS DE VIOLACIÓN</div>
+<p class="indent text-justify double-space">
+    <strong>PRIMERO.-</strong> {{ concepto_1 | default("El acto reclamado viola el artículo 16 constitucional al carecer
+    de debida fundamentación y motivación, en virtud de que la autoridad no señala con precisión el precepto legal
+    aplicable ni las circunstancias particulares del caso.") }}
+</p>
+<p class="indent text-justify double-space">
+    <strong>SEGUNDO.-</strong> {{ concepto_2 | default("Se viola el principio de proporcionalidad tributaria (Art. 31
+    fr. IV) porque el monto determinado no corresponde a la capacidad contributiva real del quejoso.") }}
+</p>
+
+<div class="section-title">SUSPENSIÓN</div>
+<p class="indent text-justify">
+    Solicito suspensión provisional y definitiva. Conforme al artículo 135 de la Ley de Amparo, ofrezco garantía por ${{
+    garantia | default("___") }} para que no se ejecute el crédito fiscal. De ejecutarse, se causarían daños de
+    imposible reparación.
+</p>
+
+<div class="section-title">PRUEBAS</div>
+<p class="indent text-justify">
+    1. Copia de la resolución determinante del crédito fiscal.<br>
+    2. Constancia de notificación.<br>
+    3. Declaraciones fiscales del contribuyente.<br>
+    4. Presuncional legal y humana.
+</p>
+
+<div class="section-title">PUNTOS PETITORIOS</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Admitir la demanda de amparo.<br>
+    <strong>SEGUNDO.-</strong> Conceder la suspensión provisional y definitiva.<br>
+    <strong>TERCERO.-</strong> Conceder el amparo y protección de la Justicia Federal.
+</p>
+
+<p class="text-center text-bold" style="margin-top:30px;">PROTESTO LO NECESARIO</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA DEL QUEJOSO") }}</div>
+</div>
+{% endblock %}

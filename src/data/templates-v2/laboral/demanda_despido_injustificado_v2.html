@@ -1,0 +1,298 @@
+{% extends "base_v2.html" %}
+
+{% block content %}
+<div class="header-v2">
+    <div class="tier-badge">V2 NEGOCIOS</div>
+    <h1>Demanda Laboral por Despido Injustificado</h1>
+    <p class="subtitle-v2">Artículos 47, 48, 50, 89, 162 de la Ley Federal del Trabajo · Arts. 685, 685-Bis, 873 LFT ·
+        Art. 123 Apartado A CPEUM</p>
+</div>
+
+<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, {{ estado | default("Ciudad de México") }}, a {{
+    fecha_actual_texto }}</p>
+
+<p class="text-bold destinatario">H. TRIBUNAL LABORAL DEL {{ circuito | default("_______________") }} CIRCUITO</p>
+<p class="text-bold">Expediente: AL ABRIRSE</p>
+<p class="text-bold">P R E S E N T E</p>
+
+<!-- ═══════════════════════════ PROEMIO ═══════════════════════════ -->
+
+<p class="indent text-justify">
+    <strong>{{ cliente.nombre | default("NOMBRE COMPLETO DEL TRABAJADOR") }}</strong>, mexicano(a),
+    mayor de edad, con domicilio en <strong>{{ cliente.domicilio | default("_________________________________")
+        }}</strong>,
+    CURP: {{ curp | default("_______________") }}, NSS: {{ nss | default("_______________") }},
+    autorizando en los términos del artículo 692 fracción II de la LFT al
+    <strong>Lic. {{ abogado.nombre | default("_______________") }}</strong>,
+    cédula profesional {{ abogado.cedula | default("_______________") }};
+    ante Usted, con el debido respeto, comparezco para demandar en la
+    <strong>VÍA ORDINARIA LABORAL</strong> a:
+</p>
+
+<p class="indent text-justify">
+    <strong>{{ patron | default("NOMBRE O RAZÓN SOCIAL DEL PATRÓN") }}</strong>,
+    persona {{ tipo_persona_patron | default("moral") }} con domicilio en
+    {{ domicilio_patron | default("_________________________________") }},
+    RFC: {{ rfc_patron | default("_______________") }};
+    y/o a quien resulte responsable como patrón, representante legal,
+    intermediario, empresa beneficiaria, o patrón solidario.
+</p>
+
+<!-- ═══════════════════════════ DATOS RELACIÓN ═══════════════════════════ -->
+
+<div class="section-title numbered">I. DATOS DE LA RELACIÓN DE TRABAJO</div>
+<table style="border:1px solid #000;">
+    <tr>
+        <td style="border:1px solid #000; padding:6px; width:40%; font-weight:bold;">Fecha de ingreso:</td>
+        <td style="border:1px solid #000; padding:6px;">{{ fecha_ingreso | default("_______________") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Fecha de despido:</td>
+        <td style="border:1px solid #000; padding:6px;">{{ fecha_despido | default("_______________") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Antigüedad:</td>
+        <td style="border:1px solid #000; padding:6px;">{{ antiguedad | default("_______________") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Puesto desempeñado:</td>
+        <td style="border:1px solid #000; padding:6px;">{{ puesto | default("_______________") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Salario diario:</td>
+        <td style="border:1px solid #000; padding:6px;">${{ salario_diario | default("_______________") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Salario diario integrado:</td>
+        <td style="border:1px solid #000; padding:6px;">${{ salario_integrado | default("_______________") }} (Art. 84
+            LFT)</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Horario de trabajo:</td>
+        <td style="border:1px solid #000; padding:6px;">{{ horario | default("Lunes a viernes de 9:00 a 18:00 hrs,
+            sábado de 9:00 a 14:00 hrs") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Jornada semanal:</td>
+        <td style="border:1px solid #000; padding:6px;">{{ horas_semana | default("48") }} horas ({{ tipo_jornada |
+            default("Diurna, Art. 60 LFT") }})</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Día de descanso:</td>
+        <td style="border:1px solid #000; padding:6px;">{{ dia_descanso | default("Domingo") }}</td>
+    </tr>
+</table>
+
+<!-- ═══════════════════════════ PRESTACIONES ═══════════════════════════ -->
+
+<div class="section-title numbered">II. PRESTACIONES QUE SE RECLAMAN</div>
+<p class="indent text-justify">
+    Conforme a los artículos 48, 50, 76, 80, 87, 162 y demás aplicables de la LFT, reclamo:
+</p>
+
+<p class="indent text-justify">
+    <strong>A. INDEMNIZACIÓN POR DESPIDO INJUSTIFICADO:</strong>
+</p>
+<table style="border:1px solid #000; margin:10px 0;">
+    <tr style="background:#f0f0f0; font-weight:bold;">
+        <td style="border:1px solid #000; padding:6px;">Concepto</td>
+        <td style="border:1px solid #000; padding:6px;">Fundamento</td>
+        <td style="border:1px solid #000; padding:6px; text-align:right;">Cálculo</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px;">Indemnización constitucional (3 meses)</td>
+        <td style="border:1px solid #000; padding:6px;">Art. 48, 50 fr. III LFT; Art. 123-A fr. XXII CPEUM</td>
+        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ indem_3meses | default("___") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px;">20 días por año de servicio</td>
+        <td style="border:1px solid #000; padding:6px;">Art. 50 fr. II LFT</td>
+        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ indem_20dias | default("___") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px;">Salarios caídos (máx. 12 meses)</td>
+        <td style="border:1px solid #000; padding:6px;">Art. 48 párrafo 2 LFT</td>
+        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ salarios_caidos | default("___") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px;">Intereses sobre salarios caídos (2% mensual)</td>
+        <td style="border:1px solid #000; padding:6px;">Art. 48 párrafo 3 LFT</td>
+        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ intereses | default("___") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px;">Prima de antigüedad (12 días/año)</td>
+        <td style="border:1px solid #000; padding:6px;">Art. 162 LFT</td>
+        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ prima_antiguedad | default("___") }}</td>
+    </tr>
+</table>
+
+<p class="indent text-justify">
+    <strong>B. PRESTACIONES DEVENGADAS Y PROPORCIONALES:</strong>
+</p>
+<table style="border:1px solid #000; margin:10px 0;">
+    <tr style="background:#f0f0f0; font-weight:bold;">
+        <td style="border:1px solid #000; padding:6px;">Concepto</td>
+        <td style="border:1px solid #000; padding:6px;">Fundamento</td>
+        <td style="border:1px solid #000; padding:6px; text-align:right;">Monto</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px;">Aguinaldo proporcional (15 días mínimo)</td>
+        <td style="border:1px solid #000; padding:6px;">Art. 87 LFT</td>
+        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ aguinaldo | default("___") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px;">Vacaciones proporcionales ({{ dias_vac | default("12") }} días)
+        </td>
+        <td style="border:1px solid #000; padding:6px;">Art. 76 LFT (ref. 2023)</td>
+        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ vacaciones | default("___") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px;">Prima vacacional (25%)</td>
+        <td style="border:1px solid #000; padding:6px;">Art. 80 LFT</td>
+        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ prima_vac | default("___") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px;">Reparto de utilidades (PTU)</td>
+        <td style="border:1px solid #000; padding:6px;">Arts. 117-131 LFT</td>
+        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ ptu | default("___") }}</td>
+    </tr>
+    <tr>
+        <td style="border:1px solid #000; padding:6px;">Horas extras adeudadas</td>
+        <td style="border:1px solid #000; padding:6px;">Arts. 66-68 LFT</td>
+        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ horas_extras | default("___") }}</td>
+    </tr>
+    <tr style="font-weight:bold; background:#f0f0f0;">
+        <td style="border:1px solid #000; padding:8px;" colspan="2">TOTAL ESTIMADO</td>
+        <td style="border:1px solid #000; padding:8px; text-align:right;">${{ total | default("___") }}</td>
+    </tr>
+</table>
+
+<p class="indent text-justify">
+    <strong>C. INSCRIPCIÓN RETROACTIVA AL IMSS:</strong> Con fundamento en los artículos 12 fracción I, 15 y 304 de la
+    Ley del Seguro Social, reclamo las aportaciones de seguridad social que el patrón omitió realizar, así como la
+    rectificación de semanas de cotización ante el IMSS e INFONAVIT.
+</p>
+
+<!-- ═══════════════════════════ HECHOS ═══════════════════════════ -->
+
+<div class="section-title numbered">III. HECHOS</div>
+<p class="indent text-justify double-space">
+    <strong>PRIMERO.-</strong> {{ hecho_1 | default("Con fecha [fecha de ingreso], inicié mi relación laboral con el
+    demandado, desempeñando el puesto de [puesto], con un horario de [horario], un salario diario de $[monto], en el
+    domicilio laboral ubicado en [dirección]. La relación fue de carácter subordinado, existiendo: a) sujeción a un
+    horario; b) lugar de trabajo designado por el patrón; c) dirección y supervisión permanente; d) remuneración
+    periódica.") }}
+</p>
+<p class="indent text-justify double-space">
+    <strong>SEGUNDO.-</strong> {{ hecho_2 | default("El día [fecha de despido], siendo aproximadamente las [hora], en
+    [lugar], el [representante/jefe/gerente] de nombre [nombre], procedió a comunicarme verbalmente / por escrito mi
+    DESPIDO INJUSTIFICADO, señalando como motivo [indicar la razón expresada o, si no hubo, señalar que fue sin
+    justificación alguna]. NO SE ME ENTREGÓ AVISO DE RESCISIÓN conforme lo exige el artículo 47 último párrafo de la
+    LFT.") }}
+</p>
+<p class="indent text-justify double-space">
+    <strong>TERCERO.-</strong> {{ hecho_3 | default("Manifiesto bajo protesta de decir verdad que NUNCA incurrí en
+    causal alguna de rescisión de las previstas en el artículo 47 de la LFT, por lo que el despido fue arbitrario e
+    injustificado.") }}
+</p>
+<p class="indent text-justify double-space">
+    <strong>CUARTO.-</strong> {{ hecho_4 | default("A la fecha de presentación de la demanda, el patrón no me ha
+    liquidado las prestaciones devengadas ni la indemnización correspondiente, causándome grave perjuicio económico.")
+    }}
+</p>
+
+<div class="jurisprudencia-box">
+    <p class="jurisprudencia-titulo">JURISPRUDENCIA SOBRE DESPIDO INJUSTIFICADO:</p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: 2a./J. 122/99</strong> — Segunda Sala — SCJN<br>
+        Rubro: <em>"DESPIDO. LA CARGA DE LA PRUEBA PARA ACREDITAR QUE ES JUSTIFICADO CORRESPONDE AL PATRÓN."</em><br>
+        Semanario Judicial de la Federación, Novena Época.
+    </p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: 2a./J. 42/97</strong> — Segunda Sala — SCJN<br>
+        Rubro: <em>"AVISO DE RESCISIÓN. LA FALTA DE SU ENTREGA AL TRABAJADOR POR PARTE DEL PATRÓN, O SU OMISIÓN DE
+            COMUNICARLO AL TRIBUNAL, TORNA INJUSTIFICADO EL DESPIDO."</em>
+    </p>
+    <p class="jurisprudencia-texto">
+        <strong>Tesis: 2a./J. 188/2007</strong> — Segunda Sala — SCJN<br>
+        Rubro: <em>"VACACIONES Y PRIMA VACACIONAL. LA REFORMA AL ARTÍCULO 76 DE LA LFT (2023) AMPLÍA LOS DÍAS MÍNIMOS DE
+            VACACIONES DESDE EL PRIMER AÑO."</em>
+    </p>
+</div>
+
+<!-- ═══════════════════════════ DERECHO ═══════════════════════════ -->
+
+<div class="section-title numbered">IV. FUNDAMENTO DE DERECHO</div>
+<p class="indent text-justify">
+    <strong>Constitucional:</strong> Artículo 123 Apartado A, fracciones VI, IX, XXII y XXVII de la CPEUM.<br>
+    <strong>Legal:</strong> Artículos 2°, 3°, 20, 21, 25, 26, 35, 47, 48, 50, 56, 57, 60, 66, 68, 76, 80, 84, 87, 89,
+    162, 685, 685 Bis, 686, 692, 780 y demás aplicables de la LFT.<br>
+    <strong>Seguridad Social:</strong> Artículos 12 fr. I, 15, 304 LSS; artículos 29, 43 y 44 de la LINFONAVIT.
+</p>
+
+<!-- ═══════════════════════════ PRUEBAS ═══════════════════════════ -->
+
+<div class="section-title numbered">V. PRUEBAS</div>
+<p class="indent text-justify">
+    <strong>1. CONFESIONAL A CARGO DEL REPRESENTANTE LEGAL DEL PATRÓN</strong>, quien deberá comparecer personalmente a
+    absolver posiciones.
+</p>
+<p class="indent text-justify">
+    <strong>2. DOCUMENTAL PRIVADA.</strong> {{ prueba_documental | default("Recibos de nómina, contrato individual de
+    trabajo, constancias laborales, credencial de la empresa, y toda documentación que acredite la relación de trabajo y
+    sus condiciones.") }}
+</p>
+<p class="indent text-justify">
+    <strong>3. TESTIMONIAL.</strong> De {{ testigo_1 | default("[nombre completo]") }} y {{ testigo_2 | default("[nombre
+    completo]") }}, quienes declararán sobre la existencia de la relación de trabajo, el despido injustificado y las
+    condiciones laborales.
+</p>
+<p class="indent text-justify">
+    <strong>4. INSPECCIÓN.</strong> En las oficinas del demandado, para verificar las condiciones de trabajo, listas de
+    asistencia, registros de nómina y contratos.
+</p>
+<p class="indent text-justify">
+    <strong>5. INFORMES.</strong> Que se soliciten al IMSS e INFONAVIT sobre el registro patronal del demandado, semanas
+    de cotización, salario base de cotización y aportaciones realizadas a favor del trabajador.
+</p>
+<p class="indent text-justify">
+    <strong>6. PRESUNCIONAL LEGAL Y HUMANA.</strong> En lo que favorezca.<br>
+    <strong>7. INSTRUMENTAL DE ACTUACIONES.</strong> Todo lo que obre en autos.
+</p>
+
+<!-- ═══════════════════════════ PETICIONES ═══════════════════════════ -->
+
+<div class="section-title numbered">VI. PUNTOS PETITORIOS</div>
+<p class="indent text-justify">
+    <strong>PRIMERO.-</strong> Tenerme por presentado con la demanda laboral en la vía y forma propuestas.
+</p>
+<p class="indent text-justify">
+    <strong>SEGUNDO.-</strong> Admitir la demanda y Emplazar al demandado.
+</p>
+<p class="indent text-justify">
+    <strong>TERCERO.-</strong> Previo al desahogo de la etapa de juicio y habiendo valorado las pruebas,
+    dictar sentencia <strong>CONDENANDO</strong> al demandado al pago de todas y cada una de las prestaciones
+    reclamadas.
+</p>
+<p class="indent text-justify">
+    <strong>CUARTO.-</strong> Condenar al demandado al pago de los intereses generados sobre los salarios caídos
+    conforme al artículo 48 de la LFT.
+</p>
+<p class="indent text-justify">
+    <strong>QUINTO.-</strong> Oficiar al IMSS e INFONAVIT para la rectificación de semanas de cotización
+    y aportaciones del trabajador.
+</p>
+
+<p class="text-center text-bold" style="margin-top:40px;">PROTESTO LO NECESARIO</p>
+
+<div class="signature-block">
+    <div class="signature-line">{{ cliente.nombre | default("NOMBRE COMPLETO Y FIRMA DEL TRABAJADOR") }}</div>
+</div>
+
+<div class="confidencialidad-v2">
+    <p><strong>AVISO DE CONFIDENCIALIDAD — DOCUMENTO V2 NEGOCIOS</strong></p>
+    <p>Documento generado por Machotes Legales®. Contiene fundamentación laboral completa,
+        jurisprudencia de la SCJN, cálculos de prestaciones y argumentación especializada.</p>
+    <p>Licencia: {{ license_id | default("TLEX-V2-XXXXXX") }} · Usuario: {{ license_user | default("___") }}</p>
+</div>
+{% endblock %}
