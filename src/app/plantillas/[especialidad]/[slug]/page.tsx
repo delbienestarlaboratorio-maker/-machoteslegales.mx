@@ -63,17 +63,28 @@ export default async function TemplatePage(props: Props) {
             htmlContent = mod[fnName]({}) // Preview vacío
         }
     } catch {
-        // Fallback: Leer archivo HTML original
+        // Fallback: Leer archivo HTML original — intentar múltiples rutas para compatibilidad con Cloudflare
         try {
-            const filePath = path.resolve(process.cwd(), 'src', 'data', 'templates', template.file);
-            if (fs.existsSync(filePath)) {
-                let rawHtml = fs.readFileSync(filePath, 'utf8');
-                // Limpieza rápida de Jinja2
-                rawHtml = rawHtml.replace(/{%[\s\S]*?%}/g, '');
-                rawHtml = rawHtml.replace(/{{(.*?)}}/g, '<span style="background:#e8f0fe;color:#1a56db;padding:1px 6px;border-radius:4px;font-weight:600;border:1px solid #c2d9f2;">$1</span>');
-                htmlContent = rawHtml;
-            } else {
-                htmlContent = `<p style="color:#999;text-align:center;padding:40px;">Preview no disponible — Archivo físico no encontrado en: <b>${filePath}</b></p>`
+            const possibleBases = [
+                process.cwd(),
+                path.resolve(process.cwd(), '..'),
+                '/opt/buildhome/repo',
+            ];
+            let found = false;
+            for (const base of possibleBases) {
+                const filePath = path.join(base, 'src', 'data', 'templates', template.file);
+                if (fs.existsSync(filePath)) {
+                    let rawHtml = fs.readFileSync(filePath, 'utf8');
+                    // Limpieza rápida de Jinja2
+                    rawHtml = rawHtml.replace(/{%[\s\S]*?%}/g, '');
+                    rawHtml = rawHtml.replace(/{{(.*?)}}/g, '<span style="background:#e8f0fe;color:#1a56db;padding:1px 6px;border-radius:4px;font-weight:600;border:1px solid #c2d9f2;">$1</span>');
+                    htmlContent = rawHtml;
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                htmlContent = `<p style="color:#999;text-align:center;padding:40px;">Preview no disponible — Archivo no encontrado: <b>${template.file}</b></p>`
             }
         } catch (e: any) {
             htmlContent = `<p style="color:#999;text-align:center;padding:40px;">Preview no disponible — Contacta soporte si persiste: ${e.message}</p>`
