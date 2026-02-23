@@ -1,10 +1,9 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import fs from 'fs'
-import path from 'path'
 import { allTemplates } from '@/data/templates'
 import { SPECIALTIES } from '@/data/specialties'
+import htmlMap from '@/data/templates/htmlMap'
 import StatefulTemplateViewer from '@/components/StatefulTemplateViewer'
 import AdBannerWrapper from '@/components/ads/AdBannerWrapper'
 import LaboralCalculatorSlugWrapper from '@/components/calculators/LaboralCalculatorSlugWrapper'
@@ -54,41 +53,15 @@ export default async function TemplatePage(props: Props) {
     )
     if (!template) notFound()
 
-    // Carga dinámica del template TypeScript
+    // Cargar HTML desde el mapa de imports (bundled en build time)
     let htmlContent = ''
-    try {
-        const mod = await import(`@/data/templates/${template.tier}/${template.specialty}/${template.slug.replace(/-/g, '_')}`)
-        const fnName = Object.keys(mod).find((k) => k.endsWith('Template'))
-        if (fnName && typeof mod[fnName] === 'function') {
-            htmlContent = mod[fnName]({}) // Preview vacío
-        }
-    } catch {
-        // Fallback: Leer archivo HTML original — intentar múltiples rutas para compatibilidad con Cloudflare
-        try {
-            const possibleBases = [
-                process.cwd(),
-                path.resolve(process.cwd(), '..'),
-                '/opt/buildhome/repo',
-            ];
-            let found = false;
-            for (const base of possibleBases) {
-                const filePath = path.join(base, 'src', 'data', 'templates', template.file);
-                if (fs.existsSync(filePath)) {
-                    let rawHtml = fs.readFileSync(filePath, 'utf8');
-                    // Limpieza rápida de Jinja2
-                    rawHtml = rawHtml.replace(/{%[\s\S]*?%}/g, '');
-                    rawHtml = rawHtml.replace(/{{(.*?)}}/g, '<span style="background:#e8f0fe;color:#1a56db;padding:1px 6px;border-radius:4px;font-weight:600;border:1px solid #c2d9f2;">$1</span>');
-                    htmlContent = rawHtml;
-                    found = true;
-                    break;
-                }
-            }
-            if (!found) {
-                htmlContent = `<p style="color:#999;text-align:center;padding:40px;">Preview no disponible — Archivo no encontrado: <b>${template.file}</b></p>`
-            }
-        } catch (e: any) {
-            htmlContent = `<p style="color:#999;text-align:center;padding:40px;">Preview no disponible — Contacta soporte si persiste: ${e.message}</p>`
-        }
+    const rawHtml = htmlMap[template.file] || ''
+    if (rawHtml) {
+        // Limpieza rápida de Jinja2
+        htmlContent = rawHtml.replace(/{%[\s\S]*?%}/g, '')
+        htmlContent = htmlContent.replace(/{{(.*?)}}/g, '<span style="background:#e8f0fe;color:#1a56db;padding:1px 6px;border-radius:4px;font-weight:600;border:1px solid #c2d9f2;">$1</span>')
+    } else {
+        htmlContent = `<p style="color:#999;text-align:center;padding:40px;">Preview no disponible para esta plantilla.</p>`
     }
 
     const tierLabels = { v1: 'Básico', v2: 'Negocios', v3: 'Profesional' }
