@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start -p 4002",
     "lint": "eslint",
-    "pages:build": "npx opennextjs-cloudflare build",
-    "pages:deploy": "npx wrangler pages deploy .worker/assets"
+    "pages:deploy": "npx wrangler pages deploy out"
   },
   "dependencies": {
     "fuse.js": "^7.1.0",

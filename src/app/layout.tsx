@@ -83,9 +83,12 @@ export default function RootLayout({
               <div className="flex justify-between items-center h-16">
                 <a href="/" className="flex items-center gap-2">
                   <img
-                    src="/Logo/logo.png"
+                    src="/Logo/logo-optimized.webp"
                     alt="Machotes Legales Logo"
                     className="h-10 w-auto object-contain"
+                    width={40}
+                    height={40}
+                    loading="eager"
                   />
                 </a>
                 <div className="hidden md:flex items-center gap-6 text-sm">

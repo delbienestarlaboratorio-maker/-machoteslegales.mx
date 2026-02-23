@@ -1,27 +1,21 @@
-import { NextResponse } from 'next/server';
-
-// Clip API V2 — Checkout Redireccionado
-// Docs: https://developer.clip.mx/reference/createnewpaymentlink
-const CLIP_API_KEY = process.env.CLIP_API_KEY || '';
-const CLIP_SECRET_KEY = process.env.CLIP_SECRET_KEY || '';
-
-function getClipAuthToken(): string {
-    const credentials = `${CLIP_API_KEY}:${CLIP_SECRET_KEY}`;
-    return Buffer.from(credentials).toString('base64');
-}
-
-export async function POST(request: Request) {
+// Cloudflare Pages Function — Checkout API (Clip Payments)
+export async function onRequestPost(context) {
     try {
-        const body = await request.json();
+        const body = await context.request.json();
         const { itemId, title, price } = body;
 
-        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://machoteslegales.mx';
+        const CLIP_API_KEY = context.env.CLIP_API_KEY || '';
+        const CLIP_SECRET_KEY = context.env.CLIP_SECRET_KEY || '';
+        const baseUrl = context.env.NEXT_PUBLIC_BASE_URL || 'https://machoteslegales.mx';
+
+        const credentials = `${CLIP_API_KEY}:${CLIP_SECRET_KEY}`;
+        const authToken = btoa(credentials);
 
         const clipResponse = await fetch('https://api.payclip.com/v2/checkout', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Basic ${getClipAuthToken()}`,
+                'Authorization': `Basic ${authToken}`,
             },
             body: JSON.stringify({
                 amount: Number(price),
@@ -48,23 +42,23 @@ export async function POST(request: Request) {
         const data = await clipResponse.json();
 
         if (!clipResponse.ok) {
-            console.error('Error Clip API:', data);
-            return NextResponse.json(
-                { error: 'Error generando link de pago', details: data },
-                { status: clipResponse.status }
-            );
+            return new Response(JSON.stringify({ error: 'Error generando link de pago', details: data }), {
+                status: clipResponse.status,
+                headers: { 'Content-Type': 'application/json' },
+            });
         }
 
-        // Clip devuelve payment_request_url para redirigir al usuario
-        return NextResponse.json({
+        return new Response(JSON.stringify({
             id: data.id || data.payment_request_id,
             init_point: data.payment_request_url,
+        }), {
+            status: 200,
+            headers: { 'Content-Type': 'application/json' },
         });
     } catch (error) {
-        console.error('Error en checkout Clip:', error);
-        return NextResponse.json(
-            { error: 'Error generando link de pago' },
-            { status: 500 }
-        );
+        return new Response(JSON.stringify({ error: 'Error generando link de pago' }), {
+            status: 500,
+            headers: { 'Content-Type': 'application/json' },
+        });
     }
 }
