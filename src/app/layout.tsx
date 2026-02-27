@@ -63,6 +63,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#0f172a" />
+        <meta name="google-site-verification" content="oFvLKfZbp8_oRveD9jHqCH7D80yyWwLd3rknJOGMkxI" />
         {/* Schema.org Organization */}
         <script
           type="application/ld+json"
