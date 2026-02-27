@@ -50,6 +50,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://machoteslegales.mx",
   },
+  verification: {
+    google: "oFvLKfZbp8_oRveD9jHqCH7D80yyWwLd3rknJOGMkxI",
+  },
 };
 
 export default function RootLayout({
