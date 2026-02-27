@@ -1,17 +1,14 @@
-{% extends "base_v2.html" %}
-
-{% block content %}
-<div class="header-v2">
+﻿<div class="header-v2">
     <div class="tier-badge">V2 NEGOCIOS</div>
     <h1>Querella por Amenazas y Extorsión</h1>
     <p class="subtitle-v2">Arts. 282 y 390 del Código Penal Federal y 211, 221 CNPP · Protocolo de Protección a Víctimas
         y Medidas de Restricción</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, a {{ fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold destinatario">C. AGENTE DEL MINISTERIO PÚBLICO EN TURNO</p>
-<p class="text-bold">FISCALÍA GENERAL DE JUSTICIA DE {{ estado | default("___") }}</p>
+<p class="text-bold destinatario">C. <em style="font-size:9pt;color:#666;">(Ciudadano/Ciudadana)</em> AGENTE DEL MINISTERIO PÚBLICO EN TURNO</p>
+<p class="text-bold">FISCALÍA GENERAL DE JUSTICIA DE <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span></p>
 <p class="text-bold">P R E S E N T E</p>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -19,17 +16,13 @@
 <!-- ═══════════════════════════════════════════════════ -->
 
 <p class="indent text-justify">
-    <strong>{{ victima.nombre | default("NOMBRE DE LA VÍCTIMA") }}</strong>, de nacionalidad {{ victima.nacionalidad |
-    default("Mexicana") }}, por mi propio derecho, señalando domicilio en {{ victima.domicilio |
-    default("_______________") }} y como medio de notificación seguro (para preservar mi integridad) el correo {{
-    victima.email | default("___") }}, y autorizando como Asesor Jurídico al Abogado <strong>{{ abogado.nombre |
-        default("NOMBRE DEL ASESOR JURÍDICO") }}</strong>; ante usted con el principal fin de salvaguardar mi vida,
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(María González López)</span></strong>, de nacionalidad <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(francesa)</span>, por mi propio derecho, señalando domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span> y como medio de notificación seguro (para preservar mi integridad) el correo <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>, y autorizando como Asesor Jurídico al Abogado <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Francisco Sánchez Torres)</span></strong>; ante usted con el principal fin de salvaguardar mi vida,
     concurro y expongo:
 </p>
 
 <p class="indent text-justify">
-    Acudo a interponer formal y legal <strong>QUERELLA</strong> en contra de <strong>{{ acusado.nombre | default("NOMBRE
-        DEL DENUNCIADO O QUIENES RESULTEN RESPONSABLES") }}</strong>, por la comisión de hechos que la ley señala como
+    Acudo a interponer formal y legal <strong>QUERELLA</strong> en contra de <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre
+        del denunciado o quienes resulten responsables)</span></strong>, por la comisión de hechos que la ley señala como
     delito de <strong>AMENAZAS Y PROBABLE EXTORSIÓN</strong>, previstos y sancionados en los artículos 282 y 390 del
     Código Penal, basando esta solicitud en los siguientes hechos y motivos de derecho:
 </p>
@@ -40,20 +33,15 @@
 <div class="section-title numbered">I. DESCRIPCIÓN DE HECHOS</div>
 
 <p class="indent text-justify double-space">
-    <strong>PRIMERO.- ANTECEDENTE RELEVANTE:</strong> Que yo, el querellante, desde fecha {{ fecha_antecedente |
-    default("___") }} sostengo/tuve una relación de tipo {{ tipo_relacion |
-    default("laboral/comercial/vecinal/sentimental") }} con el ahora denunciado, la cual consistía en {{
-    detalle_relacion | default("_______________") }}.
+    <strong>PRIMERO.- ANTECEDENTE RELEVANTE:</strong> Que yo, el querellante, desde fecha <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span> sostengo/tuve una relación de tipo <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(laboral/comercial/vecinal/sentimental)</span> con el ahora denunciado, la cual consistía en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>.
 </p>
 
 <p class="indent text-justify double-space">
-    <strong>SEGUNDO.- DEL HECHO DELICTIVO (DOLO):</strong> Resulta que el día {{ fecha_amenaza |
-    default("_______________") }}, a las {{ hora_amenaza | default("___:___ horas") }}, el querellado procedió a cometer
-    actos de intimidación a través del siguiente medio: <strong>{{ medio_amenaza | default("Mensajes de WhatsApp / Vía
-        Telefónica / Abordaje físico en persona") }}</strong>. <br><br>
-    Las expresiones explícitas, en sus propias palabras, fueron las siguientes: <em>"{{ textual_amenazas |
-        default("Citar exactamente: Te voy a matar si no pagas / Sé dónde estudian tus hijos y los voy a
-        desaparecer...") }}"</em>.
+    <strong>SEGUNDO.- DEL HECHO DELICTIVO (DOLO):</strong> Resulta que el día <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span>, a las <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(___:___ horas)</span>, el querellado procedió a cometer
+    actos de intimidación a través del siguiente medio: <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Mensajes de WhatsApp / Vía
+        Telefónica / Abordaje físico en persona)</span></strong>. <br><br>
+    Las expresiones explícitas, en sus propias palabras, fueron las siguientes: <em>"<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Citar exactamente: Te voy a matar si no pagas / Sé dónde estudian tus hijos y los voy a
+        desaparecer...)</span>"</em>.
 </p>
 
 <p class="indent text-justify double-space">
@@ -98,8 +86,8 @@
 <!-- ═══════════════════════════════════════════════════ -->
 <div class="section-title numbered">III. DATOS DE PRUEBA OFRECIDOS</div>
 <p class="indent text-justify">
-    <strong>A) Documental Electrónica Privada:</strong> {{ documentacion | default("X capturas de pantalla debidamente
-    certificadas de los mensajes de la red social o aplicación de mensajería.") }}<br>
+    <strong>A) Documental Electrónica Privada:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(X capturas de pantalla debidamente
+    certificadas de los mensajes de la red social o aplicación de mensajería.)</span><br>
     <strong>B) Pericial en Psicología:</strong> Solicito se me canalice al Centro de Atención a Víctimas para ser
     evaluado psicológicamente y acreditar el daño moral y trauma provocado por el hecho con apariencia de delito.
 </p>
@@ -120,7 +108,7 @@
 <p class="text-center text-bold" style="margin-top:40px;">PROTESTO MIS RESPETOS</p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ victima.nombre | default("NOMBRE Y FIRMA DE LA VÍCTIMA (QUERELLANTE)") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre y firma de la víctima (querellante))</span></div>
 </div>
 
 <div class="confidencialidad-v2">
@@ -129,4 +117,3 @@
         Protección) de manera obligatoria para el MP, adjunto a la jurisprudencia de validación de elementos probatorios
         lógicos sobre mensajes electrónicos.</p>
 </div>
-{% endblock %}

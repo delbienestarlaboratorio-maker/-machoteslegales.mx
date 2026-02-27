@@ -1,7 +1,4 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Pagaré</h1>
     <p class="subtitle">Artículos 170-174 de la Ley General de Títulos y Operaciones de Crédito</p>
 </div>
@@ -10,62 +7,60 @@
     <tr>
         <td style="border:1px solid #000; padding:10px; width:50%;">
             <strong>Bueno por:</strong><br>
-            ${{ monto | default("_______________") }} {{ moneda | default("M.N.") }}
+            $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(15,000.00)</span> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(M.n.)</span>
         </td>
         <td style="border:1px solid #000; padding:10px; width:50%;">
             <strong>Fecha de suscripción:</strong><br>
-            {{ fecha_suscripcion | default("___ de __________ de 20___") }}
+            <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span>
         </td>
     </tr>
     <tr>
         <td style="border:1px solid #000; padding:10px;" colspan="2">
-            <strong>Lugar de suscripción:</strong> {{ lugar_suscripcion | default("_________________________________")
-            }}
+            <strong>Lugar de suscripción:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>
         </td>
     </tr>
     <tr>
         <td style="border:1px solid #000; padding:10px;" colspan="2">
-            <strong>Vencimiento:</strong> {{ fecha_vencimiento | default("___ de __________ de 20___") }}
+            <strong>Vencimiento:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span>
         </td>
     </tr>
 </table>
 
 <p class="indent text-justify" style="margin-top:20px;">
     Debo(emos) y pagaré(mos) incondicionalmente por este PAGARÉ a la orden de
-    <strong>{{ beneficiario | default("NOMBRE DEL BENEFICIARIO") }}</strong>,
-    en {{ lugar_pago | default("_________________________________") }},
-    el día {{ fecha_vencimiento | default("___ de __________ de 20___") }},
-    la cantidad de <strong>${{ monto | default("_______________") }}</strong>
-    (<strong>{{ monto_letra | default("_______________") }}</strong> PESOS {{ centavos | default("00") }}/100 M.N.),
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del beneficiario)</span></strong>,
+    en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>,
+    el día <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span>,
+    la cantidad de <strong>$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(15,000.00)</span></strong>
+    (<strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(15,000.00)</span></strong> PESOS <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(00)</span>/100 M.N.),
     valor recibido a mi(nuestra) entera satisfacción.
 </p>
 
 <p class="indent text-justify">
-    Este pagaré causará intereses ordinarios a razón del <strong>{{ tasa_ordinaria | default("___") }}%</strong>
-    ({{ tasa_ordinaria_letra | default("___") }} por ciento) mensual desde la fecha de su suscripción.
-    En caso de mora, causará intereses moratorios a razón del <strong>{{ tasa_moratoria | default("___") }}%</strong>
-    ({{ tasa_moratoria_letra | default("___") }} por ciento) mensual desde la fecha de vencimiento
+    Este pagaré causará intereses ordinarios a razón del <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>%</strong>
+    (<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span> por ciento) mensual desde la fecha de su suscripción.
+    En caso de mora, causará intereses moratorios a razón del <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>%</strong>
+    (<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span> por ciento) mensual desde la fecha de vencimiento
     hasta su total liquidación.
 </p>
 
 <p class="indent text-justify">
-    <strong>Nombre del suscriptor:</strong> {{ suscriptor | default("_________________________________") }}<br>
-    <strong>Domicilio:</strong> {{ domicilio_suscriptor | default("_________________________________") }}<br>
-    <strong>CURP:</strong> {{ curp_suscriptor | default("_______________") }}<br>
-    <strong>INE:</strong> {{ ine_suscriptor | default("_______________") }}
+    <strong>Nombre del suscriptor:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span><br>
+    <strong>Domicilio:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span><br>
+    <strong>CURP:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(GOML850312HDFNRR09)</span><br>
+    <strong>INE:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>
 </p>
 
 <div class="signature-block" style="margin-top:40px;">
-    <div class="signature-line">{{ suscriptor | default("FIRMA DEL SUSCRIPTOR") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Firma del suscriptor)</span></div>
 </div>
 
 <p style="margin-top:30px; font-size:11px;">
     <strong>AVAL (en su caso):</strong><br>
-    Nombre: {{ aval_nombre | default("_________________________________") }}<br>
-    Domicilio: {{ aval_domicilio | default("_________________________________") }}<br>
+    Nombre: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span><br>
+    Domicilio: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span><br>
 </p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ aval_nombre | default("FIRMA DEL AVAL") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Firma del aval)</span></div>
 </div>
-{% endblock %}

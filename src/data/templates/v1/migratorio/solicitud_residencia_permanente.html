@@ -1,44 +1,93 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Solicitud de Residencia Permanente</h1>
-    <p class="subtitle">Artículos 52 fr. V y 54 de la Ley de Migración · Arts. 137-139 RLMY</p>
+    <p class="subtitle">Ley de Migración — Arts. 52 fr. V, 54, 55 LM · Arts. 137-139 RLMY</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
 <p class="text-bold">INSTITUTO NACIONAL DE MIGRACIÓN</p>
-<p class="text-bold">DELEGACIÓN FEDERAL EN {{ estado | default("_______________") }}</p>
+<p class="text-bold">DELEGACIÓN REGIONAL / OFICINA DE TRÁMITES MIGRATORIOS EN <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>
+</p>
 <p class="text-bold">P R E S E N T E</p>
 
 <p class="indent text-justify">
-    <strong>{{ cliente.nombre | default("NOMBRE DEL SOLICITANTE") }}</strong>,
-    de nacionalidad {{ nacionalidad | default("_______________") }},
-    con número de pasaporte {{ pasaporte | default("_______________") }},
-    actualmente con tarjeta de residente temporal No. {{ num_residencia | default("_______________") }},
-    con domicilio en {{ cliente.domicilio | default("_________________________________") }},
-    solicito el cambio de condición de estancia a <strong>RESIDENTE PERMANENTE</strong>.
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre completo del solicitante)</span></strong>,
+    de nacionalidad <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(francesa)</span></strong>,
+    con número de pasaporte <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(P123456789)</span></strong>,
+    actualmente con condición de estancia de <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Residente Temporal / Visitante)</span></strong>,
+    número de tarjeta de residente <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong>,
+    con domicilio en <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span></strong>,
+    teléfono de contacto <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>,
+    por medio del presente escrito solicito respetuosamente la modificación de mi condición de estancia a
+    <strong>RESIDENTE PERMANENTE</strong>, con fundamento en los artículos 52 fracción V y 54 de la Ley de Migración.
 </p>
 
-<div class="section-title">FUNDAMENTO</div>
-<p class="indent text-justify">
-    {{ fundamento | default("Artículo 54 de la Ley de Migración: por tener 4 años consecutivos como residente temporal /
-    por tener vínculo familiar con ciudadano mexicano / por razones humanitarias.") }}
+<div class="section-title">I. FUNDAMENTO MIGRATORIO</div>
+<p class="indent text-justify">La presente solicitud se funda en el siguiente supuesto de la Ley de Migración:</p>
+<p class="indent text-justify"><strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Marcar el que aplique:)</span></strong></p>
+<p class="indent text-justify">☐ <strong>A) Antigüedad como residente temporal:</strong> Cuento con <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(4)</span> años consecutivos de residencia temporal en México, conforme al artículo 54 fracción I de la LM.
+</p>
+<p class="indent text-justify">☐ <strong>B) Vínculo familiar con ciudadano mexicano:</strong> Tengo la calidad de
+    cónyuge / concubino(a) / padre/madre / hijo(a) de ciudadano mexicano por nacimiento, conforme al artículo 54
+    fracción II de la LM.</p>
+<p class="indent text-justify">☐ <strong>C) Refugiado o asilo político:</strong> Me ha sido reconocida la condición de
+    refugiado(a) o se me ha concedido asilo político en México, conforme al artículo 54 fracción III.</p>
+<p class="indent text-justify">☐ <strong>D) Razones humanitarias:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Describir la situación humanitaria específica conforme al Art. 52 LM)</span>.</p>
+
+<div class="section-title">II. DATOS PERSONALES DEL SOLICITANTE</div>
+<table style="width:100%; font-size:10.5pt; margin:8px 0;">
+    <tr>
+        <td style="font-weight:bold; width:40%; padding:4px;">Nombre completo:</td>
+        <td style="padding:4px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></td>
+    </tr>
+    <tr>
+        <td style="font-weight:bold; padding:4px;">Fecha de nacimiento:</td>
+        <td style="padding:4px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></td>
+    </tr>
+    <tr>
+        <td style="font-weight:bold; padding:4px;">País de nacimiento:</td>
+        <td style="padding:4px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></td>
+    </tr>
+    <tr>
+        <td style="font-weight:bold; padding:4px;">Número de pasaporte:</td>
+        <td style="padding:4px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(P123456789)</span></td>
+    </tr>
+    <tr>
+        <td style="font-weight:bold; padding:4px;">Vigencia del pasaporte:</td>
+        <td style="padding:4px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></td>
+    </tr>
+    <tr>
+        <td style="font-weight:bold; padding:4px;">Número de forma migratoria:</td>
+        <td style="padding:4px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></td>
+    </tr>
+    <tr>
+        <td style="font-weight:bold; padding:4px;">Actividad que realiza en México:</td>
+        <td style="padding:4px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Trabajo / Estudios / Reunificación familiar)</span></td>
+    </tr>
+</table>
+
+<div class="section-title">III. DOCUMENTACIÓN QUE SE ACOMPAÑA</div>
+<p class="indent text-justify">Conforme a los artículos 137 al 139 del Reglamento de la Ley de Migración, adjunto la
+    siguiente documentación:</p>
+<p class="indent text-justify"><strong>1.</strong> Pasaporte vigente (original y 2 copias).<br>
+    <strong>2.</strong> Tarjeta de residente temporal vigente (original y copia).<br>
+    <strong>3.</strong> Comprobante de domicilio reciente (no mayor a 3 meses).<br>
+    <strong>4.</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Acta de matrimonio o de nacimiento apostillada que acredite el vínculo
+    familiar con ciudadano mexicano (si aplica).)</span><br>
+    <strong>5.</strong> Fotografías tamaño infantil (2 recientes, fondo blanco).<br>
+    <strong>6.</strong> Formato migratorio oficial (INM-07-001) debidamente llenado.<br>
+    <strong>7.</strong> Comprobante de pago de derechos por servicios migratorios.<br>
+    <strong>8.</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Carta de antecedentes no penales del país de origen (apostillada, si
+    aplica). / Constancia de salud/vacunación.)</span>
 </p>
 
-<div class="section-title">DOCUMENTACIÓN</div>
-<p class="indent text-justify">
-    1. Pasaporte vigente (original y copia).<br>
-    2. Tarjeta de residente temporal vigente.<br>
-    3. Comprobante de domicilio reciente.<br>
-    4. {{ doc_extra | default("Acta de matrimonio / nacimiento que acredite vínculo familiar.") }}<br>
-    5. Formato migratorio y comprobante de pago de derechos.
-</p>
+<div class="section-title">IV. PETICIÓN</div>
+<p class="indent text-justify"><strong>ÚNICO.-</strong> Se tenga por presentada la presente solicitud, se admita y
+    tramite conforme a derecho, y se resuelva favorablemente el cambio de condición de estancia a <strong>Residente
+        Permanente</strong>, expidiéndose la tarjeta de residencia correspondiente.</p>
 
 <p class="text-center text-bold" style="margin-top:30px;">ATENTAMENTE</p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre y firma del solicitante)</span></div>
 </div>
-{% endblock %}

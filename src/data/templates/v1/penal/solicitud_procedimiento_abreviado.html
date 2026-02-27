@@ -1,22 +1,19 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Solicitud de Procedimiento Abreviado</h1>
     <p class="subtitle">Artículos 201-207 del Código Nacional de Procedimientos Penales</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold">C. JUEZ DE CONTROL DEL DISTRITO JUDICIAL DE {{ distrito | default("_______________") }}</p>
-<p class="text-bold">CAUSA PENAL: {{ causa_penal | default("_______________") }}</p>
+<p class="text-bold">C. <em style="font-size:9pt;color:#666;">(Ciudadano/Ciudadana)</em> JUEZ DE CONTROL DEL DISTRITO JUDICIAL DE <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></p>
+<p class="text-bold">CAUSA PENAL: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></p>
 
 <p class="indent text-justify">
-    <strong>{{ ministerio_publico | default("MINISTERIO PÚBLICO FEDERAL / LOCAL") }}</strong>,
-    adscrito a {{ adscripcion | default("_______________") }},
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ministerio público federal / local)</span></strong>,
+    adscrito a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>,
     en la causa penal de referencia seguida en contra de
-    <strong>{{ imputado | default("NOMBRE DEL IMPUTADO") }}</strong>,
-    por el delito de <strong>{{ delito | default("_______________") }}</strong>,
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Pedro Rojas Mendoza)</span></strong>,
+    por el delito de <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong>,
     con fundamento en los artículos 201 a 207 del CNPP, solicito la apertura del
     <strong>PROCEDIMIENTO ABREVIADO</strong>.
 </p>
@@ -25,8 +22,7 @@
 <p class="indent text-justify">
     Se acreditan los siguientes requisitos:<br>
     <strong>a)</strong> El Ministerio Público solicita la apertura del procedimiento (Art. 201 fr. I).<br>
-    <strong>b)</strong> La víctima {{ victima | default("_______________") }} no se opone / {{ posicion_victima |
-    default("ha manifestado su conformidad") }} (Art. 201 fr. II).<br>
+    <strong>b)</strong> La víctima <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span> no se opone / <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(ha manifestado su conformidad)</span> (Art. 201 fr. II).<br>
     <strong>c)</strong> El imputado acepta su responsabilidad (Art. 201 fr. III).<br>
     <strong>d)</strong> El imputado acepta ser sentenciado con los datos de prueba recabados.
 </p>
@@ -34,13 +30,13 @@
 <div class="section-title">PENA SOLICITADA</div>
 <p class="indent text-justify">
     Conforme al artículo 202 del CNPP, solicito se imponga la pena de
-    <strong>{{ pena_solicitada | default("[X] años [X] meses de prisión y multa de [X] UMAS") }}</strong>,
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">([X] años [X] meses de prisión y multa de [X] UMAS)</span></strong>,
     la cual no podrá ser mayor a la señalada ni inferior al mínimo reducido.
 </p>
 
 <div class="section-title">REPARACIÓN DEL DAÑO</div>
 <p class="indent text-justify">
-    Se garantiza la reparación del daño por ${{ reparacion | default("_______________") }}.
+    Se garantiza la reparación del daño por $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>.
 </p>
 
 <div class="section-title">PETICIONES</div>
@@ -54,6 +50,5 @@
 <p class="text-center text-bold" style="margin-top:30px;">PROTESTO LO NECESARIO</p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ ministerio_publico | default("MINISTERIO PÚBLICO") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ministerio público)</span></div>
 </div>
-{% endblock %}

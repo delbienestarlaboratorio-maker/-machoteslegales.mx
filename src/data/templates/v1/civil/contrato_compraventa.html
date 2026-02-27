@@ -1,19 +1,15 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Contrato de Compraventa</h1>
     <p class="subtitle">Artículos 2248-2323 del Código Civil Federal</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto |
-    default("__ de ________ de 20__") }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
 <p class="indent text-justify">
     <strong>CONTRATO DE COMPRAVENTA</strong> que celebran por una parte
-    <strong>{{ vendedor | default("NOMBRE DEL VENDEDOR") }}</strong>,
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del vendedor)</span></strong>,
     a quien en lo sucesivo se le denominará <strong>"EL VENDEDOR"</strong>,
-    y por la otra <strong>{{ comprador | default("NOMBRE DEL COMPRADOR") }}</strong>,
+    y por la otra <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del comprador)</span></strong>,
     a quien se le denominará <strong>"EL COMPRADOR"</strong>,
     al tenor de las siguientes:
 </p>
@@ -22,9 +18,9 @@
 
 <p class="indent text-justify">
     <strong>I.</strong> Declara <strong>EL VENDEDOR</strong> ser legítimo propietario del bien objeto
-    de este contrato, consistente en {{ descripcion_bien | default("_________________________________") }},
-    ubicado en {{ ubicacion_bien | default("_________________________________") }},
-    el cual adquirió mediante {{ titulo_propiedad | default("escritura pública / factura / contrato de compraventa") }}.
+    de este contrato, consistente en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>,
+    ubicado en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>,
+    el cual adquirió mediante <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(escritura pública / factura / contrato de compraventa)</span>.
 </p>
 
 <p class="indent text-justify">
@@ -47,15 +43,15 @@
 
 <p class="indent text-justify">
     <strong>SEGUNDA. — PRECIO.</strong> El precio total de la compraventa es de
-    <strong>${{ precio | default("___________") }} M.N.</strong>
-    ({{ precio_letra | default("_________________________________") }} PESOS 00/100 MONEDA NACIONAL),
+    <strong>$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span> M.N.</strong>
+    (<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span> PESOS 00/100 MONEDA NACIONAL),
     que EL COMPRADOR se obliga a pagar de la siguiente forma:
-    {{ forma_pago | default("en una sola exhibición al momento de la firma del presente contrato.") }}
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(en una sola exhibición al momento de la firma del presente contrato.)</span>
 </p>
 
 <p class="indent text-justify">
     <strong>TERCERA. — ENTREGA.</strong> EL VENDEDOR se obliga a entregar el bien objeto
-    de este contrato en {{ plazo_entrega | default("el acto de la firma del presente instrumento") }},
+    de este contrato en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(el acto de la firma del presente instrumento)</span>,
     en las condiciones en que se encuentra.
 </p>
 
@@ -66,13 +62,13 @@
 
 <p class="indent text-justify">
     <strong>QUINTA. — GASTOS.</strong> Los gastos de escrituración, traslado de dominio
-    e impuestos serán cubiertos por {{ gastos_cargo | default("EL COMPRADOR") }}.
+    e impuestos serán cubiertos por <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El comprador)</span>.
 </p>
 
 <p class="indent text-justify">
     <strong>SEXTA. — JURISDICCIÓN.</strong> Para todo lo relacionado con la interpretación
     y cumplimiento del presente contrato, las partes se someten a la jurisdicción
-    de los tribunales de {{ jurisdiccion | default("_________________________________") }}.
+    de los tribunales de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(General de la República)</span>.
 </p>
 
 <p class="indent text-justify">
@@ -82,19 +78,18 @@
 
 <div style="display:flex; gap:40px; margin-top:50px;">
     <div class="signature-block" style="flex:1;">
-        <div class="signature-line">{{ vendedor | default("EL VENDEDOR") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El vendedor)</span></div>
     </div>
     <div class="signature-block" style="flex:1;">
-        <div class="signature-line">{{ comprador | default("EL COMPRADOR") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El comprador)</span></div>
     </div>
 </div>
 
 <div style="display:flex; gap:40px; margin-top:30px;">
     <div class="signature-block" style="flex:1;">
-        <div class="signature-line">{{ testigo_1 | default("TESTIGO 1") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ana Lucía Torres Soto)</span></div>
     </div>
     <div class="signature-block" style="flex:1;">
-        <div class="signature-line">{{ testigo_2 | default("TESTIGO 2") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Luis Enrique Ramos García)</span></div>
     </div>
 </div>
-{% endblock %}

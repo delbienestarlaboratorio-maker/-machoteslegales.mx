@@ -1,0 +1,313 @@
+[
+  {
+    "id": "penal-denuncia-robo-v1",
+    "slug": "denuncia-penal-robo",
+    "title": "Denuncia Penal por Robo",
+    "legalBasis": [
+      "Arts. 220-224 CPDF",
+      "Arts. 379-394 CPF"
+    ],
+    "description": "Denuncia formal ante MP por sustracción de bienes sin violencia (robo simple) o con violencia.",
+    "keywords": [
+      "denuncia robo",
+      "robo simple",
+      "robo con violencia",
+      "MP denuncia"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Denuncia Penal por Robo</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. AGENTE DEL MINISTERIO PÚBLICO EN TURNO</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(María González López)</span></strong>, por este medio comparezco a presentar formal <strong>DENUNCIA</strong> por el delito de <strong>ROBO</strong> en agravio de mi persona, acontecido el día <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(24 de febrero de 2026)</span> aproximadamente a las <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(22:30 horas)</span>, en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Av. Insurgentes Sur frente al No. 100)</span>. El sujeto activo me sustrajo mediante <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(amenaza con arma blanca)</span> los bienes: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(smartphone iPhone 15 y cartera con $3,500 en efectivo)</span>.</p><p class=\"indent text-justify\">El probable responsable se describe como: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(masculino, 25-30 años, complexión robusta, playera roja)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Denunciante)</span></div></div>"
+  },
+  {
+    "id": "penal-querella-fraude-v1",
+    "slug": "querella-fraude",
+    "title": "Querella por Fraude",
+    "legalBasis": [
+      "Arts. 386-389 CPF",
+      "Art. 230 CPDF"
+    ],
+    "description": "Querella por engaño que causó transferencia patrimonial ilícita en perjuicio del ofendido.",
+    "keywords": [
+      "querella fraude",
+      "engaño dinero",
+      "víctima fraude penal"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Querella por Fraude</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. FISCAL INVESTIGADOR EN TURNO</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Roberto Soto Mendoza)</span></strong> presenta <strong>QUERELLA</strong> en contra de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Luis Ramírez Díaz)</span> por el delito de <strong>FRAUDE</strong>, quien mediante engaño me hizo entregar la cantidad de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(150,000.00)</span> prometiendo venderme un vehículo que nunca entregó, según consta en contrato de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(fecha 10 enero 2026)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Querellante)</span></div></div>"
+  },
+  {
+    "id": "penal-denuncia-violencia-familiar-v1",
+    "slug": "denuncia-violencia-familiar",
+    "title": "Denuncia por Violencia Familiar",
+    "legalBasis": [
+      "Arts. 200-204 CPDF",
+      "Ley General de Acceso a una Vida Libre de Violencia"
+    ],
+    "description": "Denuncia por actos de violencia física, psicológica, económica o sexual dentro del núcleo familiar.",
+    "keywords": [
+      "violencia familiar denuncia",
+      "maltrato familiar",
+      "agresión doméstica"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Denuncia por Violencia Familiar</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. FISCAL INVESTIGADOR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ana Pérez Ruiz)</span></strong> denuncia a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Jorge Herrera López, su cónyuge)</span> por <strong>VIOLENCIA FAMILIAR</strong> consistente en: golpes con la mano en el rostro y amenazas verbales el día <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(25 de febrero de 2026)</span>, lesiones acreditadas con certificado médico adjunto.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Denunciante / Víctima)</span></div></div>"
+  },
+  {
+    "id": "penal-escrito-ofendido-v1",
+    "slug": "escrito-victima-ofendido-coadyuvancia",
+    "title": "Escrito de Coadyuvancia de la Víctima",
+    "legalBasis": [
+      "Arts. 109, 110 CNPP"
+    ],
+    "description": "Escrito mediante el cual la víctima o el ofendido coadyuva con el Ministerio Público en la carpeta de investigación.",
+    "keywords": [
+      "coadyuvancia víctima",
+      "ofendido penal",
+      "pruebas víctima carpeta"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Escrito de Coadyuvancia (Victima u Ofendido)</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. AGENTE DEL MINISTERIO PÚBLICO INVESTIGADOR</div><p class=\"indent text-justify\">Dentro de la carpeta de investigación <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(CI-0123/2026)</span>, <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Roberto Soto)</span></strong>, como víctima del delito, ejerzo mi derecho de coadyuvancia y aporto las siguientes pruebas adicionales: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(videos de cámara de seguridad del local comercial fechados el 10 de enero de 2026)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Víctima)</span></div></div>"
+  },
+  {
+    "id": "penal-solicitud-no-ejercicio-accion-v1",
+    "slug": "impugnacion-no-ejercicio-accion-penal",
+    "title": "Impugnación de No Ejercicio de la Acción Penal",
+    "legalBasis": [
+      "Art. 258 CNPP"
+    ],
+    "description": "Recurso cuando el MP determina el no ejercicio de la acción penal y la víctima lo impugna ante el Fiscal Superior.",
+    "keywords": [
+      "impugnar MP no ejercicio",
+      "recurso no ejercicio acción",
+      "fiscal superior nep"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Impugnacion de No Ejercicio de la Accion Penal</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. FISCAL SUPERIOR / SUBPROCURADOR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(María González)</span></strong> impugna el acuerdo de <strong>NO EJERCICIO DE LA ACCIÓN PENAL</strong> dictado el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15 de febrero de 2026)</span> en la carpeta <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(CI-0099/2026)</span>, al existir diligencias pendientes de desahogo que el MP omitió practicar.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Víctima)</span></div></div>"
+  },
+  {
+    "id": "penal-escrito-defensa-imputado-v1",
+    "slug": "escrito-defensa-al-imputado",
+    "title": "Escrito de Defensa del Imputado",
+    "legalBasis": [
+      "Arts. 113, 117 CNPP"
+    ],
+    "description": "Comunicación formal del defensor solicitando diligencias, impugnando actuaciones o solicitando copias en la etapa de investigación.",
+    "keywords": [
+      "escrito defensa imputado",
+      "carpeta investigación defensor",
+      "diligencias defensa"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Escrito de Defensa Tecnica (Imputado)</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. AGENTE DEL MINISTERIO PÚBLICO INVESTIGADOR</div><p class=\"indent text-justify\"><strong>Lic. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Pedro Díaz García)</span></strong>, defensor del imputado <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Juan Torres)</span>, en la carpeta <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(CI-200/2026)</span>, solicito: a) Copias de todas las actuaciones; b) Se practique la diligencia de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(reconocimiento de lugar de los hechos)</span> para acreditar la coartada de mi cliente.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Defensor)</span></div></div>"
+  },
+  {
+    "id": "penal-solicitud-libertad-cautelar-v1",
+    "slug": "solicitud-sustitucion-medida-cautelar",
+    "title": "Solicitud de Sustitución de Medida Cautelar",
+    "legalBasis": [
+      "Arts. 153-177 CNPP"
+    ],
+    "description": "Petición al Juez de Control para sustituir la prisión preventiva por una medida menos gravosa.",
+    "keywords": [
+      "sustitucion prisión preventiva",
+      "medida cautelar alternativa",
+      "libertad cautelar"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Sustitucion de Medida Cautelar</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ DE CONTROL</div><p class=\"indent text-justify\"><strong>Lic. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Ruiz Morales)</span></strong>, en representación del imputado <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Arturo Vega)</span>, solicito la sustitución de la <strong>PRISIÓN PREVENTIVA</strong> por las medidas de: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(presentación periódica ante la autoridad y prohibición de salir del país)</span>, dado el arraigo familiar y laboral del imputado.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Defensor)</span></div></div>"
+  },
+  {
+    "id": "penal-acuerdo-reparatorio-v1",
+    "slug": "solicitud-acuerdo-reparatorio",
+    "title": "Solicitud de Acuerdo Reparatorio",
+    "legalBasis": [
+      "Arts. 186-191 CNPP"
+    ],
+    "description": "Mecanismo alternativo de solución de controversias en delitos que admiten acuerdos reparatorios.",
+    "keywords": [
+      "acuerdo reparatorio penal",
+      "salida alterna delitos",
+      "reparación daño acordada"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Acuerdo Reparatorio</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ DE CONTROL</div><p class=\"indent text-justify\">Las partes, <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Víctima: Roberto Suárez)</span></strong> e <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Imputado: Juan Torres)</span></strong>, solicitan la apertura de un <strong>ACUERDO REPARATORIO</strong> en términos del artículo 186 CNPP, comprometiéndose el imputado a pagar $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(25,000.00)</span> como reparación del daño.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ambas Partes)</span></div></div>"
+  },
+  {
+    "id": "penal-suspension-condicional-v1",
+    "slug": "solicitud-suspension-condicional-proceso",
+    "title": "Solicitud de Suspensión Condicional del Proceso",
+    "legalBasis": [
+      "Arts. 192-198 CNPP"
+    ],
+    "description": "Salida alterna que suspende el proceso penal si el imputado cumple condiciones fijadas por el Juez por cierto tiempo.",
+    "keywords": [
+      "suspensión condicional proceso",
+      "salida alterna penal",
+      "probación penal"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Suspension Condicional del Proceso</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ DE CONTROL</div><p class=\"indent text-justify\">La defensa y el imputado <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Héctor Montes)</span></strong> solicitan la <strong>SUSPENSIÓN CONDICIONAL DEL PROCESO</strong> por <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2 años)</span> comprometiéndose a: realizar <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(200 horas de servicio comunitario)</span>, reparar el daño por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15,000.00)</span> y abstenerse de consumir estupefacientes.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Imputado y Defensor)</span></div></div>"
+  },
+  {
+    "id": "penal-procedimiento-abreviado-v1",
+    "slug": "solicitud-procedimiento-abreviado",
+    "title": "Solicitud de Procedimiento Abreviado",
+    "legalBasis": [
+      "Arts. 201-207 CNPP"
+    ],
+    "description": "El imputado se declara culpable a cambio de una pena reducida, evitando juicio oral.",
+    "keywords": [
+      "procedimiento abreviado",
+      "plea deal México",
+      "reducción pena acuerdo"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Tramite en Via de Procedimiento Abreviado</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ DE ENJUICIAMIENTO</div><p class=\"indent text-justify\">El Ministerio Público y la defensa solicitan la apertura del <strong>PROCEDIMIENTO ABREVIADO</strong> en la causa <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(P.A.-55/2026)</span>. El imputado <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Herrera)</span> acepta los hechos de la acusación a cambio de que el MP solicite la pena de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2 años con suspensión de la ejecución)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(MP y Defensa)</span></div></div>"
+  },
+  {
+    "id": "penal-querella-abuso-confianza-v1",
+    "slug": "querella-abuso-de-confianza",
+    "title": "Querella por Abuso de Confianza",
+    "legalBasis": [
+      "Art. 228 CPDF",
+      "Arts. 382-386 CPF"
+    ],
+    "description": "Querella contra quien recibió bienes en depósito, comisión o administración y los dispone en beneficio propio.",
+    "keywords": [
+      "abuso confianza penal",
+      "apropiación indebida",
+      "dedepositario infiel"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Querella por Abuso de Confianza</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. FISCAL INVESTIGADOR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa ABC SA de CV)</span></strong> querella a <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Gerente Carlos Ríos)</span></strong> por ABUSO DE CONFIANZA: recibió en administración fondos de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(500,000.00)</span> de la empresa y los aplicó a su propio patrimonio.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Querellante)</span></div></div>"
+  },
+  {
+    "id": "penal-incidente-incompetencia-v1",
+    "slug": "excepcion-incompetencia-penal",
+    "title": "Excepción de Incompetencia en Materia Penal",
+    "legalBasis": [
+      "Arts. 30-38 CNPP"
+    ],
+    "description": "Escrito del defensor planteando que el Juez de Control que conoce no es competente por territorio o materia.",
+    "keywords": [
+      "incompetencia penal",
+      "excepción jurisdicción penal",
+      "declinación competencia"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Excepcion de Incompetencia (Penal)</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ DE CONTROL</div><p class=\"indent text-justify\">La defensa plantea excepción de <strong>INCOMPETENCIA POR TERRITORIO</strong>, ya que los hechos imputados ocurrieron en el municipio de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Nezahualcóyotl, Estado de México)</span>, por lo que la autoridad competente es un Juzgado de Control del Poder Judicial del Estado de México.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Defensor)</span></div></div>"
+  },
+  {
+    "id": "penal-recurso-apelacion-v1",
+    "slug": "recurso-apelacion-penal",
+    "title": "Recurso de Apelación Penal",
+    "legalBasis": [
+      "Arts. 467-484 CNPP"
+    ],
+    "description": "Medio de impugnación contra resoluciones del Juez de Control, como la vinculación a proceso o las medidas cautelares.",
+    "keywords": [
+      "apelación penal",
+      "impugnar vinculación proceso",
+      "recurso acusatorio"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Recurso de Apelacion Penal</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">TRIBUNAL DE ALZADA EN MATERIA PENAL</div><p class=\"indent text-justify\">La defensa del imputado <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Arturo Vega)</span> interpone <strong>RECURSO DE APELACIÓN</strong> contra el auto de <strong>vinculación a proceso</strong> dictado el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(20 de febrero de 2026)</span>, por no reunir los requisitos del artículo 316 CNPP; los datos de prueba no son suficientes para sostener la acusación.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Defensor)</span></div></div>"
+  },
+  {
+    "id": "penal-ampliacion-denuncia-v1",
+    "slug": "ampliacion-denuncia-penal",
+    "title": "Ampliación de Denuncia Penal",
+    "legalBasis": [
+      "Art. 222 CNPP"
+    ],
+    "description": "Documento adicional que amplía o complementa la denuncia inicial con nuevos hechos o datos de prueba.",
+    "keywords": [
+      "ampliacion denuncia",
+      "nuevos datos denuncia",
+      "complementar carpeta"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Ampliacion de Denuncia Penal</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. AGENTE DEL MINISTERIO PÚBLICO</div><p class=\"indent text-justify\">Dentro de la carpeta de investigación <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(CI-0123/2026)</span>, amplío mi denuncia inicial para señalar como probable responsable adicional a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Otro Sujeto identificado en el video de cámara de seguridad)</span> y aporto el video en USB como dato de prueba.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Denunciante)</span></div></div>"
+  },
+  {
+    "id": "penal-denuncia-extorsion-v1",
+    "slug": "denuncia-extorsion",
+    "title": "Denuncia por Extorsión",
+    "legalBasis": [
+      "Arts. 390 CPF",
+      "Art. 236 CPDF"
+    ],
+    "description": "Denuncia penal por exigencia de dinero bajo amenaza de causar daño a la persona o sus bienes.",
+    "keywords": [
+      "extorsion denuncia",
+      "cobro piso",
+      "amenazas dinero"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Denuncia por Extorsion</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">UNIDAD ESPECIALIZADA EN EXTORSIÓN Y SECUESTRO</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Panadería El Trigo SA)</span></strong> denuncia que desde el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(1 de enero de 2026)</span> sujetos desconocidos exigen el pago semanal de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(3,000.00)</span> amenazando con destruir el negocio. Se apoya con grabaciones de los llamados, adjuntas.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Denunciante)</span></div></div>"
+  },
+  {
+    "id": "penal-solicitud-reparacion-daño-v1",
+    "slug": "solicitud-reparacion-dano-victima",
+    "title": "Solicitud de Reparación del Daño (Víctima)",
+    "legalBasis": [
+      "Arts. 109 Fr. VII CNPP",
+      "Arts. 29-38 CPF"
+    ],
+    "description": "Petición formal de la víctima ante el Juez para que en la sentencia se condene al acusado a reparar el daño causado.",
+    "keywords": [
+      "reparación del daño víctima",
+      "condena reparar daño",
+      "sentencia daños penales"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Reparacion del Dano</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ DE ENJUICIAMIENTO ORAL</div><p class=\"indent text-justify\">La víctima <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Roberto Soto)</span></strong> solicita que en la sentencia se condene al acusado a la reparación del daño consistente en: a) Daño material: $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(80,000.00)</span>; b) Daño moral: $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(50,000.00)</span>; c) Lucro cesante: $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(20,000.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Víctima y su Asesor Jurídico)</span></div></div>"
+  },
+  {
+    "id": "penal-denuncia-delitos-informaticos-v1",
+    "slug": "denuncia-delitos-informaticos",
+    "title": "Denuncia por Delito Informático",
+    "legalBasis": [
+      "Arts. 211 bis 1-7 CPF",
+      "Ley Federal de Datos Personales"
+    ],
+    "description": "Denuncia por hackeo, phishing, suplantación de identidad digital o robo de datos personales.",
+    "keywords": [
+      "delito informático denuncia",
+      "hackeo computadora",
+      "phishing cibercriminal"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Denuncia por Delito Informatico</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">FISCALÍA ESPECIALIZADA EN DELITOS INFORMÁTICOS</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Sofía Ramírez)</span></strong> denuncia que el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(20 de febrero de 2026)</span> su cuenta bancaria fue vaciada mediante phishing: recibió correo falso del banco que la llevó a un sitio clonado donde introdujo sus credenciales, siendo sustraídos $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(45,000.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Denunciante)</span></div></div>"
+  },
+  {
+    "id": "penal-solicitud-orden-aprehension-v1",
+    "slug": "solicitud-orden-aprehension-mp",
+    "title": "Escrito del MP Solicitando Orden de Aprehensión",
+    "legalBasis": [
+      "Art. 141 CNPP",
+      "Art. 16 CPEUM"
+    ],
+    "description": "Solicitud formal del Ministerio Público al Juez de Control para librar una orden de captura.",
+    "keywords": [
+      "orden aprehensión MP",
+      "solicitud captura juez",
+      "control penal"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Orden de Aprehension</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ DE CONTROL</div><p class=\"indent text-justify\">El suscrito Agente del Ministerio Público, en la carpeta de investigación <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(CI-0100/2026)</span>, solicita se libre <strong>ORDEN DE APREHENSIÓN</strong> contra <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Juan Pérez Ríos)</span>, señalando datos de prueba suficientes para acreditar el delito de robo con violencia y la probable responsabilidad.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Agente del MP)</span></div></div>"
+  },
+  {
+    "id": "penal-denuncia-lesiones-v1",
+    "slug": "denuncia-lesiones-fisicas",
+    "title": "Denuncia por Lesiones",
+    "legalBasis": [
+      "Arts. 288-301 CPF",
+      "Arts. 130-133 CPDF"
+    ],
+    "description": "Denuncia por daños corporales causados por otro con o sin arma, acreditados con certificado médico.",
+    "keywords": [
+      "denuncia lesiones",
+      "golpes certificado médico",
+      "lesiones dolosas"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Denuncia por Lesiones Fisicas</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. AGENTE DEL MINISTERIO PÚBLICO</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Luis García)</span></strong> denuncia que el día <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(24 de febrero de 2026)</span> fue agredido físicamente por <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(su vecino Pedro Ruiz)</span> quien le infirió golpes en el rostro causándole <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(fractura nasal con 15 días de curación)</span>, según certificado médico adjunto.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Denunciante)</span></div></div>"
+  },
+  {
+    "id": "penal-medida-proteccion-mp-v1",
+    "slug": "solicitud-medida-proteccion-urgente",
+    "title": "Solicitud de Medida de Proteccion Urgente al MP",
+    "legalBasis": [
+      "Arts. 137-138 CNPP",
+      "Ley General de Victimas Art. 27"
+    ],
+    "description": "Peticion de medidas de proteccion provisionales que dicta el MP antes de acudir al Juez.",
+    "keywords": [
+      "medida proteccion ministerio publico",
+      "proteccion victima urgente",
+      "MP orden proteccion"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Medida de Proteccion Urgente</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. AGENTE DEL MINISTERIO PUBLICO</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ana Perez)</span></strong> solicita medidas de proteccion urgentes contra <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Jorge Herrera)</span> de conformidad con los articulos 137-138 CNPP: orden de desocupacion del domicilio conyugal, prohibicion de acercarse a menos de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(500 metros)</span> de la victima y de su lugar de trabajo.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Victima)</span></div></div>"
+  }
+]

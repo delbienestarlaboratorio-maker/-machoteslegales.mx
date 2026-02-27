@@ -1,22 +1,19 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Querella por Amenazas</h1>
     <p class="subtitle">Artículo 282 del Código Penal Federal · Arts. 221-225 CNPP</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold">C. AGENTE DEL MINISTERIO PÚBLICO EN TURNO</p>
+<p class="text-bold">C. <em style="font-size:9pt;color:#666;">(Ciudadano/Ciudadana)</em> AGENTE DEL MINISTERIO PÚBLICO EN TURNO</p>
 <p class="text-bold">P R E S E N T E</p>
 
 <p class="indent text-justify">
-    <strong>{{ cliente.nombre | default("NOMBRE DEL QUERELLANTE") }}</strong>, mayor de edad,
-    con domicilio en <strong>{{ cliente.domicilio | default("_________________________________") }}</strong>,
-    autorizando a {{ abogado.nombre | default("_________________________________") }},
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></strong>, mayor de edad,
+    con domicilio en <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Coyoacán, Ciudad de México, C.P. 04000)</span></strong>,
+    autorizando a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Francisco Sánchez Torres)</span>,
     ante Usted comparezco para formular <strong>QUERELLA</strong> en contra de
-    <strong>{{ imputado | default("NOMBRE DEL IMPUTADO") }}</strong>,
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Pedro Rojas Mendoza)</span></strong>,
     por el delito de <strong>AMENAZAS</strong>, previsto en el artículo 282 del Código Penal Federal.
 </p>
 
@@ -26,24 +23,20 @@
 
 <div class="section-title">I. HECHOS</div>
 <p class="indent text-justify">
-    <strong>PRIMERO.-</strong> {{ hecho_1 | default("Con fecha [fecha], siendo las [hora] horas, el querellado me
-    amenazó de la siguiente manera: [describir textualmente las amenazas recibidas], lo cual me causó fundado temor de
-    que se cumplieran dichas amenazas.") }}
+    <strong>PRIMERO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el primer hecho cronológicamente, con fecha, lugar y personas involucradas)</span>
 </p>
 <p class="indent text-justify">
-    <strong>SEGUNDO.-</strong> {{ hecho_2 | default("Las amenazas fueron realizadas [de manera verbal/por escrito/por
-    medios electrónicos/por teléfono], en presencia de [testigos, si los hay].") }}
+    <strong>SEGUNDO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el segundo hecho, describiendo la conducta del demandado)</span>
 </p>
 <p class="indent text-justify">
-    <strong>TERCERO.-</strong> {{ hecho_3 | default("Como consecuencia de dichas amenazas, mi integridad física y
-    emocional se ha visto seriamente afectada, viviendo en constante temor.") }}
+    <strong>TERCERO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el tercer hecho y sus consecuencias para el promovente)</span>
 </p>
 
 <div class="section-title">II. DATOS DE PRUEBA</div>
 <p class="indent text-justify">
-    1. {{ prueba_1 | default("Capturas de pantalla de mensajes amenazantes.") }}<br>
-    2. {{ prueba_2 | default("Grabaciones de audio o video, en su caso.") }}<br>
-    3. {{ prueba_3 | default("Testimonial de [nombre del testigo].") }}<br>
+    1. <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Capturas de pantalla de mensajes amenazantes.)</span><br>
+    2. <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Grabaciones de audio o video, en su caso.)</span><br>
+    3. <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Testimonial de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(nombre del testigo)</span>.)</span><br>
     4. Declaración del suscrito querellante.
 </p>
 
@@ -64,6 +57,5 @@
 <p class="text-center text-bold" style="margin-top:30px;">PROTESTO LO NECESARIO</p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA DEL QUERELLANTE") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></div>
 </div>
-{% endblock %}

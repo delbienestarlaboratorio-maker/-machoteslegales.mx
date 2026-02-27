@@ -1,24 +1,21 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Acta Constitutiva de Sociedad Anónima de Capital Variable</h1>
     <p class="subtitle">Ley General de Sociedades Mercantiles · Arts. 6, 87-206</p>
 </div>
 
 <p class="indent text-justify">
-    En {{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, siendo las {{ hora | default("___") }} horas
-    del día {{ fecha_actual_texto }}, ante la fe del Notario Público número {{ num_notario | default("___") }},
-    {{ nombre_notario | default("_______________") }}, comparecen los señores:
+    En <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, siendo las <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span> horas
+    del día <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span>, ante la fe del Notario Público número <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>,
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Ernesto Fuentes Medina, Notario Público No. 45)</span>, comparecen los señores:
 </p>
 
 <div class="section-title">SOCIOS FUNDADORES</div>
 <p class="indent text-justify">
-    1. <strong>{{ socio_1 | default("NOMBRE COMPLETO") }}</strong>, {{ nacionalidad_1 | default("mexicano(a)") }},
-    RFC: {{ rfc_1 | default("___") }}, aportación: ${{ aporte_1 | default("___") }}<br>
-    2. <strong>{{ socio_2 | default("NOMBRE COMPLETO") }}</strong>, {{ nacionalidad_2 | default("mexicano(a)") }},
-    RFC: {{ rfc_2 | default("___") }}, aportación: ${{ aporte_2 | default("___") }}<br>
-    {{ socios_adicionales | default("") }}
+    1. <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre completo)</span></strong>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(francesa)</span>,
+    RFC: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(GOML850312AB3)</span>, aportación: $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span><br>
+    2. <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre completo)</span></strong>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(francesa)</span>,
+    RFC: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(GOML850312AB3)</span>, aportación: $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span><br>
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>
 </p>
 
 <p class="indent text-justify">
@@ -28,31 +25,26 @@
 
 <div class="section-title">CLÁUSULAS</div>
 <p class="indent text-justify"><strong>PRIMERA. DENOMINACIÓN.</strong> La sociedad se denominará
-    <strong>"{{ nombre_sociedad | default("_______________") }}, S.A. de C.V."</strong>
+    <strong>"<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>, S.A. de C.V."</strong>
 </p>
 
-<p class="indent text-justify"><strong>SEGUNDA. DOMICILIO.</strong> {{ domicilio_social |
-    default("_________________________________") }}</p>
+<p class="indent text-justify"><strong>SEGUNDA. DOMICILIO.</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span></p>
 
-<p class="indent text-justify"><strong>TERCERA. OBJETO SOCIAL.</strong> {{ objeto_social | default("a) La compraventa,
-    distribución, importación y exportación de [productos/servicios]; b) La prestación de servicios de [tipo]; c) Y en
-    general, la realización de todos los actos lícitos de comercio.") }}</p>
+<p class="indent text-justify"><strong>TERCERA. OBJETO SOCIAL.</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(a) La compraventa,
+    distribución, importación y exportación de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(productos/servicios)</span>; b) La prestación de servicios de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(tipo)</span>; c) Y en
+    general, la realización de todos los actos lícitos de comercio.)</span></p>
 
-<p class="indent text-justify"><strong>CUARTA. DURACIÓN.</strong> {{ duracion | default("99 (noventa y nueve) años") }}
+<p class="indent text-justify"><strong>CUARTA. DURACIÓN.</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(99 (noventa y nueve) años)</span>
     a partir de la inscripción en el Registro Público de Comercio.</p>
 
-<p class="indent text-justify"><strong>QUINTA. CAPITAL SOCIAL.</strong> Capital mínimo fijo: ${{ capital_fijo |
-    default("50,000.00") }} M.N.
-    Capital variable: ilimitado. Representado por {{ num_acciones | default("___") }} acciones ordinarias, nominativas,
-    con valor nominal de ${{ valor_accion | default("___") }} cada una.</p>
+<p class="indent text-justify"><strong>QUINTA. CAPITAL SOCIAL.</strong> Capital mínimo fijo: $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(50,000.00)</span> M.N.
+    Capital variable: ilimitado. Representado por <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span> acciones ordinarias, nominativas,
+    con valor nominal de $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span> cada una.</p>
 
-<p class="indent text-justify"><strong>SEXTA. ADMINISTRACIÓN.</strong> La sociedad será administrada por {{ tipo_admin |
-    default("un Administrador Único / un Consejo de Administración") }}.
-    Se designa como {{ cargo_admin | default("Administrador Único") }} a <strong>{{ administrador |
-        default("_______________") }}</strong>.</p>
+<p class="indent text-justify"><strong>SEXTA. ADMINISTRACIÓN.</strong> La sociedad será administrada por <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(un Administrador Único / un Consejo de Administración)</span>.
+    Se designa como <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Administrador Único)</span> a <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong>.</p>
 
-<p class="indent text-justify"><strong>SÉPTIMA. VIGILANCIA.</strong> Se designa como Comisario a <strong>{{ comisario |
-        default("_______________") }}</strong>.</p>
+<p class="indent text-justify"><strong>SÉPTIMA. VIGILANCIA.</strong> Se designa como Comisario a <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong>.</p>
 
 <p class="indent text-justify"><strong>OCTAVA. EJERCICIO SOCIAL.</strong> Del 1° de enero al 31 de diciembre de cada
     año.</p>
@@ -77,13 +69,12 @@
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:30px;">
     <div class="signature-block">
-        <div class="signature-line">{{ socio_1 | default("SOCIO 1") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Socio 1)</span></div>
     </div>
     <div class="signature-block">
-        <div class="signature-line">{{ socio_2 | default("SOCIO 2") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Socio 2)</span></div>
     </div>
     <div class="signature-block">
-        <div class="signature-line">{{ nombre_notario | default("NOTARIO PÚBLICO") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Ernesto Fuentes Medina, Notario Público No. 45)</span></div>
     </div>
 </div>
-{% endblock %}

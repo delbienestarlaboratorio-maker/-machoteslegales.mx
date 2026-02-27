@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { MEXICAN_STATES, FEDERAL_DATA, type StateData } from '@/data/states'
 
 interface Props {
@@ -10,10 +10,23 @@ interface Props {
 export default function StateSelector({ onStateChange }: Props) {
     const [selected, setSelected] = useState<string>('FED')
     const [isOpen, setIsOpen] = useState(false)
+    const containerRef = useRef<HTMLDivElement>(null)
 
     const currentState = selected === 'FED'
         ? FEDERAL_DATA
         : MEXICAN_STATES.find(s => s.code === selected) || FEDERAL_DATA
+
+    // Close on outside click
+    useEffect(() => {
+        if (!isOpen) return
+        const handler = (e: MouseEvent) => {
+            if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
+                setIsOpen(false)
+            }
+        }
+        document.addEventListener('mousedown', handler)
+        return () => document.removeEventListener('mousedown', handler)
+    }, [isOpen])
 
     const handleSelect = (code: string) => {
         setSelected(code)
@@ -25,7 +38,7 @@ export default function StateSelector({ onStateChange }: Props) {
     }
 
     return (
-        <div className="glass-card p-5 relative">
+        <div ref={containerRef} className="glass-card p-5" style={{ position: 'relative', zIndex: 9999, overflow: 'visible' }}>
             <h2 className="text-sm font-semibold text-white mb-2">📍 ¿En qué estado estás?</h2>
             <p className="text-xs text-[var(--color-text-muted)] mb-3">
                 La plantilla se adaptará a las leyes de tu entidad.
@@ -44,12 +57,30 @@ export default function StateSelector({ onStateChange }: Props) {
                 </svg>
             </button>
 
+            {/* Dropdown — absolute inside the relative container, stays anchored to button */}
             {isOpen && (
-                <div className="absolute left-0 right-0 top-full mt-1 z-50 glass-card rounded-xl border border-white/10 shadow-2xl max-h-72 overflow-y-auto">
+                <div
+                    style={{
+                        position: 'absolute',
+                        top: '100%',
+                        left: 0,
+                        right: 0,
+                        marginTop: '4px',
+                        zIndex: 99999,
+                        maxHeight: '280px',
+                        overflowY: 'auto',
+                        background: 'linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%)',
+                        border: '1px solid rgba(201, 168, 76, 0.25)',
+                        borderRadius: '16px',
+                        boxShadow: '0 20px 60px rgba(0,0,0,0.7), 0 0 30px rgba(201, 168, 76, 0.08)',
+                        scrollbarWidth: 'thin' as const,
+                        scrollbarColor: 'rgba(255,255,255,0.2) transparent',
+                    }}
+                >
                     {/* Federal */}
                     <button
                         onClick={() => handleSelect('FED')}
-                        className={`w-full text-left px-4 py-2.5 text-sm hover:bg-white/10 transition-colors flex items-center gap-2 ${selected === 'FED' ? 'text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'text-white'}`}
+                        className={`w-full text-left px-4 py-2.5 text-sm transition-colors flex items-center gap-2 rounded-t-2xl ${selected === 'FED' ? 'text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'text-white hover:bg-white/10'}`}
                     >
                         <span>🇲🇽</span> Federal (Aplicación General)
                     </button>
@@ -61,7 +92,7 @@ export default function StateSelector({ onStateChange }: Props) {
                         <button
                             key={state.code}
                             onClick={() => handleSelect(state.code)}
-                            className={`w-full text-left px-4 py-2 text-sm hover:bg-white/10 transition-colors ${selected === state.code ? 'text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'text-[var(--color-text-muted)] hover:text-white'}`}
+                            className={`w-full text-left px-4 py-2 text-sm transition-colors ${selected === state.code ? 'text-[var(--color-accent)] bg-[var(--color-accent)]/10' : 'text-[var(--color-text-muted)] hover:text-white hover:bg-white/10'}`}
                         >
                             {state.name}
                         </button>

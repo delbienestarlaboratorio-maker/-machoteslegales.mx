@@ -1,74 +1,65 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Demanda Civil Inicial</h1>
     <p class="subtitle">Artículos 255-258 del Código Federal de Procedimientos Civiles</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto |
-    default("__ de ________ de 20__") }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold">C. JUEZ DE LO CIVIL</p>
-<p class="text-bold">{{ juzgado | default("JUZGADO DE PRIMERA INSTANCIA EN MATERIA CIVIL") }}</p>
+<p class="text-bold">C. <em style="font-size:9pt;color:#666;">(Ciudadano/Ciudadana)</em> JUEZ DE LO CIVIL</p>
+<p class="text-bold"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Primero)</span></p>
 <p>PRESENTE.</p>
 
 <p class="indent text-justify">
-    <strong>{{ actor | default("NOMBRE DEL ACTOR") }}</strong>,
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del actor)</span></strong>,
     por mi propio derecho, señalando como domicilio para oír y recibir notificaciones
-    el ubicado en {{ domicilio_actor | default("_________________________________") }},
-    autorizando para tales efectos a {{ abogado | default("LIC. _________________________________") }},
+    el ubicado en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>,
+    autorizando para tales efectos a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. _________________________________)</span>,
     ante usted respetuosamente comparezco para promover:
 </p>
 
 <div class="section-title">JUICIO ORDINARIO CIVIL</div>
 
 <p class="indent text-justify">
-    En contra de <strong>{{ demandado | default("NOMBRE DEL DEMANDADO") }}</strong>,
-    con domicilio en {{ domicilio_demandado | default("_________________________________") }},
+    En contra de <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del demandado)</span></strong>,
+    con domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Av. Revolución 1500, Col. San Ángel, Ciudad de México, C.P. 01000)</span>,
     reclamando las siguientes:
 </p>
 
 <div class="section-title">PRESTACIONES</div>
 
 <p class="indent text-justify">
-    <strong>a)</strong> {{ prestacion_1 | default("El cumplimiento forzoso del contrato celebrado entre las partes con
-    fecha ___ de _______ de 20__.") }}<br>
-    <strong>b)</strong> {{ prestacion_2 | default("El pago de daños y perjuicios causados.") }}<br>
-    <strong>c)</strong> {{ prestacion_3 | default("El pago de gastos y costas que origine el presente juicio.") }}
+    <strong>a)</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El cumplimiento forzoso del contrato celebrado entre las partes con
+    fecha ___ de _______ de 20__.)</span><br>
+    <strong>b)</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El pago de daños y perjuicios causados.)</span><br>
+    <strong>c)</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El pago de gastos y costas que origine el presente juicio.)</span>
 </p>
 
 <div class="section-title">HECHOS</div>
 
 <p class="indent text-justify">
-    <strong>1.</strong> — {{ hecho_1 | default("Que el suscrito y el demandado celebraron un contrato de
-    _________________ con fecha ___ de _______ de 20__, mediante el cual se pactaron las siguientes obligaciones:
-    _________________________________.") }}
+    <strong>1.</strong> — <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el primer hecho cronológicamente, con fecha, lugar y personas involucradas)</span>
 </p>
 
 <p class="indent text-justify">
-    <strong>2.</strong> — {{ hecho_2 | default("Que el demandado incumplió con su obligación consistente en
-    _________________________________, a pesar de haber sido requerido en múltiples ocasiones.") }}
+    <strong>2.</strong> — <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el segundo hecho, describiendo la conducta del demandado)</span>
 </p>
 
 <p class="indent text-justify">
-    <strong>3.</strong> — {{ hecho_3 | default("Que derivado del incumplimiento del demandado, el suscrito ha resentido
-    los siguientes daños y perjuicios: _________________________________.") }}
+    <strong>3.</strong> — <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el tercer hecho y sus consecuencias para el promovente)</span>
 </p>
 
 <div class="section-title">DERECHO</div>
 
 <p class="indent text-justify">
-    Son aplicables al presente caso los artículos {{ fundamentos | default("1793, 1794, 1796, 1824, 1840, 1910, 2104 y
-    2107 del Código Civil Federal") }},
+    Son aplicables al presente caso los artículos <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(1793, 1794, 1796, 1824, 1840, 1910, 2104 y
+    2107 del Código Civil Federal)</span>,
     así como los artículos 255, 256, 257 y 258 del Código Federal de Procedimientos Civiles.
 </p>
 
 <div class="section-title">PRUEBAS</div>
 
 <p class="indent text-justify">
-    <strong>1. DOCUMENTAL PRIVADA.</strong> — Consistente en {{ prueba_documental | default("el contrato base de la
-    acción.") }}<br>
+    <strong>1. DOCUMENTAL PRIVADA.</strong> — Consistente en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Recibos de nómina, contrato de trabajo, credencial laboral y comprobantes de pago)</span><br>
     <strong>2. CONFESIONAL.</strong> — A cargo del demandado, quien deberá absolver posiciones.<br>
     <strong>3. TESTIMONIAL.</strong> — A cargo de los testigos que se ofrecerán oportunamente.<br>
     <strong>4. PRESUNCIONAL.</strong> — Legal y humana, en todo lo que favorezca a mi representación.
@@ -88,7 +79,6 @@
 
 <div style="margin-top:50px;">
     <div class="signature-block">
-        <div class="signature-line">{{ actor | default("EL ACTOR") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El actor)</span></div>
     </div>
 </div>
-{% endblock %}

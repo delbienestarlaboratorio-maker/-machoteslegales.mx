@@ -1,0 +1,298 @@
+[
+    {
+        "id": "civil-demanda-deuda-v1",
+        "slug": "demanda-pago-deuda-civil",
+        "title": "Demanda Civil por Pago de Deuda",
+        "legalBasis": [
+            "Arts. 1859-1950 CCDF"
+        ],
+        "description": "Demanda por deuda líquida y exigible entre particulares.",
+        "keywords": [
+            "cobro deuda civil",
+            "pagaré vencido",
+            "prestamo civil"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda Civil por Pago de Deuda</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL EN TURNO</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(María González López)</span></strong> demanda a <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Pedro Díaz Rojas)</span></strong> el pago de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(50,000.00)</span> derivados de préstamo otorgado el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(10 de enero de 2025)</span>, más intereses legales y costas.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Actora)</span></div></div>"
+    },
+    {
+        "id": "civil-contestacion-demanda-v1",
+        "slug": "contestacion-demanda-civil",
+        "title": "Contestación de Demanda Civil",
+        "legalBasis": [
+            "CPCCDF Arts. 260-280"
+        ],
+        "description": "Escrito de contestación oponiendo excepciones dilatorias y perentorias.",
+        "keywords": [
+            "contestación civil",
+            "espera y quitas",
+            "pago parcial"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Contestación de Demanda Civil</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Pedro Díaz Rojas)</span></strong>, contestando la demanda en el expediente <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(123/2026)</span>: Niego la acción. Opongo excepción de <strong>PRESCRIPCIÓN</strong> y de PAGO porque la deuda fue cubierta mediante transferencia del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15 de marzo de 2025)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Demandado)</span></div></div>"
+    },
+    {
+        "id": "civil-reconvencion-v1",
+        "slug": "demanda-reconvencional-civil",
+        "title": "Demanda Reconvencional Civil",
+        "legalBasis": [
+            "Art. 271 CPCDF"
+        ],
+        "description": "Contrademanda interpuesta por el demandado al contestar la demanda principal.",
+        "keywords": [
+            "reconvención civil",
+            "contrademanda"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda Reconvencional</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\">Al contestar la demanda, formulo <strong>RECONVENCIÓN</strong> reclamando a la actora daños y perjuicios por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(25,000.00)</span> derivados de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(incumplimiento en la entrega de la cosa pactada)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Reconvencionista)</span></div></div>"
+    },
+    {
+        "id": "civil-daño-moral-v1",
+        "slug": "demanda-dano-moral",
+        "title": "Demanda por Daño Moral",
+        "legalBasis": [
+            "Art. 1916 CCDF"
+        ],
+        "description": "Reclamo civil por afectación de honor, imagen o sentimientos por acto ilícito.",
+        "keywords": [
+            "daño moral",
+            "difamación civil",
+            "indemnización moral"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda por Daño Moral</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Lucía Pérez Mora)</span></strong> reclama a <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Editorial Novedades SA)</span></strong> indemnización de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(500,000.00)</span> por publicación falsa del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(5 de enero de 2026)</span> que lesionó su honor y reputación.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Actora)</span></div></div>"
+    },
+    {
+        "id": "civil-prescripcion-adquisitiva-v1",
+        "slug": "demanda-prescripcion-adquisitiva-civil",
+        "title": "Demanda de Prescripción Adquisitiva",
+        "legalBasis": [
+            "Arts. 1135-1156 CCDF"
+        ],
+        "description": "Usucapión civil para regularizar inmueble poseído más de 5 años de buena fe.",
+        "keywords": [
+            "usucapión",
+            "prescripción positiva",
+            "regularizar inmueble"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda de Prescripción Adquisitiva (Usucapión)</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Jalisco)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Roberto Fuentes Herrera)</span></strong> demanda la declaración de propiedad por prescripción del inmueble en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Av. Hidalgo 200)</span>, poseído de manera pacífica y continua desde el año <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2015)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Actor)</span></div></div>"
+    },
+    {
+        "id": "civil-nulidad-acto-v1",
+        "slug": "demanda-nulidad-acto-juridico",
+        "title": "Demanda de Nulidad de Acto Jurídico",
+        "legalBasis": [
+            "Arts. 1794-1859 CCDF"
+        ],
+        "description": "Nulidad absoluta o relativa de contrato por vicios del consentimiento o ilicitud.",
+        "keywords": [
+            "nulidad contrato",
+            "dolo error",
+            "rescisión civil"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda de Nulidad de Acto Jurídico</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Sandra Ruiz Álvarez)</span></strong> demanda la <strong>NULIDAD ABSOLUTA</strong> del contrato de compraventa de fecha <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(1 de enero de 2025)</span> por objeto ilícito; el inmueble se encontraba embargado.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Actora)</span></div></div>"
+    },
+    {
+        "id": "civil-cumplimiento-contrato-v1",
+        "slug": "demanda-cumplimiento-contrato-civil",
+        "title": "Demanda de Cumplimiento de Contrato",
+        "legalBasis": [
+            "Art. 1949 CCDF"
+        ],
+        "description": "Ejecución forzosa de la obligación pactada cuando el deudor incumple.",
+        "keywords": [
+            "cumplimiento forzoso",
+            "ejecución contrato civil"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda de Cumplimiento de Contrato</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Monterrey, N.L.)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Constructora Norte SA)</span></strong> exige el cumplimiento forzoso del contrato de obra del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15 de marzo de 2025)</span>, entregando el inmueble terminado conforme a especificaciones o en su defecto daños por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(200,000.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Actora)</span></div></div>"
+    },
+    {
+        "id": "civil-rescision-contrato-v1",
+        "slug": "demanda-rescision-contrato-civil",
+        "title": "Demanda de Rescisión de Contrato Civil",
+        "legalBasis": [
+            "Art. 1949 CCDF"
+        ],
+        "description": "Terminar el contrato por incumplimiento más reclamación de daños y perjuicios.",
+        "keywords": [
+            "rescisión contrato",
+            "resolución civil",
+            "daños incumplimiento"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda de Rescisión de Contrato</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Juan Arrendador)</span></strong> demanda la <strong>RESCISIÓN</strong> del contrato por falta de pago desde <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(agosto de 2025)</span>, el desahucio del inmueble y rentas vencidas de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(40,000.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Actor)</span></div></div>"
+    },
+    {
+        "id": "civil-sucesion-testamentaria-v1",
+        "slug": "apertura-juicio-sucesorio-testamentario",
+        "title": "Apertura de Sucesión Testamentaria",
+        "legalBasis": [
+            "Arts. 1288-1350 CCDF"
+        ],
+        "description": "Solicitud de apertura de juicio sucesorio con testamento público.",
+        "keywords": [
+            "sucesión testamentaria",
+            "herencia con testamento",
+            "albacea"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Apertura de Sucesión Testamentaria</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Rosa Gutiérrez)</span></strong>, heredera universal nombrada en testamento ante Notario <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(55 CDMX)</span>, solicita apertura de la sucesión de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Don Ernesto Gutiérrez Mora)</span> fallecido el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(10 de enero de 2026)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Heredera)</span></div></div>"
+    },
+    {
+        "id": "civil-sucesion-intestamentaria-v1",
+        "slug": "apertura-sucesion-intestamentaria-civil",
+        "title": "Solicitud de Sucesión Intestamentaria",
+        "legalBasis": [
+            "Arts. 1599-1636 CCDF"
+        ],
+        "description": "Apertura de sucesión cuando el fallecido no dejó testamento.",
+        "keywords": [
+            "intestamentario",
+            "herencia sin testamento",
+            "intestado"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Apertura de Sucesión Intestamentaria</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Mendoza hijo)</span></strong>, hijo reconocido legalmente del de cujus <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Mendoza Vidal)</span>, solicita apertura de la sucesión intestamentaria al haber fallecido sin dejar testamento el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(3 de enero de 2026)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Hijo Solicitante)</span></div></div>"
+    },
+    {
+        "id": "civil-desocupacion-v1",
+        "slug": "demanda-desocupacion-inmueble",
+        "title": "Demanda de Desocupación de Inmueble",
+        "legalBasis": [
+            "Arts. 2398-2496 CCDF"
+        ],
+        "description": "Acción para que el inquilino desocupe al vencer el contrato o incumplir pago.",
+        "keywords": [
+            "desocupación rentado",
+            "desahucio arrendamiento",
+            "terminación arrendamiento"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda de Desocupación de Inmueble Arrendado</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ ARRENDATARIO</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Propietario Juárez)</span></strong> demanda la desocupación del inmueble <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Calle 5 No. 20)</span> cuyo contrato venció el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(31 de diciembre de 2025)</span> y el inquilino se niega a entregar.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Propietario)</span></div></div>"
+    },
+    {
+        "id": "civil-accion-pauliana-v1",
+        "slug": "demanda-accion-pauliana",
+        "title": "Acción Pauliana (Fraude de Acreedores)",
+        "legalBasis": [
+            "Arts. 2163-2179 CCDF"
+        ],
+        "description": "Rescisión de actos fraudulentos del deudor realizados en perjuicio del acreedor.",
+        "keywords": [
+            "acción pauliana",
+            "fraude acreedores",
+            "insolvencia civil"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda de Acción Pauliana</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Banco del Norte SA)</span></strong> demanda la revocación de la donación entre <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Deudor X y su cónyuge)</span> del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(5 de enero de 2026)</span>, realizada en fraude de acreedores al provocar estado de insolvencia.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Banco Acreedor)</span></div></div>"
+    },
+    {
+        "id": "civil-interdicto-v1",
+        "slug": "interdicto-amparo-posesion",
+        "title": "Interdicto de Amparo a la Posesión",
+        "legalBasis": [
+            "Arts. 16-18 CPCDF"
+        ],
+        "description": "Acción inmediata para cesar actos de perturbación a la posesión de un inmueble.",
+        "keywords": [
+            "interdicto",
+            "perturbación posesión",
+            "despojo civil"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Interdicto de Amparo a la Posesión</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Mario Juárez)</span></strong> solicita el INTERDICTO DE AMPARO para que cesen los actos de perturbación a su posesión en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Av. Lomas 45)</span> realizados por el vecino <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Luis Ramos)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Poseedor)</span></div></div>"
+    },
+    {
+        "id": "civil-rendicion-cuentas-v1",
+        "slug": "demanda-rendicion-cuentas",
+        "title": "Demanda de Rendición de Cuentas",
+        "legalBasis": [
+            "Arts. 2569-2583 CCDF"
+        ],
+        "description": "Obliga a mandatarios o administradores a presentar cuentas detalladas de su gestión.",
+        "keywords": [
+            "rendición cuentas",
+            "mandato civil",
+            "gestión patrimonial"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda de Rendición de Cuentas</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carmen Soto)</span></strong> exige al mandatario <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Lic. Jorge Valle)</span> la rendición de cuentas detallada de la administración patrimonial desde <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2020)</span> hasta la fecha.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Actora)</span></div></div>"
+    },
+    {
+        "id": "civil-ofrecimiento-pago-v1",
+        "slug": "ofrecimiento-pago-consignacion",
+        "title": "Ofrecimiento de Pago por Consignación",
+        "legalBasis": [
+            "Arts. 2097-2111 CCDF"
+        ],
+        "description": "Cuando el acreedor se niega a recibir, el deudor consigna judicialmente.",
+        "keywords": [
+            "pago por consignación",
+            "acreedor renuente"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Ofrecimiento de Pago y Consignación</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Puebla, Pue.)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Juan Pérez)</span></strong> solicita consignar ante este Juzgado $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(30,000.00)</span> a favor de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(María García)</span> quien injustificadamente se ha negado a recibirlo, liberándome de la obligación.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Deudor)</span></div></div>"
+    },
+    {
+        "id": "civil-tutela-v1",
+        "slug": "solicitud-tutela-legitima",
+        "title": "Solicitud de Tutela Legítima",
+        "legalBasis": [
+            "Arts. 462-543 CCDF"
+        ],
+        "description": "Nombramiento de tutor para mayor de edad declarado en estado de interdicción.",
+        "keywords": [
+            "tutela legítima",
+            "interdicción civil",
+            "curador"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Tutela Legítima</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\">Solicito designación de tutor legítimo para <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(mi padre Miguel Ángel Soto)</span>, declarado en estado de interdicción el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(5 de diciembre de 2025)</span>. Me ofrezco como tutor al ser su hijo primogénito.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Solicitante)</span></div></div>"
+    },
+    {
+        "id": "civil-jactancia-v1",
+        "slug": "demanda-jactancia",
+        "title": "Demanda de Jactancia",
+        "legalBasis": [
+            "Arts. 4-10 CPCDF"
+        ],
+        "description": "Obliga a quien alardea de derechos a demandar formalmente o a callar definitivamente.",
+        "keywords": [
+            "jactancia civil",
+            "acción jactancia",
+            "derechos presuntos"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda de Jactancia</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa ABC SA)</span></strong> interpone acción de JACTANCIA contra <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Luis Ramírez)</span> quien afirma públicamente tener derechos sobre <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(el software comercial)</span> sin jamás haber demandado.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Actora)</span></div></div>"
+    },
+    {
+        "id": "civil-incidente-liquidacion-v1",
+        "slug": "incidente-liquidacion-condena",
+        "title": "Incidente de Liquidación de Condena",
+        "legalBasis": [
+            "Art. 514 CPCDF"
+        ],
+        "description": "Cuantificación exacta de daños e intereses tras obtener sentencia favorable.",
+        "keywords": [
+            "liquidación condena",
+            "cuantificar daños civiles",
+            "incidente ejecución"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Incidente de Liquidación de Sentencia</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\">En ejecución de sentencia firme del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(10 de febrero de 2026)</span>, liquido: capital $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(50,000)</span> + intereses al <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(10% anual durante 18 meses)</span> = $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(7,500)</span>. Total: $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(57,500.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Actor Vencedor)</span></div></div>"
+    },
+    {
+        "id": "civil-divorcio-mutuo-v1",
+        "slug": "divorcio-mutuo-consentimiento",
+        "title": "Solicitud de Divorcio por Mutuo Consentimiento",
+        "legalBasis": [
+            "Art. 266 CCDF"
+        ],
+        "description": "Divorcio amistoso sin hijos menores cuando ambos cónyuges están de acuerdo.",
+        "keywords": [
+            "divorcio mutuo acuerdo",
+            "divorcio amistoso"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Divorcio por Mutuo Consentimiento</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ana Laura Medina)</span></strong> y <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Ramírez)</span></strong> solicitan de mutuo acuerdo la disolución del vínculo matrimonial; no hay hijos menores de edad y la sociedad conyugal fue ya liquidada.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ambos Cónyuges) </span></div></div>"
+    },
+    {
+        "id": "civil-daños-materiales-v1",
+        "slug": "demanda-danos-perjuicios-materiales",
+        "title": "Demanda de Daños y Perjuicios Materiales",
+        "legalBasis": [
+            "Arts. 2104-2111 CCDF"
+        ],
+        "description": "Reclamación por daño material ocasionado ya sea por accidente, negligencia o incumplimiento.",
+        "keywords": [
+            "daños materiales",
+            "perjuicios civiles",
+            "accidente negligencia"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda de Daños y Perjuicios</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Víctor Alvarado)</span></strong> reclama a <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa Constructora XYZ)</span></strong> el pago de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(85,000.00)</span> por daños al inmueble colindante producidos durante la obra iniciada el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15 de octubre de 2025)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Actor)</span></div></div>"
+    }
+]

@@ -1,32 +1,24 @@
-{% extends "base_v2.html" %}
-
-{% block content %}
-<div class="header-v2">
+﻿<div class="header-v2">
     <div class="tier-badge">V2 NEGOCIOS</div>
     <h1>Acta Constitutiva — Sociedad Anónima de Capital Variable</h1>
     <p class="subtitle-v2">Arts. 6, 8, 87 y 89 de la Ley General de Sociedades Mercantiles · Incluye Órganos de
         Vigilancia y Tipos de Asambleas</p>
 </div>
 
-<p class="meta-line">Escritura Pública: {{ num_escritura | default("_______________") }} | Notaría No. {{ num_notaria |
-    default("___") }}, de {{ ciudad | default("Ciudad de México") }} a {{ fecha_actual_texto }}</p>
+<p class="meta-line">Escritura Pública: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span> | Notaría No. <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>, de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span> a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
 <!-- ═══════════════════════════════════════════════════ -->
 <!--                     PROEMIO                         -->
 <!-- ═══════════════════════════════════════════════════ -->
 
 <p class="indent text-justify">
-    En la ciudad de {{ ciudad | default("______________") }}, yo, el licenciado <strong>{{ nombre_notario |
-        default("NOMBRE DEL NOTARIO") }}</strong>, Titular de la Notaría Pública número {{ num_notaria | default("___")
-    }}, hago constar la constitución de una <strong>SOCIEDAD ANÓNIMA DE CAPITAL VARIABLE</strong>, que formalizan los
+    En la ciudad de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, yo, el licenciado <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Ernesto Fuentes Medina, Notario Público No. 45)</span></strong>, Titular de la Notaría Pública número <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>, hago constar la constitución de una <strong>SOCIEDAD ANÓNIMA DE CAPITAL VARIABLE</strong>, que formalizan los
     señores accionistas fundadores:
 </p>
 <ul style="margin-left: 40px; margin-bottom: 20px;">
-    <li><strong>{{ socio1.nombre | default("Socio Fundador 1") }}</strong>, mexicano(a), RFC: {{ socio1.rfc |
-        default("___") }}.</li>
-    <li><strong>{{ socio2.nombre | default("Socio Fundador 2") }}</strong>, mexicano(a), RFC: {{ socio2.rfc |
-        default("___") }}.</li>
-    {{ socios_extra | default("") }}
+    <li><strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Socio Fundador 1)</span></strong>, mexicano(a), RFC: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(GOML850312AB3)</span>.</li>
+    <li><strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Socio Fundador 2)</span></strong>, mexicano(a), RFC: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(GOML850312AB3)</span>.</li>
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>
 </ul>
 <p class="indent text-justify">
     Se obtiene el permiso de la Secretaría de Economía para uso de denominación, y los comparecientes otorgan los
@@ -38,21 +30,19 @@
 <div class="section-title numbered">I. DENOMINACIÓN, DOMICILIO, DURACIÓN Y OBJETO</div>
 
 <p class="indent text-justify double-space">
-    <strong>ARTÍCULO 1. DENOMINACIÓN:</strong> La denominación de la sociedad es <strong>{{ denominacion |
-        default("NOMBRE COMERCIAL, S.A. DE C.V.") }}</strong>, denominación que irá siempre seguida de las palabras
+    <strong>ARTÍCULO 1. DENOMINACIÓN:</strong> La denominación de la sociedad es <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre comercial, s.a. de c.v.)</span></strong>, denominación que irá siempre seguida de las palabras
     "Sociedad Anónima de Capital Variable" o de sus siglas "S.A. de C.V.".
 </p>
 <p class="indent text-justify double-space">
-    <strong>ARTÍCULO 2. DOMICILIO:</strong> El domicilio social se establece en la {{ domicilio_social | default("Ciudad
-    de México") }}, sin perjuicio de establecer agencias, sucursales u oficinas en cualquier parte de la República
+    <strong>ARTÍCULO 2. DOMICILIO:</strong> El domicilio social se establece en la <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>, sin perjuicio de establecer agencias, sucursales u oficinas en cualquier parte de la República
     Mexicana o del extranjero.
 </p>
 <p class="indent text-justify double-space">
-    <strong>ARTÍCULO 3. DURACIÓN:</strong> La duración de la sociedad será {{ duracion | default("INDEFINIDA") }}.
+    <strong>ARTÍCULO 3. DURACIÓN:</strong> La duración de la sociedad será <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Indefinida)</span>.
 </p>
 <p class="indent text-justify double-space">
     <strong>ARTÍCULO 4. OBJETO SOCIAL:</strong> La sociedad tiene por objeto principal: <br>
-    a) {{ objeto_1 | default("Comprar, vender, fabricar, distribuir e importar bienes y servicios...") }}. <br>
+    a) <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Comprar, vender, fabricar, distribuir e importar bienes y servicios...)</span>. <br>
     b) Obtener bienes muebles e inmuebles...<br>
     c) Contratar personal y celebrar toda clase de actos civiles y mercantiles conexos y necesarios para la realización
     del objeto social principal. (Con apego a las reformas de subcontratación de la LFT).
@@ -62,13 +52,10 @@
 
 <p class="indent text-justify double-space">
     <strong>ARTÍCULO 5. CAPITAL SOCIAL:</strong> El capital social es variable. La porción fija, sin derecho a retiro,
-    asciende a la cantidad de <strong>${{ capital_fijo | default("50,000.00") }} M.N.</strong> ({{ capital_letra |
-    default("Cincuenta mil pesos") }}). El capital variable es ilimitado.
+    asciende a la cantidad de <strong>$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(50,000.00)</span> M.N.</strong> (<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Cincuenta mil pesos)</span>). El capital variable es ilimitado.
 </p>
 <p class="indent text-justify double-space">
-    <strong>ARTÍCULO 6. ACCIONES:</strong> El capital social mínimo fijo está representado por <strong>{{ total_acciones
-        | default("50") }} acciones</strong> nominativas ordinarias, con valor nominal de ${{ valor_accion |
-    default("1,000.00") }} M.N. cada una.
+    <strong>ARTÍCULO 6. ACCIONES:</strong> El capital social mínimo fijo está representado por <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(55,000.00)</span> acciones</strong> nominativas ordinarias, con valor nominal de $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(1,000.00)</span> M.N. cada una.
 </p>
 <p class="indent text-justify double-space">
     Las acciones confieren a sus poseedores iguales derechos (Art. 112 LGSM). Han quedado suscritas y pagadas en
@@ -84,14 +71,14 @@
     </thead>
     <tbody>
         <tr>
-            <td>{{ socio1.nombre | default("Socio Uno") }}</td>
-            <td>{{ socio1.acciones | default("25") }}</td>
-            <td>${{ socio1.capital | default("25,000.00") }}</td>
+            <td><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Socio Uno)</span></td>
+            <td><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(25)</span></td>
+            <td>$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(25,000.00)</span></td>
         </tr>
         <tr>
-            <td>{{ socio2.nombre | default("Socio Dos") }}</td>
-            <td>{{ socio2.acciones | default("25") }}</td>
-            <td>${{ socio2.capital | default("25,000.00") }}</td>
+            <td><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Socio Dos)</span></td>
+            <td><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(25)</span></td>
+            <td>$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(25,000.00)</span></td>
         </tr>
     </tbody>
 </table>
@@ -121,14 +108,14 @@
 <div class="section-title numbered">IV. ADMINISTRACIÓN Y VIGILANCIA</div>
 <p class="indent text-justify double-space">
     <strong>ARTÍCULO 9. ADMINISTRADOR ÚNICO / CONSEJO:</strong> La dirección de la sociedad estará a cargo de un
-    <strong>{{ cargo_administrador | default("Administrador Único") }}</strong>, o bien, de un Consejo de
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Administrador Único)</span></strong>, o bien, de un Consejo de
     Administración, designado por la Asamblea General de Accionistas. A quienes ostenten el cargo se les confieren los
     poderes generales para pleitos y cobranzas, actos de administración y actos de riguroso dominio.
 </p>
 <p class="indent text-justify double-space">
     <strong>ARTÍCULO 10. COMISARIO (ÓRGANO DE VIGILANCIA):</strong> El cargo de comisario es temporal y revocable.
     Exigirá a los administradores la información financiera. En este acto, se designa como Comisario de la Sociedad a
-    <strong>{{ nombre_comisario | default("__________________") }}</strong>.
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong>.
 </p>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -144,8 +131,7 @@
 
 <div class="section-title numbered">TRANSITORIOS</div>
 <p class="indent text-justify">
-    <strong>PRIMERO:</strong> En este acto se elige como <strong>{{ cargo_administrador | default("Administrador Único")
-        }}</strong> al C. <strong>{{ nombre_admin_designado | default("__________________") }}</strong>. <br>
+    <strong>PRIMERO:</strong> En este acto se elige como <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Administrador Único)</span></strong> al C. <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong>. <br>
     <strong>SEGUNDO:</strong> Se otorga Poder General para Pleitos y Cobranzas, y Actos de Administración a los
     representantes legales.
 </p>
@@ -157,10 +143,10 @@
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:40px;">
     <div class="signature-block">
-        <div class="signature-line">{{ socio1.nombre | default("Socio Uno") }}<br>Accionista Fundador</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Socio Uno)</span><br>Accionista Fundador</div>
     </div>
     <div class="signature-block">
-        <div class="signature-line">{{ socio2.nombre | default("Socio Dos") }}<br>Accionista Fundador</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Socio Dos)</span><br>Accionista Fundador</div>
     </div>
 </div>
 
@@ -170,4 +156,3 @@
         Mercantiles y las reformas laborales recientes en México sobre objeto social y especialización. Prohibida su
         copia no autorizada.</p>
 </div>
-{% endblock %}

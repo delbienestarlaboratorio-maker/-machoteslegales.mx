@@ -1,0 +1,321 @@
+[
+    {
+        "id": "intl-contrato-compraventa-internacional-v1",
+        "slug": "contrato-compraventa-internacional-mercancias",
+        "title": "Contrato de Compraventa Internacional de Mercancías",
+        "legalBasis": [
+            "Convención de Viena CISG 1980",
+            "Incoterms 2020"
+        ],
+        "description": "Contrato de exportación/importación de mercancías con cláusulas de Incoterms, ley aplicable y arbitraje.",
+        "keywords": [
+            "compraventa internacional",
+            "contrato exportacion",
+            "CISG Incoterms"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Contrato de Compraventa Internacional de Mercancias</h1></div><p class=\"meta-line\">Celebrado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong>El Vendedor: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Exportadora Mexicana SA de CV, México)</span></strong> vende a <strong>El Comprador: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(USA Buyers Inc., Texas, EUA)</span></strong> la mercancía: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(5,000 kg de aguacate Hass)</span> bajo Incoterm <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(FOB Lázaro Cárdenas)</span> por USD <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">($18,000.00)</span>. Ley aplicable: CISG. Jurisdicción: CAM México.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Las Partes)</span></div></div>"
+    },
+    {
+        "id": "intl-carta-rogotaria-v1",
+        "slug": "carta-rogatoria-international",
+        "title": "Carta Rogatoria Internacional",
+        "legalBasis": [
+            "Art. 17 CPEUM",
+            "Convención Interamericana sobre Exhortos"
+        ],
+        "description": "Solicitud de cooperación judicial entre tribunales de distintos países para practicar diligencias.",
+        "keywords": [
+            "carta rogatoria internacional",
+            "exhorto internacional",
+            "cooperacion judicial CIDIP"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Carta Rogatoria Internacional</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">AUTORIDAD JUDICIAL COMPETENTE DE <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(España)</span></div><p class=\"indent text-justify\">El <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Juzgado 5 Civil de CDMX)</span> solicita cooperación judicial para que se practique la notificación a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Juan García, domiciliado en Madrid)</span> de la demanda civil <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Exp. 200/2026)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Juez Exhortante)</span></div></div>"
+    },
+    {
+        "id": "intl-contrato-agencia-exportacion-v1",
+        "slug": "contrato-agencia-exportacion-distribucion",
+        "title": "Contrato de Agencia para Exportación y Distribución",
+        "legalBasis": [
+            "CISG",
+            "Código de Comercio México"
+        ],
+        "description": "Acuerdo de distribución para que un agente extranjero comercialice productos mexicanos en su país.",
+        "keywords": [
+            "agencia exportacion contrato",
+            "distribucion internacional",
+            "agente exclusivo extranjero"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Contrato de Agencia Internacional para Distribucion</h1></div><p class=\"meta-line\">Celebrado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico y Colombia)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong>Exportadora: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Tequila Real SA, México)</span></strong> designa agente exclusivo a <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(ImportCol SAS, Colombia)</span></strong> para distribuir sus productos en Colombia, con comisión del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(12% sobre ventas netas)</span>, por plazo de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(3 años renovables)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Las Partes)</span></div></div>"
+    },
+    {
+        "id": "intl-reconocimiento-sentencia-extranjera-v1",
+        "slug": "solicitud-reconocimiento-sentencia-extranjera",
+        "title": "Solicitud de Reconocimiento de Sentencia Extranjera (Exequátur)",
+        "legalBasis": [
+            "Arts. 569-577 CFPC",
+            "Convención de Panamá 1975"
+        ],
+        "description": "Proceso ante juez mexicano para dar eficacia a una sentencia dictada en otro país.",
+        "keywords": [
+            "homologacion sentencia extranjera",
+            "exequatur Mexico",
+            "reconocimiento fallo extranjero"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Exequatur (Reconocimiento de Sentencia Extranjera)</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ DE DISTRITO EN MATERIA CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Maria Rodriguez)</span></strong> solicita el EXEQUATUR de la sentencia dictada el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15 de enero de 2026)</span> por el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Tribunal Superior de Madrid, España)</span> que condena a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Juan García)</span> al pago de EUR <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(50,000.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Solicitante)</span></div></div>"
+    },
+    {
+        "id": "intl-clausula-arbitraje-v1",
+        "slug": "clausula-arbitraje-internacional",
+        "title": "Cláusula de Arbitraje Internacional",
+        "legalBasis": [
+            "CISG Art. 6",
+            "Reglamento ICC 2021"
+        ],
+        "description": "Cláusula contractual que somete las controversias al arbitraje internacional bajo reglas ICC, UNCITRAL o CAM.",
+        "keywords": [
+            "clausula arbitraje ICC",
+            "arbitraje internacional contrato",
+            "disputas internacionales"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Clausula de Arbitraje Internacional</h1></div><p class=\"meta-line\">Para insertar en contrato de fecha <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong>ARBITRAJE:</strong> Toda controversia que surja del presente contrato se resolverá definitivamente mediante ARBITRAJE, bajo el Reglamento de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(la ICC / el CIADI)</span>. La sede del arbitraje será <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>. El idioma del arbitraje será <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(español)</span>. La ley sustantiva aplicable será <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(la de México)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Las Partes)</span></div></div>"
+    },
+    {
+        "id": "intl-contrato-joint-venture-v1",
+        "slug": "contrato-joint-venture-internacional",
+        "title": "Contrato de Joint Venture Internacional",
+        "legalBasis": [
+            "CISG",
+            "Ley de Inversión Extranjera"
+        ],
+        "description": "Acuerdo de empresa conjunta entre socios de distintos países para explotar un negocio en México o en el extranjero.",
+        "keywords": [
+            "joint venture internacional",
+            "asociacion empresas extranjeras",
+            "inversion extranjera Mexico"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Contrato de Joint Venture Internacional</h1></div><p class=\"meta-line\">Celebrado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico y Nueva York)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Grupo Industrial Mex SA)</span></strong> y <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(TechUSA Corp.)</span></strong> acuerdan la empresa conjunta para desarrollar <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(planta de energía solar en Sonora)</span>, con inversión de USD <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">($20,000,000.00)</span> y participación <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(51% México / 49% EUA)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Las Partes)</span></div></div>"
+    },
+    {
+        "id": "intl-carta-credito-v1",
+        "slug": "apertura-carta-credito-documentaria",
+        "title": "Apertura de Carta de Crédito Documentaria",
+        "legalBasis": [
+            "UCP 600 CCI",
+            "LGTOC Art. 290-307"
+        ],
+        "description": "Instrucción bancaria para abrir una carta de crédito que garantiza el pago internacional al exportador.",
+        "keywords": [
+            "carta de credito LC",
+            "UCP 600",
+            "pago internacional documentario"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Apertura de Carta de Credito Documentaria</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">BANCO EMISOR — DEPARTAMENTO DE COMERCIO EXTERIOR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Importadora Sur SA)</span></strong> solicita la apertura de una Carta de Crédito Irrevocable bajo UCP 600, a favor de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(ChileExport Ltda.)</span>, por USD <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">($85,000.00)</span> contra presentación de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Bill of Lading, factura comercial y certificado de origen)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Importador)</span></div></div>"
+    },
+    {
+        "id": "intl-poder-notarial-extranjero-v1",
+        "slug": "poder-notarial-uso-extranjero",
+        "title": "Poder Notarial para Uso en el Extranjero",
+        "legalBasis": [
+            "Convenio de La Haya",
+            "Ley del Notariado CDMX"
+        ],
+        "description": "Poder otorgado ante Notario mexicano, con apostille, para surtir efectos legales en otro país.",
+        "keywords": [
+            "poder notarial extranjero",
+            "apostille poder",
+            "mandato uso internacional"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Poder Notarial para Uso en el Extranjero</h1></div><p class=\"meta-line\">Ante el Notario No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(85 de CDMX)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Roberto Sánchez, mexicano)</span></strong> otorga PODER ESPECIAL a <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Attorney James Brown, Texas)</span></strong> para representarlo en procedimientos ante <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(el IRS y autoridades migratorias de EUA)</span>. Se solicita apostille para su uso en Estados Unidos.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Poderdante ante Notario)</span></div></div>"
+    },
+    {
+        "id": "intl-contrato-prestacion-servicios-v1",
+        "slug": "contrato-prestacion-servicios-internacional",
+        "title": "Contrato de Prestación de Servicios Internacional",
+        "legalBasis": [
+            "CISG Art. 1",
+            "Código de Comercio México"
+        ],
+        "description": "Acuerdo internacional por el cual una empresa mexicana presta servicios a un cliente extranjero.",
+        "keywords": [
+            "contrato servicios internacional",
+            "outsourcing Mexico",
+            "prestacion servicios exportacion"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Contrato Internacional de Prestacion de Servicios</h1></div><p class=\"meta-line\">Celebrado entre <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(TechMex SA, México)</span> y <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(DigitalCorp Ltd., Canadá)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><p class=\"indent text-justify\">TechMex prestará a DigitalCorp el servicio de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(desarrollo de software a medida para gestión de inventarios)</span> durante <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(12 meses)</span> por CAD <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">($120,000.00)</span> pagaderos mensualmente. Ley aplicable: México. Arbitraje: CAM.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Las Partes)</span></div></div>"
+    },
+    {
+        "id": "intl-convenio-doble-tributacion-v1",
+        "slug": "solicitud-beneficios-convenio-doble-tributacion",
+        "title": "Solicitud de Beneficios por Convenio de Doble Tributación",
+        "legalBasis": [
+            "Tratado MX-EUA para Evitar la Doble Imposición",
+            "Art. 4 LISR"
+        ],
+        "description": "Escrito para solicitar la aplicación del CDT entre México y otro país para evitar pagar impuesto doble.",
+        "keywords": [
+            "convenio doble tributacion",
+            "CDT Mexico",
+            "beneficios tratado fiscal"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Aplicacion de Convenio para Evitar la Doble Tributacion</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">SERVICIO DE ADMINISTRACION TRIBUTARIA</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Global Services Corp., residente fiscal en EUA)</span></strong> solicita la aplicación del artículo <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(16 del CDT México-EUA)</span> para aplicar la tasa reducida del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(10%)</span> sobre regalías pagadas desde México, en lugar de la tasa general del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(25%)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Contribuyente)</span></div></div>"
+    },
+    {
+        "id": "intl-demanda-arbitraje-ciadi-v1",
+        "slug": "demanda-arbitraje-ciadi-inversion",
+        "title": "Demanda de Arbitraje ante el CIADI",
+        "legalBasis": [
+            "Convenio CIADI",
+            "T-MEC Capítulo 11"
+        ],
+        "description": "Demanda internacional de un inversionista extranjero contra el Estado mexicano por violación del T-MEC.",
+        "keywords": [
+            "CIADI demanda",
+            "inversionista Estado TMEC",
+            "arbitraje inversion extranjera"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda de Arbitraje ante el CIADI</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Washington D.C. / Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">CENTRO INTERNACIONAL DE ARREGLO DE DIFERENCIAS RELATIVAS A INVERSIONES</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(USInvest Corp., inversionista de EUA)</span></strong> presenta demanda contra <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Estados Unidos Mexicanos)</span> por expropiación indirecta de su concesión minera valuada en USD <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">($150,000,000.00)</span>, en violación del Capítulo 14 del T-MEC.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Inversionista Demandante)</span></div></div>"
+    },
+    {
+        "id": "intl-acuerdo-confidencialidad-internacional-v1",
+        "slug": "acuerdo-confidencialidad-internacional",
+        "title": "Acuerdo de Confidencialidad Internacional (NDA Cross-Border)",
+        "legalBasis": [
+            "CISG",
+            "GDPR si aplica",
+            "LFPDPPP"
+        ],
+        "description": "NDA binacional para proteger información entre empresas de distintos países durante negociaciones.",
+        "keywords": [
+            "NDA internacional",
+            "confidencialidad bilateral",
+            "acuerdo secreto empresas extranjeras"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Acuerdo de Confidencialidad Internacional</h1></div><p class=\"meta-line\">Celebrado entre <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa MX SA, México)</span> y <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(German GmbH, Alemania)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><p class=\"indent text-justify\">Ambas partes acuerdan mantener en estricta confidencialidad toda información técnica, comercial y financiera intercambiada durante las negociaciones para el proyecto <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Planta de Manufactura Automotriz en San Luis Potosí)</span>, por un plazo de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(5 años)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Las Partes Internacionales)</span></div></div>"
+    },
+    {
+        "id": "intl-tm-ec-origen-v1",
+        "slug": "certificado-origen-t-mec",
+        "title": "Certificado de Origen T-MEC",
+        "legalBasis": [
+            "T-MEC Capítulo 5",
+            "Reglas de Origen Específicas"
+        ],
+        "description": "Declaración del exportador certificando que la mercancía cumple las reglas de origen del T-MEC para acceder a preferencias arancelarias.",
+        "keywords": [
+            "certificado origen TMEC",
+            "reglas origen Mexico",
+            "USMCA certificate of origin"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Certificado de Origen T-MEC / USMCA</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><p class=\"indent text-justify\">El exportador <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Auto-Partes MX SA de CV)</span></strong> CERTIFICA que la mercancía: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Asientos automotrices, fracción 9401.20, 500 piezas)</span> cumple las reglas de origen del T-MEC, con contenido regional de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(75%)</span>, siendo originaria de México.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Exportador Certificador)</span></div></div>"
+    },
+    {
+        "id": "intl-demanda-incumplimiento-contrato-v1",
+        "slug": "demanda-incumplimiento-contrato-internacional",
+        "title": "Demanda por Incumplimiento de Contrato Internacional",
+        "legalBasis": [
+            "CISG Art. 45-52",
+            "Código de Comercio"
+        ],
+        "description": "Acción ante tribunal o árbitro internacional por incumplimiento de obligaciones contractuales entre empresas de distintos países.",
+        "keywords": [
+            "incumplimiento contrato internacional",
+            "demanda CISG",
+            "proveedor extranjero incumple"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda por Incumplimiento de Contrato Internacional</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">TRIBUNAL ARBITRAL ICC</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Importadora Nacional SA)</span></strong> demanda a <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Asian Supplier Co., China)</span></strong> el pago de daños por USD <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">($250,000.00)</span> por entrega de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(mercancía defectuosa: 10,000 piezas de electrónica)</span> que no cumplió las especificaciones técnicas acordadas.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Parte Demandante)</span></div></div>"
+    },
+    {
+        "id": "intl-solicitud-extradicion-v1",
+        "slug": "solicitud-extradicion-internacional",
+        "title": "Solicitud de Extradición Internacional",
+        "legalBasis": [
+            "Arts. 10-22 Ley de Extradición",
+            "Tratados Bilaterales de Extradición"
+        ],
+        "description": "Solicitud formal del Estado Mexicano a otro país para que entregue a un individuo acusado de delito.",
+        "keywords": [
+            "extradicion Mexico",
+            "solicitud extradicion prófugo",
+            "tratado extradicion bilateral"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Extradicion Internacional</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">SECRETARIA DE RELACIONES EXTERIORES / EMBAJADA DE <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(EUA)</span></div><p class=\"indent text-justify\">Los <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Estados Unidos Mexicanos)</span> solicitan la EXTRADICION de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Juan García López)</span>, de nacionalidad mexicana, localizado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Phoenix, Arizona)</span>, reclamado por los delitos de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(fraude bancario y lavado de dinero)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(PGR / FGR)</span></div></div>"
+    },
+    {
+        "id": "intl-contrato-franquicia-internacional-v1",
+        "slug": "contrato-franquicia-internacional",
+        "title": "Contrato de Franquicia Internacional (Master Franchise)",
+        "legalBasis": [
+            "Art. 142 Ley de Propiedad Industrial",
+            "Código de Comercio"
+        ],
+        "description": "Acuerdo que otorga a un franquiciatario extranjero la subfranquicia maestra para operar en su territorio.",
+        "keywords": [
+            "franquicia internacional",
+            "master franchise",
+            "subfranquicia extranjero"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Contrato de Franquicia Internacional (Master)</h1></div><p class=\"meta-line\">Celebrado entre <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Tacos El Rey SA, México)</span> y <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Sabores Latinos LLC, EUA)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><p class=\"indent text-justify\">Se otorga la franquicia maestra para <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Texas, California y Florida)</span> para abrir hasta <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(50 unidades)</span> en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(10 años)</span>, con pago inicial de USD <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">($200,000.00)</span> y regalías del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(6%)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Las Partes)</span></div></div>"
+    },
+    {
+        "id": "intl-protecion-inversion-extranjera-v1",
+        "slug": "aviso-inversion-extranjera-cnie",
+        "title": "Aviso de Inversión Extranjera ante la CNIE",
+        "legalBasis": [
+            "Arts. 7-17 Ley de Inversión Extranjera"
+        ],
+        "description": "Notificación obligatoria a la CNIE cuando una empresa extranjera adquiere participación en empresa mexicana.",
+        "keywords": [
+            "inversion extranjera CNIE",
+            "aviso adquisicion empresa",
+            "autorización inversion extranjera"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Aviso de Inversion Extranjera ante la CNIE</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">COMISION NACIONAL DE INVERSIONES EXTRANJERAS</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(ForeignCorp Inc., Delaware, EUA)</span></strong> notifica la adquisición del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(49%)</span> del capital social de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Innovación Digital SA)</span>, empresa mexicana, por un monto de USD <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">($5,000,000.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Inversionista)</span></div></div>"
+    },
+    {
+        "id": "intl-pedimento-aduanal-v1",
+        "slug": "pedimento-importacion-aduanal",
+        "title": "Pedimento de Importación Aduanal",
+        "legalBasis": [
+            "Arts. 36-43 Ley Aduanera",
+            "Art. 73 Ley Aduanera"
+        ],
+        "description": "Declaración aduanera formal para ingresar mercancías a territorio mexicano cumpliendo requisitos arancelarios.",
+        "keywords": [
+            "pedimento importacion",
+            "aduana Mexico despacho",
+            "importar mercancias pedimento"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Pedimento de Importacion</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Aduana de Nuevo Laredo)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><p class=\"indent text-justify\">El agente aduanal <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Lic. Jorge Mares, Patente 1234)</span></strong> presenta pedimento de importación a nombre de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Importadora Norte SA)</span>: mercancía <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(maquinaria CNC, fracción 8457.10)</span>, valor USD <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">($280,000.00)</span>, procedente de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Japón)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Agente Aduanal)</span></div></div>"
+    },
+    {
+        "id": "intl-contrato-licencia-tecnologia-internacional-v1",
+        "slug": "contrato-licencia-tecnologia-internacional",
+        "title": "Contrato de Licencia Tecnológica Internacional",
+        "legalBasis": [
+            "CISG",
+            "Arts. 145-163 Ley de Propiedad Industrial"
+        ],
+        "description": "Acuerdo por el que una empresa extranjera licencia su tecnología patentada a una empresa mexicana.",
+        "keywords": [
+            "licencia tecnologia internacional",
+            "patente extranjera contrato",
+            "tecnologia licencia cross-border"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Contrato de Licencia Tecnologica Internacional</h1></div><p class=\"meta-line\">Celebrado entre <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(PatentCorp AG, Suiza)</span> y <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Manufactura Nacional SA, México)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><p class=\"indent text-justify\">PatentCorp licencia a Manufactura Nacional la patente <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(EP2025-00123 — Proceso de nano-recubrimiento)</span> para fabricación exclusiva en México, a cambio de regalías del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(8% sobre ventas anuales)</span> por <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15 años)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Las Partes)</span></div></div>"
+    },
+    {
+        "id": "intl-convenio-cooperacion-v1",
+        "slug": "convenio-cooperacion-institucional-internacional",
+        "title": "Convenio de Cooperación Institucional Internacional",
+        "legalBasis": [
+            "Convención de Viena sobre el Derecho de los Tratados"
+        ],
+        "description": "Acuerdo de cooperación entre instituciones mexicanas y extranjeras para proyectos conjuntos educativos, científicos o comerciales.",
+        "keywords": [
+            "convenio cooperacion institucional",
+            "acuerdo interinstitucional internacional",
+            "MOU Mexico"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Convenio de Cooperacion Institucional Internacional</h1></div><p class=\"meta-line\">Celebrado entre <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Universidad Autónoma de México)</span> y <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Universidad de Barcelona, España)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><p class=\"indent text-justify\">Ambas instituciones acuerdan un programa de cooperación académica que incluye: intercambio de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(20 estudiantes anuales)</span>, proyectos de investigación conjuntos en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(derecho comparado Méx-EU)</span> y programas de doble titulación.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Rectores de Ambas Instituciones)</span></div></div>"
+    }
+]

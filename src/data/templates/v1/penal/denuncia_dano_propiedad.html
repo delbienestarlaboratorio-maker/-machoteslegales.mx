@@ -1,24 +1,20 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Denuncia por Daño en Propiedad Ajena</h1>
     <p class="subtitle">Artículo 399 del Código Penal Federal &bull; Art. 222 CNPP</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto |
-    default("__ de ________ de 20__") }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold">C. AGENTE DEL MINISTERIO PÚBLICO</p>
-<p class="text-bold">{{ fiscalia | default("FISCALÍA GENERAL DE LA REPÚBLICA") }}</p>
+<p class="text-bold">C. <em style="font-size:9pt;color:#666;">(Ciudadano/Ciudadana)</em> AGENTE DEL MINISTERIO PÚBLICO</p>
+<p class="text-bold"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Fiscalía general de la república)</span></p>
 <p>PRESENTE.</p>
 
 <p class="indent text-justify">
-    <strong>{{ denunciante | default("NOMBRE DEL DENUNCIANTE") }}</strong>,
-    {{ nacionalidad | default("mexicano(a)") }}, mayor de edad, con domicilio en
-    {{ domicilio_denunciante | default("_________________________________") }},
-    identificándose con {{ identificacion | default("INE") }}
-    número {{ numero_id | default("_______________") }},
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del denunciante)</span></strong>,
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(francesa)</span>, mayor de edad, con domicilio en
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>,
+    identificándose con <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(INE)</span>
+    número <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>,
     ante usted respetuosamente comparezco para formular:
 </p>
 
@@ -26,7 +22,7 @@
 
 <p class="indent text-justify">
     Que vengo a denunciar y/o querellarme en contra de quien resulte responsable
-    (o en contra de <strong>{{ imputado | default("NOMBRE DEL IMPUTADO") }}</strong>),
+    (o en contra de <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Pedro Rojas Mendoza)</span></strong>),
     por la comisión del delito de <strong>DAÑO EN PROPIEDAD AJENA</strong>,
     previsto y sancionado por el artículo 399 del Código Penal Federal,
     con base en los siguientes:
@@ -35,29 +31,29 @@
 <div class="section-title">HECHOS</div>
 
 <p class="indent text-justify">
-    <strong>PRIMERO.</strong> — {{ hechos_primero | default("Con fecha ___ de _______ de 20__, siendo aproximadamente
+    <strong>PRIMERO.</strong> — <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Con fecha ___ de _______ de 20__, siendo aproximadamente
     las ___:___ horas, en el domicilio ubicado en _________________________________, el(los) hoy denunciado(s)
-    procedió(eron) a causar daño a mi propiedad consistente en _________________________________.") }}
+    procedió(eron) a causar daño a mi propiedad consistente en _________________________________.)</span>
 </p>
 
 <p class="indent text-justify">
-    <strong>SEGUNDO.</strong> — {{ hechos_segundo | default("El daño causado consistió específicamente en
+    <strong>SEGUNDO.</strong> — <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El daño causado consistió específicamente en
     _________________________________, lo cual tiene un valor estimado de $________ M.N.
-    (_________________________________ PESOS 00/100 MONEDA NACIONAL).") }}
+    (_________________________________ PESOS 00/100 MONEDA NACIONAL).)</span>
 </p>
 
 <p class="indent text-justify">
-    <strong>TERCERO.</strong> — {{ hechos_tercero | default("Los hechos descritos me causan un perjuicio patrimonial
+    <strong>TERCERO.</strong> — <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Los hechos descritos me causan un perjuicio patrimonial
     directo, toda vez que soy legítimo propietario del bien dañado, lo cual acredito con
-    _________________________________.") }}
+    _________________________________.)</span>
 </p>
 
 <div class="section-title">PRUEBAS</div>
 
 <p class="indent text-justify">
     <strong>a)</strong> Fotografías del bien dañado.<br>
-    <strong>b)</strong> {{ pruebas_adicionales | default("Factura, escritura o documento que acredite la propiedad del
-    bien.") }}<br>
+    <strong>b)</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Factura, escritura o documento que acredite la propiedad del
+    bien.)</span><br>
     <strong>c)</strong> Testimonio de los testigos de los hechos.<br>
     <strong>d)</strong> Avalúo o presupuesto de reparación del daño.<br>
     <strong>e)</strong> Las demás que resulten del curso de la investigación.
@@ -78,7 +74,6 @@
 
 <div style="margin-top:50px;">
     <div class="signature-block">
-        <div class="signature-line">{{ denunciante | default("EL DENUNCIANTE") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El denunciante)</span></div>
     </div>
 </div>
-{% endblock %}

@@ -1,13 +1,17 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import path from 'path'
+import fs from 'fs'
 import { allTemplates } from '@/data/templates'
 import { SPECIALTIES } from '@/data/specialties'
-import htmlMap from '@/data/templates/htmlMap'
 import StatefulTemplateViewer from '@/components/StatefulTemplateViewer'
 import AdBannerWrapper from '@/components/ads/AdBannerWrapper'
 import LaboralCalculatorSlugWrapper from '@/components/calculators/LaboralCalculatorSlugWrapper'
 import CheckoutButton from '@/components/CheckoutButton'
+import TrustBadges from '@/components/TrustBadges'
+import TestimonialsSection from '@/components/TestimonialsSection'
+import FAQSection from '@/components/FAQSection'
 
 interface Props {
     params: Promise<{ especialidad: string; slug: string }>
@@ -53,14 +57,26 @@ export default async function TemplatePage(props: Props) {
     )
     if (!template) notFound()
 
-    // Cargar HTML desde el mapa de imports (bundled en build time)
+    // Cargar HTML desde el sistema de archivos en build time (server component)
     let htmlContent = ''
-    const rawHtml = htmlMap[template.file] || ''
-    if (rawHtml) {
-        // Limpieza rápida de Jinja2
-        htmlContent = rawHtml.replace(/{%[\s\S]*?%}/g, '')
-        htmlContent = htmlContent.replace(/{{(.*?)}}/g, '<span style="background:#e8f0fe;color:#1a56db;padding:1px 6px;border-radius:4px;font-weight:600;border:1px solid #c2d9f2;">$1</span>')
-    } else {
+    try {
+        const filePath = path.join(process.cwd(), 'src', 'data', 'templates', template.file)
+        const rawHtml = fs.readFileSync(filePath, 'utf-8')
+        if (rawHtml) {
+            // Limpiar bloques de control Jinja2 ({% ... %}) — por si quedan en V3
+            htmlContent = rawHtml.replace(/{%[\s\S]*?%}/g, '')
+            // Para V3: convertir {{ variable | default("texto") }} → span azul con solo el texto del default
+            htmlContent = htmlContent.replace(
+                /\{\{\s*[\w.]+\s*\|\s*default\(\s*["']([^"']+)["']\s*\)\s*\}\}/g,
+                '<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;">($1)</span>'
+            )
+            // Variables sin default
+            htmlContent = htmlContent.replace(
+                /\{\{\s*([\w.]+)\s*\}\}/g,
+                '<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;">(completar)</span>'
+            )
+        }
+    } catch {
         htmlContent = `<p style="color:#999;text-align:center;padding:40px;">Preview no disponible para esta plantilla.</p>`
     }
 
@@ -124,6 +140,11 @@ export default async function TemplatePage(props: Props) {
                                 Suscribirse — Ver planes
                             </button>
                         )}
+                    </div>
+
+                    {/* Trust Badges */}
+                    <div className="mt-4">
+                        <TrustBadges />
                     </div>
 
                     {/* Fundamento Legal */}
@@ -214,6 +235,11 @@ export default async function TemplatePage(props: Props) {
                     Fundamentado en: {template.legalBasis.join(', ')}.
                 </p>
             </section>
+
+            {/* Trust Building Sections */}
+            <TestimonialsSection />
+            <FAQSection />
+
         </main>
     )
 }

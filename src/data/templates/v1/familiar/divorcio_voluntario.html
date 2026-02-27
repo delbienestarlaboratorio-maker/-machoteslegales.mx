@@ -1,23 +1,19 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Divorcio Voluntario Judicial</h1>
     <p class="subtitle">Artículos 272-A y 273 del Código Civil Federal</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto |
-    default("__ de ________ de 20__") }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold">C. JUEZ DE LO FAMILIAR</p>
-<p class="text-bold">{{ juzgado | default("JUZGADO DE LO FAMILIAR") }}</p>
+<p class="text-bold">C. <em style="font-size:9pt;color:#666;">(Ciudadano/Ciudadana)</em> JUEZ DE LO FAMILIAR</p>
+<p class="text-bold"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Juzgado de lo familiar)</span></p>
 <p>PRESENTE.</p>
 
 <p class="indent text-justify">
-    <strong>{{ conyuge_1 | default("NOMBRE DEL CÓNYUGE 1") }}</strong>
-    y <strong>{{ conyuge_2 | default("NOMBRE DEL CÓNYUGE 2") }}</strong>,
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del cónyuge 1)</span></strong>
+    y <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del cónyuge 2)</span></strong>,
     por nuestro propio derecho, señalando como domicilio para oír y recibir
-    notificaciones el ubicado en {{ domicilio | default("_________________________________") }},
+    notificaciones el ubicado en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>,
     ante usted respetuosamente comparecemos para promover:
 </p>
 
@@ -25,9 +21,9 @@
 
 <p class="indent text-justify">
     Solicitamos la disolución del vínculo matrimonial celebrado el día
-    {{ fecha_matrimonio | default("___ de _______ de ____") }},
-    ante {{ lugar_matrimonio | default("el Oficial del Registro Civil") }},
-    Acta número {{ numero_acta | default("___________") }}.
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(14 de febrero de 2015)</span>,
+    ante <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(el Oficial del Registro Civil)</span>,
+    Acta número <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>.
 </p>
 
 <div class="section-title">CONVENIO</div>
@@ -38,16 +34,15 @@
 </p>
 
 <p class="indent text-justify">
-    <strong>I. DOMICILIO.</strong> — {{ convenio_domicilio | default("Cada cónyuge habitará en domicilio separado a
-    partir de la fecha de la sentencia.") }}<br><br>
-    <strong>II. ALIMENTOS.</strong> — {{ convenio_alimentos | default("Los cónyuges renuncian a reclamar alimentos entre
-    sí, al contar cada uno con ingresos propios suficientes.") }}<br><br>
-    <strong>III. HIJOS MENORES.</strong> — {{ convenio_hijos | default("La guarda y custodia de los hijos menores
-    quedará a cargo de _________, con régimen de convivencia a favor de _________ los fines de semana.") }}<br><br>
-    <strong>IV. PENSIÓN ALIMENTICIA.</strong> — {{ convenio_pension | default("El cónyuge _________ se obliga a
-    proporcionar pensión alimenticia por la cantidad de $_______ mensuales para los hijos menores.") }}<br><br>
-    <strong>V. BIENES.</strong> — {{ convenio_bienes | default("Los bienes adquiridos durante el matrimonio se
-    liquidarán conforme al inventario adjunto.") }}
+    <strong>I. DOMICILIO.</strong> — <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span><br><br>
+    <strong>II. ALIMENTOS.</strong> — <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Los cónyuges renuncian a reclamar alimentos entre
+    sí, al contar cada uno con ingresos propios suficientes.)</span><br><br>
+    <strong>III. HIJOS MENORES.</strong> — <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(La guarda y custodia de los hijos menores
+    quedará a cargo de _________, con régimen de convivencia a favor de _________ los fines de semana.)</span><br><br>
+    <strong>IV. PENSIÓN ALIMENTICIA.</strong> — <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El cónyuge _________ se obliga a
+    proporcionar pensión alimenticia por la cantidad de $_______ mensuales para los hijos menores.)</span><br><br>
+    <strong>V. BIENES.</strong> — <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Los bienes adquiridos durante el matrimonio se
+    liquidarán conforme al inventario adjunto.)</span>
 </p>
 
 <div class="section-title">PUNTOS PETITORIOS</div>
@@ -63,10 +58,9 @@
 
 <div style="display:flex; gap:40px; margin-top:50px;">
     <div class="signature-block" style="flex:1;">
-        <div class="signature-line">{{ conyuge_1 | default("CÓNYUGE 1") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Cónyuge 1)</span></div>
     </div>
     <div class="signature-block" style="flex:1;">
-        <div class="signature-line">{{ conyuge_2 | default("CÓNYUGE 2") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Cónyuge 2)</span></div>
     </div>
 </div>
-{% endblock %}

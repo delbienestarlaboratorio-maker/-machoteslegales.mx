@@ -1,0 +1,304 @@
+[
+  {
+    "id": "familiar-divorcio-incausado-v1",
+    "slug": "demanda-divorcio-incausado",
+    "title": "Demanda de Divorcio Incausado",
+    "legalBasis": [
+      "Art. 266 CCDF"
+    ],
+    "description": "Divorcio sin necesidad de expresar causa ante Juez Familiar.",
+    "keywords": [
+      "divorcio incausado",
+      "separación matrimonial",
+      "pensión alimenticia"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Divorcio Incausado</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ DE LO FAMILIAR EN TURNO</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ana Laura Medina Soto)</span></strong> solicita la disolución del vínculo matrimonial con <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Ramírez Pérez)</span></strong>, contraído el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15 de mayo de 2015)</span> ante el Registro Civil de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Benito Juárez, CDMX)</span>. Se acompañan propuesta de convenio regulador y medidas provisionales.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Actora)</span></div></div>"
+  },
+  {
+    "id": "familiar-pension-alimenticia-v1",
+    "slug": "demanda-pension-alimenticia",
+    "title": "Demanda de Pensión Alimenticia",
+    "legalBasis": [
+      "Arts. 301-323 CCDF"
+    ],
+    "description": "Fijación judicial de alimentos para menores o cónyuge por incumplimiento voluntario.",
+    "keywords": [
+      "pensión alimenticia",
+      "alimentos menores",
+      "obligación alimentaria"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Fijación de Pensión Alimenticia</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(María González López)</span></strong>, en representación de sus menores hijos, demanda a <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Pedro Díaz Rojas)</span></strong> el pago de pensión alimenticia equivalente al <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(40%)</span> de sus ingresos mensuales, más el otorgamiento urgente de medidas provisionales de pensión.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Actora)</span></div></div>"
+  },
+  {
+    "id": "familiar-guarda-custodia-v1",
+    "slug": "demanda-guarda-custodia-menores",
+    "title": "Demanda de Guarda y Custodia",
+    "legalBasis": [
+      "Arts. 282-283 CCDF",
+      "Arts. 414-416 Bis CCDF"
+    ],
+    "description": "Asignación judicial de custodia de menores en proceso de divorcio o separación.",
+    "keywords": [
+      "guarda custodia",
+      "menores divorcio",
+      "patria potestad"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Guarda y Custodia de Menores</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(María González)</span></strong> solicita se le otorgue la <strong>GUARDA Y CUSTODIA</strong> de los menores <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Sofía, 8 años, y Diego, 5 años)</span> y se establezca régimen de visitas del padre.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Madre)</span></div></div>"
+  },
+  {
+    "id": "familiar-visitas-v1",
+    "slug": "demanda-regimen-visitas",
+    "title": "Demanda de Régimen de Visitas",
+    "legalBasis": [
+      "Art. 416 Ter CCDF"
+    ],
+    "description": "Establecimiento judicial del derecho de convivencia entre padre no custodio e hijos.",
+    "keywords": [
+      "régimen visitas",
+      "convivencia menores",
+      "padre no custodio"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Régimen de Visitas y Convivencias</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Ramírez)</span></strong>, padre de los menores, solicita se establezca un <strong>RÉGIMEN DE VISITAS</strong> que le permita convivir con sus hijos los fines de semana alternos, días festivos por mitad y la mitad del periodo vacacional.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Padre)</span></div></div>"
+  },
+  {
+    "id": "familiar-aumento-pension-v1",
+    "slug": "demanda-aumento-pension-alimenticia",
+    "title": "Demanda de Aumento de Pensión Alimenticia",
+    "legalBasis": [
+      "Art. 311 CCDF"
+    ],
+    "description": "Incremento de la pensión cuando han aumentado las necesidades de los acreedores o los ingresos del deudor.",
+    "keywords": [
+      "aumento pensión alimentos",
+      "más pensión",
+      "revisión alimentos"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Aumento de Pensión Alimenticia</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(María González)</span></strong> solicita el <strong>AUMENTO</strong> de la pensión fijada en convenio del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2022)</span>, ya que el deudor recibió aumento salarial del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(30%)</span> y los menores han entrado a gastos escolares adicionales.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Acreedora Alimentaria)</span></div></div>"
+  },
+  {
+    "id": "familiar-adopcion-v1",
+    "slug": "solicitud-adopcion-plena",
+    "title": "Solicitud de Adopción Plena",
+    "legalBasis": [
+      "Arts. 390-410 CCDF"
+    ],
+    "description": "Proceso judicial para adoptar a un menor bajo tutela del DIF con plenos efectos de filiación.",
+    "keywords": [
+      "adopción plena",
+      "adoptar menor DIF",
+      "filiación adoptiva"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Adopción Plena</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR / SISTEMA DIF</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Roberto y Lucía Fuentes)</span></strong>, matrimonio con 5 años de casados, solicitamos la <strong>ADOPCIÓN PLENA</strong> del menor <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Emiliano, 4 años)</span> resguardado por el DIF desde <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2023)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Solicitantes)</span></div></div>"
+  },
+  {
+    "id": "familiar-patria-potestad-v1",
+    "slug": "demanda-perdida-patria-potestad",
+    "title": "Demanda de Pérdida de Patria Potestad",
+    "legalBasis": [
+      "Art. 444 CCDF"
+    ],
+    "description": "Privación judicial de la patria potestad por abandono, violencia o delito grave del progenitor.",
+    "keywords": [
+      "pérdida patria potestad",
+      "abandono menores",
+      "violencia progenitor"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Pérdida de Patria Potestad</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(María González)</span></strong> demanda la <strong>PÉRDIDA DE LA PATRIA POTESTAD</strong> del progenitor <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Pedro Díaz)</span> por abandono ininterrumpido de más de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(dos años)</span> y haber sido condenado por delito de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(violencia familiar)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Madre)</span></div></div>"
+  },
+  {
+    "id": "familiar-declaracion-maternidad-v1",
+    "slug": "demanda-reconocimiento-filiacion",
+    "title": "Demanda de Reconocimiento de Filiación",
+    "legalBasis": [
+      "Arts. 340-381 CCDF"
+    ],
+    "description": "Acción para que el padre reconozca judicialmente al hijo no inscrito o confirmación por prueba de ADN.",
+    "keywords": [
+      "reconocimiento filiación",
+      "paternidad judicial",
+      "ADN inscripción"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Reconocimiento de Filiación</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Sofía Ramírez)</span></strong>, demandando a <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Luis Torres)</span></strong>, exige el <strong>RECONOCIMIENTO JUDICIAL DE FILIACIÓN</strong> de su menor hijo de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(3 años)</span>, solicitando prueba de ADN para su inclusión en el acta de nacimiento.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Madre)</span></div></div>"
+  },
+  {
+    "id": "familiar-violencia-medidas-v1",
+    "slug": "solicitud-medidas-proteccion-violencia",
+    "title": "Solicitud de Medidas de Protección por Violencia Familiar",
+    "legalBasis": [
+      "Ley General de Acceso de las Mujeres a una Vida Libre de Violencia",
+      "Art. 282 CCDF"
+    ],
+    "description": "Órdenes de protección urgentes ante el Juez Familiar o el Ministerio Público.",
+    "keywords": [
+      "medidas protección violencia",
+      "orden alejamiento",
+      "violencia familiar"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Órdenes de Protección</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR / AGENTE DEL MP</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ana Pérez)</span></strong> solicita de manera <strong>URGENTE</strong> órdenes de protección contra <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Jorge Herrera)</span>: orden de alejamiento mínimo de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(500 metros)</span> del domicilio y trabajo, y restricción de comunicación.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Solicitante)</span></div></div>"
+  },
+  {
+    "id": "familiar-intestamentario-familiar-v1",
+    "slug": "demanda-sucesion-familiar-intestamentaria",
+    "title": "Juicio Sucesorio Intestamentario Familiar",
+    "legalBasis": [
+      "Arts. 1599-1668 CCDF"
+    ],
+    "description": "Tramitación ante Juez Familiar de la herencia cuando no hay testamento.",
+    "keywords": [
+      "sucesión familiar intestamentaria",
+      "herederos sin testamento",
+      "albacea familiar"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Sucesión Intestamentaria (Familiar)</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Elena Soto)</span></strong>, cónyuge del de cujus <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Arturo Soto)</span> fallecido el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(5 de enero de 2026)</span> sin testamento, solicita apertura del juicio sucesorio intestamentario y designación de albacea.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Cónyuge Supérstite)</span></div></div>"
+  },
+  {
+    "id": "familiar-convenio-divorcio-v1",
+    "slug": "convenio-regulador-divorcio",
+    "title": "Convenio Regulador de Divorcio",
+    "legalBasis": [
+      "Art. 267 CCDF"
+    ],
+    "description": "Acuerdo sobre guarda, alimentos, visitas y bienes que ambos cónyuges presentan al Juez.",
+    "keywords": [
+      "convenio divorcio",
+      "acuerdo pensión",
+      "bienes divorciados"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Convenio Regulador de Divorcio</h1></div><p class=\"meta-line\">Celebrado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\">Los cónyuges <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ana y Carlos)</span></strong> acordamos: <br><strong>PRIMERO.</strong> Guarda y custodia a la madre. <br><strong>SEGUNDO.</strong> Régimen de visitas para el padre: fines de semana alternos y vacaciones por mitad. <br><strong>TERCERO.</strong> Pensión de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(6,000)</span> mensuales. <br><strong>CUARTO.</strong> El inmueble conyugal se adjudica a favor de la actora.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ambos Cónyuges y Abogados)</span></div></div>"
+  },
+  {
+    "id": "familiar-tutela-menor-v1",
+    "slug": "solicitud-tutela-menor-orfano",
+    "title": "Solicitud de Tutela de Menor Huérfano",
+    "legalBasis": [
+      "Arts. 462-543 CCDF"
+    ],
+    "description": "Nombramiento judicial de tutor para menor cuyos padres han fallecido o fueron privados de la patria potestad.",
+    "keywords": [
+      "tutor menor",
+      "huérfano tutela",
+      "menor desprotegido"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud Nombramiento de Tutor para Menor</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Abuela Carmen Gómez)</span></strong> solicita ser nombrada tutora de su nieto <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Emilio, 9 años)</span>, quien quedó huérfano por el fallecimiento de ambos progenitores en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(noviembre de 2025)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Abuela Solicitante)</span></div></div>"
+  },
+  {
+    "id": "familiar-interdiccion-v1",
+    "slug": "demanda-declaracion-interdiccion",
+    "title": "Demanda de Declaración de Interdicción",
+    "legalBasis": [
+      "Arts. 450-466 CCDF"
+    ],
+    "description": "Proceso para declarar incapaz a un mayor de edad por trastorno mental permanente.",
+    "keywords": [
+      "interdicción adulto",
+      "incapacidad civil",
+      "curador juridico"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Declaración de Estado de Interdicción</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Hijo Roberto Soto)</span></strong> demanda la declaración de estado de <strong>INTERDICCIÓN</strong> de su padre <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Miguel Soto)</span> diagnosticado con demencia senil avanzada, ofreciendo dictamen psiquiátrico del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(IMSS)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Actor)</span></div></div>"
+  },
+  {
+    "id": "familiar-alimentos-mayores-v1",
+    "slug": "demanda-alimentos-ascendientes",
+    "title": "Demanda de Alimentos para Ascendientes",
+    "legalBasis": [
+      "Arts. 301-323 CCDF"
+    ],
+    "description": "Pensión alimenticia de hijos adultos hacia padres en situación de vulnerabilidad.",
+    "keywords": [
+      "alimentos padres",
+      "pensión ascendientes",
+      "adultos mayores alimentación"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Alimentos para Ascendientes</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Don Ernesto García, 72 años)</span></strong>, sin ingresos propios, demanda a sus hijos <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ernesto Jr. y Lupita García)</span> el pago de alimentos proporcionales a su capacidad económica.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Actor)</span></div></div>"
+  },
+  {
+    "id": "familiar-divorcio-necesario-v1",
+    "slug": "demanda-divorcio-causas-graves",
+    "title": "Demanda de Separación por Causas Graves (Div. Necesario)",
+    "legalBasis": [
+      "Art. 267 CCDF (causales históricas) / Legislación Estatal"
+    ],
+    "description": "Estados que aún conservan el divorcio necesario, listando causas específicas como adulterio o violencia.",
+    "keywords": [
+      "divorcio necesario",
+      "causa divorcio",
+      "adulterio divorcio estatal"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Divorcio Necesario</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Xalapa, Veracruz)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Luisa Pérez)</span></strong> demanda el divorcio necesario fundándose en la causal de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(violencia familiar con sentencia penal ejecutoriada)</span> prevista en el Código Civil del Estado.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Actora)</span></div></div>"
+  },
+  {
+    "id": "familiar-solicitud-antecedentes-v1",
+    "slug": "solicitud-acta-de-nacimiento-rectificacion",
+    "title": "Rectificación de Acta de Nacimiento",
+    "legalBasis": [
+      "Arts. 134-139 CCDF"
+    ],
+    "description": "Corrección de errores materiales en acta de nacimiento (nombre, fechas, parentesco) ante Juez Familiar.",
+    "keywords": [
+      "rectificación acta nacimiento",
+      "error acta civil",
+      "corrección nombre registro"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Rectificación de Acta del Estado Civil</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\">Solicito la rectificación de mi acta de nacimiento número <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(00112)</span> del Registro Civil de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Iztapalapa)</span> en la que se asentó erróneamente mi primer nombre como <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Marta)</span> siendo el correcto <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Martha)</span>, como acredito con mi CURP y acta de bautismo.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Solicitante)</span></div></div>"
+  },
+  {
+    "id": "familiar-impugnacion-paternidad-v1",
+    "slug": "demanda-impugnacion-paternidad",
+    "title": "Demanda de Impugnación de Paternidad",
+    "legalBasis": [
+      "Arts. 329-334 CCDF"
+    ],
+    "description": "Acción del marido o terceros para destruir la presunción de paternidad sobre un hijo inscrito.",
+    "keywords": [
+      "impugnación paternidad",
+      "negar paternidad",
+      "hijo no biológico"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Impugnación de Paternidad</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Juan Torres)</span></strong> impugna la paternidad del menor <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Lucas Torres, inscrito en 2022)</span> al haber tenido conocimiento de su no paternidad. Solicita prueba de ADN para desvirtuar la presunción legal.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Actor)</span></div></div>"
+  },
+  {
+    "id": "familiar-alimentos-provisionales-v1",
+    "slug": "solicitud-alimentos-provisionales",
+    "title": "Solicitud de Alimentos Provisionales",
+    "legalBasis": [
+      "Art. 282 Fracc. XIV CCDF"
+    ],
+    "description": "Petición urgente de pensión provisional mientras se tramita el juicio principal de alimentos.",
+    "keywords": [
+      "alimentos provisionales urgentes",
+      "pensión temporal",
+      "medidas cautelares alimentos"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Alimentos Provisionales</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\">Como <strong>MEDIDA CAUTELAR URGENTE</strong> dentro del juicio de alimentos iniciado, solicito se fije una <strong>PENSIÓN PROVISIONAL</strong> de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(4,000.00)</span> mensuales a cargo del demandado, toda vez que los menores requieren sustento alimentario inmediato.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Acreedora Alimentaria)</span></div></div>"
+  },
+  {
+    "id": "familiar-reduccion-pension-v1",
+    "slug": "demanda-reduccion-pension-alimenticia",
+    "title": "Demanda de Reducción de Pensión Alimenticia",
+    "legalBasis": [
+      "Art. 311 CCDF"
+    ],
+    "description": "Solicitud del deudor para bajar la pensión cuando han disminuido sus ingresos o aumentado sus cargas.",
+    "keywords": [
+      "reducción alimentos",
+      "bajar pensión",
+      "cambio circunstancias"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Reducción de Pensión Alimenticia</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Ramírez)</span></strong> solicita la REDUCCIÓN de la pensión fijada en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2023)</span>, ya que perdió su empleo el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(enero de 2026)</span> y actualmente percibe solamente $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(8,000.00)</span> mensuales por trabajos eventuales.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Deudor Alimentario)</span></div></div>"
+  },
+  {
+    "id": "familiar-reduccion-pension-v1",
+    "slug": "demanda-reduccion-pension-alimenticia",
+    "title": "Demanda de Reduccion de Pension Alimenticia",
+    "legalBasis": [
+      "Art. 311 CCDF"
+    ],
+    "description": "Solicitud del deudor para bajar la pension cuando disminuyen sus ingresos o aumentan cargas.",
+    "keywords": [
+      "reduccion alimentos",
+      "bajar pension",
+      "cambio circunstancias alimentarias"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Reduccion de Pension Alimenticia</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ FAMILIAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Ramirez)</span></strong> solicita la REDUCCION de la pension fijada en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2023)</span>, ya que perdio su empleo el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(enero de 2026)</span> y actualmente percibe solo $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(8,000.00)</span> mensuales.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Deudor Alimentario)</span></div></div>"
+  }
+]

@@ -1,126 +1,80 @@
-{% extends "base_v2.html" %}
-
-{% block content %}
 <div class="header-v2">
-    <div class="tier-badge">V2 NEGOCIOS</div>
-    <h1>Poder General para Pleitos y Cobranzas, Actos de Administración y de Dominio</h1>
-    <p class="subtitle-v2">Arts. 2554 y 2558 del Código Civil Federal · Cláusulas de Revocación y Facultades Especiales
-    </p>
+    <span class="tier-badge">PROFESIONAL</span>
+    <h1>Poder General para Pleitos y Cobranzas</h1>
+    <p class="subtitle-v2">Código Civil Federal — Arts. 2553-2586 | Ley del Notariado</p>
 </div>
 
-<p class="meta-line">Escritura Pública No. {{ num_escritura | default("_______________") }} | Notaría No. {{ num_notaria
-    | default("___") }}, a {{ fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<!-- ═══════════════════════════════════════════════════ -->
-<!--                     PROEMIO                         -->
-<!-- ═══════════════════════════════════════════════════ -->
+<div class="section-title">PODER GENERAL PARA PLEITOS Y COBRANZAS</div>
+<p class="indent text-justify">Ante el Lic. <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Ernesto Fuentes Medina, Notario Público No. 45)</span></strong>, Notario Número <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong> del Estado de <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span></strong>, compareció:</p>
 
-<p class="indent text-justify">
-    En la ciudad de {{ ciudad | default("______________") }}, yo, el Licenciado <strong>{{ nombre_notario |
-        default("NOMBRE DEL NOTARIO") }}</strong>, Notario Público número {{ num_notaria | default("___") }}, hago
-    constar el otorgamiento del <strong>PODER GENERAL PARA PLEITOS Y COBRANZAS, ACTOS DE ADMINISTRACIÓN Y ACTOS DE
-        RIGUROSO DOMINIO</strong> que otorga:
-</p>
+<p class="indent text-justify"><strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre completo del poderdante)</span></strong>,
+    mexicano(a), mayor de edad, con CURP <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(GOML850312HDFNRR09)</span>, domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>, identificado(a) con <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(credencial para votar (INE))</span> número <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>, expedida por <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(el INE)</span>; actuando en su carácter de <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(víctima directa del delito)</span></strong> (en adelante EL PODERDANTE);
+    y manifestó su voluntad de otorgar <strong>PODER GENERAL PARA PLEITOS Y COBRANZAS</strong>, en los términos del
+    artículo <strong>2554 del Código Civil Federal</strong>, a favor de:</p>
 
-<p class="indent text-justify double-space" style="margin-left: 40px; border-left: 3px solid #111; padding-left: 15px;">
-    <strong>EL PODERDANTE:</strong> {{ poderdante.nombre | default("NOMBRE DEL OTORGANTE") }}, de nacionalidad {{
-    poderdante.nacionalidad | default("Mexicana") }}, estado civil {{ poderdante.estado_civil |
-    default("_______________") }}, ocupación {{ poderdante.ocupacion | default("_______________") }}, nacido el {{
-    poderdante.fecha_nacimiento | default("___") }}, con RFC {{ poderdante.rfc | default("___") }} y domicilio en {{
-    poderdante.domicilio | default("_______________") }}.
-</p>
+<p class="indent text-justify"><strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre completo del apoderado)</span></strong>,
+    mexicano(a), mayor de edad, Licenciado(a) en Derecho con cédula profesional número <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(3847291)</span></strong>, expedida por la Dirección General de Profesiones de la SEP, con
+    domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span> (en adelante EL
+    APODERADO);</p>
 
-<p class="indent text-justify" style="margin-top: 20px;">
-    Para que sea ejercido a favor de:
-</p>
+<div class="section-title">FACULTADES CONFERIDAS</div>
+<p class="indent text-justify">El presente poder confiere al APODERADO las facultades más amplias para:</p>
 
-<p class="indent text-justify double-space" style="margin-left: 40px; border-left: 3px solid #111; padding-left: 15px;">
-    <strong>EL APODERADO:</strong> {{ apoderado.nombre | default("NOMBRE DEL APODERADO") }}, con domicilio en {{
-    apoderado.domicilio | default("_______________") }}.
-</p>
+<p class="indent text-justify"><strong>I. REPRESENTACIÓN JUDICIAL:</strong> Representar al PODERDANTE ante toda clase de
+    Juzgados, Tribunales, Juntas de Conciliación y Arbitraje, Tribunales Administrativos, Federales y Locales, Tribunal
+    Electoral, Tribunal Federal de Justicia Administrativa, Suprema Corte de Justicia de la Nación, y cualquier otra
+    autoridad jurisdiccional o administrativa, tanto de la Federación como de los Estados y Municipios.</p>
 
-<!-- ═══════════════════════════════════════════════════ -->
-<!--                  CLÁUSULAS                          -->
-<!-- ═══════════════════════════════════════════════════ -->
-<div class="section-title numbered">CLÁUSULAS DEL MANDATO</div>
+<p class="indent text-justify"><strong>II. ACCIONES Y EXCEPCIONES:</strong> Ejercitar toda clase de acciones judiciales,
+    oponer excepciones y defensas, reconvenir, contestar reconvenciones, formular alegatos, ofrecer, desahogar y objetar
+    pruebas de toda naturaleza.</p>
 
-<p class="indent text-justify double-space">
-    <strong>PRIMERA. PLEITOS Y COBRANZAS:</strong> Se otorga PODER GENERAL PARA PLEITOS Y COBRANZAS, con todas las
-    facultades generales y las especiales que requieran cláusula especial conforme a la ley, en los términos del primer
-    párrafo del artículo 2554 del Código Civil Federal. El apoderado podrá representar al poderdante ante particulares y
-    toda clase de autoridades administrativas y jurisdiccionales (Federales, Estatales o Municipales), Ministerios
-    Públicos, Juntas de Conciliación, Tribunales Laborales y ante la Procuraduría Federal del Consumidor (PROFECO). <br>
-    De manera enunciativa y no limitativa, podrá contestar demandas, oponer excepciones, reconvenir, someterse a
-    arbitraje, articular y absolver posiciones, recusar magistrados, promover amparos y desistirse de ellos, así como
-    formular querellas y otorgar perdones penales.
-</p>
+<p class="indent text-justify"><strong>III. ACTOS PROCESALES:</strong> Presentar demandas, contestar emplazamientos,
+    interponer recursos ordinarios y extraordinarios (apelación, revisión, nulidad, amparo directo e indirecto),
+    desistirse de acciones y recursos; absolver y articular posiciones; recusar Jueces, Magistrados y Ministros;
+    comprometer en árbitros y arbitradores.</p>
 
-<div class="jurisprudencia-box">
-    <p class="jurisprudencia-titulo">FACULTADES EN MATERIA LABORAL:</p>
-    <p class="jurisprudencia-texto">
-        En términos de los artículos 11, 46, 47, 692, 786, 876 de la Ley Federal del Trabajo, el apoderado cuenta con
-        representación patronal plena para acudir a audiencias de conciliación, demanda y excepciones, pudiendo celebrar
-        convenios laborales y rescindir contratos de trabajo válidamente.
-    </p>
+<p class="indent text-justify"><strong>IV. COBRANZAS:</strong> Realizar toda clase de gestiones de cobro extrajudicial;
+    demandar el pago de cantidades adeudadas; recibir pagos y suscribir recibos y finiquitos; transigir y comprometer;
+    celebrar convenios de pago; ejecutar sentencias; adjudicarse bienes en remate.</p>
+
+<p class="indent text-justify"><strong>V. ACTOS SOBRE BIENES:</strong> Solicitar la anotación preventiva o definitiva de
+    embargos; comparecer en almonedas y subastas; adjudicarse bienes en pago de créditos; librar, endosar y avalar
+    títulos de crédito en representación del PODERDANTE.</p>
+
+<p class="indent text-justify"><strong>VI. LIMITACIONES:</strong> El presente poder <strong>NO comprende</strong> la
+    facultad de enajenar, gravar o donar bienes inmuebles del PODERDANTE, ni la de constituir nuevas obligaciones a su
+    cargo que no sean las derivadas del ejercicio de las acciones y cobros objeto del presente instrumento. Para dichos
+    actos se requiere poder especial.</p>
+
+<div class="section-title">VIGENCIA Y REVOCACIÓN</div>
+<p class="indent text-justify">El presente poder tendrá vigencia <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(indefinida / hasta
+        el __/__/__)</span></strong> y podrá ser revocado en cualquier momento por el PODERDANTE mediante escrito ante
+    Notario Público o mediante oficio dirigido al Apoderado con acuse de recibo. La revocación no afectará los actos
+    válidamente realizados con anterioridad.</p>
+
+<div class="section-title">SUSTITUCIÓN</div>
+<p class="indent text-justify">El Apoderado <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Sí / no)</span> podrá sustituir total o
+    parcialmente el presente poder, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(con previa autorización escrita del Poderdante)</span>.</p>
+
+<div class="signature-block"
+    style="margin-top:40px; display:grid; grid-template-columns:1fr 1fr; gap:30px; text-align:center;">
+    <div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El poderdante)</span></div>
+    </div>
+    <div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(EL APODERADO (Acepta))</span></div>
+    </div>
 </div>
 
-<p class="indent text-justify double-space">
-    <strong>SEGUNDA. ACTOS DE ADMINISTRACIÓN:</strong> Se otorga PODER GENERAL PARA ACTOS DE ADMINISTRACIÓN, en los
-    términos del segundo párrafo del artículo 2554 del Código Civil Federal, para que administre los bienes y negocios
-    del poderdante, defienda sus intereses, celebre contratos de arrendamiento, prestación de servicios, apertura de
-    cuentas bancarias y gestione toda clase de trámites fiscales ante el Servicio de Administración Tributaria (SAT).
-</p>
-
-<p class="indent text-justify double-space">
-    <strong>TERCERA. ACTOS DE DOMINIO:</strong> Se otorga PODER GENERAL PARA ACTOS DE DOMINIO, en los términos del
-    tercer párrafo del artículo 2554 del Código Civil Federal, facultando al apoderado para que actue con todas las
-    facultades de dueño, tanto en lo relativo a los bienes del poderdante, como para hacer toda clase de gestiones para
-    adquirir bienes por cualquier título legítimo. Podrá comprar, vender, donar, permutar, hipotecar y pignorar.
-</p>
-
-{{ clausula_limitacion | default("
-<p class='indent text-justify double-space'>
-    <strong>CUARTA. LIMITACIONES DEL PODER (OPCIONAL):</strong> El presente poder general de dominio queda expresamente
-    limitado en cuanto a su objeto, de manera que el apoderado única y exclusivamente podrá ejercer los actos de dominio
-    respecto del bien inmueble ubicado en [DIRECCIÓN DEL INMUEBLE EXCLUSIVO]. Para cualquier otro bien, el apoderado no
-    tendrá facultades de riguroso dominio.
-</p>
-") }}
-
-<p class="indent text-justify double-space">
-    <strong>QUINTA. SUSCRIPCIÓN DE TÍTULOS DE CRÉDITO:</strong> Se otorgan facultades plenas en los términos del
-    artículo 9 de la Ley General de Títulos y Operaciones de Crédito, para emitir, suscribir, endosar y avalar toda
-    clase de pagarés, cheques y letras de cambio a nombre del mandante.
-</p>
-
-<p class="indent text-justify double-space">
-    <strong>SEXTA. DELEGACIÓN O SUSTITUCIÓN:</strong> El apoderado <strong>{{ facultad_sustitucion | default("SÍ")
-        }}</strong> queda expresamente facultado para sustituir o delegar, total o parcialmente, el presente poder en
-    favor de terceros, reservándose o no su ejercicio concurrente.
-</p>
-
-<p class="indent text-justify double-space">
-    <strong>SÉPTIMA. REVOCABILIDAD Y VIGENCIA:</strong> Este mandato es de carácter REVOCABLE. Tendrá una vigencia de
-    <strong>{{ vigencia_poder | default("3 (TRES) AÑOS") }}</strong> contados a partir de la firma del presente
-    instrumento, extinguiéndose automáticamente a su término si no fuere revocado previamente por el mandante.
-</p>
-
-<!-- ═══════════════════════════════════════════════════ -->
-<!--                    CIERRE                           -->
-<!-- ═══════════════════════════════════════════════════ -->
-<p class="indent text-justify" style="margin-top: 30px;">
-    Yo, el Notario, certifico que me aseguré de la identidad del otorgante y de que tiene capacidad legal requerida,
-    habiéndole leído el presente poder y manifestando su plena conformidad.
-</p>
-
-<div class="signature-block" style="margin-top:40px; margin-left: auto; margin-right: auto;">
-    <div class="signature-line">{{ poderdante.nombre | default("NOMBRE Y FIRMA DEL PODERDANTE") }}</div>
+<div style="text-align:center; margin-top:30px;">
+    <div class="signature-line" style="max-width:300px; margin:0 auto;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Ernesto Fuentes Medina, Notario Público No. 45)</span></div>
+    <p style="font-size:10pt;">Notario Público Número <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span> — Sello y Fe Notarial</p>
 </div>
 
-<div class="confidencialidad-v2">
-    <p><strong>AVISO V2 NEGOCIOS — PODER NOTARIAL BLINDADO</strong></p>
-    <p>Esta es una redacción notarial depurada de Machotes Legales®. Incluye cláusulas explícitas sobre materia laboral (LFT) y
-        títulos de crédito (LGTOC), además de opciones de protección limitativa de dominio para evitar fraudes
-        patrimoniales.</p>
-</div>
-{% endblock %}
+<div class="confidencialidad-v2"><strong>NOTA NOTARIAL:</strong> Para que este poder tenga plena validez y sea oponible
+    a terceros, debe ser protocolizado ante Notario Público e inscrito, cuando así lo requiera la ley, en el Registro
+    Público de Comercio o de la Propiedad. Un poder otorgado mediante carta poder simple (sin Notario) solo es válido
+    para gestiones ante dependencias gubernamentales y no para representación en juicios.</div>

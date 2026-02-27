@@ -1,37 +1,33 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Amparo contra Actos del SAT</h1>
     <p class="subtitle">Arts. 103, 107 CPEUM · Ley de Amparo · CFF</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold">C. JUEZ DE DISTRITO EN MATERIA ADMINISTRATIVA EN TURNO</p>
+<p class="text-bold">C. <em style="font-size:9pt;color:#666;">(Ciudadano/Ciudadana)</em> JUEZ DE DISTRITO EN MATERIA ADMINISTRATIVA EN TURNO</p>
 <p class="text-bold">P R E S E N T E</p>
 
 <p class="indent text-justify">
-    <strong>{{ cliente.nombre | default("NOMBRE DEL QUEJOSO") }}</strong>,
-    con RFC {{ rfc | default("_______________") }},
-    señalando domicilio en {{ cliente.domicilio | default("_________________________________") }},
-    autorizando a {{ abogado.nombre | default("_________________________________") }},
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></strong>,
+    con RFC <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(GOML850312AB3)</span>,
+    señalando domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Coyoacán, Ciudad de México, C.P. 04000)</span>,
+    autorizando a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Francisco Sánchez Torres)</span>,
     promuevo <strong>AMPARO INDIRECTO</strong> contra actos del Servicio de Administración Tributaria.
 </p>
 
 <div class="section-title">AUTORIDADES RESPONSABLES</div>
 <p class="indent text-justify">
-    <strong>Ordenadora:</strong> {{ autoridad_ordenadora | default("Administrador General de Recaudación del SAT")
-    }}<br>
-    <strong>Ejecutora:</strong> {{ autoridad_ejecutora | default("Administrador Desconcentrado de Recaudación en
-    [estado]") }}
+    <strong>Ordenadora:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Administrador General de Recaudación del SAT)</span><br>
+    <strong>Ejecutora:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Administrador Desconcentrado de Recaudación en
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(estado)</span>)</span>
 </p>
 
 <div class="section-title">ACTO RECLAMADO</div>
 <p class="indent text-justify">
-    {{ acto_reclamado | default("El crédito fiscal número [número], notificado el [fecha], por concepto de
-    [ISR/IVA/multa], por la cantidad de $[monto], así como el procedimiento administrativo de ejecución iniciado en su
-    contra, incluyendo el embargo de [bienes/cuentas bancarias].") }}
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El crédito fiscal número <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(número)</span>, notificado el <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(fecha)</span>, por concepto de
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(ISR/IVA/multa)</span>, por la cantidad de $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(monto)</span>, así como el procedimiento administrativo de ejecución iniciado en su
+    contra, incluyendo el embargo de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(bienes/cuentas bancarias)</span>.)</span>
 </p>
 
 <div class="section-title">DERECHOS VIOLADOS</div>
@@ -42,19 +38,18 @@
 
 <div class="section-title">CONCEPTOS DE VIOLACIÓN</div>
 <p class="indent text-justify double-space">
-    <strong>PRIMERO.-</strong> {{ concepto_1 | default("El acto reclamado viola el artículo 16 constitucional al carecer
+    <strong>PRIMERO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El acto reclamado viola el artículo 16 constitucional al carecer
     de debida fundamentación y motivación, en virtud de que la autoridad no señala con precisión el precepto legal
-    aplicable ni las circunstancias particulares del caso.") }}
+    aplicable ni las circunstancias particulares del caso.)</span>
 </p>
 <p class="indent text-justify double-space">
-    <strong>SEGUNDO.-</strong> {{ concepto_2 | default("Se viola el principio de proporcionalidad tributaria (Art. 31
-    fr. IV) porque el monto determinado no corresponde a la capacidad contributiva real del quejoso.") }}
+    <strong>SEGUNDO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Se viola el principio de proporcionalidad tributaria (Art. 31
+    fr. IV) porque el monto determinado no corresponde a la capacidad contributiva real del quejoso.)</span>
 </p>
 
 <div class="section-title">SUSPENSIÓN</div>
 <p class="indent text-justify">
-    Solicito suspensión provisional y definitiva. Conforme al artículo 135 de la Ley de Amparo, ofrezco garantía por ${{
-    garantia | default("___") }} para que no se ejecute el crédito fiscal. De ejecutarse, se causarían daños de
+    Solicito suspensión provisional y definitiva. Conforme al artículo 135 de la Ley de Amparo, ofrezco garantía por $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span> para que no se ejecute el crédito fiscal. De ejecutarse, se causarían daños de
     imposible reparación.
 </p>
 
@@ -76,6 +71,5 @@
 <p class="text-center text-bold" style="margin-top:30px;">PROTESTO LO NECESARIO</p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA DEL QUEJOSO") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></div>
 </div>
-{% endblock %}

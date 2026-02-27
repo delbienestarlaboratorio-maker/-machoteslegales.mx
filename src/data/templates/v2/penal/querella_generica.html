@@ -1,31 +1,72 @@
 <div class="header-v2">
-<span class="tier-badge">PROFESIONAL</span>
-<h1>Querella Penal Genérica</h1>
-<p class="subtitle-v2">Arts. 221-225 CNPP</p>
+    <span class="tier-badge">PROFESIONAL</span>
+    <h1>Querella General por Delito Perseguible a Petición de Parte</h1>
+    <p class="subtitle-v2">Código Nacional de Procedimientos Penales — Arts. 109 Fracción VII, 127 y 221 CNPP</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto | default("__ de ________ de 20__") }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="indent text-justify">Formato de querella penal adaptable a cualquier delito perseguible por querella de parte.</p>
+<div class="section-title">C. <em style="font-size:9pt;color:#666;">(Ciudadano/Ciudadana)</em> AGENTE DEL MINISTERIO PÚBLICO DE LA FEDERACIÓN</div>
+<p class="indent text-justify">Fiscalía <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(General de la República)</span></p>
 
-<div class="section-title">FUNDAMENTO LEGAL</div>
-<p class="indent text-justify">El presente documento se fundamenta en Arts. 221-225 CNPP y demás disposiciones aplicables del marco jurídico mexicano vigente.</p>
+<p class="indent text-justify"><strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Carlos Armando Pérez Ruiz)</span></strong>,
+    mexicano(a), mayor de edad, CURP <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(GOML850312HDFNRR09)</span>, domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Juárez 78, Col. Del Valle, Benito Juárez, Ciudad de México, C.P. 03100)</span>, identificado(a) con <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(credencial de elector (INE))</span> número <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>, ante Usted formulo
+    <strong>QUERELLA PENAL</strong> en contra de <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Armando Vega Salinas)</span></strong> (o contra quien resulte responsable), con domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Av. Universidad 123, Col. Narvarte, Ciudad de México, C.P. 03020)</span>, por los siguientes hechos:</p>
 
-<div class="section-title">DATOS DEL PROMOVENTE</div>
-<p class="indent text-justify"><strong>{{ nombre_promovente | default("NOMBRE COMPLETO") }}</strong>, {{ nacionalidad | default("mexicano(a)") }}, mayor de edad, con domicilio en {{ domicilio | default("_________________________________") }}, identificándose con {{ identificacion | default("credencial para votar (INE)") }} número {{ numero_id | default("_______________") }}.</p>
+<div class="section-title">I. TIPO DE DELITO QUE SE DENUNCIA</div>
+<p class="indent text-justify">El delito cuya investigación solicito es: <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(abuso de confianza)</span></strong>, previsto y sancionado en el artículo <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Artículo ___ del
+        Código Penal Federal / del Estado de ___)</span></strong>, con una penalidad de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(___
+    meses/años de prisión y multa de ___ a ___ días de UMA)</span>.</p>
 
-<div class="section-title">HECHOS</div>
-<p class="indent text-justify"><strong>PRIMERO.</strong> — {{ hecho_1 | default("Relacionar los hechos que motivan la presentación de este documento, indicando fechas, lugares y circunstancias relevantes.") }}</p>
-<p class="indent text-justify"><strong>SEGUNDO.</strong> — {{ hecho_2 | default("Describir las consecuencias jurídicas y fácticas de los hechos narrados.") }}</p>
-<p class="indent text-justify"><strong>TERCERO.</strong> — {{ hecho_3 | default("Señalar los elementos de prueba o indicios que soportan la pretensión.") }}</p>
+<div class="section-title">II. NARRACIÓN DE LOS HECHOS</div>
+<p class="indent text-justify"><strong>PRIMERO.</strong> — <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el primer hecho cronológicamente, con fecha, lugar y personas involucradas)</span>.</p>
+<p class="indent text-justify"><strong>SEGUNDO.</strong> — <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el segundo hecho, describiendo la conducta del demandado)</span>.</p>
+<p class="indent text-justify"><strong>TERCERO.</strong> — <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el tercer hecho y sus consecuencias para el promovente)</span>.</p>
+<p class="indent text-justify"><strong>CUARTO.</strong> — <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí hechos adicionales si los hubiere)</span>.</p>
 
-<div class="section-title">PETICIONES</div>
-<p class="indent text-justify"><strong>PRIMERA.</strong> — Tener por presentado el presente escrito en los términos solicitados.<br>
-<strong>SEGUNDA.</strong> — Dar trámite conforme a derecho corresponda.<br>
-<strong>TERCERA.</strong> — {{ peticion_especifica | default("Resolver favorablemente la pretensión del promovente.") }}</p>
+<div class="section-title">III. DATOS DEL QUERELLADO</div>
+<p class="indent text-justify"><strong>Nombre completo:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Armando Vega Salinas)</span><br>
+    <strong>Domicilio conocido:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Av. Universidad 123, Col. Narvarte, Ciudad de México, C.P. 03020)</span><br>
+    <strong>Lugar de trabajo / empresa:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span><br>
+    <strong>Teléfono:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span><br>
+    <strong>Señas particulares:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span><br>
+    <strong>Relación con el querellante:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(desconocido / ex socio / vecino / arrendatario
+    / proveedor / etc.)</span>
+</p>
 
-<p class="indent text-justify">PROTESTO LO NECESARIO.</p>
+<div class="section-title">IV. CUANTIFICACIÓN DEL DAÑO</div>
+<p class="indent text-justify">El daño <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(patrimonial / físico / moral)</span></strong>
+    sufrido asciende a la cantidad de <strong>$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(18,000.00)</span> M.N.</strong>, conforme al
+    siguiente desglose: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(describir cómo se calculó el daño: valor del bien / gastos médicos /
+    lucro cesante / daño emergente / daño moral)</span>.</p>
 
-<div class="signature-block" style="margin-top:50px;"><div class="signature-line">{{ nombre_promovente | default("EL PROMOVENTE") }}</div></div>
+<div class="section-title">V. PRUEBAS QUE SE OFRECEN</div>
+<p class="indent text-justify"><strong>a) DOCUMENTAL:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Contratos / Facturas / Recibos /
+    Transcripciones de mensajes / Fotografías / Videos / Capturas de pantalla / Cartas notariales / Pólizas de seguro /
+    Registros bancarios)</span>.</p>
+<p class="indent text-justify"><strong>b) TESTIMONIAL:</strong> <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ana Lucía Torres Soto)</span></strong> (<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ana Lucía Torres Soto)</span>), domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ana Lucía Torres Soto)</span>.</p>
+<p class="indent text-justify"><strong>c) PERICIAL:</strong> Solicito la práctica de dictamen <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(valuatorio / contable / médico / grafoscópico / informático / grafológico)</span> para acreditar el daño
+    causado.</p>
 
-<div class="confidencialidad-v2"><strong>AVISO:</strong> Este documento es una plantilla profesional de Machotes Legales. Su uso no sustituye la asesoría de un abogado titulado.</div>
+<div class="section-title">VI. PETICIONES AL MINISTERIO PÚBLICO</div>
+<p class="indent text-justify"><strong>PRIMERA.</strong> — Se tenga por formulada la presente querella penal conforme al
+    artículo <strong>221 del CNPP</strong>.</p>
+<p class="indent text-justify"><strong>SEGUNDA.</strong> — Se inicie la carpeta de investigación y se asigne número de
+    folio.</p>
+<p class="indent text-justify"><strong>TERCERA.</strong> — Se recabe la declaración del querellado y se practiquen las
+    diligencias necesarias para la integración de la carpeta.</p>
+<p class="indent text-justify"><strong>CUARTA.</strong> — De acreditarse los elementos del tipo penal y la probable
+    responsabilidad, se ejerza la acción penal y se solicite la reparación del daño por la cantidad de $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(18,000.00)</span> M.N.</p>
+<p class="indent text-justify"><strong>QUINTA.</strong> — Se me notifique de cualquier avance en la investigación
+    conforme al artículo <strong>109 fracción VIII del CNPP</strong>.</p>
+
+<p class="indent text-justify" style="margin-top:24px;">PROTESTO LO NECESARIO.</p>
+
+<div class="signature-block" style="margin-top:50px;">
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Carlos Armando Pérez Ruiz)</span></div>
+</div>
+
+<div class="confidencialidad-v2"><strong>RECORDATORIO:</strong> La querella solo puede ser presentada por la víctima
+    directa o su representante legal. Si el delito es de los perseguibles únicamente por querella (lesiones leves, robo
+    entre familiares, etc.), retirar la querella extingue la acción penal. Conserve una copia sellada de esta querella
+    como comprobante.</div>

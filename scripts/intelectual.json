@@ -1,0 +1,306 @@
+[
+    {
+        "id": "pi-registro-marca-v1",
+        "slug": "solicitud-registro-marca-impi",
+        "title": "Solicitud de Registro de Marca ante el IMPI",
+        "legalBasis": [
+            "Arts. 87-111 Ley de Propiedad Industrial"
+        ],
+        "description": "Tramite para registrar una marca comercial, de servicios, colectiva o de certificacion.",
+        "keywords": [
+            "registro marca IMPI",
+            "marca comercial registro",
+            "proteger marca Mexico"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Registro de Marca</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">INSTITUTO MEXICANO DE LA PROPIEDAD INDUSTRIAL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Bebidas Nacionales SA de CV)</span></strong> solicita el REGISTRO DE MARCA denominativa <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(REFRES-K)</span>, en la clase internacional <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(32)</span> para distinguir: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(bebidas refrescantes, aguas carbonatadas, jugos en todas sus variedades)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Solicitante / Agente de PI)</span></div></div>"
+    },
+    {
+        "id": "pi-demanda-infraccion-marca-v1",
+        "slug": "demanda-infraccion-marca-registrada",
+        "title": "Demanda por Infracción de Marca Registrada",
+        "legalBasis": [
+            "Arts. 213-218 Ley de Propiedad Industrial"
+        ],
+        "description": "Accion ante el IMPI para declarar la infraccion por uso no autorizado de marca registrada.",
+        "keywords": [
+            "infraccion marca",
+            "plagio marca comercial",
+            "usurpar marca IMPI"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda de Declaracion Administrativa de Infraccion de Marca</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">IMPI – SUBDIRECCION DE SUPERVISION</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Laboratorios Lux SA)</span></strong> demanda a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Productos Copy SA)</span> por INFRACCION: comercializar cremas bajo el nombre <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(LUX-IT)</span> identico a nuestra marca registrada bajo el numero <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(1234567)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Titular de la Marca)</span></div></div>"
+    },
+    {
+        "id": "pi-registro-patente-v1",
+        "slug": "solicitud-patente-invencion-impi",
+        "title": "Solicitud de Patente de Invención",
+        "legalBasis": [
+            "Arts. 15-52 Ley de Propiedad Industrial"
+        ],
+        "description": "Tramite para proteger una invencion nueva, con nivel inventivo y aplicacion industrial.",
+        "keywords": [
+            "registro patente IMPI",
+            "patente invencion Mexico",
+            "proteger invencion IMPI"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Patente de Invencion</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">IMPI – SUBDIRECCION DE PATENTES</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Tecnologias Verdes SA)</span></strong> solicita patente de invencion para el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Sistema de captacion de energia solar mediante celdas fotovoltaicas con eficiencia del 47%)</span>, invencion nueva, con nivel inventivo y aplicacion industrial comprobados. Se incluyen los <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(12 reclamos principales)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Solicitante / Agente)</span></div></div>"
+    },
+    {
+        "id": "pi-licencia-marca-v1",
+        "slug": "contrato-licencia-uso-marca",
+        "title": "Contrato de Licencia de Uso de Marca",
+        "legalBasis": [
+            "Arts. 136-140 Ley de Propiedad Industrial"
+        ],
+        "description": "Acuerdo por el cual el titular de una marca autoriza a terceros su uso bajo terminos y condiciones.",
+        "keywords": [
+            "licencia marca contrato",
+            "autorizar uso marca",
+            "royalties marca mexico"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Contrato de Licencia de Uso de Marca</h1></div><p class=\"meta-line\">Celebrado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong>El Licenciante: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Grupo Alimentos SA)</span></strong> otorga licencia no exclusiva de la marca registrada <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(NATUREX)</span> al <strong>Licenciatario: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Distribuidora Centro SA)</span></strong> para el territorio <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Zona Centro de Mexico)</span>, con regalias del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(5% de ventas netas mensuales)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Licenciante y Licenciatario)</span></div></div>"
+    },
+    {
+        "id": "pi-registro-derecho-autor-v1",
+        "slug": "registro-obra-indautor",
+        "title": "Registro de Obra ante el INDAUTOR",
+        "legalBasis": [
+            "Arts. 18-29 Ley Federal del Derecho de Autor"
+        ],
+        "description": "Tramite para registrar una obra literaria, artistica, musical o de software ante el INDAUTOR.",
+        "keywords": [
+            "registro derecho autor",
+            "INDAUTOR registrar obra",
+            "proteger obra creativa"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Registro de Obra ante el INDAUTOR</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">INDAUTOR – SECRETARIA DE CULTURA</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Jorge Avila Reyes)</span></strong> solicita el registro de la obra <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Ciudad Invisible, novela literaria)</span> de su autoria, con <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(320 paginas)</span>, terminada en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(enero de 2026)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Autor)</span></div></div>"
+    },
+    {
+        "id": "pi-demanda-violacion-derechos-autor-v1",
+        "slug": "demanda-violacion-derechos-autor",
+        "title": "Demanda por Violación de Derechos de Autor",
+        "legalBasis": [
+            "Arts. 213-234 Ley Federal del Derecho de Autor"
+        ],
+        "description": "Accion civil o penal contra quien reproduzca, distribuya o modifique una obra sin autorizacion del titular.",
+        "keywords": [
+            "pirateria derechos autor",
+            "plagio obra literaria",
+            "infraccion copyright Mexico"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda por Violacion de Derechos de Autor</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL / IMPI</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Editorial Nacional SA)</span></strong> demanda a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Impresos Pirata SA)</span> por reproducir sin autorizacion <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(3,000 copias)</span> del libro <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Derecho Simplificado)</span> cuyo titular es la actora, causando danos por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(200,000.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Actora)</span></div></div>"
+    },
+    {
+        "id": "pi-nombre-comercial-v1",
+        "slug": "solicitud-nombre-comercial-impi",
+        "title": "Solicitud de Nombre Comercial",
+        "legalBasis": [
+            "Arts. 105-110 Ley de Propiedad Industrial"
+        ],
+        "description": "Tramite ante el IMPI para proteger el nombre de un negocio o establecimiento como nombre comercial.",
+        "keywords": [
+            "nombre comercial IMPI",
+            "proteger nombre empresa",
+            "registro comercio IMPI"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Publicacion de Nombre Comercial</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">IMPI</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Roberto Camacho Rivera)</span></strong> solicita la publicacion del nombre comercial <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(SABORINES)</span> para designar su empresa de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(catering y restaurantes)</span> en el municipio de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Monterrey, N.L.)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Solicitante)</span></div></div>"
+    },
+    {
+        "id": "pi-contrato-transferencia-tecnologia-v1",
+        "slug": "contrato-transferencia-tecnologia",
+        "title": "Contrato de Transferencia de Tecnología",
+        "legalBasis": [
+            "Arts. 145-164 Ley de Propiedad Industrial",
+            "CFF Art. 15-B"
+        ],
+        "description": "Acuerdo por el que el titular de tecnologia o know-how la transmite o licencia a un adquirente.",
+        "keywords": [
+            "transferencia tecnologia contrato",
+            "licencia know-how",
+            "tecnologia industrial mexico"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Contrato de Transferencia de Tecnologia</h1></div><p class=\"meta-line\">Celebrado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong>El Transmitente: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Laboratorio Biomexico SA)</span></strong> transfiere al <strong>Receptor: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Farmaceutica Sur SA)</span></strong> la tecnologia de produccion del farmaco <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(ANTIVIRAL-X)</span> incluyendo know-how, formulas y entrenamiento del personal. Precio: $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(3,000,000.00 USD)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Las Partes)</span></div></div>"
+    },
+    {
+        "id": "pi-modelo-utilidad-v1",
+        "slug": "solicitud-modelo-utilidad-impi",
+        "title": "Solicitud de Modelo de Utilidad",
+        "legalBasis": [
+            "Arts. 28-32 Ley de Propiedad Industrial"
+        ],
+        "description": "Proteccion de mejoras a objetos, utensilios o dispositivos que los hacen mas utiles sin ser una invencion mayor.",
+        "keywords": [
+            "modelo de utilidad IMPI",
+            "mejora industrial proteger",
+            "utilidad objeto mejorado"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Registro de Modelo de Utilidad</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">IMPI</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Artesanias Metalicas SA)</span></strong> solicita el registro de MODELO DE UTILIDAD consistente en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Llave ajustable de cerradura multipunto con mecanismo de seguridad antideslizante)</span>, que representa una mejora funcional al modelo previo.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Inventor / Solicitante)</span></div></div>"
+    },
+    {
+        "id": "pi-diseno-industrial-v1",
+        "slug": "solicitud-registro-diseno-industrial",
+        "title": "Solicitud de Registro de Diseño Industrial",
+        "legalBasis": [
+            "Arts. 33-47 Ley de Propiedad Industrial"
+        ],
+        "description": "Proteccion del aspecto ornamental de un producto que lo hace visualmente distinto.",
+        "keywords": [
+            "diseno industrial IMPI",
+            "registro apariencia producto",
+            "estética industrial proteger"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Registro de Diseno Industrial</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">IMPI</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Muebles Contemporaneos SA)</span></strong> solicita el registro del diseno industrial de la <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Silla Ergonomica Model Z, con estructura curvada y soporte lumbar integrado)</span>, cuyo aspecto ornamental es novedoso y original.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Creador / Empresa)</span></div></div>"
+    },
+    {
+        "id": "pi-cedula-agente-pi-v1",
+        "slug": "carta-poder-agente-propiedad-industrial",
+        "title": "Carta Poder para Agente de Propiedad Industrial",
+        "legalBasis": [
+            "Art. 6 Ley de Propiedad Industrial"
+        ],
+        "description": "Poder notarial para que un agente de PI actue en representacion del titular ante el IMPI.",
+        "keywords": [
+            "poder agente IMPI",
+            "carta poder propiedad industrial",
+            "representante IMPI"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Carta Poder para Agente de Propiedad Industrial</h1></div><p class=\"meta-line\">Otorgada en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa Innovadora SA de CV)</span></strong> otorga PODER ESPECIAL a <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Lic. Sandra Torres, Agente Autorizado de PI No. 5123)</span></strong> para gestionar todo tramite de propiedad industrial ante el IMPI, incluyendo solicitudes de marcas, patentes y cualquier actuacion relacionada.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Poderdante)</span></div></div>"
+    },
+    {
+        "id": "pi-declaracion-nulidad-marca-v1",
+        "slug": "demanda-nulidad-registro-marca",
+        "title": "Demanda de Nulidad de Registro de Marca",
+        "legalBasis": [
+            "Arts. 151-157 Ley de Propiedad Industrial"
+        ],
+        "description": "Accion ante el IMPI para cancelar un registro de marca obtenido de mala fe o que viola derechos previos.",
+        "keywords": [
+            "nulidad marca IMPI",
+            "cancelar registro marca",
+            "mala fe registro marca"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda Administrativa de Nulidad de Registro de Marca</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">IMPI</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Importadora Europa SA)</span></strong> solicita la NULIDAD del registro de marca numero <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2025-MX-789)</span> de la marca <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(EUROMAX)</span>, registrada de mala fe por <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Copia Rapida SA)</span>, empresa que conocia nuestra marca previa usada en Mexico desde <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2018)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Solicitante)</span></div></div>"
+    },
+    {
+        "id": "pi-registro-secreto-industrial-v1",
+        "slug": "acuerdo-proteccion-secreto-industrial",
+        "title": "Acuerdo de Protección de Secreto Industrial",
+        "legalBasis": [
+            "Arts. 82-91 Ley de Propiedad Industrial"
+        ],
+        "description": "Contrato de confidencialidad para proteger el secreto industrial de una empresa frente a empleados y socios.",
+        "keywords": [
+            "secreto industrial contrato",
+            "NDA empresa",
+            "confidencialidad informacion tecnica"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Acuerdo de Proteccion de Secreto Industrial</h1></div><p class=\"meta-line\">Celebrado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Manufactura de Precision SA)</span></strong> y el empleado <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ing. Carlos Padilla)</span></strong> acuerdan que toda informacion tecnica, formulas, metodos y planos de la empresa son <strong>Secreto Industrial</strong> protegido, y que el empleado se obliga a no divulgaros por un periodo de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(5 anos)</span> desde el fin de la relacion laboral.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Las Partes)</span></div></div>"
+    },
+    {
+        "id": "pi-contrato-cesion-derechos-v1",
+        "slug": "contrato-cesion-derechos-autor",
+        "title": "Contrato de Cesión de Derechos de Autor",
+        "legalBasis": [
+            "Arts. 26-30 Ley Federal del Derecho de Autor"
+        ],
+        "description": "Acuerdo mediante el cual el autor cede total o parcialmente sus derechos patrimoniales a otro titular.",
+        "keywords": [
+            "cesion derechos autor",
+            "transferir copyright",
+            "editorial contrato autor"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Contrato de Cesion de Derechos Patrimoniales de Autor</h1></div><p class=\"meta-line\">Celebrado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong>El Autor: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Marco Avila)</span></strong> cede a <strong>La Editorial: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Editorial Nacional SA)</span></strong> los derechos patrimoniales de la obra <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Ciudad de los Espejos)</span> por un plazo de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(10 anos)</span>, para su publicacion y distribucion a nivel nacional e internacional, a cambio de regalias del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(12% del precio de venta al publico)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Autor y Editorial)</span></div></div>"
+    },
+    {
+        "id": "pi-impugnacion-resolucion-impi-v1",
+        "slug": "recurso-revision-resolucion-impi",
+        "title": "Recurso de Revisión contra Resolución del IMPI",
+        "legalBasis": [
+            "Art. 83 LFPA",
+            "Arts. 186-191 Ley de Propiedad Industrial"
+        ],
+        "description": "Recurso para impugnar ante el Director General del IMPI una resolucion desfavorable en tramite de marca o patente.",
+        "keywords": [
+            "recurso revision IMPI",
+            "impugnar negativa marca",
+            "apelar IMPI"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Recurso de Revision contra Resolucion del IMPI</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">DIRECTOR GENERAL DEL IMPI</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa Solicitante SA)</span></strong> interpone RECURSO DE REVISION contra la resolucion de fecha <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(5 de febrero de 2026)</span> que nego el registro de la marca <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(NOVA-X)</span> por supuesta semejanza con marca anterior, la cual es incorrecta al no existir confusion en el publico consumidor.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Recurrente)</span></div></div>"
+    },
+    {
+        "id": "pi-contrato-edicion-v1",
+        "slug": "contrato-edicion-obra",
+        "title": "Contrato de Edición de Obra",
+        "legalBasis": [
+            "Arts. 41-52 Ley Federal del Derecho de Autor"
+        ],
+        "description": "Acuerdo especifico para la publicacion de una obra, con tirada, precio, plazo y distribucion.",
+        "keywords": [
+            "contrato edicion obra",
+            "publicar libro editorial",
+            "tirada editorial contrato"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Contrato de Edicion</h1></div><p class=\"meta-line\">Celebrado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong>El Editor: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Fondo de Cultura SA)</span></strong> se compromete a publicar la obra <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Historia del Silencio)</span> del <strong>Autor: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Diego Reyes)</span></strong>, en una primera edicion de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(5,000 ejemplares)</span> a un precio de venta de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(280.00)</span> el ejemplar, con distribucion nacional.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Editor y Autor)</span></div></div>"
+    },
+    {
+        "id": "pi-proteccion-software-v1",
+        "slug": "registro-software-indautor",
+        "title": "Registro de Software ante el INDAUTOR",
+        "legalBasis": [
+            "Arts. 101-114 Ley Federal del Derecho de Autor"
+        ],
+        "description": "Proteccion del codigo fuente de un software como obra de autor ante el INDAUTOR.",
+        "keywords": [
+            "registro software INDAUTOR",
+            "copyright programa informatico",
+            "proteger codigo fuente"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Registro de Software</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">INDAUTOR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(TechMex SA de CV)</span></strong> solicita el registro del programa de computo <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(ADMINPRO v2.0)</span>, sistema de administracion empresarial desarrollado por <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15 ingenieros)</span> durante <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(enero 2024 - enero 2026)</span>. Se adjunta resumen del codigo fuente en disco encriptado.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Empresa Titular)</span></div></div>"
+    },
+    {
+        "id": "pi-licencia-software-v1",
+        "slug": "contrato-licencia-uso-software",
+        "title": "Contrato de Licencia de Uso de Software",
+        "legalBasis": [
+            "Arts. 101-114 LFDA",
+            "Arts. 1792 CCDF"
+        ],
+        "description": "Acuerdo que otorga al usuario el derecho de uso del software bajo terminos y condiciones especificas.",
+        "keywords": [
+            "licencia software contrato",
+            "EULA mexico",
+            "uso programa computadora contrato"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Contrato de Licencia de Uso de Software</h1></div><p class=\"meta-line\">Celebrado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong>El Licenciante: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(SoftMex SA)</span></strong> otorga licencia no exclusiva, no transferible y revocable al <strong>Licenciatario: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa Usuaria SA)</span></strong> para usar el software <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(CONTA-PREMIUM v5)</span> en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(10 equipos simultaneos)</span> por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(3,600.00 anuales)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Las Partes)</span></div></div>"
+    },
+    {
+        "id": "pi-acuerdo-confidencialidad-v1",
+        "slug": "acuerdo-confidencialidad-nda",
+        "title": "Acuerdo de Confidencialidad (NDA)",
+        "legalBasis": [
+            "Arts. 1792-1797 CCDF",
+            "Art. 82 LPI"
+        ],
+        "description": "Contrato de no divulgacion para proteger informacion confidencial antes de negociaciones o relaciones comerciales.",
+        "keywords": [
+            "NDA acuerdo confidencialidad",
+            "no divulgacion contrato",
+            "proteger informacion empresa"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Acuerdo de Confidencialidad (NDA)</h1></div><p class=\"meta-line\">Celebrado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa Divulgante: Startup IA SA)</span></strong> comparte informacion confidencial sobre su <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(algoritmo de reconocimiento facial propietario)</span> con <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa Receptora: Fondo de Inversion SA)</span></strong>, quien se obliga a no divulgarla, usarla o reproducirla sin autorizacion expresa por un plazo de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(3 anos)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Las Partes)</span></div></div>"
+    },
+    {
+        "id": "pi-indicacion-geografica-v1",
+        "slug": "solicitud-indicacion-geografica-impi",
+        "title": "Solicitud de Indicación Geográfica",
+        "legalBasis": [
+            "Arts. 166-180 Ley de Propiedad Industrial"
+        ],
+        "description": "Proteccion del nombre geografico que identifica un producto cuyas cualidades se deben al lugar de origen.",
+        "keywords": [
+            "indicacion geografica IMPI",
+            "denominacion origen Mexico",
+            "registro indicacion geografica"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Declaracion de Proteccion de Indicacion Geografica</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">IMPI</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Consejo Regulador del Cafe de Veracruz)</span></strong> solicita proteccion de la Indicacion Geografica <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(CAFE VERACRUZ)</span> para los granos de cafe producidos en la zona montana de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Sierra de Zongolica, Ver.)</span>, cuya altitud y clima le dan cualidades unicas.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Consejo Regulador)</span></div></div>"
+    }
+]

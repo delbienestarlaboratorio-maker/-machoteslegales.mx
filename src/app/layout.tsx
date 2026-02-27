@@ -3,6 +3,9 @@ import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/Providers";
 import UserNav from "@/components/UserNav";
+import SearchBarWrapper from "@/components/SearchBarWrapper";
+import BreadcrumbNav from "@/components/BreadcrumbNav";
+import MobileMenuToggle from "@/components/MobileMenuToggle";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
@@ -77,11 +80,12 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${outfit.variable} antialiased`}>
         <Providers>
-          {/* Navigation */}
-          <nav className="sticky top-0 z-50 glass-card border-b border-white/5 rounded-none">
+          {/* ── Navbar principal ── */}
+          <nav className="sticky top-0 z-50 glass-card border-b border-white/5 rounded-none relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex justify-between items-center h-16">
-                <a href="/" className="flex items-center gap-2">
+                {/* Logo */}
+                <a href="/" className="flex items-center gap-2 flex-shrink-0">
                   <img
                     src="/Logo/logo-optimized.webp"
                     alt="Machotes Legales Logo"
@@ -91,24 +95,41 @@ export default function RootLayout({
                     loading="eager"
                   />
                 </a>
-                <div className="hidden md:flex items-center gap-6 text-sm">
+
+                {/* Buscador global (desktop) */}
+                <div className="hidden md:block flex-1 max-w-lg mx-6">
+                  <SearchBarWrapper variant="nav" placeholder="Buscar demanda, contrato, divorcio..." />
+                </div>
+
+                {/* Links de navegación (desktop) */}
+                <div className="hidden md:flex flex-shrink-0 items-center gap-6 text-sm">
                   <a href="/plantillas" className="text-[var(--color-text-muted)] hover:text-white transition-colors">
                     Plantillas
                   </a>
                   <a href="/precios" className="text-[var(--color-text-muted)] hover:text-white transition-colors">
                     Precios
                   </a>
-
                   <UserNav />
                 </div>
+
+                {/* Botón menú mobile */}
+                <MobileMenuToggle />
               </div>
+            </div>
+
+            {/* Buscador en mobile (debajo del nav) */}
+            <div className="md:hidden px-4 pb-3 border-t border-white/5 pt-3">
+              <SearchBarWrapper variant="nav" placeholder="Buscar plantilla legal..." />
             </div>
           </nav>
 
+          {/* ── Breadcrumb de navegación ── */}
+          <BreadcrumbNav />
+
+          {/* ── Contenido de la página ── */}
           {children}
 
-
-          {/* Footer */}
+          {/* ── Footer ── */}
           <footer className="border-t border-white/5 mt-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -130,16 +151,16 @@ export default function RootLayout({
                     <li><a href="/plantillas/administrativo" className="hover:text-white transition-colors">Administrativo</a></li>
                     <li><a href="/plantillas/agrario" className="hover:text-white transition-colors">Agrario</a></li>
                     <li><a href="/plantillas/ambiental" className="hover:text-white transition-colors">Ambiental</a></li>
-                    <li><a href="/plantillas/migratorio" className="hover:text-white transition-colors">Migratorio</a></li>
-                    <li><a href="/plantillas/transito" className="hover:text-white transition-colors">Tránsito</a></li>
+                    <li><a href="/plantillas/constitucional" className="hover:text-white transition-colors">Constitucional</a></li>
+                    <li><a href="/plantillas/electoral" className="hover:text-white transition-colors">Electoral</a></li>
                   </ul>
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold text-white mb-4">Planes</h4>
                   <ul className="space-y-2 text-sm text-[var(--color-text-muted)]">
-                    <li><a href="/precios" className="hover:text-white transition-colors">Gratuito</a></li>
-                    <li><a href="/precios" className="hover:text-white transition-colors">Negocios</a></li>
-                    <li><a href="/precios" className="hover:text-white transition-colors">Profesional</a></li>
+                    <li><a href="/precios" className="hover:text-white transition-colors">Gratuito V1</a></li>
+                    <li><a href="/precios" className="hover:text-white transition-colors">Negocios V2 — $79</a></li>
+                    <li><a href="/precios" className="hover:text-white transition-colors">Elite V3 — $499/mes</a></li>
                   </ul>
                 </div>
                 <div>

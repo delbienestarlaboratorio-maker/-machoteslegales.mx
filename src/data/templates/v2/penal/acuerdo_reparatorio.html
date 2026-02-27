@@ -1,31 +1,114 @@
 <div class="header-v2">
-<span class="tier-badge">PROFESIONAL</span>
-<h1>Acuerdo Reparatorio</h1>
-<p class="subtitle-v2">Arts. 186-190 CNPP</p>
+    <span class="tier-badge">PROFESIONAL</span>
+    <h1>Acuerdo Reparatorio en Materia Penal</h1>
+    <p class="subtitle-v2">Código Nacional de Procedimientos Penales — Arts. 186-191 CNPP</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto | default("__ de ________ de 20__") }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="indent text-justify">Acuerdo reparatorio entre víctima e imputado para solucionar el conflicto penal de forma alternativa.</p>
+<div class="section-title">ACUERDO REPARATORIO</div>
+<p class="indent text-justify">Conforme a los artículos <strong>186, 187, 188, 189, 190 y 191 del Código Nacional de
+        Procedimientos Penales</strong>, los suscritos comparecemos ante el C. <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Facilitador / Ministerio Público / Juez de Control)</span></strong>, en los autos del expediente número
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Carpeta de Investigación _______________)</span></strong>, a suscribir el presente
+    acuerdo reparatorio, bajo las siguientes:</p>
 
-<div class="section-title">FUNDAMENTO LEGAL</div>
-<p class="indent text-justify">El presente documento se fundamenta en Arts. 186-190 CNPP y demás disposiciones aplicables del marco jurídico mexicano vigente.</p>
+<div class="section-title">I. PARTES</div>
+<p class="indent text-justify"><strong>VÍCTIMA U OFENDIDO:</strong> <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre completo
+        de la víctima)</span></strong>, mexicano(a), mayor de edad, CURP <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(GOML850312HDFNRR09)</span>, con domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>, asesorado(a) por el/la
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Francisco Sánchez Torres)</span></strong>, cédula profesional <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(3847291)</span>.</p>
 
-<div class="section-title">DATOS DEL PROMOVENTE</div>
-<p class="indent text-justify"><strong>{{ nombre_promovente | default("NOMBRE COMPLETO") }}</strong>, {{ nacionalidad | default("mexicano(a)") }}, mayor de edad, con domicilio en {{ domicilio | default("_________________________________") }}, identificándose con {{ identificacion | default("credencial para votar (INE)") }} número {{ numero_id | default("_______________") }}.</p>
+<p class="indent text-justify"><strong>IMPUTADO:</strong> <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Pedro Rojas Mendoza)</span></strong>, mexicano(a), mayor de edad, CURP <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(GOML850312HDFNRR09)</span>,
+    con domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>, asesorado(a) por el/la
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Francisco Sánchez Torres)</span></strong>, cédula profesional <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(3847291)</span>.</p>
 
-<div class="section-title">HECHOS</div>
-<p class="indent text-justify"><strong>PRIMERO.</strong> — {{ hecho_1 | default("Relacionar los hechos que motivan la presentación de este documento, indicando fechas, lugares y circunstancias relevantes.") }}</p>
-<p class="indent text-justify"><strong>SEGUNDO.</strong> — {{ hecho_2 | default("Describir las consecuencias jurídicas y fácticas de los hechos narrados.") }}</p>
-<p class="indent text-justify"><strong>TERCERO.</strong> — {{ hecho_3 | default("Señalar los elementos de prueba o indicios que soportan la pretensión.") }}</p>
+<div class="section-title">II. ANTECEDENTES DEL CASO</div>
+<p class="indent text-justify">Los hechos que motivaron la carpeta de investigación ocurrieron el día <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></strong>, y se relacionan con el delito de <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(abuso de confianza)</span></strong>, el cual
+    admite la terminación anticipada mediante acuerdo reparatorio conforme al artículo <strong>187 CNPP</strong>, al
+    tratarse de un delito que no amerita prisión preventiva officiosa y cuya víctima es una persona determinada.</p>
 
-<div class="section-title">PETICIONES</div>
-<p class="indent text-justify"><strong>PRIMERA.</strong> — Tener por presentado el presente escrito en los términos solicitados.<br>
-<strong>SEGUNDA.</strong> — Dar trámite conforme a derecho corresponda.<br>
-<strong>TERCERA.</strong> — {{ peticion_especifica | default("Resolver favorablemente la pretensión del promovente.") }}</p>
+<div class="section-title">III. TÉRMINOS DEL ACUERDO REPARATORIO</div>
+<p class="indent text-justify">Las partes, libre y voluntariamente, acordamos los siguientes términos de reparación del
+    daño:</p>
 
-<p class="indent text-justify">PROTESTO LO NECESARIO.</p>
+<p class="indent text-justify"><strong>FORMA DE REPARACIÓN:</strong> <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Pago en
+        efectivo / Prestación de servicios / Restitución del bien / Disculpa pública / Rehabilitación / combinación de
+        las anteriores)</span></strong>.</p>
 
-<div class="signature-block" style="margin-top:50px;"><div class="signature-line">{{ nombre_promovente | default("EL PROMOVENTE") }}</div></div>
+<p class="indent text-justify"><strong>MONTO DE LA REPARACIÓN:</strong> La víctima recibirá la cantidad de <strong>$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(45,000.00)</span> M.N.</strong> por concepto de reparación del daño material
+    y moral, de conformidad con el artículo <strong>20 constitucional Apartado C fracción IV</strong>.</p>
 
-<div class="confidencialidad-v2"><strong>AVISO:</strong> Este documento es una plantilla profesional de Machotes Legales. Su uso no sustituye la asesoría de un abogado titulado.</div>
+<div class="section-title">IV. CALENDARIO DE PAGO</div>
+<table style="width:100%; border-collapse:collapse; font-size:10pt; margin:12px 0;">
+    <thead>
+        <tr style="background:#1e3a5f; color:white; text-align:center;">
+            <th style="padding:6px; border:1px solid #ccc;">Pago</th>
+            <th style="padding:6px; border:1px solid #ccc;">Fecha</th>
+            <th style="padding:6px; border:1px solid #ccc;">Monto</th>
+            <th style="padding:6px; border:1px solid #ccc;">Forma</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding:5px; border:1px solid #ccc; text-align:center;">1° Pago (Anticipo)</td>
+            <td style="padding:5px; border:1px solid #ccc; text-align:center;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></td>
+            <td style="padding:5px; border:1px solid #ccc; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(15,000.00)</span>
+            </td>
+            <td style="padding:5px; border:1px solid #ccc; text-align:center;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Efectivo /
+                Transferencia)</span></td>
+        </tr>
+        <tr style="background:#f5f5f5;">
+            <td style="padding:5px; border:1px solid #ccc; text-align:center;">2° Pago</td>
+            <td style="padding:5px; border:1px solid #ccc; text-align:center;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></td>
+            <td style="padding:5px; border:1px solid #ccc; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(15,000.00)</span>
+            </td>
+            <td style="padding:5px; border:1px solid #ccc; text-align:center;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Efectivo /
+                Transferencia)</span></td>
+        </tr>
+        <tr>
+            <td style="padding:5px; border:1px solid #ccc; text-align:center;">3° Pago (Final)</td>
+            <td style="padding:5px; border:1px solid #ccc; text-align:center;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></td>
+            <td style="padding:5px; border:1px solid #ccc; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(15,000.00)</span>
+            </td>
+            <td style="padding:5px; border:1px solid #ccc; text-align:center;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Efectivo /
+                Transferencia)</span></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding:5px; border:1px solid #ccc; text-align:right; font-weight:bold;">TOTAL:</td>
+            <td style="padding:5px; border:1px solid #ccc; text-align:right; font-weight:bold;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(45,000.00)</span></td>
+            <td style="padding:5px; border:1px solid #ccc;"></td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="section-title">V. CONSECUENCIAS JURÍDICAS DEL ACUERDO</div>
+<p class="indent text-justify">Conforme al artículo <strong>190 CNPP</strong>, una vez cumplido el presente acuerdo
+    reparatorio en su totalidad, se extingue la acción penal respecto del delito que lo motivó. En caso de
+    incumplimiento, la víctima podrá solicitar al juez de control que: <strong>a)</strong> se reanude el procedimiento
+    penal ordinario; <strong>b)</strong> se ejecute el acuerdo como si fuera una sentencia; o <strong>c)</strong> se
+    declare el incumplimiento para efectos de la continuación del procedimiento.</p>
+
+<div class="section-title">VI. DECLARACIONES DE LAS PARTES</div>
+<p class="indent text-justify">Ambas partes declaramos que el presente acuerdo se celebra: <strong>(i)</strong> de
+    manera libre y voluntaria, sin coacción ni presión de ningún tipo; <strong>(ii)</strong> con plena conciencia de sus
+    consecuencias jurídicas; <strong>(iii)</strong> con asesoría legal adecuada; y <strong>(iv)</strong> con el
+    propósito de resolver el conflicto de manera definitiva y pacífica.</p>
+
+<div class="signature-block"
+    style="margin-top:40px; display:grid; grid-template-columns:1fr 1fr; gap:30px; text-align:center;">
+    <div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(La víctima u ofendido)</span></div>
+        <p style="font-size:10pt; color:#555;">Firma autógrafa</p>
+    </div>
+    <div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Pedro Rojas Mendoza)</span></div>
+        <p style="font-size:10pt; color:#555;">Firma autógrafa</p>
+    </div>
+</div>
+<div style="text-align:center; margin-top:20px;">
+    <div class="signature-line" style="max-width:300px; margin:0 auto;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El facilitador
+        / autoridad)</span></div>
+</div>
+
+<div class="confidencialidad-v2"><strong>IMPORTANTE:</strong> El acuerdo reparatorio debe ser ratificado ante el Juez de
+    Control en audiencia. Una vez ratificado y cumplido, produce el sobreseimiento de la causa penal (Art. 191 CNPP). No
+    aplica para delitos que la ley considera de persecución de oficio con prisión preventiva de carácter oficioso.</div>

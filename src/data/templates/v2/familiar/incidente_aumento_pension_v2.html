@@ -1,18 +1,14 @@
-{% extends "base_v2.html" %}
-
-{% block content %}
-<div class="header-v2">
+﻿<div class="header-v2">
     <div class="tier-badge">V2 NEGOCIOS</div>
     <h1>Incidente de Aumento de Pensión Alimenticia</h1>
     <p class="subtitle-v2">Arts. 94 CFPC, 311 y 314 CCF · Principio de Proporcionalidad y Principio de Interés Superior
         del Menor</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, {{ estado | default("Ciudad de México") }}, a {{
-    fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold destinatario">C. JUEZ {{ juzgado_origen | default("___ DE LO FAMILIAR") }} DEL TRIBUNAL DE JUSTICIA
-    DE {{ estado | default("___") }}</p>
+<p class="text-bold destinatario">C. <em style="font-size:9pt;color:#666;">(Ciudadano/Ciudadana)</em> JUEZ <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(___ de lo familiar)</span> DEL TRIBUNAL DE JUSTICIA
+    DE <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span></p>
 <p class="text-bold">P R E S E N T E</p>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -20,20 +16,15 @@
 <!-- ═══════════════════════════════════════════════════ -->
 
 <p class="indent text-justify">
-    <strong>{{ actor.nombre | default("NOMBRE COMPLETO DEL PROMOVENTE") }}</strong>, mexicano(a), mayor de edad,
-    promoviendo por mi propio derecho y en representación de mi(s) menor(es) hijo(s) de iniciales <strong>{{
-        iniciales_menores | default("A.B.C.") }}</strong>, señalando domicilio legal el ubicado en {{ actor.domicilio |
-    default("_______________") }}, y autorizando como mi abogado(a) patrono(a) al Lic. <strong>{{ abogado.nombre |
-        default("_______________") }}</strong> (Cédula {{ abogado.cedula | default("___") }}); con el debido respeto
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(María González López)</span></strong>, mexicano(a), mayor de edad,
+    promoviendo por mi propio derecho y en representación de mi(s) menor(es) hijo(s) de iniciales <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(A.b.c.)</span></strong>, señalando domicilio legal el ubicado en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>, y autorizando como mi abogado(a) patrono(a) al Lic. <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Francisco Sánchez Torres)</span></strong> (Cédula <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(3847291)</span>); con el debido respeto
     comparezco para exponer:
 </p>
 
 <p class="indent text-justify">
     Que por medio del presente escrito, en la vía incidental y con fundamento en los artículos <strong>94 del Código de
         Procedimientos Civiles y 311, 311 Bis, 314 y demás conducentes del Código Civil</strong>, vengo a promover
-    <strong>INCIDENTE DE AUMENTO DE PENSIÓN ALIMENTICIA</strong> en contra del señor(a) <strong>{{ demandado.nombre |
-        default("NOMBRE DEL DEUDOR ALIMENTARIO") }}</strong>, quien tiene su domicilio para ser emplazado en {{
-    demandado.domicilio | default("_______________") }}, reclamando las siguientes prestaciones:
+    <strong>INCIDENTE DE AUMENTO DE PENSIÓN ALIMENTICIA</strong> en contra del señor(a) <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del deudor alimentario)</span></strong>, quien tiene su domicilio para ser emplazado en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>, reclamando las siguientes prestaciones:
 </p>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -42,8 +33,7 @@
 <div class="section-title numbered">I. PRESTACIONES QUE SE RECLAMAN</div>
 <p class="indent text-justify double-space">
     <strong>a)</strong> El <strong>AUMENTO DE LA PENSIÓN ALIMENTICIA</strong> decretada en sentencia definitiva del
-    juicio principal, pasando del actual {{ porcentaje_actual | default("20%") }} al porcentaje del <strong>{{
-        nuevo_porcentaje | default("40%") }}</strong>, o cantidad equivalente a las verdaderas necesidades actuales de
+    juicio principal, pasando del actual <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(20%)</span> al porcentaje del <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(40%)</span></strong>, o cantidad equivalente a las verdaderas necesidades actuales de
     mis menores hijos y a la capacidad económica real del deudor.
 </p>
 <p class="indent text-justify double-space">
@@ -61,23 +51,22 @@
 
 <p class="indent text-justify double-space">
     <strong>PRIMERO.-</strong> En el juicio principal del cual deriva el presente incidente, mediante sentencia de fecha
-    {{ fecha_sentencia | default("___") }}, se condenó al hoy demandado incidental al pago de una pensión alimenticia
-    calculada sobre un {{ porcentaje_actual | default("___%") }} de sus ingresos ordinarios.
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span>, se condenó al hoy demandado incidental al pago de una pensión alimenticia
+    calculada sobre un <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(___%)</span> de sus ingresos ordinarios.
 </p>
 
 <p class="indent text-justify double-space">
     <strong>SEGUNDO.- AUMENTO DE LAS NECESIDADES DE LOS ACREEDORES:</strong> Es el caso que desde la fecha en que se
     decretó dicha pensión a la actualidad, las necesidades alimentarias de mis menores hijos han incrementado
-    sustancialmente debido a su avance escolar, requiriendo ahora mayores gastos por concepto de: {{
-    justificacion_necesidades | default("colegiaturas, médicos especialistas, vestimenta propia de su edad adolescente,
-    actividades extracurriculares.") }}.
+    sustancialmente debido a su avance escolar, requiriendo ahora mayores gastos por concepto de: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(colegiaturas, médicos especialistas, vestimenta propia de su edad adolescente,
+    actividades extracurriculares.)</span>.
 </p>
 
 <p class="indent text-justify double-space">
     <strong>TERCERO.- INCREMENTO DE LA CAPACIDAD ECONÓMICA DEL DEUDOR:</strong> A la par del cambio en las necesidades
     reales, tengo conocimiento que la capacidad pecuniaria del demandado ha incrementado sensiblemente, obteniendo en la
-    actualidad ingresos superiores correspondientes a {{ justificacion_ingresos | default("ascenso laboral, nuevos
-    empleos o actividades comerciales adicionales") }}.
+    actualidad ingresos superiores correspondientes a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(ascenso laboral, nuevos
+    empleos o actividades comerciales adicionales)</span>.
 </p>
 
 <div class="jurisprudencia-box">
@@ -111,10 +100,10 @@
 <div class="section-title numbered">IV. CAPÍTULO DE PRUEBAS</div>
 <p class="indent text-justify">
     <strong>1. DOCUMENTAL PÚBLICA:</strong> Todo lo actuado en el expediente principal. <br>
-    <strong>2. DOCUMENTAL PRIVADA:</strong> Facturas y recibos que en número de {{ num_recibos | default("___") }}
+    <strong>2. DOCUMENTAL PRIVADA:</strong> Facturas y recibos que en número de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>
     exhibo, consistentes en pagos de colegiatura, calzado, médicos, relativos a mis menores hijos. <br>
     <strong>3. INFORME DE AUTORIDAD Y/O EMPRESA:</strong> Se gire atento oficio a la fuente de ingresos del deudor,
-    ubicada en {{ empresa_deudor | default("___") }}, a fin de que informen sus ingresos ordinarios y extraordinarios
+    ubicada en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Comercializadora Norteña S.A. de C.V.)</span>, a fin de que informen sus ingresos ordinarios y extraordinarios
     reales. <br>
     <strong>4. PRESUNCIONAL LEGAL Y HUMANA.</strong>
 </p>
@@ -132,7 +121,7 @@
 <p class="text-center text-bold" style="margin-top:40px;">PROTESTO LO NECESARIO</p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ actor.nombre | default("NOMBRE Y FIRMA DE LA PARTE ACTORA") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre y firma de la parte actora)</span></div>
 </div>
 
 <div class="confidencialidad-v2">
@@ -140,4 +129,3 @@
     <p>Protección patrimonial de menores, argumentación de mutabilidad alimentaria sustentada legalmente bajo la
         Convención de los Derechos del Niño.</p>
 </div>
-{% endblock %}

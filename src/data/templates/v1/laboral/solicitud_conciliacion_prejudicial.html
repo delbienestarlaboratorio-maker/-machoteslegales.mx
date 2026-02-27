@@ -1,44 +1,41 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Solicitud de Conciliación Prejudicial</h1>
     <p class="subtitle">Artículos 684-A a 684-E de la Ley Federal del Trabajo</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
 <p class="text-bold">CENTRO FEDERAL DE CONCILIACIÓN Y REGISTRO LABORAL</p>
 <p class="text-bold">P R E S E N T E</p>
 
 <p class="indent text-justify">
-    <strong>{{ cliente.nombre | default("NOMBRE DEL TRABAJADOR") }}</strong>,
-    con domicilio en {{ cliente.domicilio | default("_________________________________") }},
-    teléfono {{ telefono | default("_______________") }}, correo {{ correo | default("_______________") }},
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></strong>,
+    con domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Coyoacán, Ciudad de México, C.P. 04000)</span>,
+    teléfono <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>, correo <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>,
     solicito se inicie el <strong>PROCEDIMIENTO DE CONCILIACIÓN PREJUDICIAL</strong> conforme al
     Título Trece Bis, Capítulo I de la LFT, respecto de mi conflicto laboral con:
 </p>
 
 <p class="indent text-justify">
-    <strong>{{ patron | default("NOMBRE DE LA EMPRESA") }}</strong>,
-    con domicilio en {{ domicilio_patron | default("_________________________________") }},
-    RFC {{ rfc_patron | default("_______________") }}.
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Construcciones del Valle S.A. de C.V.)</span></strong>,
+    con domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Construcciones del Valle S.A. de C.V.)</span>,
+    RFC <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Construcciones del Valle S.A. de C.V.)</span>.
 </p>
 
 <div class="section-title">DATOS DE LA RELACIÓN LABORAL</div>
 <p class="indent text-justify">
-    Fecha de ingreso: {{ fecha_ingreso | default("___") }}<br>
-    Fecha de separación: {{ fecha_separacion | default("___") }}<br>
-    Puesto: {{ puesto | default("___") }}<br>
-    Salario diario: ${{ salario | default("___") }}<br>
-    Motivo de separación: {{ motivo | default("Despido injustificado / Renuncia / Rescisión") }}
+    Fecha de ingreso: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(3 de enero de 2020)</span><br>
+    Fecha de separación: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span><br>
+    Puesto: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Auxiliar Contable)</span><br>
+    Salario diario: $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span><br>
+    Motivo de separación: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Despido injustificado / Renuncia / Rescisión)</span>
 </p>
 
 <div class="section-title">PRETENSIONES</div>
 <p class="indent text-justify">
-    {{ pretensiones | default("Solicito la conciliación respecto de: a) Indemnización constitucional; b) Salarios
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Solicito la conciliación respecto de: a) Indemnización constitucional; b) Salarios
     caídos; c) Aguinaldo proporcional; d) Vacaciones y prima vacacional; e) Prima de antigüedad; f) Reparto de
-    utilidades; g) Demás prestaciones de ley.") }}
+    utilidades; g) Demás prestaciones de ley.)</span>
 </p>
 
 <div class="section-title">PETICIONES</div>
@@ -52,6 +49,5 @@
 <p class="text-center text-bold" style="margin-top:30px;">ATENTAMENTE</p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></div>
 </div>
-{% endblock %}

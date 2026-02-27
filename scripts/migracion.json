@@ -1,0 +1,315 @@
+[
+  {
+    "id": "migracion-solicitud-visa-trabajo-v1",
+    "slug": "solicitud-visa-trabajo-temporal-mexico",
+    "title": "Solicitud de Visa de Trabajo Temporal en Mexico",
+    "legalBasis": [
+      "Ley de Migracion Art. 52 Fr. III",
+      "Reglamento de la Ley de Migracion"
+    ],
+    "description": "Solicitud ante el INM para obtener visa de trabajo temporal para extranjero que laborara en Mexico.",
+    "keywords": [
+      "visa trabajo mexico extranjero",
+      "visa temporal laborar mexico",
+      "INM permiso trabajo"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Visa de Trabajo Temporal</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">INSTITUTO NACIONAL DE MIGRACION</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Tech Solutions SA de CV)</span></strong> solicita VISA DE TRABAJO TEMPORAL para el ciudadano <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(John Smith, nacionalidad estadounidense, pasaporte No. 123456789)</span>, quien laborara como <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ingeniero de Software)</span> con salario mensual de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(45,000.00 MXN)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Empleador / Representante Legal)</span></div></div>"
+  },
+  {
+    "id": "migracion-cambio-condicion-estancia-v1",
+    "slug": "solicitud-cambio-condicion-estancia-migratorio",
+    "title": "Solicitud de Cambio de Condicion de Estancia Migratoria",
+    "legalBasis": [
+      "Arts. 52-63 Ley de Migracion"
+    ],
+    "description": "Solicitud ante el INM para cambiar la condicion de estancia del extranjero (ej. turista a residente temporal).",
+    "keywords": [
+      "cambio condicion estancia mexico",
+      "turista a residente temporal",
+      "INM cambio visa"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Cambio de Condicion de Estancia</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">INM</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Maria Garcia, ciudadana colombiana)</span></strong> solicita cambio de condicion de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Visitante sin permiso de laborar)</span> a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Residente Temporal con permiso para trabajar)</span> por haber obtenido oferta de empleo formal.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Peticionaria)</span></div></div>"
+  },
+  {
+    "id": "migracion-renovacion-residente-temporal-v1",
+    "slug": "solicitud-renovacion-tarjeta-residente-temporal",
+    "title": "Solicitud de Renovacion de Tarjeta de Residente Temporal",
+    "legalBasis": [
+      "Art. 54 Ley de Migracion",
+      "Art. 108 Reglamento"
+    ],
+    "description": "Tramite para renovar la vigencia de la tarjeta de residente temporal antes de su vencimiento.",
+    "keywords": [
+      "renovar residente temporal mexico",
+      "tarjeta residente INM renovacion",
+      "prorroga estancia temporal"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Renovacion de Residente Temporal</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">INM</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Mendoza, ciudadano argentino)</span></strong> solicita RENOVACION de su tarjeta de Residente Temporal con CURP <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(MECC800101HARGRL09)</span> que vence el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15 de marzo de 2026)</span>, por continuar su nexo laboral con <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa ABC SA)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Peticionario)</span></div></div>"
+  },
+  {
+    "id": "migracion-solicitud-residente-permanente-v1",
+    "slug": "solicitud-residente-permanente-mexico",
+    "title": "Solicitud de Cambio a Residente Permanente en Mexico",
+    "legalBasis": [
+      "Art. 55 Ley de Migracion",
+      "Arts. 113-121 Reglamento"
+    ],
+    "description": "Solicitud para obtener la condicion de residente permanente tras cumplir los requisitos de tiempo o vinculo familiar.",
+    "keywords": [
+      "residente permanente mexico",
+      "tarjeta residente permanente INM",
+      "residencia definitiva extranjero mexico"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Residente Permanente</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">INM</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Anna Kowalski, ciudadana polaca)</span></strong> solicita RESIDENCIA PERMANENTE al haber cumplido <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(4 anos consecutivos)</span> como residente temporal con permiso de trabajo ininterrumpido en Mexico.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Peticionaria)</span></div></div>"
+  },
+  {
+    "id": "migracion-recurso-revision-negativa-v1",
+    "slug": "recurso-revision-negativa-tramite-migratorio",
+    "title": "Recurso de Revision contra Negativa de Tramite Migratorio",
+    "legalBasis": [
+      "Art. 152 Ley de Migracion",
+      "Arts. 83-94 Ley Federal de Procedimiento Administrativo"
+    ],
+    "description": "Recurso administrativo contra la resolucion del INM que niega una solicitud migratoria.",
+    "keywords": [
+      "recurso revision INM",
+      "impugnar negativa visa mexico",
+      "apelacion resolucion migratoria"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Recurso de Revision contra Negativa Migratoria</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">COMISIONADO DEL INM</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(John Smith)</span></strong> interpone RECURSO DE REVISION contra la resolucion de fecha <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(10 de febrero de 2026)</span> que nego su cambio de condicion, por haber acreditado todos los requisitos del articulo <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(54 de la Ley de Migracion)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Recurrente)</span></div></div>"
+  },
+  {
+    "id": "migracion-solicitud-refugio-v1",
+    "slug": "solicitud-reconocimiento-condicion-refugiado",
+    "title": "Solicitud de Reconocimiento de la Condicion de Refugiado",
+    "legalBasis": [
+      "Ley sobre Refugiados, Proteccion Complementaria y Asilo Politico",
+      "Convenio 1951 ONU"
+    ],
+    "description": "Solicitud ante la COMAR para obtener el reconocimiento de la condicion de refugiado en Mexico.",
+    "keywords": [
+      "refugiado mexico comar",
+      "asilo mexico solicitud",
+      "proteccion internacional extranjero"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Condicion de Refugiado</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">COMISION MEXICANA DE AYUDA A REFUGIADOS (COMAR)</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ahmed Al-Rashid, ciudadano sirio)</span></strong> solicita el RECONOCIMIENTO DE LA CONDICION DE REFUGIADO por fundado temor de persecucion por motivos de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(religion y pertenencia a grupo social)</span> en su pais de origen, de conformidad con el Convenio de 1951.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Solicitante)</span></div></div>"
+  },
+  {
+    "id": "migracion-acta-abandono-v1",
+    "slug": "acta-abandono-tramite-migratorio",
+    "title": "Acta de Abandono Voluntario del Territorio Nacional",
+    "legalBasis": [
+      "Art. 118 Ley de Migracion"
+    ],
+    "description": "Documento mediante el cual el extranjero en situacion migratoria irregular opta por abandonar voluntariamente Mexico.",
+    "keywords": [
+      "abandono voluntario mexico extranjero",
+      "salida voluntaria migratorio",
+      "extranjero irregular salida"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Acta de Abandono Voluntario del Territorio Nacional</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">INSTITUTO NACIONAL DE MIGRACION</div><p class=\"indent text-justify\">Comparece <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Pedro Gutierrez, ciudadano hondureno)</span></strong> y de manera VOLUNTARIA opta por abandonar el territorio nacional, siendo asistido por agente migratorio. Declara conocer sus derechos y que la decision es libre, sin coaccion.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Extranjero / Agente Migratorio)</span></div></div>"
+  },
+  {
+    "id": "migracion-tutela-menor-extranjero-v1",
+    "slug": "solicitud-tutela-menor-extranjero-no-acompanado",
+    "title": "Solicitud de Tutela para Menor Extranjero No Acompanado",
+    "legalBasis": [
+      "Art. 112 Ley de Migracion",
+      "Art. 4 CPEUM"
+    ],
+    "description": "Solicitud para que el DIF asuma la tutela provisional de un menor extranjero no acompanado detectado en Mexico.",
+    "keywords": [
+      "menor extranjero no acompanado",
+      "tutela dif menor migrante",
+      "nino migrante proteccion mexico"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Tutela para Menor No Acompanado</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">DIF NACIONAL / INM</div><p class=\"indent text-justify\">El INM detecta y pone a disposicion del DIF al menor <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Kevin, 12 anos, ciudadano guatemalteco)</span> encontrado solo en la terminal de autobuses de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Tapachula, Chiapas)</span>, solicitando su TUTELA PROVISIONAL hasta determinar su situacion migratoria y familiar.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Agente Migratorio)</span></div></div>"
+  },
+  {
+    "id": "migracion-amparo-expulsion-v1",
+    "slug": "amparo-contra-orden-expulsion-extranjero",
+    "title": "Amparo contra Orden de Expulsion de Extranjero",
+    "legalBasis": [
+      "Art. 107 CPEUM",
+      "Ley de Amparo",
+      "Art. 118 Ley de Migracion"
+    ],
+    "description": "Juicio de amparo para suspender una orden de deportacion o expulsion que vulnera derechos del extranjero.",
+    "keywords": [
+      "amparo deportacion mexico",
+      "suspender expulsion extranjero",
+      "amparo migratorio deportacion"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Amparo contra Orden de Expulsion de Extranjero</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">JUEZ DE DISTRITO</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(John Smith)</span></strong> promueve AMPARO INDIRECTO contra la orden de EXPULSION emitida por el INM, por violacion a sus garantias de audiencia y al tener hijos mexicanos menores de edad que dependen economicamente de el, vulnerando el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(principio de unidad familiar)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Quejoso)</span></div></div>"
+  },
+  {
+    "id": "migracion-carta-invitacion-v1",
+    "slug": "carta-invitacion-extranjero-visitante",
+    "title": "Carta de Invitacion para Extranjero Visitante",
+    "legalBasis": [
+      "Arts. 40 Ley de Migracion"
+    ],
+    "description": "Documento que una persona moral o fisica en Mexico extiende para respaldar la visita de un extranjero.",
+    "keywords": [
+      "carta invitacion extranjero mexico",
+      "invitacion visa visitante",
+      "respaldo visitante extranjero"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Carta de Invitacion para Extranjero Visitante</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">EMBAJADA / CONSULADO DE MEXICO EN <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(PARIS, FRANCIA)</span></div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Tech Solutions SA de CV)</span></strong> invita al ciudadano <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Pierre Dubois, ciudadano frances)</span> para participar en el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Congreso de Inteligencia Artificial del 10-15 de marzo 2026)</span>. La empresa cubre gastos de hospedaje y alimentacion.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Anfitrion)</span></div></div>"
+  },
+  {
+    "id": "migracion-proteccion-complementaria-v1",
+    "slug": "solicitud-proteccion-complementaria-migracion",
+    "title": "Solicitud de Proteccion Complementaria Migratoria",
+    "legalBasis": [
+      "Art. 2 Ley sobre Refugiados y Proteccion Complementaria"
+    ],
+    "description": "Solicitud de proteccion para quien no califica como refugiado pero enfrentaria dano grave si regresa a su pais.",
+    "keywords": [
+      "proteccion complementaria comar",
+      "asilo complementario mexico",
+      "dano grave deportacion extranjero"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Proteccion Complementaria</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">COMAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Luis Ramirez, ciudadano venezolano)</span></strong> solicita PROTECCION COMPLEMENTARIA pues si bien no acredita persecucion por las causas del Convenio de 1951, su retorno a Venezuela implicaria riesgo de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(tortura o trato inhumano por parte de grupos armados irregulares)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Solicitante)</span></div></div>"
+  },
+  {
+    "id": "migracion-asilo-politico-v1",
+    "slug": "solicitud-asilo-politico-mexico",
+    "title": "Solicitud de Asilo Politico en Mexico",
+    "legalBasis": [
+      "Arts. 60-65 Ley sobre Refugiados",
+      "Convencion de Caracas 1954"
+    ],
+    "description": "Solicitud de asilo politico para perseguido por actividad politica en su pais de origen.",
+    "keywords": [
+      "asilo politico mexico",
+      "solicitud asilo opositor",
+      "proteccion activista politico mexico"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Asilo Politico</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">SECRETARIA DE RELACIONES EXTERIORES / COMAR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Jorge Valera, ciudadano cubano)</span></strong> solicita ASILO POLITICO al haber sido diputado opositor y sufrir persecucion del gobierno de su pais por sus actividades politicas documentadas en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(informes de Amnistia Internacional adjuntos)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Solicitante)</span></div></div>"
+  },
+  {
+    "id": "migracion-queja-derechos-v1",
+    "slug": "queja-violacion-derechos-migrante",
+    "title": "Queja por Violacion de Derechos de Migrante ante CNDH",
+    "legalBasis": [
+      "Arts. 11 CPEUM",
+      "Art. 66 Ley de Migracion"
+    ],
+    "description": "Queja formal ante la CNDH por actos de autoridad que vulneran los derechos humanos de un migrante.",
+    "keywords": [
+      "derechos migrante mexico",
+      "queja cndh migrante",
+      "derechos humanos extranjero mexico"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Queja por Violacion de Derechos de Migrante</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">COMISION NACIONAL DE DERECHOS HUMANOS</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Organizacion Sin Fronteras AC)</span></strong> presenta QUEJA en nombre del migrante <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Pedro Mejia, ciudadano hondureno)</span> por haber sido retenido incomunicado por <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(72 horas)</span> sin notificacion consular en la estacion migratoria de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Tapachula)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Organizacion)</span></div></div>"
+  },
+  {
+    "id": "migracion-naturalizacion-v1",
+    "slug": "solicitud-carta-naturalizacion-mexico",
+    "title": "Solicitud de Carta de Naturalizacion Mexicana",
+    "legalBasis": [
+      "Arts. 19-28 Ley de Nacionalidad"
+    ],
+    "description": "Tramite ante la SRE para que un extranjero adquiera la nacionalidad mexicana por naturalizacion.",
+    "keywords": [
+      "naturalizacion mexicana extranjero",
+      "carta naturalizacion mexico",
+      "nacionalidad mexicana solicitud"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Carta de Naturalizacion Mexicana</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">SECRETARIA DE RELACIONES EXTERIORES</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Anna Kowalski, ciudadana polaca)</span></strong> solicita CARTA DE NATURALIZACION al haber residido legalmente en Mexico por <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(5 anos continuos)</span>, hablar espanol con fluidez y renunciar a la nacionalidad polonesa, conforme al articulo 20 de la Ley de Nacionalidad.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Peticionaria)</span></div></div>"
+  },
+  {
+    "id": "migracion-reagrupacion-familiar-v1",
+    "slug": "solicitud-reagrupacion-familiar-migratorio",
+    "title": "Solicitud de Reagrupacion Familiar de Extranjero",
+    "legalBasis": [
+      "Art. 52 Fr. IV Ley de Migracion",
+      "Art. 4 CPEUM"
+    ],
+    "description": "Solicitud para que familiares de un residente legal en Mexico obtengan permiso de establecerse en el pais.",
+    "keywords": [
+      "reagrupacion familiar extranjero mexico",
+      "visa familiar residente mexico",
+      "familia extranjero residencia"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Reagrupacion Familiar</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">INM</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Mendoza, Residente Permanente)</span></strong> solicita REAGRUPACION FAMILIAR para su esposa <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Lucia Mendoza, ciudadana argentina)</span> e hijos menores <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Diego 8 anos, Sofia 5 anos)</span> para que residan legalmente en Mexico.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Residente Permanente)</span></div></div>"
+  },
+  {
+    "id": "migracion-denuncia-trata-v1",
+    "slug": "denuncia-trata-personas-migrantes",
+    "title": "Denuncia por Trata de Personas en Contexto Migratorio",
+    "legalBasis": [
+      "Ley General para Prevenir la Trata de Personas",
+      "Arts. 207-210 CP Federal"
+    ],
+    "description": "Denuncia penal por delito de trata de personas cometido contra migrantes en territorio nacional.",
+    "keywords": [
+      "trata personas migrantes denuncia",
+      "trafico personas mexico",
+      "explotacion migrante denuncia"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Denuncia por Trata de Personas en Contexto Migratorio</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">FISCALIA ESPECIALIZADA EN TRATA DE PERSONAS</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Organizacion Migrantes AC)</span></strong> denuncia la red de trata que opero en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Tapachula, Chiapas)</span> captando a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15 mujeres centroamericanas)</span> bajo engano para explotarlas laboralmente en el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(sector agropecuario de Sinaloa)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Organizacion Denunciante)</span></div></div>"
+  },
+  {
+    "id": "migracion-recurso-inm-multa-v1",
+    "slug": "recurso-contra-multa-inm-empleador",
+    "title": "Recurso contra Multa del INM a Empleador",
+    "legalBasis": [
+      "Arts. 153-160 Ley de Migracion"
+    ],
+    "description": "Recurso de revision que interpone un empleador contra la multa impuesta por el INM por contratar trabajador sin permiso.",
+    "keywords": [
+      "multa INM empleador extranjero",
+      "recurso multa migratorio",
+      "impugnar sancion INM empresa"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Recurso contra Multa del INM a Empleador</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">COMISIONADO DEL INM</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Restaurante El Tampiqueño SA)</span></strong> interpone recurso contra la multa de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(50,000.00)</span> por contratar a trabajador extranjero sin permiso, demostrando que gestionaron el tramite migratorio y la demora fue imputable al <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(rezago en el INM de mas de 4 meses)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Empleador)</span></div></div>"
+  },
+  {
+    "id": "migracion-visa-estudiante-v1",
+    "slug": "solicitud-visa-estudiante-extranjero",
+    "title": "Solicitud de Visa de Estudiante Extranjero en Mexico",
+    "legalBasis": [
+      "Art. 40 Fr. II Ley de Migracion"
+    ],
+    "description": "Solicitud de visa para extranjero que cursara estudios en institucion educativa reconocida en Mexico.",
+    "keywords": [
+      "visa estudiante mexico extranjero",
+      "estudiar mexico visa",
+      "INM visa estudios superiores"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Visa de Estudiante</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">INM</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Kim Ji-Young, ciudadano coreano)</span></strong> solicita VISA DE ESTUDIANTE para cursar la <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Maestria en Derecho Internacional en la UNAM)</span>, presentando carta de aceptacion, solvencia economica mensual de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15,000.00)</span> y seguro medico vigente.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Solicitante)</span></div></div>"
+  },
+  {
+    "id": "migracion-repatriacion-voluntaria-v1",
+    "slug": "acuerdo-repatriacion-voluntaria-asistida",
+    "title": "Acuerdo de Repatriacion Voluntaria Asistida",
+    "legalBasis": [
+      "Art. 118 Ley de Migracion",
+      "Protocolo de Repatriacion SRE"
+    ],
+    "description": "Documento de acuerdo voluntario para que un mexicano en el extranjero regrese al pais con asistencia consular.",
+    "keywords": [
+      "repatriacion voluntaria mexicana",
+      "retorno asistido consulado",
+      "mexicano regreso pais apoyo"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Acuerdo de Repatriacion Voluntaria Asistida</h1></div><p class=\"meta-line\">Celebrado el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span> en el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Consulado de Mexico en Los Angeles, CA)</span></p><p class=\"indent text-justify\">El ciudadano mexicano <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Juan Perez Lopez, CURP: PELJ780101HMCRZN09)</span></strong> acuerda REPATRIACION VOLUNTARIA ASISTIDA al municipio de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Oaxaca de Juarez)</span>, recibiendo apoyo de transporte, alimentos y $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(3,000.00)</span> de ayuda de arranque.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Ciudadano / Consul)</span></div></div>"
+  },
+  {
+    "id": "migracion-certif-legal-estancia-v1",
+    "slug": "solicitud-constancia-legal-estancia",
+    "title": "Solicitud de Constancia de Estancia Legal",
+    "legalBasis": [
+      "Art. 34 Ley de Migracion"
+    ],
+    "description": "Solicitud de documento oficial que acredite la estancia legal del extranjero en Mexico para tramites ante terceros.",
+    "keywords": [
+      "constancia estancia legal mexico",
+      "acreditar estancia INM",
+      "certificado migratorio legal mexico"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Constancia de Estancia Legal</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">INM</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Maria Garcia, ciudadana colombiana)</span></strong> solicita CONSTANCIA DE ESTANCIA LEGAL para acreditar su condicion de Residente Temporal vigente ante <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(el Registro Civil, para reconocimiento de hijos mexicanos)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Peticionaria)</span></div></div>"
+  }
+]

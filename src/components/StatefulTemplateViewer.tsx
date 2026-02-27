@@ -65,27 +65,114 @@ function applyStateToHtml(html: string, state: StateData): string {
 
 const tierStyles: Record<string, string> = {
     v1: `
-    body { font-family: 'Times New Roman', serif; font-size: 12pt; line-height: 1.8; color: #000; padding: 2cm; }
-    h1 { font-size: 14pt; text-align: center; text-transform: uppercase; margin-bottom: 5px; }
-    .subtitle { font-size: 10pt; text-align: center; color: #555; margin-bottom: 15px; }
-    .header { text-align:center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 20px; }
-    .section-title { font-weight:bold; text-transform:uppercase; margin-top:20px; margin-bottom:10px; text-align:center; font-size:12pt; }
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+    body { font-family: 'Lato', 'Arial', sans-serif; font-size: 11.5pt; line-height: 1.85; color: #1a1a2e; padding: 2cm; background: #fff; }
+    h1 { font-family: 'Playfair Display', 'Times New Roman', serif; font-size: 15pt; text-align: center; text-transform: uppercase; margin-bottom: 4px; color: #0d4a3a; letter-spacing: 0.5px; }
+    .subtitle { font-size: 9.5pt; text-align: center; color: #0d6e50; margin-bottom: 12px; font-weight: 400; letter-spacing: 0.3px; }
+    .header-v1 { 
+      text-align: center; 
+      background: linear-gradient(135deg, #e6f7f2 0%, #d0f0e8 100%);
+      border-top: 4px solid #0d6e50;
+      border-bottom: 2px solid #b2dfdb;
+      border-radius: 0 0 8px 8px;
+      padding: 18px 24px 14px 24px;
+      margin-bottom: 22px;
+      position: relative;
+    }
+    .header-v1::before {
+      content: 'ACCESO GRATUITO';
+      position: absolute;
+      top: 8px; right: 12px;
+      background: #0d6e50;
+      color: white;
+      font-size: 7.5pt;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      padding: 2px 10px;
+      border-radius: 12px;
+    }
+    .header { 
+      text-align: center; 
+      background: linear-gradient(135deg, #e6f7f2 0%, #d0f0e8 100%);
+      border-top: 4px solid #0d6e50;
+      border-bottom: 2px solid #b2dfdb;
+      padding: 18px 24px 14px 24px;
+      margin-bottom: 22px;
+    }
+    .section-title { 
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 10.5pt;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-top: 22px;
+      margin-bottom: 8px;
+      color: #0d4a3a;
+      border-left: 4px solid #0d6e50;
+      padding-left: 10px;
+      background: #f0faf6;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
     .indent { text-indent: 1.5cm; }
     .text-justify { text-align: justify; }
-    .text-bold { font-weight: bold; }
-    .meta-line { text-align: right; font-size: 11pt; margin-bottom: 20px; }
-    .signature-line { border-top: 1px solid #000; padding-top: 8px; text-align: center; margin-top: 40px; }
-    p { margin-bottom: 8px; }
+    .text-bold { font-weight: 700; }
+    .text-center { text-align: center; }
+    .meta-line { text-align: right; font-size: 10.5pt; margin-bottom: 18px; color: #555; font-style: italic; }
+    .signature-block { text-align: center; margin-top: 50px; }
+    .signature-line { 
+      display: inline-block;
+      min-width: 260px;
+      border-top: 1.5px solid #0d4a3a;
+      padding-top: 8px;
+      font-size: 10.5pt;
+      color: #1a1a2e;
+      text-align: center;
+    }
+    p { margin-bottom: 9px; }
+    table { border-collapse: collapse; font-size: 10.5pt; }
+    th { background: #0d4a3a; color: white; padding: 7px; }
+    td { padding: 5px 7px; border: 1px solid #b2dfdb; }
+    tr:nth-child(even) td { background: #f0faf6; }
   `,
     v2: `
-    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap');
-    body { font-family: 'Crimson Text', 'Times New Roman', serif; font-size: 13pt; line-height: 1.9; color: #111; padding: 2cm; }
-    h1 { font-size: 16pt; font-weight: 700; text-align: center; text-transform: uppercase; margin-bottom: 8px; }
-    .section-title { font-weight:700; text-transform:uppercase; margin-top:22px; margin-bottom:10px; padding-bottom:3px; border-bottom:1px solid #ccc; }
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600&display=swap');
+    body { font-family: 'Crimson Text', 'Times New Roman', serif; font-size: 13pt; line-height: 1.8; color: #1a1a1a; padding: 2cm; }
+    h1 { font-size: 16pt; font-weight: 700; text-align: center; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .header-v2 { text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 2px double #1a1a1a; }
+    .subtitle-v2 { font-size: 10pt; color: #444; line-height: 1.4; }
+    .tier-badge { display: inline-block; font-family: 'Inter', sans-serif; font-size: 8pt; font-weight: 600; letter-spacing: 2px; color: #fff; background: linear-gradient(135deg, #c9a84c, #dbb85a); padding: 3px 12px; border-radius: 3px; margin-bottom: 10px; }
+    .section-title { font-size: 13pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 25px; margin-bottom: 12px; padding-bottom: 4px; border-bottom: 1px solid #ccc; }
+    .section-title.numbered { color: #1a365d; }
     .indent { text-indent: 1.5cm; }
     .text-justify { text-align: justify; }
-    .signature-line { border-top: 1px solid #000; padding-top: 8px; text-align: center; margin-top: 40px; }
-    p { margin-bottom:10px; }
+    .text-bold { font-weight: 700; }
+    .text-center { text-align: center; }
+    .double-space { line-height: 2.0; }
+    .meta-line { text-align: right; font-size: 12pt; margin-bottom: 20px; }
+    .destinatario { font-size: 12pt; margin-bottom: 3px; }
+    p { margin-bottom: 10px; }
+    .jurisprudencia-box { background: #f7f5f0; border-left: 4px solid #c9a84c; padding: 12px 16px; margin: 15px 0 20px 1.5cm; font-size: 10.5pt; line-height: 1.5; }
+    .jurisprudencia-titulo { font-family: 'Inter', sans-serif; font-size: 8pt; font-weight: 600; letter-spacing: 1.5px; color: #8b7432; margin-bottom: 8px; }
+    .jurisprudencia-texto { margin-bottom: 10px; color: #333; }
+    .jurisprudencia-texto:last-child { margin-bottom: 0; }
+    .jurisprudencia-texto em { font-style: italic; color: #1a365d; }
+    .concepto-violacion { margin-top: 20px; margin-bottom: 25px; }
+    .concepto-violacion h3 { font-size: 12pt; font-weight: 700; color: #1a365d; margin-bottom: 3px; }
+    .concepto-violacion h4 { font-size: 11pt; font-style: italic; color: #555; margin-bottom: 10px; }
+    .signature-block { margin-top: 40px; text-align: center; }
+    .signature-line { display: inline-block; min-width: 280px; border-top: 1px solid #000; padding-top: 8px; font-size: 11pt; font-weight: 600; }
+    .confidencialidad-v2 { margin-top: 50px; padding: 12px 16px; border: 1px solid #ddd; background: #fafafa; font-family: 'Inter', sans-serif; font-size: 8pt; line-height: 1.4; color: #777; }
+    .confidencialidad-v2 p { margin-bottom: 4px; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+    td, th { padding: 6px 8px; font-size: 12pt; }
+    th { background: #1e3a5f; color: white; font-weight: 600; }
+    td { border: 1px solid #c8d0e0; }
+    tr:nth-child(even) td { background: #eef1f8; }
+    .tabla-calculos { width: 100%; border-collapse: collapse; margin: 10px 0; }
+    .tabla-calculos th { background: #1e3a5f; color: white; padding: 8px; font-size: 11pt; text-align: left; }
+    .tabla-calculos td { padding: 6px 8px; border: 1px solid #ddd; font-size: 11pt; }
+    .tabla-calculos tr:nth-child(even) td { background: #f5f7fa; }
   `,
     v3: `
     body { font-family: 'Crimson Text', 'Times New Roman', serif; font-size: 13pt; line-height: 1.9; color: #111; padding: 2cm; }

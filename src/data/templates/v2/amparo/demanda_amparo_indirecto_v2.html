@@ -1,18 +1,13 @@
-{% extends "base_v2.html" %}
-
-{% block content %}
-<div class="header-v2">
+﻿<div class="header-v2">
     <div class="tier-badge">V2 NEGOCIOS</div>
     <h1>Demanda de Amparo Indirecto</h1>
     <p class="subtitle-v2">Artículos 103 y 107 de la Constitución Política de los Estados Unidos Mexicanos · Artículos
         107, 108, 112, 114, 117 y 128 de la Ley de Amparo · Acuerdo General del CJF 12/2020</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, {{ estado | default("Ciudad de México") }}, a {{
-    fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold destinatario">C. JUEZ DE DISTRITO EN MATERIA {{ materia | default("ADMINISTRATIVA") }} EN EL {{
-    circuito | default("PRIMER") }} CIRCUITO, EN TURNO</p>
+<p class="text-bold destinatario">C. <em style="font-size:9pt;color:#666;">(Ciudadano/Ciudadana)</em> JUEZ DE DISTRITO EN MATERIA <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Administrativa)</span> EN EL <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Primero en Materia Laboral de la CDMX)</span> CIRCUITO, EN TURNO</p>
 <p class="text-bold">P R E S E N T E</p>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -20,17 +15,16 @@
 <!-- ═══════════════════════════════════════════════════ -->
 
 <p class="indent text-justify">
-    <strong>{{ cliente.nombre | default("NOMBRE COMPLETO DEL QUEJOSO") }}</strong>, mexicano(a), mayor de edad,
-    por mi propio derecho {{ personalidad_juridica | default("") }},
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></strong>, mexicano(a), mayor de edad,
+    por mi propio derecho <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>,
     señalando como domicilio para oír y recibir todo tipo de notificaciones, aún las de carácter personal,
-    el ubicado en <strong>{{ cliente.domicilio | default("Calle, Número, Colonia, Alcaldía/Municipio, C.P., Estado")
-        }}</strong>,
+    el ubicado en <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Coyoacán, Ciudad de México, C.P. 04000)</span></strong>,
     autorizando en los amplios términos del artículo 12 de la Ley de Amparo, reglamentaria de los
     artículos 103 y 107 de la Constitución Política de los Estados Unidos Mexicanos, al(a)(los)
-    licenciado(a)(s) en Derecho <strong>{{ abogado.nombre | default("NOMBRE DEL ABOGADO") }}</strong>,
-    con cédula profesional número <strong>{{ abogado.cedula | default("_______________") }}</strong>,
+    licenciado(a)(s) en Derecho <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Francisco Sánchez Torres)</span></strong>,
+    con cédula profesional número <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(3847291)</span></strong>,
     y como autorizados en los términos del párrafo segundo del citado artículo 12, a
-    {{ autorizados | default("_______________") }};
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>;
     ante Usted, con el debido respeto, comparezco para exponer:
 </p>
 
@@ -50,10 +44,10 @@
 <div class="section-title numbered">I. NOMBRE Y DOMICILIO DEL QUEJOSO</div>
 <p class="indent text-justify">
     Ya quedó precisado en el proemio de la presente demanda. El suscrito acredita su interés
-    jurídico {{ tipo_interes | default("legítimo") }} para promover el presente juicio de amparo,
-    en virtud de que el acto reclamado afecta {{ afectacion_interes | default("directamente mi esfera jurídica al
+    jurídico <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(legítimo)</span> para promover el presente juicio de amparo,
+    en virtud de que el acto reclamado afecta <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(directamente mi esfera jurídica al
     vulnerar mis derechos fundamentales de legalidad, seguridad jurídica y audiencia previa, causándome un agravio
-    personal y directo") }}.
+    personal y directo)</span>.
 </p>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -62,8 +56,8 @@
 
 <div class="section-title numbered">II. TERCERO INTERESADO</div>
 <p class="indent text-justify">
-    {{ tercero_interesado | default("NO EXISTE TERCERO INTERESADO, toda vez que el presente amparo se promueve contra un
-    acto de autoridad que no involucra intereses de particulares. En caso de existir, se señala a: _______________") }}
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(NO EXISTE TERCERO INTERESADO, toda vez que el presente amparo se promueve contra un
+    acto de autoridad que no involucra intereses de particulares. En caso de existir, se señala a: _______________)</span>
 </p>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -76,13 +70,13 @@
 </p>
 <p class="indent text-justify">
     <strong>A) Como autoridad ORDENADORA:</strong><br>
-    {{ autoridad_ordenadora | default("Nombre completo de la autoridad que emitió el acto reclamado, con domicilio
-    oficial en _______________") }}
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre completo de la autoridad que emitió el acto reclamado, con domicilio
+    oficial en _______________)</span>
 </p>
 <p class="indent text-justify">
     <strong>B) Como autoridad EJECUTORA:</strong><br>
-    {{ autoridad_ejecutora | default("Nombre completo de la autoridad que materializa o ejecuta el acto, con domicilio
-    oficial en _______________") }}
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre completo de la autoridad que materializa o ejecuta el acto, con domicilio
+    oficial en _______________)</span>
 </p>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -94,17 +88,17 @@
     De la <strong>autoridad ordenadora</strong>, se reclama:
 </p>
 <p class="indent text-justify">
-    {{ acto_reclamado_ordenadora | default("La emisión, aprobación, expedición y/o promulgación de [ley/acto/resolución]
-    contenida en [número de oficio/expediente/decreto], de fecha [fecha], notificada al quejoso con fecha [fecha de
-    notificación], mediante la cual se [describir con precisión el contenido del acto y sus alcances].") }}
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(La emisión, aprobación, expedición y/o promulgación de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(ley/acto/resolución)</span>
+    contenida en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(número de oficio/expediente/decreto)</span>, de fecha <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(fecha)</span>, notificada al quejoso con fecha <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(fecha de
+    notificación)</span>, mediante la cual se <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(describir con precisión el contenido del acto y sus alcances)</span>.)</span>
 </p>
 <p class="indent text-justify">
     De la <strong>autoridad ejecutora</strong>, se reclama:
 </p>
 <p class="indent text-justify">
-    {{ acto_reclamado_ejecutora | default("La ejecución material, aplicación, cumplimiento y todas las consecuencias de
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(La ejecución material, aplicación, cumplimiento y todas las consecuencias de
     hecho y de derecho del acto reclamado a la autoridad ordenadora, así como todos los actos tendientes a materializar
-    dicho acto.") }}
+    dicho acto.)</span>
 </p>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -118,24 +112,16 @@
     constan son los siguientes:
 </p>
 <p class="indent text-justify double-space">
-    <strong>PRIMERO.-</strong> {{ hecho_1 | default("Narración detallada del primer antecedente, señalando con precisión
-    fecha, lugar, circunstancias, personas involucradas y documentos que lo acreditan. Es fundamental establecer la
-    cronología de los hechos para demostrar oportunidad en la presentación de la demanda y evidenciar la actuación
-    arbitraria de la autoridad.") }}
+    <strong>PRIMERO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el primer hecho cronológicamente, con fecha, lugar y personas involucradas)</span>
 </p>
 <p class="indent text-justify double-space">
-    <strong>SEGUNDO.-</strong> {{ hecho_2 | default("Descripción del segundo antecedente relevante. Debe vincularse
-    directamente con el acto reclamado y evidenciar cómo la autoridad responsable fue generando actos previos que
-    culminaron en la violación de derechos fundamentales del quejoso.") }}
+    <strong>SEGUNDO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el segundo hecho, describiendo la conducta del demandado)</span>
 </p>
 <p class="indent text-justify double-space">
-    <strong>TERCERO.-</strong> {{ hecho_3 | default("Narración del momento en que se consumó el acto reclamado. Precisar
-    la fecha de conocimiento, medio de notificación o publicación, para efectos del cómputo del plazo de 15 días hábiles
-    del artículo 17 de la Ley de Amparo.") }}
+    <strong>TERCERO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el tercer hecho y sus consecuencias para el promovente)</span>
 </p>
 <p class="indent text-justify double-space">
-    <strong>CUARTO.-</strong> {{ hecho_4 | default("Efectos y consecuencias del acto reclamado en la esfera jurídica del
-    quejoso. Explicar la irreparabilidad del daño y la necesidad de protección constitucional urgente.") }}
+    <strong>CUARTO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí hechos adicionales si los hubiere)</span>
 </p>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -149,30 +135,30 @@
 <p class="indent text-justify">
     <strong>• Artículo 1° Constitucional:</strong> Principio pro persona y obligación de todas las autoridades
     de promover, respetar, proteger y garantizar los derechos humanos. El acto reclamado contraviene
-    este mandato al {{ violacion_art1 | default("restringir derechos fundamentales sin observar los principios de
-    universalidad, interdependencia, indivisibilidad y progresividad") }}.
+    este mandato al <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(restringir derechos fundamentales sin observar los principios de
+    universalidad, interdependencia, indivisibilidad y progresividad)</span>.
 </p>
 <p class="indent text-justify">
     <strong>• Artículo 14 Constitucional:</strong> Garantía de audiencia, debido proceso y exacta aplicación
-    de la ley. La autoridad responsable {{ violacion_art14 | default("privó al quejoso de derechos sin previo juicio
+    de la ley. La autoridad responsable <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(privó al quejoso de derechos sin previo juicio
     seguido ante tribunales establecidos, sin cumplir las formalidades esenciales del procedimiento y sin fundar su
-    determinación en ley exactamente aplicable") }}.
+    determinación en ley exactamente aplicable)</span>.
 </p>
 <p class="indent text-justify">
     <strong>• Artículo 16 Constitucional:</strong> Legalidad, fundamentación y motivación de todo acto de autoridad.
-    El acto reclamado {{ violacion_art16 | default("carece de debida fundamentación al no citar con precisión el
+    El acto reclamado <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(carece de debida fundamentación al no citar con precisión el
     precepto legal aplicable, y de motivación al no expresar las razones, motivos y circunstancias especiales que
-    llevaron a la autoridad a emitir su determinación") }}.
+    llevaron a la autoridad a emitir su determinación)</span>.
 </p>
 <p class="indent text-justify">
     <strong>• Artículo 17 Constitucional:</strong> Tutela judicial efectiva y acceso a la justicia.
-    {{ violacion_art17 | default("") }}
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>
 </p>
 <p class="indent text-justify">
     <strong>• Tratados Internacionales:</strong> Artículos 8° y 25 de la Convención Americana sobre Derechos
     Humanos (Pacto de San José); artículo 14 del Pacto Internacional de Derechos Civiles y Políticos.
-    {{ violacion_tratados | default("El acto reclamado vulnera las garantías judiciales y el derecho a un recurso
-    efectivo reconocidos en el sistema interamericano.") }}
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El acto reclamado vulnera las garantías judiciales y el derecho a un recurso
+    efectivo reconocidos en el sistema interamericano.)</span>
 </p>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -185,14 +171,14 @@
     <h3>PRIMER CONCEPTO DE VIOLACIÓN</h3>
     <h4>Violación al principio de legalidad y seguridad jurídica (Arts. 14 y 16 CPEUM)</h4>
     <p class="indent text-justify double-space">
-        {{ concepto_1 | default("El acto reclamado transgrede los artículos 14 y 16 constitucionales, toda vez que la
-        autoridad responsable, al emitir [describir acto], no cumplió con los requisitos de fundamentación y motivación
+        <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El acto reclamado transgrede los artículos 14 y 16 constitucionales, toda vez que la
+        autoridad responsable, al emitir <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(describir acto)</span>, no cumplió con los requisitos de fundamentación y motivación
         que toda actuación de autoridad debe satisfacer.\n\nEn efecto, la Suprema Corte de Justicia de la Nación ha
         establecido que la fundamentación consiste en citar los preceptos legales sustantivos y adjetivos en que se
         apoya la determinación, y la motivación en expresar los razonamientos lógico-jurídicos que vinculan la norma con
-        los supuestos de hecho.\n\nEn el caso concreto, la autoridad responsable omitió [señalar la deficiencia
-        específica], lo que genera indefensión al quejoso al desconocer las razones y fundamentos de la actuación
-        impugnada.") }}
+        los supuestos de hecho.\n\nEn el caso concreto, la autoridad responsable omitió <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(señalar la deficiencia
+        específica)</span>, lo que genera indefensión al quejoso al desconocer las razones y fundamentos de la actuación
+        impugnada.)</span>
     </p>
 
     <div class="jurisprudencia-box">
@@ -216,12 +202,12 @@
     <h3>SEGUNDO CONCEPTO DE VIOLACIÓN</h3>
     <h4>Violación al derecho de audiencia y debido proceso (Art. 14 CPEUM)</h4>
     <p class="indent text-justify double-space">
-        {{ concepto_2 | default("La autoridad responsable transgredió el artículo 14 constitucional al no respetar las
+        <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(La autoridad responsable transgredió el artículo 14 constitucional al no respetar las
         formalidades esenciales del procedimiento, las cuales la Suprema Corte ha identificado como:\n\n1) La
         notificación del inicio del procedimiento y sus consecuencias;\n2) La oportunidad de ofrecer y desahogar
         pruebas;\n3) La oportunidad de alegar; y\n4) El dictado de una resolución fundada y motivada.\n\nEn el caso que
         nos ocupa, la autoridad [omitió notificar / no otorgó plazo para pruebas / emitió resolución sin audiencia],
-        vulnerando así el núcleo esencial del derecho de audiencia.") }}
+        vulnerando así el núcleo esencial del derecho de audiencia.)</span>
     </p>
 
     <div class="jurisprudencia-box">
@@ -240,14 +226,14 @@
 
 <div class="concepto-violacion">
     <h3>TERCER CONCEPTO DE VIOLACIÓN</h3>
-    <h4>{{ titulo_concepto_3 | default("Violación al principio pro persona (Art. 1° CPEUM)") }}</h4>
+    <h4><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Violación al principio pro persona (Art. 1° CPEUM))</span></h4>
     <p class="indent text-justify double-space">
-        {{ concepto_3 | default("Conforme al artículo 1° constitucional, las normas relativas a los derechos humanos
+        <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Conforme al artículo 1° constitucional, las normas relativas a los derechos humanos
         deben interpretarse de conformidad con la Constitución y los tratados internacionales, favoreciendo en todo
         tiempo a las personas la protección más amplia (principio pro persona).\n\nLa autoridad responsable, lejos de
         aplicar la interpretación más favorable al quejoso, optó por una lectura restrictiva que limita indebidamente
         sus derechos fundamentales, contraviniendo el mandato constitucional y la doctrina establecida por la Corte
-        Interamericana de Derechos Humanos.") }}
+        Interamericana de Derechos Humanos.)</span>
     </p>
 
     <div class="jurisprudencia-box">
@@ -273,19 +259,19 @@
 </p>
 <p class="indent text-justify double-space">
     <strong>1. Procedencia:</strong> La suspensión es procedente conforme al artículo 128 de la Ley de Amparo,
-    ya que {{ procedencia_suspension | default("el acto reclamado es susceptible de ser suspendido sin afectar el
+    ya que <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(el acto reclamado es susceptible de ser suspendido sin afectar el
     interés social ni contravenir disposiciones de orden público, y de ejecutarse causaría daños de difícil o imposible
-    reparación al quejoso") }}.
+    reparación al quejoso)</span>.
 </p>
 <p class="indent text-justify double-space">
-    <strong>2. Apariencia del buen derecho:</strong> {{ fumus_boni_iuris | default("De un análisis preliminar de los
+    <strong>2. Apariencia del buen derecho:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(De un análisis preliminar de los
     argumentos del quejoso, existe una estimación fundada de que el acto reclamado presenta vicios de
-    inconstitucionalidad, lo que configura la apariencia del buen derecho a favor del quejoso.") }}
+    inconstitucionalidad, lo que configura la apariencia del buen derecho a favor del quejoso.)</span>
 </p>
 <p class="indent text-justify double-space">
-    <strong>3. Peligro en la demora:</strong> {{ periculum_in_mora | default("De no concederse la suspensión, se
+    <strong>3. Peligro en la demora:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(De no concederse la suspensión, se
     consumarían de manera irreparable los efectos del acto reclamado, generando al quejoso daños y perjuicios de
-    imposible reparación, tales como [describir daños específicos].") }}
+    imposible reparación, tales como <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(describir daños específicos)</span>.)</span>
 </p>
 <p class="indent text-justify double-space">
     <strong>4. Ponderación:</strong> Conforme al artículo 138 de la Ley de Amparo, la suspensión no causa perjuicio
@@ -294,8 +280,8 @@
 </p>
 
 <p class="indent text-justify">
-    {{ garantia_suspension | default("Ofrezco otorgar la garantía que este Juzgado determine conforme a la fracción II
-    del artículo 132 de la Ley de Amparo.") }}
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ofrezco otorgar la garantía que este Juzgado determine conforme a la fracción II
+    del artículo 132 de la Ley de Amparo.)</span>
 </p>
 
 <div class="jurisprudencia-box">
@@ -316,13 +302,10 @@
     Con fundamento en los artículos 119 y 120 de la Ley de Amparo, ofrezco las siguientes pruebas:
 </p>
 <p class="indent text-justify">
-    <strong>1. DOCUMENTAL PÚBLICA.-</strong> {{ prueba_documental_publica | default("Consistente en copia certificada de
-    [describir documento], la cual se acompaña al presente escrito como ANEXO 1, y cuyo valor probatorio pleno se
-    solicita conforme al artículo 129 del Código Federal de Procedimientos Civiles, de aplicación supletoria.") }}
+    <strong>1. DOCUMENTAL PÚBLICA.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Recibos de nómina, contrato de trabajo, credencial laboral y comprobantes de pago)</span>
 </p>
 <p class="indent text-justify">
-    <strong>2. DOCUMENTAL PRIVADA.-</strong> {{ prueba_documental_privada | default("Consistente en [describir
-    documento], que se acompaña como ANEXO 2.") }}
+    <strong>2. DOCUMENTAL PRIVADA.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Recibos de nómina, contrato de trabajo, credencial laboral y comprobantes de pago)</span>
 </p>
 <p class="indent text-justify">
     <strong>3. PRESUNCIONAL LEGAL Y HUMANA.-</strong> En todo cuanto favorezca a los intereses del quejoso,
@@ -333,7 +316,7 @@
     y que beneficie a los intereses del quejoso.
 </p>
 <p class="indent text-justify">
-    {{ pruebas_adicionales | default("") }}
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>
 </p>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -364,8 +347,8 @@
 <p class="indent text-justify">
     <strong>QUINTO.-</strong> En la audiencia constitucional, <strong>CONCEDER EL AMPARO Y PROTECCIÓN
         DE LA JUSTICIA FEDERAL</strong> al quejoso, para los efectos de que la autoridad responsable
-    {{ efectos_amparo | default("deje insubsistente el acto reclamado y, en su caso, emita uno nuevo en el que subsane
-    las violaciones constitucionales señaladas") }}.
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(deje insubsistente el acto reclamado y, en su caso, emita uno nuevo en el que subsane
+    las violaciones constitucionales señaladas)</span>.
 </p>
 
 <p class="text-center text-bold" style="margin-top:40px;">
@@ -373,7 +356,7 @@
 </p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ cliente.nombre | default("NOMBRE COMPLETO Y FIRMA DEL QUEJOSO") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></div>
 </div>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -387,7 +370,7 @@
     3. Constancia de notificación del acto reclamado.<br>
     4. Copia de identificación oficial del quejoso.<br>
     5. Copia de la cédula profesional del abogado autorizado.<br>
-    6. {{ documentos_adicionales | default("Demás documentales ofrecidas como prueba.") }}
+    6. <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Demás documentales ofrecidas como prueba.)</span>
 </p>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -399,6 +382,5 @@
     <p>Este documento fue generado por Machotes Legales® y contiene fundamentación legal profesional,
         jurisprudencia vigente y argumentación especializada. Protegido por derechos de autor.
         Prohibida su reproducción, distribución o venta sin autorización.</p>
-    <p>Licencia: {{ license_id | default("TLEX-V2-XXXXXX") }} · Usuario: {{ license_user | default("___") }}</p>
+    <p>Licencia: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(TLEX-V2-001234)</span> · Usuario: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(usuario@correo.com)</span></p>
 </div>
-{% endblock %}

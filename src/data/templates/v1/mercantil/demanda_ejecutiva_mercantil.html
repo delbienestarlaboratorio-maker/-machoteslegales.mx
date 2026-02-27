@@ -1,63 +1,55 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Demanda Ejecutiva Mercantil</h1>
     <p class="subtitle">Artículos 1391-1414 del Código de Comercio · Ley General de Títulos y Operaciones de Crédito</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold">C. JUEZ DE LO MERCANTIL EN TURNO EN {{ ciudad | default("_______________") }}</p>
+<p class="text-bold">C. <em style="font-size:9pt;color:#666;">(Ciudadano/Ciudadana)</em> JUEZ DE LO MERCANTIL EN TURNO EN <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span></p>
 <p class="text-bold">P R E S E N T E</p>
 
 <p class="indent text-justify">
-    <strong>{{ cliente.nombre | default("NOMBRE DEL ACTOR") }}</strong>, por mi propio derecho,
-    señalando como domicilio para oír y recibir notificaciones <strong>{{ cliente.domicilio |
-        default("_________________________________") }}</strong>,
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></strong>, por mi propio derecho,
+    señalando como domicilio para oír y recibir notificaciones <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Coyoacán, Ciudad de México, C.P. 04000)</span></strong>,
     autorizando en términos del artículo 1069 del Código de Comercio a
-    <strong>{{ abogado.nombre | default("_________________________________") }}</strong>,
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Francisco Sánchez Torres)</span></strong>,
     ante Usted respetuosamente comparezco para exponer:
 </p>
 
 <p class="indent text-justify">
     Por medio del presente, con fundamento en los artículos 1391, 1392 y demás aplicables del Código de Comercio,
     vengo a demandar en la <strong>VÍA EJECUTIVA MERCANTIL</strong> a
-    <strong>{{ contraparte.nombre | default("NOMBRE DEL DEMANDADO") }}</strong>,
-    con domicilio en {{ contraparte.domicilio | default("_________________________________") }},
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del demandado)</span></strong>,
+    con domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>,
     el pago de las siguientes:
 </p>
 
 <div class="section-title">PRESTACIONES</div>
 <p class="indent text-justify">
-    <strong>a)</strong> El pago de la cantidad de <strong>${{ monto | default("_______________") }} ({{ monto_letra |
-        default("_______________") }} pesos 00/100 M.N.)</strong>,
+    <strong>a)</strong> El pago de la cantidad de <strong>$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(15,000.00)</span> (<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(15,000.00)</span> pesos 00/100 M.N.)</strong>,
     como suerte principal consignada en el título de crédito base de la acción.<br>
-    <strong>b)</strong> El pago de intereses moratorios a razón del {{ tasa_interes | default("___") }}% mensual
+    <strong>b)</strong> El pago de intereses moratorios a razón del <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>% mensual
     desde la fecha de vencimiento hasta la total liquidación.<br>
     <strong>c)</strong> El pago de gastos y costas que origine el presente juicio.
 </p>
 
 <div class="section-title">TÍTULO EJECUTIVO</div>
 <p class="indent text-justify">
-    Sirve de base a la presente acción el <strong>{{ tipo_titulo | default("PAGARÉ") }}</strong> suscrito
-    por el demandado con fecha {{ fecha_titulo | default("_______________") }},
-    con vencimiento al {{ fecha_vencimiento | default("_______________") }},
-    por la cantidad de ${{ monto | default("_______________") }} M.N., el cual se exhibe en original.
+    Sirve de base a la presente acción el <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Pagaré)</span></strong> suscrito
+    por el demandado con fecha <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span>,
+    con vencimiento al <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span>,
+    por la cantidad de $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(15,000.00)</span> M.N., el cual se exhibe en original.
 </p>
 
 <div class="section-title">HECHOS</div>
 <p class="indent text-justify">
-    <strong>PRIMERO.-</strong> {{ hecho_1 | default("Con fecha [fecha], el hoy demandado suscribió a mi favor un pagaré
-    por la cantidad referida, obligándose a pagar en la fecha de vencimiento señalada.") }}
+    <strong>PRIMERO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el primer hecho cronológicamente, con fecha, lugar y personas involucradas)</span>
 </p>
 <p class="indent text-justify">
-    <strong>SEGUNDO.-</strong> {{ hecho_2 | default("Llegada la fecha de vencimiento del título de crédito, el demandado
-    no realizó el pago, a pesar de los requerimientos extrajudiciales.") }}
+    <strong>SEGUNDO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el segundo hecho, describiendo la conducta del demandado)</span>
 </p>
 <p class="indent text-justify">
-    <strong>TERCERO.-</strong> {{ hecho_3 | default("El título base de la acción reúne los requisitos del artículo 170
-    de la LGTOC y trae aparejada ejecución conforme al artículo 1391 fracción IV del Código de Comercio.") }}
+    <strong>TERCERO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el tercer hecho y sus consecuencias para el promovente)</span>
 </p>
 
 <div class="section-title">DERECHO</div>
@@ -86,6 +78,5 @@
 <p class="text-center text-bold" style="margin-top:30px;">PROTESTO LO NECESARIO</p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA DEL ACTOR") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></div>
 </div>
-{% endblock %}

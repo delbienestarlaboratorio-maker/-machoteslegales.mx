@@ -1,0 +1,308 @@
+[
+    {
+        "id": "elec-juicio-proteccion-derechos-v1",
+        "slug": "juicio-proteccion-derechos-politicos",
+        "title": "Juicio para la Proteccion de los Derechos Politico-Electorales",
+        "legalBasis": [
+            "Arts. 79-86 LGSMIME",
+            "Art. 99 Fr. V CPEUM"
+        ],
+        "description": "Medio de impugnacion ante el TEPJF para defender derechos de votar, ser votado y asociarse politicamente.",
+        "keywords": [
+            "JDC Electoral",
+            "TEPJF derechos politicos",
+            "amparo electoral ciudadano"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Juicio para la Proteccion de los Derechos Politico-Electorales</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">TEPJF</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudadana Ana Torres Ruiz)</span></strong> promueve JDC contra la resolucion del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(INE)</span> que cancelo su registro como candidata independiente al cargo de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Diputada Local Distrito 5 CDMX)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Actora)</span></div></div>"
+    },
+    {
+        "id": "elec-recurso-apelacion-v1",
+        "slug": "recurso-apelacion-resolucion-ine",
+        "title": "Recurso de Apelacion contra Resolucion del INE",
+        "legalBasis": [
+            "Arts. 40-52 LGSMIME",
+            "Art. 99 Fr. III CPEUM"
+        ],
+        "description": "Recurso ante el TEPJF contra resoluciones del INE sobre fiscalizacion, registro de candidatos o sanciones.",
+        "keywords": [
+            "recurso apelacion electoral TEPJF",
+            "impugnar resolucion INE",
+            "apelar sancion INE"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Recurso de Apelacion</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">TEPJF</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Partido Verde Ecologista)</span></strong> interpone RECURSO DE APELACION contra la resolucion del INE que impuso sancion economica de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2,000,000.00)</span> por supuesto exceso de topes de campana.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Partido)</span></div></div>"
+    },
+    {
+        "id": "elec-juicio-revision-partido-v1",
+        "slug": "juicio-revision-acto-partido-politico",
+        "title": "Juicio para la Revision de Actos de Partido Politico",
+        "legalBasis": [
+            "Arts. 87-104 LGSMIME"
+        ],
+        "description": "Medio de impugnacion de ciudadanos contra resoluciones internas de su partido que afecten sus derechos.",
+        "keywords": [
+            "demanda partido politico interno",
+            "JDC contra partido",
+            "derechos militante electoral"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Juicio para la Revision del Acto de Partido</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">TEPJF</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Militante: Carlos Lopez)</span></strong> impugna la Resolucion del Comite Nacional de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Morena)</span> que lo expulso sin garantia de audiencia previa.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Actor)</span></div></div>"
+    },
+    {
+        "id": "elec-impugnacion-resultados-v1",
+        "slug": "juicio-impugnacion-resultados-eleccion",
+        "title": "Juicio de Inconformidad contra Resultados Electorales",
+        "legalBasis": [
+            "Arts. 53-78 LGSMIME"
+        ],
+        "description": "Impugnacion formal de los resultados de una eleccion ante el TEPJF o tribunal local.",
+        "keywords": [
+            "impugnar resultados eleccion",
+            "anular eleccion",
+            "TEPJF inconformidad"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Juicio de Inconformidad contra Resultados Electorales</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">TEPJF</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Fuerza por Mexico)</span></strong> impugna la declaracion de validez del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(OPLE de Veracruz)</span> por irregularidades en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(120 casillas)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Partido)</span></div></div>"
+    },
+    {
+        "id": "elec-recurso-revision-ine-v1",
+        "slug": "recurso-revision-regional-ine",
+        "title": "Recurso de Revision ante el INE",
+        "legalBasis": [
+            "Arts. 35-39 LGSMIME"
+        ],
+        "description": "Recurso interno del INE para impugnar resoluciones emitidas por Consejos Locales o Distritales.",
+        "keywords": [
+            "recurso revision INE",
+            "impugnar consejo distrital",
+            "recurso local INE"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Recurso de Revision ante el INE</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">CONSEJO GENERAL DEL INE</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(PAN)</span></strong> presenta RECURSO DE REVISION contra resolucion del Consejo Local de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Jalisco)</span> que rechazo candidaturas para elecciones locales.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Partido)</span></div></div>"
+    },
+    {
+        "id": "elec-queja-infraccion-v1",
+        "slug": "queja-infraccion-electoral-ine",
+        "title": "Queja por Infraccion Electoral ante el INE",
+        "legalBasis": [
+            "Arts. 441-465 LGIPE"
+        ],
+        "description": "Queja para denunciar conductas que violan la normativa electoral como uso indebido de recursos publicos o propaganda.",
+        "keywords": [
+            "queja electoral INE",
+            "denuncia infraccion partido",
+            "propaganda electoral ilegal"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Queja por Infraccion Electoral</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">INE</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Movimiento Ciudadano)</span></strong> presenta QUEJA contra el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ayuntamiento de Guadalajara)</span> por uso de vehiculos y personal municipal en actos de campana, violando el articulo 134 CPEUM.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Partido)</span></div></div>"
+    },
+    {
+        "id": "elec-candidatura-independiente-v1",
+        "slug": "solicitud-registro-candidatura-independiente",
+        "title": "Solicitud de Registro de Candidatura Independiente",
+        "legalBasis": [
+            "Arts. 357-387 LGIPE"
+        ],
+        "description": "Tramite ante el INE para que un ciudadano se registre como candidato independiente a cargo de eleccion popular.",
+        "keywords": [
+            "candidatura independiente INE",
+            "candidato sin partido",
+            "registro candidato ciudadano"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Registro de Candidatura Independiente</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">INE</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Miguel Angel Vega Soto)</span></strong> solicita REGISTRO como CANDIDATO INDEPENDIENTE al cargo de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Diputado Federal, Distrito 3 CDMX)</span>, acreditando el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2% de firmas ciudadanas requerido)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Ciudadano)</span></div></div>"
+    },
+    {
+        "id": "elec-acto-anticipado-v1",
+        "slug": "queja-acto-anticipado-campana",
+        "title": "Queja por Acto Anticipado de Campana Electoral",
+        "legalBasis": [
+            "Arts. 209, 449 Fr. I LGIPE"
+        ],
+        "description": "Denuncia ante el INE por actos de precampana o campana anticipada antes del periodo legal autorizado.",
+        "keywords": [
+            "acto anticipado campana",
+            "propaganda anticipada INE",
+            "queja precampana"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Queja por Acto Anticipado de Campana</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">INE</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(PRI)</span></strong> presenta QUEJA por ACTO ANTICIPADO DE CAMPANA contra el candidato de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Morena)</span> que difunde propaganda en bardas y redes sociales pidiendo el voto antes del periodo legal.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Partido)</span></div></div>"
+    },
+    {
+        "id": "elec-queja-financiamiento-v1",
+        "slug": "queja-financiamiento-ilegal-campana",
+        "title": "Queja por Financiamiento Ilegal de Campana",
+        "legalBasis": [
+            "Arts. 399-440 LGIPE"
+        ],
+        "description": "Denuncia ante el INE por recepcion de financiamiento privado prohibido o rebase de topes de campana.",
+        "keywords": [
+            "financiamiento ilegal campana",
+            "topes campana electoral",
+            "dinero sucio candidato"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Queja por Financiamiento Ilegal</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">INE – UNIDAD DE FISCALIZACION</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(PAN)</span></strong> presenta QUEJA por FINANCIAMIENTO ILICITO contra la campana del candidato a Gobernador del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(PRI en Jalisco)</span> que recibio aportaciones en efectivo de empresas privadas por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(8,000,000.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Partido)</span></div></div>"
+    },
+    {
+        "id": "elec-recuento-votos-v1",
+        "slug": "solicitud-recuento-votos-casillas",
+        "title": "Solicitud de Recuento de Votos en Casillas",
+        "legalBasis": [
+            "Arts. 295-310 LGIPE"
+        ],
+        "description": "Solicitud formal para que los computos distritales incluyan el recuento de ciertos paquetes electorales.",
+        "keywords": [
+            "recuento votos casilla",
+            "recuento electoral",
+            "reconteo sufragios"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Recuento de Votos</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Distrito Electoral 5, CDMX)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">CONSEJO DISTRITAL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Representante del PAN)</span></strong> solicita el RECUENTO de votos de las casillas <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(1214-B, 1215-B)</span> por diferencias de mas del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(1%)</span> entre el acta de escrutinio y el PREP.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Representante)</span></div></div>"
+    },
+    {
+        "id": "elec-denuncia-delito-v1",
+        "slug": "denuncia-delito-electoral-fepade",
+        "title": "Denuncia por Delito Electoral ante la FEPADE",
+        "legalBasis": [
+            "Arts. 401-413 CPEUM",
+            "Ley General en Materia de Delitos Electorales"
+        ],
+        "description": "Denuncia formal ante la Fiscalia Especializada en Delitos Electorales por coaccion del voto, carrusel u otros delitos.",
+        "keywords": [
+            "denuncia FEPADE",
+            "delito electoral",
+            "compra voto denuncia"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Denuncia por Delito Electoral</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">FISCALIA ESPECIALIZADA EN DELITOS ELECTORALES</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Pedro Ruiz Vega)</span></strong> presenta DENUNCIA contra funcionarios del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ayuntamiento de Xochimilco)</span> que entregaron despensas a cambio del voto el dia de la jornada electoral.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Denunciante)</span></div></div>"
+    },
+    {
+        "id": "elec-convenio-coalicion-v1",
+        "slug": "convenio-coalicion-partidos-politicos",
+        "title": "Convenio de Coalicion entre Partidos Politicos",
+        "legalBasis": [
+            "Arts. 87-97 LGIPE"
+        ],
+        "description": "Acuerdo formal entre dos o mas partidos para participar conjuntamente en una eleccion bajo plataforma comun.",
+        "keywords": [
+            "coalicion partidos politicos",
+            "convenio alianza electoral",
+            "frente electoral Mexico"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Convenio de Coalicion Electoral</h1></div><p class=\"meta-line\">Celebrado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(PAN)</span></strong> y <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(MC)</span></strong> celebran CONVENIO DE COALICION denominada <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Mexico al Frente)</span> para participar en las elecciones de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Gobernador de Jalisco 2026)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Presidentes de los Partidos)</span></div></div>"
+    },
+    {
+        "id": "elec-nombramiento-representante-v1",
+        "slug": "nombramiento-representante-partido-casilla",
+        "title": "Nombramiento de Representante de Partido ante Casilla",
+        "legalBasis": [
+            "Arts. 250-265 LGIPE"
+        ],
+        "description": "Documento formal de un partido politico para designar a su representante ante una casilla electoral.",
+        "keywords": [
+            "representante casilla partido",
+            "acreditacion partido electoral",
+            "fiscal de casilla"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Nombramiento de Representante de Partido ante Casilla</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><p class=\"indent text-justify\">El <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Comite Municipal del PAN)</span></strong> nombra REPRESENTANTE de casilla al C. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Luis Herrera)</span> ante la casilla <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(1800-C, Seccion 1008)</span> para la jornada del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(1 de junio de 2026)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Partido)</span></div></div>"
+    },
+    {
+        "id": "elec-impugnacion-computo-v1",
+        "slug": "escrito-impugnacion-computo-distrital",
+        "title": "Escrito de Impugnacion del Computo Distrital",
+        "legalBasis": [
+            "Art. 291 Fr. I LGIPE"
+        ],
+        "description": "Impugnacion formal de los computos realizados por el Consejo Distrital Electoral.",
+        "keywords": [
+            "impugnar computo electoral",
+            "nulidad acta computo",
+            "protesta resultados distritales"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Impugnacion del Computo Distrital</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Distrito 8, CDMX)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">CONSEJO DISTRITAL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(PRI)</span></strong> IMPUGNA el computo distrital por la inclusion de votos de casillas con actas alteradas en las secciones <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(1010, 1011 y 1012)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Representante)</span></div></div>"
+    },
+    {
+        "id": "elec-acreditacion-observador-v1",
+        "slug": "solicitud-acreditacion-observador-electoral",
+        "title": "Solicitud de Acreditacion de Observadores Electorales",
+        "legalBasis": [
+            "Arts. 217-228 LGIPE"
+        ],
+        "description": "Registro de ciudadanos u organizaciones civiles como observadores electorales para la jornada.",
+        "keywords": [
+            "observador electoral INE",
+            "acreditacion observador",
+            "civiles jornada electoral"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Acreditacion de Observadores</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">INE</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Alianza Civil por la Democracia AC)</span></strong> solicita acreditacion de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(250 observadores)</span> para la jornada electoral del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(1 de junio de 2026)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Organizacion)</span></div></div>"
+    },
+    {
+        "id": "elec-reconsideracion-v1",
+        "slug": "recurso-reconsideracion-tepjf",
+        "title": "Recurso de Reconsideracion ante el TEPJF",
+        "legalBasis": [
+            "Arts. 61-66 LGSMIME"
+        ],
+        "description": "Recurso extraordinario ante la Sala Superior del TEPJF para revisar sentencias de Salas Regionales.",
+        "keywords": [
+            "reconsideracion TEPJF",
+            "Sala Superior electoral",
+            "recurso extraordinario electoral"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Recurso de Reconsideracion – Sala Superior TEPJF</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">SALA SUPERIOR DEL TEPJF</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Roberto Fuentes)</span></strong> interpone RECURSO DE RECONSIDERACION contra la sentencia de la <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Sala Regional Guadalajara)</span> que confirmo su no registro como candidato.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Recurrente)</span></div></div>"
+    },
+    {
+        "id": "elec-impugnacion-consulta-v1",
+        "slug": "impugnacion-resultado-consulta-popular",
+        "title": "Impugnacion de Resultado de Consulta Popular",
+        "legalBasis": [
+            "Ley Federal de Consulta Popular",
+            "Art. 35 CPEUM"
+        ],
+        "description": "Medio de impugnacion ante el TEPJF contra la validez del proceso de consulta popular.",
+        "keywords": [
+            "consulta popular impugnacion",
+            "plebiscito Mexico TEPJF",
+            "resultado consulta ciudadana"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Impugnacion del Resultado de Consulta Popular</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">TEPJF</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudadanos Promotores del NO, 50,000 firmas)</span></strong> impugnan los resultados de la Consulta Popular celebrada el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(7 de febrero de 2026)</span> por irregularidades en el padron utilizado.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Los Promoventes)</span></div></div>"
+    },
+    {
+        "id": "elec-queja-neutralidad-v1",
+        "slug": "queja-neutralidad-gobierno-electoral",
+        "title": "Queja por Violacion a la Neutralidad Gubernamental",
+        "legalBasis": [
+            "Art. 134 CPEUM",
+            "LGIPE Art. 449"
+        ],
+        "description": "Denuncia contra servidor publico que usa recursos o cargo para favorecer a un candidato durante el proceso electoral.",
+        "keywords": [
+            "neutralidad gobierno electoral",
+            "servidor publico propaganda",
+            "uso recursos publicos campana"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Queja por Violacion a la Neutralidad Gubernamental</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">INE</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Morena)</span></strong> presenta QUEJA contra el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Secretario de Obras de Guanajuato)</span> quien en actos oficiales expreso preferencias por el candidato de oposicion, violando el articulo 134 CPEUM.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Partido)</span></div></div>"
+    },
+    {
+        "id": "elec-nulidad-eleccion-v1",
+        "slug": "demanda-nulidad-eleccion",
+        "title": "Demanda de Nulidad de Eleccion",
+        "legalBasis": [
+            "Arts. 53-78 LGSMIME"
+        ],
+        "description": "Juicio ante el TEPJF para invalidar una eleccion por causas graves, determinantes y no reparables.",
+        "keywords": [
+            "nulidad eleccion",
+            "anular gobernador",
+            "invalidar eleccion TEPJF"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Demanda de Nulidad de Eleccion</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">TEPJF – SALA SUPERIOR</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(MC)</span></strong> promueve DEMANDA DE NULIDAD de la eleccion de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Gobernador de Veracruz)</span> por irregularidades graves: coaccion del voto en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(200 casillas)</span> y rebase de topes de gastos de campana del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(340%)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Partido)</span></div></div>"
+    },
+    {
+        "id": "elec-recurso-revocacion-mandato-v1",
+        "slug": "impugnacion-proceso-revocacion-mandato",
+        "title": "Impugnacion al Proceso de Revocacion de Mandato",
+        "legalBasis": [
+            "Ley Federal de Revocacion de Mandato",
+            "Art. 35 Fr. IX CPEUM"
+        ],
+        "description": "Medio de impugnacion ante el TEPJF contra irregularidades en el proceso de revocacion de mandato presidencial.",
+        "keywords": [
+            "revocacion mandato impugnar",
+            "TEPJF revocacion",
+            "proceso revocacion electoral"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Impugnacion al Proceso de Revocacion de Mandato</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(27 de febrero de 2026)</span></p><div class=\"section-title\">TEPJF</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudadanos Promotores del NO, 100,000 firmas)</span></strong> impugnan irregularidades cometidas durante el proceso de Revocacion de Mandato del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(10 de abril de 2026)</span>: uso de recursos publicos para promover el SI.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Los Promoventes)</span></div></div>"
+    }
+]

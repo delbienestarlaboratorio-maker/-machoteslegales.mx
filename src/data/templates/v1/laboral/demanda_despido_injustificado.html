@@ -1,106 +1,103 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Demanda Laboral por Despido Injustificado</h1>
     <p class="subtitle">Artículo 123 Apartado A CPEUM · Arts. 47, 48, 50, 76, 80, 87, 89, 162 LFT</p>
 </div>
 
-<p class="meta-line">Ciudad de México, a {{ fechaDespido | default("_______________") }}</p>
+<p class="meta-line">Ciudad de México, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold">H. TRIBUNAL LABORAL DEL {{ circuito | default("___") }} CIRCUITO</p>
+<p class="text-bold">H. TRIBUNAL LABORAL DEL <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Primero en Materia Laboral de la CDMX)</span> CIRCUITO</p>
 <p class="text-bold">P R E S E N T E</p>
 
 <p class="indent text-justify">
-    <strong>{{ nombreTrabajador | default("_______________") }}</strong>, señalando domicilio en
-    <strong>{{ domicilioTrabajador | default("_______________") }}</strong>,
-    autorizando al Lic. <strong>{{ nombreAbogado | default("_______________") }}</strong>,
-    cédula profesional <strong>{{ cedulaAbogado | default("_______________") }}</strong>,
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong>, señalando domicilio en
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span></strong>,
+    autorizando al Lic. <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong>,
+    cédula profesional <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(3847291)</span></strong>,
     demando en la <strong>VÍA ORDINARIA LABORAL</strong> a
-    <strong>{{ nombrePatron | default("_______________") }}</strong>,
-    con domicilio en {{ domicilioPatron | default("_______________") }}.
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong>,
+    con domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>.
 </p>
 
 <div class="section-title">DATOS DE LA RELACIÓN DE TRABAJO</div>
-<table style="width:100%; border:1px solid #000; border-collapse:collapse; font-size:11pt;">
+<table style="width:100%; border:1px solid #b2dfdb; border-collapse:collapse; font-size:11pt;">
     <tr>
-        <td style="border:1px solid #000;padding:5px;width:40%;font-weight:bold;">Fecha de ingreso:</td>
-        <td style="border:1px solid #000;padding:5px;">{{ fechaIngreso | default("_______________") }}</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;width:40%;font-weight:bold;">Fecha de ingreso:</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000;padding:5px;font-weight:bold;">Fecha de despido:</td>
-        <td style="border:1px solid #000;padding:5px;">{{ fechaDespido | default("_______________") }}</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;font-weight:bold;">Fecha de despido:</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000;padding:5px;font-weight:bold;">Puesto:</td>
-        <td style="border:1px solid #000;padding:5px;">{{ puesto | default("_______________") }}</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;font-weight:bold;">Puesto:</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Auxiliar Contable)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000;padding:5px;font-weight:bold;">Salario diario:</td>
-        <td style="border:1px solid #000;padding:5px;">${{ salarioDiario | default("_______________") }}</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;font-weight:bold;">Salario diario:</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000;padding:5px;font-weight:bold;">Horario:</td>
-        <td style="border:1px solid #000;padding:5px;">{{ horario | default("Lunes a viernes, 9:00 – 18:00 hrs") }}</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;font-weight:bold;">Horario:</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lunes a viernes de 9:00 a 18:00 hrs, sábado de 9:00 a 14:00 hrs)</span></td>
     </tr>
 </table>
 
 <div class="section-title">PRESTACIONES QUE SE RECLAMAN</div>
-<table style="width:100%; border:1px solid #000; border-collapse:collapse; font-size:11pt;">
-    <tr style="background:#f0f0f0; font-weight:bold;">
-        <td style="border:1px solid #000;padding:6px;">Concepto</td>
-        <td style="border:1px solid #000;padding:6px;">Fundamento</td>
-        <td style="border:1px solid #000;padding:6px;text-align:right;">Monto</td>
+<table style="width:100%; border:1px solid #b2dfdb; border-collapse:collapse; font-size:11pt;">
+    <tr style="background:#e6f7f2; font-weight:bold;">
+        <td style="border:1px solid #b2dfdb;padding:6px;">Concepto</td>
+        <td style="border:1px solid #b2dfdb;padding:6px;">Fundamento</td>
+        <td style="border:1px solid #b2dfdb;padding:6px;text-align:right;">Monto</td>
     </tr>
     <tr>
-        <td style="border:1px solid #000;padding:5px;">Indemnización (3 meses)</td>
-        <td style="border:1px solid #000;padding:5px;">Art. 50 fr. III LFT</td>
-        <td style="border:1px solid #000;padding:5px;text-align:right;">${{ indemnizacion3meses | default("___") }}</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;">Indemnización (3 meses)</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;">Art. 50 fr. III LFT</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000;padding:5px;">20 días por año</td>
-        <td style="border:1px solid #000;padding:5px;">Art. 50 fr. II LFT</td>
-        <td style="border:1px solid #000;padding:5px;text-align:right;">${{ indem20dias | default("___") }}</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;">20 días por año</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;">Art. 50 fr. II LFT</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000;padding:5px;">Salarios caídos</td>
-        <td style="border:1px solid #000;padding:5px;">Art. 48 LFT</td>
-        <td style="border:1px solid #000;padding:5px;text-align:right;">${{ salariosCaidos | default("___") }}</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;">Salarios caídos</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;">Art. 48 LFT</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000;padding:5px;">Prima de antigüedad</td>
-        <td style="border:1px solid #000;padding:5px;">Art. 162 LFT</td>
-        <td style="border:1px solid #000;padding:5px;text-align:right;">${{ primaAntiguedad | default("___") }}</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;">Prima de antigüedad</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;">Art. 162 LFT</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000;padding:5px;">Aguinaldo proporcional (15 días)</td>
-        <td style="border:1px solid #000;padding:5px;">Art. 87 LFT</td>
-        <td style="border:1px solid #000;padding:5px;text-align:right;">${{ aguinaldo | default("___") }}</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;">Aguinaldo proporcional (15 días)</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;">Art. 87 LFT</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(2,075.00)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000;padding:5px;">Vacaciones proporcionales</td>
-        <td style="border:1px solid #000;padding:5px;">Art. 76 LFT (ref. 2023)</td>
-        <td style="border:1px solid #000;padding:5px;text-align:right;">${{ vacaciones | default("___") }}</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;">Vacaciones proporcionales</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;">Art. 76 LFT (ref. 2023)</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(2,490.00)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000;padding:5px;">Prima vacacional (25%)</td>
-        <td style="border:1px solid #000;padding:5px;">Art. 80 LFT</td>
-        <td style="border:1px solid #000;padding:5px;text-align:right;">${{ primaVacacional | default("___") }}</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;">Prima vacacional (25%)</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;">Art. 80 LFT</td>
+        <td style="border:1px solid #b2dfdb;padding:5px;text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></td>
     </tr>
-    <tr style="font-weight:bold;background:#f0f0f0;">
-        <td style="border:1px solid #000;padding:6px;" colspan="2">TOTAL ESTIMADO</td>
-        <td style="border:1px solid #000;padding:6px;text-align:right;">${{ total | default("___") }}</td>
+    <tr style="font-weight:bold;background:#e6f7f2;">
+        <td style="border:1px solid #b2dfdb;padding:6px;" colspan="2">TOTAL ESTIMADO</td>
+        <td style="border:1px solid #b2dfdb;padding:6px;text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(55,000.00)</span></td>
     </tr>
 </table>
 
 <div class="section-title">HECHOS</div>
 <p class="indent text-justify">
-    <strong>PRIMERO.-</strong> {{ hecho1 | default("Con fecha [fechaIngreso], inicié mi relación laboral con el
-    demandado desempeñando el puesto de [puesto], con salario diario de $[salarioDiario].") }}
+    <strong>PRIMERO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Con fecha <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(fechaIngreso)</span>, inicié mi relación laboral con el
+    demandado desempeñando el puesto de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(puesto)</span>, con salario diario de $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(salarioDiario)</span>.)</span>
 </p>
 <p class="indent text-justify">
-    <strong>SEGUNDO.-</strong> {{ hecho2 | default("El día [fechaDespido], el demandado me comunicó mi despido de forma
-    injustificada, sin entregarme aviso de rescisión conforme al Art. 47 último párrafo de la LFT.") }}
+    <strong>SEGUNDO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El día <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(fechaDespido)</span>, el demandado me comunicó mi despido de forma
+    injustificada, sin entregarme aviso de rescisión conforme al Art. 47 último párrafo de la LFT.)</span>
 </p>
 <p class="indent text-justify">
     <strong>TERCERO.-</strong> Manifiesto bajo protesta de decir verdad que NUNCA incurrí en causal alguna de rescisión
@@ -118,8 +115,8 @@
 <p class="indent text-justify">
     <strong>1. CONFESIONAL</strong> a cargo del representante legal del patrón.<br>
     <strong>2. DOCUMENTAL PRIVADA:</strong> recibos de nómina, contrato de trabajo, constancias laborales.<br>
-    <strong>3. TESTIMONIAL:</strong> de {{ testigo1 | default("[nombre testigo 1]") }} y {{ testigo2 | default("[nombre
-    testigo 2]") }}.<br>
+    <strong>3. TESTIMONIAL:</strong> de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(nombre testigo 1)</span>)</span> y <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(nombre
+    testigo 2)</span>)</span>.<br>
     <strong>4. INFORMES</strong> al IMSS e INFONAVIT sobre cotizaciones.<br>
     <strong>5. PRESUNCIONAL LEGAL Y HUMANA</strong> e instrumental de actuaciones.
 </p>
@@ -135,8 +132,7 @@
 <p style="text-align:center; font-weight:bold; margin-top:40px;">PROTESTO LO NECESARIO</p>
 
 <div style="margin-top:50px; text-align:center;">
-    <div style="display:inline-block; min-width:250px; border-top:1px solid #000; padding-top:8px;">
-        {{ nombreTrabajador | default("_______________") }}
+    <div style="display:inline-block; min-width:260px; border-top:1.5px solid #0d4a3a; padding-top:8px; text-align:center;">
+        <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>
     </div>
 </div>
-{% endblock %}

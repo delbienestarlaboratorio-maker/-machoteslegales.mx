@@ -1,17 +1,14 @@
-{% extends "base_v2.html" %}
-
-{% block content %}
-<div class="header-v2">
+﻿<div class="header-v2">
     <div class="tier-badge">V2 NEGOCIOS</div>
     <h1>Solicitud de Trámite de Residencia Permanente y Trascendencia Migratoria</h1>
     <p class="subtitle-v2">Arts. 52, 54 y 133 de la Ley de Migración y Reglamento del INM · Vinculo Familiar /
         Jubilación / Sistema de Puntos</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, a {{ fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
 <p class="text-bold destinatario">INSTITUTO NACIONAL DE MIGRACIÓN (INM)</p>
-<p class="text-bold">OFICINA DE REPRESENTACIÓN EN {{ estado | default("___") }}</p>
+<p class="text-bold">OFICINA DE REPRESENTACIÓN EN <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span></p>
 <p class="text-bold">H. COMISIONADO DE REGULACIÓN MIGRATORIA EN TURNO</p>
 <p class="text-bold">P R E S E N T E</p>
 
@@ -20,13 +17,9 @@
 <!-- ═══════════════════════════════════════════════════ -->
 
 <p class="indent text-justify">
-    <strong>{{ solicitante.nombre | default("NOMBRE COMPLETO DEL EXTRANJERO PROMOVENTE") }}</strong>, de nacionalidad {{
-    solicitante.nacionalidad | default("_______________") }}, contando con pasaporte oficial ordinario número <strong>{{
-        solicitante.pasaporte | default("___") }}</strong> emitido por las autoridades de mi país de origen y con número
-    único de extranjería de internamiento (si fuere temporal previo): <strong>{{ solicitante.num_extranjero |
-        default("___") }}</strong>; señalando como domicilio físico para oír y recibir documentos en territorio nacional
-    el ubicado en {{ solicitante.domicilio | default("_______________") }} y correo electrónico: <strong>{{
-        solicitante.email | default("___") }}</strong>; ante la superioridad de esta H. Delegación Migratoria con pleno
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre completo del extranjero promovente)</span></strong>, de nacionalidad <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(francesa)</span>, contando con pasaporte oficial ordinario número <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong> emitido por las autoridades de mi país de origen y con número
+    único de extranjería de internamiento (si fuere temporal previo): <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong>; señalando como domicilio físico para oír y recibir documentos en territorio nacional
+    el ubicado en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span> y correo electrónico: <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong>; ante la superioridad de esta H. Delegación Migratoria con pleno
     respeto, ruego que se me atienda:
 </p>
 
@@ -43,15 +36,11 @@
 <div class="section-title numbered">I. CAUSAL PRINCIPAL DEL CAMBIO DE SITUACIÓN MIGRATORIA (ART. 54 INM)</div>
 
 <p class="indent text-justify double-space">
-    Esta solicitud se fundamenta y motiva irrefutablemente en el supuesto administrativo de: <strong>{{
-        causal_residencia | default("[Elija: VÍNCULO FAMILIAR / JUBILADO PENSIONISTA / 4 AÑOS COMO RESIDENTE TEMPORAL /
-        ASILO POLÍTICO]") }}</strong>, bajo las siguientes circunstancias de hecho:
+    Esta solicitud se fundamenta y motiva irrefutablemente en el supuesto administrativo de: <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">([Elija: VÍNCULO FAMILIAR / JUBILADO PENSIONISTA / 4 AÑOS COMO RESIDENTE TEMPORAL /
+        ASILO POLÍTICO])</span></strong>, bajo las siguientes circunstancias de hecho:
 </p>
 <p class="indent text-justify double-space">
-    <strong>ÚNICO.-</strong> {{_hechos_causal | default("(Ej. Vínculo: Que contraje nupcias de buena fe y mantengo
-    matrimonio verificado por más de 2 años con cónyuge de nacionalidad mexicana... / Ej. Jubilación: Que he migrado al
-    territorio para jubilación demostrando ingresos o activos de inversión mayores a los UMAS exigibles por la
-    Miscelánea Migratoria vigente.)") }}
+    <strong>ÚNICO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">()</span>
 </p>
 
 <div class="jurisprudencia-box">
@@ -78,9 +67,9 @@
     <li><strong>2.</strong> Impresión del trámite con NUT.</li>
     <li><strong>3.</strong> Pasaporte extranjero original y hojas legibles con sellos de entradas al país.</li>
     <li><strong>4.</strong> Forma Migratoria Múltiple (FMM) o mi anterior Trjeta de Residencia Temporal.</li>
-    <li><strong>5.</strong> {{ causal_documento_fuerte | default("Acta de matrimonio certificada de mi cónyuge nacional
+    <li><strong>5.</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Acta de matrimonio certificada de mi cónyuge nacional
         / Acta de nacimiento hija(o) / Estado de cuenta internacional validado notarialmente indicando ahorros para
-        modelo pensionista.") }}</li>
+        modelo pensionista.)</span></li>
 </ul>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -101,7 +90,7 @@
 <p class="text-center text-bold" style="margin-top:40px;">FIRMA DEL EXTRANJERO Y DECLARACIÓN DE VERACIDAD DE DATOS</p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ solicitante.nombre | default("NOMBRE COMPLETO Y FIRMA COMO APARECE EN PASAPORTE") }}
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre completo y firma como aparece en pasaporte)</span>
     </div>
 </div>
 
@@ -111,4 +100,3 @@
         con este cuerpo legal disminuye resoluciones negativas (prevenciones) por parte de áreas sustantivas del
         Instituto Nacional de Migración.</p>
 </div>
-{% endblock %}

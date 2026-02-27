@@ -1,0 +1,307 @@
+[
+    {
+        "id": "notarial-poder-general-v1",
+        "slug": "poder-general-actos-de-dominio",
+        "title": "Poder General para Actos de Dominio",
+        "legalBasis": [
+            "Arts. 2553-2578 CCDF",
+            "Ley del Notariado CDMX"
+        ],
+        "description": "Poder notarial que autoriza al apoderado a realizar todo acto de disposicion sobre bienes del poderdante.",
+        "keywords": [
+            "poder notarial dominio",
+            "escritura poder",
+            "representacion legal amplia"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Poder General para Actos de Dominio</h1></div><p class=\"meta-line\">Ante el Notario Publico No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(85 de CDMX)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Ramirez Lopez)</span></strong> otorga PODER GENERAL PARA ACTOS DE DOMINIO a favor de <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Maria Garcia Torres)</span></strong>, con todas las clausulas, condiciones y requisitos que la ley exige, para que a su nombre gestione, administre, enajene y grave todos sus bienes muebles e inmuebles.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Poderdante ante Notario)</span></div></div>"
+    },
+    {
+        "id": "notarial-poder-administracion-v1",
+        "slug": "poder-para-actos-administracion",
+        "title": "Poder para Actos de Administración",
+        "legalBasis": [
+            "Arts. 2554 CCDF"
+        ],
+        "description": "Poder notarial para gestionar bienes y negocios del poderdante sin facultad de enajenar.",
+        "keywords": [
+            "poder administracion",
+            "mandato notarial",
+            "representacion negocios"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Poder para Actos de Administracion</h1></div><p class=\"meta-line\">Ante el Notario Publico No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(12 de Monterrey)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Roberto Torres)</span></strong> otorga PODER PARA ACTOS DE ADMINISTRACION a <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(su hermano Luis Torres)</span></strong> para administrar sus propiedades, cobrar rentas, pagar impuestos y contratar servicios en su nombre durante su ausencia en el extranjero.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Poderdante)</span></div></div>"
+    },
+    {
+        "id": "notarial-poder-especial-v1",
+        "slug": "poder-especial-acto-determinado",
+        "title": "Poder Especial para Acto Determinado",
+        "legalBasis": [
+            "Art. 2553 CCDF"
+        ],
+        "description": "Poder notarial limitado a un acto concreto, como firmar un contrato, comparecer en juicio o vender un bien especifico.",
+        "keywords": [
+            "poder especial notarial",
+            "mandato acto especifico",
+            "poder limitado firmar contrato"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Poder Especial para Acto Determinado</h1></div><p class=\"meta-line\">Otorgado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ana Gonzalez)</span></strong> otorga PODER ESPECIAL al <strong>Lic. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Pedro Diaz)</span></strong> exclusivamente para: comparecer en el juicio oral <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(JO-500/2026)</span>, suscribir acuerdos de conciliacion y cobrar la cantidad resultante, sin ninguna otra facultad adicional.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Poderdante)</span></div></div>"
+    },
+    {
+        "id": "notarial-testamento-publico-v1",
+        "slug": "testamento-publico-abierto",
+        "title": "Testamento Público Abierto",
+        "legalBasis": [
+            "Arts. 1500-1530 CCDF",
+            "Ley del Notariado CDMX"
+        ],
+        "description": "Ultima voluntad del testador dictada ante Notario Publico para distribuir su patrimonio.",
+        "keywords": [
+            "testamento notarial",
+            "ultima voluntad notario",
+            "herencia testamento abierto"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Testamento Publico Abierto</h1></div><p class=\"meta-line\">Otorgado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span>, ante el Notario No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(45 de CDMX)</span></p><p class=\"indent text-justify\">El testador <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Don Ernesto Garcia, 72 anos, en pleno uso de sus facultades)</span></strong> DECLARA como su ultima voluntad: <strong>LEGO</strong> el inmueble ubicado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Calle Encinos 88, Col. Pedregal)</span> a su hijo <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Roberto Garcia)</span>; sus cuentas bancarias y efectivo al <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(50% a cada hijo en iguales partes)</span>. Designa albacea a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Roberto Garcia)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Testador, Notario y Testigos)</span></div></div>"
+    },
+    {
+        "id": "notarial-acta-asamblea-sa-v1",
+        "slug": "acta-asamblea-ordinaria-sa",
+        "title": "Acta de Asamblea General Ordinaria de SA",
+        "legalBasis": [
+            "Arts. 178-202 LGSM",
+            "Art. 143 LGSM"
+        ],
+        "description": "Acta notariada que formaliza los acuerdos de la Asamblea Anual de Accionistas de una Sociedad Anonima.",
+        "keywords": [
+            "acta asamblea SA",
+            "accionistas reunion anual",
+            "protocolizar asamblea notario"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Acta de Asamblea General Ordinaria</h1></div><p class=\"meta-line\">Celebrada en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\">Reunidos en asamblea ordinaria los accionistas de <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Exportadora Nacional SA de CV)</span></strong>, con quorum del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(85% del capital social)</span>, resolvieron: 1) Aprobar estados financieros del ejercicio <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2025)</span>; 2) Distribuir dividendos del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15% de utidades)</span>; 3) Ratificar al <strong>Consejo de Administracion</strong>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Presidente y Secretario de Asamblea)</span></div></div>"
+    },
+    {
+        "id": "notarial-fe-publica-hechos-v1",
+        "slug": "acta-notarial-fe-publica-hechos",
+        "title": "Acta Notarial de Fe Pública de Hechos",
+        "legalBasis": [
+            "Ley del Notariado CDMX Art. 102"
+        ],
+        "description": "Documento notarial que da fe de hechos percibidos directamente por el Notario, con plena fuerza probatoria.",
+        "keywords": [
+            "acta notarial hechos",
+            "fe publica notario",
+            "notario constata hecho"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Acta Notarial de Fe de Hechos</h1></div><p class=\"meta-line\">Ante el Notario Publico No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(20 de CDMX)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\">Doy FE de que en el inmueble ubicado en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Av. Hidalgo 100, Col. Centro)</span>, en presencia de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(dos testigos)</span>, se observo que <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(el inmueble presenta danos estructurales visibles: grietas en fachada, derrumbe parcial del techo y anegamiento del sotano)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Notario)</span></div></div>"
+    },
+    {
+        "id": "notarial-revocacion-poder-v1",
+        "slug": "instrumento-revocacion-poder-notarial",
+        "title": "Instrumento de Revocación de Poder Notarial",
+        "legalBasis": [
+            "Arts. 2595-2598 CCDF"
+        ],
+        "description": "Escritura notarial mediante la cual el poderdante deja sin efectos el poder anteriormente otorgado.",
+        "keywords": [
+            "revocar poder notarial",
+            "cancelar mandato",
+            "revocacion poder ante notario"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Revocacion de Poder Notarial</h1></div><p class=\"meta-line\">Otorgada en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Roberto Torres)</span></strong> REVOCA en este acto el poder general para actos de dominio otorgado el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(10 de enero de 2020)</span> ante el Notario No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(55 de CDMX)</span> a favor de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Luis Torres)</span>, dejandolo sin efectos legales a partir de esta fecha.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Revocante ante Notario)</span></div></div>"
+    },
+    {
+        "id": "notarial-protocolizacion-acta-v1",
+        "slug": "protocolizacion-acta-extranjera",
+        "title": "Protocolización de Acta Extranjera",
+        "legalBasis": [
+            "Convenio de La Haya de 1961 (Apostille)",
+            "Ley del Notariado"
+        ],
+        "description": "Tramite notarial para darle validez en Mexico a un acta o documento publico proveniente del extranjero.",
+        "keywords": [
+            "protocolizacion acta extranjera",
+            "apostilla documento",
+            "validar documento extranjero Mexico"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Protocolizacion de Documento Extranjero</h1></div><p class=\"meta-line\">Ante el Notario Publico No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(33 de CDMX)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Sofia Morales)</span></strong> solicita la protocolizacion del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Poder Notarial otorgado en Madrid, Espana el 5 de enero de 2026)</span> con apostilla de la Haya No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(ES-2026-12345)</span>, para que surta efectos plenos en territorio mexicano.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Solicitante)</span></div></div>"
+    },
+    {
+        "id": "notarial-constitucion-sa-v1",
+        "slug": "escritura-constitucion-sociedad-anonima",
+        "title": "Escritura de Constitución de Sociedad Anónima",
+        "legalBasis": [
+            "Arts. 87-131 LGSM"
+        ],
+        "description": "Protocolizacion notarial del acto de constitucion de una Sociedad Anonima con sus estatutos sociales.",
+        "keywords": [
+            "constituir SA notario",
+            "escritura empresa SA",
+            "estatutos sociales anonima"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Escritura de Constitucion de Sociedad Anonima</h1></div><p class=\"meta-line\">Otorgada en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, ante el Notario No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(85)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\">Los socios fundadores <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Diaz, 60% acciones)</span> y <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ana Torres, 40% acciones)</span> constituyen la sociedad denominada <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Innovacion Digital SA de CV)</span></strong> con capital social de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(1,000,000.00)</span>, objeto: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(desarrollo de software y servicios tecnologicos)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Socios Fundadores ante Notario)</span></div></div>"
+    },
+    {
+        "id": "notarial-apostilla-v1",
+        "slug": "solicitud-apostille-documento",
+        "title": "Solicitud de Apostille de Documento Público",
+        "legalBasis": [
+            "Convenio de La Haya de 1961"
+        ],
+        "description": "Tramite para obtener el apostille de un documento publico mexicano para que surta efectos en el extranjero.",
+        "keywords": [
+            "apostille Mexico",
+            "legalizar documento extranjero",
+            "convenio haya 1961"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Apostille</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">SECRETARIA DE RELACIONES EXTERIORES</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Laura Suarez)</span></strong> solicita el apostille del Convenio de La Haya de 1961 para los siguientes documentos: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(1. Titulo de Licenciatura expedido por la UNAM; 2. Cedula Profesional No. 7654321)</span>, para ser presentados en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Espana)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Solicitante)</span></div></div>"
+    },
+    {
+        "id": "notarial-declaracion-bienes-v1",
+        "slug": "declaracion-inventario-bienes-sucesion",
+        "title": "Declaración de Inventario de Bienes (Sucesión)",
+        "legalBasis": [
+            "Arts. 1700-1750 CCDF"
+        ],
+        "description": "Documento notarial que lista y avalua todos los bienes que integran el acervo hereditario en una sucesion.",
+        "keywords": [
+            "inventario sucesion",
+            "bienes herencia",
+            "declaracion patrimonio fallecido"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Declaracion de Inventario y Avaluo de Bienes Hereditarios</h1></div><p class=\"meta-line\">Otorgada en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\">El albacea <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Roberto Garcia)</span></strong>, en la sucesion del de cujus <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ernesto Garcia)</span>, declara el siguiente inventario: 1. Inmueble en Coyoacan, avaluado en $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2,800,000.00)</span>; 2. Cuentas bancarias: $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(450,000.00)</span>; 3. Vehiculo <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Honda Civic 2020)</span>: $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(180,000.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Albacea ante Notario)</span></div></div>"
+    },
+    {
+        "id": "notarial-renuncia-herencia-v1",
+        "slug": "renuncia-herencia-sucesion",
+        "title": "Renuncia a la Herencia",
+        "legalBasis": [
+            "Arts. 1653-1660 CCDF"
+        ],
+        "description": "Acto juridico notarial mediante el cual el heredero declara formalmente no aceptar la herencia.",
+        "keywords": [
+            "renunciar herencia",
+            "repudio herencia",
+            "no aceptar herencia notario"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Escritura de Renuncia a la Herencia</h1></div><p class=\"meta-line\">Ante el Notario No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(22 de CDMX)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Sandra Garcia Perez)</span></strong>, heredera instituida en el testamento de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ernesto Garcia, fallecido el 10 de enero de 2026)</span>, RENUNCIA expresamente y de manera pura, simple e irrevocable a la herencia que le corresponde, en beneficio de sus hermanos en partes iguales.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Renunciante ante Notario)</span></div></div>"
+    },
+    {
+        "id": "notarial-constitucion-srl-v1",
+        "slug": "escritura-constitucion-srl",
+        "title": "Escritura de Constitución de Sociedad de Responsabilidad Limitada",
+        "legalBasis": [
+            "Arts. 58-86 LGSM"
+        ],
+        "description": "Protocolizacion notarial del acto de constitucion de una SRL con partes sociales y estatutos.",
+        "keywords": [
+            "constituir SRL",
+            "escritura SRL notario",
+            "sociedad limitada estatutos"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Escritura de Constitucion de SRL de CV</h1></div><p class=\"meta-line\">Otorgada en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Guadalajara, Jalisco)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\">Los socios <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Juan Perez, 50%)</span> y <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Luis Torres, 50%)</span> constituyen la sociedad <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Servicios Profesionales GDL SRL de CV)</span></strong> con capital minimo de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(3,000.00)</span> y objeto: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(consultoria fiscal y contable)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Los Socios ante Notario)</span></div></div>"
+    },
+    {
+        "id": "notarial-acta-cierre-empresa-v1",
+        "slug": "acta-notarial-disolucion-liquidacion",
+        "title": "Acta Notarial de Disolución y Liquidación de Empresa",
+        "legalBasis": [
+            "Arts. 229-249 LGSM"
+        ],
+        "description": "Escritura notarial que formaliza la disolucion y liquidacion total de la sociedad.",
+        "keywords": [
+            "disolucion empresa acta",
+            "liquidacion SA notario",
+            "cierre empresa escritura"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Acta Notarial de Disolucion y Liquidacion de Sociedad</h1></div><p class=\"meta-line\">Ante el Notario No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(10 de CDMX)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\">Los accionistas de <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Comercializadora del Centro SA de CV)</span></strong> acuerdan por unanimidad la DISOLUCION y LIQUIDACION de la sociedad, designando liquidador al <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Director General saliente)</span>, con el encargo de pagar adeudos y distribuir el remanente en proporcion accionaria.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Los Accionistas ante Notario)</span></div></div>"
+    },
+    {
+        "id": "notarial-acta-nacimiento-copia-v1",
+        "slug": "solicitud-copia-certificada-acta",
+        "title": "Solicitud de Copia Certificada de Acta del Registro Civil",
+        "legalBasis": [
+            "Ley del Registro Civil"
+        ],
+        "description": "Tramite para obtener copia certificada de actas del Registro Civil (nacimiento, matrimonio, defuncion).",
+        "keywords": [
+            "copia certificada acta nacimiento",
+            "registro civil copia",
+            "acta defuncion matrimonio"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Solicitud de Copia Certificada de Acta del Registro Civil</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">OFICIAL DEL REGISTRO CIVIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Maria Lopez)</span></strong> solicita copia certificada de su acta de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(NACIMIENTO)</span>, con numero de registro <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(00123/1985)</span>, levantada ante el Juez del Registro Civil No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15 de Benito Juarez, CDMX)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Solicitante)</span></div></div>"
+    },
+    {
+        "id": "notarial-instruccion-banco-v1",
+        "slug": "carta-instruccion-banco-fideicomiso",
+        "title": "Carta de Instrucción a Institución Fiduciaria",
+        "legalBasis": [
+            "Arts. 381-407 LGTOC"
+        ],
+        "description": "Instrucciones formales al Banco que actua como fiduciario para ejecutar actos especificos del fideicomiso.",
+        "keywords": [
+            "instruccion fideicomiso banco",
+            "fiduciaria instruccion",
+            "ejecutar fideicomiso banco"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Carta de Instruccion al Fiduciario</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">BANCO NACIONAL – FIDUCIARIA</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Fideicomitente: Grupo Inmobiliario SA)</span></strong> instruye al fiduciario ejecutar el siguiente acto dentro del fideicomiso <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(F-2025-001)</span>: liberar fondos en custodia por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2,000,000.00)</span> al fideicomisario <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Constructora Norte SA)</span> al verificarse la condicion pactada.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Fideicomitente)</span></div></div>"
+    },
+    {
+        "id": "notarial-reconocimiento-firma-v1",
+        "slug": "acta-reconocimiento-firma-impresiones",
+        "title": "Acta de Reconocimiento de Firma",
+        "legalBasis": [
+            "Ley del Notariado CDMX Art. 104"
+        ],
+        "description": "Acto notarial en el que una persona reconoce ante el Notario la autenticidad de su firma en un documento.",
+        "keywords": [
+            "reconocimiento firma notario",
+            "autenticar firma",
+            "fe de firma notarial"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Acta de Reconocimiento y Ratificacion de Firma</h1></div><p class=\"meta-line\">Ante el Notario No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(50 de CDMX)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Hernandez)</span></strong> comparece y en presencia del suscrito Notario, reconoce como PROPIA la firma que aparece al calce del documento denominado <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Contrato de Mutuo de fecha 5 de enero de 2026)</span>, ratificando en todos sus terminos el contenido de dicho instrumento.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Reconociente ante Notario)</span></div></div>"
+    },
+    {
+        "id": "notarial-acta-notificacion-v1",
+        "slug": "acta-notificacion-notarial",
+        "title": "Acta de Notificación Notarial",
+        "legalBasis": [
+            "Ley del Notariado CDMX Art. 102"
+        ],
+        "description": "El Notario da fe de haber notificado personalmente a una persona un acto o requerimiento juridico.",
+        "keywords": [
+            "notificacion notarial",
+            "notario da fe aviso",
+            "acta requerimiento notarial"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Acta de Notificacion Notarial</h1></div><p class=\"meta-line\">Ante el Notario No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(88 de CDMX)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\">A solicitud de <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Arrendador: Pedro Ramirez)</span></strong>, me traslade al domicilio de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Calle Roble 44, Col. Del Bosque)</span> y DOY FE de haber notificado personalmente a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Maria Gonzalez, inquilina)</span> el requerimiento de pago de renta adeudada por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(24,000.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Notario Publico)</span></div></div>"
+    },
+    {
+        "id": "notarial-acta-embargo-v1",
+        "slug": "acta-notarial-embargo-bienes",
+        "title": "Acta Notarial de Aseguramiento de Bienes",
+        "legalBasis": [
+            "Art. 1392 Codigo de Comercio",
+            "Ley del Notariado"
+        ],
+        "description": "El Notario constata y da fe sobre el estado y existencia de bienes en el momento del embargo precautorio.",
+        "keywords": [
+            "acta embargo notario",
+            "fe publica embargo bienes",
+            "notario aseguramiento"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Acta Notarial de Aseguramiento de Bienes</h1></div><p class=\"meta-line\">Ante el Notario No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(77 de CDMX)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\">En cumplimiento de la orden judicial del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Juzgado Mercantil)</span>, me constituyo en el domicilio de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa Deudora SA)</span> y DOY FE del aseguramiento de: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(5 equipos de computo, 2 impresoras y mobiliario de oficina)</span>, los cuales quedan en deposito del ejecutado.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Notario Publico)</span></div></div>"
+    },
+    {
+        "id": "notarial-certificacion-documentos-v1",
+        "slug": "certificacion-copias-documentos",
+        "title": "Certificación de Copias de Documentos",
+        "legalBasis": [
+            "Ley del Notariado CDMX Art. 99"
+        ],
+        "description": "El Notario certifica que las copias presentadas son fiel reproduccion del documento original.",
+        "keywords": [
+            "certificacion copias notario",
+            "fotocopia certificada",
+            "notario autenticar copia"
+        ],
+        "html": "<div class=\"header-v1\"><h1>Certificacion de Copias</h1></div><p class=\"meta-line\">Ante el Notario No. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(30 de CDMX)</span>, el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><p class=\"indent text-justify\">El suscrito Notario CERTIFICA que las <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(3 fojas)</span> de copias fotostáticas que se agregan al presente son COPIA FIEL Y EXACTA del original del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Contrato de Arrendamiento de fecha 1 de enero de 2026)</span>, que tuve a la vista, el cual fue presentado por <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Morales)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Notario Publico)</span></div></div>"
+    }
+]

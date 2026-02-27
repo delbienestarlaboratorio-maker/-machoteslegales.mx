@@ -1,18 +1,13 @@
-{% extends "base_v2.html" %}
-
-{% block content %}
-<div class="header-v2">
+﻿<div class="header-v2">
     <div class="tier-badge">V2 NEGOCIOS</div>
     <h1>Demanda de Amparo Directo</h1>
     <p class="subtitle-v2">Arts. 170-191 Ley de Amparo · Jurisprudencia sobre suplencia de la queja y violaciones
         procesales</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, {{ estado | default("Ciudad de México") }}, a {{
-    fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold destinatario">H. TRIBUNAL COLEGIADO EN MATERIA {{ materia | default("CIVIL/LABORAL/ADMINISTRATIVA")
-    }} DEL {{ circuito | default("___") }} CIRCUITO EN TURNO</p>
+<p class="text-bold destinatario">H. TRIBUNAL COLEGIADO EN MATERIA <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Civil/laboral/administrativa)</span> DEL <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Primero en Materia Laboral de la CDMX)</span> CIRCUITO EN TURNO</p>
 <p class="text-bold">P R E S E N T E</p>
 
 <!-- ═══════════════════════════════════════════════════ -->
@@ -20,13 +15,10 @@
 <!-- ═══════════════════════════════════════════════════ -->
 
 <p class="indent text-justify">
-    <strong>{{ quejoso.nombre | default("NOMBRE COMPLETO DEL QUEJOSO") }}</strong>, mexicano(a), mayor de edad,
-    promoviendo por mi propio derecho (o en mi carácter de representante legal de ___), con el carácter de parte {{
-    calidad_parte | default("actora/demandada") }} en el juicio de origen, señalando como domicilio para oír y recibir
-    notificaciones el ubicado en <strong>{{ quejoso.domicilio | default("Calle, Número, Colonia, C.P., Estado")
-        }}</strong>, autorizando en los amplios términos del artículo 12 de la Ley de Amparo a los Licenciados en
-    Derecho <strong>{{ abogado.nombre | default("NOMBRE DEL ABOGADO") }}</strong> con cédula profesional <strong>{{
-        abogado.cedula | default("___") }}</strong>; ante este H. Tribunal Colegiado, comparezco a exponer:
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre completo del quejoso)</span></strong>, mexicano(a), mayor de edad,
+    promoviendo por mi propio derecho (o en mi carácter de representante legal de ___), con el carácter de parte <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(actora/demandada)</span> en el juicio de origen, señalando como domicilio para oír y recibir
+    notificaciones el ubicado en <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span></strong>, autorizando en los amplios términos del artículo 12 de la Ley de Amparo a los Licenciados en
+    Derecho <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Francisco Sánchez Torres)</span></strong> con cédula profesional <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(3847291)</span></strong>; ante este H. Tribunal Colegiado, comparezco a exponer:
 </p>
 
 <p class="indent text-justify">
@@ -47,25 +39,20 @@
     demanda.
 </p>
 <p class="indent text-justify">
-    <strong>2. NOMBRE Y DOMICILIO DEL TERCERO INTERESADO:</strong> Le reviste tal carácter a <strong>{{ tercero.nombre |
-        default("NOMBRE DEL TERCERO") }}</strong>, quien puede ser emplazado en <strong>{{ tercero.domicilio |
-        default("_______________") }}</strong>.
+    <strong>2. NOMBRE Y DOMICILIO DEL TERCERO INTERESADO:</strong> Le reviste tal carácter a <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del tercero)</span></strong>, quien puede ser emplazado en <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span></strong>.
 </p>
 
 <div class="section-title numbered">II. AUTORIDADES RESPONSABLES</div>
 <p class="indent text-justify">
-    <strong>A. AUTORIDAD ORDENADORA:</strong> Los Magistrados integrantes de la {{ sala_responsable | default("SALA ___
-    DEL TRIBUNAL SUPERIOR DE JUSTICIA") }} del Estado de {{ estado | default("___") }}.<br>
-    <strong>B. AUTORIDAD EJECUTORA:</strong> El C. Juez {{ juzgado_origen | default("___ DE LO CIVIL") }} del Tribunal
-    Superior de Justicia de {{ estado | default("___") }}.
+    <strong>A. AUTORIDAD ORDENADORA:</strong> Los Magistrados integrantes de la <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Sala ___
+    del tribunal superior de justicia)</span> del Estado de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>.<br>
+    <strong>B. AUTORIDAD EJECUTORA:</strong> El C. Juez <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(___ de lo civil)</span> del Tribunal
+    Superior de Justicia de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>.
 </p>
 
 <div class="section-title numbered">III. ACTO RECLAMADO</div>
 <p class="indent text-justify double-space">
-    <strong>A. DE LA AUTORIDAD ORDENADORA:</strong> Reclamo la <strong>sentencia definitiva de fecha {{ fecha_sentencia
-        | default("___") }}</strong>, dictada en el Toca de Apelación número <strong>{{ toca | default("___")
-        }}</strong>, mediante la cual se confirma/modifica/revoca la sentencia de primera instancia en el juicio {{
-    tipo_juicio | default("___") }} con número de expediente <strong>{{ expediente_origen | default("___") }}</strong>.
+    <strong>A. DE LA AUTORIDAD ORDENADORA:</strong> Reclamo la <strong>sentencia definitiva de fecha <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></strong>, dictada en el Toca de Apelación número <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong>, mediante la cual se confirma/modifica/revoca la sentencia de primera instancia en el juicio <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span> con número de expediente <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong>.
 </p>
 <p class="indent text-justify double-space">
     <strong>B. DE LA AUTORIDAD EJECUTORA:</strong> Reclamo el cumplimiento y ejecución material de la resolución antes
@@ -88,8 +75,8 @@
 <p class="indent text-justify double-space">
     <strong>PRIMER CONCEPTO DE VIOLACIÓN (Fondo):</strong> La resolución reclamada carece de la debida fundamentación y
     motivación exigida por el artículo 16 constitucional. La autoridad responsable realiza una inexacta aplicación e
-    interpretación de la ley, al resolver que {{ concepto_violacion_1 | default("[Explicar cómo la sentencia valora mal
-    las pruebas o aplica mal una ley, perjudicando los derechos del quejoso].") }}.
+    interpretación de la ley, al resolver que <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">([Explicar cómo la sentencia valora mal
+    las pruebas o aplica mal una ley, perjudicando los derechos del quejoso].)</span>.
 </p>
 
 <div class="jurisprudencia-box">
@@ -105,8 +92,8 @@
 <p class="indent text-justify double-space">
     <strong>SEGUNDO CONCEPTO DE VIOLACIÓN (Violación Procesal):</strong> Durante el procedimiento de origen se violaron
     las leyes del procedimiento afectando mis defensas y trascendiendo al resultado del fallo, en términos del artículo
-    172 de la Ley de Amparo, específicamente porque {{ violacion_procesal | default("[Señalar, por ejemplo, el
-    desechamiento indebido de una prueba confesional/testimonial ofrecida en tiempo y forma].") }}. Dicha violación fue
+    172 de la Ley de Amparo, específicamente porque <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">([Señalar, por ejemplo, el
+    desechamiento indebido de una prueba confesional/testimonial ofrecida en tiempo y forma].)</span>. Dicha violación fue
     debidamente preparada mediante el recurso de revocación/apelación correspondiente.
 </p>
 
@@ -159,7 +146,7 @@
 <p class="text-center text-bold" style="margin-top:40px;">PROTESTO LO NECESARIO</p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ quejoso.nombre | default("NOMBRE COMPLETO Y FIRMA DEL QUEJOSO") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre completo y firma del quejoso)</span></div>
 </div>
 
 <div class="confidencialidad-v2">
@@ -167,4 +154,3 @@
     <p>Plantilla profesional generada por Machotes Legales®. Incluye control de convencionalidad, estructuración de agravios
         bajo precedentes SCJN. Prohibida su copia sin licencia vigente.</p>
 </div>
-{% endblock %}

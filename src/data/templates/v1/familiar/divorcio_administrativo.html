@@ -1,23 +1,19 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Divorcio Administrativo</h1>
     <p class="subtitle">Artículo 272-A del Código Civil Federal</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto |
-    default("__ de ________ de 20__") }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
 <p class="text-bold">C. OFICIAL DEL REGISTRO CIVIL</p>
-<p class="text-bold">{{ registro_civil | default("OFICIALÍA DEL REGISTRO CIVIL") }}</p>
+<p class="text-bold"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Oficialía del registro civil)</span></p>
 <p>PRESENTE.</p>
 
 <p class="indent text-justify">
-    Los suscritos, <strong>{{ conyuge_1 | default("NOMBRE DEL CÓNYUGE 1") }}</strong>
-    y <strong>{{ conyuge_2 | default("NOMBRE DEL CÓNYUGE 2") }}</strong>,
+    Los suscritos, <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del cónyuge 1)</span></strong>
+    y <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del cónyuge 2)</span></strong>,
     ambos mayores de edad, con domicilio conyugal en
-    {{ domicilio_conyugal | default("_________________________________") }},
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Emilio Castelar 152, Col. Polanco, Ciudad de México, C.P. 11550)</span>,
     ante usted comparecemos para solicitar:
 </p>
 
@@ -26,9 +22,9 @@
 <p class="indent text-justify">
     De conformidad con el artículo 272-A del Código Civil Federal, manifestamos
     nuestra voluntad libre e inequívoca de disolver el vínculo matrimonial
-    que nos une, celebrado el día {{ fecha_matrimonio | default("___ de _______ de ____") }}
-    ante {{ lugar_matrimonio | default("la Oficialía del Registro Civil de _____________") }},
-    según consta en el Acta de Matrimonio número {{ numero_acta | default("___________") }}.
+    que nos une, celebrado el día <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(14 de febrero de 2015)</span>
+    ante <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(la Oficialía del Registro Civil de _____________)</span>,
+    según consta en el Acta de Matrimonio número <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>.
 </p>
 
 <div class="section-title">REQUISITOS LEGALES</div>
@@ -47,9 +43,9 @@
 
 <p class="indent text-justify">
     Declaramos que nuestro matrimonio fue celebrado bajo el régimen de
-    {{ regimen | default("separación de bienes / sociedad conyugal") }},
-    y que {{ situacion_bienes | default("no existen bienes que repartir / los bienes han sido liquidados de común
-    acuerdo según convenio adjunto") }}.
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(separación de bienes / sociedad conyugal)</span>,
+    y que <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(no existen bienes que repartir / los bienes han sido liquidados de común
+    acuerdo según convenio adjunto)</span>.
 </p>
 
 <div class="section-title">PETICIÓN</div>
@@ -63,10 +59,9 @@
 
 <div style="display:flex; gap:40px; margin-top:50px;">
     <div class="signature-block" style="flex:1;">
-        <div class="signature-line">{{ conyuge_1 | default("CÓNYUGE 1") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Cónyuge 1)</span></div>
     </div>
     <div class="signature-block" style="flex:1;">
-        <div class="signature-line">{{ conyuge_2 | default("CÓNYUGE 2") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Cónyuge 2)</span></div>
     </div>
 </div>
-{% endblock %}

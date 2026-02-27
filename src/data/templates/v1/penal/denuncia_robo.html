@@ -1,23 +1,20 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Denuncia Penal por Robo</h1>
     <p class="subtitle">Artículos 367-381 del Código Penal Federal · Arts. 221-223 CNPP</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold">C. AGENTE DEL MINISTERIO PÚBLICO DE LA FEDERACIÓN / DEL FUERO COMÚN EN TURNO</p>
+<p class="text-bold">C. <em style="font-size:9pt;color:#666;">(Ciudadano/Ciudadana)</em> AGENTE DEL MINISTERIO PÚBLICO DE LA FEDERACIÓN / DEL FUERO COMÚN EN TURNO</p>
 <p class="text-bold">P R E S E N T E</p>
 
 <p class="indent text-justify">
-    <strong>{{ cliente.nombre | default("NOMBRE DEL DENUNCIANTE") }}</strong>, mexicano(a), mayor de edad,
-    con domicilio en <strong>{{ cliente.domicilio | default("_________________________________") }}</strong>,
-    identificándome con {{ identificacion | default("credencial para votar con fotografía expedida por el INE") }}
-    con número {{ numero_id | default("_______________") }}, señalando como domicilio para oír y recibir
-    notificaciones el ubicado en {{ domicilio_notificaciones | default("_________________________________") }},
-    autorizando para tales efectos a {{ abogado.nombre | default("_________________________________") }},
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></strong>, mexicano(a), mayor de edad,
+    con domicilio en <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Coyoacán, Ciudad de México, C.P. 04000)</span></strong>,
+    identificándome con <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(credencial para votar con fotografía expedida por el INE)</span>
+    con número <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>, señalando como domicilio para oír y recibir
+    notificaciones el ubicado en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>,
+    autorizando para tales efectos a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Francisco Sánchez Torres)</span>,
     ante Usted comparezco para exponer:
 </p>
 
@@ -25,7 +22,7 @@
     Que por medio del presente escrito, con fundamento en los artículos 16 y 21 de la Constitución Política
     de los Estados Unidos Mexicanos, así como los artículos 221, 222 y 223 del Código Nacional de Procedimientos
     Penales, vengo a formular <strong>DENUNCIA PENAL</strong> en contra de
-    <strong>{{ imputado | default("QUIEN RESULTE RESPONSABLE") }}</strong>,
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Quien resulte responsable)</span></strong>,
     por la comisión del delito de <strong>ROBO</strong>, previsto y sancionado por los artículos
     367, 368, 370 y demás aplicables del Código Penal Federal.
 </p>
@@ -36,18 +33,13 @@
     son los siguientes:
 </p>
 <p class="indent text-justify">
-    <strong>PRIMERO.-</strong> {{ hecho_1 | default("El día [fecha], siendo aproximadamente las [hora] horas, me
-    encontraba en [lugar], cuando la persona que identifico como [nombre o descripción] procedió a apoderarse de
-    [describir objetos robados] de mi propiedad, sin mi consentimiento y sin derecho alguno.") }}
+    <strong>PRIMERO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el primer hecho cronológicamente, con fecha, lugar y personas involucradas)</span>
 </p>
 <p class="indent text-justify">
-    <strong>SEGUNDO.-</strong> {{ hecho_2 | default("Los bienes de los que fui despojado(a) consisten en: [lista
-    detallada de objetos con valor aproximado], con un valor total aproximado de $[monto] pesos.") }}
+    <strong>SEGUNDO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el segundo hecho, describiendo la conducta del demandado)</span>
 </p>
 <p class="indent text-justify">
-    <strong>TERCERO.-</strong> {{ hecho_3 | default("Derivado de los hechos narrados, se acreditan los elementos del
-    tipo penal de robo, consistentes en: a) apoderamiento de cosa ajena mueble, b) sin derecho, c) sin consentimiento
-    del propietario.") }}
+    <strong>TERCERO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el tercer hecho y sus consecuencias para el promovente)</span>
 </p>
 
 <div class="section-title">II. TIPO PENAL Y CALIFICATIVAS</div>
@@ -57,17 +49,16 @@
         de la persona que puede disponer de ella con arreglo a la ley."</em>
 </p>
 <p class="indent text-justify">
-    <strong>Calificativas aplicables:</strong> {{ calificativas | default("(Señalar si aplica: con violencia Art. 372,
-    en lugar habitado Art. 381 bis, por servidor público Art. 214, en pandilla, etc.)") }}
+    <strong>Calificativas aplicables:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">()</span>
 </p>
 
 <div class="section-title">III. DATOS DE PRUEBA</div>
 <p class="indent text-justify">
     1. Declaración del suscrito denunciante.<br>
-    2. {{ prueba_1 | default("Facturas, notas de compra o comprobantes de propiedad de los bienes robados.") }}<br>
-    3. {{ prueba_2 | default("Fotografías del lugar de los hechos.") }}<br>
-    4. {{ prueba_3 | default("Testimonio de [nombre del testigo], quien presenció los hechos.") }}<br>
-    5. {{ prueba_4 | default("Grabaciones de cámaras de seguridad, en su caso.") }}<br>
+    2. <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Facturas, notas de compra o comprobantes de propiedad de los bienes robados.)</span><br>
+    3. <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Fotografías del lugar de los hechos.)</span><br>
+    4. <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Testimonio de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(nombre del testigo)</span>, quien presenció los hechos.)</span><br>
+    5. <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Grabaciones de cámaras de seguridad, en su caso.)</span><br>
     6. Las demás que resulten del curso de la investigación.
 </p>
 
@@ -85,6 +76,5 @@
 <p class="text-center text-bold" style="margin-top:30px;">PROTESTO LO NECESARIO</p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA DEL DENUNCIANTE") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></div>
 </div>
-{% endblock %}

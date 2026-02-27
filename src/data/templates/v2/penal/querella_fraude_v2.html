@@ -1,34 +1,29 @@
-{% extends "base_v2.html" %}
-
-{% block content %}
-<div class="header-v2">
+﻿<div class="header-v2">
     <div class="tier-badge">V2 NEGOCIOS</div>
     <h1>Querella por Fraude</h1>
     <p class="subtitle-v2">Artículos 386, 387 y 389 del Código Penal Federal · Artículos 221, 222, 223 y 225 del CNPP ·
         Arts. 16, 20 y 21 CPEUM</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, {{ estado | default("Ciudad de México") }}, a {{
-    fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold destinatario">C. AGENTE DEL MINISTERIO PÚBLICO DE LA FEDERACIÓN / DEL FUERO COMÚN, EN TURNO</p>
+<p class="text-bold destinatario">C. <em style="font-size:9pt;color:#666;">(Ciudadano/Ciudadana)</em> AGENTE DEL MINISTERIO PÚBLICO DE LA FEDERACIÓN / DEL FUERO COMÚN, EN TURNO</p>
 <p class="text-bold">P R E S E N T E</p>
 
 <!-- ═══════════════════════════ PROEMIO ═══════════════════════════ -->
 
 <p class="indent text-justify">
-    <strong>{{ cliente.nombre | default("NOMBRE COMPLETO DEL QUERELLANTE") }}</strong>, mexicano(a),
-    mayor de edad, con domicilio en <strong>{{ cliente.domicilio | default("_________________________________")
-        }}</strong>,
-    identificándome con {{ identificacion | default("credencial para votar expedida por el Instituto Nacional
-    Electoral") }}
-    con clave de elector {{ clave_elector | default("_______________") }},
-    CURP: <strong>{{ curp | default("_______________") }}</strong>,
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></strong>, mexicano(a),
+    mayor de edad, con domicilio en <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Coyoacán, Ciudad de México, C.P. 04000)</span></strong>,
+    identificándome con <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(credencial para votar expedida por el Instituto Nacional
+    Electoral)</span>
+    con clave de elector <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>,
+    CURP: <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(GOML850312HDFNRR09)</span></strong>,
     señalando como domicilio para oír y recibir todo tipo de notificaciones el ubicado en
-    {{ domicilio_notificaciones | default("_________________________________") }},
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>,
     autorizando en los más amplios términos de ley al licenciado(a) en Derecho
-    <strong>{{ abogado.nombre | default("_______________") }}</strong>,
-    cédula profesional {{ abogado.cedula | default("_______________") }};
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Francisco Sánchez Torres)</span></strong>,
+    cédula profesional <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(3847291)</span>;
     ante Usted, con el debido respeto, comparezco y expongo:
 </p>
 
@@ -40,9 +35,9 @@
     vengo a formular formal <strong>QUERELLA</strong> en contra de:
 </p>
 <p class="indent text-justify">
-    <strong>{{ imputado | default("NOMBRE COMPLETO DEL QUERELLADO") }}</strong>,
-    con domicilio conocido en {{ domicilio_imputado | default("_________________________________") }},
-    quien puede ser localizado en {{ lugar_localizacion | default("_________________________________") }},
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Armando Vega Salinas)</span></strong>,
+    con domicilio conocido en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>,
+    quien puede ser localizado en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>,
     por la probable comisión del delito de <strong>FRAUDE</strong> y los que resulten.
 </p>
 <p class="indent text-justify text-bold">
@@ -60,43 +55,29 @@
 
 <p class="indent text-justify double-space">
     <strong>PRIMERO.- Relación previa y contexto del engaño.</strong>
-    {{ hecho_1 | default("Con fecha [fecha exacta], establecí contacto con el hoy querellado [nombre], quien se ostentó
-    como [calidad: representante de empresa / vendedor / prestador de servicios / profesionista], presentándome
-    [documentación falsa / información engañosa / oferta irresistible]. Describir cómo se generó la relación de
-    confianza que el querellado aprovechó para defraudar.") }}
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el primer hecho cronológicamente, con fecha, lugar y personas involucradas)</span>
 </p>
 
 <p class="indent text-justify double-space">
     <strong>SEGUNDO.- Maquinación fraudulenta y engaño.</strong>
-    {{ hecho_2 | default("El querellado, valiéndose de [engaño activo / aprovechamiento del error], me hizo creer que
-    [describir la representación falsa con detalle: existencia de bienes inexistentes, capacidad de cumplimiento,
-    promesas falsas, identidad falsa, etc.], lo cual era completamente falso, ya que [describir la realidad]. Esta
-    maquinación se materializó mediante [contratos falsos / documentos apócrifos / promesas verbales engañosas /
-    publicidad falsa].") }}
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el segundo hecho, describiendo la conducta del demandado)</span>
 </p>
 
 <p class="indent text-justify double-space">
     <strong>TERCERO.- Disposición patrimonial perjudicial.</strong>
-    {{ hecho_3 | default("Como resultado directo del engaño descrito, el suscrito realizó la disposición patrimonial
-    consistente en [entrega de dinero / transferencia bancaria / entrega de bienes / firma de documentos], por la
-    cantidad total de $[MONTO] ([monto en letra] pesos 00/100 M.N.), desglosada de la siguiente manera:\n\na) $[monto]
-    transferidos el [fecha] a la cuenta [banco/número];\nb) $[monto] entregados en efectivo el [fecha];\nc) [Otros
-    conceptos].") }}
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el tercer hecho y sus consecuencias para el promovente)</span>
 </p>
 
 <p class="indent text-justify double-space">
     <strong>CUARTO.- Descubrimiento del fraude y lucro indebido.</strong>
-    {{ hecho_4 | default("Fue hasta el día [fecha] cuando descubrí que había sido víctima de fraude, al constatar que
-    [el servicio nunca se prestó / el bien no existía / la empresa era ficticia / los documentos eran falsos]. El
-    querellado obtuvo un lucro indebido a costa de mi patrimonio, y a pesar de los múltiples requerimientos de
-    devolución, se ha negado a restituir cantidad alguna.") }}
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí hechos adicionales si los hubiere)</span>
 </p>
 
 <p class="indent text-justify double-space">
     <strong>QUINTO.- Requerimientos previos infructuosos.</strong>
-    {{ hecho_5 | default("Con fechas [fechas], el suscrito realizó requerimientos [escritos / verbales / electrónicos]
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Con fechas <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(fechas)</span>, el suscrito realizó requerimientos <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(escritos / verbales / electrónicos)</span>
     al querellado para la devolución del dinero, sin obtener respuesta satisfactoria. Se adjuntan como medios de prueba
-    las comunicaciones sostenidas.") }}
+    las comunicaciones sostenidas.)</span>
 </p>
 
 <!-- ═══════════════════════════ II. TIPO PENAL ═══════════════════════════ -->
@@ -110,48 +91,48 @@
 </p>
 
 <table style="border:1px solid #000; margin:15px 0;">
-    <tr style="background:#f0f0f0; font-weight:bold;">
-        <td style="border:1px solid #000; padding:8px; width:35%;">Elemento del tipo</td>
-        <td style="border:1px solid #000; padding:8px;">Acreditación en el caso concreto</td>
+    <tr style="background:#1e3a5f; color:white; font-weight:bold;">
+        <td style="border:1px solid #c8d0e0; padding:8px; width:35%;">Elemento del tipo</td>
+        <td style="border:1px solid #c8d0e0; padding:8px;">Acreditación en el caso concreto</td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:8px;">1. <strong>Engaño</strong> o aprovechamiento del error</td>
-        <td style="border:1px solid #000; padding:8px;">{{ elemento_engano | default("El querellado fabricó [describir
-            la falsedad concreta] que indujo al suscrito a error.") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:8px;">1. <strong>Engaño</strong> o aprovechamiento del error</td>
+        <td style="border:1px solid #c8d0e0; padding:8px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El querellado fabricó <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(describir
+            la falsedad concreta)</span> que indujo al suscrito a error.)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:8px;">2. <strong>Error</strong> en la víctima</td>
-        <td style="border:1px solid #000; padding:8px;">{{ elemento_error | default("El suscrito creyó veraz la
-            representación falsa del querellado, lo que determinó su voluntad.") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:8px;">2. <strong>Error</strong> en la víctima</td>
+        <td style="border:1px solid #c8d0e0; padding:8px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El suscrito creyó veraz la
+            representación falsa del querellado, lo que determinó su voluntad.)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:8px;">3. <strong>Disposición patrimonial</strong></td>
-        <td style="border:1px solid #000; padding:8px;">{{ elemento_disposicion | default("Entrega de $[monto] mediante
-            [forma de entrega].") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:8px;">3. <strong>Disposición patrimonial</strong></td>
+        <td style="border:1px solid #c8d0e0; padding:8px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Entrega de $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(monto)</span> mediante
+            <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(forma de entrega)</span>.)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:8px;">4. <strong>Lucro indebido</strong> del activo</td>
-        <td style="border:1px solid #000; padding:8px;">{{ elemento_lucro | default("El querellado se apropió del dinero
-            sin contraprestación alguna.") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:8px;">4. <strong>Lucro indebido</strong> del activo</td>
+        <td style="border:1px solid #c8d0e0; padding:8px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El querellado se apropió del dinero
+            sin contraprestación alguna.)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:8px;">5. <strong>Nexo causal</strong> (engaño → disposición)</td>
-        <td style="border:1px solid #000; padding:8px;">{{ elemento_nexo | default("Sin el engaño, el suscrito jamás
-            habría entregado su dinero.") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:8px;">5. <strong>Nexo causal</strong> (engaño → disposición)</td>
+        <td style="border:1px solid #c8d0e0; padding:8px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Sin el engaño, el suscrito jamás
+            habría entregado su dinero.)</span></td>
     </tr>
 </table>
 
 <p class="indent text-justify">
-    <strong>Penalidad aplicable:</strong> Conforme al artículo 386 fracción {{ fraccion_art386 | default("III") }} del
+    <strong>Penalidad aplicable:</strong> Conforme al artículo 386 fracción <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(III)</span> del
     CPF,
-    cuando el valor de lo defraudado excede de {{ limite | default("500") }} veces el valor diario de la UMA,
-    la pena es de {{ pena | default("3 a 12 años de prisión y multa de 120 a 500 UMAS") }}.
+    cuando el valor de lo defraudado excede de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(500)</span> veces el valor diario de la UMA,
+    la pena es de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(3 a 12 años de prisión y multa de 120 a 500 UMAS)</span>.
 </p>
 
 <p class="indent text-justify">
-    <strong>Calificativas aplicables:</strong> {{ calificativas | default("En su caso, señalar si aplica alguna de las
+    <strong>Calificativas aplicables:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(En su caso, señalar si aplica alguna de las
     hipótesis del artículo 387 del CPF (venta de cosa ajena, fraude procesal, doble venta, etc.) o el fraude equiparado
-    del artículo 389.") }}
+    del artículo 389.)</span>
 </p>
 
 <div class="jurisprudencia-box">
@@ -186,29 +167,27 @@
     con la que se acredita la mecánica comisiva del delito, las circunstancias del engaño y los efectos patrimoniales.
 </p>
 <p class="indent text-justify">
-    <strong>2. DOCUMENTAL PRIVADA.-</strong> {{ prueba_documental | default("Contrato, recibo, comprobante de
-    transferencia bancaria, factura u otro documento que acredite la operación mediante la cual se entregó el patrimonio
-    al querellado. Su valor probatorio radica en demostrar la disposición patrimonial.") }}
+    <strong>2. DOCUMENTAL PRIVADA.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Recibos de nómina, contrato de trabajo, credencial laboral y comprobantes de pago)</span>
 </p>
 <p class="indent text-justify">
-    <strong>3. ESTADOS DE CUENTA BANCARIOS.-</strong> {{ prueba_bancaria | default("Estados de cuenta de la institución
-    bancaria [nombre], correspondientes al periodo [mes/año], donde se observan las transferencias realizadas al
-    querellado por $[monto], acreditando la disposición patrimonial del querellante.") }}
+    <strong>3. ESTADOS DE CUENTA BANCARIOS.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Estados de cuenta de la institución
+    bancaria <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(nombre)</span>, correspondientes al periodo <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(mes/año)</span>, donde se observan las transferencias realizadas al
+    querellado por $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(monto)</span>, acreditando la disposición patrimonial del querellante.)</span>
 </p>
 <p class="indent text-justify">
-    <strong>4. COMUNICACIONES ELECTRÓNICAS.-</strong> {{ prueba_electronica | default("Impresión de conversaciones de
+    <strong>4. COMUNICACIONES ELECTRÓNICAS.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Impresión de conversaciones de
     WhatsApp / correos electrónicos / mensajes de texto sostenidas entre el querellante y el querellado, donde se
     evidencia: a) las promesas engañosas del querellado, b) los requerimientos de cumplimiento, c) las excusas evasivas
-    del querellado.") }}
+    del querellado.)</span>
 </p>
 <p class="indent text-justify">
-    <strong>5. TESTIMONIAL.-</strong> {{ prueba_testimonial | default("De [nombre completo del testigo], con domicilio
-    en [domicilio], quien tiene conocimiento directo de los hechos y puede declarar sobre [las circunstancias del engaño
-    / la entrega del dinero / el incumplimiento del querellado].") }}
+    <strong>5. TESTIMONIAL.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(De <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(nombre completo del testigo)</span>, con domicilio
+    en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(domicilio)</span>, quien tiene conocimiento directo de los hechos y puede declarar sobre [las circunstancias del engaño
+    / la entrega del dinero / el incumplimiento del querellado].)</span>
 </p>
 <p class="indent text-justify">
-    <strong>6. DOCUMENTAL PÚBLICA.-</strong> {{ prueba_publica | default("En su caso, escrituras, actas notariales,
-    registros públicos que acrediten la falsedad de las representaciones del querellado.") }}
+    <strong>6. DOCUMENTAL PÚBLICA.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(En su caso, escrituras, actas notariales,
+    registros públicos que acrediten la falsedad de las representaciones del querellado.)</span>
 </p>
 <p class="indent text-justify">
     <strong>7. PERICIAL CONTABLE.-</strong> Solicito que dentro de la investigación se ordene la práctica de
@@ -225,29 +204,27 @@
 </p>
 
 <table style="border:1px solid #000; margin:15px 0;">
-    <tr style="background:#f0f0f0; font-weight:bold;">
-        <td style="border:1px solid #000; padding:8px; text-align:left;">Concepto</td>
-        <td style="border:1px solid #000; padding:8px; text-align:right;">Monto</td>
+    <tr style="background:#1e3a5f; color:white; font-weight:bold;">
+        <td style="border:1px solid #c8d0e0; padding:8px; text-align:left;">Concepto</td>
+        <td style="border:1px solid #c8d0e0; padding:8px; text-align:right;">Monto</td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px;">Daño patrimonial directo (cantidad defraudada)</td>
-        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ dano_patrimonial |
-            default("_______________") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Daño patrimonial directo (cantidad defraudada)</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px;">Perjuicios (lucro cesante, gastos erogados)</td>
-        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ perjuicios | default("_______________") }}
+        <td style="border:1px solid #c8d0e0; padding:6px;">Perjuicios (lucro cesante, gastos erogados)</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>
         </td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px;">Daño moral (Art. 1916 CCF)</td>
-        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ dano_moral | default("_______________") }}
+        <td style="border:1px solid #c8d0e0; padding:6px;">Daño moral (Art. 1916 CCF)</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>
         </td>
     </tr>
-    <tr style="font-weight:bold; background:#f0f0f0;">
-        <td style="border:1px solid #000; padding:8px;">TOTAL REPARACIÓN</td>
-        <td style="border:1px solid #000; padding:8px; text-align:right;">${{ total_reparacion |
-            default("_______________") }}</td>
+    <tr style="font-weight:bold; background:#eef1f8;">
+        <td style="border:1px solid #c8d0e0; padding:8px;">TOTAL REPARACIÓN</td>
+        <td style="border:1px solid #c8d0e0; padding:8px; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(55,000.00)</span></td>
     </tr>
 </table>
 
@@ -267,11 +244,11 @@
     que gestione ante el Juez de Control las siguientes medidas:
 </p>
 <p class="indent text-justify">
-    <strong>a)</strong> {{ medida_1 | default("Embargo precautorio sobre bienes del querellado, particularmente cuentas
-    bancarias, para garantizar la reparación del daño.") }}<br>
-    <strong>b)</strong> {{ medida_2 | default("Arraigo domiciliario o prohibición de salir del país, ante el riesgo de
-    sustracción de la acción de la justicia.") }}<br>
-    <strong>c)</strong> {{ medida_3 | default("Inmovilización de cuentas bancarias del querellado (Art. 249 CNPP).") }}
+    <strong>a)</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Embargo precautorio sobre bienes del querellado, particularmente cuentas
+    bancarias, para garantizar la reparación del daño.)</span><br>
+    <strong>b)</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Arraigo domiciliario o prohibición de salir del país, ante el riesgo de
+    sustracción de la acción de la justicia.)</span><br>
+    <strong>c)</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Inmovilización de cuentas bancarias del querellado (Art. 249 CNPP).)</span>
 </p>
 
 <!-- ═══════════════════════════ VI. PETICIONES ═══════════════════════════ -->
@@ -310,7 +287,7 @@
 </p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ cliente.nombre | default("NOMBRE COMPLETO Y FIRMA DEL QUERELLANTE") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></div>
 </div>
 
 <div class="confidencialidad-v2">
@@ -318,6 +295,5 @@
     <p>Documento generado por Machotes Legales®. Contiene fundamentación legal profesional,
         jurisprudencia vigente, análisis de tipo penal y argumentación especializada.
         Prohibida su reproducción sin autorización.</p>
-    <p>Licencia: {{ license_id | default("TLEX-V2-XXXXXX") }} · Usuario: {{ license_user | default("___") }}</p>
+    <p>Licencia: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(TLEX-V2-001234)</span> · Usuario: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(usuario@correo.com)</span></p>
 </div>
-{% endblock %}

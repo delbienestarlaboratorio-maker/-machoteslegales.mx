@@ -1,50 +1,41 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Convenio de Terminación de Relación Laboral</h1>
     <p class="subtitle">Artículos 33, 53 fracción I y 987 de la Ley Federal del Trabajo</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
 <p class="indent text-justify">
-    <strong>CONVENIO</strong> que celebran por una parte <strong>{{ patron | default("NOMBRE DE LA EMPRESA")
-        }}</strong>,
-    representada por {{ representante | default("_______________") }}, en su carácter de {{ cargo |
-    default("Representante Legal") }},
+    <strong>CONVENIO</strong> que celebran por una parte <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Construcciones del Valle S.A. de C.V.)</span></strong>,
+    representada por <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>, en su carácter de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Representante Legal)</span>,
     a quien en lo sucesivo se le denominará <strong>"EL PATRÓN"</strong>; y por la otra,
-    <strong>{{ trabajador | default("NOMBRE DEL TRABAJADOR") }}</strong>,
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del trabajador)</span></strong>,
     a quien se le denominará <strong>"EL TRABAJADOR"</strong>, al tenor de las siguientes:
 </p>
 
 <div class="section-title">DECLARACIONES</div>
 <p class="indent text-justify">
-    <strong>I.</strong> Declara EL PATRÓN tener su domicilio en {{ domicilio_empresa |
-    default("_________________________________") }}
-    y contar con RFC {{ rfc_empresa | default("_______________") }}.<br>
-    <strong>II.</strong> Declara EL TRABAJADOR que ingresó a laborar el {{ fecha_ingreso | default("_______________")
-    }},
-    desempeñando el puesto de {{ puesto | default("_______________") }}, con un salario diario de ${{ salario |
-    default("___") }}.<br>
+    <strong>I.</strong> Declara EL PATRÓN tener su domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Comercializadora Norteña S.A. de C.V.)</span>
+    y contar con RFC <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Comercializadora Norteña S.A. de C.V.)</span>.<br>
+    <strong>II.</strong> Declara EL TRABAJADOR que ingresó a laborar el <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(3 de enero de 2020)</span>,
+    desempeñando el puesto de <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Auxiliar Contable)</span>, con un salario diario de $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>.<br>
     <strong>III.</strong> Ambas partes manifiestan su voluntad de dar por terminada la relación de trabajo
     de conformidad con el artículo 53 fracción I de la LFT.
 </p>
 
 <div class="section-title">CLÁUSULAS</div>
 <p class="indent text-justify">
-    <strong>PRIMERA.-</strong> Ambas partes convienen en dar por terminada la relación laboral a partir del {{
-    fecha_termino | default("_______________") }}.
+    <strong>PRIMERA.-</strong> Ambas partes convienen en dar por terminada la relación laboral a partir del <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span>.
 </p>
 <p class="indent text-justify">
     <strong>SEGUNDA.-</strong> EL PATRÓN se obliga a pagar a EL TRABAJADOR las siguientes cantidades:
-    <br>a) Salarios devengados: ${{ salarios | default("___") }}
-    <br>b) Aguinaldo proporcional: ${{ aguinaldo | default("___") }}
-    <br>c) Vacaciones: ${{ vacaciones | default("___") }}
-    <br>d) Prima vacacional: ${{ prima_vac | default("___") }}
-    <br>e) Prima de antigüedad: ${{ prima_ant | default("___") }}
-    <br>f) Gratificación adicional: ${{ gratificacion | default("___") }}
-    <br><strong>TOTAL: ${{ total | default("___") }}</strong>
+    <br>a) Salarios devengados: $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>
+    <br>b) Aguinaldo proporcional: $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(2,075.00)</span>
+    <br>c) Vacaciones: $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(2,490.00)</span>
+    <br>d) Prima vacacional: $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(622.50)</span>
+    <br>e) Prima de antigüedad: $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>
+    <br>f) Gratificación adicional: $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>
+    <br><strong>TOTAL: $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(55,000.00)</span></strong>
 </p>
 <p class="indent text-justify">
     <strong>TERCERA.-</strong> EL TRABAJADOR declara recibir a su entera satisfacción las cantidades señaladas,
@@ -60,10 +51,10 @@
 
 <div style="display:flex; gap:40px; margin-top:40px;">
     <div class="signature-block" style="flex:1;">
-        <div class="signature-line">{{ patron | default("EL PATRÓN") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Construcciones del Valle S.A. de C.V.)</span></div>
     </div>
     <div class="signature-block" style="flex:1;">
-        <div class="signature-line">{{ trabajador | default("EL TRABAJADOR") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El trabajador)</span></div>
     </div>
 </div>
 
@@ -75,4 +66,3 @@
         <div class="signature-line">TESTIGO 2</div>
     </div>
 </div>
-{% endblock %}

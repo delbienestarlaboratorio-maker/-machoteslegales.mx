@@ -56,6 +56,7 @@ import v2_mercantil_pagare from './v2/mercantil/pagare_v2.html';
 import v2_mercantil_acta from './v2/mercantil/acta_constitutiva_sa_cv_v2.html';
 import v2_mercantil_asamblea from './v2/mercantil/acta_asamblea_ordinaria.html';
 import v2_amparo_directo from './v2/amparo/demanda_amparo_directo_v2.html';
+import v2_amparo_indirecto from './v2/amparo/demanda_amparo_indirecto_v2.html';
 import v2_fiscal_sat from './v2/fiscal/amparo_contra_sat_v2.html';
 import v2_fiscal_revocacion from './v2/fiscal/recurso_revocacion.html';
 import v2_fiscal_condonacion from './v2/fiscal/solicitud_condonacion.html';
@@ -124,6 +125,7 @@ const htmlMap: Record<string, string> = {
   'v2/mercantil/acta_constitutiva_sa_cv_v2.html': v2_mercantil_acta,
   'v2/mercantil/acta_asamblea_ordinaria.html': v2_mercantil_asamblea,
   'v2/amparo/demanda_amparo_directo_v2.html': v2_amparo_directo,
+  'v2/amparo/demanda_amparo_indirecto_v2.html': v2_amparo_indirecto,
   'v2/fiscal/amparo_contra_sat_v2.html': v2_fiscal_sat,
   'v2/fiscal/recurso_revocacion.html': v2_fiscal_revocacion,
   'v2/fiscal/solicitud_condonacion.html': v2_fiscal_condonacion,

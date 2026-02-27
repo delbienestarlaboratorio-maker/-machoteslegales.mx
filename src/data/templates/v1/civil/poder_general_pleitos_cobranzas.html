@@ -1,25 +1,22 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Poder General para Pleitos y Cobranzas</h1>
     <p class="subtitle">Artículos 2554-2560 del Código Civil Federal</p>
 </div>
 
 <p class="indent text-justify">
-    En {{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }},
-    ante {{ notario | default("el Notario Público número ___ de esta ciudad") }},
+    En <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span>,
+    ante <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(el Notario Público número ___ de esta ciudad)</span>,
     compareció:
 </p>
 
 <p class="indent text-justify">
-    <strong>{{ poderdante | default("NOMBRE DEL PODERDANTE") }}</strong>,
-    {{ nacionalidad | default("mexicano(a)") }}, mayor de edad, con domicilio en
-    {{ domicilio_poderdante | default("_________________________________") }},
-    identificándose con {{ identificacion | default("credencial para votar (INE)") }}
-    número {{ numero_id | default("_______________") }},
-    CURP: {{ curp | default("_______________") }}, RFC: {{ rfc | default("_______________") }},
-    estado civil: {{ estado_civil | default("_______________") }},
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del poderdante)</span></strong>,
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(francesa)</span>, mayor de edad, con domicilio en
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>,
+    identificándose con <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(credencial para votar (INE))</span>
+    número <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>,
+    CURP: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(GOML850312HDFNRR09)</span>, RFC: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(GOML850312AB3)</span>,
+    estado civil: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>,
     a quien en lo sucesivo se le denominará <strong>"EL PODERDANTE"</strong>.
 </p>
 
@@ -28,10 +25,10 @@
 </p>
 
 <p class="indent text-justify">
-    <strong>{{ apoderado | default("NOMBRE DEL APODERADO") }}</strong>,
-    con domicilio en {{ domicilio_apoderado | default("_________________________________") }},
-    CURP: {{ curp_apoderado | default("_______________") }},
-    cédula profesional: {{ cedula | default("_______________") }}.
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Nombre del apoderado)</span></strong>,
+    con domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>,
+    CURP: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(GOML850312HDFNRR09)</span>,
+    cédula profesional: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(3847291)</span>.
 </p>
 
 <div class="section-title">FACULTADES</div>
@@ -44,30 +41,29 @@
     <strong>c)</strong> Recusar, recibir pagos, presentar denuncias y querellas penales, desistirse de ellas,
     otorgar perdón y constituirse en parte coadyuvante del Ministerio Público.<br>
     <strong>d)</strong> Suscribir títulos de crédito, realizar actos de cobro judicial y extrajudicial.<br>
-    <strong>e)</strong> {{ facultades_adicionales | default("Las demás facultades generales y especiales que requieran
-    cláusula especial conforme a la ley.") }}
+    <strong>e)</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Las demás facultades generales y especiales que requieran
+    cláusula especial conforme a la ley.)</span>
 </p>
 
 <div class="section-title">LIMITACIONES</div>
 <p class="indent text-justify">
-    {{ limitaciones | default("Este poder no incluye facultades para actos de dominio. / Sin limitación alguna.") }}
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Este poder no incluye facultades para actos de dominio. / Sin limitación alguna.)</span>
 </p>
 
 <div class="section-title">VIGENCIA</div>
 <p class="indent text-justify">
-    El presente poder tendrá vigencia {{ vigencia | default("indefinida hasta su revocación expresa") }}.
+    El presente poder tendrá vigencia <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(indefinida hasta su revocación expresa)</span>.
 </p>
 
 <div style="display:flex; gap:40px; margin-top:40px;">
     <div class="signature-block" style="flex:1;">
-        <div class="signature-line">{{ poderdante | default("EL PODERDANTE") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El poderdante)</span></div>
     </div>
     <div class="signature-block" style="flex:1;">
-        <div class="signature-line">{{ apoderado | default("EL APODERADO") }}</div>
+        <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(El apoderado)</span></div>
     </div>
 </div>
 
 <div class="signature-block" style="margin-top:30px;">
-    <div class="signature-line">{{ notario | default("NOTARIO PÚBLICO") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Notario público)</span></div>
 </div>
-{% endblock %}

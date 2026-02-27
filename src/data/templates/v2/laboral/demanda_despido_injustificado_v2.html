@@ -1,39 +1,34 @@
-{% extends "base_v2.html" %}
-
-{% block content %}
-<div class="header-v2">
+﻿<div class="header-v2">
     <div class="tier-badge">V2 NEGOCIOS</div>
     <h1>Demanda Laboral por Despido Injustificado</h1>
     <p class="subtitle-v2">Artículos 47, 48, 50, 89, 162 de la Ley Federal del Trabajo · Arts. 685, 685-Bis, 873 LFT ·
         Art. 123 Apartado A CPEUM</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad de México") }}, {{ estado | default("Ciudad de México") }}, a {{
-    fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold destinatario">H. TRIBUNAL LABORAL DEL {{ circuito | default("_______________") }} CIRCUITO</p>
+<p class="text-bold destinatario">H. TRIBUNAL LABORAL DEL <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Primero en Materia Laboral de la CDMX)</span> CIRCUITO</p>
 <p class="text-bold">Expediente: AL ABRIRSE</p>
 <p class="text-bold">P R E S E N T E</p>
 
 <!-- ═══════════════════════════ PROEMIO ═══════════════════════════ -->
 
 <p class="indent text-justify">
-    <strong>{{ cliente.nombre | default("NOMBRE COMPLETO DEL TRABAJADOR") }}</strong>, mexicano(a),
-    mayor de edad, con domicilio en <strong>{{ cliente.domicilio | default("_________________________________")
-        }}</strong>,
-    CURP: {{ curp | default("_______________") }}, NSS: {{ nss | default("_______________") }},
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></strong>, mexicano(a),
+    mayor de edad, con domicilio en <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Coyoacán, Ciudad de México, C.P. 04000)</span></strong>,
+    CURP: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(GOML850312HDFNRR09)</span>, NSS: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(34829104567)</span>,
     autorizando en los términos del artículo 692 fracción II de la LFT al
-    <strong>Lic. {{ abogado.nombre | default("_______________") }}</strong>,
-    cédula profesional {{ abogado.cedula | default("_______________") }};
+    <strong>Lic. <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Francisco Sánchez Torres)</span></strong>,
+    cédula profesional <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(3847291)</span>;
     ante Usted, con el debido respeto, comparezco para demandar en la
     <strong>VÍA ORDINARIA LABORAL</strong> a:
 </p>
 
 <p class="indent text-justify">
-    <strong>{{ patron | default("NOMBRE O RAZÓN SOCIAL DEL PATRÓN") }}</strong>,
-    persona {{ tipo_persona_patron | default("moral") }} con domicilio en
-    {{ domicilio_patron | default("_________________________________") }},
-    RFC: {{ rfc_patron | default("_______________") }};
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Construcciones del Valle S.A. de C.V.)</span></strong>,
+    persona <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Construcciones del Valle S.A. de C.V.)</span> con domicilio en
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Construcciones del Valle S.A. de C.V.)</span>,
+    RFC: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Construcciones del Valle S.A. de C.V.)</span>;
     y/o a quien resulte responsable como patrón, representante legal,
     intermediario, empresa beneficiaria, o patrón solidario.
 </p>
@@ -43,43 +38,41 @@
 <div class="section-title numbered">I. DATOS DE LA RELACIÓN DE TRABAJO</div>
 <table style="border:1px solid #000;">
     <tr>
-        <td style="border:1px solid #000; padding:6px; width:40%; font-weight:bold;">Fecha de ingreso:</td>
-        <td style="border:1px solid #000; padding:6px;">{{ fecha_ingreso | default("_______________") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; width:40%; font-weight:bold;">Fecha de ingreso:</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(3 de enero de 2020)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Fecha de despido:</td>
-        <td style="border:1px solid #000; padding:6px;">{{ fecha_despido | default("_______________") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; font-weight:bold;">Fecha de despido:</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(10 de enero de 2026)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Antigüedad:</td>
-        <td style="border:1px solid #000; padding:6px;">{{ antiguedad | default("_______________") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; font-weight:bold;">Antigüedad:</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(6 años y 2 meses)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Puesto desempeñado:</td>
-        <td style="border:1px solid #000; padding:6px;">{{ puesto | default("_______________") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; font-weight:bold;">Puesto desempeñado:</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Auxiliar Contable)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Salario diario:</td>
-        <td style="border:1px solid #000; padding:6px;">${{ salario_diario | default("_______________") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; font-weight:bold;">Salario diario:</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(415.00)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Salario diario integrado:</td>
-        <td style="border:1px solid #000; padding:6px;">${{ salario_integrado | default("_______________") }} (Art. 84
+        <td style="border:1px solid #c8d0e0; padding:6px; font-weight:bold;">Salario diario integrado:</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(498.00)</span> (Art. 84
             LFT)</td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Horario de trabajo:</td>
-        <td style="border:1px solid #000; padding:6px;">{{ horario | default("Lunes a viernes de 9:00 a 18:00 hrs,
-            sábado de 9:00 a 14:00 hrs") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; font-weight:bold;">Horario de trabajo:</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lunes a viernes de 9:00 a 18:00 hrs, sábado de 9:00 a 14:00 hrs)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Jornada semanal:</td>
-        <td style="border:1px solid #000; padding:6px;">{{ horas_semana | default("48") }} horas ({{ tipo_jornada |
-            default("Diurna, Art. 60 LFT") }})</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; font-weight:bold;">Jornada semanal:</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(48)</span> horas (<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Diurna, Art. 60 LFT)</span>)</td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px; font-weight:bold;">Día de descanso:</td>
-        <td style="border:1px solid #000; padding:6px;">{{ dia_descanso | default("Domingo") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; font-weight:bold;">Día de descanso:</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Domingo)</span></td>
     </tr>
 </table>
 
@@ -94,35 +87,35 @@
     <strong>A. INDEMNIZACIÓN POR DESPIDO INJUSTIFICADO:</strong>
 </p>
 <table style="border:1px solid #000; margin:10px 0;">
-    <tr style="background:#f0f0f0; font-weight:bold;">
-        <td style="border:1px solid #000; padding:6px;">Concepto</td>
-        <td style="border:1px solid #000; padding:6px;">Fundamento</td>
-        <td style="border:1px solid #000; padding:6px; text-align:right;">Cálculo</td>
+    <tr style="background:#1e3a5f; color:white; font-weight:bold;">
+        <td style="border:1px solid #c8d0e0; padding:6px;">Concepto</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Fundamento</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; text-align:right;">Cálculo</td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px;">Indemnización constitucional (3 meses)</td>
-        <td style="border:1px solid #000; padding:6px;">Art. 48, 50 fr. III LFT; Art. 123-A fr. XXII CPEUM</td>
-        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ indem_3meses | default("___") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Indemnización constitucional (3 meses)</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Art. 48, 50 fr. III LFT; Art. 123-A fr. XXII CPEUM</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(12,450.00)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px;">20 días por año de servicio</td>
-        <td style="border:1px solid #000; padding:6px;">Art. 50 fr. II LFT</td>
-        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ indem_20dias | default("___") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">20 días por año de servicio</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Art. 50 fr. II LFT</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(8,300.00)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px;">Salarios caídos (máx. 12 meses)</td>
-        <td style="border:1px solid #000; padding:6px;">Art. 48 párrafo 2 LFT</td>
-        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ salarios_caidos | default("___") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Salarios caídos (máx. 12 meses)</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Art. 48 párrafo 2 LFT</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(24,900.00)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px;">Intereses sobre salarios caídos (2% mensual)</td>
-        <td style="border:1px solid #000; padding:6px;">Art. 48 párrafo 3 LFT</td>
-        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ intereses | default("___") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Intereses sobre salarios caídos (2% mensual)</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Art. 48 párrafo 3 LFT</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(3,588.00)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px;">Prima de antigüedad (12 días/año)</td>
-        <td style="border:1px solid #000; padding:6px;">Art. 162 LFT</td>
-        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ prima_antiguedad | default("___") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Prima de antigüedad (12 días/año)</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Art. 162 LFT</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(2,077.50)</span></td>
     </tr>
 </table>
 
@@ -130,40 +123,40 @@
     <strong>B. PRESTACIONES DEVENGADAS Y PROPORCIONALES:</strong>
 </p>
 <table style="border:1px solid #000; margin:10px 0;">
-    <tr style="background:#f0f0f0; font-weight:bold;">
-        <td style="border:1px solid #000; padding:6px;">Concepto</td>
-        <td style="border:1px solid #000; padding:6px;">Fundamento</td>
-        <td style="border:1px solid #000; padding:6px; text-align:right;">Monto</td>
+    <tr style="background:#1e3a5f; color:white; font-weight:bold;">
+        <td style="border:1px solid #c8d0e0; padding:6px;">Concepto</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Fundamento</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; text-align:right;">Monto</td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px;">Aguinaldo proporcional (15 días mínimo)</td>
-        <td style="border:1px solid #000; padding:6px;">Art. 87 LFT</td>
-        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ aguinaldo | default("___") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Aguinaldo proporcional (15 días mínimo)</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Art. 87 LFT</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(2,075.00)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px;">Vacaciones proporcionales ({{ dias_vac | default("12") }} días)
+        <td style="border:1px solid #c8d0e0; padding:6px;">Vacaciones proporcionales (<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(12)</span> días)
         </td>
-        <td style="border:1px solid #000; padding:6px;">Art. 76 LFT (ref. 2023)</td>
-        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ vacaciones | default("___") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Art. 76 LFT (ref. 2023)</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(2,490.00)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px;">Prima vacacional (25%)</td>
-        <td style="border:1px solid #000; padding:6px;">Art. 80 LFT</td>
-        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ prima_vac | default("___") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Prima vacacional (25%)</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Art. 80 LFT</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(622.50)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px;">Reparto de utilidades (PTU)</td>
-        <td style="border:1px solid #000; padding:6px;">Arts. 117-131 LFT</td>
-        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ ptu | default("___") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Reparto de utilidades (PTU)</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Arts. 117-131 LFT</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(4,150.00)</span></td>
     </tr>
     <tr>
-        <td style="border:1px solid #000; padding:6px;">Horas extras adeudadas</td>
-        <td style="border:1px solid #000; padding:6px;">Arts. 66-68 LFT</td>
-        <td style="border:1px solid #000; padding:6px; text-align:right;">${{ horas_extras | default("___") }}</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Horas extras adeudadas</td>
+        <td style="border:1px solid #c8d0e0; padding:6px;">Arts. 66-68 LFT</td>
+        <td style="border:1px solid #c8d0e0; padding:6px; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(1,800.00)</span></td>
     </tr>
-    <tr style="font-weight:bold; background:#f0f0f0;">
-        <td style="border:1px solid #000; padding:8px;" colspan="2">TOTAL ESTIMADO</td>
-        <td style="border:1px solid #000; padding:8px; text-align:right;">${{ total | default("___") }}</td>
+    <tr style="font-weight:bold; background:#eef1f8;">
+        <td style="border:1px solid #c8d0e0; padding:8px;" colspan="2">TOTAL ESTIMADO</td>
+        <td style="border:1px solid #c8d0e0; padding:8px; text-align:right;">$<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(55,000.00)</span></td>
     </tr>
 </table>
 
@@ -177,28 +170,16 @@
 
 <div class="section-title numbered">III. HECHOS</div>
 <p class="indent text-justify double-space">
-    <strong>PRIMERO.-</strong> {{ hecho_1 | default("Con fecha [fecha de ingreso], inicié mi relación laboral con el
-    demandado, desempeñando el puesto de [puesto], con un horario de [horario], un salario diario de $[monto], en el
-    domicilio laboral ubicado en [dirección]. La relación fue de carácter subordinado, existiendo: a) sujeción a un
-    horario; b) lugar de trabajo designado por el patrón; c) dirección y supervisión permanente; d) remuneración
-    periódica.") }}
+    <strong>PRIMERO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el primer hecho cronológicamente, con fecha, lugar y personas involucradas)</span>
 </p>
 <p class="indent text-justify double-space">
-    <strong>SEGUNDO.-</strong> {{ hecho_2 | default("El día [fecha de despido], siendo aproximadamente las [hora], en
-    [lugar], el [representante/jefe/gerente] de nombre [nombre], procedió a comunicarme verbalmente / por escrito mi
-    DESPIDO INJUSTIFICADO, señalando como motivo [indicar la razón expresada o, si no hubo, señalar que fue sin
-    justificación alguna]. NO SE ME ENTREGÓ AVISO DE RESCISIÓN conforme lo exige el artículo 47 último párrafo de la
-    LFT.") }}
+    <strong>SEGUNDO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el segundo hecho, describiendo la conducta del demandado)</span>
 </p>
 <p class="indent text-justify double-space">
-    <strong>TERCERO.-</strong> {{ hecho_3 | default("Manifiesto bajo protesta de decir verdad que NUNCA incurrí en
-    causal alguna de rescisión de las previstas en el artículo 47 de la LFT, por lo que el despido fue arbitrario e
-    injustificado.") }}
+    <strong>TERCERO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el tercer hecho y sus consecuencias para el promovente)</span>
 </p>
 <p class="indent text-justify double-space">
-    <strong>CUARTO.-</strong> {{ hecho_4 | default("A la fecha de presentación de la demanda, el patrón no me ha
-    liquidado las prestaciones devengadas ni la indemnización correspondiente, causándome grave perjuicio económico.")
-    }}
+    <strong>CUARTO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí hechos adicionales si los hubiere)</span>
 </p>
 
 <div class="jurisprudencia-box">
@@ -238,13 +219,10 @@
     absolver posiciones.
 </p>
 <p class="indent text-justify">
-    <strong>2. DOCUMENTAL PRIVADA.</strong> {{ prueba_documental | default("Recibos de nómina, contrato individual de
-    trabajo, constancias laborales, credencial de la empresa, y toda documentación que acredite la relación de trabajo y
-    sus condiciones.") }}
+    <strong>2. DOCUMENTAL PRIVADA.</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Recibos de nómina, contrato de trabajo, credencial laboral y comprobantes de pago)</span>
 </p>
 <p class="indent text-justify">
-    <strong>3. TESTIMONIAL.</strong> De {{ testigo_1 | default("[nombre completo]") }} y {{ testigo_2 | default("[nombre
-    completo]") }}, quienes declararán sobre la existencia de la relación de trabajo, el despido injustificado y las
+    <strong>3. TESTIMONIAL.</strong> De <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ana Lucía Torres Soto)</span> y <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Luis Enrique Ramos García)</span>, quienes declararán sobre la existencia de la relación de trabajo, el despido injustificado y las
     condiciones laborales.
 </p>
 <p class="indent text-justify">
@@ -286,13 +264,12 @@
 <p class="text-center text-bold" style="margin-top:40px;">PROTESTO LO NECESARIO</p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ cliente.nombre | default("NOMBRE COMPLETO Y FIRMA DEL TRABAJADOR") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></div>
 </div>
 
 <div class="confidencialidad-v2">
     <p><strong>AVISO DE CONFIDENCIALIDAD — DOCUMENTO V2 NEGOCIOS</strong></p>
     <p>Documento generado por Machotes Legales®. Contiene fundamentación laboral completa,
         jurisprudencia de la SCJN, cálculos de prestaciones y argumentación especializada.</p>
-    <p>Licencia: {{ license_id | default("TLEX-V2-XXXXXX") }} · Usuario: {{ license_user | default("___") }}</p>
+    <p>Licencia: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(TLEX-V2-001234)</span> · Usuario: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(usuario@correo.com)</span></p>
 </div>
-{% endblock %}

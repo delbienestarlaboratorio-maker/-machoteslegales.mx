@@ -1,0 +1,310 @@
+[
+  {
+    "id": "fiscal-declaracion-isr-persona-fisica-v1",
+    "slug": "declaracion-anual-isr-persona-fisica",
+    "title": "Declaración Anual ISR Persona Física",
+    "legalBasis": [
+      "Arts. 90-93 LISR",
+      "Art. 32-A CFF"
+    ],
+    "description": "Escrito de presentación de declaración de ISR anual con determinación de impuesto o devolución.",
+    "keywords": [
+      "declaración anual ISR",
+      "impuesto renta persona física",
+      "SAT declaración"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Declaracion Anual de ISR – Persona Fisica</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">SERVICIO DE ADMINISTRACION TRIBUTARIA</div><p class=\"indent text-justify\">Yo, <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Carlos Mendoza Perez, RFC MEPC800101)</span></strong>, presento mi declaracion anual de ISR correspondiente al ejercicio fiscal <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2025)</span>: ingresos acumulados $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(480,000.00)</span>; deducciones personales $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(45,000.00)</span>; ISR causado $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(78,500.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Declarante)</span></div></div>"
+  },
+  {
+    "id": "fiscal-demanda-nulidad-sat-v1",
+    "slug": "demanda-nulidad-credito-fiscal-sat",
+    "title": "Demanda de Nulidad de Crédito Fiscal",
+    "legalBasis": [
+      "Arts. 51, 52 Ley Federal de Procedimiento Contencioso Administrativo (LFPCA)"
+    ],
+    "description": "Juicio ante el TFJA para anular crédito fiscal emitido por el SAT por vicios de forma o fondo.",
+    "keywords": [
+      "nulidad crédito fiscal",
+      "TFJA SAT impugnar",
+      "juicio contencioso fiscal"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Nulidad de Credito Fiscal</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">SALA REGIONAL DEL TRIBUNAL FEDERAL DE JUSTICIA ADMINISTRATIVA</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa XYZ SA de CV)</span></strong> demanda la NULIDAD del credito fiscal numero <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2025-SAT-001)</span> por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(3,450,000.00)</span> emitido por la Administracion Central de Auditoria, el cual carece de debida fundamentacion y motivacion.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Contribuyente Actora)</span></div></div>"
+  },
+  {
+    "id": "fiscal-recurso-revocacion-v1",
+    "slug": "recurso-revocacion-sat-impuesto",
+    "title": "Recurso de Revocación ante el SAT",
+    "legalBasis": [
+      "Arts. 116-128 CFF"
+    ],
+    "description": "Medio de defensa fiscal para impugnar resoluciones del SAT ante la propia autoridad fiscal.",
+    "keywords": [
+      "recurso revocacion SAT",
+      "impugnar multa SAT",
+      "defensa fiscal administrativa"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Recurso de Revocacion</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. ADMINISTRADOR FISCAL REGIONAL EN TURNO</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa XYZ SA de CV)</span></strong> interpone RECURSO DE REVOCACION contra la resolucion de fecha <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(5 de febrero de 2026)</span> que determina credito fiscal por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(250,000.00)</span>, impugnandolo por indebida fundamentacion.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Contribuyente Recurrente)</span></div></div>"
+  },
+  {
+    "id": "fiscal-aclaracion-multa-v1",
+    "slug": "aclaracion-multa-sat",
+    "title": "Aclaración de Multa del SAT",
+    "legalBasis": [
+      "Art. 33-A CFF",
+      "Art. 70-A CFF"
+    ],
+    "description": "Escrito para solicitar la condonación o reducción de multa fiscal cuando el contribuyente fue omiso por primera vez.",
+    "keywords": [
+      "aclaracion multa SAT",
+      "condonacion multa",
+      "reduccion sancion fiscal"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Aclaracion y Reduccion de Multa</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">SERVICIO DE ADMINISTRACION TRIBUTARIA</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Juan Hernandez, RFC HEJQ750901)</span></strong> solicita la REDUCCION de la multa de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(18,000.00)</span> impuesta por presentacion extemporanea de la declaracion de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(julio de 2025)</span>, siendo infraccion por primera ocasion y habiendose regularizado voluntariamente.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Contribuyente)</span></div></div>"
+  },
+  {
+    "id": "fiscal-devolucion-iva-v1",
+    "slug": "solicitud-devolucion-saldo-favor-iva",
+    "title": "Solicitud de Devolución de Saldo a Favor de IVA",
+    "legalBasis": [
+      "Arts. 22-22C CFF",
+      "Art. 6 LIVA"
+    ],
+    "description": "Solicitar al SAT la devolución del saldo a favor generado en la declaración de IVA.",
+    "keywords": [
+      "devolucion IVA",
+      "saldo favor IVA",
+      "reembolso SAT"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Devolucion de Saldo a Favor de IVA</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">SAT – ADMINISTRACION DE SERVICIOS AL CONTRIBUYENTE</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Exportadora Pacifico SA, RFC EXP010101)</span></strong> solicita devolucion del saldo a favor de IVA de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(1,240,000.00)</span> generado en el periodo <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(enero-diciembre 2025)</span> por operaciones de exportacion al tipo cero.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Representante Legal)</span></div></div>"
+  },
+  {
+    "id": "fiscal-acuerdo-conclusivo-v1",
+    "slug": "solicitud-acuerdo-conclusivo-prodecon",
+    "title": "Solicitud de Acuerdo Conclusivo ante la PRODECON",
+    "legalBasis": [
+      "Arts. 69-C, 69-G CFF"
+    ],
+    "description": "Alternativa de solución ante la PRODECON durante revisión del SAT para llegar a un acuerdo sin litigio.",
+    "keywords": [
+      "acuerdo conclusivo PRODECON",
+      "mediacion SAT",
+      "terminar auditoria SAT"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Acuerdo Conclusivo</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">PROCURADURIA DE LA DEFENSA DEL CONTRIBUYENTE</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Servicios Integrales SA de CV)</span></strong> solicita, durante la revision de contabilidad electronica iniciada el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15 de enero de 2026)</span>, la apertura de un ACUERDO CONCLUSIVO para discrepar en el tratamiento de las deducciones cuestionadas.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Contribuyente)</span></div></div>"
+  },
+  {
+    "id": "fiscal-escrito-libre-sat-v1",
+    "slug": "escrito-libre-sat-aclaracion",
+    "title": "Escrito Libre ante el SAT",
+    "legalBasis": [
+      "Art. 18 CFF"
+    ],
+    "description": "Comunicación general al SAT para aclarar, presentar información o comparecer ante requerimiento.",
+    "keywords": [
+      "escrito libre SAT",
+      "respuesta requerimiento SAT",
+      "comunicacion fiscal"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Escrito Libre</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">SERVICIO DE ADMINISTRACION TRIBUTARIA</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Maria Lopez Ruiz, RFC LORMA801201)</span></strong>, en atencion al requerimiento folio <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2026-REQ-5542)</span>, presento la documentacion solicitada: <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(estados de cuenta enero-diciembre 2025, CFDI de ingreso y facturas de gastos)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Contribuyente)</span></div></div>"
+  },
+  {
+    "id": "fiscal-opinion-cumplimiento-v1",
+    "slug": "solicitud-opinion-cumplimiento-fiscal",
+    "title": "Solicitud de Opinión de Cumplimiento Fiscal",
+    "legalBasis": [
+      "Regla 2.1.39 RMF 2025"
+    ],
+    "description": "Gestión ante el SAT del certificado de opinión de cumplimiento de obligaciones fiscales (32D).",
+    "keywords": [
+      "opinion cumplimiento SAT",
+      "constancia 32D",
+      "licitaciones opinion SAT"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Opinion de Cumplimiento de Obligaciones Fiscales</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">SAT</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Constructora del Norte SA de CV, RFC CNO991001)</span></strong> solicita la generacion de su <strong>OPINION POSITIVA DE CUMPLIMIENTO</strong> fiscal (Art. 32-D CFF) para participar en licitacion publica convocada por <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(IMSS)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Representante Legal)</span></div></div>"
+  },
+  {
+    "id": "fiscal-regularizacion-obligaciones-v1",
+    "slug": "solicitud-condonacion-recargos-actualizaciones",
+    "title": "Solicitud de Condonación de Recargos y Actualizaciones",
+    "legalBasis": [
+      "Art. 74 CFF"
+    ],
+    "description": "Petición de condonación de recargos y actualizaciones dentro de programas de regularización fiscal.",
+    "keywords": [
+      "condonacion recargos SAT",
+      "regularizacion fiscal",
+      "quitas SAT"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Condonacion de Recargos y Actualizaciones</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">SAT</div><p class=\"indent text-justify\">Al amparo del programa de regularizacion fiscal vigente, <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa XYZ SA, RFC xyz010101)</span></strong> solicita la CONDONACION del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(100%)</span> de recargos y actualizaciones generadas por el credito fiscal <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(SAT-2023-002)</span>, comprometiendose a pagar el capital este mes.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Contribuyente)</span></div></div>"
+  },
+  {
+    "id": "fiscal-incidente-suspension-cobro-v1",
+    "slug": "solicitud-suspension-ejecucion-credito-fiscal",
+    "title": "Solicitud de Suspensión de Ejecución del Crédito Fiscal",
+    "legalBasis": [
+      "Arts. 144-146 CFF"
+    ],
+    "description": "Solicitud para suspender el procedimiento de ejecución fiscal mientras se resuelve el recurso o juicio.",
+    "keywords": [
+      "suspension cobro SAT",
+      "paralizar credito fiscal",
+      "garantia interes fiscal"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Suspension del Procedimiento Administrativo de Ejecucion</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">ADMINISTRACION LOCAL DE RECAUDACION</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Distribuidora Nacional SA)</span></strong> solicita la suspension del PAE sobre el credito fiscal <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(SAT-2025-055)</span>, ofreciendo como garantia del interes fiscal <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(fianza de institucion autorizada por el monto total con un 10% adicional)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Contribuyente)</span></div></div>"
+  },
+  {
+    "id": "fiscal-demanda-contencioso-tfja-v1",
+    "slug": "demanda-juicio-contencioso-administrativo-fiscal",
+    "title": "Demanda de Juicio en Línea ante el TFJA",
+    "legalBasis": [
+      "Arts. 13-16 LFPCA"
+    ],
+    "description": "Presentación de demanda de nulidad por vía electrónica ante el Tribunal Federal de Justicia Administrativa.",
+    "keywords": [
+      "juicio en linea TFJA",
+      "demanda TFJA electronica",
+      "nulidad via internet"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Juicio Contencioso Administrativo (Linea)</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">SALA REGIONAL METROPOLITANA DEL TFJA</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Importadora del Sur SA)</span></strong> presenta demanda de NULIDAD via juicio en linea contra la resolucion <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(500-11-2026-R)</span> del SAT por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(850,000.00)</span>, por falta de competencia del funcionario que la emitio.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Actora)</span></div></div>"
+  },
+  {
+    "id": "fiscal-amparo-fiscal-v1",
+    "slug": "demanda-amparo-indirecto-fiscal",
+    "title": "Demanda de Amparo Indirecto Fiscal",
+    "legalBasis": [
+      "Arts. 103-107 CPEUM",
+      "Ley de Amparo"
+    ],
+    "description": "Amparo contra leyes o actos de autoridades fiscales que violen garantías constitucionales del contribuyente.",
+    "keywords": [
+      "amparo fiscal SAT",
+      "amparo contra impuesto",
+      "inconstitucionalidad ley fiscal"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Amparo Indirecto en Materia Fiscal</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ DE DISTRITO EN MATERIA ADMINISTRATIVA</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa Contribuyente SA)</span></strong> promueve AMPARO INDIRECTO contra el acto del SAT consistente en la emision del credito fiscal <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2026-AMF-001)</span>, que viola el principio de proporcionalidad tributaria del articulo 31 Fracc. IV Constitucional.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Quejosa)</span></div></div>"
+  },
+  {
+    "id": "fiscal-dictamen-fiscal-v1",
+    "slug": "dictamen-fiscal-contador-publico",
+    "title": "Informe de Dictamen Fiscal (CPC)",
+    "legalBasis": [
+      "Art. 52 CFF",
+      "Reglas RMF 2025"
+    ],
+    "description": "Dictamen contable que presenta el Contador Público Certificado sobre los estados financieros del contribuyente.",
+    "keywords": [
+      "dictamen fiscal CPC",
+      "auditor externo SAT",
+      "dictamen financiero"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Informe de Dictamen Fiscal</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">SERVICIO DE ADMINISTRACION TRIBUTARIA</div><p class=\"indent text-justify\">El que suscribe, <strong>C.P.C. <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Jorge Alvarado, CEP 12345)</span></strong>, presento el dictamen de estados financieros correspondiente al ejercicio <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2025)</span> de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa Dictaminada SA)</span>, manifestando que las cifras son razonables y que el contribuyente cumple con sus obligaciones fiscales.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(CPC Dictaminador)</span></div></div>"
+  },
+  {
+    "id": "fiscal-aviso-baja-v1",
+    "slug": "aviso-baja-actividades-sat",
+    "title": "Aviso de Baja de Actividades ante el SAT",
+    "legalBasis": [
+      "Arts. 25, 26 CFF",
+      "Ficha 77/CFF RMF 2025"
+    ],
+    "description": "Trámite de baja de actividades cuando el contribuyente cesa operaciones definitivamente o cambia de régimen.",
+    "keywords": [
+      "baja actividades SAT",
+      "cancelar RFC actividades",
+      "cierre empresa SAT"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Aviso de Baja de Actividades</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">SAT – MODULO DE SERVICIOS</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Pedro Gutierrez, RFC GUPE811201)</span></strong> presenta aviso de BAJA DE ACTIVIDADES con fecha efectiva <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(31 de marzo de 2026)</span>, por haber cesado definitivamente sus operaciones como <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(comerciante persona fisica con actividad empresarial)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Contribuyente)</span></div></div>"
+  },
+  {
+    "id": "fiscal-precios-transferencia-v1",
+    "slug": "informe-precios-transferencia",
+    "title": "Estudio de Precios de Transferencia",
+    "legalBasis": [
+      "Arts. 76 Fr. IX, 179-181 LISR",
+      "OCDE Guias PT"
+    ],
+    "description": "Documento técnico de análisis de operaciones entre partes relacionadas y su comparabilidad con precios de mercado.",
+    "keywords": [
+      "precios de transferencia",
+      "partes relacionadas SAT",
+      "estudio comparabilidad ISR"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Estudio de Precios de Transferencia</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">SAT – INFORMACION DE PARTES RELACIONADAS</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Multinacional SA de CV)</span></strong> presenta el estudio de precios de transferencia del ejercicio <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2025)</span>, demostrando que las operaciones con su parte relacionada en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Estados Unidos)</span> fueron pactadas a precios de mercado mediante el metodo <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(PCI)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Representante Legal)</span></div></div>"
+  },
+  {
+    "id": "fiscal-ampliacion-plazo-v1",
+    "slug": "solicitud-ampliacion-plazo-presentacion",
+    "title": "Solicitud de Ampliación de Plazo ante el SAT",
+    "legalBasis": [
+      "Art. 12 CFF",
+      "Regla 2.1.7 RMF 2025"
+    ],
+    "description": "Escrito pidiendo al SAT más tiempo para atender un requerimiento o presentar documentación fiscal.",
+    "keywords": [
+      "ampliacion plazo SAT",
+      "prorroga requerimiento",
+      "mas tiempo declaracion SAT"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Ampliacion de Plazo</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">ADMINISTRACION FISCAL CENTRAL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa Contribuyente SA, RFC ECO010101)</span></strong> solicita una ampliacion de plazo de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15 dias habiles)</span> para atender el requerimiento folio <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2026-REQ-4411)</span>, en razon de la complejidad del volumen de informacion solicitada y la reciente migracion de sistemas contables.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Contribuyente)</span></div></div>"
+  },
+  {
+    "id": "fiscal-consulta-sat-v1",
+    "slug": "consulta-fiscal-sat-criterio",
+    "title": "Consulta Fiscal ante el SAT",
+    "legalBasis": [
+      "Arts. 34-34-A CFF"
+    ],
+    "description": "Petición del contribuyente para que el SAT emita un criterio vinculante sobre el tratamiento de una operación específica.",
+    "keywords": [
+      "consulta SAT criterio",
+      "34 CFF consulta",
+      "tratamiento fiscal duda"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Consulta Fiscal ante el SAT</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">SAT – ADMINISTRACION CENTRAL DE CONSULTORIA</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa Inmobiliaria SA)</span></strong> formula la presente consulta al amparo del articulo 34 CFF: solicita criterio sobre el regimen fiscal aplicable a la <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(venta de inmuebles recibidos en dacion en pago)</span> para efectos de ISR e IVA.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Contribuyente)</span></div></div>"
+  },
+  {
+    "id": "fiscal-isr-personas-morales-v1",
+    "slug": "declaracion-anual-isr-personas-morales",
+    "title": "Declaración Anual ISR Personas Morales",
+    "legalBasis": [
+      "Arts. 9-10 LISR"
+    ],
+    "description": "Presentacion de la declaracion anual de ISR de una SA o SRL con calculo de PTU y saldo a favor.",
+    "keywords": [
+      "declaracion anual ISR moral",
+      "DIOT personas morales",
+      "ISR empresa declaracion"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Declaracion Anual ISR – Persona Moral</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">SAT</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Comercializadora Norte SA de CV, RFC CNO010101)</span></strong> presenta su declaracion anual del ejercicio <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2025)</span>: utilidad fiscal $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2,400,000.00)</span>; ISR al <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(30%)</span>: $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(720,000.00)</span>, ya cubierto mediante pagos provisionales mensuales.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Representante Legal)</span></div></div>"
+  },
+  {
+    "id": "fiscal-acuerdo-pago-credito-v1",
+    "slug": "solicitud-pago-parcialidades-credito-fiscal",
+    "title": "Solicitud de Pago en Parcialidades de Crédito Fiscal",
+    "legalBasis": [
+      "Arts. 66-66-A CFF"
+    ],
+    "description": "Petición para cubrir un crédito fiscal determinado en cuotas mensuales cuando no hay liquidez inmediata.",
+    "keywords": [
+      "pago parcialidades SAT",
+      "deuda SAT en cuotas",
+      "diferir adeudo fiscal"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Pago en Parcialidades de Credito Fiscal</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">ADMINISTRACION LOCAL DE RECAUDACION</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Restaurantes del Bajio SA)</span></strong> solicita pagar el credito fiscal <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(SAT-2026-100)</span> de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(480,000.00)</span> en <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(36 parcialidades)</span> mensuales iguales e iniciar el pago de la primera el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15 de marzo de 2026)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Representante Legal)</span></div></div>"
+  },
+  {
+    "id": "fiscal-recurso-revocacion-sat-v1",
+    "slug": "recurso-revocacion-sat",
+    "title": "Recurso de Revocacion ante el SAT",
+    "legalBasis": [
+      "Art. 116-128 CFF"
+    ],
+    "description": "Medio de defensa fiscal para impugnar resoluciones del SAT ante la propia autoridad.",
+    "keywords": [
+      "recurso revocacion SAT",
+      "impugnar multa SAT",
+      "defensa fiscal administrativa"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Recurso de Revocacion</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. ADMINISTRADOR DE LA SAT EN TURNO</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Empresa XYZ SA de CV)</span></strong>, por conducto de su representante, interpone RECURSO DE REVOCACION contra la resolucion fiscal de fecha <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(5 de febrero de 2026)</span> que determina credito fiscal por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(250,000.00)</span>, el cual se impugna por indebida fundamentacion y motivacion.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Contribuyente Recurrente)</span></div></div>"
+  }
+]

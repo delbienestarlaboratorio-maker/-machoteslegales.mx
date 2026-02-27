@@ -1,0 +1,307 @@
+[
+  {
+    "id": "mercantil-demanda-ejecutiva-v1",
+    "slug": "demanda-juicio-ejecutivo-mercantil",
+    "title": "Demanda de Juicio Ejecutivo Mercantil",
+    "legalBasis": [
+      "Arts. 1391-1415 Código de Comercio"
+    ],
+    "description": "Cobro de título de crédito (pagaré, cheque, letra) mediante vía ejecutiva mercantil.",
+    "keywords": [
+      "juicio ejecutivo mercantil",
+      "cobro pagaré",
+      "título de crédito"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Juicio Ejecutivo Mercantil</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ DE DISTRITO EN MATERIA MERCANTIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Distribuidora Industrial SA)</span></strong> demanda en <em>Juicio Ejecutivo Mercantil</em> a <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Constructora Noreste SA)</span></strong> el pago de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(250,000.00)</span> MNLC amparado en pagaré suscrito el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(10 de enero de 2026)</span>, vencido y no pagado, más intereses moratorios al <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2% mensual)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Actora)</span></div></div>"
+  },
+  {
+    "id": "mercantil-demanda-ordinaria-v1",
+    "slug": "demanda-juicio-ordinario-mercantil",
+    "title": "Demanda de Juicio Ordinario Mercantil",
+    "legalBasis": [
+      "Arts. 1049-1063 Código de Comercio"
+    ],
+    "description": "Reclamación de incumplimiento de contrato mercantil cuando no hay título ejecutivo.",
+    "keywords": [
+      "juicio ordinario mercantil",
+      "contrato comercial incumplido",
+      "demanda compraventa"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Juicio Ordinario Mercantil</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Guadalajara, Jalisco)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ DE PRIMERA INSTANCIA EN MATERIA MERCANTIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Importadora del Pacífico SA)</span></strong> demanda a <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Distribuidora Occidente SA)</span></strong> el cumplimiento del contrato de compraventa mercantil de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(10,000 unidades de mercancía)</span> o el pago de daños por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(1,200,000.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Actora)</span></div></div>"
+  },
+  {
+    "id": "mercantil-cobro-cheque-v1",
+    "slug": "demanda-cobro-cheque-devuelto",
+    "title": "Demanda de Cobro de Cheque Devuelto",
+    "legalBasis": [
+      "Arts. 176-193 LGTOC",
+      "Arts. 1391 Código de Comercio"
+    ],
+    "description": "Acción ejecutiva por cheque regresado por falta de fondos o defecto de firma.",
+    "keywords": [
+      "cheque devuelto",
+      "cobro cheque sin fondos",
+      "titulo ejecutivo cheque"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Cobro de Cheque</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Monterrey, N.L.)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ MERCANTIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ferretería Global SA)</span></strong> demanda el cobro del cheque número <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(0012345 Banco Azteca)</span> por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(45,000.00)</span> devuelto el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(3 de febrero de 2026)</span> por fondos insuficientes, más gastos de protesto.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(La Actora)</span></div></div>"
+  },
+  {
+    "id": "mercantil-quiebra-v1",
+    "slug": "solicitud-declaracion-quiebra",
+    "title": "Solicitud de Declaración de Concurso Mercantil",
+    "legalBasis": [
+      "Ley de Concursos Mercantiles"
+    ],
+    "description": "Petición al juez para iniciar el proceso de reorganización o quiebra de empresa en insolvencia.",
+    "keywords": [
+      "concurso mercantil",
+      "quiebra empresa",
+      "insolvencia societaria"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Declaracion de Concurso Mercantil</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ DE DISTRITO ESPECIALIZADO EN CONCURSOS MERCANTILES</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Industrias del Bajío SA de CV)</span></strong> reconoce que no puede cumplir con el pago de obligaciones por monto superior al <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(40% del activo total)</span> y solicita la declaración de <strong>CONCURSO MERCANTIL</strong> para iniciar etapa de conciliación.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Representante Legal)</span></div></div>"
+  },
+  {
+    "id": "mercantil-accion-cambiaria-v1",
+    "slug": "demanda-accion-cambiaria-directa",
+    "title": "Demanda de Acción Cambiaria Directa",
+    "legalBasis": [
+      "Arts. 150-169 LGTOC"
+    ],
+    "description": "Acción del tenedor de un título de crédito contra el obligado directo (aceptante o suscriptor).",
+    "keywords": [
+      "acción cambiaria",
+      "letra de cambio",
+      "cobro cambiario pagaré"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Accion Cambiaria Directa</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ MERCANTIL</div><p class=\"indent text-justify\">Ejerciendo la <strong>ACCION CAMBIARIA DIRECTA</strong> como tenedor legítimo de la Letra de Cambio número <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(LC-2025/001)</span> aceptada por <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Comercializadora Del Norte SA)</span> y vencida el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(31 de enero de 2026)</span>, reclamo el pago de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(80,000.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Tenedor)</span></div></div>"
+  },
+  {
+    "id": "mercantil-sociedad-disolucion-v1",
+    "slug": "demanda-disolucion-sociedad-mercantil",
+    "title": "Demanda de Disolución de Sociedad Mercantil",
+    "legalBasis": [
+      "Arts. 229-241 LGSM"
+    ],
+    "description": "Proceso judicial para declarar disuelta una SA o SRL cuando no se puede continuar operando.",
+    "keywords": [
+      "disolución sociedad",
+      "disolver empresa SA",
+      "quórum sociedad mercantil"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Disolucion de Sociedad Mercantil</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ MERCANTIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Socio Minorista Roberto Soto)</span></strong>, con el <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(30%)</span> del capital social, demanda la DISOLUCIÓN JUDICIAL de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Importadora León SA de CV)</span> al reunirse la causal del artículo 229 Fr. VII LGSM: imposibilidad de seguir los fines sociales.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Socio Actor)</span></div></div>"
+  },
+  {
+    "id": "mercantil-competencia-desleal-v1",
+    "slug": "demanda-competencia-desleal",
+    "title": "Demanda por Competencia Desleal",
+    "legalBasis": [
+      "Arts. 6 bis, 10 bis Convenio de París",
+      "Ley Federal de Competencia Económica"
+    ],
+    "description": "Acción por actos desleales como uso de marca similar, imitación de producto o difamación comercial.",
+    "keywords": [
+      "competencia desleal",
+      "imitación marca",
+      "copia diseño comercial"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda por Competencia Desleal</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ MERCANTIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Creaciones Moda SA)</span></strong> demanda a <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Fábrica Copia SA)</span></strong> por haber comercializado productos con diseño y empaque idéntico a nuestra marca registrada, causando confusión al consumidor y daños por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(300,000.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Actora)</span></div></div>"
+  },
+  {
+    "id": "mercantil-medidas-cautelares-v1",
+    "slug": "solicitud-medidas-cautelares-mercantiles",
+    "title": "Solicitud de Medidas Cautelares Mercantiles",
+    "legalBasis": [
+      "Arts. 1168-1177 Código de Comercio"
+    ],
+    "description": "Aseguramiento de bienes o inhibitorias antes de juicio para garantizar el pago de la deuda.",
+    "keywords": [
+      "embargo precautorio",
+      "aseguramiento bienes mercantil",
+      "inhibitoria mercantil"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Medidas Cautelares Mercantiles</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ MERCANTIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Banco del Norte SA)</span></strong> solicita, previo al juicio, el <strong>EMBARGO PRECAUTORIO</strong> de los bienes de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Importadora Sur SA)</span> hasta por la cantidad de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(500,000.00)</span> a fin de garantizar la deuda vencida.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Banco Acreedor)</span></div></div>"
+  },
+  {
+    "id": "mercantil-franquicia-incumplimiento-v1",
+    "slug": "demanda-incumplimiento-contrato-franquicia",
+    "title": "Demanda por Incumplimiento de Contrato de Franquicia",
+    "legalBasis": [
+      "Art. 142 Ley de Propiedad Industrial",
+      "Código de Comercio"
+    ],
+    "description": "Acción contra franquiciante o franquiciatario por violación de cláusulas del contrato de franquicia.",
+    "keywords": [
+      "franquicia incumplimiento",
+      "contrato franquicia",
+      "regalías franquicia"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda por Incumplimiento de Franquicia</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ MERCANTIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Franquicias Nación SA)</span></strong> demanda al franquiciatario <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Grupo Sur de México SA)</span> por el pago de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(6 meses)</span> de regalías omitidas por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(180,000.00)</span> más la resolución del contrato.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Franquiciante)</span></div></div>"
+  },
+  {
+    "id": "mercantil-apelacion-v1",
+    "slug": "recurso-apelacion-mercantil",
+    "title": "Recurso de Apelación en Juicio Mercantil",
+    "legalBasis": [
+      "Arts. 1336-1348 Código de Comercio"
+    ],
+    "description": "Impugnación de sentencia de primera instancia ante el Tribunal Superior correspondiente.",
+    "keywords": [
+      "apelación mercantil",
+      "segunda instancia mercantil",
+      "agravios apelación comercial"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Recurso de Apelacion Mercantil</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">AL C. JUEZ A QUO (PARA REMISIÓN)</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Comercializadora Sur SA)</span></strong> interpone RECURSO DE APELACION contra la sentencia de fecha <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(15 de febrero de 2026)</span> del Juicio Mercantil <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(80/2025)</span>, que nos condenó al pago inadecuado de daños.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Recurrente)</span></div></div>"
+  },
+  {
+    "id": "mercantil-excepcion-compromiso-arbitral-v1",
+    "slug": "excepcion-compromiso-arbitral",
+    "title": "Excepción de Compromiso Arbitral",
+    "legalBasis": [
+      "Art. 1424 Código de Comercio",
+      "Ley de Arbitraje Comercial"
+    ],
+    "description": "Defensa procesal para remitir el conflicto a arbitraje privado pactado en el contrato.",
+    "keywords": [
+      "excepción arbitral",
+      "cláusula arbitraje",
+      "ICC arbitraje México"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Excepcion de Compromiso Arbitral</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ MERCANTIL</div><p class=\"indent text-justify\">Al contestar la demanda, opongo la excepción de <strong>COMPROMISO ARBITRAL</strong>, ya que el contrato base del juicio contiene cláusula arbitral que obliga a dirimir controversias ante el Centro de Arbitraje de México (CAM), impidiendo el conocimiento del presente juicio por esta vía.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Demandado)</span></div></div>"
+  },
+  {
+    "id": "mercantil-prenda-ejecucion-v1",
+    "slug": "ejecucion-garantia-prendaria",
+    "title": "Ejecución de Garantía Prendaria",
+    "legalBasis": [
+      "Arts. 341-373 LGTOC"
+    ],
+    "description": "Solicitud de remate extrajudicial o judicial de prenda otorgada como garantía de crédito incumplido.",
+    "keywords": [
+      "ejecución prenda",
+      "remate garantía",
+      "crédito prendario"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Ejecucion de Garantia Prendaria</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ MERCANTIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Arrendadora Financiera SA)</span></strong> solicita la ejecución del contrato de prenda sin transmisión de posesión sobre el equipo industrial <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Torno CNC marca MAZAK)</span> dado en garantía por <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Taller Metálico SA)</span> al incumplir con el crédito.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Acreedor Prendario)</span></div></div>"
+  },
+  {
+    "id": "mercantil-acciones-sociedad-v1",
+    "slug": "demanda-reconocimiento-titularidad-acciones",
+    "title": "Demanda de Reconocimiento de Titularidad de Acciones",
+    "legalBasis": [
+      "Arts. 111-140 LGSM"
+    ],
+    "description": "Acción para que se declare la verdadera titularidad de acciones de una SA en conflicto societario.",
+    "keywords": [
+      "acciones sociedad anónima",
+      "titulares acciones",
+      "derechos accionistas"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Reconocimiento de Titularidad de Acciones</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ MERCANTIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ing. Luis Herrera)</span></strong> demanda el reconocimiento judicial de su titularidad sobre <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(1,500 acciones)</span> de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Tecnología Avanzada SA)</span>, cuya tenencia documentada en el libro de registro fue indebidamente alterada.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Actor)</span></div></div>"
+  },
+  {
+    "id": "mercantil-responsabilidad-administrador-v1",
+    "slug": "demanda-responsabilidad-administrador-sociedad",
+    "title": "Demanda de Responsabilidad contra Administrador",
+    "legalBasis": [
+      "Arts. 157-162 LGSM"
+    ],
+    "description": "Acción de responsabilidad civil de los socios contra el administrador o consejo de administración por daños a la empresa.",
+    "keywords": [
+      "responsabilidad administrador SA",
+      "daños consejo directivo",
+      "responsabilidad societaria"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Responsabilidad de Administrador Societario</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ MERCANTIL</div><p class=\"indent text-justify\">Los accionistas de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Exportadora Sur SA)</span> demandan en vía directa a su ex Director General <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Lic. Marco Ruiz)</span> el pago de los daños patrimoniales causados a la sociedad por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2,000,000.00)</span> por contratos firmados en conflicto de interés.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Socios Accionistas)</span></div></div>"
+  },
+  {
+    "id": "mercantil-hipoteca-industrial-v1",
+    "slug": "demanda-ejecucion-hipoteca-industrial",
+    "title": "Demanda de Ejecución de Hipoteca Industrial",
+    "legalBasis": [
+      "Ley General de Títulos y Operaciones de Crédito",
+      "Arts. 1391 CC"
+    ],
+    "description": "Ejecución de garantía hipotecaria sobre inmuebles o equipos de empresa deudora.",
+    "keywords": [
+      "hipoteca industrial",
+      "ejecución hipotecaria empresa",
+      "crédito hipotecario incumplido"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Ejecucion de Hipoteca Industrial</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Monterrey, N.L.)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ CIVIL Y DE HACIENDA</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Banco Industrial de Monterrey SA)</span></strong> demanda la ejecución de hipoteca inscrita en el RPC sobre la nave industrial de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2,500 m2)</span> propiedad de la empresa deudora, para satisfacer el crédito de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(5,000,000.00)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Banco Acreedor)</span></div></div>"
+  },
+  {
+    "id": "mercantil-sociedades-hecho-v1",
+    "slug": "demanda-liquidacion-sociedad-de-hecho",
+    "title": "Demanda de Liquidación de Sociedad de Hecho",
+    "legalBasis": [
+      "Arts. 2688-2735 Código Civil Federal supletorio"
+    ],
+    "description": "Cuando dos o más personas operaron comercialmente sin constituir formalmente una sociedad: se reclama la liquidación.",
+    "keywords": [
+      "sociedad de hecho",
+      "liquidación sociedad irregular",
+      "negocios sin contrato"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda de Liquidacion de Sociedad de Hecho</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ MERCANTIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Juan Torres)</span></strong> y <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Pablo Herrera)</span></strong> operaron el restaurante <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Rincon del Sabor)</span> como socios de hecho desde <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(2020)</span>. El actor solicita la liquidación del patrimonio societario común.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Actor Co-Socio)</span></div></div>"
+  },
+  {
+    "id": "mercantil-contrato-agencia-v1",
+    "slug": "demanda-incumplimiento-contrato-agencia",
+    "title": "Demanda por Incumplimiento de Contrato de Agencia",
+    "legalBasis": [
+      "Arts. 273-308 Código de Comercio"
+    ],
+    "description": "Reclamación por omisión de comisiones, ruptura unilateral o competencia desleal por el agente o principal.",
+    "keywords": [
+      "contrato agencia mercantil",
+      "agente comisionista",
+      "comisiones omitidas"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda por Incumplimiento de Contrato de Agencia</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ MERCANTIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Agente Comercial Méx SA)</span></strong> demanda a su mandante <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Fabricante Internacional SA)</span> el pago de comisiones devengadas de $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(120,000.00)</span> adeudadas por <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(4 meses)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Agente Actor)</span></div></div>"
+  },
+  {
+    "id": "mercantil-contestacion-ejecutivo-v1",
+    "slug": "contestacion-juicio-ejecutivo-mercantil",
+    "title": "Contestación de Juicio Ejecutivo Mercantil",
+    "legalBasis": [
+      "Art. 1403 Código de Comercio"
+    ],
+    "description": "Escrito de defensa del demandado negando el título, oponiendo excepciones o formulando reconvención.",
+    "keywords": [
+      "contestar ejecutivo mercantil",
+      "excepciones pagaré",
+      "defensa título de crédito"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Contestacion de Juicio Ejecutivo Mercantil</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ MERCANTIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Constructora Noreste SA)</span></strong>, contestando la demanda ejecutiva, opongo la excepción de <strong>PAGO TOTAL</strong>. La deuda fue liquidada mediante transferencia bancaria <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(SPEI 2026-001)</span> del <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(20 de enero de 2026)</span>, comprobante adjunto.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(El Demandado)</span></div></div>"
+  },
+  {
+    "id": "mercantil-venta-judicial-v1",
+    "slug": "solicitud-venta-judicial-bienes-embargados",
+    "title": "Solicitud de Venta Judicial de Bienes Embargados",
+    "legalBasis": [
+      "Arts. 1411-1414 Código de Comercio"
+    ],
+    "description": "Petición de remate judicial de los bienes embargados durante la ejecución de sentencia mercantil.",
+    "keywords": [
+      "remate judicial mercantil",
+      "venta bienes embargados",
+      "liquidación embargo"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Solicitud de Remate de Bienes Embargados</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de México)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ MERCANTIL</div><p class=\"indent text-justify\">Toda vez que los bienes embargados en autos (vehículo <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Camión Freightliner 2020)</span> y <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(equipo de cómputo)</span>) han sido tasados en $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(350,000.00)</span>, solicito se señale fecha y hora para el <strong>REMATE JUDICIAL</strong>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Actor Ejecutante)</span></div></div>"
+  },
+  {
+    "id": "mercantil-contrato-suministro-v1",
+    "slug": "demanda-incumplimiento-contrato-suministro",
+    "title": "Demanda por Incumplimiento de Contrato de Suministro",
+    "legalBasis": [
+      "Arts. 304-310 Codigo de Comercio"
+    ],
+    "description": "Reclamacion cuando el proveedor no entrega la mercancia en tiempo o calidad pactada.",
+    "keywords": [
+      "suministro mercantil",
+      "proveedor incumplido",
+      "entrega mercancia"
+    ],
+    "html": "<div class=\"header-v1\"><h1>Demanda por Incumplimiento de Contrato de Suministro</h1></div><p class=\"meta-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Ciudad de Mexico)</span>, a <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(26 de febrero de 2026)</span></p><div class=\"section-title\">C. JUEZ MERCANTIL</div><p class=\"indent text-justify\"><strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Supermercados del Norte SA)</span></strong> demanda a <strong><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Proveedor Agricola SA)</span></strong> el cumplimiento del contrato de suministro mensual de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(20 toneladas de aguacate)</span> o el pago de daños por $<span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(180,000.00)</span> derivados del incumplimiento de <span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(3 meses consecutivos)</span>.</p><div class=\"signature-block\" style=\"margin-top:50px;\"><div class=\"signature-line\"><span style=\"background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;\">(Actora)</span></div></div>"
+  }
+]

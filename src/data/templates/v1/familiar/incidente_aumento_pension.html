@@ -1,39 +1,31 @@
-{% extends "base_v1.html" %}
-
-{% block content %}
-<div class="header">
+﻿<div class="header-v1">
     <h1>Incidente de Pensión Alimenticia — Aumento</h1>
     <p class="subtitle">Artículos 301-323 del Código Civil Federal · Art. 94 CFPC</p>
 </div>
 
-<p class="meta-line">{{ ciudad | default("Ciudad") }}, {{ estado | default("Estado") }}, a {{ fecha_actual_texto }}</p>
+<p class="meta-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></p>
 
-<p class="text-bold">C. JUEZ DE LO FAMILIAR EN TURNO</p>
-<p class="text-bold">EXPEDIENTE: {{ expediente | default("_______________") }}</p>
+<p class="text-bold">C. <em style="font-size:9pt;color:#666;">(Ciudadano/Ciudadana)</em> JUEZ DE LO FAMILIAR EN TURNO</p>
+<p class="text-bold">EXPEDIENTE: <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></p>
 <p class="text-bold">P R E S E N T E</p>
 
 <p class="indent text-justify">
-    <strong>{{ cliente.nombre | default("NOMBRE DEL PROMOVENTE") }}</strong>, en el juicio de
-    {{ tipo_juicio | default("alimentos / divorcio / guarda y custodia") }} tramitado bajo el expediente referido,
-    señalando domicilio en {{ cliente.domicilio | default("_________________________________") }},
-    autorizando a {{ abogado.nombre | default("_________________________________") }},
+    <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></strong>, en el juicio de
+    <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(alimentos / divorcio / guarda y custodia)</span> tramitado bajo el expediente referido,
+    señalando domicilio en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Coyoacán, Ciudad de México, C.P. 04000)</span>,
+    autorizando a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Lic. Francisco Sánchez Torres)</span>,
     promuevo <strong>INCIDENTE DE AUMENTO DE PENSIÓN ALIMENTICIA</strong>.
 </p>
 
 <div class="section-title">HECHOS</div>
 <p class="indent text-justify">
-    <strong>PRIMERO.-</strong> {{ hecho_1 | default("Mediante sentencia de fecha [fecha], se fijó una pensión
-    alimenticia a favor de [nombre del acreedor alimentario] por la cantidad de $[monto] / [porcentaje]% de los ingresos
-    del deudor alimentario.") }}
+    <strong>PRIMERO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el primer hecho cronológicamente, con fecha, lugar y personas involucradas)</span>
 </p>
 <p class="indent text-justify">
-    <strong>SEGUNDO.-</strong> {{ hecho_2 | default("Desde que se fijó dicha pensión, han cambiado las circunstancias
-    que la determinaron, en virtud de que: [aumento de necesidades del acreedor: educación, salud, vivienda / aumento de
-    ingresos del deudor / inflación].") }}
+    <strong>SEGUNDO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el segundo hecho, describiendo la conducta del demandado)</span>
 </p>
 <p class="indent text-justify">
-    <strong>TERCERO.-</strong> {{ hecho_3 | default("Las necesidades actuales del acreedor alimentario ascienden a
-    $[monto mensual], siendo insuficiente la pensión vigente.") }}
+    <strong>TERCERO.-</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Redactar aquí el tercer hecho y sus consecuencias para el promovente)</span>
 </p>
 
 <div class="section-title">DERECHO</div>
@@ -43,22 +35,20 @@
 
 <div class="section-title">PRUEBAS</div>
 <p class="indent text-justify">
-    1. {{ prueba_1 | default("Recibos de gastos de educación, salud, alimentación del acreedor.") }}<br>
-    2. {{ prueba_2 | default("Recibos de nómina o constancia de ingresos del deudor alimentario.") }}<br>
-    3. {{ prueba_3 | default("Constancias médicas o escolares que acrediten nuevas necesidades.") }}
+    1. <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Recibos de gastos de educación, salud, alimentación del acreedor.)</span><br>
+    2. <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Recibos de nómina o constancia de ingresos del deudor alimentario.)</span><br>
+    3. <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Constancias médicas o escolares que acrediten nuevas necesidades.)</span>
 </p>
 
 <div class="section-title">PETICIONES</div>
 <p class="indent text-justify">
     <strong>PRIMERO.-</strong> Admitir el presente incidente.<br>
-    <strong>SEGUNDO.-</strong> Aumentar la pensión alimenticia a ${{ nuevo_monto | default("___") }} / {{
-    nuevo_porcentaje | default("___") }}%.<br>
+    <strong>SEGUNDO.-</strong> Aumentar la pensión alimenticia a $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(15,000.00)</span> / <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>%.<br>
     <strong>TERCERO.-</strong> Condenar al deudor alimentario al pago de la pensión incrementada.
 </p>
 
 <p class="text-center text-bold" style="margin-top:30px;">PROTESTO LO NECESARIO</p>
 
 <div class="signature-block">
-    <div class="signature-line">{{ cliente.nombre | default("NOMBRE Y FIRMA") }}</div>
+    <div class="signature-line"><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(José Manuel Ramírez Díaz)</span></div>
 </div>
-{% endblock %}
