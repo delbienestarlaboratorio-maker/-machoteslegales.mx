@@ -2,8 +2,8 @@
 import { useState, useMemo } from 'react'
 import { fmtMXN } from '@/data/legal-constants'
 
-// Coeficiante de utilidad por actividad (Art. 14 LISR) — valores representativos
-const COEFICIENTES: { actividad: string; cf: number }[] = [
+// Coeficiente de utilidad por actividad (Art. 14 LISR) — valores representativos
+const COEFICIENTES = [
     { actividad: 'Servicios profesionales', cf: 0.30 },
     { actividad: 'Comercio al por menor', cf: 0.20 },
     { actividad: 'Comercio al por mayor', cf: 0.15 },
@@ -14,7 +14,9 @@ const COEFICIENTES: { actividad: string; cf: number }[] = [
     { actividad: 'Tecnología / software', cf: 0.35 },
     { actividad: 'Inmobiliaria y renta', cf: 0.25 },
     { actividad: 'Otro (ingresar manual)', cf: 0.20 },
-]
+] as const
+
+type Row = { l: string; v: number; accent?: boolean }
 
 export default function CalculadoraISRPersonaMoral() {
     const [modoCalculo, setModoCalculo] = useState<'provisional' | 'anual'>('provisional')
@@ -31,11 +33,11 @@ export default function CalculadoraISRPersonaMoral() {
         if (modoCalculo === 'provisional') {
             const ingMens = parseFloat(ingresosMensual) || 0
             if (ingMens <= 0) return null
-            // Art. 14 LISR: pago provisional = ingMens × coeficiente utilidad × 30%
             const baseGravable = ingMens * cf
-            const isrProvisional = baseGravable * 0.30
-            const isrAnualEstimado = isrProvisional * 12
-            return { modo: 'provisional' as const, ingMens, baseGravable, isrMensual: isrProvisional, isrAnual: isrAnualEstimado, cf, tasaEfectiva: (isrProvisional / ingMens) * 100 }
+            const isrMensual = baseGravable * 0.30
+            const isrAnual = isrMensual * 12
+            const tasaEfectiva = (isrMensual / ingMens) * 100
+            return { modo: 'provisional' as const, ingMens, baseGravable, isrMensual, isrAnual, cf, tasaEfectiva }
         } else {
             const ingresos = parseFloat(ingresosAnual) || 0
             const deducciones = parseFloat(deduccionesAnual) || 0
@@ -44,11 +46,34 @@ export default function CalculadoraISRPersonaMoral() {
             const utilidadFiscal = Math.max(ingresos - deducciones, 0)
             const baseGravable = Math.max(utilidadFiscal - perdidas, 0)
             const isrAnual = baseGravable * 0.30
-            const tasaEfectiva = (isrAnual / ingresos) * 100
             const isrMensual = isrAnual / 12
+            const tasaEfectiva = (isrAnual / ingresos) * 100
             return { modo: 'anual' as const, ingresos, deducciones, perdidas, utilidadFiscal, baseGravable, isrAnual, isrMensual, tasaEfectiva, cf }
         }
     }, [modoCalculo, ingresosMensual, ingresosAnual, deduccionesAnual, perdidasAnteriores, actividad, cfManual])
+
+    // Compute rows in component body (not in JSX) to keep TS happy
+    let rows: Row[] = []
+    if (resultado) {
+        if (resultado.modo === 'provisional') {
+            rows = [
+                { l: 'Ingresos del período', v: resultado.ingMens },
+                { l: `Base gravable (${(resultado.cf * 100).toFixed(1)}% × ingresos)`, v: resultado.baseGravable },
+                { l: 'ISR provisional (30% × base)', v: resultado.isrMensual, accent: true },
+                { l: 'ISR anual proyectado', v: resultado.isrAnual },
+            ]
+        } else {
+            rows = [
+                { l: 'Ingresos acumulados', v: resultado.ingresos },
+                { l: 'Deducciones autorizadas', v: -resultado.deducciones },
+                { l: 'Utilidad fiscal', v: resultado.utilidadFiscal },
+                ...(resultado.perdidas > 0 ? [{ l: 'Pérdidas fiscales anteriores', v: -resultado.perdidas }] : []) as Row[],
+                { l: 'Base gravable', v: resultado.baseGravable },
+                { l: 'ISR anual (30%)', v: resultado.isrAnual, accent: true },
+                { l: 'ISR promedio mensual', v: resultado.isrMensual },
+            ]
+        }
+    }
 
     return (
         <main className="max-w-4xl mx-auto px-4 py-10">
@@ -72,10 +97,10 @@ export default function CalculadoraISRPersonaMoral() {
             </div>
 
             <div className="grid grid-cols-2 gap-3 mb-6">
-                {[
+                {([
                     { v: 'provisional' as const, icon: '📅', label: 'Pago provisional (Art. 14)', sub: 'Ingresos × coef. utilidad × 30%' },
                     { v: 'anual' as const, icon: '📊', label: 'ISR anual (Art. 9)', sub: 'Ingresos − deducciones − pérdidas × 30%' },
-                ].map(t => (
+                ] as const).map(t => (
                     <button key={t.v} onClick={() => setModoCalculo(t.v)}
                         className={`p-4 rounded-xl border text-center transition-all cursor-pointer ${modoCalculo === t.v ? 'border-[var(--color-accent)]/50 bg-[var(--color-accent)]/10 text-[var(--color-accent)]' : 'bg-white/5 border-white/10 text-white/60 hover:bg-white/10'}`}>
                         <p className="text-xl mb-1">{t.icon}</p>
@@ -131,34 +156,19 @@ export default function CalculadoraISRPersonaMoral() {
                 )}
             </div>
 
-            {resultado && (
+            {resultado && rows.length > 0 && (
                 <div className="mt-8 glass-card p-6 rounded-2xl">
                     <h2 className="text-white font-bold text-lg mb-4">💰 ISR Persona Moral {modoCalculo === 'provisional' ? '— Provisional' : '— Anual'}</h2>
                     <div className="space-y-2 text-sm">
-                        {resultado.modo === 'provisional' ? [
-                            { l: 'Ingresos del período', v: resultado.ingMens },
-                            { l: `Base gravable (${(resultado.cf * 100).toFixed(1)}% × ingresos)`, v: resultado.baseGravable },
-                            { l: 'ISR provisional (30% × base)', v: resultado.isrMensual, accent: true },
-                            { l: 'ISR anual proyectado', v: resultado.isrAnual },
-                        ] : [
-                            { l: 'Ingresos acumulados', v: resultado.ingresos },
-                            { l: 'Deducciones autorizadas', v: -resultado.deducciones },
-                            { l: 'Utilidad fiscal', v: resultado.utilidadFiscal },
-                            ...(resultado.perdidas > 0 ? [{ l: 'Pérdidas fiscales anteriores', v: -resultado.perdidas }] : []),
-                            { l: 'Base gravable', v: resultado.baseGravable },
-                            { l: 'ISR anual (30%)', v: resultado.isrAnual, accent: true },
-                            { l: 'ISR promedio mensual', v: resultado.isrMensual },
-                        ]).map((r, i, arr) => (
-                        <div key={i} className={`flex justify-between p-3 rounded-lg ${'accent' in r && r.accent ? 'bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30' : 'bg-white/5'}`}>
-                            <span className={`text-xs ${'accent' in r && r.accent ? 'text-[var(--color-accent)] font-bold' : 'text-white/60'}`}>{r.l}</span>
-                            <span className={`font-mono font-bold ${'accent' in r && r.accent ? 'text-[var(--color-accent)] text-lg' : 'text-white text-xs'}`}>
-                                {r.v < 0 ? '-' : ''}${fmtMXN(Math.abs(r.v))}
-                            </span>
-                        </div>
+                        {rows.map((r, i) => (
+                            <div key={i} className={`flex justify-between p-3 rounded-lg ${r.accent ? 'bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30' : 'bg-white/5'}`}>
+                                <span className={`text-xs ${r.accent ? 'text-[var(--color-accent)] font-bold' : 'text-white/60'}`}>{r.l}</span>
+                                <span className={`font-mono font-bold ${r.accent ? 'text-[var(--color-accent)] text-lg' : 'text-white text-xs'}`}>
+                                    {r.v < 0 ? '-' : ''}${fmtMXN(Math.abs(r.v))}
+                                </span>
+                            </div>
                         ))}
-                        {'tasaEfectiva' in resultado && (
-                            <p className="text-[10px] text-white/30 text-right">Tasa efectiva sobre ingresos: {resultado.tasaEfectiva.toFixed(2)}%</p>
-                        )}
+                        <p className="text-[10px] text-white/30 text-right">Tasa efectiva sobre ingresos: {resultado.tasaEfectiva.toFixed(2)}%</p>
                     </div>
                 </div>
             )}
@@ -169,7 +179,7 @@ export default function CalculadoraISRPersonaMoral() {
                 </div>
             </div>
             <p className="text-[10px] text-[var(--color-text-muted)] mt-6 text-center">
-                * Art. 9 LISR 30% utilidad fiscal. Art. 14 pagos provisionales con coeficiente de utilidad. Estimador. No sustituye determinación contable formal.
+                * Art. 9 LISR 30% utilidad fiscal. Art. 14 pagos provisionales con coeficiente de utilidad. Estimador. No sustituye declaración contable formal.
             </p>
         </main>
     )

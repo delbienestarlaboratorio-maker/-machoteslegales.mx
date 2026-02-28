@@ -30,7 +30,7 @@ export default function CalculadoraIndemnizacion50() {
         // Prima de antigüedad Art. 162 LFT: 12 días × año, tope 2×SMG
         let prima = 0
         if (incluyePrima && anios >= 1) {
-            const sdParaPrima = Math.min(sd, smg.diario * 2)
+            const sdParaPrima = Math.min(sd, smg.general * 2)
             prima = sdParaPrima * 12 * anios
         }
 
@@ -96,7 +96,7 @@ export default function CalculadoraIndemnizacion50() {
                         <label className="block text-xs text-[var(--color-text-muted)] mb-1.5 font-semibold">Salario Diario Integrado ($)</label>
                         <input type="number" value={sdActual} onChange={e => setSdActual(e.target.value)}
                             className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:border-[var(--color-accent)] focus:outline-none transition-colors" />
-                        <p className="text-[10px] text-[var(--color-text-muted)] mt-1">SMG {anioCalculo}: ${fmtMXN(smg.diario)}/día</p>
+                        <p className="text-[10px] text-[var(--color-text-muted)] mt-1">SMG {anioCalculo}: ${fmtMXN(smg.general)}/día</p>
                     </div>
                     <div>
                         <label className="block text-xs text-[var(--color-text-muted)] mb-1.5 font-semibold">Años de antigüedad</label>
@@ -110,7 +110,7 @@ export default function CalculadoraIndemnizacion50() {
                             <option value="1">1 mes (hasta 1 año)</option>
                             <option value="2">2 meses</option>
                             <option value="3">3 meses (estándar)</option>
-                            <option value="6">6 meses (> 15 años)</option>
+                            <option value="6">6 meses (&gt; 15 años)</option>
                         </select>
                     </div>
                 </div>
@@ -150,7 +150,7 @@ export default function CalculadoraIndemnizacion50() {
                             </div>
                         ))}
                     </div>
-                    <p className="text-[10px] text-white/30 mt-2">2×SMG {anioCalculo}: ${fmtMXN(smg.diario * 2)}/día — tope prima antigüedad.</p>
+                    <p className="text-[10px] text-white/30 mt-2">2×SMG {anioCalculo}: ${fmtMXN(smg.general * 2)}/día — tope prima antigüedad.</p>
                 </div>
             )}
 
