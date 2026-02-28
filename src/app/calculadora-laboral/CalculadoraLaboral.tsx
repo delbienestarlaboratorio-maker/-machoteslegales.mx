@@ -168,6 +168,13 @@ export default function CalculadoraLaboral() {
                 </div>
             </div>
 
+            {/* Ad Slot — después del header */}
+            <div className="w-full min-h-[90px] my-4">
+                <div className="w-full h-full rounded-xl border border-dashed border-white/10 bg-white/[0.02] flex items-center justify-center gap-2 px-4 py-3">
+                    <span className="text-white/15 text-xs font-mono">728×90 — Espacio publicitario</span>
+                </div>
+            </div>
+
             {/* Selector motivo */}
             <div className="grid grid-cols-2 gap-3 mb-8">
                 <button
@@ -613,6 +620,53 @@ export default function CalculadoraLaboral() {
                     constitucional de 3 meses ni los 20 días por año — esos solo aplican en despido injustificado.
                 </p>
             </section>
+
+            {/* Ad Slot — después de SEO */}
+            <div className="w-full min-h-[90px] mt-8">
+                <div className="w-full h-full rounded-xl border border-dashed border-white/10 bg-white/[0.02] flex items-center justify-center gap-2 px-4 py-3">
+                    <span className="text-white/15 text-xs font-mono">728×90 — Espacio publicitario</span>
+                </div>
+            </div>
+
+            {/* Enlaces a plantillas populares */}
+            <section className="mt-10 glass-card p-6 rounded-2xl">
+                <h3 className="text-white font-bold mb-4">📚 Plantillas Laborales Populares</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    {[
+                        { title: 'Demanda por Despido Injustificado', slug: 'demanda-despido-injustificado', desc: 'Demanda laboral completa ante JFCA' },
+                        { title: 'Carta de Renuncia Voluntaria', slug: 'carta-renuncia-voluntaria', desc: 'Renuncia formal con solicitud de finiquito' },
+                        { title: 'Convenio Laboral', slug: 'convenio-laboral-conciliacion', desc: 'Acuerdo ante la Junta de Conciliación' },
+                        { title: 'Demanda Pago de Salarios Caídos', slug: 'demanda-pago-salarios-caidos', desc: 'Reclamo de salarios devengados' },
+                        { title: 'Acta de Abandono de Trabajo', slug: 'acta-abandono-trabajo', desc: 'Constancia patronal por ausencia' },
+                        { title: 'Solicitud de Reinstalación', slug: 'solicitud-reinstalacion-laboral', desc: 'Petición de reingreso al puesto' },
+                    ].map((t) => (
+                        <Link
+                            key={t.slug}
+                            href={`/plantillas/laboral/${t.slug}`}
+                            className="flex items-start gap-3 p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 hover:border-[var(--color-accent)]/30 transition-all group"
+                        >
+                            <span className="text-lg flex-shrink-0">📄</span>
+                            <div>
+                                <p className="text-sm font-semibold text-white group-hover:text-[var(--color-accent)] transition-colors">{t.title}</p>
+                                <p className="text-xs text-white/50 mt-0.5">{t.desc}</p>
+                            </div>
+                        </Link>
+                    ))}
+                </div>
+                <Link
+                    href="/plantillas/laboral"
+                    className="block mt-4 text-center text-sm text-[var(--color-accent)] hover:text-[var(--color-accent)]/80 font-semibold"
+                >
+                    Ver todas las plantillas laborales →
+                </Link>
+            </section>
+
+            {/* Ad Slot — final */}
+            <div className="w-full min-h-[90px] mt-6">
+                <div className="w-full h-full rounded-xl border border-dashed border-white/10 bg-white/[0.02] flex items-center justify-center gap-2 px-4 py-3">
+                    <span className="text-white/15 text-xs font-mono">728×90 — Espacio publicitario</span>
+                </div>
+            </div>
         </main>
     )
 }

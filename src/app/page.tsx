@@ -4,6 +4,7 @@ import { templateStats } from "@/data/templates";
 import SearchBarWrapper from "@/components/SearchBarWrapper";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
+import AdSlot from "@/components/AdSlot";
 
 export const metadata: Metadata = {
   title: "Machotes Legales — Plantillas y Formatos Legales México 2026 | Descarga Gratis",
@@ -92,6 +93,56 @@ export default function Home() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Ad Slot — después del hero */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <AdSlot variant="banner" />
+      </div>
+
+      {/* ═══════════════════════════════════════════ */}
+      {/* Banner Calculadora Laboral ═══════════════ */}
+      {/* ═══════════════════════════════════════════ */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <a
+          href="/calculadora-laboral"
+          className="block rounded-2xl overflow-hidden glow-hover group relative"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 via-amber-500/10 to-[var(--color-accent)]/20" />
+          <div className="relative glass-card border-[var(--color-accent)]/20 p-6 md:p-8 flex flex-col md:flex-row items-center gap-6">
+            {/* Icono grande */}
+            <div className="w-20 h-20 rounded-2xl bg-[var(--color-accent)]/20 flex items-center justify-center text-5xl flex-shrink-0 group-hover:scale-110 transition-transform">
+              ⚖️
+            </div>
+
+            {/* Texto */}
+            <div className="flex-1 text-center md:text-left">
+              <h2 className="text-xl md:text-2xl font-bold text-white font-[family-name:var(--font-outfit)]">
+                Calculadora de Liquidación Laboral
+                <span className="gradient-gold"> 2026</span>
+              </h2>
+              <p className="text-sm text-[var(--color-text-muted)] mt-1">
+                ¿Te despidieron o renunciaste? Calcula tu liquidación o finiquito al instante, con fundamento en la Ley Federal del Trabajo.
+              </p>
+              {/* Mini badges */}
+              <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-3">
+                {['3 meses salario', '20 días/año', 'Prima antigüedad', 'Vacaciones Dignas', 'Aguinaldo'].map((b) => (
+                  <span key={b} className="text-xs px-2 py-0.5 rounded-full bg-white/5 text-white/60 border border-white/10">
+                    {b}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="flex-shrink-0">
+              <div className="px-6 py-3 rounded-xl bg-[var(--color-accent)] text-[var(--color-primary-dark)] font-bold text-sm group-hover:shadow-lg group-hover:shadow-[var(--color-accent)]/20 transition-all">
+                Calcular Gratis →
+              </div>
+              <p className="text-xs text-center text-[var(--color-text-muted)] mt-1">Actualizada · LFT 2026</p>
+            </div>
+          </div>
+        </a>
       </section>
 
       {/* ═══════════════════════════════════════════ */}
@@ -248,6 +299,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Ad Slot — después de comparativa */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <AdSlot variant="banner" />
+      </div>
+
       {/* Specialties Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-12">
@@ -284,6 +340,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Ad Slot — después de especialidades */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <AdSlot variant="banner" />
+      </div>
+
       {/* How It Works */}
       <section className="gradient-bg py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -311,11 +372,21 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Ad Slot — después de how-it-works */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <AdSlot variant="banner" />
+      </div>
+
       {/* Trust & Social Proof */}
       <TestimonialsSection />
 
       {/* FAQ */}
       <FAQSection />
+
+      {/* Ad Slot — después de FAQ */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <AdSlot variant="banner" />
+      </div>
 
       {/* CTA */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
