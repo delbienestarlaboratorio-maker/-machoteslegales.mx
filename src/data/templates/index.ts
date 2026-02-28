@@ -16,6 +16,8 @@ export type Specialty =
     | 'civil' | 'laboral' | 'familiar' | 'penal' | 'mercantil'
     | 'fiscal' | 'administrativo' | 'migratorio' | 'amparo' | 'agrario'
     | 'ambiental' | 'internacional' | 'propiedad_intelectual' | 'transito'
+    | 'constitucional' | 'electoral' | 'inmobiliario' | 'intelectual'
+    | 'notarial' | 'concursal' | 'migracion' | 'arbitraje'
 
 export interface Template {
     id: string           // Único, ej: "laboral-despido-v2"

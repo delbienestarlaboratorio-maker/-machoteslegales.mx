@@ -24,6 +24,16 @@ export const SPECIALTIES: Specialty[] = [
     { code: "migratorio", name: "Derecho Migratorio", icon: "🛂", color: "#06b6d4", description: "Visas, residencia, refugio, naturalización", templateCount: 10, slug: "migratorio" },
     { code: "propiedad_intelectual", name: "Propiedad Intelectual", icon: "💡", color: "#eab308", description: "Marcas, patentes, derechos de autor, IMPI", templateCount: 12, slug: "propiedad-intelectual" },
     { code: "internacional", name: "Derecho Internacional", icon: "🌐", color: "#14b8a6", description: "Tratados, extradición, apostilla, exhortos", templateCount: 10, slug: "internacional" },
+    // Especialidades nuevas V1
+    { code: "constitucional", name: "Derecho Constitucional", icon: "📜", color: "#a855f7", description: "Amparo constitucional, derechos fundamentales, controversias", templateCount: 20, slug: "constitucional" },
+    { code: "electoral", name: "Derecho Electoral", icon: "🗳️", color: "#f97316", description: "Impugnaciones electorales, TEPJF, INE, partidos políticos", templateCount: 20, slug: "electoral" },
+    { code: "inmobiliario", name: "Derecho Inmobiliario", icon: "🏠", color: "#0891b2", description: "Compraventa, arrendamiento, hipotecas, registro público", templateCount: 20, slug: "inmobiliario" },
+    { code: "intelectual", name: "Propiedad Intelectual (PI)", icon: "🔬", color: "#d97706", description: "Marcas, patentes, derechos de autor, IMPI", templateCount: 20, slug: "intelectual" },
+    { code: "notarial", name: "Derecho Notarial", icon: "✍️", color: "#7c3aed", description: "Escrituras, poderes, testamentos, actas notariales", templateCount: 20, slug: "notarial" },
+    { code: "concursal", name: "Derecho Concursal", icon: "🏛", color: "#dc2626", description: "Concurso mercantil, quiebra, síndico, acuerdos de reestructura", templateCount: 20, slug: "concursal" },
+    { code: "migracion", name: "Derecho Migratorio (Migración)", icon: "✈️", color: "#0284c7", description: "Visas, residencia, refugio, naturalización, INM", templateCount: 20, slug: "migracion" },
+    { code: "arbitraje", name: "Arbitraje Comercial", icon: "⚡", color: "#059669", description: "Convenios arbitrales, demandas, laudos, CAM, CIAC", templateCount: 20, slug: "arbitraje" },
 ];
+
 
 export const TOTAL_TEMPLATES = SPECIALTIES.reduce((sum, s) => sum + s.templateCount, 0);
