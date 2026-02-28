@@ -128,6 +128,7 @@ export default function CalculadoraLaboral() {
     const [frontera, setFrontera] = useState(false)
     const [resultado, setResultado] = useState<Resultado | null>(null)
     const [showSalarioInfo, setShowSalarioInfo] = useState(false)
+    const [showMesesInfo, setShowMesesInfo] = useState(false)
 
     function handleCalcular() {
         const salMensual = parseFloat(salarioMensual) || 0
@@ -333,9 +334,72 @@ export default function CalculadoraLaboral() {
                             max="11"
                             className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:border-[var(--color-accent)] focus:outline-none transition-colors placeholder:text-white/20"
                         />
-                        <p className="text-xs text-[var(--color-text-muted)] mt-1">
-                            💡 Si trabajaste 3 años y 6 meses, pon 3 arriba y 6 aquí
-                        </p>
+                        <div className="mt-1">
+                            <button
+                                type="button"
+                                onClick={() => setShowMesesInfo(!showMesesInfo)}
+                                className="text-xs text-[var(--color-accent)] hover:text-[var(--color-accent)]/80 transition-colors flex items-center gap-1 cursor-pointer"
+                            >
+                                💡 ¿Cómo cuento mi antigüedad laboral?
+                                <span className={`transition-transform ${showMesesInfo ? 'rotate-180' : ''}`}>▼</span>
+                            </button>
+
+                            {showMesesInfo && (
+                                <div className="mt-3 p-4 rounded-xl bg-blue-500/10 border border-blue-500/20 text-xs space-y-3 animate-in fade-in slide-in-from-top-2 duration-300">
+                                    <div>
+                                        <h4 className="text-white font-bold text-sm mb-1">📌 Resumen rápido</h4>
+                                        <p className="text-white/80">
+                                            Separa tu tiempo trabajado en <strong className="text-[var(--color-accent)]">años completos</strong> y
+                                            <strong className="text-[var(--color-accent)]"> meses restantes</strong>. Los meses son importantes
+                                            porque determinan tu aguinaldo, vacaciones y prima vacacional proporcionales.
+                                        </p>
+                                    </div>
+
+                                    <div className="bg-white/5 rounded-lg p-3">
+                                        <h5 className="text-white font-bold mb-2">📝 Ejemplos</h5>
+                                        <div className="space-y-2">
+                                            <div className="flex items-center gap-3">
+                                                <span className="text-white/50 w-40">Entré en Enero 2023, salí en Julio 2026:</span>
+                                                <span className="text-[var(--color-accent)] font-bold">3 años + 6 meses</span>
+                                            </div>
+                                            <div className="flex items-center gap-3">
+                                                <span className="text-white/50 w-40">Entré hace 8 meses:</span>
+                                                <span className="text-[var(--color-accent)] font-bold">0 años + 8 meses</span>
+                                            </div>
+                                            <div className="flex items-center gap-3">
+                                                <span className="text-white/50 w-40">Trabajé exactamente 5 años:</span>
+                                                <span className="text-[var(--color-accent)] font-bold">5 años + 0 meses</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="border-t border-white/10 pt-3">
+                                        <h4 className="text-white font-bold text-sm mb-2">📖 ¿Por qué importan los meses?</h4>
+                                        <p className="text-white/70 leading-relaxed">
+                                            La <strong className="text-blue-400">Ley Federal del Trabajo (Art. 158 LFT)</strong> define la
+                                            antigüedad como el <em>"tiempo de servicios efectivamente prestados"</em>. Cada mes trabajado
+                                            genera derechos proporcionales:
+                                        </p>
+                                        <ul className="text-white/60 mt-2 space-y-1 list-disc pl-4">
+                                            <li><strong className="text-white">Aguinaldo proporcional</strong> — Se calcula sobre los días efectivamente trabajados en el año (Art. 87 LFT)</li>
+                                            <li><strong className="text-white">Vacaciones proporcionales</strong> — Fracción correspondiente según tu antigüedad total (Art. 76 LFT)</li>
+                                            <li><strong className="text-white">Prima de antigüedad</strong> — 12 días por cada año completo de servicios (Art. 162 LFT)</li>
+                                            <li><strong className="text-white">20 días por año</strong> — En caso de despido, también se calcula la fracción de año (Art. 50 LFT)</li>
+                                        </ul>
+                                    </div>
+
+                                    <div className="bg-white/5 rounded-lg p-3">
+                                        <h5 className="text-white font-bold mb-1">💡 ¿Cómo saber mi fecha de ingreso?</h5>
+                                        <p className="text-white/70">
+                                            Revisa tu <strong className="text-white">contrato individual de trabajo</strong>, tu
+                                            <strong className="text-white"> alta en el IMSS</strong> (en la plataforma IDSE o pide tu
+                                            constancia), o tu <strong className="text-white">primer recibo de nómina</strong>.
+                                            Si no tienes documentos, puedes solicitar tu historial laboral en la AFORE o en la Subdelegación del IMSS.
+                                        </p>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
 
