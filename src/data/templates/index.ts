@@ -883,51 +883,6 @@ export const templatesV3: Template[] = [
     },
 ]
 
-// ═══════════════════════════════════════════════════════
-//                   UTILIDADES
-// ═══════════════════════════════════════════════════════
-
-export const allTemplates: Template[] = [
-    ...templatesV1,
-    ...templatesV1_administrativo,
-    ...templatesV1_agrario,
-    ...templatesV1_ambiental,
-    ...templatesV1_amparo,
-    ...templatesV1_civil,
-    ...templatesV1_familiar,
-    ...templatesV1_laboral,
-    ...templatesV1_mercantil,
-    ...templatesV1_penal,
-    ...templatesV1_fiscal,
-    ...templatesV1_inmobiliario,
-    ...templatesV1_constitucional,
-    ...templatesV1_intelectual,
-    ...templatesV1_notarial,
-    ...templatesV1_internacional,
-    ...templatesV1_electoral,
-    ...templatesV1_concursal,
-    ...templatesV1_migracion,
-    ...templatesV1_arbitraje,
-    ...templatesV2,
-    ...templatesV3,
-]
-
-export const getTemplatesBySpecialty = (specialty: Specialty): Template[] =>
-    allTemplates.filter(t => t.specialty === specialty)
-
-export const getTemplatesByTier = (tier: Tier): Template[] =>
-    allTemplates.filter(t => t.tier === tier)
-
-export const getTemplate = (slug: string, tier: Tier): Template | undefined =>
-    allTemplates.find(t => t.slug === slug && t.tier === tier)
-
-export const templateStats = {
-    totalV1: templatesV1.length,
-    totalV2: templatesV2.length,
-    totalV3: templatesV3.length,
-    total: allTemplates.length,
-}
-
 
 export const templatesV1_administrativo: Template[] = [
     {
@@ -5956,3 +5911,50 @@ export const templatesV1_arbitraje: Template[] = [
         keywords: ["mediacion cam mexico","mediacion comercial previa arbitraje","conciliacion cam empresa"],
     },
 ];
+
+
+// ═══════════════════════════════════════════════════════
+//                   UTILIDADES
+// ═══════════════════════════════════════════════════════
+
+export const allTemplates: Template[] = [
+    ...templatesV1,
+    ...templatesV1_administrativo,
+    ...templatesV1_agrario,
+    ...templatesV1_ambiental,
+    ...templatesV1_amparo,
+    ...templatesV1_civil,
+    ...templatesV1_familiar,
+    ...templatesV1_laboral,
+    ...templatesV1_mercantil,
+    ...templatesV1_penal,
+    ...templatesV1_fiscal,
+    ...templatesV1_inmobiliario,
+    ...templatesV1_constitucional,
+    ...templatesV1_intelectual,
+    ...templatesV1_notarial,
+    ...templatesV1_internacional,
+    ...templatesV1_electoral,
+    ...templatesV1_concursal,
+    ...templatesV1_migracion,
+    ...templatesV1_arbitraje,
+    ...templatesV2,
+    ...templatesV3,
+]
+
+export const getTemplatesBySpecialty = (specialty: Specialty): Template[] =>
+    allTemplates.filter(t => t.specialty === specialty)
+
+export const getTemplatesByTier = (tier: Tier): Template[] =>
+    allTemplates.filter(t => t.tier === tier)
+
+export const getTemplate = (slug: string, tier: Tier): Template | undefined =>
+    allTemplates.find(t => t.slug === slug && t.tier === tier)
+
+export const templateStats = {
+    totalV1: templatesV1.length,
+    totalV2: templatesV2.length,
+    totalV3: templatesV3.length,
+    total: allTemplates.length,
+}
+
