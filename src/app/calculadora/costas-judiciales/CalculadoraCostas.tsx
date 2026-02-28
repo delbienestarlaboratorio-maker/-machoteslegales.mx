@@ -23,13 +23,13 @@ export default function CalculadoraCostas() {
         if (v <= 0) return null
         const inst = parseInt(instancias) || 1
         const t = tasasCostas[materia]
-        if (t.max === 0) return { sinCostas: true, motivo: t.art }
+        if (t.max === 0) return { sinCostas: true as const, motivo: t.art, costasMin: 0, costasMax: 0, costasEstimado: 0, tasa: t, inst }
 
         const costasMin = v * t.min * inst
         const costasMax = v * t.max * inst
         const costasEstimado = v * ((t.min + t.max) / 2) * inst
 
-        return { sinCostas: false, costasMin, costasMax, costasEstimado, tasa: t, inst }
+        return { sinCostas: false as const, motivo: '', costasMin, costasMax, costasEstimado, tasa: t, inst }
     }, [valorLitigio, materia, instancias])
 
     const materias = [
