@@ -47,7 +47,7 @@ export default function CalculadoraArrendamientoComercial() {
             })
         }
 
-        const totalContrato = proyeccion.reduce((s, p) => s + p.total, 0) - (rentaGracia + incluyeIVA ? rentaGracia * 0.16 : 0)
+        const totalContrato = proyeccion.reduce((s, p) => s + p.total, 0) - (rentaGracia + (incluyeIVA ? rentaGracia * 0.16 : 0))
         const gastoInicial = deposito + rentalTotal // primer mes + depósito
 
         return { renta, iva, rentalTotal, deposito, rentaGracia, proyeccion, totalContrato, gastoInicial, mant }
