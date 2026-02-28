@@ -17,21 +17,15 @@ export default function CalculadoraIVA() {
         const m = parseFloat(monto) || 0
         if (m <= 0) return null
 
-        if (modo === 'agregar') {
-            const iva = m * tasa
-            return { base: m, iva, total: m + iva, tasa }
-        }
-        if (modo === 'desglosar') {
-            const base = m / (1 + tasa)
-            const iva = m - base
-            return { base, iva, total: m, tasa }
-        }
-        // Retención
-        const base = m / (1 + tasa)
-        const ivaTotal = m - base
-        const retencion = ivaTotal * (parseFloat(pctRetencion) / 100)
+        const base = modo === 'agregar' ? m : m / (1 + tasa)
+        const iva = modo === 'agregar' ? m * tasa : m - m / (1 + tasa)
+        const total = modo === 'agregar' ? m + iva : m
+
+        const ivaTotal = modo === 'retencion' ? (m / (1 + tasa)) * tasa : iva
+        const retencion = modo === 'retencion' ? ivaTotal * (parseFloat(pctRetencion) / 100) : 0
         const ivaPorPagar = ivaTotal - retencion
-        return { base, ivaTotal, retencion, ivaPorPagar, tasa }
+
+        return { base: modo === 'retencion' ? m / (1 + tasa) : base, iva, total, tasa, ivaTotal, retencion, ivaPorPagar }
     }, [monto, modo, esFrontera, pctRetencion])
 
     const modos = [
@@ -108,30 +102,28 @@ export default function CalculadoraIVA() {
                     <h2 className="text-white font-bold text-lg mb-4">🧮 Resultado IVA {(tasa * 100).toFixed(0)}%</h2>
 
                     {modo !== 'retencion' ? (
-                        <div className="space-y-3">
-                            <div className="grid grid-cols-3 gap-4">
-                                <div className="bg-white/5 rounded-xl p-4 text-center">
-                                    <p className="text-xs text-[var(--color-text-muted)] mb-1">{modo === 'agregar' ? 'Base (sin IVA)' : 'Base desglosada'}</p>
-                                    <p className="text-xl font-bold text-white font-mono">${fmtMXN('base' in resultado ? resultado.base : 0)}</p>
-                                </div>
-                                <div className="bg-blue-500/10 rounded-xl p-4 text-center border border-blue-500/20">
-                                    <p className="text-xs text-blue-400 mb-1">IVA ({(tasa * 100).toFixed(0)}%)</p>
-                                    <p className="text-xl font-bold text-blue-400 font-mono">${fmtMXN('iva' in resultado ? resultado.iva : 0)}</p>
-                                </div>
-                                <div className="bg-[var(--color-accent)]/10 rounded-xl p-4 text-center border border-[var(--color-accent)]/30">
-                                    <p className="text-xs text-[var(--color-accent)] mb-1">{modo === 'agregar' ? 'Total con IVA' : 'Total (verificación)'}</p>
-                                    <p className="text-2xl font-bold text-[var(--color-accent)] font-mono">${fmtMXN(resultado.total ?? 0)}</p>
-                                </div>
+                        <div className="grid grid-cols-3 gap-4">
+                            <div className="bg-white/5 rounded-xl p-4 text-center">
+                                <p className="text-xs text-[var(--color-text-muted)] mb-1">{modo === 'agregar' ? 'Base (sin IVA)' : 'Base desglosada'}</p>
+                                <p className="text-xl font-bold text-white font-mono">${fmtMXN(resultado.base)}</p>
+                            </div>
+                            <div className="bg-blue-500/10 rounded-xl p-4 text-center border border-blue-500/20">
+                                <p className="text-xs text-blue-400 mb-1">IVA ({(tasa * 100).toFixed(0)}%)</p>
+                                <p className="text-xl font-bold text-blue-400 font-mono">${fmtMXN(resultado.iva)}</p>
+                            </div>
+                            <div className="bg-[var(--color-accent)]/10 rounded-xl p-4 text-center border border-[var(--color-accent)]/30">
+                                <p className="text-xs text-[var(--color-accent)] mb-1">{modo === 'agregar' ? 'Total con IVA' : 'Total (verificación)'}</p>
+                                <p className="text-2xl font-bold text-[var(--color-accent)] font-mono">${fmtMXN(resultado.total)}</p>
                             </div>
                         </div>
                     ) : (
                         <div className="space-y-3">
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                                 {[
-                                    { l: 'Base s/IVA', v: 'base' in resultado ? resultado.base : 0, c: 'text-white' },
-                                    { l: `IVA total ${(tasa * 100).toFixed(0)}%`, v: 'ivaTotal' in resultado ? resultado.ivaTotal : 0, c: 'text-blue-400' },
-                                    { l: `Retención (${pctRetencion}%)`, v: 'retencion' in resultado ? resultado.retencion : 0, c: 'text-orange-400' },
-                                    { l: 'IVA que pagas al SAT', v: 'ivaPorPagar' in resultado ? resultado.ivaPorPagar : 0, c: 'text-[var(--color-accent)]' },
+                                    { l: 'Base s/IVA', v: resultado.base, c: 'text-white' },
+                                    { l: `IVA total ${(tasa * 100).toFixed(0)}%`, v: resultado.ivaTotal, c: 'text-blue-400' },
+                                    { l: `Retención (${pctRetencion}%)`, v: resultado.retencion, c: 'text-orange-400' },
+                                    { l: 'IVA que pagas al SAT', v: resultado.ivaPorPagar, c: 'text-[var(--color-accent)]' },
                                 ].map((r, i) => (
                                     <div key={i} className={`rounded-xl p-4 text-center ${i === 3 ? 'bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30' : 'bg-white/5'}`}>
                                         <p className={`text-xs mb-1 ${r.c}`}>{r.l}</p>
@@ -140,7 +132,7 @@ export default function CalculadoraIVA() {
                                 ))}
                             </div>
                             <p className="text-xs text-[var(--color-text-muted)] p-3 rounded-lg bg-white/5">
-                                Art. 1-A LIVA: quien recibe el servicio retiene el {pctRetencion}% del IVA y lo entera directamente al SAT. Tú solo recibes el IVA restante.
+                                Art. 1-A LIVA: quien recibe el servicio retiene el {pctRetencion}% del IVA y lo entera directamente al SAT.
                             </p>
                         </div>
                     )}
