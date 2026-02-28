@@ -22,6 +22,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    color-scheme: dark;
   }
 
   body {
@@ -33,17 +34,24 @@
     min-height: 100vh;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-display);
   }
 
   /* Inputs: never white background */
-  input, select, textarea {
+  input,
+  select,
+  textarea {
     background-color: rgba(0, 0, 0, 0.3);
     color: var(--color-text);
     border-color: rgba(255, 255, 255, 0.1);
   }
-  input::placeholder, textarea::placeholder {
+
+  input::placeholder,
+  textarea::placeholder {
     color: var(--color-text-muted);
   }
 }
@@ -88,6 +96,7 @@
 .glow-hover {
   transition: all 0.3s ease;
 }
+
 .glow-hover:hover {
   box-shadow: 0 0 30px rgba(201, 168, 76, 0.18);
   border-color: rgba(201, 168, 76, 0.35);
@@ -103,34 +112,53 @@
   font-size: 0.75rem;
   color: var(--color-text-muted);
 }
+
 .breadcrumb-bar a {
   color: var(--color-text-muted);
   transition: color 0.2s;
 }
+
 .breadcrumb-bar a:hover {
   color: var(--color-accent);
 }
+
 .breadcrumb-bar span.current {
   color: var(--color-accent);
   font-weight: 500;
 }
+
 .breadcrumb-separator {
   margin: 0 0.4rem;
   opacity: 0.4;
 }
 
 /* ── Scrollbar ── */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--color-surface); }
-::-webkit-scrollbar-thumb { background: var(--color-primary-light); border-radius: 3px; }
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-light);
+  border-radius: 3px;
+}
 
 /* ── Animated shimmer badge ── */
 @keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
 }
+
 .badge-shimmer {
-  background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.3), transparent);
   background-size: 200% 100%;
   animation: shimmer 3s infinite;
 }
@@ -139,5 +167,5 @@
 .mobile-menu {
   background: rgba(15, 23, 42, 0.98);
   backdrop-filter: blur(20px);
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
