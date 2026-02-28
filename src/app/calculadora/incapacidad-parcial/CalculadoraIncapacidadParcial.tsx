@@ -88,7 +88,7 @@ export default function CalculadoraIncapacidadParcial() {
                         <label className="block text-xs text-[var(--color-text-muted)] mb-1.5 font-semibold">Salario Diario Integrado ($)</label>
                         <input type="number" value={sdActual} onChange={e => setSdActual(e.target.value)}
                             className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:border-[var(--color-accent)] focus:outline-none transition-colors" />
-                        <p className="text-[10px] text-[var(--color-text-muted)] mt-1">SMG {anioCalculo}: ${fmtMXN(smg.diario)}/día</p>
+                        <p className="text-[10px] text-[var(--color-text-muted)] mt-1">SMG {anioCalculo}: ${fmtMXN(smg.general)}/día</p>
                     </div>
                     <div>
                         <label className="block text-xs text-[var(--color-text-muted)] mb-1.5 font-semibold">Porcentaje de incapacidad (%)</label>
