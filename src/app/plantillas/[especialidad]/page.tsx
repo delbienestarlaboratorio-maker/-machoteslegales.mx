@@ -18,10 +18,23 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     const params = await props.params
     const spec = SPECIALTIES.find((s) => s.slug === params.especialidad)
     if (!spec) return {}
+    const count = allTemplates.filter(t => t.specialty === spec.code).length
     return {
-        title: `Plantillas de ${spec.name} — Formatos Legales México 2026 | Machotes Legales`,
-        description: `Descarga plantillas y formatos legales descargables en la especialidad de ${spec.name}. Formularios avalados por abogados mexicanos.`,
+        title: `Plantillas de ${spec.name} — ${count} Formatos Legales México 2026 | Machotes Legales`,
+        description: `Descarga ${count} plantillas y formatos de ${spec.name} en México. ${spec.description}. Versiones gratuitas y profesionales con jurisprudencia SCJN actualizadas 2026.`,
+        keywords: [
+            `plantillas ${spec.name.toLowerCase()}`,
+            `formatos ${spec.name.toLowerCase()} México`,
+            `${spec.name.toLowerCase()} formato PDF`,
+            `${spec.name.toLowerCase()} documento gratis`,
+            `machotes ${spec.name.toLowerCase()}`,
+        ],
         alternates: { canonical: `https://machoteslegales.mx/plantillas/${spec.slug}` },
+        openGraph: {
+            title: `${spec.name} — Plantillas Legales México`,
+            description: `${count} plantillas profesionales de ${spec.name}. Descarga gratis o accede a versiones V2 con jurisprudencia.`,
+            url: `https://machoteslegales.mx/plantillas/${spec.slug}`,
+        },
     }
 }
 

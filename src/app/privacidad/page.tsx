@@ -1,3 +1,12 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Aviso de Privacidad — Machotes Legales",
+    description: "Aviso de privacidad integral de Machotes Legales conforme a la LFPDPPP. Datos personales, derechos ARCO, transferencias y contacto.",
+    alternates: { canonical: "https://machoteslegales.mx/privacidad" },
+    robots: { index: false, follow: true },
+};
+
 export default function PrivacidadPage() {
     return (
         <main className="min-h-screen py-20 px-4">

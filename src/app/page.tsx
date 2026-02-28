@@ -1,8 +1,37 @@
+import { Metadata } from "next";
 import { SPECIALTIES, TOTAL_TEMPLATES } from "@/data/specialties";
 import { templateStats } from "@/data/templates";
 import SearchBarWrapper from "@/components/SearchBarWrapper";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
+
+export const metadata: Metadata = {
+  title: "Machotes Legales — Plantillas y Formatos Legales México 2026 | Descarga Gratis",
+  description: "La plataforma #1 de plantillas legales en México. Más de 400 formatos: demandas, contratos, amparos, querellas, divorcios, poderes y más. Descarga gratis o accede a versiones profesionales con jurisprudencia SCJN.",
+  keywords: [
+    "plantillas legales México",
+    "formatos jurídicos gratis",
+    "machotes legales descargar",
+    "demanda formato PDF",
+    "contrato arrendamiento plantilla",
+    "querella penal formato",
+    "divorcio incausado formato México",
+    "demanda laboral plantilla gratis",
+    "amparo indirecto formato",
+    "poder notarial formato",
+    "documentos legales México 2026",
+  ],
+  alternates: { canonical: "https://machoteslegales.mx" },
+  openGraph: {
+    title: "Machotes Legales — Plantillas Legales Profesionales México",
+    description: "Más de 400 plantillas legales profesionales. Descarga gratis o accede a versiones premium con auto-llenado por IA.",
+    url: "https://machoteslegales.mx",
+    type: "website",
+    locale: "es_MX",
+    images: ["/og-image.png"],
+  },
+};
+
 
 export default function Home() {
   return (

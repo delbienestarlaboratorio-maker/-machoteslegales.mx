@@ -1,3 +1,12 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Términos y Condiciones — Machotes Legales",
+    description: "Términos y condiciones de uso de la plataforma Machotes Legales. Limitación de responsabilidad, licencia de uso y política de reembolsos.",
+    alternates: { canonical: "https://machoteslegales.mx/terminos" },
+    robots: { index: false, follow: true },
+};
+
 export default function TerminosPage() {
     return (
         <main className="min-h-screen py-20 px-4">

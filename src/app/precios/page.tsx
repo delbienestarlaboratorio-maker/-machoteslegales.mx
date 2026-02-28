@@ -1,3 +1,23 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Precios — Plantillas Legales V1 Gratis, V2 $79 MXN, V3 Suscripción | Machotes Legales",
+    description: "Conoce los precios de nuestras plantillas legales. V1 Gratis, V2 Negocios a $79 MXN con jurisprudencia SCJN, V3 Profesional con IA y auto-llenado. Sin suscripciones obligatorias.",
+    keywords: [
+        "precio plantillas legales",
+        "formatos legales gratis México",
+        "comprar formato legal",
+        "plantilla legal premium",
+        "documentos jurídicos precio",
+    ],
+    alternates: { canonical: "https://machoteslegales.mx/precios" },
+    openGraph: {
+        title: "Precios — Machotes Legales",
+        description: "V1 Gratis · V2 Negocios $79 MXN · V3 Profesional con IA. Plantillas legales para todo México.",
+        url: "https://machoteslegales.mx/precios",
+    },
+};
+
 export default function PreciosPage() {
     return (
         <main className="min-h-screen pb-20">
