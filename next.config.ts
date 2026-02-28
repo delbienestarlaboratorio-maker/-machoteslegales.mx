@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    workerThreads: false,
+    cpus: 1,
+  },
   turbopack: {
     rules: {
       '*.html': {
