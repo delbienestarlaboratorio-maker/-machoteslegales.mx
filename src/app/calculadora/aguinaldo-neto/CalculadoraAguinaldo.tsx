@@ -1,40 +1,19 @@
 'use client'
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
-
-const UMA_DIARIA_2026 = 113.14
-const EXENCION_AGUINALDO_UMAs = 30
-
-const TABLA_ISR = [
-    { limInf: 0.01, limSup: 746.04, cuota: 0, pct: 1.92 },
-    { limInf: 746.05, limSup: 6332.05, cuota: 14.32, pct: 6.40 },
-    { limInf: 6332.06, limSup: 11128.01, cuota: 371.83, pct: 10.88 },
-    { limInf: 11128.02, limSup: 12935.82, cuota: 893.63, pct: 16.00 },
-    { limInf: 12935.83, limSup: 15487.71, cuota: 1182.88, pct: 17.92 },
-    { limInf: 15487.72, limSup: 31236.49, cuota: 1640.18, pct: 21.36 },
-    { limInf: 31236.50, limSup: 49233.00, cuota: 5004.12, pct: 23.52 },
-    { limInf: 49233.01, limSup: 93993.90, cuota: 9236.89, pct: 30.00 },
-    { limInf: 93993.91, limSup: 125325.20, cuota: 22665.17, pct: 32.00 },
-    { limInf: 125325.21, limSup: 375975.61, cuota: 32691.18, pct: 34.00 },
-    { limInf: 375975.62, limSup: Infinity, cuota: 117912.32, pct: 35.00 },
-]
-
-function calcISR(base: number): number {
-    if (base <= 0) return 0
-    for (const r of TABLA_ISR) {
-        if (base >= r.limInf && base <= r.limSup) {
-            return r.cuota + ((base - r.limInf) * r.pct / 100)
-        }
-    }
-    const u = TABLA_ISR[TABLA_ISR.length - 1]
-    return u.cuota + ((base - u.limInf) * u.pct / 100)
-}
+import {
+    EXENCIONES_ISR, ANIO_ACTUAL, getUMA,
+    calcularISR, fmtMXN, getAniosDisponibles,
+} from '@/data/legal-constants'
 
 export default function CalculadoraAguinaldo() {
     const [salarioMensual, setSalarioMensual] = useState('15000')
     const [diasAguinaldo, setDiasAguinaldo] = useState('15')
     const [mesesTrabajados, setMesesTrabajados] = useState('12')
+    const [anioCalculo, setAnioCalculo] = useState(String(ANIO_ACTUAL))
     const [showInfo, setShowInfo] = useState(false)
+
+    const uma = getUMA(parseInt(anioCalculo))
 
     const resultado = useMemo(() => {
         const sm = parseFloat(salarioMensual) || 0
@@ -45,34 +24,27 @@ export default function CalculadoraAguinaldo() {
         const proporcion = Math.min(mt, 12) / 12
 
         const aguinaldoBruto = sd * diasAg * proporcion
-        const montoExento = Math.min(aguinaldoBruto, UMA_DIARIA_2026 * EXENCION_AGUINALDO_UMAs)
+        const montoExento = Math.min(aguinaldoBruto, uma.diaria * EXENCIONES_ISR.aguinaldo)
         const gravado = Math.max(aguinaldoBruto - montoExento, 0)
-        const isr = calcISR(gravado)
+        const isr = calcularISR(gravado)
         const neto = aguinaldoBruto - isr
-
         const porcentajeRetenido = aguinaldoBruto > 0 ? (isr / aguinaldoBruto) * 100 : 0
 
-        return {
-            sd, diasAg, mt, proporcion, aguinaldoBruto,
-            montoExento, gravado, isr, neto, porcentajeRetenido
-        }
-    }, [salarioMensual, diasAguinaldo, mesesTrabajados])
-
-    const fmt = (n: number) => n.toLocaleString('es-MX', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+        return { sd, diasAg, mt, proporcion, aguinaldoBruto, montoExento, gravado, isr, neto, porcentajeRetenido }
+    }, [salarioMensual, diasAguinaldo, mesesTrabajados, anioCalculo])
 
     return (
         <main className="max-w-4xl mx-auto px-4 py-10">
             <div className="text-center mb-8">
                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[var(--color-accent)]/30 text-sm text-[var(--color-accent)] mb-4">
-                    <span>🎄</span><span>Calculadora Aguinaldo · Art. 87 LFT</span>
+                    <span>🎄</span><span>Calculadora Aguinaldo · Art. 87 LFT · {anioCalculo}</span>
                 </div>
                 <h1 className="text-3xl md:text-4xl font-bold text-white font-[family-name:var(--font-outfit)]">
                     Calculadora de <span className="gradient-gold">Aguinaldo Neto</span>
                 </h1>
                 <p className="mt-3 text-[var(--color-text-muted)] max-w-2xl mx-auto">
-                    ¿Cuánto te queda de aguinaldo <strong className="text-white">después de impuestos</strong>?
-                    El aguinaldo está <strong className="text-emerald-400">exento de ISR hasta 30 UMAs</strong> (${fmt(UMA_DIARIA_2026 * 30)}).
-                    Solo pagas impuestos sobre lo que exceda.
+                    ¿Cuánto te queda <strong className="text-white">después de impuestos</strong>?
+                    Exento hasta {EXENCIONES_ISR.aguinaldo} UMAs (${fmtMXN(uma.diaria * EXENCIONES_ISR.aguinaldo)} en {uma.anio}).
                 </p>
             </div>
 
@@ -84,7 +56,7 @@ export default function CalculadoraAguinaldo() {
 
             <div className="glass-card p-6 rounded-2xl space-y-5">
                 <h2 className="text-white font-bold text-lg">📋 Tus datos</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                     <div>
                         <label className="block text-xs text-[var(--color-text-muted)] mb-1.5 font-semibold">Salario mensual bruto ($)</label>
                         <input type="number" value={salarioMensual} onChange={e => setSalarioMensual(e.target.value)}
@@ -100,7 +72,16 @@ export default function CalculadoraAguinaldo() {
                         <label className="block text-xs text-[var(--color-text-muted)] mb-1.5 font-semibold">Meses trabajados</label>
                         <input type="number" value={mesesTrabajados} onChange={e => setMesesTrabajados(e.target.value)} min="1" max="12"
                             className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:border-[var(--color-accent)] focus:outline-none transition-colors" />
-                        <p className="text-[10px] text-[var(--color-text-muted)] mt-1">Si trabajaste todo el año, pon 12</p>
+                    </div>
+                    <div>
+                        <label className="block text-xs text-[var(--color-text-muted)] mb-1.5 font-semibold">📅 Año de cálculo</label>
+                        <select value={anioCalculo} onChange={e => setAnioCalculo(e.target.value)}
+                            className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:border-[var(--color-accent)] focus:outline-none transition-colors">
+                            {getAniosDisponibles().map(a => (
+                                <option key={a} value={a}>{a} — UMA ${fmtMXN(getUMA(a).diaria)}</option>
+                            ))}
+                        </select>
+                        <p className="text-[10px] text-emerald-400 mt-1">UMA se ajusta al año seleccionado</p>
                     </div>
                 </div>
 
@@ -111,25 +92,19 @@ export default function CalculadoraAguinaldo() {
                 {showInfo && (
                     <div className="p-4 rounded-xl bg-blue-500/10 border border-blue-500/20 text-xs space-y-3">
                         <p className="text-white/80">
-                            El <strong className="text-blue-400">Art. 93, Fracción XIV de la LISR</strong> establece que el aguinaldo está
-                            exento de ISR hasta un monto equivalente a <strong className="text-emerald-400">30 veces la UMA diaria</strong>.
+                            <strong className="text-blue-400">Art. 93, Fr. XIV LISR</strong>: exento hasta {EXENCIONES_ISR.aguinaldo} × UMA diaria.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-lg p-3">
-                                <p className="text-emerald-400 font-bold">✅ Exento: hasta 30 × UMA</p>
-                                <p className="text-white/60">= 30 × ${UMA_DIARIA_2026} = <strong>${fmt(UMA_DIARIA_2026 * 30)}</strong></p>
-                                <p className="text-white/60 mt-1">Esta parte NO paga ISR</p>
+                                <p className="text-emerald-400 font-bold">✅ Exento: hasta {EXENCIONES_ISR.aguinaldo} × UMA</p>
+                                <p className="text-white/60">= {EXENCIONES_ISR.aguinaldo} × ${fmtMXN(uma.diaria)} = <strong>${fmtMXN(uma.diaria * EXENCIONES_ISR.aguinaldo)}</strong></p>
                             </div>
                             <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-3">
                                 <p className="text-red-400 font-bold">❌ Gravado: lo que exceda</p>
-                                <p className="text-white/60">Se aplica la tabla ISR mensual del Art. 96 LISR</p>
-                                <p className="text-white/60 mt-1">Ejemplo: si tu aguinaldo es $7,500 → gravado: ${fmt(Math.max(7500 - UMA_DIARIA_2026 * 30, 0))}</p>
+                                <p className="text-white/60">Se aplica tabla ISR mensual Art. 96 LISR</p>
                             </div>
                         </div>
-                        <p className="text-white/60 text-[10px]">
-                            <strong>Fecha límite de pago:</strong> 20 de diciembre de cada año. Si no te pagan, tienes derecho a
-                            demanda laboral ante la JFCA.
-                        </p>
+                        <p className="text-white/60 text-[10px]"><strong>Fecha límite:</strong> 20 de diciembre. Incumplimiento = demanda laboral.</p>
                     </div>
                 )}
             </div>
@@ -137,46 +112,40 @@ export default function CalculadoraAguinaldo() {
             {resultado && (
                 <div className="mt-8 space-y-6">
                     <div className="glass-card p-6 rounded-2xl">
-                        <h2 className="text-white font-bold text-lg mb-4">🎁 Tu aguinaldo desglosado</h2>
+                        <h2 className="text-white font-bold text-lg mb-4">🎁 Tu aguinaldo {anioCalculo}</h2>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                             <div className="bg-white/5 rounded-xl p-4 text-center">
-                                <p className="text-xs text-[var(--color-text-muted)] mb-1">Aguinaldo bruto</p>
-                                <p className="text-lg font-bold text-white font-mono">${fmt(resultado.aguinaldoBruto)}</p>
-                                <p className="text-[10px] text-[var(--color-text-muted)]">{resultado.diasAg}d × ${fmt(resultado.sd)} × {(resultado.proporcion * 100).toFixed(0)}%</p>
+                                <p className="text-xs text-[var(--color-text-muted)] mb-1">Bruto</p>
+                                <p className="text-lg font-bold text-white font-mono">${fmtMXN(resultado.aguinaldoBruto)}</p>
+                                <p className="text-[10px] text-[var(--color-text-muted)]">{resultado.diasAg}d × ${fmtMXN(resultado.sd)} × {(resultado.proporcion * 100).toFixed(0)}%</p>
                             </div>
                             <div className="bg-emerald-500/10 rounded-xl p-4 text-center border border-emerald-500/20">
                                 <p className="text-xs text-emerald-400 mb-1">Exento ISR</p>
-                                <p className="text-lg font-bold text-emerald-400 font-mono">${fmt(resultado.montoExento)}</p>
+                                <p className="text-lg font-bold text-emerald-400 font-mono">${fmtMXN(resultado.montoExento)}</p>
                             </div>
                             <div className="bg-red-500/10 rounded-xl p-4 text-center border border-red-500/20">
                                 <p className="text-xs text-red-400 mb-1">ISR retenido</p>
-                                <p className="text-lg font-bold text-red-400 font-mono">-${fmt(resultado.isr)}</p>
-                                <p className="text-[10px] text-red-400/60">{resultado.porcentajeRetenido.toFixed(1)}% del bruto</p>
+                                <p className="text-lg font-bold text-red-400 font-mono">-${fmtMXN(resultado.isr)}</p>
+                                <p className="text-[10px] text-red-400/60">{resultado.porcentajeRetenido.toFixed(1)}%</p>
                             </div>
                             <div className="bg-[var(--color-accent)]/10 rounded-xl p-4 text-center border border-[var(--color-accent)]/30">
-                                <p className="text-xs text-[var(--color-accent)] mb-1">NETO que recibes</p>
-                                <p className="text-2xl font-bold text-[var(--color-accent)] font-mono">${fmt(resultado.neto)}</p>
+                                <p className="text-xs text-[var(--color-accent)] mb-1">NETO</p>
+                                <p className="text-2xl font-bold text-[var(--color-accent)] font-mono">${fmtMXN(resultado.neto)}</p>
                             </div>
                         </div>
 
-                        {/* Barra */}
                         <div className="relative h-8 rounded-full overflow-hidden bg-white/5">
-                            <div
-                                className="absolute left-0 top-0 h-full bg-gradient-to-r from-emerald-500 to-[var(--color-accent)] rounded-full transition-all"
-                                style={{ width: `${resultado.aguinaldoBruto > 0 ? (resultado.neto / resultado.aguinaldoBruto) * 100 : 0}%` }}
-                            />
+                            <div className="absolute left-0 top-0 h-full bg-gradient-to-r from-emerald-500 to-[var(--color-accent)] rounded-full transition-all"
+                                style={{ width: `${resultado.aguinaldoBruto > 0 ? (resultado.neto / resultado.aguinaldoBruto) * 100 : 0}%` }} />
                             <div className="absolute inset-0 flex items-center justify-center text-xs font-bold text-white">
-                                Recibes {resultado.aguinaldoBruto > 0 ? ((resultado.neto / resultado.aguinaldoBruto) * 100).toFixed(1) : '0'}% del bruto
+                                Recibes {resultado.aguinaldoBruto > 0 ? ((resultado.neto / resultado.aguinaldoBruto) * 100).toFixed(1) : '0'}%
                             </div>
                         </div>
 
                         {resultado.isr === 0 && (
                             <div className="mt-4 p-3 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-xs">
                                 <p className="text-emerald-400 font-bold">🎉 ¡Tu aguinaldo es 100% exento!</p>
-                                <p className="text-white/60 mt-1">
-                                    Tu aguinaldo (${fmt(resultado.aguinaldoBruto)}) no excede las 30 UMAs (${fmt(UMA_DIARIA_2026 * 30)}),
-                                    por lo que no se retiene ISR.
-                                </p>
+                                <p className="text-white/60 mt-1">No excede {EXENCIONES_ISR.aguinaldo} UMAs (${fmtMXN(uma.diaria * EXENCIONES_ISR.aguinaldo)}).</p>
                             </div>
                         )}
                     </div>
@@ -186,10 +155,9 @@ export default function CalculadoraAguinaldo() {
             <section className="mt-16 prose prose-invert max-w-3xl">
                 <h2 className="text-xl font-bold font-[family-name:var(--font-outfit)]">¿Cuánto es el aguinaldo en México y cuándo se paga?</h2>
                 <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
-                    El <strong>Art. 87 de la LFT</strong> establece que los trabajadores tienen derecho a un aguinaldo
-                    anual de <strong>mínimo 15 días de salario</strong>, que debe pagarse antes del <strong>20 de diciembre</strong>.
-                    Si no trabajaste el año completo, te corresponde la parte proporcional. El aguinaldo está exento de ISR
-                    hasta 30 UMAs (${fmt(UMA_DIARIA_2026 * 30)} en 2026).
+                    El <strong>Art. 87 LFT</strong> establece mínimo 15 días de salario, antes del <strong>20 de diciembre</strong>.
+                    Exento de ISR hasta {EXENCIONES_ISR.aguinaldo} UMAs (${fmtMXN(uma.diaria * EXENCIONES_ISR.aguinaldo)} en {uma.anio}).
+                    Selecciona el año para calcular con los valores de UMA de cualquier periodo.
                 </p>
             </section>
 
@@ -200,7 +168,7 @@ export default function CalculadoraAguinaldo() {
                         { title: 'Calculadora de Liquidación', href: '/calculadora-laboral', desc: 'Incluye aguinaldo proporcional' },
                         { title: 'Calculadora ISR Finiquito', href: '/calculadora/isr-liquidacion', desc: 'ISR de todo el finiquito' },
                         { title: 'Calculadora PTU', href: '/calculadora/ptu-utilidades', desc: 'Reparto de utilidades' },
-                        { title: 'Calculadora de Vacaciones', href: '/calculadora/vacaciones-antiguedad', desc: 'Días según antigüedad' },
+                        { title: 'Convertidor UMA a Pesos', href: '/calculadora/uma-a-pesos', desc: 'Convierte UMAs de cualquier año' },
                     ].map(t => (
                         <Link key={t.href} href={t.href}
                             className="flex items-start gap-3 p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 hover:border-[var(--color-accent)]/30 transition-all group">
@@ -220,7 +188,7 @@ export default function CalculadoraAguinaldo() {
                 </div>
             </div>
             <p className="text-[10px] text-[var(--color-text-muted)] mt-6 text-center">
-                * Art. 87 LFT (mínimo 15 días). ISR: exento hasta 30 UMAs (${fmt(UMA_DIARIA_2026 * 30)}), Art. 93 Fr. XIV LISR. Tabla ISR Art. 96 LISR.
+                * Art. 87 LFT (mín. 15 días). ISR: exento hasta {EXENCIONES_ISR.aguinaldo} UMAs (${fmtMXN(uma.diaria * EXENCIONES_ISR.aguinaldo)}), Art. 93 Fr. XIV LISR. Año seleccionado: {anioCalculo}.
             </p>
         </main>
     )

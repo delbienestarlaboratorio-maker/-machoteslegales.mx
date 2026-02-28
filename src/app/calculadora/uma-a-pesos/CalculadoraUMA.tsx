@@ -16,16 +16,18 @@ const UMA_DATA = [
     { anio: 2016, diaria: 73.04, mensual: 2220.42, anual: 26649.60 },
 ]
 
-const UMA_2026 = UMA_DATA[0]
+/* Detectar año actual y obtener datos vigentes automáticamente */
+const ANIO_ACTUAL = new Date().getFullYear()
+const UMA_VIGENTE = UMA_DATA.find(u => u.anio === ANIO_ACTUAL) || UMA_DATA[0]
 
 export default function CalculadoraUMA() {
     const [umas, setUmas] = useState('90')
     const [tipo, setTipo] = useState<'diaria' | 'mensual' | 'anual'>('diaria')
-    const [anioSeleccionado, setAnioSeleccionado] = useState('2026')
+    const [anioSeleccionado, setAnioSeleccionado] = useState(String(ANIO_ACTUAL))
 
     const resultado = useMemo(() => {
         const n = parseFloat(umas) || 0
-        const anioData = UMA_DATA.find(u => u.anio === parseInt(anioSeleccionado)) || UMA_2026
+        const anioData = UMA_DATA.find(u => u.anio === parseInt(anioSeleccionado)) || UMA_VIGENTE
         const valorUMA = tipo === 'diaria' ? anioData.diaria : tipo === 'mensual' ? anioData.mensual : anioData.anual
         const total = n * valorUMA
 
@@ -48,7 +50,7 @@ export default function CalculadoraUMA() {
         <main className="max-w-4xl mx-auto px-4 py-10">
             <div className="text-center mb-8">
                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[var(--color-accent)]/30 text-sm text-[var(--color-accent)] mb-4">
-                    <span>💱</span><span>Convertidor UMA 2026</span>
+                    <span>💱</span><span>Convertidor UMA {ANIO_ACTUAL}</span>
                 </div>
                 <h1 className="text-3xl md:text-4xl font-bold text-white font-[family-name:var(--font-outfit)]">
                     Convertidor <span className="gradient-gold">UMA a Pesos</span>
@@ -59,19 +61,19 @@ export default function CalculadoraUMA() {
                 </p>
             </div>
 
-            {/* Valores UMA 2026 */}
+            {/* Valores UMA vigentes (auto-detecta año) */}
             <div className="grid grid-cols-3 gap-3 mb-6">
                 <div className="glass-card p-4 rounded-xl text-center">
-                    <p className="text-xs text-[var(--color-text-muted)]">UMA Diaria 2026</p>
-                    <p className="text-xl font-bold text-[var(--color-accent)] font-mono">${fmt(UMA_2026.diaria)}</p>
+                    <p className="text-xs text-[var(--color-text-muted)]">UMA Diaria {UMA_VIGENTE.anio}</p>
+                    <p className="text-xl font-bold text-[var(--color-accent)] font-mono">${fmt(UMA_VIGENTE.diaria)}</p>
                 </div>
                 <div className="glass-card p-4 rounded-xl text-center">
-                    <p className="text-xs text-[var(--color-text-muted)]">UMA Mensual 2026</p>
-                    <p className="text-xl font-bold text-[var(--color-accent)] font-mono">${fmt(UMA_2026.mensual)}</p>
+                    <p className="text-xs text-[var(--color-text-muted)]">UMA Mensual {UMA_VIGENTE.anio}</p>
+                    <p className="text-xl font-bold text-[var(--color-accent)] font-mono">${fmt(UMA_VIGENTE.mensual)}</p>
                 </div>
                 <div className="glass-card p-4 rounded-xl text-center">
-                    <p className="text-xs text-[var(--color-text-muted)]">UMA Anual 2026</p>
-                    <p className="text-xl font-bold text-[var(--color-accent)] font-mono">${fmt(UMA_2026.anual)}</p>
+                    <p className="text-xs text-[var(--color-text-muted)]">UMA Anual {UMA_VIGENTE.anio}</p>
+                    <p className="text-xl font-bold text-[var(--color-accent)] font-mono">${fmt(UMA_VIGENTE.anual)}</p>
                 </div>
             </div>
 
@@ -126,7 +128,7 @@ export default function CalculadoraUMA() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     {ejemplos.map(ej => (
                         <button key={ej.nombre} type="button"
-                            onClick={() => { setUmas(String(ej.umas)); setTipo(ej.tipo); setAnioSeleccionado('2026') }}
+                            onClick={() => { setUmas(String(ej.umas)); setTipo(ej.tipo); setAnioSeleccionado(String(ANIO_ACTUAL)) }}
                             className="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 hover:border-[var(--color-accent)]/30 transition-all text-left cursor-pointer group">
                             <div>
                                 <p className="text-sm text-white group-hover:text-[var(--color-accent)] font-semibold transition-colors">{ej.nombre}</p>
@@ -134,7 +136,7 @@ export default function CalculadoraUMA() {
                             </div>
                             <div className="text-right">
                                 <p className="text-xs text-[var(--color-text-muted)]">{ej.umas} UMAs</p>
-                                <p className="text-sm text-[var(--color-accent)] font-mono font-bold">${fmt(ej.umas * UMA_2026.diaria)}</p>
+                                <p className="text-sm text-[var(--color-accent)] font-mono font-bold">${fmt(ej.umas * UMA_VIGENTE.diaria)}</p>
                             </div>
                         </button>
                     ))}
@@ -143,7 +145,7 @@ export default function CalculadoraUMA() {
 
             {/* Tabla histórica */}
             <div className="mt-8 glass-card p-6 rounded-2xl">
-                <h3 className="text-white font-bold mb-3">📊 Valor histórico de la UMA (2016-2026)</h3>
+                <h3 className="text-white font-bold mb-3">📊 Valor histórico de la UMA (2016-{ANIO_ACTUAL})</h3>
                 <div className="overflow-x-auto">
                     <table className="w-full text-xs">
                         <thead>
@@ -156,7 +158,7 @@ export default function CalculadoraUMA() {
                         </thead>
                         <tbody>
                             {UMA_DATA.map(u => (
-                                <tr key={u.anio} className={`border-b border-white/5 ${u.anio === 2026 ? 'bg-[var(--color-accent)]/10' : 'hover:bg-white/5'} transition-colors`}>
+                                <tr key={u.anio} className={`border-b border-white/5 ${u.anio === ANIO_ACTUAL ? 'bg-[var(--color-accent)]/10' : 'hover:bg-white/5'} transition-colors`}>
                                     <td className="py-1.5 text-white font-bold">{u.anio}</td>
                                     <td className="text-right py-1.5 text-[var(--color-accent)] font-mono">${fmt(u.diaria)}</td>
                                     <td className="text-right py-1.5 text-white font-mono">${fmt(u.mensual)}</td>
@@ -174,7 +176,7 @@ export default function CalculadoraUMA() {
                     La <strong>Unidad de Medida y Actualización (UMA)</strong> reemplazó al salario mínimo como referencia para
                     el cálculo de multas, fianzas, exenciones fiscales, cuotas IMSS, créditos Infonavit, pensiones
                     y todos los montos legales en México desde 2016. Se actualiza anualmente conforme al INPC.
-                    En 2026, el valor es de ${fmt(UMA_2026.diaria)} por día.
+                    En {UMA_VIGENTE.anio}, el valor es de ${fmt(UMA_VIGENTE.diaria)} por día.
                 </p>
             </section>
 
@@ -205,7 +207,7 @@ export default function CalculadoraUMA() {
                 </div>
             </div>
             <p className="text-[10px] text-[var(--color-text-muted)] mt-6 text-center">
-                * Valores UMA conforme a publicación DOF del INEGI. UMA 2026: ${UMA_2026.diaria}/día.
+                * Valores UMA conforme a publicación DOF del INEGI. UMA {UMA_VIGENTE.anio}: ${UMA_VIGENTE.diaria}/día. Se actualiza automáticamente cada año.
             </p>
         </main>
     )
