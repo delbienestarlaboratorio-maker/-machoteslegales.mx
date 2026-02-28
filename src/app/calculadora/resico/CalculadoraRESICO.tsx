@@ -2,23 +2,24 @@
 import { useState, useMemo } from 'react'
 import { fmtMXN } from '@/data/legal-constants'
 
-// Tabla RESICO PF Art. 113-E LISR (2024-2026)
+// Tabla RESICO PF Art. 113-E LISR (2024-2026) — ingreso mensual
 const TABLA_RESICO_PF = [
     { limite: 25000, tasa: 0.01 },
     { limite: 50000, tasa: 0.011 },
     { limite: 83333.33, tasa: 0.013 },
     { limite: 208333.33, tasa: 0.015 },
-    { limite: 3500000 / 12, tasa: 0.02 },
+    { limite: 291666.67, tasa: 0.02 },
     { limite: Infinity, tasa: 0.025 },
 ]
 
-// RESICO PM Art. 113-G LISR — tasa plana 1% a 30%
+// RESICO PM Art. 113-G LISR — ingreso mensual
 const TABLA_RESICO_PM = [
-    { tope: 300000, tasa: 0.01 },
-    { tope: 2000000, tasa: 0.015 },
-    { tope: 3500000, tasa: 0.02 },
-    { tope: Infinity, tasa: 0.03 },
+    { limite: 300000, tasa: 0.01 },
+    { limite: 2000000, tasa: 0.015 },
+    { limite: 3500000, tasa: 0.02 },
+    { limite: Infinity, tasa: 0.03 },
 ]
+
 
 function calcularRESICO_PF(ingMensual: number): number {
     for (const nivel of TABLA_RESICO_PF) {
@@ -29,7 +30,7 @@ function calcularRESICO_PF(ingMensual: number): number {
 
 function calcularRESICO_PM(ingMensual: number): number {
     for (const nivel of TABLA_RESICO_PM) {
-        if (ingMensual <= nivel.tope) return ingMensual * nivel.tasa
+        if (ingMensual <= nivel.limite) return ingMensual * nivel.tasa
     }
     return ingMensual * 0.03
 }
@@ -51,9 +52,7 @@ export default function CalculadoraRESICO() {
 
         // Buscar nivel en tabla
         const tabla = tipo === 'pf' ? TABLA_RESICO_PF : TABLA_RESICO_PM
-        const nivelActual = tipo === 'pf'
-            ? TABLA_RESICO_PF.find(n => ingMens <= n.limite) || TABLA_RESICO_PF[TABLA_RESICO_PF.length - 1]
-            : TABLA_RESICO_PM.find(n => ingMens <= n.tope) || TABLA_RESICO_PM[TABLA_RESICO_PM.length - 1]
+        const nivelActual = tabla.find(n => ingMens <= n.limite) || tabla[tabla.length - 1]
 
         // Tope anual RESICO: PF $3.5M, PM $35M
         const topeAnual = tipo === 'pf' ? 3500000 : 35000000
@@ -160,17 +159,13 @@ export default function CalculadoraRESICO() {
                     <div className="glass-card p-4 rounded-2xl">
                         <h3 className="text-white font-bold text-sm mb-3">📊 Tabla RESICO {tipo === 'pf' ? 'PF — Art. 113-E' : 'PM — Art. 113-G'} LISR</h3>
                         <div className="space-y-1.5">
-                            {(tipo === 'pf' ? TABLA_RESICO_PF : TABLA_RESICO_PM).map((nivel, i) => {
-                                const isActual = tipo === 'pf'
-                                    ? resultado.ingMens <= nivel.limite
-                                    : resultado.ingMens <= (('tope' in nivel) ? nivel.tope : Infinity)
-                                const firstActual = (tipo === 'pf' ? TABLA_RESICO_PF : TABLA_RESICO_PM).findIndex(n =>
-                                    tipo === 'pf' ? resultado.ingMens <= n.limite : resultado.ingMens <= (('tope' in n) ? n.tope : Infinity)
-                                ) === i
+                            {(tipo === 'pf' ? TABLA_RESICO_PF : TABLA_RESICO_PM).map((nivel, i, arr) => {
+                                const firstActual = arr.findIndex(n => resultado.ingMens <= n.limite) === i
+                                const limiteLabel = nivel.limite === Infinity ? 'Sin límite' : `$${fmtMXN(nivel.limite)}/mes`
                                 return (
                                     <div key={i} className={`flex justify-between p-2.5 rounded-lg text-xs ${firstActual ? 'bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30' : 'bg-white/5'}`}>
                                         <span className={firstActual ? 'text-[var(--color-accent)] font-bold' : 'text-white/50'}>
-                                            {firstActual ? '▶ ' : ''}Hasta ${fmtMXN(tipo === 'pf' ? (nivel as { limite: number; tasa: number }).limite : (nivel as { tope: number; tasa: number }).tope === Infinity ? 99999999 : (nivel as { tope: number; tasa: number }).tope)}/mes
+                                            {firstActual ? '▶ ' : ''}Hasta {limiteLabel}
                                         </span>
                                         <span className={`font-mono font-bold ${firstActual ? 'text-[var(--color-accent)]' : 'text-white/60'}`}>
                                             {(nivel.tasa * 100).toFixed(1)}%
