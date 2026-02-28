@@ -127,6 +127,7 @@ export default function CalculadoraLaboral() {
     const [meses, setMeses] = useState('6')
     const [frontera, setFrontera] = useState(false)
     const [resultado, setResultado] = useState<Resultado | null>(null)
+    const [showSalarioInfo, setShowSalarioInfo] = useState(false)
 
     function handleCalcular() {
         const salMensual = parseFloat(salarioMensual) || 0
@@ -223,9 +224,84 @@ export default function CalculadoraLaboral() {
                             placeholder="Ej: 15000"
                             className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:border-[var(--color-accent)] focus:outline-none transition-colors placeholder:text-white/20"
                         />
-                        <p className="text-xs text-[var(--color-text-muted)] mt-1">
-                            💡 El que aparece en tu recibo de nómina, antes de deducciones
-                        </p>
+                        <div className="mt-1">
+                            <button
+                                type="button"
+                                onClick={() => setShowSalarioInfo(!showSalarioInfo)}
+                                className="text-xs text-[var(--color-accent)] hover:text-[var(--color-accent)]/80 transition-colors flex items-center gap-1 cursor-pointer"
+                            >
+                                💡 ¿Cuál es mi salario bruto? ¿Antes o después de deducciones?
+                                <span className={`transition-transform ${showSalarioInfo ? 'rotate-180' : ''}`}>▼</span>
+                            </button>
+
+                            {showSalarioInfo && (
+                                <div className="mt-3 p-4 rounded-xl bg-blue-500/10 border border-blue-500/20 text-xs space-y-3 animate-in fade-in slide-in-from-top-2 duration-300">
+                                    <div>
+                                        <h4 className="text-white font-bold text-sm mb-1">📌 Resumen rápido</h4>
+                                        <p className="text-white/80">
+                                            Usa tu <strong className="text-[var(--color-accent)]">salario bruto mensual</strong> — el monto
+                                            <strong> ANTES</strong> de que te descuenten IMSS, ISR, Infonavit, etc.
+                                            Es el número más grande que aparece en tu recibo de nómina.
+                                        </p>
+                                    </div>
+
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                        <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-lg p-3">
+                                            <h5 className="text-emerald-400 font-bold mb-1">✅ Salario BRUTO (usa este)</h5>
+                                            <p className="text-white/70">Lo que tu patrón pactó pagarte. Incluye:</p>
+                                            <ul className="text-white/60 mt-1 space-y-0.5 list-disc pl-4">
+                                                <li>Sueldo base mensual</li>
+                                                <li>Bonos fijos / comisiones garantizadas</li>
+                                                <li>Prestaciones en dinero (vales, ayudas)</li>
+                                            </ul>
+                                            <p className="text-emerald-400 font-semibold mt-2">Ejemplo: $15,000/mes</p>
+                                        </div>
+                                        <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-3">
+                                            <h5 className="text-red-400 font-bold mb-1">❌ Salario NETO (no uses este)</h5>
+                                            <p className="text-white/70">Lo que recibes en tu cuenta. Ya se descontó:</p>
+                                            <ul className="text-white/60 mt-1 space-y-0.5 list-disc pl-4">
+                                                <li>ISR (Impuesto Sobre la Renta)</li>
+                                                <li>Cuota IMSS del trabajador</li>
+                                                <li>Crédito Infonavit (si aplica)</li>
+                                            </ul>
+                                            <p className="text-red-400 font-semibold mt-2">Ejemplo: $13,200/mes</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="border-t border-white/10 pt-3">
+                                        <h4 className="text-white font-bold text-sm mb-2">📖 ¿Por qué se usa el salario bruto?</h4>
+                                        <p className="text-white/70 leading-relaxed">
+                                            La Ley Federal del Trabajo define el <strong className="text-white">salario</strong> en el
+                                            <strong className="text-blue-400"> Art. 82 LFT</strong> como: <em>&ldquo;la retribución que
+                                                debe pagar el patrón al trabajador por su trabajo&rdquo;</em>. Este es el monto total convenido,
+                                            no lo que queda después de impuestos.
+                                        </p>
+                                        <p className="text-white/70 leading-relaxed mt-2">
+                                            El <strong className="text-blue-400">Art. 84 LFT</strong> establece que el salario se integra
+                                            con <em>&ldquo;los pagos hechos en efectivo por cuota diaria, gratificaciones, percepciones,
+                                                habitación, primas, comisiones, prestaciones en especie y cualquiera otra cantidad o prestación
+                                                que se entregue al trabajador por su trabajo&rdquo;</em>.
+                                        </p>
+                                        <p className="text-white/70 leading-relaxed mt-2">
+                                            Todos los cálculos de liquidación, finiquito, indemnización y prima de antigüedad se hacen
+                                            sobre el <strong className="text-[var(--color-accent)]">Salario Diario Integrado (SDI)</strong>,
+                                            que se obtiene del salario bruto dividido entre 30 días (<strong className="text-blue-400">Art. 89 LFT</strong>).
+                                            Las deducciones de IMSS e ISR son obligaciones fiscales del trabajador y no reducen la base de cálculo laboral.
+                                        </p>
+                                    </div>
+
+                                    <div className="bg-white/5 rounded-lg p-3">
+                                        <h5 className="text-white font-bold mb-1">💰 ¿Cómo saber cuál es mi salario bruto?</h5>
+                                        <p className="text-white/70">
+                                            Revisa tu <strong className="text-white">recibo de nómina (CFDI de nómina)</strong> — busca el
+                                            concepto &ldquo;Sueldo&rdquo; o &ldquo;Percepciones Totales&rdquo;. Si no tienes recibos,
+                                            consulta tu contrato individual de trabajo donde se estipula el salario pactado.
+                                            También puedes verlo en el portal del IMSS como &ldquo;Salario Base de Cotización&rdquo; × 30 días.
+                                        </p>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
                     </div>
 
                     {/* Años */}
