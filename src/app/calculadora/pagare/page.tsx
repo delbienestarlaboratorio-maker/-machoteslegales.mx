@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import CalculadoraPagarePage from './CalculadoraPagare'
+import CalculadoraPagare from './CalculadoraPagare'
 
 export const metadata: Metadata = {
     title: 'Calculadora Pagaré con Intereses México 2026 — Monto y Vencimiento | LGTOC',
@@ -16,4 +16,4 @@ export const metadata: Metadata = {
     },
     alternates: { canonical: 'https://machoteslegales.mx/calculadora/pagare' },
 }
-export default function Page() { return <CalculadoraPagarePage /> }
+export default function Page() { return <CalculadoraPagare /> }
