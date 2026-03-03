@@ -6,16 +6,46 @@ import { articulosMock } from '@/data/articulos';
 import { jurisprudenciasMock } from '@/data/jurisprudencias';
 import AdBannerWrapper from '@/components/ads/AdBannerWrapper';
 import BuscadorArticuloNav from '@/components/leyes/BuscadorArticuloNav';
+import fs from 'fs';
+import path from 'path';
 
 export const dynamic = 'force-static';
 
 export async function generateStaticParams() {
-    return articulosMock
+    let params: { slug: string; articulo: string }[] = [];
+
+    // 1. Cargar Mock Original
+    const mockParams = articulosMock
         .filter(a => a.fuero === 'federal')
         .map((art) => ({
             slug: art.ley_id,
             articulo: art.id,
         }));
+    params = [...mockParams];
+
+    // 2. Cargar DB Fragmentada (Dynamic Scraped)
+    try {
+        const dbPath = path.join(process.cwd(), 'src', 'data', 'db_leyes', 'federal');
+        if (fs.existsSync(dbPath)) {
+            const leyes = fs.readdirSync(dbPath);
+            for (const ley of leyes) {
+                if (ley.endsWith('.json')) {
+                    const leySlug = ley.replace('.json', '');
+                    const content = fs.readFileSync(path.join(dbPath, ley), 'utf8');
+                    const parsed = JSON.parse(content);
+                    const arr = parsed.map((a: any) => ({
+                        slug: leySlug,
+                        articulo: a.id.toString(),
+                    }));
+                    params = [...params, ...arr];
+                }
+            }
+        }
+    } catch (e) {
+        console.warn("No se pudo cargar la DB Fragmentada en generateStaticParams Federal", e);
+    }
+
+    return params;
 }
 
 type Props = {
@@ -25,7 +55,30 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const resolvedParams = await params;
     const leyInfo = federalLeyesMock.find(l => l.id === resolvedParams.slug);
-    const artInfo = articulosMock.find(a => a.id === resolvedParams.articulo && a.ley_id === resolvedParams.slug);
+    let artInfo = articulosMock.find(a => a.id === resolvedParams.articulo && a.ley_id === resolvedParams.slug);
+
+    // Intentar buscar en DB Fragmentada si no existe en mock
+    if (!artInfo) {
+        try {
+            const dbPath = path.join(process.cwd(), 'src', 'data', 'db_leyes', 'federal', `${resolvedParams.slug}.json`);
+            if (fs.existsSync(dbPath)) {
+                const content = fs.readFileSync(dbPath, 'utf8');
+                const parsed = JSON.parse(content);
+                const found = parsed.find((a: any) => a.id.toString() === resolvedParams.articulo);
+                if (found) {
+                    artInfo = {
+                        id: found.id.toString(),
+                        numero: found.etiqueta.replace(/[^0-9.]/g, ''),
+                        contenido: found.texto,
+                        ley_id: resolvedParams.slug,
+                        estado_id: 'federal',
+                        explicacion_seo: "Explicación legal completa de este precepto federal a la luz de los Tribunales Colegiados.",
+                        fuero: "federal"
+                    } as any;
+                }
+            }
+        } catch (e) { }
+    }
 
     if (!leyInfo || !artInfo) {
         return { title: 'Artículo no encontrado' };
@@ -49,7 +102,33 @@ export default async function LecturaArticuloFederalPage({ params }: Props) {
     const leyInfo = federalLeyesMock.find(l => l.id === resolvedParams.slug);
 
     // Obtener todos los artículos de esta ley ordenados como vengan en la Base de Datos
-    const todosLosArticulos = articulosMock.filter(a => a.ley_id === resolvedParams.slug && a.fuero === 'federal');
+    let todosLosArticulos = articulosMock.filter(a => a.ley_id === resolvedParams.slug && a.fuero === 'federal');
+
+    // Cargar JSON masivo si existe
+    try {
+        const dbPath = path.join(process.cwd(), 'src', 'data', 'db_leyes', 'federal', `${resolvedParams.slug}.json`);
+        if (fs.existsSync(dbPath)) {
+            const content = fs.readFileSync(dbPath, 'utf8');
+            const parsed = JSON.parse(content);
+            if (parsed && parsed.length > 0) {
+                todosLosArticulos = parsed.map((a: any) => ({
+                    id: a.id.toString(),
+                    numero: a.etiqueta.replace(/[^0-9.]/g, ''),
+                    contenido: a.texto,
+                    ley_id: resolvedParams.slug,
+                    estado_id: 'federal',
+                    explicacion_seo: `<p>Este artículo normativo forma parte sistemática de la <strong>${leyInfo?.nombre || 'ley'}</strong>. Los Tribunales Colegiados de Circuito y la Suprema Corte establecen que su interpretación jurisdiccional debe realizarse de manera armónica, favoreciendo la protección más amplia conforme al principio <em>pro persona</em>.</p><br/><p>Dada la naturaleza de este precepto, la doctrina sugiere analizar sus fracciones cuidadosamente para fundar resoluciones acertadas o evitar nulidades procesales absolutas en juicios de amparo.</p>`,
+                    fuero: "federal"
+                } as any));
+            }
+        }
+    } catch (e) { }
+
+    todosLosArticulos = todosLosArticulos.sort((a, b) => {
+        const numA = typeof a.numero === 'string' ? parseFloat(a.numero.replace(/[^0-9.]/g, '')) || 0 : a.numero;
+        const numB = typeof b.numero === 'string' ? parseFloat(b.numero.replace(/[^0-9.]/g, '')) || 0 : b.numero;
+        return numA - numB;
+    });
 
     // Encontrar el índice del artículo actual
     const indexActual = todosLosArticulos.findIndex(a => a.id === resolvedParams.articulo);
