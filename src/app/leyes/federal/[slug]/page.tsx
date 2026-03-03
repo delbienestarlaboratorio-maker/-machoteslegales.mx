@@ -5,6 +5,8 @@ import { federalLeyesMock } from '@/data/leyes';
 import { articulosMock } from '@/data/articulos';
 import AdBannerWrapper from '@/components/ads/AdBannerWrapper';
 import BuscadorArticulos from '@/components/leyes/BuscadorArticulos';
+import fs from 'fs';
+import path from 'path';
 
 export const dynamic = 'force-static';
 
@@ -43,7 +45,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function LeyFederalLecturaPage({ params }: Props) {
     const resolvedParams = await params;
     const leyInfo = federalLeyesMock.find(l => l.id === resolvedParams.slug);
-    const articulosDeLey = articulosMock.filter(a => a.ley_id === resolvedParams.slug && a.fuero === 'federal');
+    let articulosDeLey = articulosMock.filter(a => a.ley_id === resolvedParams.slug && a.fuero === 'federal');
+
+    // Cargar JSON masivo
+    try {
+        const dbPath = path.join(process.cwd(), 'src', 'data', 'db_leyes', 'federal', `${resolvedParams.slug}.json`);
+        if (fs.existsSync(dbPath)) {
+            const content = fs.readFileSync(dbPath, 'utf8');
+            const parsed = JSON.parse(content);
+            if (parsed && parsed.length > 0) {
+                articulosDeLey = parsed.map((a: any) => ({
+                    id: a.id.toString(),
+                    numero: a.etiqueta.replace(/[^0-9.]/g, ''),
+                    contenido: a.texto,
+                    ley_id: resolvedParams.slug,
+                    estado_id: 'federal',
+                    explicacion_seo: "",
+                    fuero: "federal"
+                } as any));
+            }
+        }
+    } catch (e) { }
+
+    articulosDeLey = articulosDeLey.sort((a, b) => {
+        const numA = typeof a.numero === 'string' ? parseFloat(a.numero.replace(/[^0-9.]/g, '')) || 0 : a.numero;
+        const numB = typeof b.numero === 'string' ? parseFloat(b.numero.replace(/[^0-9.]/g, '')) || 0 : b.numero;
+        return numA - numB;
+    });
 
     if (!leyInfo) {
         notFound();
