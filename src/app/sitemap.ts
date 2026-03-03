@@ -1,4 +1,7 @@
 import { MetadataRoute } from 'next';
+import fs from 'fs';
+import path from 'path';
+import { diccionariJuridico } from '@/data/diccionario';
 
 export const dynamic = 'force-static';
 
@@ -36,6 +39,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         // Si falla el import, solo retornamos las páginas estáticas
     }
 
+    // Indexar calculadoras dinámicamente desde el filesystem
+    let calculadorasEntries: MetadataRoute.Sitemap = [];
+    try {
+        const calcDir = path.join(process.cwd(), 'src', 'app', 'calculadora');
+        const calcDirs = fs.readdirSync(calcDir, { withFileTypes: true })
+            .filter(dir => dir.isDirectory())
+            .map(dir => dir.name);
+
+        calculadorasEntries = calcDirs.map(slug => ({
+            url: `${BASE_URL}/calculadora/${slug}`,
+            lastModified: new Date('2026-02-28'),
+            changeFrequency: 'weekly' as const,
+            priority: 0.8,
+        }));
+    } catch (e) {
+        console.error("Error reading calculadoras directory for sitemap", e);
+    }
+
     // Páginas estáticas
     const staticPages: MetadataRoute.Sitemap = [
         { url: BASE_URL, lastModified: new Date(), changeFrequency: 'daily', priority: 1.0 },
@@ -53,5 +74,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.8,
     }));
 
-    return [...staticPages, ...espPages, ...templateEntries];
+    // Indexar Diccionario Juridico
+    const diccionarioIndex: MetadataRoute.Sitemap = [
+        { url: `${BASE_URL}/diccionario`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 }
+    ];
+
+    const letrasDisponibles = Array.from(new Set(diccionariJuridico.map(term => term.letra.toLowerCase())));
+    const diccionarioLetras: MetadataRoute.Sitemap = letrasDisponibles.map(letra => ({
+        url: `${BASE_URL}/diccionario/${letra}`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8
+    }));
+
+    const diccionarioTerminos: MetadataRoute.Sitemap = diccionariJuridico.map(term => ({
+        url: `${BASE_URL}/diccionario/${term.letra.toLowerCase()}/${term.id}`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7
+    }));
+
+    return [...staticPages, ...espPages, ...templateEntries, ...calculadorasEntries, ...diccionarioIndex, ...diccionarioLetras, ...diccionarioTerminos];
 }

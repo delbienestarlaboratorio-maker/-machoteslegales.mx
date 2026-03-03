@@ -1,0 +1,43 @@
+﻿Ôû▓ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+Ô£ô Compiled successfully in 3.8s
+  Running TypeScript ...
+  Collecting page data using 63 workers ...
+node.exe : Error: export const dynamic = 
+"force-static"/export const revalidate not configured on 
+route "/robots.txt" with "output: export". See more info 
+here: https://nextjs.org/docs/advanced-features/static-htm
+l-export
+En línea: 1 Carácter: 1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Error: expor 
+   t c...tic-html-export:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    at module evaluation (D:\Paginas_web\Legal tilde\macho
+teslegales.mx\.next\server\chunks\[root-of-the-server]__8f
+9c212b._.js:16:967)
+    at instantiateModule (D:\Paginas_web\Legal tilde\macho
+teslegales.mx\.next\server\chunks\[turbopack]_runtime.js:7
+40:9)
+    at instantiateRuntimeModule (D:\Paginas_web\Legal tild
+e\machoteslegales.mx\.next\server\chunks\[turbopack]_runti
+me.js:768:12)
+    at getOrInstantiateRuntimeModule 
+(D:\Paginas_web\Legal tilde\machoteslegales.mx\.next\serve
+r\chunks\[turbopack]_runtime.js:781:12)
+    at Object.m (D:\Paginas_web\Legal tilde\machoteslegale
+s.mx\.next\server\chunks\[turbopack]_runtime.js:790:18)
+    at Object.<anonymous> (D:\Paginas_web\Legal tilde\mach
+oteslegales.mx\.next\server\app\robots.txt\route.js:5:3)
+
+> Build error occurred
+Error: Failed to collect page data for /robots.txt
+    at ignore-listed frames {
+  type: 'Error'
+}

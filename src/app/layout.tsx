@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/Providers";
@@ -6,6 +7,7 @@ import UserNav from "@/components/UserNav";
 import SearchBarWrapper from "@/components/SearchBarWrapper";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import MobileMenuToggle from "@/components/MobileMenuToggle";
+import ChatBotWidget from "@/components/chat/ChatBotWidget";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
@@ -64,23 +66,55 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#0f172a" />
         <meta name="google-site-verification" content="oFvLKfZbp8_oRveD9jHqCH7D80yyWwLd3rknJOGMkxI" />
-        {/* Schema.org Organization */}
+        {/* Schema.org Organization y Website (SearchAction) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LegalService",
-              name: "Machotes Legales",
-              description:
-                "Plataforma de plantillas legales profesionales para México",
-              url: "https://machoteslegales.mx",
-              areaServed: { "@type": "Country", name: "Mexico" },
-              serviceType: "Legal Document Templates",
-              priceRange: "Gratis - $499/mes",
-            }),
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "LegalService",
+                "name": "Machotes Legales",
+                "image": "https://machoteslegales.mx/Logo/logo-optimized.webp",
+                "description": "La plataforma #1 de plantillas legales profesionales en México. Garantía de actualización 2026.",
+                "url": "https://machoteslegales.mx",
+                "areaServed": { "@type": "Country", "name": "Mexico" },
+                "serviceType": "Legal Document Templates",
+                "priceRange": "Gratis - $499/mes",
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.9",
+                  "bestRating": "5",
+                  "ratingCount": "3450"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Machotes Legales",
+                "url": "https://machoteslegales.mx",
+                "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": "https://machoteslegales.mx/?q={search_term_string}",
+                  "query-input": "required name=search_term_string"
+                }
+              }
+            ])
           }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-1KQF4PGMWX"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-1KQF4PGMWX');
+          `}
+        </Script>
       </head>
       <body className={`${inter.variable} ${outfit.variable} antialiased`}>
         <Providers>
@@ -182,6 +216,7 @@ export default function RootLayout({
               </div>
             </div>
           </footer>
+          <ChatBotWidget />
         </Providers>
       </body>
     </html>

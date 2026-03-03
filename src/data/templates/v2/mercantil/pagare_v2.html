@@ -7,84 +7,75 @@
 <!-- ═══════════════════════════════════════════════════ -->
 <!--                     PAGARÉ                          -->
 <!-- ═══════════════════════════════════════════════════ -->
-<div
-    style="border: 4px double #1f2937; padding: 40px; border-radius: 8px; margin-top: 30px; background-color: #fafafa; color: #111;">
+<div style="border: 4px double #1f2937; padding: 40px; border-radius: 8px; margin-top: 30px; background-color: #fafafa; color: #111;">
 
-    <div
-        style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #111; padding-bottom: 10px; margin-bottom: 20px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #111; padding-bottom: 10px; margin-bottom: 20px;">
         <div>
             <span style="font-weight: bold; font-size: 1.2rem;">P A G A R É</span><br>
-            <span style="font-size: 0.8rem;">No. <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(1/1)</span></span>
+            <span style="font-size: 0.8rem;">No. <span data-id="numero_pagares" data-label="Número de Pagaré (Ej. 1/1, 1/12)" data-type="text" class="campo-dinamico">[1/1]</span></span>
         </div>
         <div style="text-align: right;">
-            <span style="font-weight: bold; font-size: 1.2rem;">BUENO POR: $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(15,000.00)</span></span><br>
+            <span style="font-weight: bold; font-size: 1.2rem;">BUENO POR: $<span data-id="monto_numero" data-label="Monto en Número" data-type="number" class="campo-dinamico">[15,000.00]</span></span><br>
             <span style="font-size: 0.8rem;">Moneda Nacional</span>
         </div>
     </div>
 
     <p style="text-align: right; margin-bottom: 30px;">
-        En <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Ciudad de México)</span>, a <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span>.
+        En <span data-id="lugar_expedicion" data-label="Ciudad de Expedición" data-type="text" class="campo-dinamico">[Monterrey, M.L]</span>, a <span data-id="fecha_expedicion" data-label="Fecha de Firma" data-type="date" class="campo-dinamico">[26 de febrero de 2026]</span>.
     </p>
 
     <p style="line-height: 1.8; text-align: justify;">
         Por este <strong>PAGARÉ</strong> me (nos) obligo(amos) y prometo(emos) pagar incondicionalmente a la orden de
-        <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span></strong>, o de quien sus derechos
-        represente, en el domicilio ubicado en <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>, o en
+        <strong><span data-id="nombre_beneficiario" data-label="Nombre del Acreedor (quien presta el dinero)" data-type="text" class="campo-dinamico">[Nombre de beneficiario]</span></strong>, o de quien sus derechos
+        represente, en el domicilio ubicado en <span data-id="lugar_pago" data-label="Lugar o Domicilio acordado para el pago" data-type="text" class="campo-dinamico">[Domicilio pactado]</span>, o en
         cualquier otro lugar en que se me requiera el pago, la cantidad cierta y líquida de:
     </p>
 
-    <p
-        style="text-align: center; font-weight: bold; font-size: 1.1rem; background-color: #e5e7eb; padding: 10px; margin: 20px 0;">
-        $<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(15,000.00)</span> (<span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(15,000.00)</span> PESOS
-        00/100 M.N.)
+    <p style="text-align: center; font-weight: bold; font-size: 1.1rem; background-color: #e5e7eb; padding: 10px; margin: 20px 0;">
+        $<span data-id="monto_numero" data-label="Monto en Número" data-type="number" class="campo-dinamico">[15,000.00]</span> (<span data-id="monto_letra" data-label="Cantidad Exacta en Letra" data-type="text" class="campo-dinamico">[Quince Mil]</span> PESOS 00/100 M.N.)
     </p>
 
     <p style="line-height: 1.8; text-align: justify;">
-        El pago de la presente suma de dinero deberá realizarse, a más tardar, el día <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(26 de febrero de 2026)</span></strong>.
+        El pago de la presente suma de dinero deberá realizarse, a más tardar, el día <strong><span data-id="fecha_vencimiento" data-label="Fecha Límite de Pago" data-type="date" class="campo-dinamico">[Fecha Vencimiento]</span></strong>.
     </p>
 
     <p style="line-height: 1.8; text-align: justify;">
         De no efectuarse el pago puntual a su vencimiento, el presente documento generará un <strong>interés
-            moratorio</strong> a razón del <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>% mensual</strong> sobre saldos
+            moratorio</strong> a razón del <strong><span data-id="interes_mensual" data-label="Interés Moratorio (% Mensual, max sugerido 4%)" data-type="number" class="campo-dinamico">[3]</span>% mensual</strong> sobre saldos
         insolutos, pagadero conjuntamente con el capital principal, desde la fecha de constitución en mora y hasta la
         total liquidación del adeudo, en los términos previstos por el artículo 174, segundo párrafo, de la Ley General
         de Títulos y Operaciones de Crédito (LGTOC). Dicha tasa se ha pactado de manera libre y voluntaria.
     </p>
 
-    <p
-        style="line-height: 1.8; text-align: justify; font-size: 0.85rem; border-left: 3px solid #111; padding-left: 15px; margin-top: 20px;">
+    <p style="line-height: 1.8; text-align: justify; font-size: 0.85rem; border-left: 3px solid #111; padding-left: 15px; margin-top: 20px;">
         Para todos los efectos legales a que haya lugar en lo relativo a la interpretación, cumplimiento y ejecución del
         presente pagaré, el suscriptor renuncia expresamente al fuero que pudiera corresponderle por razón de su
         domicilio presente o futuro, sometiéndose incondicionalmente a la jurisdicción y competencia de los Tribunales
-        correspondientes a la jurisdicción mercantil de <strong><span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(General de la República)</span></strong>.
+        correspondientes a la jurisdicción mercantil de <strong><span data-id="ciudad_tribunales" data-label="Ciudad de los Tribunales Elegida" data-type="text" class="campo-dinamico">[Ciudad Judicial]</span></strong>.
     </p>
 
-    <div style="margin-top: 50px; display: flex; justify-content: space-between;">
-        <div style="width: 45%;">
-            <p style="font-weight: bold; border-bottom: 1px solid #111; margin-bottom: 5px;">DATOS DEL SUSCRIPTOR:</p>
-            <p style="font-size: 0.9rem;">
-                <strong>Nombre:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span><br>
-                <strong>Domicilio:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span><br>
-                <strong>Teléfono:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span>
+    <div style="margin-top: 50px; display: flex; justify-content: space-between; gap: 40px;">
+        <div style="width: 50%;">
+            <p style="font-weight: bold; border-bottom: 1px solid #111; margin-bottom: 5px;">DATOS DEL SUSCRIPTOR (DEUDOR):</p>
+            <p style="font-size: 0.9rem; line-height: 1.6;">
+                <strong>Nombre:</strong> <span data-id="nombre_suscriptor" data-label="Nombre del Deudor Principal" data-type="text" class="campo-dinamico">[Nombre Completo]</span><br>
+                <strong>Domicilio:</strong> <span data-id="domicilio_suscriptor" data-label="Dirección del Deudor" data-type="textarea" class="campo-dinamico">[Calle, Col, Número]</span><br>
+                <strong>Teléfono:</strong> <span data-id="telefono_suscriptor" data-label="Teléfono Móvil (Opcional)" data-type="text" class="campo-dinamico">[5500000000]</span>
             </p>
             <div style="text-align: center; margin-top: 50px;">
-                <p style="border-top: 1px solid #111; padding-top: 5px; font-weight: bold; font-size: 0.9rem;">FIRMA DEL
-                    SUSCRIPTOR</p>
+                <p style="border-top: 1px solid #111; padding-top: 5px; font-weight: bold; font-size: 0.9rem;">FIRMA DEL SUSCRIPTOR</p>
             </div>
         </div>
 
-        <div style="width: 45%;">
-            <p style="font-weight: bold; border-bottom: 1px solid #111; margin-bottom: 5px;">DATOS DEL AVAL (OPCIONAL):
+        <div style="width: 50%;">
+            <p style="font-weight: bold; border-bottom: 1px solid #111; margin-bottom: 5px;">DATOS DEL AVAL (SOLIDARIO):</p>
+            <p style="font-size: 0.8rem; line-height: 1.2; margin-bottom: 10px;"><strong>Al dar mi firma como aval, me constituyo en deudor solidario de la obligación contenida en este documento.</strong></p>
+            <p style="font-size: 0.9rem; line-height: 1.6;">
+                <strong>Nombre:</strong> <span data-id="nombre_aval" data-label="Nombre del Aval" data-type="text" class="campo-dinamico">[Nombre del Respaldo]</span><br>
+                <strong>Domicilio:</strong> <span data-id="domicilio_aval" data-label="Dirección del Aval" data-type="textarea" class="campo-dinamico">[Calle, Col, Número]</span>
             </p>
-            <p style="font-size: 0.9rem;"><strong>Al dar mi firma como aval, me constituyo en deudor solidario de la
-                    obligación contenida en este documento.</strong></p>
-            <p style="font-size: 0.9rem;">
-                <strong>Nombre:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(completar aquí)</span><br>
-                <strong>Domicilio:</strong> <span style="background:#dbeafe;color:#1d4ed8;padding:1px 8px;border-radius:4px;font-weight:600;border:1px solid #bfdbfe;font-style:normal;">(Calle Morelos 45, Col. Centro, Ciudad de México, C.P. 04000)</span>
-            </p>
-            <div style="text-align: center; margin-top: 27px;">
-                <p style="border-top: 1px solid #111; padding-top: 5px; font-weight: bold; font-size: 0.9rem;">FIRMA DEL
-                    AVAL</p>
+            <div style="text-align: center; margin-top: 35px;">
+                <p style="border-top: 1px solid #111; padding-top: 5px; font-weight: bold; font-size: 0.9rem;">FIRMA DEL AVAL</p>
             </div>
         </div>
     </div>

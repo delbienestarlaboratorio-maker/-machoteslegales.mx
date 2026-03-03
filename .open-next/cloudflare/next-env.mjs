@@ -1,0 +1,3 @@
+export const production = {"NEXTAUTH_SECRET":"machotes_legales_secreto_seguro_2026_produccion","NEXTAUTH_URL":"http://localhost:4002","NEXT_PUBLIC_API_URL":"http://localhost:4000/api","NEXT_PUBLIC_BASE_URL":"http://localhost:4002","CLIP_API_KEY":"6402f7c9-cd21-4ab6-8a31-bb82af48643b","CLIP_SECRET_KEY":"79706680-e2c7-47eb-a53b-318a94406ba5"};
+export const development = {"NEXTAUTH_SECRET":"machotes_legales_secreto_seguro_2026_produccion","NEXTAUTH_URL":"http://localhost:4002","NEXT_PUBLIC_API_URL":"http://localhost:4000/api","NEXT_PUBLIC_BASE_URL":"http://localhost:4002","CLIP_API_KEY":"6402f7c9-cd21-4ab6-8a31-bb82af48643b","CLIP_SECRET_KEY":"79706680-e2c7-47eb-a53b-318a94406ba5"};
+export const test = {};

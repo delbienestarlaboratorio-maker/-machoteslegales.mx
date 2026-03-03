@@ -12,6 +12,7 @@ import CheckoutButton from '@/components/CheckoutButton'
 import TrustBadges from '@/components/TrustBadges'
 import TestimonialsSection from '@/components/TestimonialsSection'
 import FAQSection from '@/components/FAQSection'
+import ContactLawyerCTA from '@/components/abogados/ContactLawyerCTA'
 
 interface Props {
     params: Promise<{ especialidad: string; slug: string }>
@@ -219,6 +220,8 @@ export default async function TemplatePage(props: Props) {
                         title={template.title}
                         tier={template.tier}
                     />
+
+                    <ContactLawyerCTA />
 
                     {/* Ad horizontal en V1 */}
                     {showAd && <AdBannerWrapper format="horizontal" />}

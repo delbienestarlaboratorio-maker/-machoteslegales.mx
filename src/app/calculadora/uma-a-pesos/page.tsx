@@ -2,22 +2,10 @@ import { Metadata } from 'next'
 import CalculadoraUMA from './CalculadoraUMA'
 
 export const metadata: Metadata = {
-    title: 'Convertidor UMA a Pesos México 2026 — Multas, Fianzas, Montos Legales',
-    description:
-        'Convierte UMAs a pesos mexicanos 2026. UMA diaria $113.14, mensual $3,439.46, anual $41,273.52. Para multas, fianzas, pensiones y montos legales.',
-    keywords: [
-        'UMA a pesos 2026', 'valor UMA 2026', 'convertidor UMA pesos México',
-        'UMA diaria mensual anual', 'multas en UMAs a pesos', 'fianza en UMAs',
-        'unidad de medida y actualización 2026',
-    ],
-    openGraph: {
-        title: 'Convertidor UMA a Pesos México 2026',
-        description: 'UMA 2026: $113.14 diaria. Convierte multas, fianzas y montos legales.',
-        url: 'https://machoteslegales.mx/calculadora/uma-a-pesos',
-    },
+    title: 'Calculadora de Conversión UMA a Pesos (Unidad de Medida y Actualización)',
+    description: 'Convierte fácil y rápido de UMAs a Pesos Mexicanos (o viceversa) con el valor oficial actualizado a 2026. Útil para pagar fianzas, multas y obligaciones.',
+    keywords: ['uma a pesos', 'valor uma 2026', 'cuanto vale una uma', 'calculadora uma', 'conversion uma pesos mexicanos', 'uma diaria mensual anual'],
+    openGraph: { title: 'Conversor Oficial UMA a Pesos Mexicanos', description: 'Introduce la cantidad de UMAs de tu multa o sanción y descubre a cuánto equivale en pesos reales al día de hoy.', url: 'https://machoteslegales.mx/calculadora/uma-a-pesos' },
     alternates: { canonical: 'https://machoteslegales.mx/calculadora/uma-a-pesos' },
 }
-
-export default function Page() {
-    return <CalculadoraUMA />
-}
+export default function Page() { return <CalculadoraUMA /> }
