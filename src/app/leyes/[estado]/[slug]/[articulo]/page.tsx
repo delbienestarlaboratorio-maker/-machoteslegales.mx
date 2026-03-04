@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { estadoLeyesMock } from '@/data/leyes';
+import { estadoLeyesMock, federalLeyesMock } from '@/data/leyes';
 import { articulosMock } from '@/data/articulos';
 import { estadosRepublica } from '@/data/estados';
 import { jurisprudenciasMock } from '@/data/jurisprudencias';
@@ -63,7 +63,7 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const resolvedParams = await params;
     const estadoInfo = estadosRepublica.find(e => e.id === resolvedParams.estado);
-    const leyInfo = estadoLeyesMock.find(l => l.id === resolvedParams.slug);
+    const leyInfo = [...estadoLeyesMock, ...federalLeyesMock].find(l => l.id === resolvedParams.slug);
     let artInfo = articulosMock.find(a => a.id === resolvedParams.articulo && a.ley_id === resolvedParams.slug && a.estado_id === resolvedParams.estado);
 
     // Intentar buscar en DB Fragmentada si no existe en mock
@@ -110,7 +110,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ArtículoEstatalPage({ params }: Props) {
     const resolvedParams = await params;
     const estadoInfo = estadosRepublica.find(e => e.id === resolvedParams.estado);
-    const leyInfo = estadoLeyesMock.find(l => l.id === resolvedParams.slug);
+    const leyInfo = [...estadoLeyesMock, ...federalLeyesMock].find(l => l.id === resolvedParams.slug);
     let todosLosArticulos = articulosMock
         .filter(a => a.ley_id === resolvedParams.slug && a.estado_id === resolvedParams.estado);
 

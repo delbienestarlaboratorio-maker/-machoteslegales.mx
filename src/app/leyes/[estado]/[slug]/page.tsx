@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { estadosRepublica } from '@/data/estados';
-import { estadoLeyesMock } from '@/data/leyes';
+import { estadoLeyesMock, federalLeyesMock } from '@/data/leyes';
 import { articulosMock } from '@/data/articulos';
 import { jurisprudenciasMock } from '@/data/jurisprudencias';
 import AdBannerWrapper from '@/components/ads/AdBannerWrapper';
@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function LeyEstatalLecturaPage({ params }: Props) {
     const resolvedParams = await params;
     const estadoInfo = estadosRepublica.find(e => e.id === resolvedParams.estado);
-    const leyInfo = estadoLeyesMock.find(l => l.id === resolvedParams.slug);
+    const leyInfo = [...estadoLeyesMock, ...federalLeyesMock].find(l => l.id === resolvedParams.slug);
 
     if (!estadoInfo || !leyInfo) {
         notFound();
@@ -74,7 +74,7 @@ export default async function LeyEstatalLecturaPage({ params }: Props) {
             const parsed = JSON.parse(content);
             if (parsed && parsed.length > 0) {
                 articulosDeLey = parsed.map((a: any) => ({
-                    id: a.id.toString(),
+                    id: `articulo-${a.id}`,
                     numero: a.etiqueta.replace(/[^0-9.]/g, ''),
                     contenido: a.texto,
                     ley_id: resolvedParams.slug,

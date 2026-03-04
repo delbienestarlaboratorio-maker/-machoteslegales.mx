@@ -6,6 +6,8 @@ export interface EstadoRepublica {
 }
 
 export const estadosRepublica: EstadoRepublica[] = [
+    { id: "federal", nombre: "Federal", abreviatura: "FED", cantidad_leyes: 450 },
+
     { id: "aguascalientes", nombre: "Aguascalientes", abreviatura: "AGS", cantidad_leyes: 112 },
     { id: "baja-california", nombre: "Baja California", abreviatura: "BC", cantidad_leyes: 124 },
     { id: "baja-california-sur", nombre: "Baja California Sur", abreviatura: "BCS", cantidad_leyes: 108 },
