@@ -1,6 +1,5 @@
 "use client";
 
-import { signIn } from "next-auth/react";
 import { useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
@@ -16,28 +15,9 @@ function LoginForm() {
         e.preventDefault();
         setLoading(true);
         setError("");
-
-        try {
-            // Utilizamos el provider 'credentials' que definimos en AuthOptions
-            const result = await signIn("credentials", {
-                redirect: false,
-                username: email,
-                password: password,
-            });
-
-            if (result?.error) {
-                setError(result.error);
-            } else {
-                // Redirigir a la página principal o al callbackUrl tras éxito
-                const callbackUrl = searchParams.get("callbackUrl");
-                router.push(callbackUrl || "/");
-                router.refresh(); // Refresca el estado global de la sesión
-            }
-        } catch (error) {
-            setError("Ocurrió un error inesperado al iniciar sesión.");
-        } finally {
-            setLoading(false);
-        }
+        // Auth deshabilitado en modo estático
+        setError("El inicio de sesión estará disponible próximamente. Mientras tanto, todas las plantillas gratuitas están disponibles sin registro.");
+        setLoading(false);
     };
 
     return (
@@ -58,7 +38,7 @@ function LoginForm() {
                 <div className="mt-8 space-y-6">
                     {/* Botón de Google */}
                     <button
-                        onClick={() => signIn("google")}
+                        onClick={() => setError("Google Sign-In estará disponible próximamente.")}
                         className="w-full flex justify-center items-center gap-3 py-3 px-4 border border-white/20 rounded-xl bg-white/5 hover:bg-white/10 text-white font-medium transition-colors"
                     >
                         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
