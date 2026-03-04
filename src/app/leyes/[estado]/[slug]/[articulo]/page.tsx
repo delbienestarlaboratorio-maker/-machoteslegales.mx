@@ -41,7 +41,7 @@ export async function generateStaticParams() {
                         const arr = parsed.map((a: any) => ({
                             estado: estado,
                             slug: leySlug,
-                            articulo: a.id.toString()
+                            articulo: `articulo-${a.id}`
                         }));
                         // Añadir los dinámicos
                         params = [...params, ...arr];
@@ -73,7 +73,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             if (fs.existsSync(dbPath)) {
                 const content = fs.readFileSync(dbPath, 'utf8');
                 const parsed = JSON.parse(content);
-                const found = parsed.find((a: any) => a.id.toString() === resolvedParams.articulo);
+                const articuloNumero = resolvedParams.articulo.replace('articulo-', '');
+                const found = parsed.find((a: any) => a.id.toString() === articuloNumero);
                 if (found) {
                     artInfo = {
                         id: found.id.toString(),
@@ -121,7 +122,7 @@ export default async function ArtículoEstatalPage({ params }: Props) {
             const parsed = JSON.parse(content);
             if (parsed && parsed.length > 0) {
                 todosLosArticulos = parsed.map((a: any) => ({
-                    id: a.id.toString(),
+                    id: `articulo-${a.id}`,
                     numero: a.etiqueta.replace(/[^0-9.]/g, ''),
                     contenido: a.texto,
                     ley_id: resolvedParams.slug,
