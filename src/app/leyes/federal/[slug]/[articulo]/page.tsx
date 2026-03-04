@@ -6,6 +6,7 @@ import { articulosMock } from '@/data/articulos';
 import { jurisprudenciasMock } from '@/data/jurisprudencias';
 import AdBannerWrapper from '@/components/ads/AdBannerWrapper';
 import BuscadorArticuloNav from '@/components/leyes/BuscadorArticuloNav';
+import { generarAnalisisJuridico } from '@/lib/analisis-juridico';
 import fs from 'fs';
 import path from 'path';
 
@@ -229,7 +230,20 @@ export default async function LecturaArticuloFederalPage({ params }: Props) {
                     <h3 className="text-2xl font-bold text-white mb-6 font-[family-name:var(--font-outfit)] flex items-center gap-3">
                         <span className="text-3xl">🧠</span> Análisis Práctico Legal
                     </h3>
-                    <div dangerouslySetInnerHTML={{ __html: artInfo.explicacion_seo }} className="bg-slate-900/50 p-6 md:p-10 rounded-2xl border border-white/5" />
+                    <div
+                        dangerouslySetInnerHTML={{
+                            __html: (artInfo.explicacion_seo && artInfo.explicacion_seo.length > 80)
+                                ? artInfo.explicacion_seo
+                                : generarAnalisisJuridico(
+                                    artInfo.contenido,
+                                    artInfo.numero?.toString() ?? '',
+                                    `Artículo ${artInfo.numero}`,
+                                    leyInfo.nombre,
+                                    'Federal'
+                                )
+                        }}
+                        className="bg-slate-900/50 p-6 md:p-10 rounded-2xl border border-white/5"
+                    />
                 </div>
 
                 {/* AdSense In-Article */}
