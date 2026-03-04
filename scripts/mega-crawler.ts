@@ -4,8 +4,8 @@ import puppeteer from 'puppeteer-extra';
 import StealthPlugin from 'puppeteer-extra-plugin-stealth';
 
 // Para poder importar módulos TypeScript como `estadosRepublica` directamente en ts-node / tsx
-import { estadosRepublica } from '../src/data/estados';
-import { estadoLeyesMock } from '../src/data/leyes';
+import { estadosRepublica } from '../apps/core/src/data/estados';
+import { estadoLeyesMock } from '../apps/core/src/data/leyes';
 
 puppeteer.use(StealthPlugin());
 
@@ -71,7 +71,7 @@ async function parsearYGuardarLey(estadoSlug: string, leySlug: string, fullText:
 
     console.log(`✅ ¡Éxito! ${cleanArticles.length} artículos parseados. Escribiendo a disco.`);
 
-    const dbDir = path.join(process.cwd(), 'src', 'data', 'db_leyes', estadoSlug);
+    const dbDir = path.join(process.cwd(), 'apps', estadoSlug, 'src', 'data', 'db_leyes', estadoSlug);
     await fs.mkdir(dbDir, { recursive: true });
 
     const outputPath = path.join(dbDir, `${leySlug}.json`);
@@ -85,8 +85,18 @@ async function parsearYGuardarLey(estadoSlug: string, leySlug: string, fullText:
  */
 async function arrancarMegaCrawler() {
     console.log("==================================================");
-    console.log("🚀 MEGA-CRAWLER NOCTURNO INICIADO (Modo Automático)");
+    console.log("🚀 MEGA-CRAWLER INICIADO (Modo Automático)");
     console.log("==================================================");
+
+    const targetEstado = process.argv[2];
+    const estadosTarget = targetEstado
+        ? estadosRepublica.filter(e => e.id === targetEstado)
+        : estadosRepublica.filter(e => e.id !== 'federal');
+
+    if (estadosTarget.length === 0) {
+        console.error(`❌ Estado '${targetEstado}' no encontrado en el catálogo.`);
+        process.exit(1);
+    }
 
     const logPath = path.join(process.cwd(), 'scripts', 'crawler-log.txt');
 
@@ -109,9 +119,9 @@ async function arrancarMegaCrawler() {
         });
 
         // Loop masivo de leyes
-        for (const estado of estadosRepublica) {
+        for (const estado of estadosTarget) {
             for (const ley of estadoLeyesMock) {
-                const dbPath = path.join(process.cwd(), 'src', 'data', 'db_leyes', estado.id, `${ley.id}.json`);
+                const dbPath = path.join(process.cwd(), 'apps', estado.id, 'src', 'data', 'db_leyes', estado.id, `${ley.id}.json`);
 
                 // Si la ley ya existe asume que fue parseada excitósamente (Safe Resume Point)
                 try {

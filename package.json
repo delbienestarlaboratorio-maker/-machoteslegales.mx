@@ -1,39 +1,20 @@
 {
-  "name": "machoteslegales.mx",
-  "version": "0.1.0",
+  "name": "machotes-monorepo",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "next dev -p 4002",
-    "build": "next build",
-    "start": "next start -p 4002",
-    "lint": "eslint",
-    "pages:deploy": "npx wrangler pages deploy out"
-  },
-  "dependencies": {
-    "date-fns": "^4.1.0",
-    "fuse.js": "^7.1.0",
-    "next": "16.1.6",
-    "pdf-parse": "^2.4.5",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "build": "turbo run build",
+    "build:core": "turbo run build --filter=app-core",
+    "build:federal": "turbo run build --filter=app-federal-1",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "build:jalisco": "turbo run build --filter=app-jalisco"
   },
   "devDependencies": {
-    "@opennextjs/cloudflare": "^1.16.5",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "axios": "^1.13.6",
-    "cheerio": "^1.2.0",
-    "eslint": "^9",
-    "eslint-config-next": "16.1.6",
-    "puppeteer": "^24.37.5",
-    "puppeteer-extra": "^3.3.6",
-    "puppeteer-extra-plugin-stealth": "^2.11.2",
-    "raw-loader": "^4.0.2",
-    "tailwindcss": "^4",
-    "tsx": "^4.21.0",
-    "typescript": "^5",
-    "wrangler": "^4.67.0"
-  }
+    "turbo": "^2.8.13"
+  },
+  "packageManager": "npm@11.6.2"
 }
